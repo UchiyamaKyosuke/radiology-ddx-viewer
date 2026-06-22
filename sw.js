@@ -1,4 +1,4 @@
-const CACHE_NAME = "radiology-ddx-viewer-v1.0";
+const CACHE_NAME = "radiology-ddx-viewer-v1.1";
 const ASSETS = ["./", "./index.html", "./styles.css", "./app.js", "./manifest.webmanifest"];
 
 self.addEventListener("install", (event) => {
