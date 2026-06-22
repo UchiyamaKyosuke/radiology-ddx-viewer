@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7f7f4">
+  <title>Radiology DDX Viewer</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <h1>Radiology DDX</h1>
+        <p>OneDrive の .rddx を読み込み、iPhone上でオフライン検索します。</p>
+      </div>
+      <div class="status" id="status">データ未読込</div>
+    </header>
+
+    <section class="panel import-panel">
+      <div>
+        <h2>データパック</h2>
+        <p>PCアプリで作成した <code>radiology-ddx-pack.rddx</code> をOneDriveに置き、下のボタンから選択してください。疾患データはこのGitHub Pagesには保存されません。</p>
+      </div>
+      <div class="actions">
+        <label class="primary-button">.rddx を選択<input id="packInput" type="file" accept=".rddx,application/json"></label>
+        <button id="clearPackButton" class="secondary" type="button">端末内データを削除</button>
+      </div>
+      <details class="help">
+        <summary>iPhoneでの読み込み手順</summary>
+        <ol>
+          <li>OneDriveアプリ、またはファイルアプリで .rddx が見える状態にします。</li>
+          <li>このページで <strong>.rddx を選択</strong> を押します。</li>
+          <li>ファイルアプリのOneDriveから .rddx を選びます。</li>
+          <li>一度読み込めば、以後はこのページでオフライン検索できます。</li>
+        </ol>
+      </details>
+      <div id="packMeta" class="meta">保存済みデータを確認中...</div>
+    </section>
+
+    <section class="panel search-panel">
+      <div class="search-row">
+        <input id="query" type="search" placeholder="所見を入力、またはチップを選択" autocomplete="off" disabled>
+        <button id="clearButton" type="button" disabled>クリア</button>
+      </div>
+
+      <div class="filters">
+        <div>
+          <div class="filter-title">性別</div>
+          <div class="pill-row">
+            <button class="sex-option active" data-sex="" type="button" disabled>指定なし</button>
+            <button class="sex-option" data-sex="female" type="button" disabled>女性</button>
+            <button class="sex-option" data-sex="male" type="button" disabled>男性</button>
+          </div>
+        </div>
+        <div>
+          <div class="filter-title">年齢層</div>
+          <div class="pill-row">
+            <button class="age-option active" data-age="" type="button" disabled>指定なし</button>
+            <button class="age-option" data-age="child" type="button" disabled>小児</button>
+            <button class="age-option" data-age="young" type="button" disabled>若年</button>
+            <button class="age-option" data-age="middle" type="button" disabled>中年</button>
+            <button class="age-option" data-age="elderly" type="button" disabled>高齢</button>
+          </div>
+        </div>
+      </div>
+      <div id="chips" class="chips"></div>
+    </section>
+
+    <section class="layout">
+      <section>
+        <h2>鑑別候補</h2>
+        <div id="results"></div>
+      </section>
+      <aside>
+        <h2>詳細</h2>
+        <div id="details" class="details empty">候補を選択してください。</div>
+      </aside>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
