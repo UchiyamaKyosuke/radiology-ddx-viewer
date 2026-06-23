@@ -1,16 +1,16 @@
 # iPhone viewer
 
-This repository hosts a static web viewer for the mobile `.rddx` pack.
+このリポジトリは、iPhone で `.rddx` パックを読み込んで検索するための静的Webビューアです。
 
-Recommended use:
+推奨する使い方:
 
-1. Publish this repository with GitHub Pages.
-2. Create `radiology-ddx-pack.rddx` from the PC admin app.
-3. Copy the `.rddx` file to OneDrive.
-4. Open the viewer URL on iPhone.
-5. Tap `.rddx を選択`.
-6. Choose the `.rddx` file from the iOS Files app or OneDrive provider.
+1. このリポジトリを GitHub Pages で公開します。
+2. PCアプリで `radiology-ddx-pack.rddx` を作成します。
+3. `.rddx` ファイルを OneDrive にコピーします。
+4. iPhone でビューアURLを開きます。
+5. `.rddx を選択` をタップします。
+6. iOSのファイルアプリ、またはOneDriveプロバイダから `.rddx` を選択します。
 
-The disease data is not bundled in this web page. After import, the `.rddx` contents are saved only in the iPhone browser storage.
+疾患データはこのWebページ自体には含めません。読み込み後の `.rddx` の内容は、iPhoneのブラウザ内ストレージに保存されます。
 
-Direct loading from a OneDrive share URL is intentionally not the main path because browser access to OneDrive shared files can fail due to authentication and CORS restrictions.
+OneDrive共有URLからの直接読み込みは、認証やCORS制限で失敗しやすいため、標準運用にはしていません。

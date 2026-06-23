@@ -319,7 +319,7 @@ code {
 }
 
 .modality-panel summary::after {
-  content: "+";
+  content: "＋";
   color: var(--muted);
   font-weight: 700;
 }
@@ -330,7 +330,7 @@ code {
 }
 
 .modality-panel[open] summary::after {
-  content: "-";
+  content: "－";
 }
 
 .modality-body {
