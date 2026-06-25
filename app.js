@@ -125,10 +125,10 @@
         ["高信号", "FLAIR hyperintensity"]
       ] },
       { title: "DWI / ADC", items: [
+        ["拡散制限あり（DWI高信号＋ADC低値）", "restricted diffusion"],
+        ["拡散制限なし（ADC低下なし）", "no diffusion restriction"],
         ["DWI高信号", "DWI hyperintensity"],
         ["DWI等信号", "DWI isointensity"],
-        ["拡散制限あり", "restricted diffusion"],
-        ["拡散制限なし", "no diffusion restriction"],
         ["ADC低値", "low ADC"],
         ["ADC等値", "similar ADC"],
         ["ADC高値", "high ADC"]
@@ -152,6 +152,7 @@
   let selectedDiseaseId = "";
   let lastResults = [];
   let suggestionItems = [];
+  let chipPanelOpenState = new Map();
 
   function openDb() {
     return new Promise((resolve, reject) => {
@@ -332,15 +333,22 @@
   }
 
   function renderChips() {
+    rememberChipPanelState();
     el.chips.innerHTML = "";
     if (!data) {
       el.chips.innerHTML = '<div class="muted">.rddx 読み込み後に所見チップが使えます。</div>';
       return;
     }
     for (const panel of CHIP_GROUPS) {
+      const panelKey = panel.type || panel.title;
+      const hasSelectedChip = panel.groups.some((group) => group.items.some(([, term]) => selectedChips.has(term)));
       const details = document.createElement("details");
       details.className = "modality-panel";
-      details.open = panel.open || panel.groups.some((group) => group.items.some(([, term]) => selectedChips.has(term)));
+      details.dataset.panelKey = panelKey;
+      details.open = chipPanelOpenState.has(panelKey) ? chipPanelOpenState.get(panelKey) : (panel.open || hasSelectedChip);
+      details.addEventListener("toggle", () => {
+        chipPanelOpenState.set(panelKey, details.open);
+      });
       details.innerHTML = `<summary>${escapeHtml(panel.title)}</summary>`;
 
       const body = document.createElement("div");
@@ -369,6 +377,13 @@
       }
       details.appendChild(body);
       el.chips.appendChild(details);
+    }
+  }
+
+  function rememberChipPanelState() {
+    if (!el.chips) return;
+    for (const details of el.chips.querySelectorAll("details.modality-panel[data-panel-key]")) {
+      chipPanelOpenState.set(details.dataset.panelKey, details.open);
     }
   }
 
@@ -720,8 +735,24 @@
 
   function relationFor(findingCode, requestedConcepts) {
     if (requestedConcepts.has(findingCode)) return "support";
+    const findingConcept = data.dictionaries.findingConcepts[findingCode] || {};
     for (const id of requestedConcepts) {
-      const opposites = data.dictionaries.findingConcepts[id]?.opposites || [];
+      const requestedConcept = data.dictionaries.findingConcepts[id] || {};
+      if (
+        requestedConcept.relation_group &&
+        findingConcept.relation_group &&
+        requestedConcept.relation_group === findingConcept.relation_group
+      ) {
+        if (requestedConcept.relation_state && findingConcept.relation_state && requestedConcept.relation_state === findingConcept.relation_state) {
+          return "support";
+        }
+        if (requestedConcept.relation_state && findingConcept.relation_state && requestedConcept.relation_state !== findingConcept.relation_state) {
+          return "conflict";
+        }
+      }
+      const equivalents = requestedConcept.related_equivalents || [];
+      if (equivalents.includes(findingCode)) return "support";
+      const opposites = requestedConcept.opposites || [];
       if (opposites.includes(findingCode)) return "conflict";
     }
     return "context";
