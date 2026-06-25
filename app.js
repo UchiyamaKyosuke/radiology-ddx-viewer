@@ -139,6 +139,28 @@
         ["強い均一造影", "avid homogeneous enhancement"],
         ["リング状造影", "ring enhancement"],
         ["open-ring", "open-ring enhancement"]
+      ] },
+      { title: "SWI / T2*", items: [
+        ["磁化率低信号 / blooming", "susceptibility blooming"],
+        ["微小出血", "microbleeds"]
+      ] },
+      { title: "MRA / MRV", items: [
+        ["flow void", "flow void"],
+        ["動脈狭窄・閉塞", "arterial stenosis or occlusion"],
+        ["血管nidus", "vascular nidus"],
+        ["静脈洞血栓", "venous sinus thrombosis"],
+        ["empty delta sign", "empty delta sign"]
+      ] },
+      { title: "灌流", items: [
+        ["過灌流", "hyperperfusion"],
+        ["低灌流", "hypoperfusion"],
+        ["CBV上昇", "elevated CBV"],
+        ["CBV低下", "reduced CBV"]
+      ] },
+      { title: "MRS", items: [
+        ["コリンピーク上昇", "elevated choline peak"],
+        ["乳酸ピーク", "lactate peak"],
+        ["脂質ピーク", "lipid peak"]
       ] }
     ] }
   ];
