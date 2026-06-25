@@ -296,6 +296,56 @@ code {
   color: var(--sex);
 }
 
+.region-filters {
+  display: grid;
+  gap: 6px;
+}
+
+.region-panel {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.region-panel summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 7px 9px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.region-panel summary::-webkit-details-marker {
+  display: none;
+}
+
+.region-panel summary::after {
+  content: "＋";
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.region-panel[open] summary {
+  border-bottom: 1px solid var(--line);
+  background: #fbfbf8;
+}
+
+.region-panel[open] summary::after {
+  content: "－";
+}
+
+.region-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 8px;
+}
+
 .modality-panel {
   border: 1px solid var(--line);
   border-radius: 8px;

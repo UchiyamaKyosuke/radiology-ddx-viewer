@@ -17,7 +17,8 @@
     packMeta: document.getElementById("packMeta"),
     sexButtons: Array.from(document.querySelectorAll(".sex-option")),
     ageButtons: Array.from(document.querySelectorAll(".age-option")),
-    regionButtons: Array.from(document.querySelectorAll(".region-option"))
+    regionFilters: document.getElementById("regionFilters"),
+    regionButtons: []
   };
 
   const WEIGHTS = {
@@ -92,6 +93,50 @@
     middle: { label: "中年", min: 40, max: 64 },
     elderly: { label: "高齢", min: 65, max: 120 }
   };
+
+  const REGION_FILTER_GROUPS = [
+    { title: "全体", open: true, items: [
+      ["指定なし", "", []],
+      ["脳全体", "brain", ["brain", "intracranial", "cerebral", "meninges"]]
+    ] },
+    { title: "脳実質", open: false, items: [
+      ["皮質/皮質下", "cortical_subcortical", ["cortex", "cortical", "subcortical", "cortical_subcortical", "gray-white junction", "gray_white_junction"]],
+      ["白質/脳室周囲", "white_matter", ["white_matter", "white matter", "periventricular", "external_capsule", "anterior_temporal_pole"]],
+      ["脳梁", "corpus_callosum", ["corpus_callosum", "corpus callosum", "callosal"]],
+      ["基底核/視床", "deep_gray", ["basal_ganglia", "basal ganglia", "globus_pallidus", "thalami", "thalamus", "deep gray"]],
+      ["海馬/側頭葉内側", "mesial_temporal", ["hippocampus", "mesial_temporal_lobe", "medial temporal", "limbic_system", "amygdala"]],
+      ["島皮質", "insula", ["insula", "insular"]],
+      ["脳幹", "brainstem", ["brainstem", "pons", "midbrain", "medulla"]],
+      ["小脳", "cerebellum", ["cerebellum", "cerebellar", "dentate"]]
+    ] },
+    { title: "髄膜/髄液腔", open: false, items: [
+      ["髄膜/硬膜", "meninges", ["meninges", "dura", "dural", "pachymeningeal", "leptomeningeal"]],
+      ["くも膜下腔/脳槽", "subarachnoid", ["subarachnoid", "basal_cistern", "basal cistern", "cistern", "sulci"]],
+      ["硬膜外/硬膜下", "extra_axial", ["extra_axial", "extra-axial", "subdural", "epidural"]]
+    ] },
+    { title: "脳室/正中", open: false, items: [
+      ["脳室", "ventricle", ["ventricle", "ventricular", "lateral ventricle", "third ventricle"]],
+      ["脈絡叢", "choroid_plexus", ["choroid_plexus", "choroid plexus"]],
+      ["Monro孔", "foramen_of_monro", ["foramen_of_monro", "foramen of monro", "monro"]],
+      ["松果体部", "pineal_region", ["pineal_region", "pineal gland", "pineal"]]
+    ] },
+    { title: "鞍部/頭蓋底", open: false, items: [
+      ["鞍内/鞍上部", "sellar_suprasellar", ["sellar", "suprasellar", "sellar_region", "suprasellar_region", "pituitary"]],
+      ["下垂体茎", "pituitary_stalk", ["pituitary_stalk", "pituitary stalk"]],
+      ["海綿静脈洞", "cavernous_sinus", ["cavernous_sinus", "cavernous sinus"]],
+      ["斜台/頭蓋底", "skull_base", ["skull_base", "skull base", "clivus", "clival"]],
+      ["小脳橋角部/内耳道", "cpa_iac", ["cerebellopontine_angle", "cerebellopontine angle", "CPA", "internal_auditory_canal", "IAC"]]
+    ] },
+    { title: "血管", open: false, items: [
+      ["動脈/血管", "cerebral_vessel", ["cerebral_vessel", "cerebral vessel", "artery", "arterial", "MRA_TOF"]],
+      ["静脈洞", "dural_venous_sinus", ["dural_venous_sinus", "dural venous sinus", "venous sinus", "MRV"]],
+      ["血管奇形", "vascular_malformation", ["vascular", "nidus", "flow void", "arteriovenous"]]
+    ] },
+    { title: "骨盤", open: false, items: [
+      ["卵巣", "ovary", ["ovary", "ovarian", "adnexa", "adnexal"]],
+      ["骨盤", "pelvis", ["pelvis", "ovary", "ovarian", "uterus", "adnexa"]]
+    ] }
+  ];
 
   const CHIP_GROUPS = [
     { title: "CT", type: "ct", open: false, groups: [
@@ -332,6 +377,7 @@
   function renderAll() {
     renderPackMeta();
     renderChips();
+    renderRegionFilters();
     renderSexButtons();
     renderAgeButtons();
     renderRegionButtons();
@@ -733,26 +779,25 @@
 
   function regionMatchScore(item) {
     if (!selectedRegion) return 0;
+    const region = regionFilter(selectedRegion);
+    if (!region) return 0;
     const anatomy = item.anatomy || {};
     const haystack = norm([
       anatomy.body_region,
       anatomy.organ,
       anatomy.subregion,
+      item.modality,
+      item.acquisition_code,
       item.target,
       ...(item.tokens || [])
     ].filter(Boolean).join(" "));
     if (!haystack) return 0;
-    if (selectedRegion === "brain") {
-      return haystack.includes("brain") || haystack.includes("meninges") ? WEIGHTS.region.match : WEIGHTS.region.mismatch;
-    }
-    if (selectedRegion === "ovary") {
-      if (haystack.includes("ovary") || haystack.includes("ovarian")) return WEIGHTS.region.organ;
-      return haystack.includes("pelvis") || haystack.includes("adnexa") ? WEIGHTS.region.match : WEIGHTS.region.mismatch;
-    }
-    if (selectedRegion === "pelvis") {
-      return haystack.includes("pelvis") || haystack.includes("ovary") || haystack.includes("uterus") || haystack.includes("adnexa") ? WEIGHTS.region.match : WEIGHTS.region.mismatch;
-    }
-    return 0;
+    const terms = region.terms.map(norm).filter(Boolean);
+    const exactFields = [anatomy.body_region, anatomy.organ, anatomy.subregion].map(norm);
+    if (exactFields.includes(selectedRegion)) return WEIGHTS.region.organ;
+    if (terms.some((term) => exactFields.includes(term))) return WEIGHTS.region.organ;
+    if (terms.some((term) => haystack.includes(term))) return WEIGHTS.region.match;
+    return WEIGHTS.region.mismatch;
   }
 
   function relationFor(findingCode, requestedConcepts) {
@@ -1109,8 +1154,47 @@
     for (const button of el.ageButtons) button.classList.toggle("active", button.dataset.age === selectedAge);
   }
 
+  function renderRegionFilters() {
+    if (!el.regionFilters) return;
+    el.regionFilters.innerHTML = "";
+    for (const group of REGION_FILTER_GROUPS) {
+      const details = document.createElement("details");
+      details.className = "region-panel";
+      details.open = group.open || group.items.some(([, value]) => value === selectedRegion);
+      details.innerHTML = `<summary>${escapeHtml(group.title)}</summary>`;
+      const row = document.createElement("div");
+      row.className = "region-row";
+      for (const [label, value] of group.items) {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = `region-option${value === selectedRegion ? " active" : ""}`;
+        button.dataset.region = value;
+        button.textContent = label;
+        button.disabled = !data;
+        button.addEventListener("click", () => {
+          selectedRegion = value;
+          renderRegionFilters();
+          runSearch();
+        });
+        row.appendChild(button);
+      }
+      details.appendChild(row);
+      el.regionFilters.appendChild(details);
+    }
+    el.regionButtons = Array.from(el.regionFilters.querySelectorAll(".region-option"));
+  }
+
   function renderRegionButtons() {
     for (const button of el.regionButtons) button.classList.toggle("active", button.dataset.region === selectedRegion);
+  }
+
+  function regionFilter(value) {
+    for (const group of REGION_FILTER_GROUPS) {
+      for (const [label, id, terms] of group.items) {
+        if (id === value) return { label, id, terms };
+      }
+    }
+    return null;
   }
 
   function compareVersion(a, b) {
