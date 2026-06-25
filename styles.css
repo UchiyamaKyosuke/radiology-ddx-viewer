@@ -531,8 +531,65 @@ code {
 }
 
 .graph-item {
-  padding: 9px 0;
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px 0;
   border-top: 1px solid var(--line);
+  background: transparent;
+  color: inherit;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.graph-item:hover,
+.graph-item:focus-visible {
+  background: #f7f7f4;
+}
+
+.imaging-modality {
+  margin-top: 10px;
+}
+
+.imaging-modality-title {
+  margin: 10px 0 6px;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.imaging-group {
+  border-top: 1px solid var(--line);
+  padding: 7px 0;
+}
+
+.imaging-group summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.imaging-finding {
+  background: #fbfbf8;
+}
+
+.keyword-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 6px;
+}
+
+.keyword-row span {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 2px 7px;
+  color: var(--muted);
+  font-size: 11px;
+  background: #fff;
 }
 
 .warning {

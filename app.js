@@ -853,9 +853,9 @@
   async function renderDetails(result) {
     const card = await idbGet("diseases", result.disease_id);
     const related = relatedEdges(result.disease_id);
-    const support = result.evidence.filter((x) => x.relation === "support");
-    const conflict = result.evidence.filter((x) => x.relation === "conflict");
-    const context = result.evidence.filter((x) => x.relation === "context");
+    const support = (result.evidence || []).filter((x) => x.relation === "support");
+    const conflict = (result.evidence || []).filter((x) => x.relation === "conflict");
+    const context = (result.evidence || []).filter((x) => x.relation === "context");
     el.details.className = "details";
     el.details.innerHTML = `
       <h3>${escapeHtml(displayDiseaseName(result))}</h3>
@@ -866,12 +866,13 @@
       ${section("好発", demographicsText(card?.demographics || result.demographics))}
       ${adjustmentText(result.sex_adjustment)}
       ${adjustmentText(result.age_adjustment)}
-      <div class="section">
+      ${result.evidence?.length ? `<div class="section">
         <strong>検索所見との関係</strong>
         ${evidenceBlock("加点", support, "support")}
         ${evidenceBlock("減点", conflict, "conflict")}
         ${evidenceBlock("文脈一致", context, "context")}
-      </div>
+      </div>` : ""}
+      ${allImagingFindings(card)}
       <div class="section">
         <strong>関連鑑別</strong>
         ${related.length ? related.map((edge) => graphEdge(edge, result.disease_id)).join("") : '<p class="muted">関連疾患グラフにはまだ候補がありません。</p>'}
@@ -882,6 +883,7 @@
         ${references(card?.references || [])}
       </div>
     `;
+    bindRelatedDiseaseButtons();
   }
 
   function evidenceBlock(title, items, relation) {
@@ -904,12 +906,80 @@
     const otherId = edge.source_disease_id === diseaseId ? edge.target_disease_id : edge.source_disease_id;
     const shared = (edge.shared_findings || []).map((item) => findingLabel(item)).join(", ");
     return `
-      <div class="graph-item">
+      <button type="button" class="graph-item" data-disease-id="${escapeHtml(otherId)}">
         <strong>${escapeHtml(diseaseName(otherId))}</strong>
         <div class="muted">similarity ${escapeHtml(edge.similarity_score ?? "")}</div>
         <div>共有所見: ${escapeHtml(shared || "なし")}</div>
+      </button>
+    `;
+  }
+
+  function allImagingFindings(card) {
+    if (!card?.imaging) return "";
+    const ctGroups = card.imaging.ct?.findings_by_phase || [];
+    const mriGroups = card.imaging.mri?.findings_by_sequence || [];
+    const ctCount = ctGroups.reduce((sum, group) => sum + (group.findings || []).length, 0);
+    const mriCount = mriGroups.reduce((sum, group) => sum + (group.findings || []).length, 0);
+    if (!ctCount && !mriCount) return "";
+    return `
+      <div class="section">
+        <strong>CT/MRI所見一覧</strong>
+        ${card.imaging.ct?.summary ? `<p class="muted">${escapeHtml(card.imaging.ct.summary)}</p>` : ""}
+        ${imagingGroups("CT", ctGroups)}
+        ${card.imaging.mri?.summary ? `<p class="muted">${escapeHtml(card.imaging.mri.summary)}</p>` : ""}
+        ${imagingGroups("MRI", mriGroups)}
       </div>
     `;
+  }
+
+  function imagingGroups(modality, groups) {
+    const nonEmpty = (groups || []).filter((group) => (group.findings || []).length);
+    if (!nonEmpty.length) return "";
+    return `
+      <div class="imaging-modality">
+        <div class="imaging-modality-title">${escapeHtml(modality)}</div>
+        ${nonEmpty.map((group) => {
+          const code = modality === "CT" ? group.phase?.code : group.sequence?.code;
+          return `
+            <details class="imaging-group" open>
+              <summary>${escapeHtml(sequenceLabel(code))} <span class="muted">${escapeHtml(code || "")}</span></summary>
+              ${(group.findings || []).map((item) => imagingFinding(item)).join("")}
+            </details>
+          `;
+        }).join("")}
+      </div>
+    `;
+  }
+
+  function imagingFinding(item) {
+    return `
+      <div class="finding imaging-finding">
+        <strong>${escapeHtml(findingLabel(item))}</strong>
+        <div>${escapeHtml(item.finding_text || "")}</div>
+        <div class="muted">${escapeHtml(item.modality || "")} / ${escapeHtml(acquisitionCode(item))} / typicality ${escapeHtml(item.typicality || "")} / weight ${escapeHtml(item.diagnostic_weight ?? "")}</div>
+        ${item.keywords?.length ? `<div class="keyword-row">${item.keywords.map((keyword) => `<span>${escapeHtml(keyword)}</span>`).join("")}</div>` : ""}
+      </div>
+    `;
+  }
+
+  function bindRelatedDiseaseButtons() {
+    for (const button of el.details.querySelectorAll(".graph-item[data-disease-id]")) {
+      button.addEventListener("click", async () => {
+        const diseaseId = button.dataset.diseaseId;
+        const summary = data.summaryIndex.find((item) => item.disease_id === diseaseId);
+        if (!summary) return;
+        selectedDiseaseId = diseaseId;
+        await renderDetails({
+          disease_id: diseaseId,
+          disease_name: summary.disease_name,
+          review_status: summary.review_status,
+          demographics: summary.demographics,
+          evidence: []
+        });
+        renderResults(lastResults);
+        el.details.scrollIntoView({ block: "start", behavior: "smooth" });
+      });
+    }
   }
 
   function references(items) {
@@ -972,7 +1042,22 @@
   function findingLabel(item) {
     const ja = item?.canonical_label?.ja || "";
     const en = item?.canonical_label?.en || "";
-    return readable(ja) ? ja : en || item?.finding_code || "";
+    if (readable(ja)) return ja;
+    if (en) return en;
+    const concept = data?.dictionaries?.findingConcepts?.[item?.finding_code];
+    const conceptJa = concept?.canonical_label?.ja || "";
+    const conceptEn = concept?.canonical_label?.en || "";
+    return readable(conceptJa) ? conceptJa : conceptEn || item?.finding_code || "";
+  }
+
+  function acquisitionCode(item) {
+    return item?.acquisition_code || item?.acquisition?.code || "";
+  }
+
+  function sequenceLabel(code) {
+    const sequence = data?.dictionaries?.sequenceMap?.[code];
+    const phase = data?.dictionaries?.phaseMap?.[code];
+    return sequence?.label?.ja || sequence?.label?.en || phase?.label?.ja || phase?.label?.en || code || "";
   }
 
   function demographicsText(d) {
