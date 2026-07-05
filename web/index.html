@@ -13,7 +13,7 @@
       <header class="topbar">
         <div>
           <h1>Radiology DDX</h1>
-          <p>iPhoneで画像所見から鑑別候補をすばやく検索します。</p>
+          <p>iPhoneで所見から鑑別候補をすばやく検索します。</p>
         </div>
         <div class="status" id="status">データ未読込</div>
       </header>
@@ -22,14 +22,13 @@
         <div>
           <h2>データパック</h2>
           <p>
-            PCで作成した <code>radiology-ddx-pack.rddx</code> または
-            <code>radiology-ddx-pack.json</code> を読み込みます。読み込み後は端末内に保存され、
-            次回からオフラインで使えます。
+            PCで作成した <code>radiology-ddx-pack.rddx</code> を読み込みます。
+            読み込み後は端末内に保存され、次回からオフラインで使えます。
           </p>
         </div>
         <div class="import-actions">
           <label class="file-button">
-            packを選択
+            .rddxを選択
             <input id="packInput" type="file" />
           </label>
           <button id="clearPackButton" type="button" class="secondary">端末データ削除</button>
@@ -38,9 +37,9 @@
           <summary>iPhoneでの読み込み手順</summary>
           <ol>
             <li>OneDriveまたはファイルアプリに <code>radiology-ddx-pack.rddx</code> を保存します。</li>
-            <li>.rddx がグレーアウトする場合は <code>radiology-ddx-pack.json</code> を使います。</li>
-            <li>このページで <strong>packを選択</strong> を押します。</li>
-            <li>ファイルアプリからpackを選びます。</li>
+            <li>このページで <strong>.rddxを選択</strong> を押します。</li>
+            <li>ファイルアプリから .rddx を選びます。</li>
+            <li>一度読み込むと、次回以降はオフラインで検索できます。</li>
           </ol>
         </details>
         <div class="pack-meta" id="packMeta">保存済みデータを確認中...</div>
@@ -88,17 +87,15 @@
       <section class="layout">
         <div class="results-column">
           <div class="section-head">
-            <h2>候補</h2>
+            <h2>鑑別候補</h2>
             <div id="resultsMeta" class="results-meta">未検索</div>
           </div>
           <div id="results" class="results"></div>
         </div>
-        <div class="details-column">
-          <div class="section-head">
-            <h2>詳細</h2>
-          </div>
-          <div id="details" class="details empty">先にpackを読み込んでください。</div>
-        </div>
+        <aside class="details-column">
+          <h2>詳細</h2>
+          <div id="details" class="details empty">候補を選択してください。</div>
+        </aside>
       </section>
     </main>
     <script src="app.js"></script>
