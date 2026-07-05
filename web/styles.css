@@ -318,6 +318,9 @@ code {
   border-radius: 999px;
   padding: 6px 9px;
   font-size: 12px;
+  line-height: 1.2;
+  min-height: 32px;
+  white-space: normal;
 }
 
 .sex-option.active,
@@ -357,7 +360,7 @@ code {
 }
 
 .region-panel summary::after {
-  content: "＋";
+  content: "+";
   color: var(--muted);
   font-weight: 700;
 }
@@ -368,12 +371,12 @@ code {
 }
 
 .region-panel[open] summary::after {
-  content: "－";
+  content: "-";
 }
 
 .region-row {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(118px, 1fr));
   gap: 6px;
   padding: 8px;
 }
@@ -401,7 +404,7 @@ code {
 }
 
 .modality-panel summary::after {
-  content: "＋";
+  content: "+";
   color: var(--muted);
   font-weight: 700;
 }
@@ -412,7 +415,7 @@ code {
 }
 
 .modality-panel[open] summary::after {
-  content: "－";
+  content: "-";
 }
 
 .modality-body {
@@ -848,8 +851,7 @@ code {
   }
 
   .pill-row,
-  .chip-row,
-  .region-row {
+  .chip-row {
     flex-wrap: nowrap;
     overflow-x: auto;
     scrollbar-width: none;
@@ -857,8 +859,7 @@ code {
   }
 
   .pill-row::-webkit-scrollbar,
-  .chip-row::-webkit-scrollbar,
-  .region-row::-webkit-scrollbar {
+  .chip-row::-webkit-scrollbar {
     display: none;
   }
 
@@ -874,6 +875,12 @@ code {
 
   .region-filters {
     gap: 5px;
+  }
+
+  .region-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 5px;
+    padding: 6px;
   }
 
   .region-panel summary,

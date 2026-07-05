@@ -13,7 +13,7 @@
       <header class="topbar">
         <div>
           <h1>Radiology DDX</h1>
-          <p>iPhoneで所見から鑑別候補をすばやく検索します。</p>
+          <p>iPhoneで画像所見から鑑別候補をすばやく検索します。</p>
         </div>
         <div class="status" id="status">データ未読込</div>
       </header>
@@ -87,15 +87,17 @@
       <section class="layout">
         <div class="results-column">
           <div class="section-head">
-            <h2>鑑別候補</h2>
+            <h2>候補</h2>
             <div id="resultsMeta" class="results-meta">未検索</div>
           </div>
           <div id="results" class="results"></div>
         </div>
-        <aside class="details-column">
-          <h2>詳細</h2>
+        <div class="details-column">
+          <div class="section-head">
+            <h2>詳細</h2>
+          </div>
           <div id="details" class="details empty">候補を選択してください。</div>
-        </aside>
+        </div>
       </section>
     </main>
     <script src="app.js"></script>

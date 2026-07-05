@@ -161,6 +161,84 @@
     ] }
   ];
 
+  const AGE_LABELS = {
+    child: "小児",
+    young: "若年",
+    middle: "中年",
+    elderly: "高齢"
+  };
+
+  const REGION_FILTER_GROUPS_COMPACT = [
+    { title: "大分類", open: true, items: [
+      ["指定なし", "", []],
+      ["脳・頭蓋内", "brain", ["brain", "intracranial", "cerebral", "meninges"]],
+      ["頭頸部", "head_neck", ["head_neck", "thyroid", "sinonasal", "orbit", "salivary", "neck", "mandible"]],
+      ["胸部", "chest", ["chest", "lung", "pleura", "mediastinum", "heart", "aorta", "pulmonary"]],
+      ["腹部", "abdomen", ["abdomen", "liver", "pancreas", "kidney", "spleen", "bowel", "stomach", "adrenal", "peritoneum"]],
+      ["骨盤", "pelvis", ["pelvis", "ovary", "uterus", "prostate", "bladder", "testis", "adnexa"]],
+      ["脊椎・骨軟部", "msk", ["musculoskeletal", "bone", "joint", "soft_tissue", "spine", "tendon", "muscle"]]
+    ] },
+    { title: "中枢神経", open: false, items: [
+      ["皮質/皮質下", "cortical_subcortical", ["cortex", "cortical", "subcortical", "cortical_subcortical", "gray-white junction", "gray_white_junction"]],
+      ["白質/脳室周囲", "white_matter", ["white_matter", "white matter", "periventricular", "external_capsule", "anterior_temporal_pole"]],
+      ["脳梁", "corpus_callosum", ["corpus_callosum", "corpus callosum", "callosal"]],
+      ["基底核/視床", "deep_gray", ["basal_ganglia", "basal ganglia", "globus_pallidus", "thalami", "thalamus", "deep gray"]],
+      ["海馬/辺縁系", "mesial_temporal", ["hippocampus", "mesial_temporal_lobe", "medial temporal", "limbic_system", "amygdala"]],
+      ["脳幹/小脳", "posterior_fossa", ["brainstem", "pons", "midbrain", "medulla", "cerebellum", "cerebellar", "dentate"]],
+      ["髄膜/脳槽", "meninges_cistern", ["meninges", "dura", "leptomeningeal", "subarachnoid", "basal_cistern", "cistern"]],
+      ["硬膜外/硬膜下", "extra_axial", ["extra_axial", "extra-axial", "subdural", "epidural"]],
+      ["脳室/脈絡叢", "ventricle_choroid", ["ventricle", "ventricular", "choroid_plexus", "foramen_of_monro"]],
+      ["松果体部", "pineal_region", ["pineal_region", "pineal gland", "pineal"]],
+      ["鞍上部/下垂体", "sellar_suprasellar", ["sellar", "suprasellar", "pituitary", "pituitary_stalk"]],
+      ["海綿静脈洞", "cavernous_sinus", ["cavernous_sinus", "cavernous sinus"]],
+      ["頭蓋底/CPA", "skull_base_cpa", ["skull_base", "skull base", "clivus", "cerebellopontine_angle", "CPA", "internal_auditory_canal", "IAC"]],
+      ["脳血管/静脈洞", "cerebral_vessel", ["cerebral_vessel", "artery", "MRA_TOF", "dural_venous_sinus", "venous sinus", "MRV"]],
+      ["血管奇形", "vascular_malformation", ["vascular", "nidus", "flow void", "arteriovenous"]]
+    ] },
+    { title: "頭頸部", open: false, items: [
+      ["眼窩", "orbit", ["orbit", "orbital", "optic_nerve", "extraocular"]],
+      ["副鼻腔/鼻腔", "sinonasal", ["sinonasal", "sinus", "nasal", "paranasal"]],
+      ["側頭骨/耳", "temporal_bone", ["temporal_bone", "middle_ear", "mastoid", "inner_ear"]],
+      ["唾液腺", "salivary", ["salivary", "parotid", "submandibular"]],
+      ["咽頭/喉頭", "pharynx_larynx", ["pharynx", "larynx", "oropharynx", "nasopharynx", "hypopharynx"]],
+      ["甲状腺/頸部", "thyroid_neck", ["thyroid", "neck", "cervical_lymph_node"]],
+      ["顎骨/歯原性", "jaw_dental", ["mandible", "maxilla", "odontogenic", "dental"]]
+    ] },
+    { title: "胸部", open: false, items: [
+      ["肺/気道", "lung_airway", ["lung", "pulmonary", "airway", "bronchus"]],
+      ["胸膜/胸壁", "pleura_chest_wall", ["pleura", "pleural", "chest_wall"]],
+      ["縦隔", "mediastinum", ["mediastinum", "thymus", "esophagus"]],
+      ["心臓/心膜", "cardiac", ["heart", "cardiac", "myocardium", "pericardium"]],
+      ["大動脈/肺血管", "thoracic_vessel", ["aorta", "pulmonary_artery", "pulmonary embolism", "vascular"]]
+    ] },
+    { title: "腹部", open: false, items: [
+      ["肝", "liver", ["liver", "hepatic"]],
+      ["胆道/胆嚢", "biliary", ["bile_duct", "biliary", "gallbladder"]],
+      ["膵", "pancreas", ["pancreas", "pancreatic"]],
+      ["脾", "spleen", ["spleen", "splenic"]],
+      ["腎/尿管", "kidney_ureter", ["kidney", "renal", "ureter"]],
+      ["副腎", "adrenal", ["adrenal"]],
+      ["消化管", "gi_tract", ["bowel", "colon", "rectum", "stomach", "appendix", "duodenum"]],
+      ["腹膜/腸間膜", "peritoneum_mesentery", ["peritoneum", "mesentery", "omental"]]
+    ] },
+    { title: "骨盤", open: false, items: [
+      ["子宮/内膜", "uterus", ["uterus", "uterine", "endometrium", "cervix", "myometrium"]],
+      ["卵巣/付属器", "ovary", ["ovary", "ovarian", "adnexa", "adnexal", "fallopian"]],
+      ["前立腺", "prostate", ["prostate", "prostatic"]],
+      ["膀胱/尿道", "bladder_urethra", ["bladder", "urinary_bladder", "urethra"]],
+      ["精巣/陰嚢", "testis_scrotum", ["testis", "testicular", "scrotum", "epididymis"]],
+      ["骨盤腔/会陰", "pelvic_floor", ["pelvis", "perineum", "pelvic_floor"]]
+    ] },
+    { title: "脊椎・骨軟部", open: false, items: [
+      ["脊椎/椎体", "spine", ["spine", "vertebra", "vertebral", "spinal"]],
+      ["椎間板/硬膜外", "disc_epidural", ["disc", "epidural", "foraminal"]],
+      ["骨/骨髄", "bone_marrow", ["bone", "bone_marrow", "metaphysis", "epiphysis", "osteoid", "chondroid"]],
+      ["関節", "joint", ["joint", "synovium", "meniscus", "labrum", "cartilage"]],
+      ["腱/靱帯", "tendon_ligament", ["tendon", "ligament", "rotator_cuff", "achilles", "cruciate"]],
+      ["筋/皮下軟部", "soft_tissue", ["soft_tissue", "subcutaneous", "muscle", "skin"]]
+    ] }
+  ];
+
   const CHIP_GROUPS = [
     { title: "CT", type: "ct", open: false, groups: [
       { title: "吸収値", items: [
@@ -1190,7 +1268,7 @@
   function renderRegionFilters() {
     if (!el.regionFilters) return;
     el.regionFilters.innerHTML = "";
-    for (const group of REGION_FILTER_GROUPS) {
+    for (const group of REGION_FILTER_GROUPS_COMPACT) {
       const details = document.createElement("details");
       details.className = "region-panel";
       details.open = group.open || group.items.some(([, value]) => value === selectedRegion);
@@ -1225,17 +1303,17 @@
   function renderFilterSummary() {
     if (!el.filterSummary) return;
     const parts = [];
-    if (selectedSex) parts.push(selectedSex === "female" ? "女性" : "男性");
-    if (selectedAge) parts.push(AGE_GROUPS[selectedAge]?.label || selectedAge);
+    if (selectedSex) parts.push(selectedSex === "female" ? "\u5973\u6027" : "\u7537\u6027");
+    if (selectedAge) parts.push(AGE_LABELS[selectedAge] || AGE_GROUPS[selectedAge]?.label || selectedAge);
     const region = regionFilter(selectedRegion);
     if (region?.label) parts.push(region.label);
     const chipCount = selectedChips.size;
-    if (chipCount) parts.push(`所見${chipCount}`);
-    el.filterSummary.textContent = parts.length ? parts.join(" / ") : "任意";
+    if (chipCount) parts.push(`\u6240\u898b${chipCount}`);
+    el.filterSummary.textContent = parts.length ? parts.join(" / ") : "\u4efb\u610f";
   }
 
   function regionFilter(value) {
-    for (const group of REGION_FILTER_GROUPS) {
+    for (const group of REGION_FILTER_GROUPS_COMPACT) {
       for (const [label, id, terms] of group.items) {
         if (id === value) return { label, id, terms };
       }
