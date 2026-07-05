@@ -1,0 +1,405 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "melas",
+  "disease_name": {
+    "ja": "MELAS",
+    "en": "MELAS"
+  },
+  "disease_aliases": {
+    "ja": [
+      "ミトコンドリア脳筋症・乳酸アシドーシス・脳卒中様発作"
+    ],
+    "en": [
+      "Mitochondrial encephalomyopathy lactic acidosis and stroke-like episodes"
+    ]
+  },
+  "clinical": {
+    "overview": "ミトコンドリア病。血管支配に一致しない皮質/皮質下の脳卒中様病変、乳酸ピーク、DWI/ADCの混在が特徴。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 5,
+      "typical_max": 40,
+      "peak_decade": "小児〜若年成人",
+      "summary": "小児から若年成人で重要。"
+    }
+  },
+  "keywords": [
+    "stroke-like",
+    "nonvascular territory",
+    "lactate"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "stroke_like_nonvascular_lesions"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "MELASはCTで脳卒中様病変の低吸収を示すことがある。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "melas_ct_001",
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "cortex",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "血管支配に一致しない低吸収病変として見えることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_hypoattenuation",
+                "alternatives": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは血管支配に一致しない皮質〜皮質下FLAIR高信号、DWI/ADCの可変的変化、乳酸ピークを評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "melas_mri_002",
+              "finding_code": "finding:cortical_subcortical_lesion",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "cortex",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "皮質〜皮質下の脳卒中様FLAIR高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:cortical_subcortical_lesion",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "melas_mri_flair_cortical_subcortical_lesion_01",
+              "finding_code": "finding:cortical_subcortical_lesion",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "血管支配域に一致しない皮質〜皮質下病変を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "melas_mri_flair_flair_hyperintensity_01",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "脳卒中様病変がFLAIR高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_id": "melas_mri_003",
+              "finding_code": "finding:dwi_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "cortex",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "DWI高信号を伴うことがあるが血管支配域に一致しない。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:dwi_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "melas_mri_dwi_dwi_hyperintensity_01",
+              "finding_code": "finding:dwi_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "急性期病変でDWI高信号を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "MRS"
+          },
+          "findings": [
+            {
+              "finding_id": "melas_mri_004",
+              "finding_code": "finding:lactate_peak",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRS"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "cortex",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "乳酸ピークを示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:lactate_peak",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "melas_mri_mrs_lactate_peak_01",
+              "finding_code": "finding:lactate_peak",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRS"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "MRSで乳酸ピークを認めることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 34118021, 36892301, 36813312）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "melas_ct_001",
+          "melas_mri_002",
+          "melas_mri_003",
+          "melas_mri_004"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_34118021",
+          "pmid_36892301",
+          "pmid_36813312"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "melas_mri_flair_cortical_subcortical_lesion_01",
+          "melas_mri_flair_flair_hyperintensity_01",
+          "melas_mri_dwi_dwi_hyperintensity_01",
+          "melas_mri_mrs_lactate_peak_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_34118021",
+      "type": "journal_article",
+      "title": "Clinical features, pathogenesis, and management of stroke-like episodes due to MELAS.",
+      "authors": [],
+      "journal": "Metabolic brain disease",
+      "year": "2022",
+      "pmid": "34118021",
+      "doi": "10.1007/s11011-021-00772-x",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34118021/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_36892301",
+      "type": "journal_article",
+      "title": "Characteristics of stroke-like lesions on cerebral imaging.",
+      "authors": [],
+      "journal": "Ideggyogyaszati szemle",
+      "year": "2023",
+      "pmid": "36892301",
+      "doi": "10.18071/isz.76.0005",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36892301/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_36813312",
+      "type": "journal_article",
+      "title": "Neuroimaging in mitochondrial disease.",
+      "authors": [],
+      "journal": "Handbook of clinical neurology",
+      "year": "2023",
+      "pmid": "36813312",
+      "doi": "10.1016/B978-0-12-821751-1.00016-6",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36813312/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": []
+}

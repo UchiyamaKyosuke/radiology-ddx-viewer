@@ -1,0 +1,346 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "intracranial_aneurysm",
+  "disease_name": {
+    "ja": "脳動脈瘤",
+    "en": "Intracranial aneurysm"
+  },
+  "disease_aliases": {
+    "ja": [
+      "脳動脈瘤"
+    ],
+    "en": [
+      "Cerebral aneurysm"
+    ]
+  },
+  "clinical": {
+    "overview": "頭蓋内動脈の嚢状または紡錘状拡張。破裂時はくも膜下出血を来し、CTA/MRAで瘤を評価する。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 80,
+      "peak_decade": "成人",
+      "summary": "成人で重要。"
+    }
+  },
+  "keywords": [
+    "SAH",
+    "CTA",
+    "MRA"
+  ],
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 2,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "subarachnoid_hemorrhage_or_vascular_outpouching"
+    },
+    "summary": "該当する画像パターンで重要な鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "動脈瘤はCTでくも膜下出血や石灰化壁を確認し、CTAで瘤を評価する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "intracranial_aneurysm_ct_001",
+              "finding_code": "finding:ct_hyperattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "basal_cistern",
+                "laterality": "unknown"
+              },
+              "target": "hemorrhagic_component",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "くも膜下出血は脳槽・脳溝の高吸収として認められる。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_hyperattenuation",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "intracranial_aneurysm_ct_non_contrast_ct_hyperattenuation_01",
+              "finding_code": "finding:ct_hyperattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "破裂例ではCTでくも膜下腔高吸収を示す。",
+              "typicality": "variable",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRA/CTAで嚢状動脈瘤、血栓化瘤の壁/内腔、周囲mass effectを確認する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "MRA_TOF"
+          },
+          "findings": [
+            {
+              "finding_id": "intracranial_aneurysm_mri_002",
+              "finding_code": "finding:flow_void",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRA_TOF"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "cerebral_vessel",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "vascular_nidus",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "MRAで嚢状血管拡張として認められる。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:flow_void",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "intracranial_aneurysm_mri_mra_tof_flow_void_01",
+              "finding_code": "finding:flow_void",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRA_TOF"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "MRA/CTAで嚢状または紡錘状の血管性構造を認める。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "SWI"
+          },
+          "findings": [
+            {
+              "finding_id": "intracranial_aneurysm_mri_003",
+              "finding_code": "finding:susceptibility_blooming",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "SWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "cerebral_vessel",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "血栓化部分や出血に磁化率低信号を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:susceptibility_blooming",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "intracranial_aneurysm_mri_swi_susceptibility_blooming_01",
+              "finding_code": "finding:susceptibility_blooming",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "SWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "血栓化成分や出血ではSWI/T2*で低信号を示すことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 39443148, 28215105, 17471651）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "intracranial_aneurysm_ct_001",
+          "intracranial_aneurysm_mri_002",
+          "intracranial_aneurysm_mri_003"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_39443148",
+          "pmid_28215105",
+          "pmid_17471651"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "intracranial_aneurysm_mri_mra_tof_flow_void_01",
+          "intracranial_aneurysm_ct_non_contrast_ct_hyperattenuation_01",
+          "intracranial_aneurysm_mri_swi_susceptibility_blooming_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_39443148",
+      "type": "journal_article",
+      "title": "A Review of Intracranial Aneurysm Imaging Modalities, from CT to State-of-the-Art MR.",
+      "authors": [],
+      "journal": "AJNR. American journal of neuroradiology",
+      "year": "2025",
+      "pmid": "39443148",
+      "doi": "10.3174/ajnr.A8549",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39443148/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_28215105",
+      "type": "journal_article",
+      "title": "Advanced vascular imaging.",
+      "authors": [],
+      "journal": "Vascular medicine (London, England)",
+      "year": "2018",
+      "pmid": "28215105",
+      "doi": "10.1177/1358863X16681666",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28215105/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_17471651",
+      "type": "journal_article",
+      "title": "[Imaging of intracranial aneurysm--MRA, CTA, and-3D angiography].",
+      "authors": [],
+      "journal": "Nihon rinsho. Japanese journal of clinical medicine",
+      "year": "2007",
+      "pmid": "17471651",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17471651/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": []
+}

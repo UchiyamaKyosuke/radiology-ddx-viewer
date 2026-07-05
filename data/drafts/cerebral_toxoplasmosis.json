@@ -1,0 +1,536 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "cerebral_toxoplasmosis",
+  "disease_name": {
+    "ja": "脳トキソプラズマ症",
+    "en": "Cerebral toxoplasmosis"
+  },
+  "disease_aliases": {
+    "ja": [
+      "トキソプラズマ脳症"
+    ],
+    "en": [
+      "Toxoplasma encephalitis"
+    ]
+  },
+  "clinical": {
+    "overview": "免疫不全患者に多い日和見感染。基底核や皮髄境界の多発リング状造影病変としてPCNSLと鑑別する。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 80,
+      "peak_decade": "成人",
+      "summary": "成人で重要。"
+    }
+  },
+  "keywords": [
+    "AIDS",
+    "basal ganglia",
+    "multiple ring enhancement"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "immunocompromised_ring_enhancing_lesions"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "脳トキソプラズマ症はCTで低吸収病変、周囲浮腫、造影でリング状増強として確認されることがある。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "cerebral_toxoplasmosis_ct_001",
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "basal_ganglia",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "低吸収病変として見える。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_hypoattenuation",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "cerebral_toxoplasmosis_ct_non_contrast_ct_hypoattenuation_01",
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "CTでは低吸収病変と周囲浮腫として認識されることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "脳トキソプラズマ症はT2/FLAIR高信号、リング状造影、DWI/ADCでの拡散制限、MRSの乳酸ピークを評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "cerebral_toxoplasmosis_mri_002",
+              "finding_code": "finding:ring_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "basal_ganglia",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "多発リング状造影病変を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ring_enhancement",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "cerebral_toxoplasmosis_mri_contrast_enhanced_t1wi_ring_enhancement_01",
+              "finding_code": "finding:ring_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "造影T1WIでリング状造影を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "cerebral_toxoplasmosis_mri_003",
+              "finding_code": "finding:vasogenic_edema",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "perilesional_edema",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "病変周囲浮腫を伴う。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:vasogenic_edema",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "cerebral_toxoplasmosis_mri_flair_flair_hyperintensity_01",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "FLAIRでは病変周囲浮腫や炎症性変化が高信号となる。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "cerebral_toxoplasmosis_mri_004",
+              "finding_code": "finding:basal_ganglia_involvement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "basal_ganglia",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "基底核病変として認められることが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:basal_ganglia_involvement",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "cerebral_toxoplasmosis_mri_t2wi_t2_hyperintensity_01",
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "T2WIでは病変中心や周囲浮腫が高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_id": "cerebral_toxoplasmosis_mri_dwi_central_diffusion_restriction_01",
+              "finding_code": "finding:central_diffusion_restriction",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "膿瘍性病変では中心部拡散制限が重要な鑑別所見になる。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "ADC"
+          },
+          "findings": [
+            {
+              "finding_id": "cerebral_toxoplasmosis_mri_adc_adc_low_01",
+              "finding_code": "finding:adc_low",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "ADC"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "DWI高信号部に対応してADC低値を示す場合、粘稠な膿や高細胞性内容を示唆する。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "MRS"
+          },
+          "findings": [
+            {
+              "finding_id": "cerebral_toxoplasmosis_mri_mrs_lactate_peak_01",
+              "finding_code": "finding:lactate_peak",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRS"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "MRSでは乳酸ピークが感染性/壊死性病変の補助所見になる。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 27786246, 33112669, 11873616）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "cerebral_toxoplasmosis_ct_001",
+          "cerebral_toxoplasmosis_mri_002",
+          "cerebral_toxoplasmosis_mri_003",
+          "cerebral_toxoplasmosis_mri_004"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_27786246",
+          "pmid_33112669",
+          "pmid_11873616"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "cerebral_toxoplasmosis_ct_non_contrast_ct_hypoattenuation_01",
+          "cerebral_toxoplasmosis_mri_t2wi_t2_hyperintensity_01",
+          "cerebral_toxoplasmosis_mri_flair_flair_hyperintensity_01",
+          "cerebral_toxoplasmosis_mri_contrast_enhanced_t1wi_ring_enhancement_01",
+          "cerebral_toxoplasmosis_mri_dwi_central_diffusion_restriction_01",
+          "cerebral_toxoplasmosis_mri_adc_adc_low_01",
+          "cerebral_toxoplasmosis_mri_mrs_lactate_peak_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_27786246",
+      "type": "journal_article",
+      "title": "HIV-associated opportunistic CNS infections: pathophysiology, diagnosis and treatment.",
+      "authors": [],
+      "journal": "Nature reviews. Neurology",
+      "year": "2018",
+      "pmid": "27786246",
+      "doi": "10.1038/nrneurol.2016.149",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27786246/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_33112669",
+      "type": "journal_article",
+      "title": "Imaging in Differentiating Cerebral Toxoplasmosis and Primary CNS Lymphoma With Special Focus on FDG PET/CT.",
+      "authors": [],
+      "journal": "AJR. American journal of roentgenology",
+      "year": "2021",
+      "pmid": "33112669",
+      "doi": "10.2214/AJR.19.22629",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33112669/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_11873616",
+      "type": "journal_article",
+      "title": "[Neurotoxoplasmosis].",
+      "authors": [],
+      "journal": "Neurologia i neurochirurgia polska",
+      "year": "2002",
+      "pmid": "11873616",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11873616/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": [
+    {
+      "raw_finding_id": "cerebral_toxoplasmosis_raw_keyword_basal_ganglia",
+      "modality_text": "MRI",
+      "acquisition_text": "",
+      "anatomy_text": "",
+      "target_text": "",
+      "finding_text": "キーワード/所見として \"basal ganglia\" を保持。",
+      "interpretation": "辞書対応済み構造化欄から漏れる可能性があるため、Phase1自由記載として保存。",
+      "source_ids": [
+        "public_raw_findings_audit_20260705"
+      ],
+      "mapping": {
+        "status": "unmapped",
+        "candidate_finding_code": "finding:basal_ganglia",
+        "candidate_acquisition_code": "",
+        "candidate_target": "",
+        "notes": "Added during raw_findings audit to preserve information that may be lost by dictionary-only structured fields."
+      },
+      "review_status": "needs_mapping"
+    },
+    {
+      "raw_finding_id": "cerebral_toxoplasmosis_raw_keyword_multiple_ring_enhancement",
+      "modality_text": "MRI",
+      "acquisition_text": "",
+      "anatomy_text": "",
+      "target_text": "",
+      "finding_text": "キーワード/所見として \"multiple ring enhancement\" を保持。",
+      "interpretation": "辞書対応済み構造化欄から漏れる可能性があるため、Phase1自由記載として保存。",
+      "source_ids": [
+        "public_raw_findings_audit_20260705"
+      ],
+      "mapping": {
+        "status": "unmapped",
+        "candidate_finding_code": "finding:multiple_ring_enhancement",
+        "candidate_acquisition_code": "",
+        "candidate_target": "",
+        "notes": "Added during raw_findings audit to preserve information that may be lost by dictionary-only structured fields."
+      },
+      "review_status": "needs_mapping"
+    }
+  ]
+}

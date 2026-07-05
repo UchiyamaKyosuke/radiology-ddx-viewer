@@ -1,0 +1,506 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "subdural_hematoma",
+  "disease_name": {
+    "ja": "硬膜下血腫",
+    "en": "Subdural hematoma"
+  },
+  "disease_aliases": {
+    "ja": [
+      "硬膜下出血",
+      "SDH"
+    ],
+    "en": [
+      "SDH",
+      "Subdural haemorrhage",
+      "Subdural hemorrhage"
+    ]
+  },
+  "clinical": {
+    "overview": "硬膜とくも膜の間に血液が貯留する病態。外傷、抗凝固療法、高齢、脳萎縮などが背景になり、三日月状の脳外血腫として認められる。",
+    "treatment": "症状、血腫厚、正中偏位、急性度に応じて経過観察、穿頭血腫洗浄、開頭血腫除去、中硬膜動脈塞栓などを検討する。",
+    "epidemiology": "高齢者や外傷後で重要。慢性硬膜下血腫は高齢者で頻度が高い。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "male",
+      "predilection": "male_predominant",
+      "summary": "外傷・高齢者背景を反映して男性に多い傾向がある。"
+    },
+    "age": {
+      "typical_min": 60,
+      "typical_max": 95,
+      "peak_decade": "70-80歳代",
+      "summary": "慢性硬膜下血腫は高齢者に多い。急性例は外傷背景で年齢幅が広い。"
+    }
+  },
+  "keywords": [
+    "crescent shape",
+    "extra-axial collection",
+    "midline shift",
+    "bridging vein"
+  ],
+  "frequency": {
+    "label": "common",
+    "prevalence_rank": 4,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "elderly_or_trauma",
+      "body_region": "brain",
+      "clinical_setting": "extra_axial_hemorrhage"
+    },
+    "summary": "高齢者や外傷後の脳外液体貯留では頻度の高い鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "硬膜下血腫はCTで三日月状の硬膜下液体貯留として、急性期高吸収、慢性期低〜等吸収を評価する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "subdural_hematoma_ct_nc_001",
+              "finding_code": "finding:ct_hyperattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "meninges",
+                "subregion": "extra_axial",
+                "laterality": "unknown"
+              },
+              "target": "extra_axial_collection",
+              "modifiers": {},
+              "keywords": [
+                "crescent shape"
+              ],
+              "finding_text": "急性硬膜下血腫は三日月状の高吸収域として認められる。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_hyperattenuation",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "subdural_hematoma_ct_nc_002",
+              "finding_code": "finding:ct_isoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "meninges",
+                "subregion": "extra_axial",
+                "laterality": "unknown"
+              },
+              "target": "extra_axial_collection",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "亜急性期には脳実質と等吸収に近づき見落としやすい。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_isoattenuation",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "subdural_hematoma_ct_nc_003",
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "meninges",
+                "subregion": "extra_axial",
+                "laterality": "unknown"
+              },
+              "target": "extra_axial_collection",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "慢性硬膜下血腫では低吸収の脳外液体貯留として見えることが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_hypoattenuation",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "subdural_hematoma_ct_non_contrast_ct_hyperattenuation_01",
+              "finding_code": "finding:ct_hyperattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "急性期CTでは高吸収の出血として見える。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "硬膜下血腫はT1/T2信号の時相変化とSWI/T2*のbloomingで血液成分を確認する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "subdural_hematoma_mri_t1_001",
+              "finding_code": "finding:t1_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "meninges",
+                "subregion": "extra_axial",
+                "laterality": "unknown"
+              },
+              "target": "extra_axial_collection",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "亜急性血腫ではメトヘモグロビンによりT1高信号を示すことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:t1_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "subdural_hematoma_mri_t1wi_t1_hyperintensity_01",
+              "finding_code": "finding:t1_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "亜急性期血腫ではT1高信号を示すことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "subdural_hematoma_mri_t2_001",
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "meninges",
+                "subregion": "extra_axial",
+                "laterality": "unknown"
+              },
+              "target": "extra_axial_collection",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "慢性血腫はT2高信号の脳外液体貯留として見えることが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:t2_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "subdural_hematoma_mri_t2wi_mass_effect_01",
+              "finding_code": "finding:mass_effect",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "大きい血腫ではmass effectを伴う。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "SWI"
+          },
+          "findings": [
+            {
+              "finding_id": "subdural_hematoma_mri_swi_001",
+              "finding_code": "finding:susceptibility_blooming",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "SWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "meninges",
+                "subregion": "extra_axial",
+                "laterality": "unknown"
+              },
+              "target": "extra_axial_collection",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "血液分解産物や再出血部位で磁化率低信号を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:susceptibility_blooming",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "subdural_hematoma_mri_swi_susceptibility_blooming_01",
+              "finding_code": "finding:susceptibility_blooming",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "SWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "SWI/T2*で磁化率低信号/bloomingを示す。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "subdural_hematoma_mri_flair_vasogenic_edema_01",
+              "finding_code": "finding:vasogenic_edema",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "周囲浮腫を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 27695533, 38725642, 36003292）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "subdural_hematoma_ct_nc_001",
+          "subdural_hematoma_ct_nc_002",
+          "subdural_hematoma_ct_nc_003",
+          "subdural_hematoma_mri_t1_001",
+          "subdural_hematoma_mri_t2_001",
+          "subdural_hematoma_mri_swi_001"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_27695533",
+          "pmid_38725642",
+          "pmid_36003292"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "subdural_hematoma_ct_non_contrast_ct_hyperattenuation_01",
+          "subdural_hematoma_mri_swi_susceptibility_blooming_01",
+          "subdural_hematoma_mri_t1wi_t1_hyperintensity_01",
+          "subdural_hematoma_mri_flair_vasogenic_edema_01",
+          "subdural_hematoma_mri_t2wi_mass_effect_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_27695533",
+      "type": "journal_article",
+      "title": "Chronic subdural hematoma.",
+      "authors": [],
+      "journal": "Asian journal of neurosurgery",
+      "year": "2022",
+      "pmid": "27695533",
+      "doi": "10.4103/1793-5482.145102",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27695533/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_38725642",
+      "type": "journal_article",
+      "title": "Advances in chronic subdural hematoma and membrane imaging.",
+      "authors": [],
+      "journal": "Frontiers in neurology",
+      "year": "2024",
+      "pmid": "38725642",
+      "doi": "10.3389/fneur.2024.1366238",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38725642/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_36003292",
+      "type": "journal_article",
+      "title": "MRI appearance of chronic subdural hematoma.",
+      "authors": [],
+      "journal": "Frontiers in neurology",
+      "year": "2022",
+      "pmid": "36003292",
+      "doi": "10.3389/fneur.2022.872664",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36003292/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": []
+}

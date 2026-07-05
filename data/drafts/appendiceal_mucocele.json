@@ -1,0 +1,360 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "appendiceal_mucocele",
+  "disease_name": {
+    "ja": "虫垂粘液嚢腫",
+    "en": "Appendiceal mucocele"
+  },
+  "disease_aliases": {
+    "ja": [],
+    "en": []
+  },
+  "clinical": {
+    "overview": "虫垂粘液嚢腫は虫垂嚢胞性腫大で重要な鑑別となる疾患で、臨床背景と画像分布を組み合わせて評価する。",
+    "treatment": "治療方針は病型、病期、合併症、全身状態に応じて決定する。",
+    "epidemiology": "頻度と好発年齢は病型・背景疾患により異なる。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "代表的な性差傾向を記録。"
+    },
+    "age": {
+      "typical_min": 30,
+      "typical_max": 90,
+      "peak_decade": "50-70歳代",
+      "summary": "代表的な発症・診断年齢帯を記録。"
+    }
+  },
+  "keywords": [
+    "Appendiceal mucocele",
+    "虫垂粘液嚢腫",
+    "cystic dilated appendix",
+    "mural calcification"
+  ],
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 3,
+    "basis": "differential_importance",
+    "evidence_level": "public_review",
+    "context": {
+      "population": "any",
+      "body_region": "gastrointestinal",
+      "clinical_setting": "虫垂嚢胞性腫大"
+    },
+    "summary": "虫垂嚢胞性腫大の鑑別での相対頻度と重要度を記録。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "虫垂粘液嚢腫のCTでは濃度、石灰化、出血、造影効果、周囲変化を評価する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "gastrointestinal",
+                "organ": "appendix",
+                "subregion": "appendiceal_wall",
+                "laterality": "unknown"
+              },
+              "target": "cystic_component",
+              "modifiers": {},
+              "keywords": [
+                "cystic dilated appendix",
+                "mural calcification"
+              ],
+              "finding_text": "虫垂粘液嚢腫は低吸収の嚢胞性病変として描出されることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:ct_hypoattenuation",
+                "alternatives": []
+              },
+              "finding_id": "appendiceal_mucocele_f001"
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "虫垂粘液嚢腫のMRIでは信号、拡散、造影効果、病変分布を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T1WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:t1_hypointensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "gastrointestinal",
+                "organ": "appendix",
+                "subregion": "appendiceal_wall",
+                "laterality": "unknown"
+              },
+              "target": "cyst_content",
+              "modifiers": {},
+              "keywords": [
+                "cystic dilated appendix",
+                "mural calcification"
+              ],
+              "finding_text": "虫垂粘液嚢腫の液性成分はT1WI低信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:t1_hypointensity",
+                "alternatives": []
+              },
+              "finding_id": "appendiceal_mucocele_f002"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "gastrointestinal",
+                "organ": "appendix",
+                "subregion": "appendiceal_wall",
+                "laterality": "unknown"
+              },
+              "target": "cystic_component",
+              "modifiers": {},
+              "keywords": [
+                "cystic dilated appendix",
+                "mural calcification"
+              ],
+              "finding_text": "虫垂粘液嚢腫はT2WI高信号の嚢胞性成分を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:t2_hyperintensity",
+                "alternatives": []
+              },
+              "finding_id": "appendiceal_mucocele_f003"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:mild_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "gastrointestinal",
+                "organ": "appendix",
+                "subregion": "appendiceal_wall",
+                "laterality": "unknown"
+              },
+              "target": "cyst_wall",
+              "modifiers": {},
+              "keywords": [
+                "cystic dilated appendix",
+                "mural calcification"
+              ],
+              "finding_text": "虫垂粘液嚢腫は壁や隔壁に造影効果を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:mild_enhancement",
+                "alternatives": []
+              },
+              "finding_id": "appendiceal_mucocele_f004"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:diffusion_restriction_absent",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "gastrointestinal",
+                "organ": "appendix",
+                "subregion": "appendiceal_wall",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "cystic dilated appendix",
+                "mural calcification"
+              ],
+              "finding_text": "虫垂粘液嚢腫は単純液性成分では強い拡散制限を示さないことが多い。",
+              "typicality": "variable",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:diffusion_restriction_absent",
+                "alternatives": []
+              },
+              "finding_id": "appendiceal_mucocele_f005"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "raw_findings": [
+    {
+      "raw_finding_id": "appendiceal_mucocele_raw_001",
+      "modality_text": "CT/MRI/US",
+      "acquisition_text": "疾患に応じた標準撮像",
+      "anatomy_text": "虫垂粘液嚢腫の典型的な主座",
+      "target_text": "named_sign",
+      "finding_text": "嚢胞状に拡張した虫垂と壁石灰化、破裂時の粘液性腹水を評価する。",
+      "interpretation": "構造化辞書では拾い切れない疾患固有の所見・サインとして保存。",
+      "source_ids": [
+        "public_general_batch7_20260705"
+      ],
+      "mapping": {
+        "status": "candidate",
+        "candidate_finding_code": "finding:appendiceal_mucocele_specific_sign",
+        "candidate_anatomy": {
+          "body_region": "gastrointestinal",
+          "organ": "appendix",
+          "subregion": "appendiceal_wall",
+          "laterality": "unknown"
+        },
+        "candidate_target": "named_sign",
+        "notes": "Phase 1 raw finding"
+      },
+      "review_status": "needs_mapping"
+    }
+  ],
+  "evidence": {
+    "summary": "NCBI Bookshelf、ACR Appropriateness Criteria、RadiologyInfo、PMC open-access review などの公開情報を参照。",
+    "claim_map": [
+      {
+        "finding_ids": [
+          "appendiceal_mucocele_f001"
+        ],
+        "source_ids": [
+          "public_general_batch7_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "appendiceal_mucocele_f002"
+        ],
+        "source_ids": [
+          "public_general_batch7_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "appendiceal_mucocele_f003"
+        ],
+        "source_ids": [
+          "public_general_batch7_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "appendiceal_mucocele_f004"
+        ],
+        "source_ids": [
+          "public_general_batch7_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "appendiceal_mucocele_f005"
+        ],
+        "source_ids": [
+          "public_general_batch7_20260705"
+        ],
+        "support": "public_source_summary"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "public_general_batch7_20260705",
+      "type": "public_source_packet",
+      "title": "Public cross-sectional imaging source packet for whole-body Phase 1 draft batch 7",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, ACR Appropriateness Criteria, RadiologyInfo, and open-access PMC reviews where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "confidence": "medium",
+    "notes": "公開情報に基づく初期整理。"
+  },
+  "curation": {
+    "batch": "general_batch7",
+    "generated_by": "curate-general-drafts-batch7.js"
+  },
+  "provenance": {
+    "source_ids": [
+      "public_general_batch7_20260705"
+    ],
+    "generated_at": "2026-07-05T07:00:37.167Z"
+  },
+  "updated_at": "2026-07-05T07:00:37.167Z",
+  "content_hash": "55b4997d21061d78280b2adc4d0f1c4fafdcaa1d03b54a7a75ccdc243f2cffc5"
+}

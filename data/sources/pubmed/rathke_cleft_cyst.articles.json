@@ -1,0 +1,38 @@
+{
+  "disease_id": "rathke_cleft_cyst",
+  "disease_name": {
+    "ja": "ラトケ嚢胞",
+    "en": "Rathke cleft cyst"
+  },
+  "query": "\"Rathke cleft cyst\" AND (MRI OR CT OR imaging)",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "36270609",
+      "title": "Pituitary Incidentalomas: Best Practices and Looking Ahead.",
+      "journal": "Endocrine practice : official journal of the American College of Endocrinology and the American Association of Clinical Endocrinologists",
+      "year": "2023",
+      "doi": "10.1016/j.eprac.2022.10.004",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36270609/",
+      "abstract": ""
+    },
+    {
+      "pmid": "36210492",
+      "title": "Primary Intrasellar Amyloidoma.",
+      "journal": "The Journal of craniofacial surgery",
+      "year": "2023",
+      "doi": "10.1097/SCS.0000000000008811",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36210492/",
+      "abstract": ""
+    },
+    {
+      "pmid": "25614942",
+      "title": "Parasellar xanthogranulomas.",
+      "journal": "Journal of neurosurgery",
+      "year": "2015",
+      "doi": "10.3171/2014.12.JNS14542",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25614942/",
+      "abstract": ""
+    }
+  ]
+}

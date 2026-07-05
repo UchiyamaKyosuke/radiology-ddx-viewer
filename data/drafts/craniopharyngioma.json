@@ -1,0 +1,479 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "craniopharyngioma",
+  "disease_name": {
+    "ja": "頭蓋咽頭腫",
+    "en": "Craniopharyngioma"
+  },
+  "disease_aliases": {
+    "ja": [
+      "頭蓋咽頭腫"
+    ],
+    "en": [
+      "Craniopharyngioma"
+    ]
+  },
+  "clinical": {
+    "overview": "鞍上部に発生する上皮性腫瘍。嚢胞・充実成分・石灰化の組み合わせが典型で、小児のadamantinomatous型では石灰化が目立つ。",
+    "treatment": "手術、放射線治療、嚢胞治療などを病変範囲と内分泌・視機能リスクに応じて選択する。",
+    "epidemiology": "小児と成人に二峰性。鞍上部嚢胞性腫瘤の重要な鑑別。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 5,
+      "typical_max": 70,
+      "peak_decade": "小児と成人に二峰性",
+      "summary": "小児と成人に二峰性分布を示す。"
+    }
+  },
+  "keywords": [
+    "suprasellar",
+    "calcification",
+    "cystic-solid",
+    "machine oil cyst"
+  ],
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 2,
+    "basis": "epidemiology",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "suprasellar_cystic_solid_mass"
+    },
+    "summary": "鞍上部嚢胞性充実性腫瘤では重要。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "頭蓋咽頭腫は鞍上部嚢胞充実性腫瘤、石灰化、嚢胞内容をCTで評価する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "craniopharyngioma_ct_nc_001",
+              "finding_code": "finding:calcification_present",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "suprasellar",
+                "laterality": "unknown"
+              },
+              "target": "calcified_component",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "鞍上部病変内石灰化を伴うことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:calcification_present",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "craniopharyngioma_ct_nc_002",
+              "finding_code": "finding:sellar_suprasellar_mass",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "pituitary",
+                "subregion": "suprasellar",
+                "laterality": "unknown"
+              },
+              "target": "sellar_mass",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "鞍上部中心の嚢胞性充実性腫瘤として見える。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:sellar_suprasellar_mass",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "craniopharyngioma_ct_non_contrast_calcification_present_01",
+              "finding_code": "finding:calcification_present",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "CTで石灰化を伴うことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは鞍上部嚢胞充実性腫瘤、T1高信号嚢胞、造影充実成分、水頭症を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "craniopharyngioma_mri_t1_001",
+              "finding_code": "finding:t1_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "suprasellar",
+                "laterality": "unknown"
+              },
+              "target": "cyst_content",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "蛋白濃度やコレステロールに富む嚢胞内容がT1高信号を示すことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:t1_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "craniopharyngioma_mri_t1wi_t1_hyperintensity_01",
+              "finding_code": "finding:t1_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "嚢胞内容がT1高信号を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "craniopharyngioma_mri_t2_001",
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "suprasellar",
+                "laterality": "unknown"
+              },
+              "target": "cystic_component",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "嚢胞成分はT2高信号を示すことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:t2_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "craniopharyngioma_mri_t2wi_hydrocephalus_01",
+              "finding_code": "finding:hydrocephalus",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "第三脳室圧排により水頭症を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "craniopharyngioma_mri_ce_001",
+              "finding_code": "finding:enhancing_solid_component",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "suprasellar",
+                "laterality": "unknown"
+              },
+              "target": "solid_component",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "嚢胞壁や充実成分に造影効果を伴う。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:enhancing_solid_component",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "craniopharyngioma_mri_contrast_enhanced_t1wi_sellar_suprasellar_mass_01",
+              "finding_code": "finding:sellar_suprasellar_mass",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "鞍上部優位の腫瘤として見える。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "craniopharyngioma_mri_contrast_enhanced_t1wi_enhancing_solid_component_01",
+              "finding_code": "finding:enhancing_solid_component",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "造影される充実成分を伴う。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 31699993, 33040852, 32389269）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "craniopharyngioma_ct_nc_001",
+          "craniopharyngioma_ct_nc_002",
+          "craniopharyngioma_mri_t1_001",
+          "craniopharyngioma_mri_t2_001",
+          "craniopharyngioma_mri_ce_001"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_31699993",
+          "pmid_33040852",
+          "pmid_32389269"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "craniopharyngioma_mri_contrast_enhanced_t1wi_sellar_suprasellar_mass_01",
+          "craniopharyngioma_ct_non_contrast_calcification_present_01",
+          "craniopharyngioma_mri_t1wi_t1_hyperintensity_01",
+          "craniopharyngioma_mri_contrast_enhanced_t1wi_enhancing_solid_component_01",
+          "craniopharyngioma_mri_t2wi_hydrocephalus_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_31699993",
+      "type": "journal_article",
+      "title": "Craniopharyngioma.",
+      "authors": [],
+      "journal": "Nature reviews. Disease primers",
+      "year": "2020",
+      "pmid": "31699993",
+      "doi": "10.1038/s41572-019-0125-9",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31699993/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_33040852",
+      "type": "journal_article",
+      "title": "Neuroimaging of the Pituitary Gland: Practical Anatomy and Pathology.",
+      "authors": [],
+      "journal": "Radiologic clinics of North America",
+      "year": "2020",
+      "pmid": "33040852",
+      "doi": "10.1016/j.rcl.2020.07.009",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33040852/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_32389269",
+      "type": "journal_article",
+      "title": "Sellar Tumors.",
+      "authors": [],
+      "journal": "Surgical pathology clinics",
+      "year": "2021",
+      "pmid": "32389269",
+      "doi": "10.1016/j.path.2020.02.006",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32389269/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": [
+    {
+      "raw_finding_id": "craniopharyngioma_raw_keyword_machine_oil_cyst",
+      "modality_text": "MRI",
+      "acquisition_text": "",
+      "anatomy_text": "",
+      "target_text": "",
+      "finding_text": "キーワード/所見として \"machine oil cyst\" を保持。",
+      "interpretation": "辞書対応済み構造化欄から漏れる可能性があるため、Phase1自由記載として保存。",
+      "source_ids": [
+        "public_raw_findings_audit_20260705"
+      ],
+      "mapping": {
+        "status": "unmapped",
+        "candidate_finding_code": "finding:machine_oil_cyst",
+        "candidate_acquisition_code": "",
+        "candidate_target": "",
+        "notes": "Added during raw_findings audit to preserve information that may be lost by dictionary-only structured fields."
+      },
+      "review_status": "needs_mapping"
+    }
+  ]
+}

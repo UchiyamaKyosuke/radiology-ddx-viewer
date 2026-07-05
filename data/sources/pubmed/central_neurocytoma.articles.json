@@ -1,0 +1,38 @@
+{
+  "disease_id": "central_neurocytoma",
+  "disease_name": {
+    "ja": "中枢性神経細胞腫",
+    "en": "Central neurocytoma"
+  },
+  "query": "\"central neurocytoma\" AND (MRI OR CT OR imaging)",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "27664193",
+      "title": "Pediatric Central Neurocytoma.",
+      "journal": "Journal of child neurology",
+      "year": "2018",
+      "doi": "10.1177/0883073816668994",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27664193/",
+      "abstract": ""
+    },
+    {
+      "pmid": "22537657",
+      "title": "Central neurocytoma.",
+      "journal": "Journal of clinical neuroscience : official journal of the Neurosurgical Society of Australasia",
+      "year": "2012",
+      "doi": "10.1016/j.jocn.2011.06.038",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22537657/",
+      "abstract": ""
+    },
+    {
+      "pmid": "25432179",
+      "title": "Imaging of central neurocytomas.",
+      "journal": "Neurosurgery clinics of North America",
+      "year": "2015",
+      "doi": "10.1016/j.nec.2014.09.012",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25432179/",
+      "abstract": ""
+    }
+  ]
+}

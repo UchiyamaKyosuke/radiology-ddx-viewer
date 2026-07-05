@@ -1,0 +1,439 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "dysembryoplastic_neuroepithelial_tumor",
+  "disease_name": {
+    "ja": "胚芽異形成性神経上皮腫瘍",
+    "en": "Dysembryoplastic neuroepithelial tumor"
+  },
+  "disease_aliases": {
+    "ja": [
+      "DNET",
+      "DNT"
+    ],
+    "en": [
+      "DNET",
+      "DNT"
+    ]
+  },
+  "clinical": {
+    "overview": "小児〜若年成人の難治性てんかんに関連する皮質性腫瘍。側頭葉皮質の多結節状/嚢胞様T2高信号病変が典型。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 5,
+      "typical_max": 30,
+      "peak_decade": "小児〜若年成人",
+      "summary": "若年のてんかん関連病変で重要。"
+    }
+  },
+  "keywords": [
+    "epilepsy",
+    "bubbly",
+    "cortical"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "epilepsy_associated_cortical_tumor"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "DNETはCTで皮質性低吸収病変や骨リモデリングを示すことがある。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "dysembryoplastic_neuroepithelial_tumor_ct_001",
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "temporal_lobe",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "皮質の低吸収病変として見えることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_hypoattenuation",
+                "alternatives": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは皮質性多房性/泡沫状T2高信号、FLAIR rim、造影乏しい所見を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "dysembryoplastic_neuroepithelial_tumor_mri_002",
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "temporal_lobe",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "bubbly"
+              ],
+              "finding_text": "皮質性の嚢胞様T2高信号病変。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:t2_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "dysembryoplastic_neuroepithelial_tumor_mri_t2wi_t2_hyperintensity_01",
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "T2WIで多房性/泡沫状高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": [
+                "bubbly"
+              ]
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "dysembryoplastic_neuroepithelial_tumor_mri_003",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "temporal_lobe",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "FLAIR高信号を示すが、嚢胞様成分は抑制されることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:flair_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "dysembryoplastic_neuroepithelial_tumor_mri_flair_cortical_subcortical_lesion_01",
+              "finding_code": "finding:cortical_subcortical_lesion",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "皮質〜皮質下病変として見える。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "dysembryoplastic_neuroepithelial_tumor_mri_004",
+              "finding_code": "finding:enhancement_absent",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "temporal_lobe",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "造影効果は乏しいことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:enhancement_absent",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "dysembryoplastic_neuroepithelial_tumor_mri_contrast_enhanced_t1wi_enhancement_absent_01",
+              "finding_code": "finding:enhancement_absent",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "造影効果は乏しいことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_id": "dysembryoplastic_neuroepithelial_tumor_mri_dwi_diffusion_restriction_absent_01",
+              "finding_code": "finding:diffusion_restriction_absent",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "強い拡散制限は通常目立たない。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 37872430, 39169587, 36590378）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "dysembryoplastic_neuroepithelial_tumor_ct_001",
+          "dysembryoplastic_neuroepithelial_tumor_mri_002",
+          "dysembryoplastic_neuroepithelial_tumor_mri_003",
+          "dysembryoplastic_neuroepithelial_tumor_mri_004"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_37872430",
+          "pmid_39169587",
+          "pmid_36590378"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "dysembryoplastic_neuroepithelial_tumor_mri_flair_cortical_subcortical_lesion_01",
+          "dysembryoplastic_neuroepithelial_tumor_mri_t2wi_t2_hyperintensity_01",
+          "dysembryoplastic_neuroepithelial_tumor_mri_contrast_enhanced_t1wi_enhancement_absent_01",
+          "dysembryoplastic_neuroepithelial_tumor_mri_dwi_diffusion_restriction_absent_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_37872430",
+      "type": "journal_article",
+      "title": "An imaging review of the hippocampus and its common pathologies.",
+      "authors": [],
+      "journal": "Journal of neuroimaging : official journal of the American Society of Neuroimaging",
+      "year": "2024",
+      "pmid": "37872430",
+      "doi": "10.1111/jon.13165",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37872430/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_39169587",
+      "type": "journal_article",
+      "title": "Disseminated ependymal dysembryoplastic neuroepithelial tumor: a case report and literature review.",
+      "authors": [],
+      "journal": "Zhurnal voprosy neirokhirurgii imeni N. N. Burdenko",
+      "year": "2024",
+      "pmid": "39169587",
+      "doi": "10.17116/neiro20248804192",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39169587/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_36590378",
+      "type": "journal_article",
+      "title": "Association of CT and MRI Manifestations with Pathology in Dysembryoplastic Neuroepithelial Tumors.",
+      "authors": [],
+      "journal": "Journal of the Belgian Society of Radiology",
+      "year": "2023",
+      "pmid": "36590378",
+      "doi": "10.5334/jbsr.2940",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36590378/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": [
+    {
+      "raw_finding_id": "dysembryoplastic_neuroepithelial_tumor_raw_keyword_epilepsy",
+      "modality_text": "MRI",
+      "acquisition_text": "",
+      "anatomy_text": "",
+      "target_text": "",
+      "finding_text": "キーワード/所見として \"epilepsy\" を保持。",
+      "interpretation": "辞書対応済み構造化欄から漏れる可能性があるため、Phase1自由記載として保存。",
+      "source_ids": [
+        "public_raw_findings_audit_20260705"
+      ],
+      "mapping": {
+        "status": "unmapped",
+        "candidate_finding_code": "finding:epilepsy",
+        "candidate_acquisition_code": "",
+        "candidate_target": "",
+        "notes": "Added during raw_findings audit to preserve information that may be lost by dictionary-only structured fields."
+      },
+      "review_status": "needs_mapping"
+    }
+  ]
+}

@@ -1,0 +1,349 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "sturge_weber_syndrome",
+  "disease_name": {
+    "ja": "Sturge-Weber症候群",
+    "en": "Sturge-Weber syndrome"
+  },
+  "disease_aliases": {
+    "ja": [
+      "スタージ・ウェーバー症候群"
+    ],
+    "en": [
+      "Sturge-Weber syndrome"
+    ]
+  },
+  "clinical": {
+    "overview": "顔面毛細血管奇形に伴う軟膜血管腫症。皮質石灰化、脳萎縮、軟髄膜造影を示す。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 18,
+      "peak_decade": "小児",
+      "summary": "小児で重要。"
+    }
+  },
+  "keywords": [
+    "tram-track calcification",
+    "leptomeningeal angiomatosis"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "neurocutaneous_syndrome"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "Sturge-Weber症候群はCTでtram-track状皮質石灰化と萎縮を確認する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "sturge_weber_syndrome_ct_001",
+              "finding_code": "finding:calcification_present",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "calcified_component",
+              "modifiers": {},
+              "keywords": [
+                "tram-track"
+              ],
+              "finding_text": "皮質下にtram-track様石灰化を認める。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:calcification_present",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "sturge_weber_syndrome_ct_non_contrast_calcification_present_01",
+              "finding_code": "finding:calcification_present",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "CTで皮質石灰化を認める。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": [
+                "tram-track calcification"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは軟髄膜造影、皮質萎縮、白質変化、脈絡叢拡大を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "sturge_weber_syndrome_mri_002",
+              "finding_code": "finding:leptomeningeal_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "meninges",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "患側大脳半球に軟髄膜造影を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:leptomeningeal_enhancement",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "sturge_weber_syndrome_mri_contrast_enhanced_t1wi_leptomeningeal_enhancement_01",
+              "finding_code": "finding:leptomeningeal_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "造影T1WIで軟髄膜造影を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "sturge_weber_syndrome_mri_003",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "white_matter",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "患側白質変化や萎縮を伴う。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:flair_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "sturge_weber_syndrome_mri_flair_flair_hyperintensity_01",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "慢性虚血/グリオーシスに伴うFLAIR高信号を認める。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 8456721, 36225423, 1464780）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "sturge_weber_syndrome_ct_001",
+          "sturge_weber_syndrome_mri_002",
+          "sturge_weber_syndrome_mri_003"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_8456721",
+          "pmid_36225423",
+          "pmid_1464780"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "sturge_weber_syndrome_ct_non_contrast_calcification_present_01",
+          "sturge_weber_syndrome_mri_contrast_enhanced_t1wi_leptomeningeal_enhancement_01",
+          "sturge_weber_syndrome_mri_flair_flair_hyperintensity_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_8456721",
+      "type": "journal_article",
+      "title": "Sturge-Weber syndrome: cranial MR imaging with Gd-DTPA.",
+      "authors": [],
+      "journal": "AJNR. American journal of neuroradiology",
+      "year": "1993",
+      "pmid": "8456721",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8456721/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_36225423",
+      "type": "journal_article",
+      "title": "Sturge-Weber Syndrome: A Rare Case Report.",
+      "authors": [],
+      "journal": "Cureus",
+      "year": "2023",
+      "pmid": "36225423",
+      "doi": "10.7759/cureus.28786",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36225423/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_1464780",
+      "type": "journal_article",
+      "title": "MRI in Sturge-Weber syndrome.",
+      "authors": [],
+      "journal": "Journal of neuroradiology = Journal de neuroradiologie",
+      "year": "1993",
+      "pmid": "1464780",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1464780/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": []
+}

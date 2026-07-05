@@ -1,0 +1,38 @@
+{
+  "disease_id": "sturge_weber_syndrome",
+  "disease_name": {
+    "ja": "Sturge-Weber症候群",
+    "en": "Sturge-Weber syndrome"
+  },
+  "query": "Sturge-Weber syndrome brain MRI CT imaging",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "8456721",
+      "title": "Sturge-Weber syndrome: cranial MR imaging with Gd-DTPA.",
+      "journal": "AJNR. American journal of neuroradiology",
+      "year": "1993",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8456721/",
+      "abstract": ""
+    },
+    {
+      "pmid": "36225423",
+      "title": "Sturge-Weber Syndrome: A Rare Case Report.",
+      "journal": "Cureus",
+      "year": "2023",
+      "doi": "10.7759/cureus.28786",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36225423/",
+      "abstract": ""
+    },
+    {
+      "pmid": "1464780",
+      "title": "MRI in Sturge-Weber syndrome.",
+      "journal": "Journal of neuroradiology = Journal de neuroradiologie",
+      "year": "1993",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1464780/",
+      "abstract": ""
+    }
+  ]
+}

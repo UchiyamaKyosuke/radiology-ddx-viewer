@@ -1,0 +1,38 @@
+{
+  "disease_id": "reversible_cerebral_vasoconstriction_syndrome",
+  "disease_name": {
+    "ja": "可逆性脳血管攣縮症候群",
+    "en": "Reversible cerebral vasoconstriction syndrome"
+  },
+  "query": "reversible cerebral vasoconstriction syndrome MRI MRA imaging",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "19811796",
+      "title": "[Reversible cerebral vasoconstriction syndrome].",
+      "journal": "Revue neurologique",
+      "year": "2010",
+      "doi": "10.1016/j.neurol.2009.07.019",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19811796/",
+      "abstract": ""
+    },
+    {
+      "pmid": "39462574",
+      "title": "Reversible Cerebral Vasoconstriction Syndrome without Headache.",
+      "journal": "The journal of medical investigation : JMI",
+      "year": "2024",
+      "doi": "10.2152/jmi.71.323",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39462574/",
+      "abstract": ""
+    },
+    {
+      "pmid": "41195281",
+      "title": "Reversible cerebral vasoconstriction syndrome-related headache and delayed cerebral infarction: a mini review.",
+      "journal": "Frontiers in neuroscience",
+      "year": "2025",
+      "doi": "10.3389/fnins.2025.1698056",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41195281/",
+      "abstract": ""
+    }
+  ]
+}

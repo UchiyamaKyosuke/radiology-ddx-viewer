@@ -1,0 +1,52 @@
+{
+  "disease_id": "spontaneous_intracranial_hypotension",
+  "disease_name": {
+    "ja": "特発性低髄液圧症候群",
+    "en": "Spontaneous intracranial hypotension"
+  },
+  "disease_aliases": {
+    "ja": [
+      "SIH",
+      "低髄液圧症候群"
+    ],
+    "en": [
+      "SIH"
+    ]
+  },
+  "clinical": {
+    "overview": "脊髄髄液漏により起立性頭痛を来す。びまん性硬膜造影、脳下垂、硬膜下液体貯留、静脈洞拡張を示す。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 80,
+      "peak_decade": "成人",
+      "summary": "成人で重要。"
+    }
+  },
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "orthostatic_headache_pachymeningeal_enhancement"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

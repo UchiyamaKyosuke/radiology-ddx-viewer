@@ -1,0 +1,56 @@
+{
+  "disease_id": "subdural_hematoma",
+  "disease_name": {
+    "ja": "硬膜下血腫",
+    "en": "Subdural hematoma"
+  },
+  "query": "subdural hematoma[Title/Abstract] AND (CT[Title/Abstract] OR MRI[Title/Abstract] OR imaging[Title/Abstract])",
+  "fetched_at": "2026-06-24T06:25:21.989Z",
+  "articles": [
+    {
+      "pmid": "31786544",
+      "title": "Neuroendovascular surgery.",
+      "journal": "Journal of neurosurgery",
+      "year": "2020",
+      "doi": "10.3171/2019.8.JNS182678",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31786544/",
+      "abstract": "Neuroendovascular surgery and interventional neuroradiology both describe the catheter-based (most often) endovascular diagnosis and treatment of vascular lesions affecting the brain and spinal cord. This article traces the evolution of these techniques and their current role as the dominant and frequently standard approach for many of these conditions. The article also discusses the important changes that have been brought to bear on open cerebrovascular neurosurgery by neuroendovascular surgery and their effects on resident and fellow training and describes new concepts for clinical care."
+    },
+    {
+      "pmid": "27695533",
+      "title": "Chronic subdural hematoma.",
+      "journal": "Asian journal of neurosurgery",
+      "year": "2022",
+      "doi": "10.4103/1793-5482.145102",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27695533/",
+      "abstract": "Chronic subdural hematoma (CSDH) is one of the most common neurosurgical conditions. There is lack of uniformity in the treatment of CSDH amongst surgeons in terms of various treatment strategies. Clinical presentation may vary from no symptoms to unconsciousness. CSDH is usually diagnosed by contrast-enhanced computed tomography scan. Magnetic resonance imaging (MRI) scan is more sensitive in the diagnosis of bilateral isodense CSDH, multiple loculations, intrahematoma membranes, fresh bleeding, hemolysis, and the size of capsule. Contrast-enhanced CT or MRI could detect associated primary or metastatic dural diseases. Although definite history of trauma could be obtained in a majority of cases, some cases may be secondary to coagulation defect, intracranial hypotension, use of anticoagulants and antiplatelet drugs, etc., Recurrent bleeding, increased exudates from outer membrane, and cerebrospinal fluid entrapment have been implicated in the enlargement of CSDH. Burr-hole evacuation is the treatment of choice for an uncomplicated CSDH. Most of the recent trials favor the use of drain to reduce recurrence rate. Craniotomy and twist drill craniostomy also play a role in the management. Dural biopsy should be taken, especially in recurrence and thick outer membrane. Nonsurgical management is reserved for asymptomatic or high operative risk patients. The steroids and angiotensin converting enzyme inhibitors may also play a role in the management. Single management strategy is not appropriate for all the cases of CSDH. Better understanding of the nature of the pathology, rational selection of an ideal treatment strategy for an individual patient, and identification of the merits and limitations of different surgical techniques could help in improving the prognosis."
+    },
+    {
+      "pmid": "38725642",
+      "title": "Advances in chronic subdural hematoma and membrane imaging.",
+      "journal": "Frontiers in neurology",
+      "year": "2024",
+      "doi": "10.3389/fneur.2024.1366238",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38725642/",
+      "abstract": "Chronic subdural hematoma (cSDH) is projected to become the most common cranial neurosurgical disease by 2030. Despite medical and surgical management, recurrence rates remain high. Recently, middle meningeal artery embolization (MMAE) has emerged as a promising treatment; however, determinants of disease recurrence are not well understood, and developing novel radiographic biomarkers to assess hematomas and cSDH membranes remains an active area of research. In this narrative review, we summarize the current state-of-the-art for subdural hematoma and membrane imaging and discuss the potential role of MR and dual-energy CT imaging in predicting cSDH recurrence, surgical planning, and selecting patients for embolization treatment."
+    },
+    {
+      "pmid": "36381458",
+      "title": "Artery of Adamkiewicz.",
+      "journal": "Korean journal of neurotrauma",
+      "year": "2022",
+      "doi": "10.13004/kjnt.2022.18.e60",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36381458/",
+      "abstract": "This article reviews the case of a 65-year-old patient with unstable L1 fracture after trauma. The fracture was treated via balloon kyphoplasty, shortly after which the patient developed shortness of breath and severe headache. Subsequent computed tomography (CT) of the head revealed subarachnoid hemorrhage. CT angiography did not reveal any intracranial aneurysms or arteriovenous malformations. A massive spinal subdural hematoma, which caused the patient to develop right leg paresis and hip joint weakness with grade 2-3, was found during magnetic resonance imaging (MRI). The hematoma was removed using multi-stage laminectomy Th5-L3. A follow-up MRI showed no pathological findings. Due to the unusual findings, spinal angiography was performed, revealing the artery of Adamkiewicz (A. radicularis magna, AKA) on the L1 level on the right side. Control CT showed a suboptimal insertion of the needle into the right pedicle, which caused the injury of the artery. AKA is present in the majority of the population, and surgical attention should be paid to avoid injury. Surgeons operating on the thoracolumbar spinal cord should have a thorough understanding of the anatomical features and surgical implications of this artery."
+    },
+    {
+      "pmid": "36003292",
+      "title": "MRI appearance of chronic subdural hematoma.",
+      "journal": "Frontiers in neurology",
+      "year": "2022",
+      "doi": "10.3389/fneur.2022.872664",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36003292/",
+      "abstract": "We aimed to describe the magnetic resonance imaging (MRI) characteristics of chronic subdural hematoma (cSDH) and to ascribe MRI patterns.\nA total of 20 patients having 27 subdural hematomas underwent contrast-enhanced (CE) MRI of the brain at our institution between April 2019 and May 2021. The images were independently evaluated by two experienced neuroradiologists with regard to imaging characteristics on T1w, T2w, T2 * -GRE, FLAIR, diffusion-weighted magnetic resonance imaging (DWI), and CE images.\nThe signal characteristics of cSDH on T1- and T2-weighted images were rather heterogeneous. The majority of hematomas (74%) had internal septations. Surprisingly, contrast enhancement along the outer membrane adjacent to the cranium was noticed in all hematomas. There was also contrast enhancement along the inner membrane adjacent to the brain in more than one-third of the hematomas (37%). In approximately two-thirds of the cSDH (62%), there was a mass-like enhancement of the hematoma. Most hematomas (89%) were partially hypointense on T2 * -GRE and/or susceptibility-weighted imaging (SWI). Restricted diffusion was detected in approximately one-third of the hematomas (33%).\nConsistent contrast enhancement along the outer membrane, triangular-shaped contrast enhancement at the borders of the cSDH, and infrequent enhancement of the inner membrane may help to distinguish cSDH from other entities such as empyema and tumors. Mass-like enhancement may refer to non-solid hematomas and could be an indicator for hematoma growth and a possible surrogate for successful endovascular embolization. Restricted diffusion in a subdural mass is not specific for empyema but may also be found in cSDH."
+    }
+  ]
+}

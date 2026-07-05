@@ -1,0 +1,51 @@
+{
+  "disease_id": "chordoma",
+  "disease_name": {
+    "ja": "脊索腫",
+    "en": "Chordoma"
+  },
+  "disease_aliases": {
+    "ja": [
+      "斜台脊索腫"
+    ],
+    "en": [
+      "Clival chordoma"
+    ]
+  },
+  "clinical": {
+    "overview": "脊索遺残由来の頭蓋底腫瘍。斜台正中に発生し、骨破壊、T2著明高信号、分葉状造影腫瘤を示す。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 80,
+      "peak_decade": "成人",
+      "summary": "成人で重要。"
+    }
+  },
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "clival_mass"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

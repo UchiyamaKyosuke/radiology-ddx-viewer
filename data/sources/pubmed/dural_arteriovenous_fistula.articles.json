@@ -1,0 +1,38 @@
+{
+  "disease_id": "dural_arteriovenous_fistula",
+  "disease_name": {
+    "ja": "硬膜動静脈瘻",
+    "en": "Dural arteriovenous fistula"
+  },
+  "query": "dural arteriovenous fistula MRI MRA imaging",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "25465120",
+      "title": "Intracranial arteriovenous malformations.",
+      "journal": "Diagnostic and interventional imaging",
+      "year": "2015",
+      "doi": "10.1016/j.diii.2014.10.004",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25465120/",
+      "abstract": ""
+    },
+    {
+      "pmid": "26508408",
+      "title": "Spinal Dural Arteriovenous Fistula: A Review.",
+      "journal": "Advances and technical standards in neurosurgery",
+      "year": "2016",
+      "doi": "10.1007/978-3-319-21359-0_5",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26508408/",
+      "abstract": ""
+    },
+    {
+      "pmid": "37821323",
+      "title": "Diagnosis of spinal dural arteriovenous fistula: a multimodal MRI assessment strategy.",
+      "journal": "Clinical radiology",
+      "year": "2023",
+      "doi": "10.1016/j.crad.2023.08.027",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37821323/",
+      "abstract": ""
+    }
+  ]
+}

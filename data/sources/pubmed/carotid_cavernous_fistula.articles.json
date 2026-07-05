@@ -1,0 +1,38 @@
+{
+  "disease_id": "carotid_cavernous_fistula",
+  "disease_name": {
+    "ja": "頚動脈海綿静脈洞瘻",
+    "en": "Carotid-cavernous fistula"
+  },
+  "query": "carotid cavernous fistula MRI CT imaging",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "38351202",
+      "title": "[Carotid-cavernous fistulas].",
+      "journal": "Radiologie (Heidelberg, Germany)",
+      "year": "2024",
+      "doi": "10.1007/s00117-024-01269-1",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38351202/",
+      "abstract": ""
+    },
+    {
+      "pmid": "41224380",
+      "title": "Ophthalmological emergencies.",
+      "journal": "Radiologia",
+      "year": "2025",
+      "doi": "10.1016/j.rxeng.2025.101602",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41224380/",
+      "abstract": ""
+    },
+    {
+      "pmid": "17442161",
+      "title": "[Imaging diagnosis of carotid-cavernous fistula].",
+      "journal": "[Zhonghua yan ke za zhi] Chinese journal of ophthalmology",
+      "year": "2010",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17442161/",
+      "abstract": ""
+    }
+  ]
+}

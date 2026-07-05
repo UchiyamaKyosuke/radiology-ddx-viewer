@@ -1,0 +1,38 @@
+{
+  "disease_id": "nf1_optic_pathway_glioma",
+  "disease_name": {
+    "ja": "NF1関連視路神経膠腫",
+    "en": "NF1-associated optic pathway glioma"
+  },
+  "query": "NF1 optic pathway glioma MRI imaging",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "41314279",
+      "title": "Prevalence of optic pathway glioma in NF1: a systematic review and meta-analysis focused on MRI surveillance.",
+      "journal": "Journal of AAPOS : the official publication of the American Association for Pediatric Ophthalmology and Strabismus",
+      "year": "2025",
+      "doi": "10.1016/j.jaapos.2025.104701",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41314279/",
+      "abstract": ""
+    },
+    {
+      "pmid": "28257299",
+      "title": "Optic pathway glioma of childhood.",
+      "journal": "Current opinion in ophthalmology",
+      "year": "2017",
+      "doi": "10.1097/ICU.0000000000000370",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28257299/",
+      "abstract": ""
+    },
+    {
+      "pmid": "32628746",
+      "title": "NF1 optic pathway glioma: analyzing risk factors for visual outcome and indications to treat.",
+      "journal": "Neuro-oncology",
+      "year": "2021",
+      "doi": "10.1093/neuonc/noaa153",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32628746/",
+      "abstract": ""
+    }
+  ]
+}

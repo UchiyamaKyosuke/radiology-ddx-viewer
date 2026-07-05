@@ -1,0 +1,302 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "epidural_hematoma",
+  "disease_name": {
+    "ja": "硬膜外血腫",
+    "en": "Epidural hematoma"
+  },
+  "disease_aliases": {
+    "ja": [
+      "硬膜外血腫"
+    ],
+    "en": [
+      "Epidural hematoma"
+    ]
+  },
+  "clinical": {
+    "overview": "頭部外傷に伴う硬膜外腔の血腫。中硬膜動脈損傷が典型。",
+    "treatment": "血腫量、神経症状、mass effectに応じて緊急開頭血腫除去を検討する。",
+    "epidemiology": "若年〜成人の頭部外傷で重要。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "male",
+      "predilection": "male_predominant",
+      "summary": "外傷背景のため男性に多い傾向。"
+    },
+    "age": {
+      "typical_min": 5,
+      "typical_max": 70,
+      "peak_decade": "若年〜中年",
+      "summary": "5-70歳に多い。"
+    }
+  },
+  "keywords": [
+    "biconvex hematoma",
+    "lentiform"
+  ],
+  "frequency": {
+    "label": "common",
+    "prevalence_rank": 4,
+    "basis": "differential_importance",
+    "evidence_level": "public_review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "head trauma"
+    },
+    "summary": "head traumaの鑑別として重要。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "CTで頭蓋骨内板に接する両凸レンズ状高吸収血腫として評価する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:ct_hyperattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "extra_axial_space",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "非造影CTで両凸レンズ状の高吸収硬膜外血腫を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_hyperattenuation",
+                "alternatives": []
+              },
+              "finding_id": "epidural_hematoma_ct_001"
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは血腫時相に応じた信号変化、SWI blooming、mass effectを評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "SWI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:susceptibility_blooming",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "SWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "SWI/T2*で血液成分によるbloomingを示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:susceptibility_blooming",
+                "alternatives": []
+              },
+              "finding_id": "epidural_hematoma_mri_002"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T1WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:t1_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "亜急性期には血腫がT1高信号を示すことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:t1_hyperintensity",
+                "alternatives": []
+              },
+              "finding_id": "epidural_hematoma_mri_003"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:mass_effect",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "大きい血腫ではmass effectを伴う。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:mass_effect",
+                "alternatives": []
+              },
+              "finding_id": "epidural_hematoma_mri_004"
+            },
+            {
+              "finding_code": "finding:midline_shift",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "正中偏位を伴う場合は緊急性が高い。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:midline_shift",
+                "alternatives": []
+              },
+              "finding_id": "epidural_hematoma_mri_005"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMed?????????NCBI Bookshelf/StatPearls?NIH/NINDS?MedlinePlus?CDC?PMC open-access review??????",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "epidural_hematoma_ct_001",
+          "epidural_hematoma_mri_002",
+          "epidural_hematoma_mri_003",
+          "epidural_hematoma_mri_004",
+          "epidural_hematoma_mri_005"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_brain_batch4_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "public_brain_batch4_20260625",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology source packet for brain draft batch 4",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC, and open-access PMC review articles where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "Brain field Phase1 batch4 draft."
+  },
+  "curation": {
+    "auto_update_allowed": true,
+    "locked_fields": [],
+    "notes": ""
+  },
+  "provenance": {
+    "created_by": "codex_public_source_review",
+    "model": "codex",
+    "created_at": "2026-06-25T11:51:30.202Z",
+    "prompt_version": "brain_batch4_v0.1",
+    "source_query": "Epidural hematoma CT MRI imaging findings public source"
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "content_hash": "",
+  "raw_findings": []
+}

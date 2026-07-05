@@ -1,0 +1,513 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "cerebral_venous_sinus_thrombosis",
+  "disease_name": {
+    "ja": "脳静脈洞血栓症",
+    "en": "Cerebral venous sinus thrombosis"
+  },
+  "disease_aliases": {
+    "ja": [
+      "CVST",
+      "脳静脈血栓症"
+    ],
+    "en": [
+      "CVST",
+      "Cerebral venous thrombosis"
+    ]
+  },
+  "clinical": {
+    "overview": "硬膜静脈洞または脳静脈の血栓閉塞。頭痛、けいれん、出血性静脈梗塞などで発症し、MRV/CTVで静脈洞閉塞を評価する。",
+    "treatment": "抗凝固療法が基本。重症例や悪化例では血管内治療を検討することがある。基礎疾患検索も重要。",
+    "epidemiology": "若年〜中年、妊娠産褥、凝固異常、感染、脱水などで重要。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "female",
+      "predilection": "female_predominant",
+      "summary": "妊娠産褥や経口避妊薬関連を含め女性に多い傾向がある。"
+    },
+    "age": {
+      "typical_min": 15,
+      "typical_max": 60,
+      "peak_decade": "若年〜中年",
+      "summary": "若年から中年で重要。"
+    }
+  },
+  "keywords": [
+    "MRV",
+    "empty delta sign",
+    "hemorrhagic venous infarct",
+    "hyperdense sinus"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "risk_factor_present",
+      "body_region": "brain",
+      "clinical_setting": "headache_seizure_venous_infarct"
+    },
+    "summary": "頭痛・けいれん・出血性梗塞では見逃せない鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "CVSTはCTで静脈洞高吸収、静脈性梗塞/出血、造影CTでempty delta signを評価する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "cerebral_venous_sinus_thrombosis_ct_nc_001",
+              "finding_code": "finding:ct_hyperattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "dural_venous_sinus",
+                "subregion": "dural_venous_sinus",
+                "laterality": "unknown"
+              },
+              "target": "venous_sinus",
+              "modifiers": {},
+              "keywords": [
+                "hyperdense sinus"
+              ],
+              "finding_text": "急性血栓により静脈洞が高吸収に見えることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_hyperattenuation",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "cerebral_venous_sinus_thrombosis_ct_nc_002",
+              "finding_code": "finding:hemorrhage_present",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "hemorrhagic_component",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "出血性静脈梗塞を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:hemorrhage_present",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "cerebral_venous_sinus_thrombosis_ct_non_contrast_ct_hyperattenuation_01",
+              "finding_code": "finding:ct_hyperattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "非造影CTで血栓化静脈洞が高吸収を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRI/MRVでは静脈洞血栓、流入欠損、静脈性浮腫、出血、拡散制限の有無を確認する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "MRV"
+          },
+          "findings": [
+            {
+              "finding_id": "cerebral_venous_sinus_thrombosis_mri_mrv_001",
+              "finding_code": "finding:venous_sinus_thrombosis",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRV"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "dural_venous_sinus",
+                "subregion": "dural_venous_sinus",
+                "laterality": "unknown"
+              },
+              "target": "venous_sinus",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "MRVで静脈洞の血流欠損・閉塞を確認する。",
+              "typicality": "typical",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:venous_sinus_thrombosis",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "cerebral_venous_sinus_thrombosis_mri_mrv_venous_sinus_thrombosis_01",
+              "finding_code": "finding:venous_sinus_thrombosis",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRV"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "MRVで静脈洞血栓または流入欠損を確認する。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "cerebral_venous_sinus_thrombosis_mri_ce_001",
+              "finding_code": "finding:empty_delta_sign",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "dural_venous_sinus",
+                "subregion": "dural_venous_sinus",
+                "laterality": "unknown"
+              },
+              "target": "venous_sinus",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "造影で血栓周囲が増強しempty delta signを示すことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:empty_delta_sign",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "cerebral_venous_sinus_thrombosis_mri_contrast_enhanced_t1wi_empty_delta_sign_01",
+              "finding_code": "finding:empty_delta_sign",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "造影CT/MRIでempty delta signを示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": [
+                "empty delta sign"
+              ]
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "cerebral_venous_sinus_thrombosis_mri_flair_001",
+              "finding_code": "finding:vasogenic_edema",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "perilesional_edema",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "静脈性うっ滞により皮質下浮腫を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:vasogenic_edema",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "cerebral_venous_sinus_thrombosis_mri_flair_flair_hyperintensity_01",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "静脈性浮腫や静脈性梗塞がFLAIR高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "SWI"
+          },
+          "findings": [
+            {
+              "finding_id": "cerebral_venous_sinus_thrombosis_mri_swi_001",
+              "finding_code": "finding:susceptibility_blooming",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "SWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "hemorrhagic_component",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "出血性静脈梗塞や血栓に磁化率低信号を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:susceptibility_blooming",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "cerebral_venous_sinus_thrombosis_mri_swi_susceptibility_blooming_01",
+              "finding_code": "finding:susceptibility_blooming",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "SWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "静脈性出血を伴う場合、SWI/T2*でbloomingを示す。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 38428733, 31440838, 32958591, 38050259）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "cerebral_venous_sinus_thrombosis_ct_nc_001",
+          "cerebral_venous_sinus_thrombosis_ct_nc_002",
+          "cerebral_venous_sinus_thrombosis_mri_mrv_001",
+          "cerebral_venous_sinus_thrombosis_mri_ce_001",
+          "cerebral_venous_sinus_thrombosis_mri_flair_001",
+          "cerebral_venous_sinus_thrombosis_mri_swi_001"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_38428733",
+          "pmid_31440838",
+          "pmid_32958591",
+          "pmid_38050259"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "cerebral_venous_sinus_thrombosis_ct_non_contrast_ct_hyperattenuation_01",
+          "cerebral_venous_sinus_thrombosis_mri_mrv_venous_sinus_thrombosis_01",
+          "cerebral_venous_sinus_thrombosis_mri_contrast_enhanced_t1wi_empty_delta_sign_01",
+          "cerebral_venous_sinus_thrombosis_mri_flair_flair_hyperintensity_01",
+          "cerebral_venous_sinus_thrombosis_mri_swi_susceptibility_blooming_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_38428733",
+      "type": "journal_article",
+      "title": "Cerebral venous thrombosis.",
+      "authors": [],
+      "journal": "Revista clinica espanola",
+      "year": "2024",
+      "pmid": "38428733",
+      "doi": "10.1016/j.rceng.2024.02.015",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38428733/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_31440838",
+      "type": "journal_article",
+      "title": "Cerebral Venous Thrombosis: an Update.",
+      "authors": [],
+      "journal": "Current neurology and neuroscience reports",
+      "year": "2020",
+      "pmid": "31440838",
+      "doi": "10.1007/s11910-019-0988-x",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31440838/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_32958591",
+      "type": "journal_article",
+      "title": "Cerebral venous thrombosis: a practical guide.",
+      "authors": [],
+      "journal": "Practical neurology",
+      "year": "2021",
+      "pmid": "32958591",
+      "doi": "10.1136/practneurol-2019-002415",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32958591/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_38050259",
+      "type": "journal_article",
+      "title": "Pathophysiology, diagnosis and management of cerebral venous thrombosis: A comprehensive review.",
+      "authors": [],
+      "journal": "Medicine",
+      "year": "2023",
+      "pmid": "38050259",
+      "doi": "10.1097/MD.0000000000036366",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38050259/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": []
+}

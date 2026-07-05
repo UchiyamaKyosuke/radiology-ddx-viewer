@@ -1,0 +1,322 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "kernicterus",
+  "disease_name": {
+    "ja": "核黄疸",
+    "en": "Kernicterus"
+  },
+  "disease_aliases": {
+    "ja": [
+      "核黄疸"
+    ],
+    "en": [
+      "Kernicterus"
+    ]
+  },
+  "clinical": {
+    "overview": "核黄疸 (Kernicterus) は bilirubin encephalopathy の文脈で鑑別に挙がる脳疾患。臨床像とCT/MRI所見の分布を組み合わせて評価する。",
+    "treatment": "治療方針は病型、重症度、基礎疾患、病理・検査結果により異なるため、ここでは画像診断上の鑑別整理を目的とする。",
+    "epidemiology": "頻度と好発年齢は代表的な傾向として記載し、個別症例では臨床背景と検査所見を合わせて判断する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "臨床背景により変動するが、代表的な疫学傾向を記載。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 5,
+      "peak_decade": "新生児",
+      "summary": "代表的な発症年齢帯を記載。"
+    }
+  },
+  "keywords": [
+    "globus pallidus"
+  ],
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 2,
+    "basis": "differential_importance",
+    "evidence_level": "public_review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "bilirubin encephalopathy"
+    },
+    "summary": "bilirubin encephalopathy の鑑別として重要。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "核黄疸 のCTでは密度変化、石灰化、出血、mass effect、水頭症などを確認する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "globus_pallidus",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "核黄疸 はCTで対称性低吸収や浮腫として見えることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.85,
+                "matched_concept_id": "finding:ct_hypoattenuation",
+                "alternatives": []
+              },
+              "finding_id": "kernicterus_ct_001"
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "核黄疸 のMRIではT1/T2/FLAIR、DWI/ADC、造影、SWI、灌流、MRSを組み合わせて病変の性状と分布を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:basal_ganglia_involvement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "basal_ganglia",
+                "subregion": "basal_ganglia",
+                "laterality": "unknown"
+              },
+              "target": "deep_gray_matter",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "核黄疸 では基底核や深部灰白質病変が重要な手掛かりとなる。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.85,
+                "matched_concept_id": "finding:basal_ganglia_involvement",
+                "alternatives": []
+              },
+              "finding_id": "kernicterus_mri_002"
+            },
+            {
+              "finding_code": "finding:bilateral_symmetric_white_matter_lesions",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "symmetric_white_matter",
+                "laterality": "unknown"
+              },
+              "target": "white_matter",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "核黄疸 では対称性白質病変を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.85,
+                "matched_concept_id": "finding:bilateral_symmetric_white_matter_lesions",
+                "alternatives": []
+              },
+              "finding_id": "kernicterus_mri_003"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:diffusion_restriction_present",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "globus_pallidus",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "核黄疸 の急性期にはDWI高信号を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.85,
+                "matched_concept_id": "finding:diffusion_restriction_present",
+                "alternatives": []
+              },
+              "finding_id": "kernicterus_mri_004"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "MRS"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:lactate_peak",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRS"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "globus_pallidus",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "核黄疸 ではMRSで乳酸ピークを確認することがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.85,
+                "matched_concept_id": "finding:lactate_peak",
+                "alternatives": []
+              },
+              "finding_id": "kernicterus_mri_005"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "Public source packet was used for broad Phase1 draft expansion.",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "kernicterus_ct_001",
+          "kernicterus_mri_002",
+          "kernicterus_mri_003",
+          "kernicterus_mri_004",
+          "kernicterus_mri_005"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_brain_batch5_20260628"
+        ],
+        "confidence": "low"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "public_brain_batch5_20260628",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology source packet for brain draft batch 5",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, CDC, and open-access review articles where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "Phase1 batch5 broad brain-disease draft. Requires physician review before approval."
+  },
+  "curation": {
+    "auto_update_allowed": true,
+    "locked_fields": [],
+    "notes": ""
+  },
+  "provenance": {
+    "created_by": "codex_public_source_review",
+    "model": "codex",
+    "created_at": "2026-06-28T09:55:00.185Z",
+    "prompt_version": "brain_batch5_v0.1",
+    "source_query": "Kernicterus MRI CT imaging findings"
+  },
+  "updated_at": "2026-07-05T05:22:40.988Z",
+  "content_hash": "",
+  "raw_findings": [
+    {
+      "raw_finding_id": "kernicterus_raw_globus_pallidus_t1_t2_signal",
+      "modality_text": "MRI",
+      "acquisition_text": "T1WI/T2WI",
+      "anatomy_text": "淡蒼球",
+      "target_text": "",
+      "finding_text": "淡蒼球優位のT1高信号または慢性期T2高信号。",
+      "interpretation": "核黄疸の代表的分布。",
+      "source_ids": [
+        "public_raw_findings_audit_20260705"
+      ],
+      "mapping": {
+        "status": "candidate",
+        "candidate_finding_code": "finding:t1_t2",
+        "candidate_acquisition_code": "",
+        "candidate_target": "",
+        "notes": "Added during raw_findings audit to preserve information that may be lost by dictionary-only structured fields."
+      },
+      "review_status": "needs_mapping"
+    }
+  ]
+}

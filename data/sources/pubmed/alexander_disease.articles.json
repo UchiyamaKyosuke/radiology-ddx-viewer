@@ -1,0 +1,38 @@
+{
+  "disease_id": "alexander_disease",
+  "disease_name": {
+    "ja": "Alexander病",
+    "en": "Alexander disease"
+  },
+  "query": "Alexander disease brain MRI imaging",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "30620693",
+      "title": "Adult Leukodystrophies: A Step-by-Step Diagnostic Approach.",
+      "journal": "Radiographics : a review publication of the Radiological Society of North America, Inc",
+      "year": "2020",
+      "doi": "10.1148/rg.2019180081",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30620693/",
+      "abstract": ""
+    },
+    {
+      "pmid": "22411242",
+      "title": "Leukodystrophies.",
+      "journal": "Advances in experimental medicine and biology",
+      "year": "2012",
+      "doi": "10.1007/978-1-4614-0653-2_13",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22411242/",
+      "abstract": ""
+    },
+    {
+      "pmid": "32979048",
+      "title": "Defining the clinical, molecular and imaging spectrum of adaptor protein complex 4-associated hereditary spastic paraplegia.",
+      "journal": "Brain : a journal of neurology",
+      "year": "2021",
+      "doi": "10.1093/brain/awz307",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32979048/",
+      "abstract": ""
+    }
+  ]
+}

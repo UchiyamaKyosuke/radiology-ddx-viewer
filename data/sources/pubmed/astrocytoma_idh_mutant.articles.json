@@ -1,0 +1,38 @@
+{
+  "disease_id": "astrocytoma_idh_mutant",
+  "disease_name": {
+    "ja": "IDH変異型星細胞腫",
+    "en": "Astrocytoma IDH-mutant"
+  },
+  "query": "\"IDH-mutant astrocytoma\" AND (MRI OR imaging)",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "39723472",
+      "title": "The role of vorasidenib in the treatment of isocitrate dehydrogenase-mutant glioma.",
+      "journal": "Neuro-oncology",
+      "year": "2025",
+      "doi": "10.1093/neuonc/noae259",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39723472/",
+      "abstract": ""
+    },
+    {
+      "pmid": "35644621",
+      "title": "Grading of IDH-mutant astrocytoma using diffusion, susceptibility and perfusion-weighted imaging.",
+      "journal": "BMC medical imaging",
+      "year": "2022",
+      "doi": "10.1186/s12880-022-00832-3",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35644621/",
+      "abstract": ""
+    },
+    {
+      "pmid": "40888039",
+      "title": "Perfusion, diffusion, and anatomical MRI characteristics of pathologically confirmed malignant transformation in IDH-mutant gliomas.",
+      "journal": "Neuro-oncology",
+      "year": "2026",
+      "doi": "10.1093/neuonc/noaf171",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40888039/",
+      "abstract": ""
+    }
+  ]
+}

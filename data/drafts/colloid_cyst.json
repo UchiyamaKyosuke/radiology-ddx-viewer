@@ -1,0 +1,405 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "colloid_cyst",
+  "disease_name": {
+    "ja": "コロイド嚢胞",
+    "en": "Colloid cyst"
+  },
+  "disease_aliases": {
+    "ja": [
+      "第三脳室コロイド嚢胞"
+    ],
+    "en": [
+      "Third ventricular colloid cyst"
+    ]
+  },
+  "clinical": {
+    "overview": "モンロー孔付近の第三脳室前方に発生する嚢胞。急性閉塞性水頭症の原因になる。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 80,
+      "peak_decade": "成人",
+      "summary": "成人で重要。"
+    }
+  },
+  "keywords": [
+    "foramen of Monro",
+    "third ventricle",
+    "obstructive hydrocephalus"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "foramen_of_monro_cyst"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "コロイド嚢胞は第3脳室前部の高吸収〜等吸収結節として水頭症を伴うことがある。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "colloid_cyst_ct_001",
+              "finding_code": "finding:ct_hyperattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "ventricle",
+                "subregion": "foramen_of_monro",
+                "laterality": "unknown"
+              },
+              "target": "cyst_content",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "第三脳室前方に高吸収嚢胞として見えることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_hyperattenuation",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "colloid_cyst_ct_002",
+              "finding_code": "finding:hydrocephalus",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "ventricle",
+                "subregion": "foramen_of_monro",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "モンロー孔閉塞により側脳室拡大を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:hydrocephalus",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "colloid_cyst_ct_non_contrast_ct_hyperattenuation_01",
+              "finding_code": "finding:ct_hyperattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "非造影CTで高吸収結節として見えることが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRI信号は内容により可変だが、第3脳室前部病変と水頭症の評価が重要。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "colloid_cyst_mri_003",
+              "finding_code": "finding:t1_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "ventricle",
+                "subregion": "foramen_of_monro",
+                "laterality": "unknown"
+              },
+              "target": "cyst_content",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "内容によりT1高信号を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:t1_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "colloid_cyst_mri_t1wi_t1_hyperintensity_01",
+              "finding_code": "finding:t1_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "内容物によりT1高信号を示すことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "colloid_cyst_mri_004",
+              "finding_code": "finding:t2_hypointensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "ventricle",
+                "subregion": "foramen_of_monro",
+                "laterality": "unknown"
+              },
+              "target": "cyst_content",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "粘稠な内容ではT2低信号を示すことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:t2_hypointensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "colloid_cyst_mri_t2wi_hydrocephalus_01",
+              "finding_code": "finding:hydrocephalus",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "Monro孔閉塞により水頭症を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "colloid_cyst_mri_contrast_enhanced_t1wi_enhancement_absent_01",
+              "finding_code": "finding:enhancement_absent",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "造影効果は乏しいことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 16781992, 35803569, 27792102）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "colloid_cyst_ct_001",
+          "colloid_cyst_ct_002",
+          "colloid_cyst_mri_003",
+          "colloid_cyst_mri_004"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_16781992",
+          "pmid_35803569",
+          "pmid_27792102"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "colloid_cyst_ct_non_contrast_ct_hyperattenuation_01",
+          "colloid_cyst_mri_t2wi_hydrocephalus_01",
+          "colloid_cyst_mri_t1wi_t1_hyperintensity_01",
+          "colloid_cyst_mri_contrast_enhanced_t1wi_enhancement_absent_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_16781992",
+      "type": "journal_article",
+      "title": "Thunderclap headache.",
+      "authors": [],
+      "journal": "The Lancet. Neurology",
+      "year": "2006",
+      "pmid": "16781992",
+      "doi": "10.1016/S1474-4422(06)70497-5",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16781992/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_35803569",
+      "type": "journal_article",
+      "title": "Giant Colloid Cyst.",
+      "authors": [],
+      "journal": "World neurosurgery",
+      "year": "2022",
+      "pmid": "35803569",
+      "doi": "10.1016/j.wneu.2022.06.144",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35803569/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_27792102",
+      "type": "journal_article",
+      "title": "Pituitary Colloid Cyst.",
+      "authors": [],
+      "journal": "The Journal of craniofacial surgery",
+      "year": "2018",
+      "pmid": "27792102",
+      "doi": "10.1097/SCS.0000000000003142",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27792102/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": []
+}

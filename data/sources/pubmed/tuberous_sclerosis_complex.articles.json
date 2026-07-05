@@ -1,0 +1,29 @@
+{
+  "disease_id": "tuberous_sclerosis_complex",
+  "disease_name": {
+    "ja": "結節性硬化症",
+    "en": "Tuberous sclerosis complex"
+  },
+  "query": "tuberous sclerosis complex brain MRI CT imaging",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "20301399",
+      "title": "Tuberous Sclerosis Complex",
+      "journal": "Neurology",
+      "year": "1993",
+      "doi": "10.1212/WNL.0000000000207740",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20301399/",
+      "abstract": ""
+    },
+    {
+      "pmid": "30890846",
+      "title": "Tuberous Sclerosis.",
+      "journal": "JPMA. The Journal of the Pakistan Medical Association",
+      "year": "2019",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30890846/",
+      "abstract": ""
+    }
+  ]
+}

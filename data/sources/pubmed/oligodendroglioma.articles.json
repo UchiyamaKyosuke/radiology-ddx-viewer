@@ -1,0 +1,47 @@
+{
+  "disease_id": "oligodendroglioma",
+  "disease_name": {
+    "ja": "乏突起膠腫",
+    "en": "Oligodendroglioma"
+  },
+  "query": "oligodendroglioma[Title/Abstract] AND (MRI[Title/Abstract] OR CT[Title/Abstract] OR imaging[Title/Abstract] OR calcification[Title/Abstract])",
+  "fetched_at": "2026-06-25T07:08:44.207Z",
+  "articles": [
+    {
+      "pmid": "34117807",
+      "title": "Clinical features, diagnosis, and survival analysis of dogs with glioma.",
+      "journal": "Journal of veterinary internal medicine",
+      "year": "2021",
+      "doi": "10.1111/jvim.16199",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34117807/",
+      "abstract": "Gliomas in dogs remain poorly understood.\nTo characterize the clinicopathologic findings, diagnostic imaging features and survival of a large sample of dogs with glioma using the Comparative Brain Tumor Consortium diagnostic classification.\nNinety-one dogs with histopathological diagnosis of glioma.\nMulticentric retrospective case series. Signalment, clinicopathologic findings, diagnostic imaging characteristics, treatment, and outcome were used. Tumors were reclassified according to the new canine glioma diagnostic scheme.\nNo associations were found between clinicopathologic findings or survival and tumor type or grade. However, definitive treatments provided significantly (P&#xa0;=&#xa0;.03) improved median survival time (84&#x2009;days; 95% confidence interval [CI], 45-190) compared to palliative treatment (26&#x2009;days; 95% CI, 11-54). On magnetic resonance imaging (MRI), oligodendrogliomas were associated with smooth margins and T1-weighted hypointensity compared to astrocytomas (odds ratio [OR], 42.5; 95% CI, 2.42-744.97; P&#xa0;=&#xa0;.04; OR, 45.5; 95% CI, 5.78-333.33; P&#x2009;<&#x2009;.001, respectively) and undefined gliomas (OR, 84; 95% CI, 3.43-999.99; P&#xa0;=&#xa0;.02; OR, 32.3; 95% CI, 2.51-500.00; P&#xa0;=&#xa0;.008, respectively) and were more commonly in contact with the ventricles than astrocytomas (OR, 7.47; 95% CI, 1.03-53.95; P&#xa0;=&#xa0;.049). Tumor spread to neighboring brain structures was associated with high-grade glioma (OR, 6.02; 95% CI, 1.06-34.48; P&#xa0;=&#xa0;.04).\nDogs with gliomas have poor outcomes, but risk factors identified in survival analysis inform prognosis and the newly identified MRI characteristics could refine diagnosis of tumor type and grade."
+    },
+    {
+      "pmid": "26849038",
+      "title": "Imaging of oligodendroglioma.",
+      "journal": "The British journal of radiology",
+      "year": "2016",
+      "doi": "10.1259/bjr.20150857",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26849038/",
+      "abstract": "Oligodendroglioma are glial tumours, predominantly occurring in adults. Their hallmark molecular feature is codeletion of the 1p and 19q chromosome arms, which is not only of diagnostic but also of prognostic and predictive relevance. On imaging, these tumours characteristically show calcification, and they have a cortical-subcortical location, most commonly in the frontal lobe. Owing to their superficial location, there may be focal thinning or remodelling of the overlying skull. In contrast to other low-grade gliomas, minimal to moderate enhancement is commonly seen and perfusion may be moderately increased. This complicates differentiation from high-grade, anaplastic oligodendroglioma, in which enhancement and increased perfusion are also common. New enhancement in a previously non-enhancing, untreated tumour, however, is suggestive of malignant transformation, as is high growth rate. MR spectroscopy may further aid in the differentiation between low- and high-grade oligodendroglioma. A relatively common feature of recurrent disease is leptomeningeal dissemination, but extraneural spread is rare. Tumours with the 1p/19q codeletion more commonly show heterogeneous signal intensity, particularly on T2 weighted imaging; calcifications; an indistinct margin; and mildly increased perfusion and metabolism than 1p/19q intact tumours. For the initial diagnosis of oligodendroglioma, MRI and CT are complementary; MRI is superior to CT in assessing tumour extent and cortical involvement, whereas CT is most sensitive to calcification. Advanced and functional imaging techniques may aid in grading and assessing the molecular genotype as well as in differentiating between tumour recurrence and radiation necrosis, but so far no unequivocal method or combination of methods is available."
+    },
+    {
+      "pmid": "21725645",
+      "title": "Oligodendroglial ganglioglioma.",
+      "journal": "Brain tumor pathology",
+      "year": "2012",
+      "doi": "10.1007/s10014-011-0047-z",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21725645/",
+      "abstract": "Gangliogliomas are rare tumors of the central nervous system, usually containing neoplastic ganglion cells and astrocytic components. Few cases of ganglioglioma containing only oligodendrocytic tissue have been reported to date. We present a case of a 40-year-old woman with ganglioglioma consisting mostly of oligodendroglial components. Magnetic resonance imaging showed a well-demarcated cystic lesion with slight perifocal edema in the right parietal lobe. The wall of the cyst was not enhanced after administration of Gd-DTPA contrast media. The mass was totally resected. Histological examination showed a mixture of two distinct components: oligodendroglioma and dysplastic ganglions. The first component was diffusely proliferated cells with round nuclei and perinuclear halo; the second showed marked nucleoli and basophilic cytoplasm containing Nissl bodies. Immunohistochemical study of the oligodendroglial component was positive for OLIG 2 and NKX2.2 but negative for synaptophysin. In addition, LOH of 1p/19q was detected by FISH. Although no adjuvant therapy was carried out, follow-up MRI showed no recurrence of the tumor 41&#xa0;months after the operation."
+    },
+    {
+      "pmid": "26948348",
+      "title": "Surgical approaches for the gliomas.",
+      "journal": "Handbook of clinical neurology",
+      "year": "2016",
+      "doi": "10.1016/B978-0-12-802997-8.00004-9",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26948348/",
+      "abstract": "Neurosurgical intervention remains the first step in effective glioma management. Mounting evidence suggests that cytoreduction for low- and high-grade gliomas is associated with a survival benefit. Beyond conventional neurosurgical principles, an array of techniques have been refined in recent years to maximize the effect of the neurosurgical oncologist and facilitate the impact of subsequent adjuvant therapy. With intraoperative mapping techniques, aggressive microsurgical resection can be safely pursued even when tumors occupy essential functional pathways. Other adjunct techniques, such as intraoperative magnetic resonance imaging, intraoperative ultrasonography, and fluorescence-guided surgery, can be valuable tools to safely reduce the tumor burden of low- and high-grade gliomas. Taken together, this collection of surgical strategies has pushed glioma extent of resection towards the level of cellular resolution."
+    }
+  ]
+}

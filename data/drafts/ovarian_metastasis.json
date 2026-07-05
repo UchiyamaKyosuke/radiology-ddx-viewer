@@ -1,0 +1,206 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "ovarian_metastasis",
+  "disease_name": {
+    "ja": "卵巣転移",
+    "en": "Ovarian metastasis"
+  },
+  "disease_aliases": {
+    "ja": [
+      "転移性卵巣腫瘍",
+      "Krukenberg腫瘍"
+    ],
+    "en": [
+      "Metastatic ovarian tumor",
+      "Krukenberg tumor"
+    ]
+  },
+  "clinical": {
+    "overview": "消化管癌などからの卵巣転移。両側性充実性腫瘤として認められることがある。 補足: Sample card only.",
+    "treatment": "原発巣、病期、全身状態に応じて腫瘍内科・婦人科腫瘍として治療方針が検討される。",
+    "epidemiology": "既知悪性腫瘍の背景では重要な鑑別。"
+  },
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 3,
+    "basis": "differential_importance",
+    "evidence_level": "review",
+    "context": {
+      "population": "adult_women",
+      "body_region": "pelvis",
+      "clinical_setting": "known_malignancy"
+    },
+    "summary": "既知悪性腫瘍を有する患者の卵巣腫瘤では重要。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "両側性または充実性卵巣腫瘤として認められることがある。",
+      "findings_by_phase": []
+    },
+    "mri": {
+      "summary": "充実性成分を伴い、拡散制限や造影効果を示すことがある。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_id": "ovarian_metastasis_mri_dwi_001",
+              "finding_code": "finding:diffusion_restriction_present",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "pelvis",
+                "organ": "ovary",
+                "subregion": "adnexa",
+                "laterality": "bilateral"
+              },
+              "target": "solid_component",
+              "modifiers": {
+                "degree": "marked",
+                "morphology": "solid_mass"
+              },
+              "finding_text": "充実成分に拡散制限を認めることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": [
+                "solid_mass"
+              ]
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "ovarian_metastasis_mri_ce_001",
+              "finding_code": "finding:enhancing_solid_component",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "pelvis",
+                "organ": "ovary",
+                "subregion": "adnexa",
+                "laterality": "bilateral"
+              },
+              "target": "solid_component",
+              "modifiers": {
+                "degree": "marked",
+                "morphology": "solid_mass"
+              },
+              "finding_text": "充実性卵巣腫瘤に造影効果を認める。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "clinical_significance": {
+                "severity": "high",
+                "implication": "malignancy_suspected",
+                "action": "転移性腫瘍を考慮し原発巣情報を確認する"
+              },
+              "review_status": "draft",
+              "keywords": [
+                "solid_mass"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "出典未登録（サンプル用の仮出典）。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "ovarian_metastasis_mri_dwi_001",
+          "ovarian_metastasis_mri_ce_001"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "ref_001"
+        ],
+        "confidence": "low"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "ref_001",
+      "type": "placeholder",
+      "title": "Replace with reviewed source",
+      "authors": [],
+      "journal": "",
+      "year": "",
+      "pmid": "",
+      "doi": "",
+      "url": "",
+      "license": ""
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "Starter sample; replace evidence before clinical use."
+  },
+  "curation": {
+    "auto_update_allowed": false,
+    "locked_fields": [],
+    "notes": ""
+  },
+  "provenance": {
+    "created_by": "manual",
+    "model": "",
+    "created_at": "2026-06-20T10:00:00+09:00",
+    "prompt_version": "starter_v0.1",
+    "source_query": ""
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "content_hash": "d3832985dc628e72a7b171724415f17816bb65e34ca2994743539bf642f1cb30",
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "female"
+      ],
+      "predominance": "female",
+      "predilection": "female_only",
+      "summary": "女性に発生する疾患。"
+    },
+    "age": {
+      "typical_min": 30,
+      "typical_max": 80,
+      "peak_decade": "40-60歳代",
+      "summary": "原発悪性腫瘍を有する成人女性で重要。"
+    }
+  },
+  "keywords": [
+    "solid_mass"
+  ],
+  "raw_findings": []
+}

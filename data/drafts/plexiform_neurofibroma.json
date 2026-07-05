@@ -1,0 +1,361 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "plexiform_neurofibroma",
+  "disease_name": {
+    "ja": "叢状神経線維腫",
+    "en": "Plexiform neurofibroma"
+  },
+  "disease_aliases": {
+    "ja": [],
+    "en": []
+  },
+  "clinical": {
+    "overview": "叢状神経線維腫は神経原性腫瘤で重要な鑑別となる疾患で、典型所見として神経走行に沿うbag of worms appearanceを示す。臨床背景、病変分布、造影効果を組み合わせて評価する。",
+    "treatment": "治療方針は病型、重症度、合併症、全身状態に応じて決定する。",
+    "epidemiology": "頻度と好発年齢は病型・背景疾患・地域差により異なる。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "代表的な性差傾向を記録。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 80,
+      "peak_decade": "NF1",
+      "summary": "代表的な発症・診断年齢帯を記録。"
+    }
+  },
+  "keywords": [
+    "Plexiform neurofibroma",
+    "叢状神経線維腫",
+    "bag of worms appearance",
+    "target sign"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 2,
+    "basis": "differential_importance",
+    "evidence_level": "public_review",
+    "context": {
+      "population": "any",
+      "body_region": "musculoskeletal",
+      "clinical_setting": "神経原性腫瘤"
+    },
+    "summary": "神経原性腫瘤の鑑別での相対頻度と重要度を記録。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "叢状神経線維腫のCTでは濃度、石灰化、出血、ガス、造影効果、周囲変化を評価する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:ct_isoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "musculoskeletal",
+                "organ": "peripheral_nerve",
+                "subregion": "brachial_plexus_root",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "bag of worms appearance",
+                "target sign"
+              ],
+              "finding_text": "叢状神経線維腫はCTで軟部濃度腫瘤、壁肥厚、または充実性病変として描出されることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:ct_isoattenuation",
+                "alternatives": []
+              },
+              "finding_id": "plexiform_neurofibroma_f001"
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "叢状神経線維腫のMRIでは信号、拡散、造影効果、病変分布、隣接構造への進展を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T1WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:t1_hypointensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "musculoskeletal",
+                "organ": "peripheral_nerve",
+                "subregion": "brachial_plexus_root",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "bag of worms appearance",
+                "target sign"
+              ],
+              "finding_text": "叢状神経線維腫はT1WI低信号を示すことが多く、脂肪や出血を含む場合は信号が変化する。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:t1_hypointensity",
+                "alternatives": []
+              },
+              "finding_id": "plexiform_neurofibroma_f002"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "musculoskeletal",
+                "organ": "peripheral_nerve",
+                "subregion": "brachial_plexus_root",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "bag of worms appearance",
+                "target sign"
+              ],
+              "finding_text": "叢状神経線維腫はT2WIで高信号から不均一信号を示し、壊死・嚢胞変性の評価に有用。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:t2_hyperintensity",
+                "alternatives": []
+              },
+              "finding_id": "plexiform_neurofibroma_f003"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:enhancing_solid_component",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "musculoskeletal",
+                "organ": "peripheral_nerve",
+                "subregion": "brachial_plexus_root",
+                "laterality": "unknown"
+              },
+              "target": "solid_component",
+              "modifiers": {},
+              "keywords": [
+                "bag of worms appearance",
+                "target sign"
+              ],
+              "finding_text": "叢状神経線維腫では造影される充実成分、浸潤範囲、隣接臓器との境界を評価する。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:enhancing_solid_component",
+                "alternatives": []
+              },
+              "finding_id": "plexiform_neurofibroma_f004"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:diffusion_restriction_present",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "musculoskeletal",
+                "organ": "peripheral_nerve",
+                "subregion": "brachial_plexus_root",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "bag of worms appearance",
+                "target sign"
+              ],
+              "finding_text": "叢状神経線維腫は細胞密度の高い部位でDWI高信号を示すことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:diffusion_restriction_present",
+                "alternatives": []
+              },
+              "finding_id": "plexiform_neurofibroma_f005"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "raw_findings": [
+    {
+      "raw_finding_id": "plexiform_neurofibroma_raw_001",
+      "modality_text": "CT/MRI/US",
+      "acquisition_text": "疾患に応じた標準撮像",
+      "anatomy_text": "叢状神経線維腫の典型的な主座",
+      "target_text": "named_sign",
+      "finding_text": "神経走行に沿うbag of worms appearanceを示す",
+      "interpretation": "構造化辞書では拾い切れない疾患固有の所見・サインとして保存。",
+      "source_ids": [
+        "public_general_batch9_20260705"
+      ],
+      "mapping": {
+        "status": "candidate",
+        "candidate_finding_code": "finding:plexiform_neurofibroma_specific_sign",
+        "candidate_anatomy": {
+          "body_region": "musculoskeletal",
+          "organ": "peripheral_nerve",
+          "subregion": "brachial_plexus_root",
+          "laterality": "unknown"
+        },
+        "candidate_target": "named_sign",
+        "notes": "Phase 1 raw finding"
+      },
+      "review_status": "needs_mapping"
+    }
+  ],
+  "evidence": {
+    "summary": "NCBI Bookshelf、ACR Appropriateness Criteria、RadiologyInfo、PMC open-access review などの公開情報を参照。",
+    "claim_map": [
+      {
+        "finding_ids": [
+          "plexiform_neurofibroma_f001"
+        ],
+        "source_ids": [
+          "public_general_batch9_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "plexiform_neurofibroma_f002"
+        ],
+        "source_ids": [
+          "public_general_batch9_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "plexiform_neurofibroma_f003"
+        ],
+        "source_ids": [
+          "public_general_batch9_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "plexiform_neurofibroma_f004"
+        ],
+        "source_ids": [
+          "public_general_batch9_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "plexiform_neurofibroma_f005"
+        ],
+        "source_ids": [
+          "public_general_batch9_20260705"
+        ],
+        "support": "public_source_summary"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "public_general_batch9_20260705",
+      "type": "public_source_packet",
+      "title": "Public imaging source packet for accelerated whole-body Phase 1 draft batch 9",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, ACR Appropriateness Criteria, RadiologyInfo, and open-access PMC reviews where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "confidence": "medium",
+    "notes": "公開情報に基づく初期整理。"
+  },
+  "curation": {
+    "batch": "general_batch9",
+    "generated_by": "curate-general-drafts-batch9.js",
+    "detail_level": "expanded"
+  },
+  "provenance": {
+    "source_ids": [
+      "public_general_batch9_20260705"
+    ],
+    "generated_at": "2026-07-05T09:48:14.763Z"
+  },
+  "updated_at": "2026-07-05T09:48:14.763Z",
+  "content_hash": "7f8333b1145b53423b2f9c72c33e3bf6e0003d97831cdac8d88eebec2615ad82"
+}

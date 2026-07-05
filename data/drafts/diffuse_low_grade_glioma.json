@@ -1,0 +1,555 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "diffuse_low_grade_glioma",
+  "disease_name": {
+    "ja": "びまん性低悪性度神経膠腫",
+    "en": "Diffuse low-grade glioma"
+  },
+  "disease_aliases": {
+    "ja": [
+      "低悪性度神経膠腫"
+    ],
+    "en": [
+      "Low-grade glioma",
+      "Diffuse LGG"
+    ]
+  },
+  "clinical": {
+    "overview": "若年成人から中年に多い浸潤性神経膠腫。境界不明瞭なT2/FLAIR高信号病変として発見され、造影効果や強い拡散制限を欠く場合が多い。",
+    "treatment": "分子診断を含めた評価のうえ、最大安全切除、経過観察、放射線治療、化学療法を病勢とリスクに応じて選択する。",
+    "epidemiology": "成人のびまん性神経膠腫の一群で、若年〜中年発症が典型。けいれん発症が多い。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 55,
+      "peak_decade": "30-40歳代",
+      "summary": "若年成人から中年に多い。"
+    }
+  },
+  "keywords": [
+    "nonenhancing mass",
+    "infiltrative",
+    "seizure presentation"
+  ],
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 2,
+    "basis": "epidemiology",
+    "evidence_level": "review",
+    "context": {
+      "population": "adult",
+      "body_region": "brain",
+      "clinical_setting": "nonenhancing_intra_axial_mass"
+    },
+    "summary": "非造影性の浸潤性脳内腫瘤では重要な鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "びまん性低悪性度神経膠腫はCTで低吸収〜等吸収の浸潤性病変として見えることがあり、石灰化や腫瘤効果を確認する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "diffuse_low_grade_glioma_ct_nc_001",
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "単純CTで低吸収の浸潤性病変として見えることがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_hypoattenuation",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "diffuse_low_grade_glioma_ct_non_contrast_ct_mild_hypoattenuation_01",
+              "finding_code": "finding:ct_mild_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "CTでは低吸収〜等吸収の浸潤性腫瘤として描出されることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "びまん性低悪性度神経膠腫はT1低信号、T2/FLAIR高信号の浸潤性腫瘍として評価し、造影、拡散、灌流、MRSで悪性度を推定する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "diffuse_low_grade_glioma_mri_t2_001",
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "infiltrative"
+              ],
+              "finding_text": "境界不明瞭なT2高信号病変として認められる。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:t2_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "diffuse_low_grade_glioma_mri_t2wi_t2_hyperintensity_01",
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "T2WIでは浸潤範囲が高信号として広がる。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "diffuse_low_grade_glioma_mri_flair_001",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "浸潤性のFLAIR高信号を示すことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:flair_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "diffuse_low_grade_glioma_mri_flair_flair_hyperintensity_01",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "FLAIRでは腫瘍浸潤と浮腫が高信号として目立つ。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "diffuse_low_grade_glioma_mri_t1_001",
+              "finding_code": "finding:t1_hypointensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "T1低信号として認められることが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:t1_hypointensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "diffuse_low_grade_glioma_mri_t1wi_t1_hypointensity_01",
+              "finding_code": "finding:t1_hypointensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "T1WIでは腫瘍実質が低信号を示すことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "diffuse_low_grade_glioma_mri_ce_001",
+              "finding_code": "finding:enhancement_absent",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "nonenhancing"
+              ],
+              "finding_text": "明らかな造影効果を欠くことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:enhancement_absent",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_id": "diffuse_low_grade_glioma_mri_dwi_001",
+              "finding_code": "finding:diffusion_restriction_absent",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "強い拡散制限を欠くことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:diffusion_restriction_absent",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "diffuse_low_grade_glioma_mri_dwi_diffusion_restriction_absent_01",
+              "finding_code": "finding:diffusion_restriction_absent",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "低悪性度成分では強い拡散制限を欠くことが多い。",
+              "typicality": "variable",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "MRS"
+          },
+          "findings": [
+            {
+              "finding_id": "diffuse_low_grade_glioma_mri_mrs_elevated_choline_peak_01",
+              "finding_code": "finding:elevated_choline_peak",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRS"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "MRSではコリン上昇が腫瘍性病変の補助所見になる。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 41198334, 31143247, 30292978, 40668344）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "diffuse_low_grade_glioma_ct_nc_001",
+          "diffuse_low_grade_glioma_mri_t2_001",
+          "diffuse_low_grade_glioma_mri_flair_001",
+          "diffuse_low_grade_glioma_mri_t1_001",
+          "diffuse_low_grade_glioma_mri_ce_001",
+          "diffuse_low_grade_glioma_mri_dwi_001"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_41198334",
+          "pmid_31143247",
+          "pmid_30292978",
+          "pmid_40668344"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "diffuse_low_grade_glioma_ct_non_contrast_ct_mild_hypoattenuation_01",
+          "diffuse_low_grade_glioma_mri_t1wi_t1_hypointensity_01",
+          "diffuse_low_grade_glioma_mri_t2wi_t2_hyperintensity_01",
+          "diffuse_low_grade_glioma_mri_flair_flair_hyperintensity_01",
+          "diffuse_low_grade_glioma_mri_dwi_diffusion_restriction_absent_01",
+          "diffuse_low_grade_glioma_mri_mrs_elevated_choline_peak_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_41198334",
+      "type": "journal_article",
+      "title": "Pediatric-Type Diffuse Low Grade Glioma.",
+      "authors": [],
+      "journal": "Advances in cancer research",
+      "year": "2025",
+      "pmid": "41198334",
+      "doi": "10.1016/bs.acr.2025.08.006",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41198334/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_31143247",
+      "type": "journal_article",
+      "title": "Diffuse Low-Grade Glioma - Changing Concepts in Diagnosis and Management: A Review.",
+      "authors": [],
+      "journal": "Asian journal of neurosurgery",
+      "year": "2020",
+      "pmid": "31143247",
+      "doi": "10.4103/ajns.AJNS_24_18",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31143247/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_30292978",
+      "type": "journal_article",
+      "title": "Diffuse low grade glioma after the 2016 WHO update, seizure characteristics, imaging correlates and outcomes.",
+      "authors": [],
+      "journal": "Clinical neurology and neurosurgery",
+      "year": "2019",
+      "pmid": "30292978",
+      "doi": "10.1016/j.clineuro.2018.10.001",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30292978/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_40668344",
+      "type": "journal_article",
+      "title": "Illuminating radiogenomic signatures in pediatric-type diffuse gliomas: insights into molecular, clinical, and imaging correlations. Part II: low-grade group.",
+      "authors": [],
+      "journal": "La Radiologia medica",
+      "year": "2025",
+      "pmid": "40668344",
+      "doi": "10.1007/s11547-025-02049-0",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40668344/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": []
+}

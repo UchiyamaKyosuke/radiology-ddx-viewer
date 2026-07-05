@@ -1,0 +1,51 @@
+{
+  "disease_id": "chondrosarcoma_skull_base",
+  "disease_name": {
+    "ja": "頭蓋底軟骨肉腫",
+    "en": "Skull base chondrosarcoma"
+  },
+  "disease_aliases": {
+    "ja": [
+      "斜台傍軟骨肉腫"
+    ],
+    "en": [
+      "Skull base chondrosarcoma"
+    ]
+  },
+  "clinical": {
+    "overview": "頭蓋底軟骨性腫瘍。斜台傍正中や錐体尖部に多く、石灰化、T2高信号、骨破壊を示す。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 80,
+      "peak_decade": "成人",
+      "summary": "成人で重要。"
+    }
+  },
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "skull_base_mass"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

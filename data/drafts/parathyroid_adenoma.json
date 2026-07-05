@@ -1,0 +1,360 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "parathyroid_adenoma",
+  "disease_name": {
+    "ja": "副甲状腺腺腫",
+    "en": "Parathyroid adenoma"
+  },
+  "disease_aliases": {
+    "ja": [],
+    "en": []
+  },
+  "clinical": {
+    "overview": "副甲状腺腺腫は副甲状腺機能亢進症で重要な鑑別となる疾患で、臨床背景と画像分布を組み合わせて評価する。",
+    "treatment": "治療方針は病型、病期、合併症、全身状態に応じて決定する。",
+    "epidemiology": "頻度と好発年齢は病型・背景疾患により異なる。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "代表的な性差傾向を記録。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 90,
+      "peak_decade": "成人",
+      "summary": "代表的な発症・診断年齢帯を記録。"
+    }
+  },
+  "keywords": [
+    "Parathyroid adenoma",
+    "副甲状腺腺腫",
+    "polar vessel sign",
+    "washout on 4D CT"
+  ],
+  "frequency": {
+    "label": "common",
+    "prevalence_rank": 4,
+    "basis": "differential_importance",
+    "evidence_level": "public_review",
+    "context": {
+      "population": "any",
+      "body_region": "head_neck",
+      "clinical_setting": "副甲状腺機能亢進症"
+    },
+    "summary": "副甲状腺機能亢進症の鑑別での相対頻度と重要度を記録。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "副甲状腺腺腫のCTでは濃度、石灰化、出血、造影効果、周囲変化を評価する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:ct_isoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "head_neck",
+                "organ": "parathyroid",
+                "subregion": "parathyroid_region",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "polar vessel sign",
+                "washout on 4D CT"
+              ],
+              "finding_text": "副甲状腺腺腫はCTで軟部濃度の腫瘤または肥厚として描出されることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:ct_isoattenuation",
+                "alternatives": []
+              },
+              "finding_id": "parathyroid_adenoma_f001"
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "副甲状腺腺腫のMRIでは信号、拡散、造影効果、病変分布を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T1WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:t1_hypointensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "head_neck",
+                "organ": "parathyroid",
+                "subregion": "parathyroid_region",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "polar vessel sign",
+                "washout on 4D CT"
+              ],
+              "finding_text": "副甲状腺腺腫はT1WIで低信号を示すことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:t1_hypointensity",
+                "alternatives": []
+              },
+              "finding_id": "parathyroid_adenoma_f002"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "head_neck",
+                "organ": "parathyroid",
+                "subregion": "parathyroid_region",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "polar vessel sign",
+                "washout on 4D CT"
+              ],
+              "finding_text": "副甲状腺腺腫はT2WIで高信号または不均一信号を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:t2_hyperintensity",
+                "alternatives": []
+              },
+              "finding_id": "parathyroid_adenoma_f003"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:enhancing_solid_component",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "head_neck",
+                "organ": "parathyroid",
+                "subregion": "parathyroid_region",
+                "laterality": "unknown"
+              },
+              "target": "solid_component",
+              "modifiers": {},
+              "keywords": [
+                "polar vessel sign",
+                "washout on 4D CT"
+              ],
+              "finding_text": "副甲状腺腺腫は造影で充実部の増強を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:enhancing_solid_component",
+                "alternatives": []
+              },
+              "finding_id": "parathyroid_adenoma_f004"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:diffusion_restriction_present",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "head_neck",
+                "organ": "parathyroid",
+                "subregion": "parathyroid_region",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "polar vessel sign",
+                "washout on 4D CT"
+              ],
+              "finding_text": "副甲状腺腺腫は細胞性成分で拡散制限を示すことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:diffusion_restriction_present",
+                "alternatives": []
+              },
+              "finding_id": "parathyroid_adenoma_f005"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "raw_findings": [
+    {
+      "raw_finding_id": "parathyroid_adenoma_raw_001",
+      "modality_text": "CT/MRI/US",
+      "acquisition_text": "疾患に応じた標準撮像",
+      "anatomy_text": "副甲状腺腺腫の典型的な主座",
+      "target_text": "named_sign",
+      "finding_text": "4D CTで早期濃染とwashout、polar vessel signを示すことがある。",
+      "interpretation": "構造化辞書では拾い切れない疾患固有の所見・サインとして保存。",
+      "source_ids": [
+        "public_general_batch8_20260705"
+      ],
+      "mapping": {
+        "status": "candidate",
+        "candidate_finding_code": "finding:parathyroid_adenoma_specific_sign",
+        "candidate_anatomy": {
+          "body_region": "head_neck",
+          "organ": "parathyroid",
+          "subregion": "parathyroid_region",
+          "laterality": "unknown"
+        },
+        "candidate_target": "named_sign",
+        "notes": "Phase 1 raw finding"
+      },
+      "review_status": "needs_mapping"
+    }
+  ],
+  "evidence": {
+    "summary": "NCBI Bookshelf、ACR Appropriateness Criteria、RadiologyInfo、PMC open-access review などの公開情報を参照。",
+    "claim_map": [
+      {
+        "finding_ids": [
+          "parathyroid_adenoma_f001"
+        ],
+        "source_ids": [
+          "public_general_batch8_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "parathyroid_adenoma_f002"
+        ],
+        "source_ids": [
+          "public_general_batch8_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "parathyroid_adenoma_f003"
+        ],
+        "source_ids": [
+          "public_general_batch8_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "parathyroid_adenoma_f004"
+        ],
+        "source_ids": [
+          "public_general_batch8_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "parathyroid_adenoma_f005"
+        ],
+        "source_ids": [
+          "public_general_batch8_20260705"
+        ],
+        "support": "public_source_summary"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "public_general_batch8_20260705",
+      "type": "public_source_packet",
+      "title": "Public cross-sectional imaging source packet for whole-body Phase 1 draft batch 8",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, ACR Appropriateness Criteria, RadiologyInfo, and open-access PMC reviews where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "confidence": "medium",
+    "notes": "公開情報に基づく初期整理。"
+  },
+  "curation": {
+    "batch": "general_batch8",
+    "generated_by": "curate-general-drafts-batch8.js"
+  },
+  "provenance": {
+    "source_ids": [
+      "public_general_batch8_20260705"
+    ],
+    "generated_at": "2026-07-05T09:29:44.226Z"
+  },
+  "updated_at": "2026-07-05T09:29:44.226Z",
+  "content_hash": "dfc6c375db9c838280b0ccdbfb68a70305f6e2fe479ae71c4369611449acec26"
+}

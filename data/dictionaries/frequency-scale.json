@@ -1,0 +1,8 @@
+{
+  "very_common": { "prevalence_rank": 5, "score": 1.0 },
+  "common": { "prevalence_rank": 4, "score": 0.75 },
+  "uncommon": { "prevalence_rank": 3, "score": 0.45 },
+  "rare": { "prevalence_rank": 2, "score": 0.2 },
+  "very_rare": { "prevalence_rank": 1, "score": 0.05 },
+  "unknown": { "prevalence_rank": 0, "score": 0.0 }
+}

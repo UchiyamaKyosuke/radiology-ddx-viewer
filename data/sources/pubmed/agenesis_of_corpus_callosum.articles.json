@@ -1,0 +1,38 @@
+{
+  "disease_id": "agenesis_of_corpus_callosum",
+  "disease_name": {
+    "ja": "脳梁欠損",
+    "en": "Agenesis of the corpus callosum"
+  },
+  "query": "agenesis corpus callosum MRI imaging",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "37816486",
+      "title": "Outcome of partial agenesis of corpus callosum.",
+      "journal": "American journal of obstetrics and gynecology",
+      "year": "2024",
+      "doi": "10.1016/j.ajog.2023.10.007",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37816486/",
+      "abstract": ""
+    },
+    {
+      "pmid": "37794643",
+      "title": "Agenesis of the corpus callosum: What to tell expecting parents?",
+      "journal": "Prenatal diagnosis",
+      "year": "2024",
+      "doi": "10.1002/pd.6447",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37794643/",
+      "abstract": ""
+    },
+    {
+      "pmid": "33168219",
+      "title": "Agenesis of the Corpus Callosum.",
+      "journal": "American journal of obstetrics and gynecology",
+      "year": "2021",
+      "doi": "10.1016/j.ajog.2020.08.179",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33168219/",
+      "abstract": ""
+    }
+  ]
+}

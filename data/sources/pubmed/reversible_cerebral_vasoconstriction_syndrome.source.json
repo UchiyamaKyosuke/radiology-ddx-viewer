@@ -1,0 +1,51 @@
+{
+  "disease_id": "reversible_cerebral_vasoconstriction_syndrome",
+  "disease_name": {
+    "ja": "可逆性脳血管攣縮症候群",
+    "en": "Reversible cerebral vasoconstriction syndrome"
+  },
+  "disease_aliases": {
+    "ja": [
+      "RCVS"
+    ],
+    "en": [
+      "RCVS"
+    ]
+  },
+  "clinical": {
+    "overview": "雷鳴頭痛を特徴とする可逆性多発脳血管攣縮。MRA/CTAで数珠状狭窄、合併するSAHやPRESを評価する。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "female",
+      "predilection": "female_predominant",
+      "summary": "女性に多い傾向がある。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 60,
+      "peak_decade": "若年〜中年",
+      "summary": "若年〜中年成人で重要。"
+    }
+  },
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "thunderclap_headache_vasoconstriction"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

@@ -1,0 +1,256 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "multiple_sclerosis",
+  "disease_name": {
+    "ja": "多発性硬化症",
+    "en": "Multiple sclerosis"
+  },
+  "disease_aliases": {
+    "ja": [
+      "MS"
+    ],
+    "en": [
+      "MS"
+    ]
+  },
+  "clinical": {
+    "overview": "中枢神経系の炎症性脱髄疾患。時間的・空間的多発性を示す白質病変が診断上重要。",
+    "treatment": "急性増悪治療、疾患修飾薬、症候治療が病態に応じて検討される。",
+    "epidemiology": "若年成人に多く、女性に多い。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "female",
+      "predilection": "female_predominant",
+      "summary": "女性に多い。"
+    },
+    "age": {
+      "typical_min": 15,
+      "typical_max": 50,
+      "peak_decade": "20-40歳代",
+      "summary": "若年成人から中年に多い。"
+    }
+  },
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 3,
+    "basis": "epidemiology",
+    "evidence_level": "guideline",
+    "context": {
+      "population": "adult",
+      "body_region": "brain",
+      "clinical_setting": "white_matter_lesions"
+    },
+    "summary": "若年成人の多発白質病変では重要な鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "MRIが評価の中心。CTでは所見が目立たないことがある。",
+      "findings_by_phase": []
+    },
+    "mri": {
+      "summary": "脳室周囲、皮質/傍皮質、テント下、脊髄などのT2/FLAIR高信号病変が重要。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "multiple_sclerosis_mri_flair_001",
+              "finding_code": "finding:periventricular_ovoid_lesions",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "white_matter",
+                "laterality": "bilateral"
+              },
+              "target": "white_matter_lesion",
+              "modifiers": {
+                "degree": "moderate",
+                "distribution": "multifocal",
+                "morphology": "ovoid"
+              },
+              "finding_text": "脳室周囲の卵円形白質病変、Dawson fingers様病変を認めることがある。",
+              "typicality": "typical",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": [
+                "ovoid"
+              ]
+            },
+            {
+              "finding_id": "multiple_sclerosis_mri_flair_002",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "white_matter",
+                "laterality": "bilateral"
+              },
+              "target": "white_matter_lesion",
+              "modifiers": {
+                "degree": "moderate",
+                "distribution": "multifocal",
+                "morphology": "ovoid"
+              },
+              "finding_text": "多発するFLAIR高信号白質病変を認める。",
+              "typicality": "typical",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": [
+                "ovoid"
+              ]
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "multiple_sclerosis_mri_ce_001",
+              "finding_code": "finding:open_ring_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "white_matter",
+                "laterality": "unknown"
+              },
+              "target": "lesion_margin",
+              "modifiers": {
+                "degree": "moderate",
+                "morphology": "ring"
+              },
+              "finding_text": "活動性脱髄病変でopen-ring enhancementを示すことがある。",
+              "typicality": "uncommon",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": [
+                "ring"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 31209474, 40975102, 40773034）。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "multiple_sclerosis_mri_flair_001",
+          "multiple_sclerosis_mri_flair_002",
+          "multiple_sclerosis_mri_ce_001"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_31209474",
+          "pmid_40975102",
+          "pmid_40773034"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_31209474",
+      "type": "journal_article",
+      "title": "Assessment of lesions on magnetic resonance imaging in multiple sclerosis: practical guidelines.",
+      "authors": [],
+      "journal": "Brain",
+      "year": "2020",
+      "pmid": "31209474",
+      "doi": "10.1093/brain/awz144",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31209474/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_40975102",
+      "type": "journal_article",
+      "title": "2024 MAGNIMS-CMSC-NAIMS consensus recommendations on the use of MRI for the diagnosis of multiple sclerosis.",
+      "authors": [],
+      "journal": "The Lancet. Neurology",
+      "year": "2025",
+      "pmid": "40975102",
+      "doi": "10.1016/S1474-4422(25)00304-7",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40975102/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_40773034",
+      "type": "journal_article",
+      "title": "Characteristics of MRI lesions in AQP4 antibody-positive NMOSD, MOGAD, and multiple sclerosis: a systematic review and meta-analysis.",
+      "authors": [],
+      "journal": "Journal of neurology",
+      "year": "2025",
+      "pmid": "40773034",
+      "doi": "10.1007/s00415-025-13303-w",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40773034/",
+      "license": ""
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "Brain field pilot draft."
+  },
+  "curation": {
+    "auto_update_allowed": true,
+    "locked_fields": [],
+    "notes": ""
+  },
+  "provenance": {
+    "created_by": "codex_literature_review",
+    "model": "codex",
+    "created_at": "2026-06-22T00:00:00+09:00",
+    "prompt_version": "brain_pilot_v0.1",
+    "source_query": "multiple sclerosis MRI imaging findings periventricular lesions"
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "content_hash": "ce68140532f69c9d6a57afd1a64d0339e1fe4e46ce35c273f33a2fea7bb56135",
+  "keywords": [
+    "ovoid",
+    "ring"
+  ],
+  "raw_findings": []
+}

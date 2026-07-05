@@ -1,0 +1,51 @@
+{
+  "disease_id": "mog_antibody_associated_disease",
+  "disease_name": {
+    "ja": "MOG抗体関連疾患",
+    "en": "MOG antibody-associated disease"
+  },
+  "disease_aliases": {
+    "ja": [
+      "MOGAD"
+    ],
+    "en": [
+      "MOGAD"
+    ]
+  },
+  "clinical": {
+    "overview": "MOG抗体関連の炎症性脱髄疾患。ADEM様病変、皮質性脳炎、視神経炎など多彩な脳MRI所見を示す。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 60,
+      "peak_decade": "小児〜成人",
+      "summary": "小児から成人までみられる。"
+    }
+  },
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "inflammatory_demyelination"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

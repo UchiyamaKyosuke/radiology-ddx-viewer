@@ -1,0 +1,482 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "brain_abscess",
+  "disease_name": {
+    "ja": "脳膿瘍",
+    "en": "Brain abscess"
+  },
+  "disease_aliases": {
+    "ja": [
+      "脳膿瘍"
+    ],
+    "en": [
+      "Brain abscess"
+    ]
+  },
+  "clinical": {
+    "overview": "感染により脳実質内に膿瘍を形成する疾患。リング状造影病変の重要な鑑別。",
+    "treatment": "抗菌薬治療、外科的ドレナージ、原因感染巣の治療が病態に応じて検討される。",
+    "epidemiology": "頻度は高くないが、治療遅延を避けるべき重要疾患。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明らかな性差は設定しない。"
+    },
+    "age": {
+      "typical_min": null,
+      "typical_max": null,
+      "peak_decade": "未確認",
+      "summary": "幅広い年齢で起こりうる。"
+    }
+  },
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 3,
+    "basis": "differential_importance",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "ring_enhancing_lesion"
+    },
+    "summary": "リング状造影病変では必ず考慮すべき鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "脳膿瘍はCTで低吸収病変、周囲浮腫、造影でリング状増強として確認されることがある。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "brain_abscess_ct_non_contrast_ct_hypoattenuation_01",
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "CTでは低吸収病変と周囲浮腫として認識されることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "脳膿瘍はT2/FLAIR高信号、リング状造影、DWI/ADCでの拡散制限、MRSの乳酸ピークを評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "brain_abscess_mri_ce_001",
+              "finding_code": "finding:ring_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "lesion_margin",
+              "modifiers": {
+                "degree": "marked",
+                "morphology": "ring"
+              },
+              "finding_text": "リング状造影を示す。",
+              "typicality": "typical",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": [
+                "ring"
+              ]
+            },
+            {
+              "finding_id": "brain_abscess_mri_contrast_enhanced_t1wi_ring_enhancement_01",
+              "finding_code": "finding:ring_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "造影T1WIでリング状造影を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_id": "brain_abscess_mri_dwi_001",
+              "finding_code": "finding:central_diffusion_restriction",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "lesion_core",
+              "modifiers": {
+                "degree": "marked",
+                "distribution": "central",
+                "morphology": "cystic_mass"
+              },
+              "finding_text": "膿瘍中心部に強い拡散制限を認めることがある。",
+              "typicality": "typical",
+              "diagnostic_weight": 5,
+              "clinical_significance": {
+                "severity": "high",
+                "implication": "infection_or_emergency",
+                "action": "感染性病変として迅速な臨床評価を考慮する"
+              },
+              "review_status": "draft",
+              "keywords": [
+                "cystic_mass"
+              ]
+            },
+            {
+              "finding_id": "brain_abscess_mri_dwi_central_diffusion_restriction_01",
+              "finding_code": "finding:central_diffusion_restriction",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "膿瘍性病変では中心部拡散制限が重要な鑑別所見になる。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "brain_abscess_mri_flair_001",
+              "finding_code": "finding:vasogenic_edema",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "perilesional_edema",
+              "modifiers": {
+                "degree": "moderate",
+                "morphology": "rim"
+              },
+              "finding_text": "周囲浮腫を伴うことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": [
+                "rim"
+              ]
+            },
+            {
+              "finding_id": "brain_abscess_mri_flair_flair_hyperintensity_01",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "FLAIRでは病変周囲浮腫や炎症性変化が高信号となる。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "brain_abscess_mri_t2wi_t2_hyperintensity_01",
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "T2WIでは病変中心や周囲浮腫が高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "ADC"
+          },
+          "findings": [
+            {
+              "finding_id": "brain_abscess_mri_adc_adc_low_01",
+              "finding_code": "finding:adc_low",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "ADC"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "DWI高信号部に対応してADC低値を示す場合、粘稠な膿や高細胞性内容を示唆する。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "MRS"
+          },
+          "findings": [
+            {
+              "finding_id": "brain_abscess_mri_mrs_lactate_peak_01",
+              "finding_code": "finding:lactate_peak",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRS"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "MRSでは乳酸ピークが感染性/壊死性病変の補助所見になる。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 33762459, 15897953, 40958618）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "brain_abscess_mri_ce_001",
+          "brain_abscess_mri_dwi_001",
+          "brain_abscess_mri_flair_001"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_33762459",
+          "pmid_15897953",
+          "pmid_40958618"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "brain_abscess_ct_non_contrast_ct_hypoattenuation_01",
+          "brain_abscess_mri_t2wi_t2_hyperintensity_01",
+          "brain_abscess_mri_flair_flair_hyperintensity_01",
+          "brain_abscess_mri_contrast_enhanced_t1wi_ring_enhancement_01",
+          "brain_abscess_mri_dwi_central_diffusion_restriction_01",
+          "brain_abscess_mri_adc_adc_low_01",
+          "brain_abscess_mri_mrs_lactate_peak_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_33762459",
+      "type": "journal_article",
+      "title": "[Brain Abscess].",
+      "authors": [],
+      "journal": "No shinkei geka. Neurological surgery",
+      "year": "2021",
+      "pmid": "33762459",
+      "doi": "10.11477/mf.1436204400",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33762459/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_15897953",
+      "type": "journal_article",
+      "title": "Neuroimaging of infections.",
+      "authors": [],
+      "journal": "NeuroRx",
+      "year": "2005",
+      "pmid": "15897953",
+      "doi": "10.1602/neurorx.2.2.324",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15897953/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_40958618",
+      "type": "journal_article",
+      "title": "Diffusion-Weighted Imaging of Intracranial Ring-Enhancing Lesions.",
+      "authors": [],
+      "journal": "Veterinary radiology & ultrasound",
+      "year": "2025",
+      "pmid": "40958618",
+      "doi": "10.1111/vru.70085",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40958618/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "Brain field pilot draft."
+  },
+  "curation": {
+    "auto_update_allowed": true,
+    "locked_fields": [],
+    "notes": ""
+  },
+  "provenance": {
+    "created_by": "codex_literature_review",
+    "model": "codex",
+    "created_at": "2026-06-22T00:00:00+09:00",
+    "prompt_version": "brain_pilot_v0.1",
+    "source_query": "brain abscess MRI diffusion restriction ring enhancement imaging findings"
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "content_hash": "",
+  "keywords": [
+    "ring",
+    "cystic_mass",
+    "rim"
+  ],
+  "raw_findings": []
+}

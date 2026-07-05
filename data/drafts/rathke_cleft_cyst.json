@@ -1,0 +1,455 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "rathke_cleft_cyst",
+  "disease_name": {
+    "ja": "ラトケ嚢胞",
+    "en": "Rathke cleft cyst"
+  },
+  "disease_aliases": {
+    "ja": [
+      "Rathke嚢胞"
+    ],
+    "en": [
+      "Rathke cleft cyst"
+    ]
+  },
+  "clinical": {
+    "overview": "鞍内〜鞍上部の良性嚢胞性病変。嚢胞内容の蛋白濃度によりT1/T2信号が変化し、通常は充実性造影を欠く。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 80,
+      "peak_decade": "成人",
+      "summary": "成人で重要。"
+    }
+  },
+  "keywords": [
+    "sellar cyst",
+    "intracystic nodule"
+  ],
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 2,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "sellar_cystic_lesion"
+    },
+    "summary": "該当する画像パターンで重要な鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "Rathke嚢胞は鞍内〜鞍上部嚢胞性病変としてCTで低吸収〜等吸収を示す。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "rathke_cleft_cyst_ct_001",
+              "finding_code": "finding:sellar_suprasellar_mass",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "pituitary",
+                "subregion": "sellar",
+                "laterality": "unknown"
+              },
+              "target": "sellar_mass",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "鞍内〜鞍上部嚢胞性病変として見える。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:sellar_suprasellar_mass",
+                "alternatives": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRI信号は内容で可変だが、非造影性嚢胞、T1高信号内容、薄い壁造影を確認する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "rathke_cleft_cyst_mri_002",
+              "finding_code": "finding:t1_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "pituitary",
+                "subregion": "sellar",
+                "laterality": "unknown"
+              },
+              "target": "cyst_content",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "蛋白濃度の高い内容ではT1高信号を示すことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:t1_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "rathke_cleft_cyst_mri_t1wi_t1_hyperintensity_01",
+              "finding_code": "finding:t1_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "蛋白濃度によりT1高信号を示すことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "rathke_cleft_cyst_mri_003",
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "pituitary",
+                "subregion": "sellar",
+                "laterality": "unknown"
+              },
+              "target": "cyst_content",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "嚢胞内容はT2高信号を示すことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:t2_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "rathke_cleft_cyst_mri_t2wi_t2_hyperintensity_01",
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "T2WIでは嚢胞性高信号を示すことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "rathke_cleft_cyst_mri_004",
+              "finding_code": "finding:enhancement_absent",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "pituitary",
+                "subregion": "sellar",
+                "laterality": "unknown"
+              },
+              "target": "cyst_content",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "充実性造影効果を欠くことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:enhancement_absent",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "rathke_cleft_cyst_mri_contrast_enhanced_t1wi_sellar_suprasellar_mass_01",
+              "finding_code": "finding:sellar_suprasellar_mass",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "鞍内〜鞍上部の嚢胞性病変として見える。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "rathke_cleft_cyst_mri_contrast_enhanced_t1wi_enhancement_absent_01",
+              "finding_code": "finding:enhancement_absent",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "内部は造影されず、薄い壁造影にとどまることが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_id": "rathke_cleft_cyst_mri_dwi_diffusion_restriction_absent_01",
+              "finding_code": "finding:diffusion_restriction_absent",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "通常、強い拡散制限を欠く。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 36270609, 36210492, 25614942）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "rathke_cleft_cyst_ct_001",
+          "rathke_cleft_cyst_mri_002",
+          "rathke_cleft_cyst_mri_003",
+          "rathke_cleft_cyst_mri_004"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_36270609",
+          "pmid_36210492",
+          "pmid_25614942"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "rathke_cleft_cyst_mri_contrast_enhanced_t1wi_sellar_suprasellar_mass_01",
+          "rathke_cleft_cyst_mri_t1wi_t1_hyperintensity_01",
+          "rathke_cleft_cyst_mri_t2wi_t2_hyperintensity_01",
+          "rathke_cleft_cyst_mri_dwi_diffusion_restriction_absent_01",
+          "rathke_cleft_cyst_mri_contrast_enhanced_t1wi_enhancement_absent_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_36270609",
+      "type": "journal_article",
+      "title": "Pituitary Incidentalomas: Best Practices and Looking Ahead.",
+      "authors": [],
+      "journal": "Endocrine practice : official journal of the American College of Endocrinology and the American Association of Clinical Endocrinologists",
+      "year": "2023",
+      "pmid": "36270609",
+      "doi": "10.1016/j.eprac.2022.10.004",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36270609/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_36210492",
+      "type": "journal_article",
+      "title": "Primary Intrasellar Amyloidoma.",
+      "authors": [],
+      "journal": "The Journal of craniofacial surgery",
+      "year": "2023",
+      "pmid": "36210492",
+      "doi": "10.1097/SCS.0000000000008811",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36210492/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_25614942",
+      "type": "journal_article",
+      "title": "Parasellar xanthogranulomas.",
+      "authors": [],
+      "journal": "Journal of neurosurgery",
+      "year": "2015",
+      "pmid": "25614942",
+      "doi": "10.3171/2014.12.JNS14542",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25614942/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": [
+    {
+      "raw_finding_id": "rathke_cleft_cyst_raw_keyword_intracystic_nodule",
+      "modality_text": "MRI",
+      "acquisition_text": "",
+      "anatomy_text": "",
+      "target_text": "",
+      "finding_text": "キーワード/所見として \"intracystic nodule\" を保持。",
+      "interpretation": "辞書対応済み構造化欄から漏れる可能性があるため、Phase1自由記載として保存。",
+      "source_ids": [
+        "public_raw_findings_audit_20260705"
+      ],
+      "mapping": {
+        "status": "unmapped",
+        "candidate_finding_code": "finding:intracystic_nodule",
+        "candidate_acquisition_code": "",
+        "candidate_target": "",
+        "notes": "Added during raw_findings audit to preserve information that may be lost by dictionary-only structured fields."
+      },
+      "review_status": "needs_mapping"
+    }
+  ]
+}

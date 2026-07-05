@@ -1,0 +1,38 @@
+{
+  "disease_id": "acute_disseminated_encephalomyelitis",
+  "disease_name": {
+    "ja": "急性散在性脳脊髄炎",
+    "en": "Acute disseminated encephalomyelitis"
+  },
+  "query": "acute disseminated encephalomyelitis AND (MRI OR imaging)",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "35290492",
+      "title": "[Acute disseminated encephalomyelitis].",
+      "journal": "Der Radiologe",
+      "year": "2022",
+      "doi": "10.1007/s00117-022-00982-z",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35290492/",
+      "abstract": ""
+    },
+    {
+      "pmid": "27889190",
+      "title": "Diagnosis of multiple sclerosis: progress and challenges.",
+      "journal": "Lancet (London, England)",
+      "year": "2018",
+      "doi": "10.1016/S0140-6736(16)30959-X",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27889190/",
+      "abstract": ""
+    },
+    {
+      "pmid": "36007116",
+      "title": "Acute disseminated encephalomyelitis.",
+      "journal": "JAAPA : official journal of the American Academy of Physician Assistants",
+      "year": "2022",
+      "doi": "10.1097/01.JAA.0000832604.33045.9d",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36007116/",
+      "abstract": ""
+    }
+  ]
+}

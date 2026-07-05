@@ -1,0 +1,51 @@
+{
+  "disease_id": "central_neurocytoma",
+  "disease_name": {
+    "ja": "中枢性神経細胞腫",
+    "en": "Central neurocytoma"
+  },
+  "disease_aliases": {
+    "ja": [
+      "中枢神経細胞腫"
+    ],
+    "en": [
+      "Central neurocytoma"
+    ]
+  },
+  "clinical": {
+    "overview": "若年成人の側脳室内腫瘍。モンロー孔近傍に発生し、嚢胞様変化や石灰化を伴う脳室内腫瘤として見える。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 15,
+      "typical_max": 45,
+      "peak_decade": "20-30歳代",
+      "summary": "若年成人に多い。"
+    }
+  },
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "intraventricular_mass"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

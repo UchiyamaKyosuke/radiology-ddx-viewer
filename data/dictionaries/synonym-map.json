@@ -1,0 +1,348 @@
+{
+  "t2低信号": [
+    "finding:t2_hypointensity"
+  ],
+  "t2で暗い": [
+    "finding:t2_hypointensity"
+  ],
+  "t2 hypointense": [
+    "finding:t2_hypointensity"
+  ],
+  "低信号": [
+    "finding:t2_hypointensity"
+  ],
+  "t2軽度低信号": [
+    "finding:t2_mild_hypointensity"
+  ],
+  "t2やや低信号": [
+    "finding:t2_mild_hypointensity"
+  ],
+  "t2高信号": [
+    "finding:t2_hyperintensity"
+  ],
+  "t2で明るい": [
+    "finding:t2_hyperintensity"
+  ],
+  "t2 hyperintense": [
+    "finding:t2_hyperintensity"
+  ],
+  "高信号": [
+    "finding:t2_hyperintensity"
+  ],
+  "t2軽度高信号": [
+    "finding:t2_mild_hyperintensity"
+  ],
+  "t2やや高信号": [
+    "finding:t2_mild_hyperintensity"
+  ],
+  "t2等信号": [
+    "finding:t2_isointensity"
+  ],
+  "t1低信号": [
+    "finding:t1_hypointensity"
+  ],
+  "t1軽度低信号": [
+    "finding:t1_mild_hypointensity"
+  ],
+  "t1やや低信号": [
+    "finding:t1_mild_hypointensity"
+  ],
+  "t1軽度高信号": [
+    "finding:t1_mild_hyperintensity"
+  ],
+  "t1やや高信号": [
+    "finding:t1_mild_hyperintensity"
+  ],
+  "t1等信号": [
+    "finding:t1_isointensity"
+  ],
+  "t1高信号": [
+    "finding:t1_hyperintensity"
+  ],
+  "拡散制限なし": [
+    "finding:diffusion_restriction_absent",
+    "finding:adc_high",
+    "finding:dwi_isointensity"
+  ],
+  "拡散制限を認めない": [
+    "finding:diffusion_restriction_absent",
+    "finding:adc_high",
+    "finding:dwi_isointensity"
+  ],
+  "restricted diffusion absent": [
+    "finding:diffusion_restriction_absent",
+    "finding:adc_high",
+    "finding:dwi_isointensity"
+  ],
+  "no diffusion restriction": [
+    "finding:diffusion_restriction_absent",
+    "finding:adc_high",
+    "finding:dwi_isointensity"
+  ],
+  "bridging vessel": [
+    "finding:bridging_vessel_sign"
+  ],
+  "架橋血管": [
+    "finding:bridging_vessel_sign"
+  ],
+  "卵巣由来": [
+    "finding:ovarian_origin"
+  ],
+  "軽度造影": [
+    "finding:mild_enhancement"
+  ],
+  "弱い造影": [
+    "finding:mild_enhancement"
+  ],
+  "脂肪あり": [
+    "finding:fat_present"
+  ],
+  "脂肪成分": [
+    "finding:fat_present"
+  ],
+  "拡散制限あり": [
+    "finding:diffusion_restriction_present",
+    "finding:dwi_hyperintensity",
+    "finding:adc_low"
+  ],
+  "dwi高信号": [
+    "finding:dwi_hyperintensity",
+    "finding:diffusion_restriction_present",
+    "finding:adc_low"
+  ],
+  "adc低下": [
+    "finding:adc_low",
+    "finding:diffusion_restriction_present"
+  ],
+  "多房性嚢胞": [
+    "finding:multilocular_cystic_mass"
+  ],
+  "壁在結節": [
+    "finding:papillary_projection"
+  ],
+  "乳頭状": [
+    "finding:papillary_projection"
+  ],
+  "壁肥厚": [
+    "finding:wall_thickening"
+  ],
+  "出血成分": [
+    "finding:hemorrhage_present"
+  ],
+  "血性内容": [
+    "finding:hemorrhage_present"
+  ],
+  "t2 shading": [
+    "finding:t2_shading"
+  ],
+  "造影される充実成分": [
+    "finding:enhancing_solid_component"
+  ],
+  "造影効果なし": [
+    "finding:enhancement_absent"
+  ],
+  "増強なし": [
+    "finding:enhancement_absent"
+  ],
+  "adc低値": [
+    "finding:adc_low"
+  ],
+  "adc高値": [
+    "finding:adc_high"
+  ],
+  "adc上昇": [
+    "finding:adc_high"
+  ],
+  "adc等信号": [
+    "finding:adc_iso"
+  ],
+  "dwi等信号": [
+    "finding:dwi_isointensity",
+    "finding:diffusion_restriction_absent"
+  ],
+  "ct低吸収": [
+    "finding:ct_hypoattenuation"
+  ],
+  "低吸収": [
+    "finding:ct_hypoattenuation"
+  ],
+  "ct軽度低吸収": [
+    "finding:ct_mild_hypoattenuation"
+  ],
+  "軽度低吸収": [
+    "finding:ct_mild_hypoattenuation"
+  ],
+  "やや低吸収": [
+    "finding:ct_mild_hypoattenuation"
+  ],
+  "ct等吸収": [
+    "finding:ct_isoattenuation"
+  ],
+  "等吸収": [
+    "finding:ct_isoattenuation"
+  ],
+  "ct軽度高吸収": [
+    "finding:ct_mild_hyperattenuation"
+  ],
+  "軽度高吸収": [
+    "finding:ct_mild_hyperattenuation"
+  ],
+  "ct高吸収": [
+    "finding:ct_hyperattenuation"
+  ],
+  "高吸収": [
+    "finding:ct_hyperattenuation"
+  ],
+  "脂肪吸収値": [
+    "finding:ct_fat_attenuation"
+  ],
+  "石灰化": [
+    "finding:calcification_present"
+  ],
+  "拡散制限を認める": [
+    "finding:diffusion_restriction_present",
+    "finding:dwi_hyperintensity",
+    "finding:adc_low"
+  ],
+  "restricted diffusion": [
+    "finding:diffusion_restriction_present",
+    "finding:dwi_hyperintensity",
+    "finding:adc_low"
+  ],
+  "diffusion restriction": [
+    "finding:diffusion_restriction_present",
+    "finding:dwi_hyperintensity",
+    "finding:adc_low"
+  ],
+  "DWI高信号": [
+    "finding:dwi_hyperintensity",
+    "finding:diffusion_restriction_present",
+    "finding:adc_low"
+  ],
+  "DWI high": [
+    "finding:dwi_hyperintensity",
+    "finding:diffusion_restriction_present"
+  ],
+  "ADC低下": [
+    "finding:adc_low",
+    "finding:diffusion_restriction_present",
+    "finding:dwi_hyperintensity"
+  ],
+  "ADC低値": [
+    "finding:adc_low",
+    "finding:diffusion_restriction_present",
+    "finding:dwi_hyperintensity"
+  ],
+  "low ADC": [
+    "finding:adc_low",
+    "finding:diffusion_restriction_present"
+  ],
+  "DWI等信号": [
+    "finding:dwi_isointensity",
+    "finding:diffusion_restriction_absent"
+  ],
+  "ADC高値": [
+    "finding:adc_high",
+    "finding:diffusion_restriction_absent"
+  ],
+  "ADC上昇": [
+    "finding:adc_high",
+    "finding:diffusion_restriction_absent"
+  ],
+  "high ADC": [
+    "finding:adc_high",
+    "finding:diffusion_restriction_absent"
+  ],
+  "ADC等信号": [
+    "finding:adc_iso",
+    "finding:diffusion_restriction_absent"
+  ],
+  "ADC同程度": [
+    "finding:adc_iso",
+    "finding:diffusion_restriction_absent"
+  ],
+  "SWI低信号": [
+    "finding:susceptibility_blooming"
+  ],
+  "磁化率低信号": [
+    "finding:susceptibility_blooming"
+  ],
+  "blooming": [
+    "finding:susceptibility_blooming"
+  ],
+  "微小出血": [
+    "finding:susceptibility_blooming"
+  ],
+  "microbleeds": [
+    "finding:susceptibility_blooming"
+  ],
+  "flow void": [
+    "finding:flow_void"
+  ],
+  "フローボイド": [
+    "finding:flow_void"
+  ],
+  "血管狭窄": [
+    "finding:arterial_stenosis_or_occlusion"
+  ],
+  "動脈狭窄": [
+    "finding:arterial_stenosis_or_occlusion"
+  ],
+  "血管閉塞": [
+    "finding:arterial_stenosis_or_occlusion"
+  ],
+  "動脈閉塞": [
+    "finding:arterial_stenosis_or_occlusion"
+  ],
+  "nidus": [
+    "finding:vascular_nidus"
+  ],
+  "血管nidus": [
+    "finding:vascular_nidus"
+  ],
+  "静脈洞血栓": [
+    "finding:venous_sinus_thrombosis"
+  ],
+  "venous sinus thrombosis": [
+    "finding:venous_sinus_thrombosis"
+  ],
+  "empty delta sign": [
+    "finding:empty_delta_sign"
+  ],
+  "過灌流": [
+    "finding:hyperperfusion"
+  ],
+  "低灌流": [
+    "finding:hypoperfusion"
+  ],
+  "CBV上昇": [
+    "finding:elevated_cbv"
+  ],
+  "rCBV上昇": [
+    "finding:elevated_cbv"
+  ],
+  "CBV低下": [
+    "finding:reduced_cbv"
+  ],
+  "rCBV低下": [
+    "finding:reduced_cbv"
+  ],
+  "コリンピーク上昇": [
+    "finding:elevated_choline_peak"
+  ],
+  "choline peak": [
+    "finding:elevated_choline_peak"
+  ],
+  "乳酸ピーク": [
+    "finding:lactate_peak"
+  ],
+  "lactate peak": [
+    "finding:lactate_peak"
+  ],
+  "脂質ピーク": [
+    "finding:lipid_peak"
+  ],
+  "lipid peak": [
+    "finding:lipid_peak"
+  ]
+}

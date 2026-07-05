@@ -1,0 +1,38 @@
+{
+  "disease_id": "normal_pressure_hydrocephalus",
+  "disease_name": {
+    "ja": "正常圧水頭症",
+    "en": "Normal pressure hydrocephalus"
+  },
+  "query": "normal pressure hydrocephalus MRI CT imaging DESH",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "38701548",
+      "title": "Idiopathic normal pressure hydrocephalus: Validation of the DESH score as a prognostic tool for shunt surgery response.",
+      "journal": "Clinical neurology and neurosurgery",
+      "year": "2024",
+      "doi": "10.1016/j.clineuro.2024.108295",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38701548/",
+      "abstract": ""
+    },
+    {
+      "pmid": "42128964",
+      "title": "Idiopathic normal pressure hydrocephalus: validation of the DESH score in the Capital Region of Denmark.",
+      "journal": "Acta neurochirurgica",
+      "year": "2026",
+      "doi": "10.1007/s00701-026-06913-4",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42128964/",
+      "abstract": ""
+    },
+    {
+      "pmid": "35871239",
+      "title": "Can preoperative brain imaging features predict shunt response in idiopathic normal pressure hydrocephalus? A PRISMA review.",
+      "journal": "Neuroradiology",
+      "year": "2022",
+      "doi": "10.1007/s00234-022-03021-9",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35871239/",
+      "abstract": ""
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "disease_id": "cerebral_amyloid_angiopathy",
+  "disease_name": {
+    "ja": "脳アミロイドアンギオパチー",
+    "en": "Cerebral amyloid angiopathy"
+  },
+  "query": "cerebral amyloid angiopathy MRI SWI imaging",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "38753899",
+      "title": "Superficial Siderosis",
+      "journal": "Bioengineering (Basel, Switzerland)",
+      "year": "2026",
+      "doi": "10.3390/bioengineering12050473",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38753899/",
+      "abstract": ""
+    },
+    {
+      "pmid": "42276756",
+      "title": "Comparison of SWI with T2* in the Diagnosis of Cerebral Amyloid Angiopathy Using ARIA Scoring and Boston Criteria 2.0 at 7T MRI.",
+      "journal": "AJNR. American journal of neuroradiology",
+      "year": "2026",
+      "doi": "10.3174/ajnr.A9472",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42276756/",
+      "abstract": ""
+    }
+  ]
+}

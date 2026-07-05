@@ -1,0 +1,51 @@
+{
+  "disease_id": "pineal_germinoma",
+  "disease_name": {
+    "ja": "松果体部胚腫",
+    "en": "Pineal germinoma"
+  },
+  "disease_aliases": {
+    "ja": [
+      "松果体部ジャーミノーマ"
+    ],
+    "en": [
+      "Pineal germinoma"
+    ]
+  },
+  "clinical": {
+    "overview": "若年男性に多い松果体部胚細胞腫瘍。松果体部充実性腫瘤、水頭症、石灰化の取り込み・偏位が手掛かり。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "male",
+      "predilection": "male_predominant",
+      "summary": "男性に多い。"
+    },
+    "age": {
+      "typical_min": 10,
+      "typical_max": 30,
+      "peak_decade": "10-20歳代",
+      "summary": "思春期〜若年成人に多い。"
+    }
+  },
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "pineal_region_mass"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

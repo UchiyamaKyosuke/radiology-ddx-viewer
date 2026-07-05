@@ -1,0 +1,38 @@
+{
+  "disease_id": "brain_abscess",
+  "disease_name": {
+    "ja": "脳膿瘍",
+    "en": "Brain abscess"
+  },
+  "query": "brain abscess MRI diffusion restriction ring enhancement imaging findings",
+  "fetched_at": "2026-06-22T06:00:52.585Z",
+  "articles": [
+    {
+      "pmid": "33762459",
+      "title": "[Brain Abscess].",
+      "journal": "No shinkei geka. Neurological surgery",
+      "year": "2021",
+      "doi": "10.11477/mf.1436204400",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33762459/",
+      "abstract": "Although the prognosis of brain abscesses has historically improved, the mortality rate still ranges from 5 to 32%, with ventricular perforation reaching 50% and 85-100% in fungal brain abscesses. The characteristic finding of ring-like enhancement by contrast-enhanced imaging is non-specific, and DWI, SWI and MR spectroscopy are very useful in differentiating brain abcesses from necrotizing brain tumors. Brain abscesses show apparent diffusion restriction on the DWI/apparent diffusion coefficient(ADC) map, whereas necrotizing brain tumors often show a weak diffusion restriction. The \"dual rim sign\" on SWI is also a highly specific finding of brain abscess."
+    },
+    {
+      "pmid": "15897953",
+      "title": "Neuroimaging of infections.",
+      "journal": "NeuroRx : the journal of the American Society for Experimental NeuroTherapeutics",
+      "year": "2005",
+      "doi": "10.1602/neurorx.2.2.324",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15897953/",
+      "abstract": "Neuroimaging plays a crucial role in the diagnosis and therapeutic decision making in infectious diseases of the nervous system. The review summarizes imaging findings and recent advances in the diagnosis of pyogenic brain abscess, ventriculitis, viral disease including exotic and emergent viruses, and opportunistic disease. For each condition, the ensuing therapeutic steps are presented. In cases of uncomplicated meningitis, cranial computed tomography (CT) appears to be sufficient for clinical management to exclude acute brain edema, hydrocephalus, and pathology of the base of skull. Magnetic resonance imaging (MRI) is superior in depicting complications like sub-/epidural empyema and vasculitic complications notably on FLAIR (fluid-attenuated inversion recovery)-weighted images. The newer technique of diffusion-weighted imaging (DWI) shows early parenchymal complications of meningitis earlier and with more clarity and is of help in differentiation of pyogenic abscess (PA) from ring enhancing lesions of other etiology. Proton magnetic resonance spectroscopy (PMRS) seems to produce specific peak patterns in cases of abscess. The presence of lactate cytosolic amino acids and absence of choline seems to indicate PA. Also in cases of suspected opportunistic infection due to toxoplasma DWI may be of help in the differentiation from lymphoma, showing no restriction of water diffusion. In patients with herpes simplex and more exotic viruses like West Nile and Murray Valley virus DWI allows earlier lesion detection and therapeutic intervention with virustatic drugs."
+    },
+    {
+      "pmid": "40958618",
+      "title": "Diffusion-Weighted Imaging of Intracranial Ring-Enhancing Lesions.",
+      "journal": "Veterinary radiology & ultrasound : the official journal of the American College of Veterinary Radiology and the International Veterinary Radiology Association",
+      "year": "2025",
+      "doi": "10.1111/vru.70085",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40958618/",
+      "abstract": "Ring-enhancing magnetic resonance imaging (MRI) lesions result from various diseases, including infection, neoplasia, inflammation, and vascular etiologies. Differentiation based on standard MRI sequences can be challenging. This study aims to compare the apparent diffusion coefficient (ADC) values of intracranial ring-enhancing lesions of infectious etiology with ring-enhancing lesions caused by other etiologies. Records were reviewed for MRI studies with diffusion-weighted imaging (DWI) and post-gadolinium T1-weighted ring-enhancing lesions with a definitive histopathological diagnosis or a microbiological diagnosis of brain infection. ADC maps were generated, and regions of interest were selected to evaluate ADC values of ring-enhancing lesions. Normalized ADC values (rADC) were calculated using ADC values from lesional and contralateral brain regions of interest (rADC&#xa0;=&#xa0;ADC lesion /ADC CB ). A total of 69 cases met the inclusion criteria (68 dogs, 1 cat). Median (range) rADC was significantly lower for intraparenchymal bacterial abscesses [0.54 (0.19-0.82)] compared to ring-enhancing gliomas [1.7 (0.80-3.9); p&#xa0;=&#xa0;0.0003) and non-infectious inflammatory lesions [1.7 (0.74-3.3); p&#xa0;=&#xa0;0.024], but not significantly different compared to intraparenchymal hemorrhage [0.54 (0.33-0.87); p&#xa0;>&#xa0;0.99]. Extraparenchymal bacterial empyema and intraparenchymal fungal abscesses did not exhibit apparent restricted diffusion, with median rADC (range) of 2.8 (1.3-3.4) and 1.2 (1.1-1.8), respectively. With exclusion of hemorrhagic lesions, an rADC of 0.65 had a specificity/sensitivity of 98%/78% for intraparenchymal bacterial abscess. Apparent restricted diffusion on DWI and ADC is a useful marker for identifying intraparenchymal bacterial abscesses among ring-enhancing lesions. However, extraparenchymal bacterial empyema and fungal abscesses may not exhibit this feature."
+    }
+  ]
+}

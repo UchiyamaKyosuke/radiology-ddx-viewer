@@ -1,0 +1,433 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "leigh_syndrome",
+  "disease_name": {
+    "ja": "Leigh症候群",
+    "en": "Leigh syndrome"
+  },
+  "disease_aliases": {
+    "ja": [
+      "リー症候群"
+    ],
+    "en": [
+      "Leigh disease"
+    ]
+  },
+  "clinical": {
+    "overview": "ミトコンドリア病による亜急性壊死性脳症。基底核、脳幹に対称性T2/FLAIR高信号、DWI異常を示す。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 18,
+      "peak_decade": "小児",
+      "summary": "小児で重要。"
+    }
+  },
+  "keywords": [
+    "mitochondrial",
+    "basal ganglia",
+    "brainstem"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "mitochondrial_basal_ganglia_disease"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "Leigh症候群はCTで基底核低吸収として見えることがある。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "leigh_syndrome_ct_001",
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "basal_ganglia",
+                "laterality": "unknown"
+              },
+              "target": "deep_gray_matter",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "基底核低吸収として見えることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_hypoattenuation",
+                "alternatives": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは基底核、脳幹、小脳の左右対称性T2/FLAIR高信号、拡散制限、乳酸ピークを評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "leigh_syndrome_mri_002",
+              "finding_code": "finding:basal_ganglia_involvement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "basal_ganglia",
+                "laterality": "unknown"
+              },
+              "target": "deep_gray_matter",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "基底核や脳幹に対称性T2高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:basal_ganglia_involvement",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_id": "leigh_syndrome_mri_003",
+              "finding_code": "finding:dwi_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "basal_ganglia",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "活動性病変でDWI高信号を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:dwi_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "leigh_syndrome_mri_dwi_diffusion_restriction_present_01",
+              "finding_code": "finding:diffusion_restriction_present",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "急性病変で拡散制限を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "MRS"
+          },
+          "findings": [
+            {
+              "finding_id": "leigh_syndrome_mri_004",
+              "finding_code": "finding:lactate_peak",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRS"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "basal_ganglia",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "MRSで乳酸ピークを示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:lactate_peak",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "leigh_syndrome_mri_mrs_lactate_peak_01",
+              "finding_code": "finding:lactate_peak",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRS"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "MRSで乳酸ピークを認めることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "leigh_syndrome_mri_flair_basal_ganglia_involvement_01",
+              "finding_code": "finding:basal_ganglia_involvement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "基底核に左右対称性病変を認める。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "leigh_syndrome_mri_flair_flair_hyperintensity_01",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "T2/FLAIR高信号病変を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 23772060, 32684373, 39322395）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "leigh_syndrome_ct_001",
+          "leigh_syndrome_mri_002",
+          "leigh_syndrome_mri_003",
+          "leigh_syndrome_mri_004"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_23772060",
+          "pmid_32684373",
+          "pmid_39322395"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "leigh_syndrome_mri_flair_basal_ganglia_involvement_01",
+          "leigh_syndrome_mri_flair_flair_hyperintensity_01",
+          "leigh_syndrome_mri_dwi_diffusion_restriction_present_01",
+          "leigh_syndrome_mri_mrs_lactate_peak_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_23772060",
+      "type": "journal_article",
+      "title": "A guide to diagnosis and treatment of Leigh syndrome.",
+      "authors": [],
+      "journal": "Journal of neurology, neurosurgery, and psychiatry",
+      "year": "2014",
+      "pmid": "23772060",
+      "doi": "10.1136/jnnp-2012-304426",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23772060/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_32684373",
+      "type": "journal_article",
+      "title": "MEGDEL Syndrome.",
+      "authors": [],
+      "journal": "Pediatric neurology",
+      "year": "2021",
+      "pmid": "32684373",
+      "doi": "10.1016/j.pediatrneurol.2020.03.009",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32684373/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_39322395",
+      "type": "journal_article",
+      "title": "Primary mitochondrial diseases.",
+      "authors": [],
+      "journal": "Handbook of clinical neurology",
+      "year": "2024",
+      "pmid": "39322395",
+      "doi": "10.1016/B978-0-323-99209-1.00004-1",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39322395/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": [
+    {
+      "raw_finding_id": "leigh_syndrome_raw_keyword_basal_ganglia",
+      "modality_text": "MRI",
+      "acquisition_text": "",
+      "anatomy_text": "",
+      "target_text": "",
+      "finding_text": "キーワード/所見として \"basal ganglia\" を保持。",
+      "interpretation": "辞書対応済み構造化欄から漏れる可能性があるため、Phase1自由記載として保存。",
+      "source_ids": [
+        "public_raw_findings_audit_20260705"
+      ],
+      "mapping": {
+        "status": "unmapped",
+        "candidate_finding_code": "finding:basal_ganglia",
+        "candidate_acquisition_code": "",
+        "candidate_target": "",
+        "notes": "Added during raw_findings audit to preserve information that may be lost by dictionary-only structured fields."
+      },
+      "review_status": "needs_mapping"
+    }
+  ]
+}

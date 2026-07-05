@@ -1,0 +1,396 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "acute_ischemic_stroke",
+  "disease_name": {
+    "ja": "急性虚血性脳梗塞",
+    "en": "Acute ischemic stroke"
+  },
+  "disease_aliases": {
+    "ja": [
+      "急性脳梗塞"
+    ],
+    "en": [
+      "Acute cerebral infarction",
+      "Acute ischemic infarct"
+    ]
+  },
+  "clinical": {
+    "overview": "脳血流低下により急性神経症状を来す疾患。DWI/ADCによる早期虚血検出が重要。",
+    "treatment": "発症時間、画像、血管評価に応じて血栓溶解療法、血管内治療、抗血栓療法などが検討される。",
+    "epidemiology": "高齢者で多いが、幅広い成人で発症しうる。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "性差より血管危険因子や年齢の影響が大きい。"
+    },
+    "age": {
+      "typical_min": 45,
+      "typical_max": 100,
+      "peak_decade": "60-80歳代",
+      "summary": "中高年以降に多い。"
+    }
+  },
+  "frequency": {
+    "label": "common",
+    "prevalence_rank": 4,
+    "basis": "epidemiology",
+    "evidence_level": "review",
+    "context": {
+      "population": "adult",
+      "body_region": "brain",
+      "clinical_setting": "acute_neurologic_deficit"
+    },
+    "summary": "急性神経症状では頻度・重要度とも高い鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "急性期CTでは出血除外と早期虚血変化（皮髄境界不明瞭化、低吸収、血管内高吸収）を確認する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "acute_ischemic_stroke_ct_non_contrast_ct_mild_hypoattenuation_01",
+              "finding_code": "finding:ct_mild_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "非造影CTでは早期虚血変化として軽度低吸収や皮髄境界不明瞭化を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": [
+                "early ischemic change"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIではDWI高信号とADC低値の組み合わせが急性虚血を強く支持し、FLAIR変化やMRA閉塞を時相評価に使う。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_id": "acute_ischemic_stroke_mri_dwi_001",
+              "finding_code": "finding:vascular_territory_restricted_diffusion",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cortex",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {
+                "degree": "marked",
+                "distribution": "focal",
+                "morphology": "wedge_shaped"
+              },
+              "finding_text": "血管支配域に沿うDWI高信号/拡散制限を認める。",
+              "typicality": "typical",
+              "diagnostic_weight": 5,
+              "clinical_significance": {
+                "severity": "high",
+                "implication": "emergency",
+                "action": "急性脳梗塞として発症時間と治療適応を確認する"
+              },
+              "review_status": "draft",
+              "keywords": [
+                "wedge_shaped"
+              ]
+            },
+            {
+              "finding_id": "acute_ischemic_stroke_mri_dwi_vascular_territory_restricted_diffusion_01",
+              "finding_code": "finding:vascular_territory_restricted_diffusion",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "DWIでは血管支配域に沿う高信号/拡散制限を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "ADC"
+          },
+          "findings": [
+            {
+              "finding_id": "acute_ischemic_stroke_mri_adc_001",
+              "finding_code": "finding:adc_low",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "ADC"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cortex",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {
+                "degree": "marked",
+                "distribution": "focal",
+                "morphology": "wedge_shaped"
+              },
+              "finding_text": "DWI高信号部位に対応してADC低下を認める。",
+              "typicality": "typical",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": [
+                "wedge_shaped"
+              ]
+            },
+            {
+              "finding_id": "acute_ischemic_stroke_mri_adc_adc_low_01",
+              "finding_code": "finding:adc_low",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "ADC"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "ADC mapで低値を示すことで真の拡散制限を支持する。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "acute_ischemic_stroke_mri_flair_flair_hyperintensity_01",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "発症から時間が経つとFLAIR高信号が明瞭化する。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "MRA_TOF"
+          },
+          "findings": [
+            {
+              "finding_id": "acute_ischemic_stroke_mri_mra_tof_arterial_stenosis_or_occlusion_01",
+              "finding_code": "finding:arterial_stenosis_or_occlusion",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRA_TOF"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "MRA/CTAで責任血管の閉塞または高度狭窄を認めることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 32132175, 28551302, 34581223）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "acute_ischemic_stroke_mri_dwi_001",
+          "acute_ischemic_stroke_mri_adc_001"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_32132175",
+          "pmid_28551302",
+          "pmid_34581223"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "acute_ischemic_stroke_ct_non_contrast_ct_mild_hypoattenuation_01",
+          "acute_ischemic_stroke_mri_dwi_vascular_territory_restricted_diffusion_01",
+          "acute_ischemic_stroke_mri_adc_adc_low_01",
+          "acute_ischemic_stroke_mri_flair_flair_hyperintensity_01",
+          "acute_ischemic_stroke_mri_mra_tof_arterial_stenosis_or_occlusion_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_32132175",
+      "type": "journal_article",
+      "title": "Reversible diffusion-weighted imaging lesions in acute ischemic stroke: A systematic review.",
+      "authors": [],
+      "journal": "Neurology",
+      "year": "2020",
+      "pmid": "32132175",
+      "doi": "10.1212/WNL.0000000000009173",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32132175/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_28551302",
+      "type": "journal_article",
+      "title": "Acute stroke differential diagnosis: Stroke mimics.",
+      "authors": [],
+      "journal": "European journal of radiology",
+      "year": "2018",
+      "pmid": "28551302",
+      "doi": "10.1016/j.ejrad.2017.05.008",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28551302/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_34581223",
+      "type": "journal_article",
+      "title": "Patterns of ischemic posterior circulation strokes: A clinical, anatomical, and radiological review.",
+      "authors": [],
+      "journal": "International journal of stroke",
+      "year": "2022",
+      "pmid": "34581223",
+      "doi": "10.1177/17474930211046758",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34581223/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "Brain field pilot draft."
+  },
+  "curation": {
+    "auto_update_allowed": true,
+    "locked_fields": [],
+    "notes": ""
+  },
+  "provenance": {
+    "created_by": "codex_literature_review",
+    "model": "codex",
+    "created_at": "2026-06-22T00:00:00+09:00",
+    "prompt_version": "brain_pilot_v0.1",
+    "source_query": "diffusion weighted imaging acute ischemic stroke MRI review"
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "content_hash": "",
+  "keywords": [
+    "wedge_shaped"
+  ],
+  "raw_findings": []
+}

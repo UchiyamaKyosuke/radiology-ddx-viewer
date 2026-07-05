@@ -1,0 +1,353 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "invasive_pulmonary_aspergillosis",
+  "disease_name": {
+    "ja": "侵襲性肺アスペルギルス症",
+    "en": "Invasive pulmonary aspergillosis"
+  },
+  "disease_aliases": {
+    "ja": [],
+    "en": []
+  },
+  "clinical": {
+    "overview": "侵襲性肺アスペルギルス症は免疫不全肺炎で重要な鑑別となる疾患で、臨床背景と画像分布を組み合わせて評価する。",
+    "treatment": "治療方針は病型、病期、合併症、全身状態に応じて決定する。",
+    "epidemiology": "頻度と好発年齢は病型・背景疾患により異なる。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "代表的な性差傾向を記録。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 100,
+      "peak_decade": "免疫不全",
+      "summary": "代表的な発症・診断年齢帯を記録。"
+    }
+  },
+  "keywords": [
+    "Invasive pulmonary aspergillosis",
+    "侵襲性肺アスペルギルス症",
+    "halo sign",
+    "air crescent sign"
+  ],
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 3,
+    "basis": "differential_importance",
+    "evidence_level": "public_review",
+    "context": {
+      "population": "any",
+      "body_region": "chest",
+      "clinical_setting": "免疫不全肺炎"
+    },
+    "summary": "免疫不全肺炎 の鑑別での相対頻度と重要度を記録。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "侵襲性肺アスペルギルス症のCTでは濃度、石灰化、出血、造影効果、周囲変化を評価する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "chest",
+                "organ": "lung",
+                "subregion": "lung_parenchyma",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "halo sign",
+                "air crescent sign"
+              ],
+              "finding_text": "侵襲性肺アスペルギルス症はCTで炎症性の低吸収域や周囲脂肪織濃度上昇として評価される。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:ct_hypoattenuation",
+                "alternatives": []
+              },
+              "finding_id": "invasive_pulmonary_aspergillosis_f001"
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "侵襲性肺アスペルギルス症のMRIでは信号、拡散、造影効果、病変分布を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:wall_thickening",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "chest",
+                "organ": "lung",
+                "subregion": "lung_parenchyma",
+                "laterality": "unknown"
+              },
+              "target": "wall",
+              "modifiers": {},
+              "keywords": [
+                "halo sign",
+                "air crescent sign"
+              ],
+              "finding_text": "侵襲性肺アスペルギルス症は壁肥厚や周囲炎症を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:wall_thickening",
+                "alternatives": []
+              },
+              "finding_id": "invasive_pulmonary_aspergillosis_f002"
+            },
+            {
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "chest",
+                "organ": "lung",
+                "subregion": "lung_parenchyma",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "halo sign",
+                "air crescent sign"
+              ],
+              "finding_text": "侵襲性肺アスペルギルス症はT2WIで浮腫や炎症に対応する高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:t2_hyperintensity",
+                "alternatives": []
+              },
+              "finding_id": "invasive_pulmonary_aspergillosis_f003"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:diffusion_restriction_present",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "chest",
+                "organ": "lung",
+                "subregion": "lung_parenchyma",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "halo sign",
+                "air crescent sign"
+              ],
+              "finding_text": "侵襲性肺アスペルギルス症は膿瘍や高度炎症部で拡散制限を示すことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:diffusion_restriction_present",
+                "alternatives": []
+              },
+              "finding_id": "invasive_pulmonary_aspergillosis_f004"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:mild_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "chest",
+                "organ": "lung",
+                "subregion": "lung_parenchyma",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "halo sign",
+                "air crescent sign"
+              ],
+              "finding_text": "侵襲性肺アスペルギルス症は造影で壁や炎症部の増強を伴う。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:mild_enhancement",
+                "alternatives": []
+              },
+              "finding_id": "invasive_pulmonary_aspergillosis_f005"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "raw_findings": [
+    {
+      "raw_finding_id": "invasive_pulmonary_aspergillosis_raw_001",
+      "modality_text": "CT/MRI/US",
+      "acquisition_text": "疾患に応じた標準撮像",
+      "anatomy_text": "侵襲性肺アスペルギルス症の典型的な主座",
+      "target_text": "named_sign",
+      "finding_text": "結節周囲のhalo signや回復期のair crescent signが手がかりとなる。",
+      "interpretation": "構造化辞書では拾い切れない疾患固有の所見・サインとして保存。",
+      "source_ids": [
+        "public_general_batch6_20260705"
+      ],
+      "mapping": {
+        "status": "candidate",
+        "candidate_finding_code": "finding:invasive_pulmonary_aspergillosis_specific_sign",
+        "candidate_anatomy": {
+          "body_region": "chest",
+          "organ": "lung",
+          "subregion": "lung_parenchyma",
+          "laterality": "unknown"
+        },
+        "candidate_target": "named_sign",
+        "notes": "Phase 1 raw finding"
+      },
+      "review_status": "needs_mapping"
+    }
+  ],
+  "evidence": {
+    "summary": "NCBI Bookshelf、ACR Appropriateness Criteria、RadiologyInfo、PMC open-access review などの公開情報を参照。",
+    "claim_map": [
+      {
+        "finding_ids": [
+          "invasive_pulmonary_aspergillosis_f001"
+        ],
+        "source_ids": [
+          "public_general_batch6_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "invasive_pulmonary_aspergillosis_f002"
+        ],
+        "source_ids": [
+          "public_general_batch6_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "invasive_pulmonary_aspergillosis_f003"
+        ],
+        "source_ids": [
+          "public_general_batch6_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "invasive_pulmonary_aspergillosis_f004"
+        ],
+        "source_ids": [
+          "public_general_batch6_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "invasive_pulmonary_aspergillosis_f005"
+        ],
+        "source_ids": [
+          "public_general_batch6_20260705"
+        ],
+        "support": "public_source_summary"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "public_general_batch6_20260705",
+      "type": "public_source_packet",
+      "title": "Public cross-sectional imaging source packet for whole-body Phase 1 draft batch 6",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, ACR Appropriateness Criteria, RadiologyInfo, and open-access PMC reviews where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "confidence": "medium",
+    "notes": "公開情報に基づく初期整理。"
+  },
+  "curation": {
+    "batch": "general_batch6",
+    "generated_by": "curate-general-drafts-batch6.js"
+  },
+  "provenance": {
+    "source_ids": [
+      "public_general_batch6_20260705"
+    ],
+    "generated_at": "2026-07-05T05:32:09.881Z"
+  },
+  "updated_at": "2026-07-05T05:32:09.881Z",
+  "content_hash": "381f133ae9174a84e6105d66df60b8a68d954bd38c140da5d687289cd8a41215"
+}

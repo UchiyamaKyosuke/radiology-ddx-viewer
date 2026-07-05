@@ -1,0 +1,196 @@
+{
+  "disease_id": "meningioma",
+  "disease_name": {
+    "ja": "髄膜腫",
+    "en": "Meningioma"
+  },
+  "disease_aliases": {
+    "ja": [],
+    "en": [
+      "Meningioma"
+    ]
+  },
+  "clinical": {
+    "overview": "Meningioma literature draft generated from PubMed abstracts. Codex review is required.",
+    "treatment": "Not extracted. Codex review is required.",
+    "epidemiology": "Not extracted. Codex review is required."
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "unknown"
+      ],
+      "predominance": "unknown",
+      "predilection": "unknown",
+      "summary": "Not extracted."
+    },
+    "age": {
+      "typical_min": null,
+      "typical_max": null,
+      "peak_decade": "",
+      "summary": "Not extracted."
+    }
+  },
+  "frequency": {
+    "label": "unknown",
+    "summary": "Not extracted."
+  },
+  "imaging": {},
+  "findings": [
+    {
+      "finding_text": "T2低信号",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "T2WI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "signal": "hypointense"
+      },
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "T2高信号",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "T2WI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "signal": "hyperintense"
+      },
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "dural tail sign",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "contrast_enhanced_T1WI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "硬膜付着性脳外腫瘤",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "T1WI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "FLAIR高信号",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "FLAIR",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    }
+  ],
+  "references": [
+    {
+      "source_id": "pmid_15664571",
+      "type": "journal_article",
+      "title": "The dural tail sign--beyond meningioma.",
+      "authors": [],
+      "journal": "Clinical radiology",
+      "year": "2005",
+      "pmid": "15664571",
+      "doi": "10.1016/j.crad.2004.01.019",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15664571/",
+      "license": "",
+      "note": "Fetched from PubMed abstract metadata."
+    },
+    {
+      "source_id": "pmid_33459822",
+      "type": "journal_article",
+      "title": "Dural-based lesions: is it a meningioma?",
+      "authors": [],
+      "journal": "Neuroradiology",
+      "year": "2021",
+      "pmid": "33459822",
+      "doi": "10.1007/s00234-021-02632-y",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33459822/",
+      "license": "",
+      "note": "Fetched from PubMed abstract metadata."
+    },
+    {
+      "source_id": "pmid_30845079",
+      "type": "journal_article",
+      "title": "Cavernous Angioma Mimicking Meningioma.",
+      "authors": [],
+      "journal": "The Journal of craniofacial surgery",
+      "year": "2019",
+      "pmid": "30845079",
+      "doi": "10.1097/SCS.0000000000005177",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30845079/",
+      "license": "",
+      "note": "Fetched from PubMed abstract metadata."
+    }
+  ],
+  "source_query": "meningioma MRI imaging findings dural tail extra-axial",
+  "source_articles": [
+    {
+      "pmid": "15664571",
+      "title": "The dural tail sign--beyond meningioma.",
+      "journal": "Clinical radiology",
+      "year": "2005",
+      "doi": "10.1016/j.crad.2004.01.019",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15664571/",
+      "abstract": "There have been somewhat conflicting reports published about the significance of linear meningeal thickening and enhancement adjacent to peripherally located cranial mass lesions on contrast-enhanced magnetic resonance (MR) images. Most of the authors consider this so-called \"dural tail sign\" or \"flare sign\" almost specific for meningioma. This review illustrates the MR imaging findings of a wide spectrum of disorders that show this dural sign. Causes include other extra-axial lesions and also peripherally located intra-axial lesions such as neuromas, chloromas, metastases, lymphoma, gliomas, pituitary diseases, granulomatous disorders, and also cerebral Erdheim-Chester disease. The dural tail sign is not specific to a particular pathological process. Nevertheless, useful conclusions can be drawn from the morphology of the lesion, its enhancement pattern, and its solitary or multifocal presentation. The final diagnosis must be based on cerebrospinal fluid studies or histological studies after biopsy."
+    },
+    {
+      "pmid": "33459822",
+      "title": "Dural-based lesions: is it a meningioma?",
+      "journal": "Neuroradiology",
+      "year": "2021",
+      "doi": "10.1007/s00234-021-02632-y",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33459822/",
+      "abstract": "Meningiomas are the most common extra-axial intracranial neoplasms with typical radiological findings. In approximately 2% of cases, histopathological reports reveal different neoplasms or non-neoplastic lesions that can closely mimic meningiomas. We describe radiological features of meningioma mimics highlighting imaging red flags to consider a differential diagnosis.\nA total of 348 lesions with radiological diagnosis of meningiomas which underwent to surgical treatment or biopsy between December of 2000 and September of 2014 were analyzed. We determined imaging features that are not a typical finding of meningiomas, suggesting other lesions. The following imaging characteristics were evaluated on CT and MRI: (a) bone erosion; (b) hyperintensity on T2WI; (c) hypointensity on T2WI; (d) bone destruction; (e) dural tail; (f) leptomeningeal involvement; (g) pattern of contrast enhancement; (h) dural displacement sign.\nWe have a relatively high prevalence of meningioma mimics (7.2%). Dural-based lesions with homogeneous contrast enhancement (52%) are easily misdiagnosed as meningiomas. Most lesions mimic convexity (37.5%) or parafalcine (21.9%) meningiomas. We have determined five imaging red flags that can alert radiologists to consider meningioma mimics: (1) bone erosion (22.2%); (2) dural displacement sign (36%); (3) marked T2 hypointensity (32%); (4) marked T2 hyperintensity (12%); (5) absence of dural tail (48%). The most common mimic lesion in our series was hemangiopericytomas, followed by lymphomas and schwannomas.\nThe prevalence of meningioma mimics is not negligible. It is important to have awareness on main radiological findings suggestive of differential diagnosis due to a wide range of differentials which lead to different prognosis and treatment strategies."
+    },
+    {
+      "pmid": "30845079",
+      "title": "Cavernous Angioma Mimicking Meningioma.",
+      "journal": "The Journal of craniofacial surgery",
+      "year": "2019",
+      "doi": "10.1097/SCS.0000000000005177",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30845079/",
+      "abstract": "The authors present a rare case of cavernous angioma mimicking a meningioma in a 58-year-old man who presented with a headache and dizziness. There were no neurological deficits or other neurological symptoms or signs. An extra-axial mass lesion thought to be associated with diffusely well-enhanced falx in the postcontrast sections was noted in the posterior interhemispheric fissure near the posterior part of the corpus callosum splenium. Extra-axial cavernous angiomas (cavernomas) are extremely rare lesions. They most commonly occur in the parenchyma but have been occasionally reported to arise from the dura matter. Dural cavernous angiomas arise from dural sinuses, falx cerebri, tentorium cerebelli, cranial base dura, or internal auditory canal dura and convexity. Parenchymal cavernous angiomas classically have a ring of hemosiderin surrounding the lesions observed on magnetic resonance imaging, but dural cavernous angiomas do not display the same magnetic resonance imaging characteristics and occasionally exhibit a dural tail sign due to which they can often be misdiagnosed as meningiomas."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "disease_id": "chiari_1_malformation",
+  "disease_name": {
+    "ja": "Chiari I奇形",
+    "en": "Chiari I malformation"
+  },
+  "query": "Chiari I malformation MRI imaging",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "36424066",
+      "title": "Imaging in Chiari I Malformation.",
+      "journal": "Neurosurgery clinics of North America",
+      "year": "2022",
+      "doi": "10.1016/j.nec.2022.08.006",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36424066/",
+      "abstract": ""
+    },
+    {
+      "pmid": "31473667",
+      "title": "The Chiari I malformation.",
+      "journal": "Journal of neurosurgery. Pediatrics",
+      "year": "2020",
+      "doi": "10.3171/2019.5.PEDS18382",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31473667/",
+      "abstract": ""
+    },
+    {
+      "pmid": "1874153",
+      "title": "The Chiari-I malformation.",
+      "journal": "Ear, nose, & throat journal",
+      "year": "1991",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1874153/",
+      "abstract": ""
+    }
+  ]
+}

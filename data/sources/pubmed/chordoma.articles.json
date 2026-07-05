@@ -1,0 +1,38 @@
+{
+  "disease_id": "chordoma",
+  "disease_name": {
+    "ja": "脊索腫",
+    "en": "Chordoma"
+  },
+  "query": "clival chordoma AND (MRI OR CT OR imaging)",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "33521875",
+      "title": "Chordoma:  18 F-FDG PET/CT and MRI imaging features.",
+      "journal": "Skeletal radiology",
+      "year": "2021",
+      "doi": "10.1007/s00256-021-03723-w",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33521875/",
+      "abstract": ""
+    },
+    {
+      "pmid": "35722639",
+      "title": "A Cystic Clival Chordoma with CT and MRI Unconventional Appearances.",
+      "journal": "The Indian journal of radiology & imaging",
+      "year": "2022",
+      "doi": "10.1055/s-0041-1741044",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35722639/",
+      "abstract": ""
+    },
+    {
+      "pmid": "40773058",
+      "title": "Ectopic clival craniopharyngioma.",
+      "journal": "Neuroradiology",
+      "year": "2026",
+      "doi": "10.1007/s00234-025-03727-6",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40773058/",
+      "abstract": ""
+    }
+  ]
+}

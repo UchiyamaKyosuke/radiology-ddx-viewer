@@ -1,0 +1,38 @@
+{
+  "disease_id": "dermoid_cyst",
+  "disease_name": {
+    "ja": "類皮嚢胞",
+    "en": "Dermoid cyst"
+  },
+  "query": "intracranial dermoid cyst AND (MRI OR CT OR imaging)",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "38687215",
+      "title": "Intracranial Dermoid Cyst.",
+      "journal": "Radiology",
+      "year": "2024",
+      "doi": "10.1148/radiol.232952",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38687215/",
+      "abstract": ""
+    },
+    {
+      "pmid": "17099348",
+      "title": "Nasal dermoids.",
+      "journal": "Current opinion in otolaryngology & head and neck surgery",
+      "year": "2007",
+      "doi": "10.1097/MOO.0b013e32801042db",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17099348/",
+      "abstract": ""
+    },
+    {
+      "pmid": "37487139",
+      "title": "Craniofacial Epidermoid and Dermoid Cysts.",
+      "journal": "The Journal of craniofacial surgery",
+      "year": "2023",
+      "doi": "10.1097/SCS.0000000000009561",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37487139/",
+      "abstract": ""
+    }
+  ]
+}

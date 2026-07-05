@@ -1,0 +1,434 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "hemangioblastoma",
+  "disease_name": {
+    "ja": "血管芽腫",
+    "en": "Hemangioblastoma"
+  },
+  "disease_aliases": {
+    "ja": [
+      "中枢神経血管芽腫"
+    ],
+    "en": [
+      "CNS hemangioblastoma"
+    ]
+  },
+  "clinical": {
+    "overview": "成人の小脳に多い血管性腫瘍。嚢胞と強く造影される壁在結節、flow voidが典型で、von Hippel-Lindau病との関連を確認する。",
+    "treatment": "症候性・増大例では手術を検討する。VHLでは多発病変と全身検索が重要。",
+    "epidemiology": "成人後頭蓋窩腫瘍の鑑別。VHL関連では若年・多発。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 25,
+      "typical_max": 65,
+      "peak_decade": "30-50歳代",
+      "summary": "成人に多い。VHL関連では若年にもみられる。"
+    }
+  },
+  "keywords": [
+    "cyst with mural nodule",
+    "flow void",
+    "VHL",
+    "cerebellar"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "epidemiology",
+    "evidence_level": "review",
+    "context": {
+      "population": "adult",
+      "body_region": "brain",
+      "clinical_setting": "cerebellar_cyst_with_mural_nodule"
+    },
+    "summary": "成人小脳の嚢胞+壁在結節では重要。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "血管芽腫はCTで後頭蓋窩嚢胞性腫瘤/造影結節を確認する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "hemangioblastoma_ct_nc_001",
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebellum",
+                "laterality": "unknown"
+              },
+              "target": "cystic_component",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "嚢胞成分が低吸収として認められる。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_hypoattenuation",
+                "alternatives": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは嚢胞+強く造影される壁在結節、flow void、灌流上昇を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "hemangioblastoma_mri_ce_001",
+              "finding_code": "finding:cyst_with_enhancing_mural_nodule",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebellum",
+                "laterality": "unknown"
+              },
+              "target": "mural_nodule",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "嚢胞に接する壁在結節が強く造影される。",
+              "typicality": "typical",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:cyst_with_enhancing_mural_nodule",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "hemangioblastoma_mri_contrast_enhanced_t1wi_cyst_with_enhancing_mural_nodule_01",
+              "finding_code": "finding:cyst_with_enhancing_mural_nodule",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "造影壁在結節を伴う嚢胞性病変を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "hemangioblastoma_mri_contrast_enhanced_t1wi_avid_homogeneous_enhancement_01",
+              "finding_code": "finding:avid_homogeneous_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "壁在結節は強く造影される。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "hemangioblastoma_mri_t2_001",
+              "finding_code": "finding:flow_void",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebellum",
+                "laterality": "unknown"
+              },
+              "target": "solid_component",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "壁在結節周囲に血管性flow voidを伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:flow_void",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "hemangioblastoma_mri_t2wi_csf_like_signal_01",
+              "finding_code": "finding:csf_like_signal",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "嚢胞成分は髄液様信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DSC_perfusion"
+          },
+          "findings": [
+            {
+              "finding_id": "hemangioblastoma_mri_perf_001",
+              "finding_code": "finding:hyperperfusion",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DSC_perfusion"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebellum",
+                "laterality": "unknown"
+              },
+              "target": "solid_component",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "血管性腫瘍として灌流高値を示すことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:hyperperfusion",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "MRA_TOF"
+          },
+          "findings": [
+            {
+              "finding_id": "hemangioblastoma_mri_mra_tof_flow_void_01",
+              "finding_code": "finding:flow_void",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRA_TOF"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "腫瘍周囲にflow voidを伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 20301636, 35242478, 10547017）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "hemangioblastoma_ct_nc_001",
+          "hemangioblastoma_mri_ce_001",
+          "hemangioblastoma_mri_t2_001",
+          "hemangioblastoma_mri_perf_001"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_20301636",
+          "pmid_35242478",
+          "pmid_10547017"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "hemangioblastoma_mri_contrast_enhanced_t1wi_cyst_with_enhancing_mural_nodule_01",
+          "hemangioblastoma_mri_contrast_enhanced_t1wi_avid_homogeneous_enhancement_01",
+          "hemangioblastoma_mri_mra_tof_flow_void_01",
+          "hemangioblastoma_mri_t2wi_csf_like_signal_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_20301636",
+      "type": "journal_article",
+      "title": "Von Hippel-Lindau Syndrome",
+      "authors": [],
+      "journal": "AJR. American journal of roentgenology",
+      "year": "1993",
+      "pmid": "20301636",
+      "doi": "10.2214/AJR.19.22447",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20301636/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_35242478",
+      "type": "journal_article",
+      "title": "A Challenge in Diagnosis of Cerebellar Hemangioblastoma.",
+      "authors": [],
+      "journal": "Cureus",
+      "year": "2022",
+      "pmid": "35242478",
+      "doi": "10.7759/cureus.21713",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35242478/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_10547017",
+      "type": "journal_article",
+      "title": "Hemangioblastoma of the third ventricle.",
+      "authors": [],
+      "journal": "Neurosurgical review",
+      "year": "1999",
+      "pmid": "10547017",
+      "doi": "10.1007/s101430050050",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10547017/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": [
+    {
+      "raw_finding_id": "hemangioblastoma_raw_keyword_cyst_with_mural_nodule",
+      "modality_text": "MRI",
+      "acquisition_text": "",
+      "anatomy_text": "",
+      "target_text": "",
+      "finding_text": "キーワード/所見として \"cyst with mural nodule\" を保持。",
+      "interpretation": "辞書対応済み構造化欄から漏れる可能性があるため、Phase1自由記載として保存。",
+      "source_ids": [
+        "public_raw_findings_audit_20260705"
+      ],
+      "mapping": {
+        "status": "unmapped",
+        "candidate_finding_code": "finding:cyst_with_mural_nodule",
+        "candidate_acquisition_code": "",
+        "candidate_target": "",
+        "notes": "Added during raw_findings audit to preserve information that may be lost by dictionary-only structured fields."
+      },
+      "review_status": "needs_mapping"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "disease_id": "ovarian_mucinous_cystadenoma",
+  "disease_name": {
+    "ja": "卵巣粘液性嚢胞腺腫",
+    "en": "Ovarian mucinous cystadenoma"
+  },
+  "query": "Ovarian mucinous cystadenoma AND (MRI OR magnetic resonance OR CT OR computed tomography OR imaging OR radiology)",
+  "fetched_at": "2026-06-22T05:53:22.839Z",
+  "articles": [
+    {
+      "pmid": "36410423",
+      "title": "Adnexal masses during pregnancy: diagnosis, treatment, and prognosis.",
+      "journal": "American journal of obstetrics and gynecology",
+      "year": "2023",
+      "doi": "10.1016/j.ajog.2022.11.1291",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36410423/",
+      "abstract": "Adnexal masses are identified in pregnant patients at a rate of 2 to 20 in 1000, approximately 2 to 20 times more frequently than in the age-matched general population. The most common types of adnexal masses in pregnancy requiring surgical management are dermoid cysts (32%), endometriomas (15%), functional cysts (12%), serous cystadenomas (11%), and mucinous cystadenomas (8%). Approximately 2% of adnexal masses in pregnancy are malignant. Although most adnexal masses in pregnancy can be safely observed and approximately 70% spontaneously resolve, a minority of cases warrant surgical intervention because of symptoms, risk of torsion, or suspicion of malignancy. Ultrasound is the mainstay of evaluation of adnexal masses in pregnancy because of accuracy, safety, and availability. Several ultrasound mass scoring systems, including the Sassone, Lerner, International Ovarian Tumor Analysis Simple Rules, and International Ovarian Tumor Analysis Assessment of Different NEoplasias in the adneXa scoring systems have been validated specifically in pregnant populations. Decisions regarding expectant vs surgical management of adnexal masses in pregnancy must balance the risks of torsion or malignancy with the likelihood of spontaneous resolution and the risks of surgery. Laparoscopic surgery is preferred over open surgery when possible because of consistently demonstrated shorter hospital length of stay and less postoperative pain and some data demonstrating shorter operative time, lower blood loss, and lower risks of fetal loss, preterm birth, and low birthweight. The best practices for laparoscopic surgery during pregnancy include left lateral decubitus positioning after the first trimester of pregnancy, port placement with respect to uterine size and pathology location, insufflation pressure of less than 12 to 15 mm Hg, intraoperative maternal capnography, pre- and postoperative fetal heart rate and contraction monitoring, and appropriate mechanical and chemical thromboprophylaxes. Although planning surgery for the second trimester of pregnancy generally affords time for mass resolution while optimizing visualization with regards to uterine size and pathology location, necessary surgery should not be delayed because of gestational age. When performed at a facility with appropriate obstetrical, anesthetic, and neonatal support, adnexal surgery in pregnancy generally results in excellent outcomes for pregnant patients and fetuses."
+    }
+  ]
+}

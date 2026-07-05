@@ -1,0 +1,51 @@
+{
+  "disease_id": "canavan_disease",
+  "disease_name": {
+    "ja": "Canavan病",
+    "en": "Canavan disease"
+  },
+  "disease_aliases": {
+    "ja": [
+      "カナバン病"
+    ],
+    "en": [
+      "Canavan disease"
+    ]
+  },
+  "clinical": {
+    "overview": "NAA代謝異常による白質変性疾患。乳児期発症でびまん性対称性白質病変、MRSでNAA上昇が特徴。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 18,
+      "peak_decade": "小児",
+      "summary": "小児で重要。"
+    }
+  },
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "infantile_symmetric_white_matter_disease"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

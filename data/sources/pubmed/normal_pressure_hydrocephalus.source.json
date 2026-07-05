@@ -1,0 +1,53 @@
+{
+  "disease_id": "normal_pressure_hydrocephalus",
+  "disease_name": {
+    "ja": "正常圧水頭症",
+    "en": "Normal pressure hydrocephalus"
+  },
+  "disease_aliases": {
+    "ja": [
+      "NPH",
+      "特発性正常圧水頭症"
+    ],
+    "en": [
+      "NPH",
+      "iNPH"
+    ]
+  },
+  "clinical": {
+    "overview": "歩行障害、認知障害、尿失禁を来す交通性水頭症。DESH、脳室拡大、シルビウス裂拡大、高位円蓋部脳溝狭小化を評価する。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 65,
+      "typical_max": 90,
+      "peak_decade": "高齢者",
+      "summary": "高齢者に多い。"
+    }
+  },
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 2,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "ventriculomegaly_gait_disturbance"
+    },
+    "summary": "該当する画像パターンで重要な鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

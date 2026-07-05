@@ -1,0 +1,220 @@
+{
+  "disease_id": "herpes_simplex_encephalitis",
+  "disease_name": {
+    "ja": "単純ヘルペス脳炎",
+    "en": "Herpes simplex encephalitis"
+  },
+  "disease_aliases": {
+    "ja": [],
+    "en": [
+      "Herpes simplex encephalitis"
+    ]
+  },
+  "clinical": {
+    "overview": "Herpes simplex encephalitis literature draft generated from PubMed abstracts. Codex review is required.",
+    "treatment": "Not extracted. Codex review is required.",
+    "epidemiology": "Not extracted. Codex review is required."
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "unknown"
+      ],
+      "predominance": "unknown",
+      "predilection": "unknown",
+      "summary": "Not extracted."
+    },
+    "age": {
+      "typical_min": null,
+      "typical_max": null,
+      "peak_decade": "未確認",
+      "summary": "好発年齢は未確認。"
+    }
+  },
+  "keywords": [],
+  "frequency": {
+    "label": "unknown",
+    "summary": "Not extracted."
+  },
+  "imaging": {},
+  "findings": [
+    {
+      "finding_text": "拡散制限なし",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "DWI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "degree": "none"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "DWI高信号",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "DWI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "DWI等信号",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "DWI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "拡散制限あり",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "DWI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "コリンピーク上昇",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "MRS",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "metabolite": "choline_elevated"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    }
+  ],
+  "references": [
+    {
+      "source_id": "pmid_39322393",
+      "type": "journal_article",
+      "title": "Infectious leukoencephalopathies.",
+      "authors": [],
+      "journal": "Handbook of clinical neurology",
+      "year": "2024",
+      "pmid": "39322393",
+      "doi": "10.1016/B978-0-323-99209-1.00016-8",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39322393/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_28074766",
+      "type": "journal_article",
+      "title": "[Herpes simplex encephalitis].",
+      "authors": [],
+      "journal": "Ugeskrift for laeger",
+      "year": "2018",
+      "pmid": "28074766",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28074766/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_9163027",
+      "type": "journal_article",
+      "title": "Herpes simplex encephalitis.",
+      "authors": [],
+      "journal": "Scandinavian journal of infectious diseases. Supplementum",
+      "year": "1997",
+      "pmid": "9163027",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9163027/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_10481538",
+      "type": "journal_article",
+      "title": "[Herpes simplex encephalitis].",
+      "authors": [],
+      "journal": "Polski merkuriusz lekarski : organ Polskiego Towarzystwa Lekarskiego",
+      "year": "1999",
+      "pmid": "10481538",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10481538/",
+      "license": ""
+    }
+  ],
+  "source_query": "herpes simplex encephalitis[Title/Abstract] AND (MRI[Title/Abstract] OR magnetic resonance[Title/Abstract] OR imaging[Title/Abstract] OR diagnosis[Title/Abstract])",
+  "source_articles": [
+    {
+      "pmid": "39322393",
+      "title": "Infectious leukoencephalopathies.",
+      "journal": "Handbook of clinical neurology",
+      "year": "2024",
+      "doi": "10.1016/B978-0-323-99209-1.00016-8",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39322393/",
+      "abstract": "Leukoencephalopathy from infectious agents may have a rapid course, such as human simplex virus encephalitis; however, in many diseases, it may take months or years before diagnosis, such as in subacute sclerosing panencephalitis or Whipple disease. There are wide geographic distributions and susceptible populations, including both immunocompetent and immunodeficient patients. Many infections have high mortality rates, such as John Cunningham virus and subacute sclerosing panencephalitis, although others have effective treatments if suspected and treated early, such as herpes simplex encephalitis. This chapter will describe viral, bacterial, and protozoal infections, which predominantly cause leukoencephalopathy. We focus on the clinical presentation of these infectious agents briefly covering epidemiology and subtypes of infections. Next, we detail current pathophysiologic mechanisms causing white matter injury. Diagnostic and confirmatory tests are discussed. We cover predominantly MRI imaging features of leukoencephalopathies, and in addition, summarize the common imaging features. Additionally, we detail how imaging features may be used to narrow the differential of a leukoencephalopathy clinical presentation. Lastly, we present an outline of common treatment approaches where available."
+    },
+    {
+      "pmid": "28074766",
+      "title": "[Herpes simplex encephalitis].",
+      "journal": "Ugeskrift for laeger",
+      "year": "2018",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28074766/",
+      "abstract": "Herpes simplex encephalitis (HSE) is a rare disease, although it is the most common form of sporadic encephalitis worldwide. Recently, studies have provided important new insight into the genetic and immunological basis of HSE. However, even in the presence of antiviral treatment, mortality and morbidity remain relatively high. Therefore, precise and early diagnosis together with basic and clinical studies to gain better insight into the pathogenesis of HSE is a prerequisite for the development of improved prophylaxis and treatment of this severe disease."
+    },
+    {
+      "pmid": "9163027",
+      "title": "Herpes simplex encephalitis.",
+      "journal": "Scandinavian journal of infectious diseases. Supplementum",
+      "year": "1997",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9163027/",
+      "abstract": "Herpes simplex encephalitis (HSE) is a life-threatening condition with high mortality as well as significant morbidity in survivors. In most cases herpes simplex virus type 1 (HSV-1) is responsible for the diseases, however, the type 2 virus (HSV-2) is involved in 4-6% of cases. Primary HSV infection is identified in only one-third of patients with HSE. The majority of cases are recorded in adults with recurrent HSV infection who are already seropositive for HSV at the onset of symptoms, but only 6-10% of these patients have a history of labial herpes. Acute focal, necrotizing encephalitis with inflammation and swelling of the brain tissue are consistent features of the pathology of HSE. HSV-induced cytolysis certainly damages neurones, oligodendrocytes and astrocytes, but the role of cellular and humoral immunopathology is important. A complex network of cytokines seems to be active in regulating the local immune response and inflammation during and after HSE. Brain biopsy, serological analysis of intrathecal HSV antibodies and detection of HSV-DNA in the cerebrospinal fluid (CSF) are all useful techniques to confirm the aetiology of HSE. Neurodiagnostic tests which support a presumptive diagnosis of HSE include: CSF analysis, electroencephalography, computer-assisted tomography and magnetic resonance imaging. Although aciclovir is the treatment of choice in HSE, mortality and morbidity still remain problematic. Long-term follow-up indicates that intrathecal cellular and humoral activation persist in HSE."
+    },
+    {
+      "pmid": "10481538",
+      "title": "[Herpes simplex encephalitis].",
+      "journal": "Polski merkuriusz lekarski : organ Polskiego Towarzystwa Lekarskiego",
+      "year": "1999",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10481538/",
+      "abstract": "Herpes simplex virus infection of the central nervous system is still a significant cause of morbidity and often mortality. Changes of central nervous system are results of primary infection or activation of latent HSV-1, HSV-2. Neurological deficits often follow encephalitis herpetica. The application of PCR is prompt and specific diagnosis of herpes simplex virus infections of the brain. Advances in treatment herpes simplex encephalitis with acyclovir have improved outcome."
+    }
+  ]
+}

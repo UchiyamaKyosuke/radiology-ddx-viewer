@@ -1,0 +1,47 @@
+{
+  "disease_id": "cerebral_venous_sinus_thrombosis",
+  "disease_name": {
+    "ja": "脳静脈洞血栓症",
+    "en": "Cerebral venous sinus thrombosis"
+  },
+  "query": "cerebral venous thrombosis[Title/Abstract] AND (MRI[Title/Abstract] OR CT[Title/Abstract] OR MRV[Title/Abstract] OR imaging[Title/Abstract] OR diagnosis[Title/Abstract])",
+  "fetched_at": "2026-06-25T07:10:31.322Z",
+  "articles": [
+    {
+      "pmid": "38428733",
+      "title": "Cerebral venous thrombosis.",
+      "journal": "Revista clinica espanola",
+      "year": "2024",
+      "doi": "10.1016/j.rceng.2024.02.015",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38428733/",
+      "abstract": "Cerebral venous thrombosis is part of the so-called thrombosis in unusual sites. It is defined as an occlusion in the cerebral venous territory. Its incidence is progressively increasing, especially in developing countries. It is more frequently observed in young women, with hormonal factors such as pregnancy or hormonal contraception being significant risk factors in the development of this condition. The clinical presentation will depend fundamentally on the topography of the thrombosis, with a confirmatory diagnosis based mainly on imaging tests. The treatment generally consists of anticoagulation, and other options may be considered depending on the severity of the case. Overall, the prognosis is better than that of other intracranial vascular disorders. This review describes the current evidence available regarding cerebral venous thrombosis."
+    },
+    {
+      "pmid": "31440838",
+      "title": "Cerebral Venous Thrombosis: an Update.",
+      "journal": "Current neurology and neuroscience reports",
+      "year": "2020",
+      "doi": "10.1007/s11910-019-0988-x",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31440838/",
+      "abstract": "The purpose of this update is to summarize the recent advances on the management of cerebral venous thrombosis (CVT).\nThere is a trend in declining frequency of CVT patients presenting with focal deficits or coma and a decrease in mortality over time. Anemia and obesity were identified as risk factors for CVT. During pregnancy and puerperium, the higher risk of CVT occurs in the first months post-delivery. With appropriate management, 1/3 of comatose CVT patients can have a full recovery. The management of CVT patients includes treatment of associated conditions, anticoagulation with parenteral heparin, prevention of recurrent seizures, and decompressive neurosurgery in patients with large venous infarcts/hemorrhages with impending herniation. After the acute phase, patients should be anticoagulated for 3-12&#xa0;months. Results of recently completed randomized controlled trials on endovascular treatment and comparing dabigatran with warfarin will improve the treatment of CVT."
+    },
+    {
+      "pmid": "32958591",
+      "title": "Cerebral venous thrombosis: a practical guide.",
+      "journal": "Practical neurology",
+      "year": "2021",
+      "doi": "10.1136/practneurol-2019-002415",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32958591/",
+      "abstract": "All neurologists need to be able to recognise and treat cerebral venous thrombosis (CVT). It is difficult to diagnose, partly due to its relative rarity, its multiple and various clinical manifestations (different from 'conventional' stroke, and often mimicking other acute neurological conditions), and because it is often challenging to obtain and interpret optimal and timely brain imaging. Although CVT can result in death or permanent disability, it generally has a favourable prognosis if diagnosed and treated early. Neurologists involved in stroke care therefore also need to be aware of the treatments for CVT (with varying degrees of supporting evidence): the mainstay is prompt anticoagulation but patients who deteriorate despite treatment can be considered for endovascular procedures (endovascular thrombolysis or thrombectomy) or neurosurgery (decompressive craniotomy). This review summarises current knowledge on the risk factors, diagnosis, treatment and prognosis of CVT in adults, and highlights some areas for future research."
+    },
+    {
+      "pmid": "38050259",
+      "title": "Pathophysiology, diagnosis and management of cerebral venous thrombosis: A comprehensive review.",
+      "journal": "Medicine",
+      "year": "2023",
+      "doi": "10.1097/MD.0000000000036366",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38050259/",
+      "abstract": "Cerebral venous thrombosis is a rare cause of stroke in young mostly female adults which is frequently overlooked due to its variable clinical and radiological presentation. This review summarizes current knowledge on it risk factors, management and outcome in adults and highlights areas for future research. Females are 3 times more commonly affected and are significantly younger than males. The presenting symptoms can range from headache to loss of consciousness. However, the often-nebulous nature of symptoms can make the diagnosis challenging. Magnetic resonance imaging with venography is often the diagnostic imaging of choice. While unfractionated or low molecular-weight heparin is the mainstay of treatment, endovascular intervention with thrombolysis or thrombectomy and decompressive craniectomy may be required depending on clinical status. Nevertheless, approximately 80% of patients have a good recovery but mortality rates of -5% to 10% are not uncommon. Diagnosing cerebral venous thrombosis can be challenging but with vigilance and expert care patients have the best chance of a good clinical outcome."
+    }
+  ]
+}

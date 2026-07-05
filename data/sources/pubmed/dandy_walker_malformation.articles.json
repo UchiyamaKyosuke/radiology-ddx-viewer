@@ -1,0 +1,38 @@
+{
+  "disease_id": "dandy_walker_malformation",
+  "disease_name": {
+    "ja": "Dandy-Walker奇形",
+    "en": "Dandy-Walker malformation"
+  },
+  "query": "Dandy-Walker malformation MRI CT imaging",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "21596278",
+      "title": "Posterior fossa malformations.",
+      "journal": "Seminars in ultrasound, CT, and MR",
+      "year": "2011",
+      "doi": "10.1053/j.sult.2011.02.003",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21596278/",
+      "abstract": ""
+    },
+    {
+      "pmid": "40546618",
+      "title": "An Incidental Discovery of Dandy-Walker Malformation on MRI in a 76-Year-Old Male Patient: A Case Report.",
+      "journal": "Cureus",
+      "year": "2025",
+      "doi": "10.7759/cureus.84423",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40546618/",
+      "abstract": ""
+    },
+    {
+      "pmid": "31101983",
+      "title": "Basilar invagination in a child with atlanto-occipital subluxation and suspected prenatal Dandy-Walker malformation.",
+      "journal": "Child's nervous system : ChNS : official journal of the International Society for Pediatric Neurosurgery",
+      "year": "2020",
+      "doi": "10.1007/s00381-019-04164-6",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31101983/",
+      "abstract": ""
+    }
+  ]
+}

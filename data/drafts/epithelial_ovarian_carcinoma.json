@@ -1,0 +1,238 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "epithelial_ovarian_carcinoma",
+  "disease_name": {
+    "ja": "上皮性卵巣癌",
+    "en": "Epithelial ovarian carcinoma"
+  },
+  "disease_aliases": {
+    "ja": [
+      "卵巣癌"
+    ],
+    "en": [
+      "Ovarian carcinoma"
+    ]
+  },
+  "clinical": {
+    "overview": "卵巣悪性腫瘍の代表。複雑な嚢胞性・充実性腫瘤や乳頭状充実成分、腹膜播種などを伴うことがある。 補足: Sample card only.",
+    "treatment": "病期、組織型、全身状態に応じて手術、化学療法などが検討される。",
+    "epidemiology": "成人女性の悪性卵巣腫瘍として重要。"
+  },
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 3,
+    "basis": "epidemiology",
+    "evidence_level": "review",
+    "context": {
+      "population": "adult_women",
+      "body_region": "pelvis",
+      "clinical_setting": "complex_adnexal_mass"
+    },
+    "summary": "複雑な付属器腫瘤では重要な悪性鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "嚢胞性・充実性腫瘤、腹膜播種、腹水などを伴うことがある。",
+      "findings_by_phase": []
+    },
+    "mri": {
+      "summary": "造影される充実成分や乳頭状突出は悪性を疑う所見。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "epithelial_ovarian_carcinoma_mri_t2_001",
+              "finding_code": "finding:multilocular_cystic_mass",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "pelvis",
+                "organ": "ovary",
+                "subregion": "adnexa",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {
+                "degree": "marked",
+                "morphology": "solid_cystic_mass"
+              },
+              "finding_text": "多房性の嚢胞性・充実性腫瘤として認められることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": [
+                "solid_cystic_mass"
+              ]
+            },
+            {
+              "finding_id": "epithelial_ovarian_carcinoma_mri_t2_002",
+              "finding_code": "finding:papillary_projection",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "pelvis",
+                "organ": "ovary",
+                "subregion": "adnexa",
+                "laterality": "unknown"
+              },
+              "target": "mural_nodule",
+              "modifiers": {
+                "degree": "marked",
+                "morphology": "nodule"
+              },
+              "finding_text": "乳頭状充実成分や壁在結節を認める。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "clinical_significance": {
+                "severity": "high",
+                "implication": "malignancy_suspected",
+                "action": "悪性卵巣腫瘍を考慮する"
+              },
+              "review_status": "draft",
+              "keywords": [
+                "nodule"
+              ]
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "epithelial_ovarian_carcinoma_mri_ce_001",
+              "finding_code": "finding:enhancing_solid_component",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "pelvis",
+                "organ": "ovary",
+                "subregion": "adnexa",
+                "laterality": "unknown"
+              },
+              "target": "solid_component",
+              "modifiers": {
+                "degree": "marked",
+                "morphology": "solid_cystic_mass"
+              },
+              "finding_text": "充実成分に明らかな造影効果を認める。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "clinical_significance": {
+                "severity": "high",
+                "implication": "malignancy_suspected",
+                "action": "悪性腫瘍を考慮する"
+              },
+              "review_status": "draft",
+              "keywords": [
+                "solid_cystic_mass"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "出典未登録（サンプル用の仮出典）。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "epithelial_ovarian_carcinoma_mri_t2_001",
+          "epithelial_ovarian_carcinoma_mri_t2_002",
+          "epithelial_ovarian_carcinoma_mri_ce_001"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "ref_001"
+        ],
+        "confidence": "low"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "ref_001",
+      "type": "placeholder",
+      "title": "Replace with reviewed source",
+      "authors": [],
+      "journal": "",
+      "year": "",
+      "pmid": "",
+      "doi": "",
+      "url": "",
+      "license": ""
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "Starter sample; replace evidence before clinical use."
+  },
+  "curation": {
+    "auto_update_allowed": false,
+    "locked_fields": [],
+    "notes": ""
+  },
+  "provenance": {
+    "created_by": "manual",
+    "model": "",
+    "created_at": "2026-06-20T10:00:00+09:00",
+    "prompt_version": "starter_v0.1",
+    "source_query": ""
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "content_hash": "f5a92f5c554d7104dc3b410b0104d595c292417daf699607ede5a53ed54b0625",
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "female"
+      ],
+      "predominance": "female",
+      "predilection": "female_only",
+      "summary": "女性に発生する疾患。"
+    },
+    "age": {
+      "typical_min": 40,
+      "typical_max": 80,
+      "peak_decade": "50-70歳代",
+      "summary": "中高年女性で重要な悪性腫瘍。"
+    }
+  },
+  "keywords": [
+    "solid_cystic_mass",
+    "nodule"
+  ],
+  "raw_findings": []
+}

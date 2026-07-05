@@ -1,0 +1,399 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "tuberous_sclerosis_complex",
+  "disease_name": {
+    "ja": "結節性硬化症",
+    "en": "Tuberous sclerosis complex"
+  },
+  "disease_aliases": {
+    "ja": [
+      "TSC"
+    ],
+    "en": [
+      "TSC"
+    ]
+  },
+  "clinical": {
+    "overview": "mTOR経路異常による神経皮膚症候群。皮質結節、上衣下結節、SEGAを評価する。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 18,
+      "peak_decade": "小児",
+      "summary": "小児で重要。"
+    }
+  },
+  "keywords": [
+    "cortical tubers",
+    "subependymal nodules",
+    "SEGA"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "neurocutaneous_syndrome"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "TSCはCTで上衣下結節の石灰化を確認しやすい。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "tuberous_sclerosis_complex_ct_001",
+              "finding_code": "finding:calcification_present",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "subependymal",
+                "laterality": "unknown"
+              },
+              "target": "calcified_component",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "上衣下結節が石灰化することがある。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:calcification_present",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "tuberous_sclerosis_complex_ct_non_contrast_calcification_present_01",
+              "finding_code": "finding:calcification_present",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "上衣下結節は石灰化を伴いやすい。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは皮質結節、上衣下結節、SEGA、白質放射状線状病変を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "tuberous_sclerosis_complex_mri_002",
+              "finding_code": "finding:cortical_subcortical_lesion",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "cortex",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "皮質結節が皮質〜皮質下FLAIR高信号として見える。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:cortical_subcortical_lesion",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "tuberous_sclerosis_complex_mri_flair_cortical_subcortical_lesion_01",
+              "finding_code": "finding:cortical_subcortical_lesion",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "皮質結節/皮質下病変を認める。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "tuberous_sclerosis_complex_mri_flair_flair_hyperintensity_01",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "白質病変や皮質結節がFLAIR高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "tuberous_sclerosis_complex_mri_003",
+              "finding_code": "finding:subependymal_nodule",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "subependymal",
+                "laterality": "unknown"
+              },
+              "target": "ventricular_mass",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "脳室上衣下結節を認める。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:subependymal_nodule",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "tuberous_sclerosis_complex_mri_004",
+              "finding_code": "finding:enhancing_solid_component",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "foramen_of_monro",
+                "laterality": "unknown"
+              },
+              "target": "ventricular_mass",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "SEGAではモンロー孔近傍の造影性腫瘤を示す。",
+              "typicality": "variable",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:enhancing_solid_component",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "tuberous_sclerosis_complex_mri_t2wi_subependymal_nodule_01",
+              "finding_code": "finding:subependymal_nodule",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "脳室上衣下結節を認める。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 20301399, 30890846）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "tuberous_sclerosis_complex_ct_001",
+          "tuberous_sclerosis_complex_mri_002",
+          "tuberous_sclerosis_complex_mri_003",
+          "tuberous_sclerosis_complex_mri_004"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_20301399",
+          "pmid_30890846"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "tuberous_sclerosis_complex_mri_t2wi_subependymal_nodule_01",
+          "tuberous_sclerosis_complex_ct_non_contrast_calcification_present_01",
+          "tuberous_sclerosis_complex_mri_flair_cortical_subcortical_lesion_01",
+          "tuberous_sclerosis_complex_mri_flair_flair_hyperintensity_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_20301399",
+      "type": "journal_article",
+      "title": "Tuberous Sclerosis Complex",
+      "authors": [],
+      "journal": "Neurology",
+      "year": "1993",
+      "pmid": "20301399",
+      "doi": "10.1212/WNL.0000000000207740",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20301399/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_30890846",
+      "type": "journal_article",
+      "title": "Tuberous Sclerosis.",
+      "authors": [],
+      "journal": "JPMA. The Journal of the Pakistan Medical Association",
+      "year": "2019",
+      "pmid": "30890846",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30890846/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": []
+}

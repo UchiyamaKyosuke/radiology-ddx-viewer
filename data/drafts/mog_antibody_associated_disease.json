@@ -1,0 +1,412 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "mog_antibody_associated_disease",
+  "disease_name": {
+    "ja": "MOG抗体関連疾患",
+    "en": "MOG antibody-associated disease"
+  },
+  "disease_aliases": {
+    "ja": [
+      "MOGAD"
+    ],
+    "en": [
+      "MOGAD"
+    ]
+  },
+  "clinical": {
+    "overview": "MOG抗体関連の炎症性脱髄疾患。ADEM様病変、皮質性脳炎、視神経炎など多彩な脳MRI所見を示す。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 60,
+      "peak_decade": "小児〜成人",
+      "summary": "小児から成人までみられる。"
+    }
+  },
+  "keywords": [
+    "MOG",
+    "cortical encephalitis",
+    "ADEM-like"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "inflammatory_demyelination"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "MOGADはCTよりMRIで病変分布を評価する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "mog_antibody_associated_disease_ct_001",
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "低吸収病変として見えることがある。",
+              "typicality": "rare",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_hypoattenuation",
+                "alternatives": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIではADEM様病変、皮質性FLAIR高信号、視神経炎、脳幹病変などを評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "mog_antibody_associated_disease_mri_002",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "white_matter",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "皮質・皮質下または白質にFLAIR高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:flair_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "mog_antibody_associated_disease_mri_flair_flair_hyperintensity_01",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "FLAIRで白質または皮質性高信号病変を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "mog_antibody_associated_disease_mri_flair_cortical_subcortical_lesion_01",
+              "finding_code": "finding:cortical_subcortical_lesion",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "皮質〜皮質下病変を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "mog_antibody_associated_disease_mri_003",
+              "finding_code": "finding:cortical_subcortical_lesion",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "cortex",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "皮質〜皮質下病変として見えることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:cortical_subcortical_lesion",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "mog_antibody_associated_disease_mri_004",
+              "finding_code": "finding:mild_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "活動性病変では造影効果を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:mild_enhancement",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "mog_antibody_associated_disease_mri_contrast_enhanced_t1wi_mild_enhancement_01",
+              "finding_code": "finding:mild_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "活動性病変では造影効果を示すことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_id": "mog_antibody_associated_disease_mri_dwi_diffusion_restriction_present_01",
+              "finding_code": "finding:diffusion_restriction_present",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "急性炎症性病変で拡散制限を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 36706773, 30907249, 38783085）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "mog_antibody_associated_disease_ct_001",
+          "mog_antibody_associated_disease_mri_002",
+          "mog_antibody_associated_disease_mri_003",
+          "mog_antibody_associated_disease_mri_004"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_36706773",
+          "pmid_30907249",
+          "pmid_38783085"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "mog_antibody_associated_disease_mri_flair_flair_hyperintensity_01",
+          "mog_antibody_associated_disease_mri_flair_cortical_subcortical_lesion_01",
+          "mog_antibody_associated_disease_mri_dwi_diffusion_restriction_present_01",
+          "mog_antibody_associated_disease_mri_contrast_enhanced_t1wi_mild_enhancement_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_36706773",
+      "type": "journal_article",
+      "title": "Diagnosis of myelin oligodendrocyte glycoprotein antibody-associated disease: International MOGAD Panel proposed criteria.",
+      "authors": [],
+      "journal": "The Lancet. Neurology",
+      "year": "2023",
+      "pmid": "36706773",
+      "doi": "10.1016/S1474-4422(22)00431-8",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36706773/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_30907249",
+      "type": "journal_article",
+      "title": "MOG antibody-associated encephalomyelitis/encephalitis.",
+      "authors": [],
+      "journal": "Multiple sclerosis (Houndmills, Basingstoke, England)",
+      "year": "2020",
+      "pmid": "30907249",
+      "doi": "10.1177/1352458519837705",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30907249/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_38783085",
+      "type": "journal_article",
+      "title": "MOG antibody-associated optic neuritis.",
+      "authors": [],
+      "journal": "Eye (London, England)",
+      "year": "2024",
+      "pmid": "38783085",
+      "doi": "10.1038/s41433-024-03108-y",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38783085/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": []
+}

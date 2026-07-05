@@ -1,0 +1,3215 @@
+{
+  "body_regions": {
+    "pelvis": {
+      "label": {
+        "ja": "骨盤",
+        "en": "pelvis"
+      },
+      "synonyms": [
+        "骨盤",
+        "pelvis"
+      ]
+    },
+    "brain": {
+      "label": {
+        "ja": "脳",
+        "en": "brain"
+      },
+      "synonyms": [
+        "脳",
+        "頭蓋内",
+        "brain",
+        "intracranial"
+      ]
+    },
+    "chest": {
+      "label": {
+        "ja": "胸部",
+        "en": "chest"
+      },
+      "synonyms": [
+        "胸部",
+        "chest"
+      ]
+    },
+    "abdomen": {
+      "label": {
+        "ja": "腹部",
+        "en": "abdomen"
+      },
+      "synonyms": [
+        "腹部",
+        "abdomen"
+      ]
+    },
+    "hepatobiliary": {
+      "label": {
+        "ja": "肝胆道",
+        "en": "hepatobiliary"
+      },
+      "synonyms": [
+        "肝胆道",
+        "hepatobiliary"
+      ]
+    },
+    "pancreas_region": {
+      "label": {
+        "ja": "膵領域",
+        "en": "pancreas region"
+      },
+      "synonyms": [
+        "膵領域",
+        "pancreas region"
+      ]
+    },
+    "urinary": {
+      "label": {
+        "ja": "泌尿器",
+        "en": "urinary tract"
+      },
+      "synonyms": [
+        "泌尿器",
+        "urinary tract"
+      ]
+    },
+    "gastrointestinal": {
+      "label": {
+        "ja": "消化管",
+        "en": "gastrointestinal tract"
+      },
+      "synonyms": [
+        "消化管",
+        "gastrointestinal tract"
+      ]
+    },
+    "breast": {
+      "label": {
+        "ja": "乳腺",
+        "en": "breast"
+      },
+      "synonyms": [
+        "乳腺",
+        "breast"
+      ]
+    },
+    "musculoskeletal": {
+      "label": {
+        "ja": "骨軟部",
+        "en": "musculoskeletal"
+      },
+      "synonyms": [
+        "骨軟部",
+        "musculoskeletal"
+      ]
+    },
+    "spine": {
+      "label": {
+        "ja": "脊椎",
+        "en": "spine"
+      },
+      "synonyms": [
+        "脊椎",
+        "spine"
+      ]
+    },
+    "head_neck": {
+      "label": {
+        "ja": "頭頸部",
+        "en": "head and neck"
+      },
+      "synonyms": [
+        "頭頸部",
+        "head and neck"
+      ]
+    },
+    "cardiovascular": {
+      "label": {
+        "ja": "心血管",
+        "en": "cardiovascular"
+      },
+      "synonyms": [
+        "心血管",
+        "cardiovascular"
+      ]
+    },
+    "female_pelvis": {
+      "label": {
+        "ja": "女性骨盤",
+        "en": "female pelvis"
+      },
+      "synonyms": [
+        "女性骨盤",
+        "female pelvis"
+      ]
+    },
+    "male_pelvis": {
+      "label": {
+        "ja": "男性骨盤",
+        "en": "male pelvis"
+      },
+      "synonyms": [
+        "男性骨盤",
+        "male pelvis"
+      ]
+    },
+    "emergency": {
+      "label": {
+        "ja": "救急",
+        "en": "emergency"
+      },
+      "synonyms": [
+        "救急",
+        "emergency"
+      ]
+    },
+    "vascular": {
+      "label": {
+        "ja": "血管",
+        "en": "vascular"
+      },
+      "synonyms": [
+        "血管",
+        "vascular"
+      ]
+    },
+    "orbit_head_neck": {
+      "label": {
+        "ja": "眼窩顔面",
+        "en": "orbit and face"
+      },
+      "synonyms": [
+        "眼窩顔面",
+        "orbit and face"
+      ]
+    },
+    "pediatric_abdomen": {
+      "label": {
+        "ja": "小児腹部",
+        "en": "pediatric abdomen"
+      },
+      "synonyms": [
+        "小児腹部",
+        "pediatric abdomen"
+      ]
+    },
+    "cardiac": {
+      "label": {
+        "ja": "心臓",
+        "en": "cardiac"
+      },
+      "synonyms": [
+        "心臓",
+        "cardiac"
+      ]
+    },
+    "dental": {
+      "label": {
+        "ja": "歯科顎顔面",
+        "en": "dental and mandible"
+      },
+      "synonyms": [
+        "歯科顎顔面",
+        "dental and mandible"
+      ]
+    },
+    "endocrine": {
+      "label": {
+        "ja": "内分泌",
+        "en": "endocrine"
+      },
+      "synonyms": [
+        "内分泌",
+        "endocrine"
+      ]
+    },
+    "skin_soft_tissue": {
+      "label": {
+        "ja": "皮膚軟部",
+        "en": "skin and soft tissue"
+      },
+      "synonyms": [
+        "皮膚軟部",
+        "skin and soft tissue"
+      ]
+    },
+    "trauma": {
+      "label": {
+        "ja": "外傷",
+        "en": "trauma"
+      },
+      "synonyms": [
+        "外傷",
+        "trauma"
+      ]
+    },
+    "pediatric": {
+      "label": {
+        "ja": "小児",
+        "en": "pediatric"
+      },
+      "synonyms": [
+        "小児",
+        "pediatric"
+      ]
+    }
+  },
+  "organs": {
+    "ovary": {
+      "parent_body_region": "pelvis",
+      "label": {
+        "ja": "卵巣",
+        "en": "ovary"
+      },
+      "synonyms": [
+        "卵巣",
+        "ovary",
+        "ovarian"
+      ]
+    },
+    "uterus": {
+      "parent_body_region": "pelvis",
+      "label": {
+        "ja": "子宮",
+        "en": "uterus"
+      },
+      "synonyms": [
+        "子宮",
+        "uterus",
+        "uterine"
+      ]
+    },
+    "brain": {
+      "parent_body_region": "brain",
+      "label": {
+        "ja": "脳",
+        "en": "brain"
+      },
+      "synonyms": [
+        "脳",
+        "brain",
+        "cerebral"
+      ]
+    },
+    "meninges": {
+      "parent_body_region": "brain",
+      "label": {
+        "ja": "髄膜",
+        "en": "meninges"
+      },
+      "synonyms": [
+        "髄膜",
+        "硬膜",
+        "meninges",
+        "dura",
+        "dural"
+      ]
+    },
+    "pituitary": {
+      "label": {
+        "ja": "下垂体",
+        "en": "pituitary gland"
+      },
+      "synonyms": [
+        "下垂体",
+        "pituitary gland"
+      ]
+    },
+    "cranial_nerve": {
+      "label": {
+        "ja": "脳神経",
+        "en": "cranial nerve"
+      },
+      "synonyms": [
+        "脳神経",
+        "cranial nerve"
+      ]
+    },
+    "ventricle": {
+      "label": {
+        "ja": "脳室",
+        "en": "ventricle"
+      },
+      "synonyms": [
+        "脳室",
+        "ventricle"
+      ]
+    },
+    "dural_venous_sinus": {
+      "label": {
+        "ja": "硬膜静脈洞",
+        "en": "dural venous sinus"
+      },
+      "synonyms": [
+        "硬膜静脈洞",
+        "dural venous sinus"
+      ]
+    },
+    "cerebral_vessel": {
+      "label": {
+        "ja": "脳血管",
+        "en": "cerebral vessel"
+      },
+      "synonyms": [
+        "脳血管",
+        "cerebral vessel"
+      ]
+    },
+    "pineal_gland": {
+      "label": {
+        "ja": "松果体",
+        "en": "pineal gland"
+      },
+      "synonyms": [
+        "松果体",
+        "pineal gland"
+      ]
+    },
+    "skull_base": {
+      "label": {
+        "ja": "頭蓋底",
+        "en": "skull base"
+      },
+      "synonyms": [
+        "頭蓋底",
+        "skull base"
+      ]
+    },
+    "choroid_plexus": {
+      "label": {
+        "ja": "脈絡叢",
+        "en": "choroid plexus"
+      },
+      "synonyms": [
+        "脈絡叢",
+        "choroid plexus"
+      ]
+    },
+    "corpus_callosum": {
+      "label": {
+        "ja": "脳梁",
+        "en": "corpus callosum"
+      },
+      "synonyms": [
+        "脳梁",
+        "corpus callosum"
+      ]
+    },
+    "optic_pathway": {
+      "label": {
+        "ja": "視路",
+        "en": "optic pathway"
+      },
+      "synonyms": [
+        "視路",
+        "optic pathway"
+      ]
+    },
+    "hypothalamus": {
+      "label": {
+        "ja": "視床下部",
+        "en": "hypothalamus"
+      },
+      "synonyms": [
+        "視床下部",
+        "hypothalamus"
+      ]
+    },
+    "basal_ganglia": {
+      "label": {
+        "ja": "基底核",
+        "en": "basal ganglia"
+      },
+      "synonyms": [
+        "基底核",
+        "basal ganglia"
+      ]
+    },
+    "brainstem": {
+      "parent_body_region": "brain",
+      "label": {
+        "ja": "脳幹",
+        "en": "brainstem"
+      },
+      "synonyms": [
+        "脳幹",
+        "brainstem",
+        "midbrain",
+        "pons",
+        "medulla"
+      ]
+    },
+    "cerebellum": {
+      "parent_body_region": "brain",
+      "label": {
+        "ja": "小脳",
+        "en": "cerebellum"
+      },
+      "synonyms": [
+        "小脳",
+        "cerebellum",
+        "cerebellar"
+      ]
+    },
+    "hippocampus": {
+      "parent_body_region": "brain",
+      "label": {
+        "ja": "海馬",
+        "en": "hippocampus"
+      },
+      "synonyms": [
+        "海馬",
+        "hippocampus",
+        "hippocampal"
+      ]
+    },
+    "orbit": {
+      "parent_body_region": "brain",
+      "label": {
+        "ja": "眼窩",
+        "en": "orbit"
+      },
+      "synonyms": [
+        "眼窩",
+        "orbit",
+        "orbital"
+      ]
+    },
+    "inner_ear": {
+      "parent_body_region": "brain",
+      "label": {
+        "ja": "内耳",
+        "en": "inner ear"
+      },
+      "synonyms": [
+        "内耳",
+        "inner ear",
+        "labyrinth"
+      ]
+    },
+    "lung": {
+      "parent_body_region": "chest",
+      "label": {
+        "ja": "肺",
+        "en": "lung"
+      },
+      "synonyms": [
+        "肺",
+        "lung"
+      ]
+    },
+    "pleura": {
+      "parent_body_region": "chest",
+      "label": {
+        "ja": "胸膜",
+        "en": "pleura"
+      },
+      "synonyms": [
+        "胸膜",
+        "pleura"
+      ]
+    },
+    "mediastinum": {
+      "parent_body_region": "chest",
+      "label": {
+        "ja": "縦隔",
+        "en": "mediastinum"
+      },
+      "synonyms": [
+        "縦隔",
+        "mediastinum"
+      ]
+    },
+    "heart": {
+      "parent_body_region": "cardiovascular",
+      "label": {
+        "ja": "心臓",
+        "en": "heart"
+      },
+      "synonyms": [
+        "心臓",
+        "heart"
+      ]
+    },
+    "aorta": {
+      "parent_body_region": "cardiovascular",
+      "label": {
+        "ja": "大動脈",
+        "en": "aorta"
+      },
+      "synonyms": [
+        "大動脈",
+        "aorta"
+      ]
+    },
+    "pulmonary_artery": {
+      "parent_body_region": "chest",
+      "label": {
+        "ja": "肺動脈",
+        "en": "pulmonary artery"
+      },
+      "synonyms": [
+        "肺動脈",
+        "pulmonary artery"
+      ]
+    },
+    "liver": {
+      "parent_body_region": "hepatobiliary",
+      "label": {
+        "ja": "肝臓",
+        "en": "liver"
+      },
+      "synonyms": [
+        "肝臓",
+        "liver"
+      ]
+    },
+    "bile_duct": {
+      "parent_body_region": "hepatobiliary",
+      "label": {
+        "ja": "胆管",
+        "en": "bile duct"
+      },
+      "synonyms": [
+        "胆管",
+        "bile duct"
+      ]
+    },
+    "gallbladder": {
+      "parent_body_region": "hepatobiliary",
+      "label": {
+        "ja": "胆嚢",
+        "en": "gallbladder"
+      },
+      "synonyms": [
+        "胆嚢",
+        "gallbladder"
+      ]
+    },
+    "pancreas": {
+      "parent_body_region": "pancreas_region",
+      "label": {
+        "ja": "膵臓",
+        "en": "pancreas"
+      },
+      "synonyms": [
+        "膵臓",
+        "pancreas"
+      ]
+    },
+    "spleen": {
+      "parent_body_region": "abdomen",
+      "label": {
+        "ja": "脾臓",
+        "en": "spleen"
+      },
+      "synonyms": [
+        "脾臓",
+        "spleen"
+      ]
+    },
+    "kidney": {
+      "parent_body_region": "urinary",
+      "label": {
+        "ja": "腎臓",
+        "en": "kidney"
+      },
+      "synonyms": [
+        "腎臓",
+        "kidney"
+      ]
+    },
+    "adrenal_gland": {
+      "parent_body_region": "abdomen",
+      "label": {
+        "ja": "副腎",
+        "en": "adrenal gland"
+      },
+      "synonyms": [
+        "副腎",
+        "adrenal gland"
+      ]
+    },
+    "urinary_bladder": {
+      "parent_body_region": "urinary",
+      "label": {
+        "ja": "膀胱",
+        "en": "urinary bladder"
+      },
+      "synonyms": [
+        "膀胱",
+        "urinary bladder"
+      ]
+    },
+    "prostate": {
+      "parent_body_region": "urinary",
+      "label": {
+        "ja": "前立腺",
+        "en": "prostate"
+      },
+      "synonyms": [
+        "前立腺",
+        "prostate"
+      ]
+    },
+    "bowel": {
+      "parent_body_region": "gastrointestinal",
+      "label": {
+        "ja": "腸管",
+        "en": "bowel"
+      },
+      "synonyms": [
+        "腸管",
+        "bowel"
+      ]
+    },
+    "stomach": {
+      "parent_body_region": "gastrointestinal",
+      "label": {
+        "ja": "胃",
+        "en": "stomach"
+      },
+      "synonyms": [
+        "胃",
+        "stomach"
+      ]
+    },
+    "appendix": {
+      "parent_body_region": "gastrointestinal",
+      "label": {
+        "ja": "虫垂",
+        "en": "appendix"
+      },
+      "synonyms": [
+        "虫垂",
+        "appendix"
+      ]
+    },
+    "peritoneum": {
+      "parent_body_region": "abdomen",
+      "label": {
+        "ja": "腹膜",
+        "en": "peritoneum"
+      },
+      "synonyms": [
+        "腹膜",
+        "peritoneum"
+      ]
+    },
+    "breast": {
+      "parent_body_region": "breast",
+      "label": {
+        "ja": "乳腺",
+        "en": "breast"
+      },
+      "synonyms": [
+        "乳腺",
+        "breast"
+      ]
+    },
+    "bone": {
+      "parent_body_region": "musculoskeletal",
+      "label": {
+        "ja": "骨",
+        "en": "bone"
+      },
+      "synonyms": [
+        "骨",
+        "bone"
+      ]
+    },
+    "joint": {
+      "parent_body_region": "musculoskeletal",
+      "label": {
+        "ja": "関節",
+        "en": "joint"
+      },
+      "synonyms": [
+        "関節",
+        "joint"
+      ]
+    },
+    "muscle": {
+      "parent_body_region": "musculoskeletal",
+      "label": {
+        "ja": "筋",
+        "en": "muscle"
+      },
+      "synonyms": [
+        "筋",
+        "muscle"
+      ]
+    },
+    "soft_tissue": {
+      "parent_body_region": "musculoskeletal",
+      "label": {
+        "ja": "軟部組織",
+        "en": "soft tissue"
+      },
+      "synonyms": [
+        "軟部組織",
+        "soft tissue"
+      ]
+    },
+    "spine": {
+      "parent_body_region": "spine",
+      "label": {
+        "ja": "脊椎",
+        "en": "spine"
+      },
+      "synonyms": [
+        "脊椎",
+        "spine"
+      ]
+    },
+    "vertebra": {
+      "parent_body_region": "spine",
+      "label": {
+        "ja": "椎体",
+        "en": "vertebra"
+      },
+      "synonyms": [
+        "椎体",
+        "vertebra"
+      ]
+    },
+    "intervertebral_disc": {
+      "parent_body_region": "spine",
+      "label": {
+        "ja": "椎間板",
+        "en": "intervertebral disc"
+      },
+      "synonyms": [
+        "椎間板",
+        "intervertebral disc"
+      ]
+    },
+    "thyroid": {
+      "parent_body_region": "head_neck",
+      "label": {
+        "ja": "甲状腺",
+        "en": "thyroid"
+      },
+      "synonyms": [
+        "甲状腺",
+        "thyroid"
+      ]
+    },
+    "salivary_gland": {
+      "parent_body_region": "head_neck",
+      "label": {
+        "ja": "唾液腺",
+        "en": "salivary gland"
+      },
+      "synonyms": [
+        "唾液腺",
+        "salivary gland"
+      ]
+    },
+    "lymph_node": {
+      "parent_body_region": "head_neck",
+      "label": {
+        "ja": "リンパ節",
+        "en": "lymph node"
+      },
+      "synonyms": [
+        "リンパ節",
+        "lymph node"
+      ]
+    },
+    "cervix": {
+      "parent_body_region": "female_pelvis",
+      "label": {
+        "ja": "子宮頸部",
+        "en": "cervix"
+      },
+      "synonyms": [
+        "子宮頸部",
+        "cervix"
+      ]
+    },
+    "endometrium": {
+      "parent_body_region": "female_pelvis",
+      "label": {
+        "ja": "子宮内膜",
+        "en": "endometrium"
+      },
+      "synonyms": [
+        "子宮内膜",
+        "endometrium"
+      ]
+    },
+    "fallopian_tube": {
+      "parent_body_region": "female_pelvis",
+      "label": {
+        "ja": "卵管",
+        "en": "fallopian tube"
+      },
+      "synonyms": [
+        "卵管",
+        "fallopian tube"
+      ]
+    },
+    "vagina": {
+      "parent_body_region": "female_pelvis",
+      "label": {
+        "ja": "腟",
+        "en": "vagina"
+      },
+      "synonyms": [
+        "腟",
+        "vagina"
+      ]
+    },
+    "testis": {
+      "parent_body_region": "male_pelvis",
+      "label": {
+        "ja": "精巣",
+        "en": "testis"
+      },
+      "synonyms": [
+        "精巣",
+        "testis"
+      ]
+    },
+    "scrotum": {
+      "parent_body_region": "male_pelvis",
+      "label": {
+        "ja": "陰嚢",
+        "en": "scrotum"
+      },
+      "synonyms": [
+        "陰嚢",
+        "scrotum"
+      ]
+    },
+    "penis": {
+      "parent_body_region": "male_pelvis",
+      "label": {
+        "ja": "陰茎",
+        "en": "penis"
+      },
+      "synonyms": [
+        "陰茎",
+        "penis"
+      ]
+    },
+    "perineum": {
+      "parent_body_region": "pelvis",
+      "label": {
+        "ja": "会陰",
+        "en": "perineum"
+      },
+      "synonyms": [
+        "会陰",
+        "perineum"
+      ]
+    },
+    "mesentery": {
+      "parent_body_region": "abdomen",
+      "label": {
+        "ja": "腸間膜",
+        "en": "mesentery"
+      },
+      "synonyms": [
+        "腸間膜",
+        "mesentery"
+      ]
+    },
+    "retroperitoneum": {
+      "parent_body_region": "abdomen",
+      "label": {
+        "ja": "後腹膜",
+        "en": "retroperitoneum"
+      },
+      "synonyms": [
+        "後腹膜",
+        "retroperitoneum"
+      ]
+    },
+    "inferior_vena_cava": {
+      "parent_body_region": "vascular",
+      "label": {
+        "ja": "下大静脈",
+        "en": "inferior vena cava"
+      },
+      "synonyms": [
+        "下大静脈",
+        "inferior vena cava"
+      ]
+    },
+    "portal_vein": {
+      "parent_body_region": "hepatobiliary",
+      "label": {
+        "ja": "門脈",
+        "en": "portal vein"
+      },
+      "synonyms": [
+        "門脈",
+        "portal vein"
+      ]
+    },
+    "myocardium": {
+      "parent_body_region": "cardiac",
+      "label": {
+        "ja": "心筋",
+        "en": "myocardium"
+      },
+      "synonyms": [
+        "心筋",
+        "myocardium"
+      ]
+    },
+    "cardiac_chamber": {
+      "parent_body_region": "cardiac",
+      "label": {
+        "ja": "心腔",
+        "en": "cardiac chamber"
+      },
+      "synonyms": [
+        "心腔",
+        "cardiac chamber"
+      ]
+    },
+    "pericardium": {
+      "parent_body_region": "cardiac",
+      "label": {
+        "ja": "心膜",
+        "en": "pericardium"
+      },
+      "synonyms": [
+        "心膜",
+        "pericardium"
+      ]
+    },
+    "coronary_artery": {
+      "parent_body_region": "cardiac",
+      "label": {
+        "ja": "冠動脈",
+        "en": "coronary artery"
+      },
+      "synonyms": [
+        "冠動脈",
+        "coronary artery"
+      ]
+    },
+    "trachea": {
+      "parent_body_region": "chest",
+      "label": {
+        "ja": "気管",
+        "en": "trachea"
+      },
+      "synonyms": [
+        "気管",
+        "trachea"
+      ]
+    },
+    "bronchus": {
+      "parent_body_region": "chest",
+      "label": {
+        "ja": "気管支",
+        "en": "bronchus"
+      },
+      "synonyms": [
+        "気管支",
+        "bronchus"
+      ]
+    },
+    "lymphatic_system": {
+      "parent_body_region": "chest",
+      "label": {
+        "ja": "リンパ系",
+        "en": "lymphatic system"
+      },
+      "synonyms": [
+        "リンパ系",
+        "lymphatic system"
+      ]
+    },
+    "sinonasal_cavity": {
+      "parent_body_region": "head_neck",
+      "label": {
+        "ja": "鼻副鼻腔",
+        "en": "sinonasal cavity"
+      },
+      "synonyms": [
+        "鼻副鼻腔",
+        "sinonasal cavity"
+      ]
+    },
+    "temporal_bone": {
+      "parent_body_region": "head_neck",
+      "label": {
+        "ja": "側頭骨",
+        "en": "temporal bone"
+      },
+      "synonyms": [
+        "側頭骨",
+        "temporal bone"
+      ]
+    },
+    "mandible": {
+      "parent_body_region": "dental",
+      "label": {
+        "ja": "下顎骨",
+        "en": "mandible"
+      },
+      "synonyms": [
+        "下顎骨",
+        "mandible"
+      ]
+    },
+    "tooth": {
+      "parent_body_region": "dental",
+      "label": {
+        "ja": "歯",
+        "en": "tooth"
+      },
+      "synonyms": [
+        "歯",
+        "tooth"
+      ]
+    },
+    "lacrimal_gland": {
+      "parent_body_region": "orbit_head_neck",
+      "label": {
+        "ja": "涙腺",
+        "en": "lacrimal gland"
+      },
+      "synonyms": [
+        "涙腺",
+        "lacrimal gland"
+      ]
+    },
+    "parathyroid": {
+      "parent_body_region": "head_neck",
+      "label": {
+        "ja": "副甲状腺",
+        "en": "parathyroid"
+      },
+      "synonyms": [
+        "副甲状腺",
+        "parathyroid"
+      ]
+    },
+    "ureter": {
+      "parent_body_region": "urinary",
+      "label": {
+        "ja": "尿管",
+        "en": "ureter"
+      },
+      "synonyms": [
+        "尿管",
+        "ureter"
+      ]
+    },
+    "urethra": {
+      "parent_body_region": "urinary",
+      "label": {
+        "ja": "尿道",
+        "en": "urethra"
+      },
+      "synonyms": [
+        "尿道",
+        "urethra"
+      ]
+    },
+    "placenta": {
+      "parent_body_region": "female_pelvis",
+      "label": {
+        "ja": "胎盤",
+        "en": "placenta"
+      },
+      "synonyms": [
+        "胎盤",
+        "placenta"
+      ]
+    },
+    "pediatric_bowel": {
+      "parent_body_region": "pediatric_abdomen",
+      "label": {
+        "ja": "小児腸管",
+        "en": "pediatric bowel"
+      },
+      "synonyms": [
+        "小児腸管",
+        "pediatric bowel"
+      ]
+    },
+    "pylorus": {
+      "parent_body_region": "pediatric_abdomen",
+      "label": {
+        "ja": "幽門",
+        "en": "pylorus"
+      },
+      "synonyms": [
+        "幽門",
+        "pylorus"
+      ]
+    },
+    "rotator_cuff": {
+      "parent_body_region": "musculoskeletal",
+      "label": {
+        "ja": "腱板",
+        "en": "rotator cuff"
+      },
+      "synonyms": [
+        "腱板",
+        "rotator cuff"
+      ]
+    },
+    "achilles_tendon": {
+      "parent_body_region": "musculoskeletal",
+      "label": {
+        "ja": "アキレス腱",
+        "en": "Achilles tendon"
+      },
+      "synonyms": [
+        "アキレス腱",
+        "Achilles tendon"
+      ]
+    },
+    "plantar_fascia": {
+      "parent_body_region": "musculoskeletal",
+      "label": {
+        "ja": "足底腱膜",
+        "en": "plantar fascia"
+      },
+      "synonyms": [
+        "足底腱膜",
+        "plantar fascia"
+      ]
+    },
+    "peripheral_nerve": {
+      "parent_body_region": "musculoskeletal",
+      "label": {
+        "ja": "末梢神経",
+        "en": "peripheral nerve"
+      },
+      "synonyms": [
+        "末梢神経",
+        "peripheral nerve"
+      ]
+    },
+    "skin": {
+      "parent_body_region": "skin_soft_tissue",
+      "label": {
+        "ja": "皮膚",
+        "en": "skin"
+      },
+      "synonyms": [
+        "皮膚",
+        "skin"
+      ]
+    },
+    "subcutaneous_tissue": {
+      "parent_body_region": "skin_soft_tissue",
+      "label": {
+        "ja": "皮下組織",
+        "en": "subcutaneous tissue"
+      },
+      "synonyms": [
+        "皮下組織",
+        "subcutaneous tissue"
+      ]
+    },
+    "hematopoietic_system": {
+      "parent_body_region": "abdomen",
+      "label": {
+        "ja": "造血リンパ系",
+        "en": "hematopoietic system"
+      },
+      "synonyms": [
+        "造血リンパ系",
+        "hematopoietic system"
+      ]
+    },
+    "esophagus": {
+      "parent_body_region": "gastrointestinal",
+      "label": {
+        "ja": "食道",
+        "en": "esophagus"
+      },
+      "synonyms": [
+        "食道",
+        "esophagus"
+      ]
+    },
+    "duodenum": {
+      "parent_body_region": "gastrointestinal",
+      "label": {
+        "ja": "十二指腸",
+        "en": "duodenum"
+      },
+      "synonyms": [
+        "十二指腸",
+        "duodenum"
+      ]
+    },
+    "colon": {
+      "parent_body_region": "gastrointestinal",
+      "label": {
+        "ja": "結腸",
+        "en": "colon"
+      },
+      "synonyms": [
+        "結腸",
+        "colon"
+      ]
+    },
+    "rectum": {
+      "parent_body_region": "gastrointestinal",
+      "label": {
+        "ja": "直腸",
+        "en": "rectum"
+      },
+      "synonyms": [
+        "直腸",
+        "rectum"
+      ]
+    },
+    "anal_canal": {
+      "parent_body_region": "gastrointestinal",
+      "label": {
+        "ja": "肛門管",
+        "en": "anal canal"
+      },
+      "synonyms": [
+        "肛門管",
+        "anal canal"
+      ]
+    },
+    "omentum": {
+      "parent_body_region": "abdomen",
+      "label": {
+        "ja": "大網",
+        "en": "omentum"
+      },
+      "synonyms": [
+        "大網",
+        "omentum"
+      ]
+    },
+    "diaphragm": {
+      "parent_body_region": "chest",
+      "label": {
+        "ja": "横隔膜",
+        "en": "diaphragm"
+      },
+      "synonyms": [
+        "横隔膜",
+        "diaphragm"
+      ]
+    },
+    "rib": {
+      "parent_body_region": "chest",
+      "label": {
+        "ja": "肋骨",
+        "en": "rib"
+      },
+      "synonyms": [
+        "肋骨",
+        "rib"
+      ]
+    },
+    "brachial_plexus": {
+      "parent_body_region": "musculoskeletal",
+      "label": {
+        "ja": "腕神経叢",
+        "en": "brachial plexus"
+      },
+      "synonyms": [
+        "腕神経叢",
+        "brachial plexus"
+      ]
+    },
+    "hip": {
+      "parent_body_region": "musculoskeletal",
+      "label": {
+        "ja": "股関節",
+        "en": "hip"
+      },
+      "synonyms": [
+        "股関節",
+        "hip"
+      ]
+    },
+    "knee": {
+      "parent_body_region": "musculoskeletal",
+      "label": {
+        "ja": "膝関節",
+        "en": "knee"
+      },
+      "synonyms": [
+        "膝関節",
+        "knee"
+      ]
+    },
+    "shoulder": {
+      "parent_body_region": "musculoskeletal",
+      "label": {
+        "ja": "肩関節",
+        "en": "shoulder"
+      },
+      "synonyms": [
+        "肩関節",
+        "shoulder"
+      ]
+    },
+    "ankle": {
+      "parent_body_region": "musculoskeletal",
+      "label": {
+        "ja": "足関節",
+        "en": "ankle"
+      },
+      "synonyms": [
+        "足関節",
+        "ankle"
+      ]
+    },
+    "foot": {
+      "parent_body_region": "musculoskeletal",
+      "label": {
+        "ja": "足部",
+        "en": "foot"
+      },
+      "synonyms": [
+        "足部",
+        "foot"
+      ]
+    },
+    "sacroiliac_joint": {
+      "parent_body_region": "musculoskeletal",
+      "label": {
+        "ja": "仙腸関節",
+        "en": "sacroiliac joint"
+      },
+      "synonyms": [
+        "仙腸関節",
+        "sacroiliac joint"
+      ]
+    },
+    "uterine_cavity": {
+      "parent_body_region": "female_pelvis",
+      "label": {
+        "ja": "子宮腔",
+        "en": "uterine cavity"
+      },
+      "synonyms": [
+        "子宮腔",
+        "uterine cavity"
+      ]
+    },
+    "vulva": {
+      "parent_body_region": "female_pelvis",
+      "label": {
+        "ja": "外陰",
+        "en": "vulva"
+      },
+      "synonyms": [
+        "外陰",
+        "vulva"
+      ]
+    },
+    "seminal_vesicle": {
+      "parent_body_region": "male_pelvis",
+      "label": {
+        "ja": "精嚢",
+        "en": "seminal vesicle"
+      },
+      "synonyms": [
+        "精嚢",
+        "seminal vesicle"
+      ]
+    },
+    "urachus": {
+      "parent_body_region": "urinary",
+      "label": {
+        "ja": "尿膜管",
+        "en": "urachus"
+      },
+      "synonyms": [
+        "尿膜管",
+        "urachus"
+      ]
+    },
+    "renal_vessel": {
+      "parent_body_region": "urinary",
+      "label": {
+        "ja": "腎血管",
+        "en": "renal vessel"
+      },
+      "synonyms": [
+        "腎血管",
+        "renal vessel"
+      ]
+    },
+    "neonatal_adrenal": {
+      "parent_body_region": "pediatric",
+      "label": {
+        "ja": "新生児副腎",
+        "en": "neonatal adrenal gland"
+      },
+      "synonyms": [
+        "新生児副腎",
+        "neonatal adrenal gland"
+      ]
+    },
+    "sympathetic_chain": {
+      "parent_body_region": "abdomen",
+      "label": {
+        "ja": "交感神経幹",
+        "en": "sympathetic chain"
+      },
+      "synonyms": [
+        "交感神経幹",
+        "sympathetic chain"
+      ]
+    },
+    "mediastinal_vessel": {
+      "parent_body_region": "chest",
+      "label": {
+        "ja": "縦隔血管",
+        "en": "mediastinal vessel"
+      },
+      "synonyms": [
+        "縦隔血管",
+        "mediastinal vessel"
+      ]
+    }
+  },
+  "subregions": {
+    "adnexa": {
+      "label": {
+        "ja": "付属器",
+        "en": "adnexa"
+      },
+      "synonyms": [
+        "付属器",
+        "adnexa",
+        "adnexal"
+      ]
+    },
+    "myometrium": {
+      "label": {
+        "ja": "子宮筋層",
+        "en": "myometrium"
+      },
+      "synonyms": [
+        "子宮筋層",
+        "myometrium",
+        "myometrial"
+      ]
+    },
+    "cerebral_hemisphere": {
+      "label": {
+        "ja": "大脳半球",
+        "en": "cerebral hemisphere"
+      },
+      "synonyms": [
+        "大脳半球",
+        "大脳",
+        "cerebral hemisphere",
+        "cerebrum"
+      ]
+    },
+    "white_matter": {
+      "label": {
+        "ja": "白質",
+        "en": "white matter"
+      },
+      "synonyms": [
+        "白質",
+        "white matter",
+        "periventricular"
+      ]
+    },
+    "cortex": {
+      "label": {
+        "ja": "皮質",
+        "en": "cortex"
+      },
+      "synonyms": [
+        "皮質",
+        "cortex",
+        "cortical"
+      ]
+    },
+    "extra_axial": {
+      "label": {
+        "ja": "脳外",
+        "en": "extra-axial"
+      },
+      "synonyms": [
+        "脳外",
+        "硬膜付着",
+        "extra-axial",
+        "dural-based"
+      ]
+    },
+    "posterior_fossa": {
+      "label": {
+        "ja": "後頭蓋窩",
+        "en": "posterior fossa"
+      },
+      "synonyms": [
+        "後頭蓋窩",
+        "posterior fossa"
+      ]
+    },
+    "cerebellum": {
+      "label": {
+        "ja": "小脳",
+        "en": "cerebellum"
+      },
+      "synonyms": [
+        "小脳",
+        "cerebellum",
+        "cerebellar hemisphere"
+      ]
+    },
+    "brainstem": {
+      "label": {
+        "ja": "脳幹",
+        "en": "brainstem"
+      },
+      "synonyms": [
+        "脳幹",
+        "brainstem"
+      ]
+    },
+    "fourth_ventricle": {
+      "label": {
+        "ja": "第4脳室",
+        "en": "fourth ventricle"
+      },
+      "synonyms": [
+        "第4脳室",
+        "fourth ventricle"
+      ]
+    },
+    "intraventricular": {
+      "label": {
+        "ja": "脳室内",
+        "en": "intraventricular"
+      },
+      "synonyms": [
+        "脳室内",
+        "intraventricular"
+      ]
+    },
+    "cerebellopontine_angle": {
+      "label": {
+        "ja": "小脳橋角部",
+        "en": "cerebellopontine angle"
+      },
+      "synonyms": [
+        "小脳橋角部",
+        "cerebellopontine angle",
+        "CPA"
+      ]
+    },
+    "internal_auditory_canal": {
+      "label": {
+        "ja": "内耳道",
+        "en": "internal auditory canal"
+      },
+      "synonyms": [
+        "内耳道",
+        "internal auditory canal",
+        "IAC"
+      ]
+    },
+    "sellar": {
+      "label": {
+        "ja": "鞍内",
+        "en": "sellar"
+      },
+      "synonyms": [
+        "鞍内",
+        "sellar"
+      ]
+    },
+    "suprasellar": {
+      "label": {
+        "ja": "鞍上部",
+        "en": "suprasellar"
+      },
+      "synonyms": [
+        "鞍上部",
+        "suprasellar"
+      ]
+    },
+    "temporal_lobe": {
+      "label": {
+        "ja": "側頭葉",
+        "en": "temporal lobe"
+      },
+      "synonyms": [
+        "側頭葉",
+        "temporal lobe"
+      ]
+    },
+    "insula": {
+      "label": {
+        "ja": "島皮質",
+        "en": "insula"
+      },
+      "synonyms": [
+        "島皮質",
+        "insula",
+        "insular cortex"
+      ]
+    },
+    "dural_venous_sinus": {
+      "label": {
+        "ja": "硬膜静脈洞",
+        "en": "dural venous sinus"
+      },
+      "synonyms": [
+        "硬膜静脈洞",
+        "dural venous sinus",
+        "venous sinus"
+      ]
+    },
+    "frontal_lobe": {
+      "label": {
+        "ja": "前頭葉",
+        "en": "frontal lobe"
+      },
+      "synonyms": [
+        "前頭葉",
+        "frontal lobe"
+      ]
+    },
+    "parietal_lobe": {
+      "label": {
+        "ja": "頭頂葉",
+        "en": "parietal lobe"
+      },
+      "synonyms": [
+        "頭頂葉",
+        "parietal lobe"
+      ]
+    },
+    "occipital_lobe": {
+      "label": {
+        "ja": "後頭葉",
+        "en": "occipital lobe"
+      },
+      "synonyms": [
+        "後頭葉",
+        "occipital lobe"
+      ]
+    },
+    "limbic_system": {
+      "label": {
+        "ja": "辺縁系",
+        "en": "limbic system"
+      },
+      "synonyms": [
+        "辺縁系",
+        "limbic system"
+      ]
+    },
+    "pineal_region": {
+      "label": {
+        "ja": "松果体部",
+        "en": "pineal region"
+      },
+      "synonyms": [
+        "松果体部",
+        "pineal region"
+      ]
+    },
+    "foramen_of_monro": {
+      "label": {
+        "ja": "モンロー孔",
+        "en": "foramen of Monro"
+      },
+      "synonyms": [
+        "モンロー孔",
+        "foramen of Monro",
+        "Monro孔",
+        "Monro foramen"
+      ]
+    },
+    "clivus": {
+      "label": {
+        "ja": "斜台",
+        "en": "clivus"
+      },
+      "synonyms": [
+        "斜台",
+        "clivus"
+      ]
+    },
+    "cavernous_sinus": {
+      "label": {
+        "ja": "海綿静脈洞",
+        "en": "cavernous sinus"
+      },
+      "synonyms": [
+        "海綿静脈洞",
+        "cavernous sinus"
+      ]
+    },
+    "pituitary_stalk": {
+      "label": {
+        "ja": "下垂体茎",
+        "en": "pituitary stalk"
+      },
+      "synonyms": [
+        "下垂体茎",
+        "pituitary stalk"
+      ]
+    },
+    "optic_chiasm": {
+      "label": {
+        "ja": "視交叉",
+        "en": "optic chiasm"
+      },
+      "synonyms": [
+        "視交叉",
+        "optic chiasm"
+      ]
+    },
+    "basal_cistern": {
+      "label": {
+        "ja": "脳底槽",
+        "en": "basal cistern"
+      },
+      "synonyms": [
+        "脳底槽",
+        "basal cistern",
+        "basilar cistern"
+      ]
+    },
+    "subependymal": {
+      "label": {
+        "ja": "脳室上衣下",
+        "en": "subependymal"
+      },
+      "synonyms": [
+        "脳室上衣下",
+        "subependymal"
+      ]
+    },
+    "periventricular": {
+      "label": {
+        "ja": "脳室周囲",
+        "en": "periventricular"
+      },
+      "synonyms": [
+        "脳室周囲",
+        "periventricular"
+      ]
+    },
+    "symmetric_white_matter": {
+      "label": {
+        "ja": "対称性白質",
+        "en": "symmetric white matter"
+      },
+      "synonyms": [
+        "対称性白質",
+        "symmetric white matter"
+      ]
+    },
+    "corticospinal_tract": {
+      "label": {
+        "ja": "皮質脊髄路",
+        "en": "corticospinal tract"
+      },
+      "synonyms": [
+        "皮質脊髄路",
+        "corticospinal tract"
+      ]
+    },
+    "cerebral_convexity": {
+      "label": {
+        "ja": "大脳円蓋部",
+        "en": "cerebral convexity"
+      },
+      "synonyms": [
+        "大脳円蓋部",
+        "cerebral convexity"
+      ]
+    },
+    "pons": {
+      "label": {
+        "ja": "橋",
+        "en": "pons"
+      },
+      "synonyms": [
+        "橋",
+        "pons",
+        "pontine"
+      ]
+    },
+    "midbrain": {
+      "label": {
+        "ja": "中脳",
+        "en": "midbrain"
+      },
+      "synonyms": [
+        "中脳",
+        "midbrain",
+        "mesencephalon"
+      ]
+    },
+    "medulla": {
+      "label": {
+        "ja": "延髄",
+        "en": "medulla"
+      },
+      "synonyms": [
+        "延髄",
+        "medulla",
+        "medulla oblongata"
+      ]
+    },
+    "cerebellar_dentate_nucleus": {
+      "label": {
+        "ja": "小脳歯状核",
+        "en": "dentate nucleus"
+      },
+      "synonyms": [
+        "小脳歯状核",
+        "dentate nucleus",
+        "dentate nuclei"
+      ]
+    },
+    "hippocampus": {
+      "label": {
+        "ja": "海馬",
+        "en": "hippocampus"
+      },
+      "synonyms": [
+        "海馬",
+        "hippocampus",
+        "hippocampal formation"
+      ]
+    },
+    "mesial_temporal_lobe": {
+      "label": {
+        "ja": "側頭葉内側",
+        "en": "mesial temporal lobe"
+      },
+      "synonyms": [
+        "側頭葉内側",
+        "mesial temporal lobe",
+        "medial temporal lobe"
+      ]
+    },
+    "amygdala": {
+      "label": {
+        "ja": "扁桃体",
+        "en": "amygdala"
+      },
+      "synonyms": [
+        "扁桃体",
+        "amygdala"
+      ]
+    },
+    "thalami": {
+      "label": {
+        "ja": "視床",
+        "en": "thalami"
+      },
+      "synonyms": [
+        "視床",
+        "thalami",
+        "thalamus",
+        "bilateral thalami"
+      ]
+    },
+    "globus_pallidus": {
+      "label": {
+        "ja": "淡蒼球",
+        "en": "globus pallidus"
+      },
+      "synonyms": [
+        "淡蒼球",
+        "globus pallidus",
+        "pallidum"
+      ]
+    },
+    "subarachnoid_space": {
+      "label": {
+        "ja": "くも膜下腔",
+        "en": "subarachnoid space"
+      },
+      "synonyms": [
+        "くも膜下腔",
+        "subarachnoid space",
+        "sulci",
+        "cisterns"
+      ]
+    },
+    "gray_white_junction": {
+      "label": {
+        "ja": "灰白質白質境界",
+        "en": "gray-white junction"
+      },
+      "synonyms": [
+        "灰白質白質境界",
+        "gray-white junction",
+        "grey-white junction"
+      ]
+    },
+    "anterior_temporal_pole": {
+      "label": {
+        "ja": "前側頭極",
+        "en": "anterior temporal pole"
+      },
+      "synonyms": [
+        "前側頭極",
+        "anterior temporal pole",
+        "temporal pole"
+      ]
+    },
+    "external_capsule": {
+      "label": {
+        "ja": "外包",
+        "en": "external capsule"
+      },
+      "synonyms": [
+        "外包",
+        "external capsule"
+      ]
+    },
+    "internal_capsule": {
+      "label": {
+        "ja": "内包",
+        "en": "internal capsule"
+      },
+      "synonyms": [
+        "内包",
+        "internal capsule"
+      ]
+    },
+    "suprasellar_region": {
+      "label": {
+        "ja": "鞍上部",
+        "en": "suprasellar region"
+      },
+      "synonyms": [
+        "鞍上部",
+        "suprasellar region",
+        "suprasellar"
+      ]
+    },
+    "sellar_region": {
+      "label": {
+        "ja": "鞍内",
+        "en": "sellar region"
+      },
+      "synonyms": [
+        "鞍内",
+        "sellar region",
+        "sella",
+        "pituitary fossa"
+      ]
+    },
+    "choroid_plexus": {
+      "label": {
+        "ja": "脈絡叢",
+        "en": "choroid plexus"
+      },
+      "synonyms": [
+        "脈絡叢",
+        "choroid plexus"
+      ]
+    },
+    "convexity": {
+      "label": {
+        "ja": "円蓋部",
+        "en": "convexity"
+      },
+      "synonyms": [
+        "円蓋部",
+        "convexity",
+        "cerebral convexity"
+      ]
+    },
+    "lung_parenchyma": {
+      "label": {
+        "ja": "肺実質",
+        "en": "lung parenchyma"
+      },
+      "synonyms": [
+        "肺実質",
+        "lung parenchyma"
+      ]
+    },
+    "pulmonary_nodule": {
+      "label": {
+        "ja": "肺結節",
+        "en": "pulmonary nodule"
+      },
+      "synonyms": [
+        "肺結節",
+        "pulmonary nodule"
+      ]
+    },
+    "interstitium": {
+      "label": {
+        "ja": "間質",
+        "en": "interstitium"
+      },
+      "synonyms": [
+        "間質",
+        "interstitium"
+      ]
+    },
+    "pleural_space": {
+      "label": {
+        "ja": "胸膜腔",
+        "en": "pleural space"
+      },
+      "synonyms": [
+        "胸膜腔",
+        "pleural space"
+      ]
+    },
+    "mediastinal_compartment": {
+      "label": {
+        "ja": "縦隔区画",
+        "en": "mediastinal compartment"
+      },
+      "synonyms": [
+        "縦隔区画",
+        "mediastinal compartment"
+      ]
+    },
+    "cardiac_myocardium": {
+      "label": {
+        "ja": "心筋",
+        "en": "myocardium"
+      },
+      "synonyms": [
+        "心筋",
+        "myocardium"
+      ]
+    },
+    "aortic_lumen": {
+      "label": {
+        "ja": "大動脈内腔",
+        "en": "aortic lumen"
+      },
+      "synonyms": [
+        "大動脈内腔",
+        "aortic lumen"
+      ]
+    },
+    "pulmonary_artery_lumen": {
+      "label": {
+        "ja": "肺動脈内腔",
+        "en": "pulmonary artery lumen"
+      },
+      "synonyms": [
+        "肺動脈内腔",
+        "pulmonary artery lumen"
+      ]
+    },
+    "hepatic_parenchyma": {
+      "label": {
+        "ja": "肝実質",
+        "en": "hepatic parenchyma"
+      },
+      "synonyms": [
+        "肝実質",
+        "hepatic parenchyma"
+      ]
+    },
+    "biliary_tree": {
+      "label": {
+        "ja": "胆道",
+        "en": "biliary tree"
+      },
+      "synonyms": [
+        "胆道",
+        "biliary tree"
+      ]
+    },
+    "gallbladder_lumen": {
+      "label": {
+        "ja": "胆嚢内腔",
+        "en": "gallbladder lumen"
+      },
+      "synonyms": [
+        "胆嚢内腔",
+        "gallbladder lumen"
+      ]
+    },
+    "pancreatic_head": {
+      "label": {
+        "ja": "膵頭部",
+        "en": "pancreatic head"
+      },
+      "synonyms": [
+        "膵頭部",
+        "pancreatic head"
+      ]
+    },
+    "pancreatic_body_tail": {
+      "label": {
+        "ja": "膵体尾部",
+        "en": "pancreatic body and tail"
+      },
+      "synonyms": [
+        "膵体尾部",
+        "pancreatic body and tail"
+      ]
+    },
+    "splenic_parenchyma": {
+      "label": {
+        "ja": "脾実質",
+        "en": "splenic parenchyma"
+      },
+      "synonyms": [
+        "脾実質",
+        "splenic parenchyma"
+      ]
+    },
+    "renal_cortex": {
+      "label": {
+        "ja": "腎皮質",
+        "en": "renal cortex"
+      },
+      "synonyms": [
+        "腎皮質",
+        "renal cortex"
+      ]
+    },
+    "renal_collecting_system": {
+      "label": {
+        "ja": "腎盂尿管",
+        "en": "renal collecting system"
+      },
+      "synonyms": [
+        "腎盂尿管",
+        "renal collecting system"
+      ]
+    },
+    "adrenal": {
+      "label": {
+        "ja": "副腎",
+        "en": "adrenal"
+      },
+      "synonyms": [
+        "副腎",
+        "adrenal"
+      ]
+    },
+    "bladder_wall": {
+      "label": {
+        "ja": "膀胱壁",
+        "en": "bladder wall"
+      },
+      "synonyms": [
+        "膀胱壁",
+        "bladder wall"
+      ]
+    },
+    "prostate_peripheral_zone": {
+      "label": {
+        "ja": "前立腺辺縁域",
+        "en": "prostate peripheral zone"
+      },
+      "synonyms": [
+        "前立腺辺縁域",
+        "prostate peripheral zone"
+      ]
+    },
+    "prostate_transition_zone": {
+      "label": {
+        "ja": "前立腺移行域",
+        "en": "prostate transition zone"
+      },
+      "synonyms": [
+        "前立腺移行域",
+        "prostate transition zone"
+      ]
+    },
+    "bowel_wall": {
+      "label": {
+        "ja": "腸管壁",
+        "en": "bowel wall"
+      },
+      "synonyms": [
+        "腸管壁",
+        "bowel wall"
+      ]
+    },
+    "gastric_wall": {
+      "label": {
+        "ja": "胃壁",
+        "en": "gastric wall"
+      },
+      "synonyms": [
+        "胃壁",
+        "gastric wall"
+      ]
+    },
+    "appendiceal_wall": {
+      "label": {
+        "ja": "虫垂壁",
+        "en": "appendiceal wall"
+      },
+      "synonyms": [
+        "虫垂壁",
+        "appendiceal wall"
+      ]
+    },
+    "peritoneal_cavity": {
+      "label": {
+        "ja": "腹腔",
+        "en": "peritoneal cavity"
+      },
+      "synonyms": [
+        "腹腔",
+        "peritoneal cavity"
+      ]
+    },
+    "breast_parenchyma": {
+      "label": {
+        "ja": "乳腺実質",
+        "en": "breast parenchyma"
+      },
+      "synonyms": [
+        "乳腺実質",
+        "breast parenchyma"
+      ]
+    },
+    "axilla": {
+      "label": {
+        "ja": "腋窩",
+        "en": "axilla"
+      },
+      "synonyms": [
+        "腋窩",
+        "axilla"
+      ]
+    },
+    "bone_marrow": {
+      "label": {
+        "ja": "骨髄",
+        "en": "bone marrow"
+      },
+      "synonyms": [
+        "骨髄",
+        "bone marrow"
+      ]
+    },
+    "metaphysis": {
+      "label": {
+        "ja": "骨幹端",
+        "en": "metaphysis"
+      },
+      "synonyms": [
+        "骨幹端",
+        "metaphysis"
+      ]
+    },
+    "epiphysis": {
+      "label": {
+        "ja": "骨端",
+        "en": "epiphysis"
+      },
+      "synonyms": [
+        "骨端",
+        "epiphysis"
+      ]
+    },
+    "joint_space": {
+      "label": {
+        "ja": "関節腔",
+        "en": "joint space"
+      },
+      "synonyms": [
+        "関節腔",
+        "joint space"
+      ]
+    },
+    "soft_tissue_compartment": {
+      "label": {
+        "ja": "軟部コンパートメント",
+        "en": "soft-tissue compartment"
+      },
+      "synonyms": [
+        "軟部コンパートメント",
+        "soft-tissue compartment"
+      ]
+    },
+    "vertebral_body": {
+      "label": {
+        "ja": "椎体",
+        "en": "vertebral body"
+      },
+      "synonyms": [
+        "椎体",
+        "vertebral body"
+      ]
+    },
+    "spinal_canal": {
+      "label": {
+        "ja": "脊柱管",
+        "en": "spinal canal"
+      },
+      "synonyms": [
+        "脊柱管",
+        "spinal canal"
+      ]
+    },
+    "epidural_space": {
+      "label": {
+        "ja": "硬膜外腔",
+        "en": "epidural space"
+      },
+      "synonyms": [
+        "硬膜外腔",
+        "epidural space"
+      ]
+    },
+    "disc_space": {
+      "label": {
+        "ja": "椎間板腔",
+        "en": "disc space"
+      },
+      "synonyms": [
+        "椎間板腔",
+        "disc space"
+      ]
+    },
+    "thyroid_lobe": {
+      "label": {
+        "ja": "甲状腺葉",
+        "en": "thyroid lobe"
+      },
+      "synonyms": [
+        "甲状腺葉",
+        "thyroid lobe"
+      ]
+    },
+    "parotid_gland": {
+      "label": {
+        "ja": "耳下腺",
+        "en": "parotid gland"
+      },
+      "synonyms": [
+        "耳下腺",
+        "parotid gland"
+      ]
+    },
+    "cervical_lymph_node": {
+      "label": {
+        "ja": "頸部リンパ節",
+        "en": "cervical lymph node"
+      },
+      "synonyms": [
+        "頸部リンパ節",
+        "cervical lymph node"
+      ]
+    },
+    "nasopharynx": {
+      "label": {
+        "ja": "上咽頭",
+        "en": "nasopharynx"
+      },
+      "synonyms": [
+        "上咽頭",
+        "nasopharynx"
+      ]
+    },
+    "oropharynx": {
+      "label": {
+        "ja": "中咽頭",
+        "en": "oropharynx"
+      },
+      "synonyms": [
+        "中咽頭",
+        "oropharynx"
+      ]
+    },
+    "larynx": {
+      "label": {
+        "ja": "喉頭",
+        "en": "larynx"
+      },
+      "synonyms": [
+        "喉頭",
+        "larynx"
+      ]
+    },
+    "pleural_surface": {
+      "label": {
+        "ja": "胸膜面",
+        "en": "pleural surface"
+      },
+      "synonyms": [
+        "胸膜面",
+        "pleural surface"
+      ]
+    },
+    "airway_lumen": {
+      "label": {
+        "ja": "気道内腔",
+        "en": "airway lumen"
+      },
+      "synonyms": [
+        "気道内腔",
+        "airway lumen"
+      ]
+    },
+    "alveolar_space": {
+      "label": {
+        "ja": "肺胞腔",
+        "en": "alveolar space"
+      },
+      "synonyms": [
+        "肺胞腔",
+        "alveolar space"
+      ]
+    },
+    "interlobular_septa": {
+      "label": {
+        "ja": "小葉間隔壁",
+        "en": "interlobular septa"
+      },
+      "synonyms": [
+        "小葉間隔壁",
+        "interlobular septa"
+      ]
+    },
+    "pericardial_space": {
+      "label": {
+        "ja": "心嚢腔",
+        "en": "pericardial space"
+      },
+      "synonyms": [
+        "心嚢腔",
+        "pericardial space"
+      ]
+    },
+    "splenic_hilum": {
+      "label": {
+        "ja": "脾門部",
+        "en": "splenic hilum"
+      },
+      "synonyms": [
+        "脾門部",
+        "splenic hilum"
+      ]
+    },
+    "pancreatic_duct": {
+      "label": {
+        "ja": "膵管",
+        "en": "pancreatic duct"
+      },
+      "synonyms": [
+        "膵管",
+        "pancreatic duct"
+      ]
+    },
+    "mesenteric_vessels": {
+      "label": {
+        "ja": "腸間膜血管",
+        "en": "mesenteric vessels"
+      },
+      "synonyms": [
+        "腸間膜血管",
+        "mesenteric vessels"
+      ]
+    },
+    "retroperitoneal_space": {
+      "label": {
+        "ja": "後腹膜腔",
+        "en": "retroperitoneal space"
+      },
+      "synonyms": [
+        "後腹膜腔",
+        "retroperitoneal space"
+      ]
+    },
+    "endometrial_cavity": {
+      "label": {
+        "ja": "子宮内腔",
+        "en": "endometrial cavity"
+      },
+      "synonyms": [
+        "子宮内腔",
+        "endometrial cavity"
+      ]
+    },
+    "cervical_stroma": {
+      "label": {
+        "ja": "子宮頸部間質",
+        "en": "cervical stroma"
+      },
+      "synonyms": [
+        "子宮頸部間質",
+        "cervical stroma"
+      ]
+    },
+    "fallopian_tube_lumen": {
+      "label": {
+        "ja": "卵管内腔",
+        "en": "fallopian tube lumen"
+      },
+      "synonyms": [
+        "卵管内腔",
+        "fallopian tube lumen"
+      ]
+    },
+    "testicular_parenchyma": {
+      "label": {
+        "ja": "精巣実質",
+        "en": "testicular parenchyma"
+      },
+      "synonyms": [
+        "精巣実質",
+        "testicular parenchyma"
+      ]
+    },
+    "epididymis": {
+      "label": {
+        "ja": "精巣上体",
+        "en": "epididymis"
+      },
+      "synonyms": [
+        "精巣上体",
+        "epididymis"
+      ]
+    },
+    "scrotal_wall": {
+      "label": {
+        "ja": "陰嚢壁",
+        "en": "scrotal wall"
+      },
+      "synonyms": [
+        "陰嚢壁",
+        "scrotal wall"
+      ]
+    },
+    "perineal_soft_tissue": {
+      "label": {
+        "ja": "会陰軟部組織",
+        "en": "perineal soft tissue"
+      },
+      "synonyms": [
+        "会陰軟部組織",
+        "perineal soft tissue"
+      ]
+    },
+    "portal_vein_lumen": {
+      "label": {
+        "ja": "門脈内腔",
+        "en": "portal vein lumen"
+      },
+      "synonyms": [
+        "門脈内腔",
+        "portal vein lumen"
+      ]
+    },
+    "ivc_lumen": {
+      "label": {
+        "ja": "下大静脈内腔",
+        "en": "IVC lumen"
+      },
+      "synonyms": [
+        "下大静脈内腔",
+        "IVC lumen"
+      ]
+    },
+    "arterial_wall": {
+      "label": {
+        "ja": "動脈壁",
+        "en": "arterial wall"
+      },
+      "synonyms": [
+        "動脈壁",
+        "arterial wall"
+      ]
+    },
+    "venous_lumen": {
+      "label": {
+        "ja": "静脈内腔",
+        "en": "venous lumen"
+      },
+      "synonyms": [
+        "静脈内腔",
+        "venous lumen"
+      ]
+    },
+    "myocardial_wall": {
+      "label": {
+        "ja": "心筋壁",
+        "en": "myocardial wall"
+      },
+      "synonyms": [
+        "心筋壁",
+        "myocardial wall"
+      ]
+    },
+    "left_atrium": {
+      "label": {
+        "ja": "左房",
+        "en": "left atrium"
+      },
+      "synonyms": [
+        "左房",
+        "left atrium"
+      ]
+    },
+    "left_ventricle": {
+      "label": {
+        "ja": "左室",
+        "en": "left ventricle"
+      },
+      "synonyms": [
+        "左室",
+        "left ventricle"
+      ]
+    },
+    "pericardium": {
+      "label": {
+        "ja": "心膜",
+        "en": "pericardium"
+      },
+      "synonyms": [
+        "心膜",
+        "pericardium"
+      ]
+    },
+    "coronary_lumen": {
+      "label": {
+        "ja": "冠動脈内腔",
+        "en": "coronary lumen"
+      },
+      "synonyms": [
+        "冠動脈内腔",
+        "coronary lumen"
+      ]
+    },
+    "tracheal_lumen": {
+      "label": {
+        "ja": "気管内腔",
+        "en": "tracheal lumen"
+      },
+      "synonyms": [
+        "気管内腔",
+        "tracheal lumen"
+      ]
+    },
+    "bronchial_lumen": {
+      "label": {
+        "ja": "気管支内腔",
+        "en": "bronchial lumen"
+      },
+      "synonyms": [
+        "気管支内腔",
+        "bronchial lumen"
+      ]
+    },
+    "lymphangitic_interstitium": {
+      "label": {
+        "ja": "癌性リンパ管症間質",
+        "en": "lymphangitic interstitium"
+      },
+      "synonyms": [
+        "癌性リンパ管症間質",
+        "lymphangitic interstitium"
+      ]
+    },
+    "sinus_lumen": {
+      "label": {
+        "ja": "副鼻腔内腔",
+        "en": "sinus lumen"
+      },
+      "synonyms": [
+        "副鼻腔内腔",
+        "sinus lumen"
+      ]
+    },
+    "middle_ear": {
+      "label": {
+        "ja": "中耳",
+        "en": "middle ear"
+      },
+      "synonyms": [
+        "中耳",
+        "middle ear"
+      ]
+    },
+    "mastoid_air_cells": {
+      "label": {
+        "ja": "乳突蜂巣",
+        "en": "mastoid air cells"
+      },
+      "synonyms": [
+        "乳突蜂巣",
+        "mastoid air cells"
+      ]
+    },
+    "mandibular_body": {
+      "label": {
+        "ja": "下顎体",
+        "en": "mandibular body"
+      },
+      "synonyms": [
+        "下顎体",
+        "mandibular body"
+      ]
+    },
+    "dental_root": {
+      "label": {
+        "ja": "歯根",
+        "en": "dental root"
+      },
+      "synonyms": [
+        "歯根",
+        "dental root"
+      ]
+    },
+    "lacrimal_fossa": {
+      "label": {
+        "ja": "涙腺窩",
+        "en": "lacrimal fossa"
+      },
+      "synonyms": [
+        "涙腺窩",
+        "lacrimal fossa"
+      ]
+    },
+    "parathyroid_region": {
+      "label": {
+        "ja": "副甲状腺領域",
+        "en": "parathyroid region"
+      },
+      "synonyms": [
+        "副甲状腺領域",
+        "parathyroid region"
+      ]
+    },
+    "ureteral_lumen": {
+      "label": {
+        "ja": "尿管内腔",
+        "en": "ureteral lumen"
+      },
+      "synonyms": [
+        "尿管内腔",
+        "ureteral lumen"
+      ]
+    },
+    "urethral_wall": {
+      "label": {
+        "ja": "尿道壁",
+        "en": "urethral wall"
+      },
+      "synonyms": [
+        "尿道壁",
+        "urethral wall"
+      ]
+    },
+    "ovarian_stroma": {
+      "label": {
+        "ja": "卵巣間質",
+        "en": "ovarian stroma"
+      },
+      "synonyms": [
+        "卵巣間質",
+        "ovarian stroma"
+      ]
+    },
+    "adnexal_pedicle": {
+      "label": {
+        "ja": "付属器茎",
+        "en": "adnexal pedicle"
+      },
+      "synonyms": [
+        "付属器茎",
+        "adnexal pedicle"
+      ]
+    },
+    "placental_bed": {
+      "label": {
+        "ja": "胎盤付着部",
+        "en": "placental bed"
+      },
+      "synonyms": [
+        "胎盤付着部",
+        "placental bed"
+      ]
+    },
+    "pediatric_ileocecal": {
+      "label": {
+        "ja": "小児回盲部",
+        "en": "pediatric ileocecal region"
+      },
+      "synonyms": [
+        "小児回盲部",
+        "pediatric ileocecal region"
+      ]
+    },
+    "pyloric_channel": {
+      "label": {
+        "ja": "幽門管",
+        "en": "pyloric channel"
+      },
+      "synonyms": [
+        "幽門管",
+        "pyloric channel"
+      ]
+    },
+    "neonatal_bowel_wall": {
+      "label": {
+        "ja": "新生児腸管壁",
+        "en": "neonatal bowel wall"
+      },
+      "synonyms": [
+        "新生児腸管壁",
+        "neonatal bowel wall"
+      ]
+    },
+    "supraspinatus_tendon": {
+      "label": {
+        "ja": "棘上筋腱",
+        "en": "supraspinatus tendon"
+      },
+      "synonyms": [
+        "棘上筋腱",
+        "supraspinatus tendon"
+      ]
+    },
+    "achilles_tendon_substance": {
+      "label": {
+        "ja": "アキレス腱実質",
+        "en": "Achilles tendon substance"
+      },
+      "synonyms": [
+        "アキレス腱実質",
+        "Achilles tendon substance"
+      ]
+    },
+    "plantar_fascia_origin": {
+      "label": {
+        "ja": "足底腱膜起始部",
+        "en": "plantar fascia origin"
+      },
+      "synonyms": [
+        "足底腱膜起始部",
+        "plantar fascia origin"
+      ]
+    },
+    "intermetatarsal_space": {
+      "label": {
+        "ja": "中足骨間隙",
+        "en": "intermetatarsal space"
+      },
+      "synonyms": [
+        "中足骨間隙",
+        "intermetatarsal space"
+      ]
+    },
+    "synovium": {
+      "label": {
+        "ja": "滑膜",
+        "en": "synovium"
+      },
+      "synonyms": [
+        "滑膜",
+        "synovium"
+      ]
+    },
+    "osteochondral_surface": {
+      "label": {
+        "ja": "骨軟骨面",
+        "en": "osteochondral surface"
+      },
+      "synonyms": [
+        "骨軟骨面",
+        "osteochondral surface"
+      ]
+    },
+    "skin_dermis": {
+      "label": {
+        "ja": "真皮",
+        "en": "skin dermis"
+      },
+      "synonyms": [
+        "真皮",
+        "skin dermis"
+      ]
+    },
+    "subcutaneous_fat": {
+      "label": {
+        "ja": "皮下脂肪",
+        "en": "subcutaneous fat"
+      },
+      "synonyms": [
+        "皮下脂肪",
+        "subcutaneous fat"
+      ]
+    },
+    "esophageal_wall": {
+      "label": {
+        "ja": "食道壁",
+        "en": "esophageal wall"
+      },
+      "synonyms": [
+        "食道壁",
+        "esophageal wall"
+      ]
+    },
+    "duodenal_wall": {
+      "label": {
+        "ja": "十二指腸壁",
+        "en": "duodenal wall"
+      },
+      "synonyms": [
+        "十二指腸壁",
+        "duodenal wall"
+      ]
+    },
+    "colonic_wall": {
+      "label": {
+        "ja": "結腸壁",
+        "en": "colonic wall"
+      },
+      "synonyms": [
+        "結腸壁",
+        "colonic wall"
+      ]
+    },
+    "rectal_wall": {
+      "label": {
+        "ja": "直腸壁",
+        "en": "rectal wall"
+      },
+      "synonyms": [
+        "直腸壁",
+        "rectal wall"
+      ]
+    },
+    "anal_canal_wall": {
+      "label": {
+        "ja": "肛門管壁",
+        "en": "anal canal wall"
+      },
+      "synonyms": [
+        "肛門管壁",
+        "anal canal wall"
+      ]
+    },
+    "omental_fat": {
+      "label": {
+        "ja": "大網脂肪",
+        "en": "omental fat"
+      },
+      "synonyms": [
+        "大網脂肪",
+        "omental fat"
+      ]
+    },
+    "diaphragmatic_crus": {
+      "label": {
+        "ja": "横隔膜脚",
+        "en": "diaphragmatic crus"
+      },
+      "synonyms": [
+        "横隔膜脚",
+        "diaphragmatic crus"
+      ]
+    },
+    "rib_cortex": {
+      "label": {
+        "ja": "肋骨皮質",
+        "en": "rib cortex"
+      },
+      "synonyms": [
+        "肋骨皮質",
+        "rib cortex"
+      ]
+    },
+    "brachial_plexus_root": {
+      "label": {
+        "ja": "腕神経叢根部",
+        "en": "brachial plexus root"
+      },
+      "synonyms": [
+        "腕神経叢根部",
+        "brachial plexus root"
+      ]
+    },
+    "acetabular_labrum": {
+      "label": {
+        "ja": "寛骨臼唇",
+        "en": "acetabular labrum"
+      },
+      "synonyms": [
+        "寛骨臼唇",
+        "acetabular labrum"
+      ]
+    },
+    "glenoid_labrum": {
+      "label": {
+        "ja": "関節唇",
+        "en": "glenoid labrum"
+      },
+      "synonyms": [
+        "関節唇",
+        "glenoid labrum"
+      ]
+    },
+    "meniscus": {
+      "label": {
+        "ja": "半月板",
+        "en": "meniscus"
+      },
+      "synonyms": [
+        "半月板",
+        "meniscus"
+      ]
+    },
+    "cruciate_ligament": {
+      "label": {
+        "ja": "十字靱帯",
+        "en": "cruciate ligament"
+      },
+      "synonyms": [
+        "十字靱帯",
+        "cruciate ligament"
+      ]
+    },
+    "sacroiliac_subchondral_bone": {
+      "label": {
+        "ja": "仙腸関節軟骨下骨",
+        "en": "sacroiliac subchondral bone"
+      },
+      "synonyms": [
+        "仙腸関節軟骨下骨",
+        "sacroiliac subchondral bone"
+      ]
+    },
+    "tarsal_bone": {
+      "label": {
+        "ja": "足根骨",
+        "en": "tarsal bone"
+      },
+      "synonyms": [
+        "足根骨",
+        "tarsal bone"
+      ]
+    },
+    "metatarsal_bone": {
+      "label": {
+        "ja": "中足骨",
+        "en": "metatarsal bone"
+      },
+      "synonyms": [
+        "中足骨",
+        "metatarsal bone"
+      ]
+    },
+    "uterine_scar": {
+      "label": {
+        "ja": "子宮瘢痕",
+        "en": "uterine scar"
+      },
+      "synonyms": [
+        "子宮瘢痕",
+        "uterine scar"
+      ]
+    },
+    "vulvar_soft_tissue": {
+      "label": {
+        "ja": "外陰軟部組織",
+        "en": "vulvar soft tissue"
+      },
+      "synonyms": [
+        "外陰軟部組織",
+        "vulvar soft tissue"
+      ]
+    },
+    "seminal_vesicle_lumen": {
+      "label": {
+        "ja": "精嚢内腔",
+        "en": "seminal vesicle lumen"
+      },
+      "synonyms": [
+        "精嚢内腔",
+        "seminal vesicle lumen"
+      ]
+    },
+    "urachal_remnant": {
+      "label": {
+        "ja": "尿膜管遺残",
+        "en": "urachal remnant"
+      },
+      "synonyms": [
+        "尿膜管遺残",
+        "urachal remnant"
+      ]
+    },
+    "renal_medulla": {
+      "label": {
+        "ja": "腎髄質",
+        "en": "renal medulla"
+      },
+      "synonyms": [
+        "腎髄質",
+        "renal medulla"
+      ]
+    },
+    "renal_vascular_pedicle": {
+      "label": {
+        "ja": "腎血管茎",
+        "en": "renal vascular pedicle"
+      },
+      "synonyms": [
+        "腎血管茎",
+        "renal vascular pedicle"
+      ]
+    },
+    "adrenal_neonatal": {
+      "label": {
+        "ja": "新生児副腎",
+        "en": "neonatal adrenal"
+      },
+      "synonyms": [
+        "新生児副腎",
+        "neonatal adrenal"
+      ]
+    },
+    "paraspinal_soft_tissue": {
+      "label": {
+        "ja": "傍脊柱軟部",
+        "en": "paraspinal soft tissue"
+      },
+      "synonyms": [
+        "傍脊柱軟部",
+        "paraspinal soft tissue"
+      ]
+    },
+    "sympathetic_chain_region": {
+      "label": {
+        "ja": "交感神経幹領域",
+        "en": "sympathetic chain region"
+      },
+      "synonyms": [
+        "交感神経幹領域",
+        "sympathetic chain region"
+      ]
+    },
+    "mediastinal_vascular_space": {
+      "label": {
+        "ja": "縦隔血管腔",
+        "en": "mediastinal vascular space"
+      },
+      "synonyms": [
+        "縦隔血管腔",
+        "mediastinal vascular space"
+      ]
+    }
+  }
+}

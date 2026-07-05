@@ -1,0 +1,7 @@
+{
+  "degree": ["none", "mild", "moderate", "marked", "variable", "any"],
+  "distribution": ["focal", "diffuse", "multifocal", "peripheral", "central", "unknown"],
+  "morphology": ["solid_mass", "cystic_mass", "solid_cystic_mass", "multilocular_cystic_mass", "rim", "ring", "nodule", "septation", "vascular_stalk", "infiltrative", "extra_axial_mass", "wedge_shaped", "ovoid"],
+  "signal": ["hypointense", "hyperintense", "isointense", "mixed"],
+  "polarity": ["present", "absent", "variable", "not_typical", "unknown"]
+}

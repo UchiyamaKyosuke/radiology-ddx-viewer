@@ -1,0 +1,367 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "glutaric_aciduria_type_1",
+  "disease_name": {
+    "ja": "グルタル酸尿症1型",
+    "en": "Glutaric aciduria type 1"
+  },
+  "disease_aliases": {
+    "ja": [
+      "GA1"
+    ],
+    "en": [
+      "GA1"
+    ]
+  },
+  "clinical": {
+    "overview": "リジン/トリプトファン代謝異常。前頭側頭葉萎縮、シルビウス裂開大、基底核障害を示す。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 18,
+      "peak_decade": "小児",
+      "summary": "小児で重要。"
+    }
+  },
+  "keywords": [
+    "wide Sylvian fissures",
+    "basal ganglia",
+    "macrocephaly"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "metabolic_basal_ganglia_disease"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "GA1はCTで前頭側頭部萎縮/髄液腔拡大や硬膜下液貯留を確認することがある。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "glutaric_aciduria_type_1_ct_001",
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "basal_ganglia",
+                "laterality": "unknown"
+              },
+              "target": "deep_gray_matter",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "基底核障害が低吸収として見えることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_hypoattenuation",
+                "alternatives": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは前頭側頭部萎縮、Sylvian fissure開大、基底核病変、白質変化を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "glutaric_aciduria_type_1_mri_002",
+              "finding_code": "finding:basal_ganglia_involvement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "basal_ganglia",
+                "laterality": "unknown"
+              },
+              "target": "deep_gray_matter",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "線条体を中心とする基底核病変を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:basal_ganglia_involvement",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "glutaric_aciduria_type_1_mri_t2wi_csf_like_signal_01",
+              "finding_code": "finding:csf_like_signal",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "前頭側頭部髄液腔拡大を認める。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "glutaric_aciduria_type_1_mri_003",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "basal_ganglia",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "白質や基底核にFLAIR高信号を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:flair_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "glutaric_aciduria_type_1_mri_flair_basal_ganglia_involvement_01",
+              "finding_code": "finding:basal_ganglia_involvement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "基底核、特に線条体病変を認めることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "glutaric_aciduria_type_1_mri_flair_flair_hyperintensity_01",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "白質変化や基底核病変がFLAIR高信号を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 39658645, 37474264, 35488943）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "glutaric_aciduria_type_1_ct_001",
+          "glutaric_aciduria_type_1_mri_002",
+          "glutaric_aciduria_type_1_mri_003"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_39658645",
+          "pmid_37474264",
+          "pmid_35488943"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "glutaric_aciduria_type_1_mri_flair_basal_ganglia_involvement_01",
+          "glutaric_aciduria_type_1_mri_t2wi_csf_like_signal_01",
+          "glutaric_aciduria_type_1_mri_flair_flair_hyperintensity_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_39658645",
+      "type": "journal_article",
+      "title": "Glutaric aciduria type 1: Insights into diagnosis and neurogenetic outcomes.",
+      "authors": [],
+      "journal": "European journal of pediatrics",
+      "year": "2024",
+      "pmid": "39658645",
+      "doi": "10.1007/s00431-024-05907-7",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39658645/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_37474264",
+      "type": "journal_article",
+      "title": "Glutaric Aciduria Type 1: Comparison between Diffusional Kurtosis Imaging and Conventional MR Imaging.",
+      "authors": [],
+      "journal": "AJNR. American journal of neuroradiology",
+      "year": "2023",
+      "pmid": "37474264",
+      "doi": "10.3174/ajnr.A7928",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37474264/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_35488943",
+      "type": "journal_article",
+      "title": "Does glutaric aciduria type 1 affect hearing function?",
+      "authors": [],
+      "journal": "Metabolic brain disease",
+      "year": "2022",
+      "pmid": "35488943",
+      "doi": "10.1007/s11011-022-00987-6",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35488943/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": [
+    {
+      "raw_finding_id": "glutaric_aciduria_type_1_raw_keyword_basal_ganglia",
+      "modality_text": "MRI",
+      "acquisition_text": "",
+      "anatomy_text": "",
+      "target_text": "",
+      "finding_text": "キーワード/所見として \"basal ganglia\" を保持。",
+      "interpretation": "辞書対応済み構造化欄から漏れる可能性があるため、Phase1自由記載として保存。",
+      "source_ids": [
+        "public_raw_findings_audit_20260705"
+      ],
+      "mapping": {
+        "status": "unmapped",
+        "candidate_finding_code": "finding:basal_ganglia",
+        "candidate_acquisition_code": "",
+        "candidate_target": "",
+        "notes": "Added during raw_findings audit to preserve information that may be lost by dictionary-only structured fields."
+      },
+      "review_status": "needs_mapping"
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "disease_id": "acute_ischemic_stroke",
+  "disease_name": {
+    "ja": "急性虚血性脳梗塞",
+    "en": "Acute ischemic stroke"
+  },
+  "disease_aliases": {
+    "ja": [],
+    "en": [
+      "Acute ischemic stroke"
+    ]
+  },
+  "clinical": {
+    "overview": "Acute ischemic stroke literature draft generated from PubMed abstracts. Codex review is required.",
+    "treatment": "Not extracted. Codex review is required.",
+    "epidemiology": "Not extracted. Codex review is required."
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "unknown"
+      ],
+      "predominance": "unknown",
+      "predilection": "unknown",
+      "summary": "Not extracted."
+    },
+    "age": {
+      "typical_min": null,
+      "typical_max": null,
+      "peak_decade": "",
+      "summary": "Not extracted."
+    }
+  },
+  "frequency": {
+    "label": "unknown",
+    "summary": "Not extracted."
+  },
+  "imaging": {},
+  "findings": [
+    {
+      "finding_text": "拡散制限なし",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "DWI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cortex",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "degree": "none"
+      },
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "DWI高信号",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "DWI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cortex",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "DWI等信号",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "DWI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cortex",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "拡散制限あり",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "DWI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cortex",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "FLAIR高信号",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "FLAIR",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cortex",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    }
+  ],
+  "references": [
+    {
+      "source_id": "pmid_32132175",
+      "type": "journal_article",
+      "title": "Reversible diffusion-weighted imaging lesions in acute ischemic stroke: A systematic review.",
+      "authors": [],
+      "journal": "Neurology",
+      "year": "2020",
+      "pmid": "32132175",
+      "doi": "10.1212/WNL.0000000000009173",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32132175/",
+      "license": "",
+      "note": "Fetched from PubMed abstract metadata."
+    },
+    {
+      "source_id": "pmid_28551302",
+      "type": "journal_article",
+      "title": "Acute stroke differential diagnosis: Stroke mimics.",
+      "authors": [],
+      "journal": "European journal of radiology",
+      "year": "2018",
+      "pmid": "28551302",
+      "doi": "10.1016/j.ejrad.2017.05.008",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28551302/",
+      "license": "",
+      "note": "Fetched from PubMed abstract metadata."
+    },
+    {
+      "source_id": "pmid_34581223",
+      "type": "journal_article",
+      "title": "Patterns of ischemic posterior circulation strokes: A clinical, anatomical, and radiological review.",
+      "authors": [],
+      "journal": "International journal of stroke : official journal of the International Stroke Society",
+      "year": "2022",
+      "pmid": "34581223",
+      "doi": "10.1177/17474930211046758",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34581223/",
+      "license": "",
+      "note": "Fetched from PubMed abstract metadata."
+    }
+  ],
+  "source_query": "diffusion weighted imaging acute ischemic stroke MRI review",
+  "source_articles": [
+    {
+      "pmid": "32132175",
+      "title": "Reversible diffusion-weighted imaging lesions in acute ischemic stroke: A systematic review.",
+      "journal": "Neurology",
+      "year": "2020",
+      "doi": "10.1212/WNL.0000000000009173",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32132175/",
+      "abstract": "To systematically review the literature for reversible diffusion-weighted imaging (DWIR) lesions and to describe its prevalence, predictors, and clinical significance.\nStudies were included if the first DWI MRI was performed within 24 hours of stroke onset and follow-up DWI or fluid-attenuated inversion recovery (FLAIR)/T2 was performed within 7 or 90 days, respectively, to measure DWIR. We abstracted clinical, imaging, and outcomes data.\nTwenty-three studies met the study criteria. The prevalence of DWIR was 26.5% in DWI-based studies and 6% in FLAIR/T2-based studies. DWIR was associated with recanalization or reperfusion of the ischemic tissue with or without the use of tissue plasminogen activator (t-PA) or endovascular therapy, earlier treatment with t-PA, shorter time to endovascular therapy after MRI, and absent or less severe perfusion deficit within the DWI lesion. DWIR was associated with early neurologic improvement in 5 of 6 studies (defined as improvement in the NIH Stroke Scale (NIHSS) score by 4 or 8 points from baseline or NIHSS score 0 to 2 at 24 hours after treatment or at discharge or median NIHSS score at 7 days) and long-term outcome in 6 of 7 studies (defined as NIHSS score &#x2264;1, improvement in the NIHSS score &#x2265;8 points, or modified Rankin Scale score up to &#x2264;2 at 30 or 90 days) likely due to reperfusion.\nDWIR is seen in up to a quarter of patients with acute ischemic stroke, and it is associated with good clinical outcome following reperfusion. Our findings highlight the pitfalls of DWI to define ischemic core in the early hours of stroke."
+    },
+    {
+      "pmid": "28551302",
+      "title": "Acute stroke differential diagnosis: Stroke mimics.",
+      "journal": "European journal of radiology",
+      "year": "2018",
+      "doi": "10.1016/j.ejrad.2017.05.008",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28551302/",
+      "abstract": "Stroke mimics (SM) are non-vascular conditions that present with an acute neurological deficit simulating acute ischemic stroke and represent a significant percentage of all acute stroke hospital admissions. The most common clinical SM includes conversion/functional (psychiatric disorder); seizures and postictal paralysis; toxic-metabolic disturbances; brain tumours; infections, and migraine. Imaging is essential for SM recognition, being Diffusion weighted imaging (DWI), perfusion imaging and angiographic studies very useful. There are several disorders that may have imaging features that simulate acute ischemic stroke, mainly presenting with cytotoxic oedema and/or perfusion deficits. The imaging features of the most frequent clinical and imaging stroke mimics are reviewed."
+    },
+    {
+      "pmid": "34581223",
+      "title": "Patterns of ischemic posterior circulation strokes: A clinical, anatomical, and radiological review.",
+      "journal": "International journal of stroke : official journal of the International Stroke Society",
+      "year": "2022",
+      "doi": "10.1177/17474930211046758",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34581223/",
+      "abstract": "Posterior circulation and anterior circulation strokes share many clinical, pathogenetic and radiological features, although some clinical signs are highly specific to posterior circulation strokes. Arterial stenosis and occlusions occur in significant numbers in both acute posterior circulation and anterior circulation strokes, making them good candidates for endovascular treatment. Among posterior circulation strokes, basilar artery occlusions stand out because of the diagnostic and acute treatment challenges.\nWe reviewed the literature on clinical stroke syndromes and neuroimaging findings and systematically describe for each anatomical site of stroke the detailed clinical and radiological information (anatomical representation, diffusion weighted imaging and angiographic sequences). The principles of neuroimaging of posterior circulation strokes and the prognosis for each stroke localization are also discussed.\nStroke syndromes in the territories of the vertebral, basilar, cerebellar, and posterior cerebral arteries are presented. Features typical of posterior circulation strokes are highlighted, including patterns of basilar artery occlusions. Clinical severity and prognosis of posterior circulation strokes are highly variable, and given that they are more difficult to detect on CT-based neuroimaging, magnetic resonance imaging is the technique of choice in suspected posterior circulation strokes. Rapid identification of arterial occlusion patterns may provide prognostic information and support acute revascularization decisions.\nPosterior circulation stroke syndromes tightly reflect lesion localization and arterial occlusion patterns. Although many clinical and pathogenetic features are similar to anterior circulation strokes, notable differences exist in terms of clinical presentation, stroke mechanism, prognosis, and response to acute recanalization."
+    }
+  ]
+}

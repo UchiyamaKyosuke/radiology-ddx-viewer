@@ -1,0 +1,51 @@
+{
+  "disease_id": "colloid_cyst",
+  "disease_name": {
+    "ja": "コロイド嚢胞",
+    "en": "Colloid cyst"
+  },
+  "disease_aliases": {
+    "ja": [
+      "第三脳室コロイド嚢胞"
+    ],
+    "en": [
+      "Third ventricular colloid cyst"
+    ]
+  },
+  "clinical": {
+    "overview": "モンロー孔付近の第三脳室前方に発生する嚢胞。急性閉塞性水頭症の原因になる。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 80,
+      "peak_decade": "成人",
+      "summary": "成人で重要。"
+    }
+  },
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "foramen_of_monro_cyst"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

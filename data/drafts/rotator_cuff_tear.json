@@ -1,0 +1,360 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "rotator_cuff_tear",
+  "disease_name": {
+    "ja": "腱板断裂",
+    "en": "Rotator cuff tear"
+  },
+  "disease_aliases": {
+    "ja": [],
+    "en": []
+  },
+  "clinical": {
+    "overview": "腱板断裂は肩痛で重要な鑑別となる疾患で、臨床背景と画像分布を組み合わせて評価する。",
+    "treatment": "治療方針は病型、病期、合併症、全身状態に応じて決定する。",
+    "epidemiology": "頻度と好発年齢は病型・背景疾患により異なる。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "代表的な性差傾向を記録。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 100,
+      "peak_decade": "中高年",
+      "summary": "代表的な発症・診断年齢帯を記録。"
+    }
+  },
+  "keywords": [
+    "Rotator cuff tear",
+    "腱板断裂",
+    "full-thickness tear",
+    "tendon retraction"
+  ],
+  "frequency": {
+    "label": "common",
+    "prevalence_rank": 4,
+    "basis": "differential_importance",
+    "evidence_level": "public_review",
+    "context": {
+      "population": "any",
+      "body_region": "musculoskeletal",
+      "clinical_setting": "肩痛"
+    },
+    "summary": "肩痛の鑑別での相対頻度と重要度を記録。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "腱板断裂のCTでは濃度、石灰化、出血、造影効果、周囲変化を評価する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:ct_isoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "musculoskeletal",
+                "organ": "rotator_cuff",
+                "subregion": "supraspinatus_tendon",
+                "laterality": "unknown"
+              },
+              "target": "tendon",
+              "modifiers": {},
+              "keywords": [
+                "full-thickness tear",
+                "tendon retraction"
+              ],
+              "finding_text": "腱板断裂はCTで腱・靱帯または軟部組織の肥厚として見えることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:ct_isoattenuation",
+                "alternatives": []
+              },
+              "finding_id": "rotator_cuff_tear_f001"
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "腱板断裂のMRIでは信号、拡散、造影効果、病変分布を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T1WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:t1_hypointensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "musculoskeletal",
+                "organ": "rotator_cuff",
+                "subregion": "supraspinatus_tendon",
+                "laterality": "unknown"
+              },
+              "target": "tendon",
+              "modifiers": {},
+              "keywords": [
+                "full-thickness tear",
+                "tendon retraction"
+              ],
+              "finding_text": "腱板断裂はT1WIで低信号の腱・線維性構造として評価される。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:t1_hypointensity",
+                "alternatives": []
+              },
+              "finding_id": "rotator_cuff_tear_f002"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "musculoskeletal",
+                "organ": "rotator_cuff",
+                "subregion": "supraspinatus_tendon",
+                "laterality": "unknown"
+              },
+              "target": "tendon",
+              "modifiers": {},
+              "keywords": [
+                "full-thickness tear",
+                "tendon retraction"
+              ],
+              "finding_text": "腱板断裂は変性や断裂部でT2WI高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:t2_hyperintensity",
+                "alternatives": []
+              },
+              "finding_id": "rotator_cuff_tear_f003"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:mild_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "musculoskeletal",
+                "organ": "rotator_cuff",
+                "subregion": "supraspinatus_tendon",
+                "laterality": "unknown"
+              },
+              "target": "synovium",
+              "modifiers": {},
+              "keywords": [
+                "full-thickness tear",
+                "tendon retraction"
+              ],
+              "finding_text": "腱板断裂は周囲滑膜炎や肉芽組織の増強を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:mild_enhancement",
+                "alternatives": []
+              },
+              "finding_id": "rotator_cuff_tear_f004"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:diffusion_restriction_absent",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "musculoskeletal",
+                "organ": "rotator_cuff",
+                "subregion": "supraspinatus_tendon",
+                "laterality": "unknown"
+              },
+              "target": "tendon",
+              "modifiers": {},
+              "keywords": [
+                "full-thickness tear",
+                "tendon retraction"
+              ],
+              "finding_text": "腱板断裂は通常、腫瘍性細胞密度を反映する強い拡散制限を示さない。",
+              "typicality": "variable",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:diffusion_restriction_absent",
+                "alternatives": []
+              },
+              "finding_id": "rotator_cuff_tear_f005"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "raw_findings": [
+    {
+      "raw_finding_id": "rotator_cuff_tear_raw_001",
+      "modality_text": "CT/MRI/US",
+      "acquisition_text": "疾患に応じた標準撮像",
+      "anatomy_text": "腱板断裂の典型的な主座",
+      "target_text": "named_sign",
+      "finding_text": "腱板全層断裂では液体信号が関節面から滑液包面まで連続し、腱退縮を伴う。",
+      "interpretation": "構造化辞書では拾い切れない疾患固有の所見・サインとして保存。",
+      "source_ids": [
+        "public_general_batch8_20260705"
+      ],
+      "mapping": {
+        "status": "candidate",
+        "candidate_finding_code": "finding:rotator_cuff_tear_specific_sign",
+        "candidate_anatomy": {
+          "body_region": "musculoskeletal",
+          "organ": "rotator_cuff",
+          "subregion": "supraspinatus_tendon",
+          "laterality": "unknown"
+        },
+        "candidate_target": "named_sign",
+        "notes": "Phase 1 raw finding"
+      },
+      "review_status": "needs_mapping"
+    }
+  ],
+  "evidence": {
+    "summary": "NCBI Bookshelf、ACR Appropriateness Criteria、RadiologyInfo、PMC open-access review などの公開情報を参照。",
+    "claim_map": [
+      {
+        "finding_ids": [
+          "rotator_cuff_tear_f001"
+        ],
+        "source_ids": [
+          "public_general_batch8_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "rotator_cuff_tear_f002"
+        ],
+        "source_ids": [
+          "public_general_batch8_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "rotator_cuff_tear_f003"
+        ],
+        "source_ids": [
+          "public_general_batch8_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "rotator_cuff_tear_f004"
+        ],
+        "source_ids": [
+          "public_general_batch8_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "rotator_cuff_tear_f005"
+        ],
+        "source_ids": [
+          "public_general_batch8_20260705"
+        ],
+        "support": "public_source_summary"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "public_general_batch8_20260705",
+      "type": "public_source_packet",
+      "title": "Public cross-sectional imaging source packet for whole-body Phase 1 draft batch 8",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, ACR Appropriateness Criteria, RadiologyInfo, and open-access PMC reviews where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "confidence": "medium",
+    "notes": "公開情報に基づく初期整理。"
+  },
+  "curation": {
+    "batch": "general_batch8",
+    "generated_by": "curate-general-drafts-batch8.js"
+  },
+  "provenance": {
+    "source_ids": [
+      "public_general_batch8_20260705"
+    ],
+    "generated_at": "2026-07-05T09:29:44.226Z"
+  },
+  "updated_at": "2026-07-05T09:29:44.226Z",
+  "content_hash": "48e923f32c81b189abce3f00aa559f1dd171cd79d57aeb9728eee8cec2a96e0c"
+}

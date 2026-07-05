@@ -1,0 +1,242 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "meningioma",
+  "disease_name": {
+    "ja": "髄膜腫",
+    "en": "Meningioma"
+  },
+  "disease_aliases": {
+    "ja": [
+      "髄膜腫"
+    ],
+    "en": [
+      "Meningioma"
+    ]
+  },
+  "clinical": {
+    "overview": "髄膜由来の代表的な脳外腫瘍。硬膜付着性腫瘤として認められることが多い。",
+    "treatment": "症状、増大傾向、部位に応じて経過観察、手術、放射線治療が検討される。",
+    "epidemiology": "成人で頻度の高い脳外腫瘍。女性に多い。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "female",
+      "predilection": "female_predominant",
+      "summary": "女性に多い。"
+    },
+    "age": {
+      "typical_min": 40,
+      "typical_max": 80,
+      "peak_decade": "50-70歳代",
+      "summary": "中高年以降に多い。"
+    }
+  },
+  "frequency": {
+    "label": "common",
+    "prevalence_rank": 4,
+    "basis": "epidemiology",
+    "evidence_level": "review",
+    "context": {
+      "population": "adult",
+      "body_region": "brain",
+      "clinical_setting": "extra_axial_mass"
+    },
+    "summary": "成人の脳外腫瘤では頻度の高い鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "境界明瞭な硬膜付着性腫瘤として認められることがある。",
+      "findings_by_phase": []
+    },
+    "mri": {
+      "summary": "硬膜付着性脳外腫瘤、強い均一造影、dural tail signを示すことがある。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "meningioma_mri_ce_001",
+              "finding_code": "finding:avid_homogeneous_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "meninges",
+                "subregion": "extra_axial",
+                "laterality": "unknown"
+              },
+              "target": "extra_axial_mass",
+              "modifiers": {
+                "degree": "marked",
+                "morphology": "extra_axial_mass"
+              },
+              "finding_text": "硬膜付着性腫瘤が強く比較的均一に造影される。",
+              "typicality": "typical",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": [
+                "extra_axial_mass"
+              ]
+            },
+            {
+              "finding_id": "meningioma_mri_ce_002",
+              "finding_code": "finding:dural_tail_sign",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "meninges",
+                "subregion": "extra_axial",
+                "laterality": "unknown"
+              },
+              "target": "extra_axial_mass",
+              "modifiers": {
+                "degree": "moderate",
+                "morphology": "extra_axial_mass"
+              },
+              "finding_text": "隣接硬膜の線状増強、いわゆるdural tail signを伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": [
+                "dural tail sign",
+                "extra_axial_mass"
+              ]
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "meningioma_mri_t2_001",
+              "finding_code": "finding:extra_axial_dural_based_mass",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "meninges",
+                "subregion": "extra_axial",
+                "laterality": "unknown"
+              },
+              "target": "extra_axial_mass",
+              "modifiers": {
+                "degree": "marked",
+                "morphology": "extra_axial_mass"
+              },
+              "finding_text": "硬膜付着性の脳外腫瘤として認められる。",
+              "typicality": "typical",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": [
+                "extra_axial_mass"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 15664571, 33459822）。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "meningioma_mri_ce_001",
+          "meningioma_mri_ce_002",
+          "meningioma_mri_t2_001"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_15664571",
+          "pmid_33459822"
+        ],
+        "confidence": "low"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_15664571",
+      "type": "journal_article",
+      "title": "The dural tail sign--beyond meningioma.",
+      "authors": [],
+      "journal": "Clinical radiology",
+      "year": "2005",
+      "pmid": "15664571",
+      "doi": "10.1016/j.crad.2004.01.019",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15664571/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_33459822",
+      "type": "journal_article",
+      "title": "Dural-based lesions: is it a meningioma?",
+      "authors": [],
+      "journal": "Neuroradiology",
+      "year": "2021",
+      "pmid": "33459822",
+      "doi": "10.1007/s00234-021-02632-y",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33459822/",
+      "license": ""
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "Brain field pilot draft."
+  },
+  "curation": {
+    "auto_update_allowed": true,
+    "locked_fields": [],
+    "notes": ""
+  },
+  "provenance": {
+    "created_by": "codex_literature_review",
+    "model": "codex",
+    "created_at": "2026-06-22T00:00:00+09:00",
+    "prompt_version": "brain_pilot_v0.1",
+    "source_query": "meningioma MRI imaging findings dural tail extra-axial"
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "content_hash": "222ea95764274924bc01d9eb035743885311b6d60885cdd01339e0a3857fe7d9",
+  "keywords": [
+    "extra_axial_mass",
+    "dural tail sign"
+  ],
+  "raw_findings": []
+}

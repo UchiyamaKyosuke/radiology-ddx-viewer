@@ -1,0 +1,353 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "necrotizing_enterocolitis",
+  "disease_name": {
+    "ja": "壊死性腸炎",
+    "en": "Necrotizing enterocolitis"
+  },
+  "disease_aliases": {
+    "ja": [],
+    "en": []
+  },
+  "clinical": {
+    "overview": "壊死性腸炎は新生児腹部膨満で重要な鑑別となる疾患で、臨床背景と画像分布を組み合わせて評価する。",
+    "treatment": "治療方針は病型、病期、合併症、全身状態に応じて決定する。",
+    "epidemiology": "頻度と好発年齢は病型・背景疾患により異なる。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "代表的な性差傾向を記録。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 1,
+      "peak_decade": "新生児",
+      "summary": "代表的な発症・診断年齢帯を記録。"
+    }
+  },
+  "keywords": [
+    "Necrotizing enterocolitis",
+    "壊死性腸炎",
+    "pneumatosis intestinalis",
+    "portal venous gas"
+  ],
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 3,
+    "basis": "differential_importance",
+    "evidence_level": "public_review",
+    "context": {
+      "population": "any",
+      "body_region": "pediatric_abdomen",
+      "clinical_setting": "新生児腹部膨満"
+    },
+    "summary": "新生児腹部膨満の鑑別での相対頻度と重要度を記録。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "壊死性腸炎のCTでは濃度、石灰化、出血、造影効果、周囲変化を評価する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "pediatric_abdomen",
+                "organ": "pediatric_bowel",
+                "subregion": "neonatal_bowel_wall",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "pneumatosis intestinalis",
+                "portal venous gas"
+              ],
+              "finding_text": "壊死性腸炎は炎症性低吸収域や周囲脂肪織変化を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:ct_hypoattenuation",
+                "alternatives": []
+              },
+              "finding_id": "necrotizing_enterocolitis_f001"
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "壊死性腸炎のMRIでは信号、拡散、造影効果、病変分布を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:wall_thickening",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "pediatric_abdomen",
+                "organ": "pediatric_bowel",
+                "subregion": "neonatal_bowel_wall",
+                "laterality": "unknown"
+              },
+              "target": "wall",
+              "modifiers": {},
+              "keywords": [
+                "pneumatosis intestinalis",
+                "portal venous gas"
+              ],
+              "finding_text": "壊死性腸炎は壁肥厚や軟部組織肥厚を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:wall_thickening",
+                "alternatives": []
+              },
+              "finding_id": "necrotizing_enterocolitis_f002"
+            },
+            {
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "pediatric_abdomen",
+                "organ": "pediatric_bowel",
+                "subregion": "neonatal_bowel_wall",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "pneumatosis intestinalis",
+                "portal venous gas"
+              ],
+              "finding_text": "壊死性腸炎は浮腫や液体貯留によりT2WI高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:t2_hyperintensity",
+                "alternatives": []
+              },
+              "finding_id": "necrotizing_enterocolitis_f003"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:diffusion_restriction_present",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "pediatric_abdomen",
+                "organ": "pediatric_bowel",
+                "subregion": "neonatal_bowel_wall",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "pneumatosis intestinalis",
+                "portal venous gas"
+              ],
+              "finding_text": "壊死性腸炎は膿瘍や高粘稠内容で拡散制限を示すことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:diffusion_restriction_present",
+                "alternatives": []
+              },
+              "finding_id": "necrotizing_enterocolitis_f004"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:ring_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "pediatric_abdomen",
+                "organ": "pediatric_bowel",
+                "subregion": "neonatal_bowel_wall",
+                "laterality": "unknown"
+              },
+              "target": "lesion_margin",
+              "modifiers": {},
+              "keywords": [
+                "pneumatosis intestinalis",
+                "portal venous gas"
+              ],
+              "finding_text": "壊死性腸炎は膿瘍形成時にリング状造影を示すことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:ring_enhancement",
+                "alternatives": []
+              },
+              "finding_id": "necrotizing_enterocolitis_f005"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "raw_findings": [
+    {
+      "raw_finding_id": "necrotizing_enterocolitis_raw_001",
+      "modality_text": "CT/MRI/US",
+      "acquisition_text": "疾患に応じた標準撮像",
+      "anatomy_text": "壊死性腸炎の典型的な主座",
+      "target_text": "named_sign",
+      "finding_text": "腸管壁内ガス、門脈ガス、穿孔時遊離ガスを示す。",
+      "interpretation": "構造化辞書では拾い切れない疾患固有の所見・サインとして保存。",
+      "source_ids": [
+        "public_general_batch8_20260705"
+      ],
+      "mapping": {
+        "status": "candidate",
+        "candidate_finding_code": "finding:necrotizing_enterocolitis_specific_sign",
+        "candidate_anatomy": {
+          "body_region": "pediatric_abdomen",
+          "organ": "pediatric_bowel",
+          "subregion": "neonatal_bowel_wall",
+          "laterality": "unknown"
+        },
+        "candidate_target": "named_sign",
+        "notes": "Phase 1 raw finding"
+      },
+      "review_status": "needs_mapping"
+    }
+  ],
+  "evidence": {
+    "summary": "NCBI Bookshelf、ACR Appropriateness Criteria、RadiologyInfo、PMC open-access review などの公開情報を参照。",
+    "claim_map": [
+      {
+        "finding_ids": [
+          "necrotizing_enterocolitis_f001"
+        ],
+        "source_ids": [
+          "public_general_batch8_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "necrotizing_enterocolitis_f002"
+        ],
+        "source_ids": [
+          "public_general_batch8_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "necrotizing_enterocolitis_f003"
+        ],
+        "source_ids": [
+          "public_general_batch8_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "necrotizing_enterocolitis_f004"
+        ],
+        "source_ids": [
+          "public_general_batch8_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "necrotizing_enterocolitis_f005"
+        ],
+        "source_ids": [
+          "public_general_batch8_20260705"
+        ],
+        "support": "public_source_summary"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "public_general_batch8_20260705",
+      "type": "public_source_packet",
+      "title": "Public cross-sectional imaging source packet for whole-body Phase 1 draft batch 8",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, ACR Appropriateness Criteria, RadiologyInfo, and open-access PMC reviews where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "confidence": "medium",
+    "notes": "公開情報に基づく初期整理。"
+  },
+  "curation": {
+    "batch": "general_batch8",
+    "generated_by": "curate-general-drafts-batch8.js"
+  },
+  "provenance": {
+    "source_ids": [
+      "public_general_batch8_20260705"
+    ],
+    "generated_at": "2026-07-05T09:29:44.226Z"
+  },
+  "updated_at": "2026-07-05T09:29:44.226Z",
+  "content_hash": "ccd31abcd38a976a3292f57667ccd088af15791535685cfa9ac964c02c89d4a1"
+}

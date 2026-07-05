@@ -1,0 +1,414 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "osmotic_demyelination_syndrome",
+  "disease_name": {
+    "ja": "浸透圧性脱髄症候群",
+    "en": "Osmotic demyelination syndrome"
+  },
+  "disease_aliases": {
+    "ja": [
+      "中心橋髄鞘崩壊症",
+      "ODS"
+    ],
+    "en": [
+      "ODS",
+      "Central pontine myelinolysis"
+    ]
+  },
+  "clinical": {
+    "overview": "急速な電解質補正などに関連する脱髄。橋中央や橋外病変に対称性T2/FLAIR高信号、DWI異常を示す。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 80,
+      "peak_decade": "成人",
+      "summary": "成人で重要。"
+    }
+  },
+  "keywords": [
+    "pons",
+    "hyponatremia",
+    "symmetric"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "metabolic_demyelination"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "浸透圧性脱髄症候群はCTで橋中心低吸収として見えることがある。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "osmotic_demyelination_syndrome_ct_001",
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brainstem",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "橋病変が低吸収として見えることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_hypoattenuation",
+                "alternatives": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは橋中心部T2/FLAIR高信号、三叉状/左右対称病変、DWI早期高信号を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "osmotic_demyelination_syndrome_mri_002",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brainstem",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "橋中央に対称性FLAIR高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:flair_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "osmotic_demyelination_syndrome_mri_flair_flair_hyperintensity_01",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "pons",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "橋中心部にT2/FLAIR高信号を認める。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_id": "osmotic_demyelination_syndrome_mri_003",
+              "finding_code": "finding:dwi_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brainstem",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "急性期にDWI高信号を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:dwi_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "osmotic_demyelination_syndrome_mri_dwi_dwi_hyperintensity_01",
+              "finding_code": "finding:dwi_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "早期にDWI高信号を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "ADC"
+          },
+          "findings": [
+            {
+              "finding_id": "osmotic_demyelination_syndrome_mri_004",
+              "finding_code": "finding:adc_low",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "ADC"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brainstem",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "急性期にADC低値を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:adc_low",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "osmotic_demyelination_syndrome_mri_adc_adc_low_01",
+              "finding_code": "finding:adc_low",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "ADC"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "急性期にはADC低値を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "osmotic_demyelination_syndrome_mri_contrast_enhanced_t1wi_enhancement_absent_01",
+              "finding_code": "finding:enhancement_absent",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "通常、明らかな造影効果は乏しい。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 31587708, 20453633, 31128892）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "osmotic_demyelination_syndrome_ct_001",
+          "osmotic_demyelination_syndrome_mri_002",
+          "osmotic_demyelination_syndrome_mri_003",
+          "osmotic_demyelination_syndrome_mri_004"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_31587708",
+          "pmid_20453633",
+          "pmid_31128892"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "osmotic_demyelination_syndrome_mri_flair_flair_hyperintensity_01",
+          "osmotic_demyelination_syndrome_mri_dwi_dwi_hyperintensity_01",
+          "osmotic_demyelination_syndrome_mri_adc_adc_low_01",
+          "osmotic_demyelination_syndrome_mri_contrast_enhanced_t1wi_enhancement_absent_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_31587708",
+      "type": "journal_article",
+      "title": "Central Pontine Myelinosis and Osmotic Demyelination Syndrome.",
+      "authors": [],
+      "journal": "Deutsches Arzteblatt international",
+      "year": "2020",
+      "pmid": "31587708",
+      "doi": "10.3238/arztebl.2019.0600",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31587708/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_20453633",
+      "type": "journal_article",
+      "title": "Osmotic demyelination syndrome.",
+      "authors": [],
+      "journal": "The American journal of the medical sciences",
+      "year": "2010",
+      "pmid": "20453633",
+      "doi": "10.1097/MAJ.0b013e3181d3cd78",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20453633/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_31128892",
+      "type": "journal_article",
+      "title": "Osmotic Demyelination Syndrome in Children.",
+      "authors": [],
+      "journal": "Pediatric neurology",
+      "year": "2020",
+      "pmid": "31128892",
+      "doi": "10.1016/j.pediatrneurol.2019.03.018",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31128892/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": []
+}

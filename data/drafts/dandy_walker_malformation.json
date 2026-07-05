@@ -1,0 +1,367 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "dandy_walker_malformation",
+  "disease_name": {
+    "ja": "Dandy-Walker奇形",
+    "en": "Dandy-Walker malformation"
+  },
+  "disease_aliases": {
+    "ja": [
+      "ダンディ・ウォーカー奇形"
+    ],
+    "en": [
+      "Dandy-Walker malformation"
+    ]
+  },
+  "clinical": {
+    "overview": "後頭蓋窩嚢胞性拡大、小脳虫部形成異常、第4脳室拡大を特徴とする先天奇形。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 18,
+      "peak_decade": "小児",
+      "summary": "小児で重要。"
+    }
+  },
+  "keywords": [
+    "posterior fossa cyst",
+    "vermian hypoplasia",
+    "fourth ventricle"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "posterior_fossa_developmental_anomaly"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "Dandy-Walker奇形はCTで後頭蓋窩嚢胞性拡大と水頭症を確認する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "dandy_walker_malformation_ct_001",
+              "finding_code": "finding:csf_like_signal",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "posterior_fossa",
+                "laterality": "unknown"
+              },
+              "target": "developmental_anomaly",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "後頭蓋窩に髄液濃度の嚢胞性拡大を認める。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:csf_like_signal",
+                "alternatives": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは第4脳室嚢胞性拡大、小脳虫部低形成、後頭蓋窩拡大、水頭症を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "dandy_walker_malformation_mri_002",
+              "finding_code": "finding:csf_like_signal",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "posterior_fossa",
+                "laterality": "unknown"
+              },
+              "target": "developmental_anomaly",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "第4脳室と連続する後頭蓋窩嚢胞を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:csf_like_signal",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "dandy_walker_malformation_mri_t2wi_csf_like_signal_01",
+              "finding_code": "finding:csf_like_signal",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "posterior_fossa",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "後頭蓋窩に髄液様信号の嚢胞性拡大を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "dandy_walker_malformation_mri_t2wi_hydrocephalus_01",
+              "finding_code": "finding:hydrocephalus",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "水頭症を伴うことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "dandy_walker_malformation_mri_t2wi_ventriculomegaly_01",
+              "finding_code": "finding:ventriculomegaly",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "脳室拡大を伴う。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "dandy_walker_malformation_mri_003",
+              "finding_code": "finding:hydrocephalus",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "ventricle",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "水頭症を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:hydrocephalus",
+                "alternatives": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 21596278, 40546618, 31101983）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "dandy_walker_malformation_ct_001",
+          "dandy_walker_malformation_mri_002",
+          "dandy_walker_malformation_mri_003"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_21596278",
+          "pmid_40546618",
+          "pmid_31101983"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "dandy_walker_malformation_mri_t2wi_csf_like_signal_01",
+          "dandy_walker_malformation_mri_t2wi_hydrocephalus_01",
+          "dandy_walker_malformation_mri_t2wi_ventriculomegaly_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_21596278",
+      "type": "journal_article",
+      "title": "Posterior fossa malformations.",
+      "authors": [],
+      "journal": "Seminars in ultrasound, CT, and MR",
+      "year": "2011",
+      "pmid": "21596278",
+      "doi": "10.1053/j.sult.2011.02.003",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21596278/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_40546618",
+      "type": "journal_article",
+      "title": "An Incidental Discovery of Dandy-Walker Malformation on MRI in a 76-Year-Old Male Patient: A Case Report.",
+      "authors": [],
+      "journal": "Cureus",
+      "year": "2025",
+      "pmid": "40546618",
+      "doi": "10.7759/cureus.84423",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40546618/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_31101983",
+      "type": "journal_article",
+      "title": "Basilar invagination in a child with atlanto-occipital subluxation and suspected prenatal Dandy-Walker malformation.",
+      "authors": [],
+      "journal": "Child's nervous system : ChNS : official journal of the International Society for Pediatric Neurosurgery",
+      "year": "2020",
+      "pmid": "31101983",
+      "doi": "10.1007/s00381-019-04164-6",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31101983/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": [
+    {
+      "raw_finding_id": "dandy_walker_malformation_raw_keyword_posterior_fossa_cyst",
+      "modality_text": "MRI",
+      "acquisition_text": "",
+      "anatomy_text": "",
+      "target_text": "",
+      "finding_text": "キーワード/所見として \"posterior fossa cyst\" を保持。",
+      "interpretation": "辞書対応済み構造化欄から漏れる可能性があるため、Phase1自由記載として保存。",
+      "source_ids": [
+        "public_raw_findings_audit_20260705"
+      ],
+      "mapping": {
+        "status": "unmapped",
+        "candidate_finding_code": "finding:posterior_fossa_cyst",
+        "candidate_acquisition_code": "",
+        "candidate_target": "",
+        "notes": "Added during raw_findings audit to preserve information that may be lost by dictionary-only structured fields."
+      },
+      "review_status": "needs_mapping"
+    }
+  ]
+}

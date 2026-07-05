@@ -1,0 +1,308 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "radiation_necrosis",
+  "disease_name": {
+    "ja": "放射線壊死",
+    "en": "Radiation necrosis"
+  },
+  "disease_aliases": {
+    "ja": [
+      "放射線壊死"
+    ],
+    "en": [
+      "Radiation necrosis"
+    ]
+  },
+  "clinical": {
+    "overview": "放射線治療後に生じる遅発性壊死性変化。腫瘍再発との鑑別が重要。",
+    "treatment": "ステロイド、ベバシズマブ、外科的診断/減圧などを検討する。",
+    "epidemiology": "脳腫瘍や転移性脳腫瘍の放射線治療後に問題となる。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明らかな性差は限定的。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 100,
+      "peak_decade": "放射線治療後",
+      "summary": "0-100歳に多い。"
+    }
+  },
+  "keywords": [
+    "post-radiation",
+    "radiation necrosis"
+  ],
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 3,
+    "basis": "differential_importance",
+    "evidence_level": "public_review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "post radiation enhancing lesion"
+    },
+    "summary": "post radiation enhancing lesionの鑑別として重要。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "CTでは低吸収浮腫、石灰化、mass effectを評価する。",
+      "findings_by_phase": []
+    },
+    "mri": {
+      "summary": "MRIではリング状/不整造影、周囲浮腫、灌流低下、MRS脂質乳酸ピークを再発と比較する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:vasogenic_edema",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "周囲血管原性浮腫を伴う。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:vasogenic_edema",
+                "alternatives": []
+              },
+              "finding_id": "radiation_necrosis_mri_001"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:thick_irregular_ring_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "造影T1WIで不整なリング状造影を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:thick_irregular_ring_enhancement",
+                "alternatives": []
+              },
+              "finding_id": "radiation_necrosis_mri_002"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DSC_perfusion"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:reduced_cbv",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DSC_perfusion"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "灌流MRIでは再発腫瘍に比べCBV低下を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:reduced_cbv",
+                "alternatives": []
+              },
+              "finding_id": "radiation_necrosis_mri_003"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "MRS"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:lipid_peak",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRS"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "MRSで脂質/乳酸ピークを示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:lipid_peak",
+                "alternatives": []
+              },
+              "finding_id": "radiation_necrosis_mri_004"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:diffusion_restriction_present",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "壊死辺縁で拡散変化は可変的。",
+              "typicality": "variable",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:diffusion_restriction_present",
+                "alternatives": []
+              },
+              "finding_id": "radiation_necrosis_mri_005"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMed?????????NCBI Bookshelf/StatPearls?NIH/NINDS?MedlinePlus?CDC?PMC open-access review??????",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "radiation_necrosis_mri_001",
+          "radiation_necrosis_mri_002",
+          "radiation_necrosis_mri_003",
+          "radiation_necrosis_mri_004",
+          "radiation_necrosis_mri_005"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_brain_batch4_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "public_brain_batch4_20260625",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology source packet for brain draft batch 4",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC, and open-access PMC review articles where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "Brain field Phase1 batch4 draft."
+  },
+  "curation": {
+    "auto_update_allowed": true,
+    "locked_fields": [],
+    "notes": ""
+  },
+  "provenance": {
+    "created_by": "codex_public_source_review",
+    "model": "codex",
+    "created_at": "2026-06-25T11:51:30.202Z",
+    "prompt_version": "brain_batch4_v0.1",
+    "source_query": "Radiation necrosis CT MRI imaging findings public source"
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "content_hash": "",
+  "raw_findings": []
+}

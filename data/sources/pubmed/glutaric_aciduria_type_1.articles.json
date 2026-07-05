@@ -1,0 +1,38 @@
+{
+  "disease_id": "glutaric_aciduria_type_1",
+  "disease_name": {
+    "ja": "グルタル酸尿症1型",
+    "en": "Glutaric aciduria type 1"
+  },
+  "query": "glutaric aciduria type 1 brain MRI imaging",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "39658645",
+      "title": "Glutaric aciduria type 1: Insights into diagnosis and neurogenetic outcomes.",
+      "journal": "European journal of pediatrics",
+      "year": "2024",
+      "doi": "10.1007/s00431-024-05907-7",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39658645/",
+      "abstract": ""
+    },
+    {
+      "pmid": "37474264",
+      "title": "Glutaric Aciduria Type 1: Comparison between Diffusional Kurtosis Imaging and Conventional MR Imaging.",
+      "journal": "AJNR. American journal of neuroradiology",
+      "year": "2023",
+      "doi": "10.3174/ajnr.A7928",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37474264/",
+      "abstract": ""
+    },
+    {
+      "pmid": "35488943",
+      "title": "Does glutaric aciduria type 1 affect hearing function?",
+      "journal": "Metabolic brain disease",
+      "year": "2022",
+      "doi": "10.1007/s11011-022-00987-6",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35488943/",
+      "abstract": ""
+    }
+  ]
+}

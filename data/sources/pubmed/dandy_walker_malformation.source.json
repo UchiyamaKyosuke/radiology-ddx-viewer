@@ -1,0 +1,51 @@
+{
+  "disease_id": "dandy_walker_malformation",
+  "disease_name": {
+    "ja": "Dandy-Walker奇形",
+    "en": "Dandy-Walker malformation"
+  },
+  "disease_aliases": {
+    "ja": [
+      "ダンディ・ウォーカー奇形"
+    ],
+    "en": [
+      "Dandy-Walker malformation"
+    ]
+  },
+  "clinical": {
+    "overview": "後頭蓋窩嚢胞性拡大、小脳虫部形成異常、第4脳室拡大を特徴とする先天奇形。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 18,
+      "peak_decade": "小児",
+      "summary": "小児で重要。"
+    }
+  },
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "posterior_fossa_developmental_anomaly"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

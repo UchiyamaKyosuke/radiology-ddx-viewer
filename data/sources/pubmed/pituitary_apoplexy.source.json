@@ -1,0 +1,51 @@
+{
+  "disease_id": "pituitary_apoplexy",
+  "disease_name": {
+    "ja": "下垂体卒中",
+    "en": "Pituitary apoplexy"
+  },
+  "disease_aliases": {
+    "ja": [
+      "下垂体腺腫内出血"
+    ],
+    "en": [
+      "Pituitary apoplexy"
+    ]
+  },
+  "clinical": {
+    "overview": "下垂体腺腫などの急性出血/梗塞。急な頭痛、視機能障害、眼筋麻痺で発症し、鞍内腫瘤内出血を示す。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 80,
+      "peak_decade": "成人",
+      "summary": "成人で重要。"
+    }
+  },
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "acute_sellarmass_headache"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

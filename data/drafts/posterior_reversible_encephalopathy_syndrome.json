@@ -1,0 +1,512 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "posterior_reversible_encephalopathy_syndrome",
+  "disease_name": {
+    "ja": "可逆性後頭葉白質脳症",
+    "en": "Posterior reversible encephalopathy syndrome"
+  },
+  "disease_aliases": {
+    "ja": [
+      "PRES",
+      "可逆性後白質脳症"
+    ],
+    "en": [
+      "PRES",
+      "Reversible posterior leukoencephalopathy syndrome"
+    ]
+  },
+  "clinical": {
+    "overview": "急性高血圧、腎不全、免疫抑制薬、子癇などを背景に生じる可逆性の血管原性浮腫症候群。後頭葉・頭頂葉優位の皮質下白質浮腫が典型。",
+    "treatment": "原因薬剤の中止、血圧管理、けいれん治療、基礎疾患への対応を行う。不可逆性梗塞や出血を伴う例では注意が必要。",
+    "epidemiology": "発症母集団に依存し、妊娠関連、腎疾患、移植・免疫抑制、自己免疫疾患などで重要。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "基礎疾患により性差は変わる。妊娠・子癇関連では女性に限られる。"
+    },
+    "age": {
+      "typical_min": 15,
+      "typical_max": 85,
+      "peak_decade": "幅広い年齢層",
+      "summary": "小児から高齢者まで発症し、背景疾患で変動する。"
+    }
+  },
+  "keywords": [
+    "posterior predominant edema",
+    "parieto-occipital",
+    "vasogenic edema",
+    "hypertension",
+    "eclampsia"
+  ],
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 2,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "risk_factor_present",
+      "body_region": "brain",
+      "clinical_setting": "acute_encephalopathy_or_seizure"
+    },
+    "summary": "急性脳症・けいれんと後方優位浮腫では重要な鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "PRESはCTで後頭頭頂葉優位の低吸収/浮腫として見えることがある。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "posterior_reversible_encephalopathy_syndrome_ct_nc_001",
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "white_matter",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "後方優位の浮腫が低吸収域として見えることがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_hypoattenuation",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "posterior_reversible_encephalopathy_syndrome_ct_non_contrast_ct_hypoattenuation_01",
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "CTでは後頭頭頂葉優位の低吸収/浮腫として見えることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは後頭頭頂葉優位の血管原性浮腫、FLAIR高信号、通常ADC高値、可逆性を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "posterior_reversible_encephalopathy_syndrome_mri_flair_001",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "white_matter",
+              "modifiers": {},
+              "keywords": [
+                "parieto-occipital",
+                "posterior predominant edema"
+              ],
+              "finding_text": "頭頂後頭葉優位の皮質下白質FLAIR高信号を示す。",
+              "typicality": "typical",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:flair_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "posterior_reversible_encephalopathy_syndrome_mri_flair_flair_hyperintensity_01",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "FLAIRで後頭頭頂葉優位の皮質下高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "posterior_reversible_encephalopathy_syndrome_mri_flair_vasogenic_edema_01",
+              "finding_code": "finding:vasogenic_edema",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "血管原性浮腫が主体。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "posterior_reversible_encephalopathy_syndrome_mri_t2_001",
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "white_matter",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "血管原性浮腫としてT2高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:t2_hyperintensity",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "ADC"
+          },
+          "findings": [
+            {
+              "finding_id": "posterior_reversible_encephalopathy_syndrome_mri_adc_001",
+              "finding_code": "finding:adc_high",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "ADC"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "white_matter",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "血管原性浮腫ではADC上昇を示すことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:adc_high",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "posterior_reversible_encephalopathy_syndrome_mri_adc_adc_high_01",
+              "finding_code": "finding:adc_high",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "ADC"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "血管原性浮腫ではADC高値を示すことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_id": "posterior_reversible_encephalopathy_syndrome_mri_dwi_001",
+              "finding_code": "finding:diffusion_restriction_absent",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "white_matter",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "典型例では強い拡散制限を欠く。梗塞合併例では一部制限を伴う。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:diffusion_restriction_absent",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "posterior_reversible_encephalopathy_syndrome_mri_dwi_diffusion_restriction_present_01",
+              "finding_code": "finding:diffusion_restriction_present",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "重症例では一部に拡散制限を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 28054130, 34275982, 37951698, 28131335）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "posterior_reversible_encephalopathy_syndrome_ct_nc_001",
+          "posterior_reversible_encephalopathy_syndrome_mri_flair_001",
+          "posterior_reversible_encephalopathy_syndrome_mri_t2_001",
+          "posterior_reversible_encephalopathy_syndrome_mri_adc_001",
+          "posterior_reversible_encephalopathy_syndrome_mri_dwi_001"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_28054130",
+          "pmid_34275982",
+          "pmid_37951698",
+          "pmid_28131335"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "posterior_reversible_encephalopathy_syndrome_ct_non_contrast_ct_hypoattenuation_01",
+          "posterior_reversible_encephalopathy_syndrome_mri_flair_flair_hyperintensity_01",
+          "posterior_reversible_encephalopathy_syndrome_mri_flair_vasogenic_edema_01",
+          "posterior_reversible_encephalopathy_syndrome_mri_adc_adc_high_01",
+          "posterior_reversible_encephalopathy_syndrome_mri_dwi_diffusion_restriction_present_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_28054130",
+      "type": "journal_article",
+      "title": "Posterior reversible encephalopathy syndrome.",
+      "authors": [],
+      "journal": "Journal of neurology",
+      "year": "2018",
+      "pmid": "28054130",
+      "doi": "10.1007/s00415-016-8377-8",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28054130/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_34275982",
+      "type": "journal_article",
+      "title": "Posterior Reversible Encephalopathy Syndrome: A Review of the Literature.",
+      "authors": [],
+      "journal": "Internal medicine (Tokyo, Japan)",
+      "year": "2022",
+      "pmid": "34275982",
+      "doi": "10.2169/internalmedicine.7520-21",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34275982/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_37951698",
+      "type": "journal_article",
+      "title": "Imaging of Reversible Cerebral Vasoconstriction Syndrome and Posterior Reversible Encephalopathy Syndrome.",
+      "authors": [],
+      "journal": "Neuroimaging clinics of North America",
+      "year": "2023",
+      "pmid": "37951698",
+      "doi": "10.1016/j.nic.2023.07.004",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37951698/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_28131335",
+      "type": "journal_article",
+      "title": "Posterior Reversible Encephalopathy Syndrome: A Review.",
+      "authors": [],
+      "journal": "Canadian Association of Radiologists journal = Journal l'Association canadienne des radiologistes",
+      "year": "2017",
+      "pmid": "28131335",
+      "doi": "10.1016/j.carj.2016.08.005",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28131335/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": [
+    {
+      "raw_finding_id": "posterior_reversible_encephalopathy_syndrome_raw_keyword_vasogenic_edema",
+      "modality_text": "MRI",
+      "acquisition_text": "",
+      "anatomy_text": "",
+      "target_text": "",
+      "finding_text": "キーワード/所見として \"vasogenic edema\" を保持。",
+      "interpretation": "辞書対応済み構造化欄から漏れる可能性があるため、Phase1自由記載として保存。",
+      "source_ids": [
+        "public_raw_findings_audit_20260705"
+      ],
+      "mapping": {
+        "status": "unmapped",
+        "candidate_finding_code": "finding:vasogenic_edema",
+        "candidate_acquisition_code": "",
+        "candidate_target": "",
+        "notes": "Added during raw_findings audit to preserve information that may be lost by dictionary-only structured fields."
+      },
+      "review_status": "needs_mapping"
+    }
+  ]
+}

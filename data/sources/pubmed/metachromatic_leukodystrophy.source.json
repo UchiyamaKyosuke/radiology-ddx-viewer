@@ -1,0 +1,51 @@
+{
+  "disease_id": "metachromatic_leukodystrophy",
+  "disease_name": {
+    "ja": "異染性白質ジストロフィー",
+    "en": "Metachromatic leukodystrophy"
+  },
+  "disease_aliases": {
+    "ja": [
+      "MLD"
+    ],
+    "en": [
+      "MLD"
+    ]
+  },
+  "clinical": {
+    "overview": "アリルスルファターゼA欠損による白質ジストロフィー。両側対称性白質病変とtigroid patternが手掛かり。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 18,
+      "peak_decade": "小児",
+      "summary": "小児で重要。"
+    }
+  },
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "symmetric_white_matter_disease"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

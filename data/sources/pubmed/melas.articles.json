@@ -1,0 +1,38 @@
+{
+  "disease_id": "melas",
+  "disease_name": {
+    "ja": "MELAS",
+    "en": "MELAS"
+  },
+  "query": "MELAS brain MRI imaging stroke-like lesions",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "34118021",
+      "title": "Clinical features, pathogenesis, and management of stroke-like episodes due to MELAS.",
+      "journal": "Metabolic brain disease",
+      "year": "2022",
+      "doi": "10.1007/s11011-021-00772-x",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34118021/",
+      "abstract": ""
+    },
+    {
+      "pmid": "36892301",
+      "title": "Characteristics of stroke-like lesions on cerebral imaging.",
+      "journal": "Ideggyogyaszati szemle",
+      "year": "2023",
+      "doi": "10.18071/isz.76.0005",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36892301/",
+      "abstract": ""
+    },
+    {
+      "pmid": "36813312",
+      "title": "Neuroimaging in mitochondrial disease.",
+      "journal": "Handbook of clinical neurology",
+      "year": "2023",
+      "doi": "10.1016/B978-0-12-821751-1.00016-6",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36813312/",
+      "abstract": ""
+    }
+  ]
+}

@@ -1,0 +1,412 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "choroid_plexus_papilloma",
+  "disease_name": {
+    "ja": "脈絡叢乳頭腫",
+    "en": "Choroid plexus papilloma"
+  },
+  "disease_aliases": {
+    "ja": [
+      "脈絡叢乳頭腫"
+    ],
+    "en": [
+      "Choroid plexus papilloma"
+    ]
+  },
+  "clinical": {
+    "overview": "脈絡叢由来の脳室内腫瘍。小児では側脳室、成人では第4脳室に多く、強い造影と水頭症が手掛かり。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 18,
+      "peak_decade": "小児",
+      "summary": "小児で重要。"
+    }
+  },
+  "keywords": [
+    "choroid plexus",
+    "intraventricular",
+    "hydrocephalus"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "enhancing_intraventricular_mass"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "脈絡叢乳頭腫は脳室内造影腫瘤、水頭症、石灰化をCTで確認する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "choroid_plexus_papilloma_ct_001",
+              "finding_code": "finding:hydrocephalus",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "ventricle",
+                "subregion": "intraventricular",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "髄液産生増加や閉塞により水頭症を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:hydrocephalus",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "choroid_plexus_papilloma_ct_non_contrast_calcification_present_01",
+              "finding_code": "finding:calcification_present",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "石灰化を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは脳室内の強い造影腫瘤、T2高信号、flow void、水頭症を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "choroid_plexus_papilloma_mri_002",
+              "finding_code": "finding:avid_homogeneous_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "choroid_plexus",
+                "subregion": "intraventricular",
+                "laterality": "unknown"
+              },
+              "target": "ventricular_mass",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "脈絡叢部の腫瘤が強く造影される。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:avid_homogeneous_enhancement",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "choroid_plexus_papilloma_mri_contrast_enhanced_t1wi_avid_homogeneous_enhancement_01",
+              "finding_code": "finding:avid_homogeneous_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "脳室内腫瘤が強く造影される。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "choroid_plexus_papilloma_mri_003",
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "choroid_plexus",
+                "subregion": "intraventricular",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "T2高信号の脳室内腫瘤として見える。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:t2_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "choroid_plexus_papilloma_mri_t2wi_hydrocephalus_01",
+              "finding_code": "finding:hydrocephalus",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "髄液産生/閉塞により水頭症を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "choroid_plexus_papilloma_mri_004",
+              "finding_code": "finding:flow_void",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "choroid_plexus",
+                "subregion": "intraventricular",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "血管性flow voidを伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:flow_void",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "MRA_TOF"
+          },
+          "findings": [
+            {
+              "finding_id": "choroid_plexus_papilloma_mri_mra_tof_flow_void_01",
+              "finding_code": "finding:flow_void",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRA_TOF"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "血流豊富な腫瘤としてflow voidを伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 39027146, 29363556, 29397464）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "choroid_plexus_papilloma_ct_001",
+          "choroid_plexus_papilloma_mri_002",
+          "choroid_plexus_papilloma_mri_003",
+          "choroid_plexus_papilloma_mri_004"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_39027146",
+          "pmid_29363556",
+          "pmid_29397464"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "choroid_plexus_papilloma_mri_contrast_enhanced_t1wi_avid_homogeneous_enhancement_01",
+          "choroid_plexus_papilloma_mri_mra_tof_flow_void_01",
+          "choroid_plexus_papilloma_mri_t2wi_hydrocephalus_01",
+          "choroid_plexus_papilloma_ct_non_contrast_calcification_present_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_39027146",
+      "type": "journal_article",
+      "title": "Diagnosis of choroid plexus papilloma: Current perspectives and future directions.",
+      "authors": [],
+      "journal": "Cancer pathogenesis and therapy",
+      "year": "2024",
+      "pmid": "39027146",
+      "doi": "10.1016/j.cpt.2023.09.005",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39027146/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_29363556",
+      "type": "journal_article",
+      "title": "A diagnostic conundrum.",
+      "authors": [],
+      "journal": "Practical neurology",
+      "year": "2018",
+      "pmid": "29363556",
+      "doi": "10.1136/practneurol-2017-001801",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29363556/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_29397464",
+      "type": "journal_article",
+      "title": "Recognizing intraventricular silicone.",
+      "authors": [],
+      "journal": "Emergency radiology",
+      "year": "2018",
+      "pmid": "29397464",
+      "doi": "10.1007/s10140-018-1582-2",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29397464/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": []
+}

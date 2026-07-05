@@ -1,0 +1,38 @@
+{
+  "disease_id": "neurocysticercosis",
+  "disease_name": {
+    "ja": "神経嚢虫症",
+    "en": "Neurocysticercosis"
+  },
+  "query": "neurocysticercosis AND (MRI OR CT OR imaging)",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "25453460",
+      "title": "Clinical symptoms, diagnosis, and treatment of neurocysticercosis.",
+      "journal": "The Lancet. Neurology",
+      "year": "2015",
+      "doi": "10.1016/S1474-4422(14)70094-8",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25453460/",
+      "abstract": ""
+    },
+    {
+      "pmid": "23122261",
+      "title": "Imaging of neurocysticercosis.",
+      "journal": "Neuroimaging clinics of North America",
+      "year": "2013",
+      "doi": "10.1016/j.nic.2012.05.004",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23122261/",
+      "abstract": ""
+    },
+    {
+      "pmid": "9799883",
+      "title": "Neurocysticercosis.",
+      "journal": "Postgraduate medical journal",
+      "year": "1998",
+      "doi": "10.1136/pgmj.74.872.321",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9799883/",
+      "abstract": ""
+    }
+  ]
+}

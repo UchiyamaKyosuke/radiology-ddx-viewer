@@ -1,0 +1,221 @@
+{
+  "disease_id": "epidermoid_cyst",
+  "disease_name": {
+    "ja": "類表皮嚢胞",
+    "en": "Epidermoid cyst"
+  },
+  "disease_aliases": {
+    "ja": [],
+    "en": [
+      "Epidermoid cyst"
+    ]
+  },
+  "clinical": {
+    "overview": "Epidermoid cyst literature draft generated from PubMed abstracts. Codex review is required.",
+    "treatment": "Not extracted. Codex review is required.",
+    "epidemiology": "Not extracted. Codex review is required."
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "unknown"
+      ],
+      "predominance": "unknown",
+      "predilection": "unknown",
+      "summary": "Not extracted."
+    },
+    "age": {
+      "typical_min": null,
+      "typical_max": null,
+      "peak_decade": "未確認",
+      "summary": "好発年齢は未確認。"
+    }
+  },
+  "keywords": [],
+  "frequency": {
+    "label": "unknown",
+    "summary": "Not extracted."
+  },
+  "imaging": {},
+  "findings": [
+    {
+      "finding_text": "多房性嚢胞性腫瘤",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "T2WI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "cyst_content",
+      "modifiers": {},
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "硬膜付着性脳外腫瘤",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "T1WI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "脳室周囲卵円形白質病変",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "FLAIR",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "磁化率低信号/blooming",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "SWI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "signal": "hypointense",
+        "pattern": "blooming"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "コリンピーク上昇",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "MRS",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "metabolite": "choline_elevated"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    }
+  ],
+  "references": [
+    {
+      "source_id": "pmid_28966821",
+      "type": "journal_article",
+      "title": "Self-resolving prepontine cyst.",
+      "authors": [],
+      "journal": "Surgical neurology international",
+      "year": "2023",
+      "pmid": "28966821",
+      "doi": "10.4103/sni.sni_160_17",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28966821/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_38472390",
+      "type": "journal_article",
+      "title": "Spontaneous regression of an epidermoid cyst in a pediatric patient-Case report and review of the literature.",
+      "authors": [],
+      "journal": "Child's nervous system : ChNS : official journal of the International Society for Pediatric Neurosurgery",
+      "year": "2024",
+      "pmid": "38472390",
+      "doi": "10.1007/s00381-024-06333-8",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38472390/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_27366244",
+      "type": "journal_article",
+      "title": "Brainstem epidermoid cyst: An update.",
+      "authors": [],
+      "journal": "Asian journal of neurosurgery",
+      "year": "2016",
+      "pmid": "27366244",
+      "doi": "10.4103/1793-5482.145163",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27366244/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_29930917",
+      "type": "journal_article",
+      "title": "Bifrontal Epidermoid Cyst.",
+      "authors": [],
+      "journal": "Advanced biomedical research",
+      "year": "2020",
+      "pmid": "29930917",
+      "doi": "10.4103/abr.abr_107_16",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29930917/",
+      "license": ""
+    }
+  ],
+  "source_query": "epidermoid cyst[Title/Abstract] AND (brain[Title/Abstract] OR intracranial[Title/Abstract]) AND (MRI[Title/Abstract] OR CT[Title/Abstract] OR imaging[Title/Abstract] OR DWI[Title/Abstract])",
+  "source_articles": [
+    {
+      "pmid": "28966821",
+      "title": "Self-resolving prepontine cyst.",
+      "journal": "Surgical neurology international",
+      "year": "2023",
+      "doi": "10.4103/sni.sni_160_17",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28966821/",
+      "abstract": "Intracranial prepontine cysts are rare and include epidermoid cysts, arachnoid cysts, and neurenteric cysts. Symptomatic prepontine cysts may require surgical intervention. Reports of spontaneous resolution of cysts are rare.\nWe describe the case of a young gentleman who presented with headache and fever. Magnetic resonance imaging of the brain identified a prepontine lesion with features consistent with epidermoid cyst. During admission, the patient received symptomatic management in addition to empirical antibiotic therapy and dexamethasone. The patient improved symptomatically in the next 48 hours and was discharged. Follow-up imaging at 6 months and 1 year showed significant reduction in size of the lesion.\nFor asymptomatic prepontine cysts, a close radiological and clinical follow-up may prove useful."
+    },
+    {
+      "pmid": "38472390",
+      "title": "Spontaneous regression of an epidermoid cyst in a pediatric patient-Case report and review of the literature.",
+      "journal": "Child's nervous system : ChNS : official journal of the International Society for Pediatric Neurosurgery",
+      "year": "2024",
+      "doi": "10.1007/s00381-024-06333-8",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38472390/",
+      "abstract": "Epidermoid cysts are infrequent, benign, slow-growing, space-occupying lesions that account for 0.5-1.8% of primary intracranial tumors. We report the case of a 17-month-old child who presented in 2015 for one episode of pallor associated with hypotonia. Epilepsy was excluded and MRI was recommended. The MRI was performed and there were no focal parenchymal lesions, but it showed an extra-axial ovoid lesion with imaging characteristics consistent with epidermoid cyst. Follow-up MRI at one year was performed and it showed minimal increased in dimensions of the cyst, without changes into the signal of the lesion. Another MRI was performed 7&#xa0;years after and it showed complete resolution of the cyst. Six months afterwards, another MRI was performed and it confirmed the complete regression of the cyst, without any extra-axial masses reported. The patient did not present any neurological anomalies. No follow-up MRI was recommended afterwards. Spontaneous regression of epidermoid cyst in pediatric population is an extremely rare event, but it should be taken into account when the patient shows no symptoms. This is the third case of spontaneous regression of an epidermoid cyst reported in pediatric patients, and the first one in the temporal region. Careful follow-up and watchful waiting could be an option to surgical treatment in epidermoid cysts."
+    },
+    {
+      "pmid": "27366244",
+      "title": "Brainstem epidermoid cyst: An update.",
+      "journal": "Asian journal of neurosurgery",
+      "year": "2016",
+      "doi": "10.4103/1793-5482.145163",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27366244/",
+      "abstract": "The incidence of epidermoid tumors is between 1% and 2% of all intracranial tumors. The usual locations of epidermoid tumor are the parasellar region and cerebellopontine angle, and it is less commonly located in sylvian fissure, suprasellar region, cerebral and cerebellar hemispheres, and lateral and fourth ventricles. Epidermoid cysts located in the posterior fossa usually arise in the lateral subarachnoid cisterns, and those located in the brain stem are rare. These epidermoids contain cheesy and flaky white soft putty like contents. Epidermoid cysts are very slow growing tumors having a similar growth pattern of the epidermal cells of the skin and develop from remnants of epidermal elements during closure of the neural groove and disjunction of the surface ectoderm with neural ectoderm between the third and fifth weeks of embryonic life. We are presenting an interesting case of intrinsic brainstem epidermoid cyst containing milky white liquefied material with flakes in a 5-year-old girl. Diffusion-weighted imaging is definitive for the diagnosis. Ideal treatment of choice is removal of cystic components with complete resection of capsule. Although radical resection will prevent recurrence, in view of very thin firmly adherent capsule to brainstem, it is not always possible to do complete resection of capsule without any neurological deficits."
+    },
+    {
+      "pmid": "29930917",
+      "title": "Bifrontal Epidermoid Cyst.",
+      "journal": "Advanced biomedical research",
+      "year": "2020",
+      "doi": "10.4103/abr.abr_107_16",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29930917/",
+      "abstract": "In this paper, we will present a case of a 63-year-old female with bifrontal epidermoid tumor who has gone under bilateral craniotomy. In a case report study, a 63-year-old female with a chief complaint of progressive headache that has been admitted to Department of Neurosurgery was studied. Magnetic resonance imaging was performed for better evaluation. After detection of bifrontal epidermoid cyst, the patient underwent surgery, and following the surgery, a cut of the tumor has been excised, sent for pathology sampling and reviewed for detection of cyst. Microscopic review of the resected part reported normal brain tissue along with sections containing parts of cyst wall covered by squamous epithelium and huge amount of irregularly stratified keratin within its lumen, which clearly emphasizes on diagnosis of a typical epidermoid tumor. Bifrontal epidermoid cyst is rare, and according to our study, the clinical symptoms and patients imaging were consistent with other studies."
+    }
+  ]
+}

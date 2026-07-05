@@ -1,0 +1,514 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "pituitary_macroadenoma",
+  "disease_name": {
+    "ja": "下垂体腺腫",
+    "en": "Pituitary macroadenoma"
+  },
+  "disease_aliases": {
+    "ja": [
+      "下垂体神経内分泌腫瘍",
+      "PitNET"
+    ],
+    "en": [
+      "Pituitary adenoma",
+      "PitNET"
+    ]
+  },
+  "clinical": {
+    "overview": "下垂体前葉由来の腫瘍。10 mm以上ではmacroadenomaとされ、鞍内から鞍上部へ進展し視交叉圧排や海綿静脈洞浸潤を評価する。",
+    "treatment": "機能性の有無、サイズ、視機能、浸潤に応じて薬物療法、経蝶形骨洞手術、放射線治療、経過観察を選択する。",
+    "epidemiology": "成人の鞍内〜鞍上部腫瘤で頻度が高い。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "機能性腫瘍の種類により性差は変わる。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 75,
+      "peak_decade": "30-60歳代",
+      "summary": "成人に多い。"
+    }
+  },
+  "keywords": [
+    "sellar mass",
+    "suprasellar extension",
+    "cavernous sinus invasion",
+    "pituitary apoplexy"
+  ],
+  "frequency": {
+    "label": "common",
+    "prevalence_rank": 4,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "adult",
+      "body_region": "brain",
+      "clinical_setting": "sellar_mass"
+    },
+    "summary": "成人の鞍内腫瘤では頻度の高い鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "下垂体腺腫は鞍内〜鞍上部腫瘤としてCT/MRIで確認し、骨変化や出血を評価する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "pituitary_macroadenoma_ct_nc_001",
+              "finding_code": "finding:sellar_suprasellar_mass",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "pituitary",
+                "subregion": "sellar",
+                "laterality": "unknown"
+              },
+              "target": "sellar_mass",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "鞍内〜鞍上部腫瘤として認められる。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:sellar_suprasellar_mass",
+                "alternatives": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは鞍内腫瘤、鞍上伸展、海綿静脈洞浸潤、比較的均一〜不均一造影を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "pituitary_macroadenoma_mri_t1_001",
+              "finding_code": "finding:t1_isointensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "pituitary",
+                "subregion": "sellar",
+                "laterality": "unknown"
+              },
+              "target": "sellar_mass",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "腫瘤はT1で脳実質と等〜軽度低信号を示すことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:t1_isointensity",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "pituitary_macroadenoma_mri_ce_001",
+              "finding_code": "finding:sellar_suprasellar_mass",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "pituitary",
+                "subregion": "sellar",
+                "laterality": "unknown"
+              },
+              "target": "sellar_mass",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "鞍内から鞍上部へ進展する造影性腫瘤として評価される。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:sellar_suprasellar_mass",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "pituitary_macroadenoma_mri_contrast_enhanced_t1wi_sellar_suprasellar_mass_01",
+              "finding_code": "finding:sellar_suprasellar_mass",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "鞍内〜鞍上部腫瘤として見える。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "pituitary_macroadenoma_mri_contrast_enhanced_t1wi_mild_enhancement_01",
+              "finding_code": "finding:mild_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "造影T1WIで比較的均一〜不均一に造影される。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "pituitary_macroadenoma_mri_ce_002",
+              "finding_code": "finding:enhancing_solid_component",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "pituitary",
+                "subregion": "sellar",
+                "laterality": "unknown"
+              },
+              "target": "solid_component",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "充実部は造影され、壊死や出血があると不均一になる。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:enhancing_solid_component",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "pituitary_macroadenoma_mri_t1_002",
+              "finding_code": "finding:t1_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "pituitary",
+                "subregion": "sellar",
+                "laterality": "unknown"
+              },
+              "target": "hemorrhagic_component",
+              "modifiers": {},
+              "keywords": [
+                "pituitary apoplexy"
+              ],
+              "finding_text": "下垂体卒中では出血成分によりT1高信号を示すことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:t1_hyperintensity",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "pituitary_macroadenoma_mri_t2wi_t2_hyperintensity_01",
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "嚢胞変性や壊死を伴うとT2高信号成分を示す。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_id": "pituitary_macroadenoma_mri_dwi_diffusion_restriction_absent_01",
+              "finding_code": "finding:diffusion_restriction_absent",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "典型的腺腫では強い拡散制限は目立たないことが多い。",
+              "typicality": "variable",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 25732655, 31745969, 36826759, 42307852）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "pituitary_macroadenoma_ct_nc_001",
+          "pituitary_macroadenoma_mri_t1_001",
+          "pituitary_macroadenoma_mri_ce_001",
+          "pituitary_macroadenoma_mri_ce_002",
+          "pituitary_macroadenoma_mri_t1_002"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_25732655",
+          "pmid_31745969",
+          "pmid_36826759",
+          "pmid_42307852"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "pituitary_macroadenoma_mri_contrast_enhanced_t1wi_sellar_suprasellar_mass_01",
+          "pituitary_macroadenoma_mri_contrast_enhanced_t1wi_mild_enhancement_01",
+          "pituitary_macroadenoma_mri_t2wi_t2_hyperintensity_01",
+          "pituitary_macroadenoma_mri_dwi_diffusion_restriction_absent_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_25732655",
+      "type": "journal_article",
+      "title": "Pituitary apoplexy.",
+      "authors": [],
+      "journal": "Endocrinology and metabolism clinics of North America",
+      "year": "2015",
+      "pmid": "25732655",
+      "doi": "10.1016/j.ecl.2014.10.016",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25732655/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_31745969",
+      "type": "journal_article",
+      "title": "Pituitary apoplexy.",
+      "authors": [],
+      "journal": "Neurologia i neurochirurgia polska",
+      "year": "2020",
+      "pmid": "31745969",
+      "doi": "10.5603/PJNNS.a2019.0054",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31745969/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_36826759",
+      "type": "journal_article",
+      "title": "Imaging of pituitary tumors: an update with the 5th WHO Classifications-part 1. Pituitary neuroendocrine tumor (PitNET)/pituitary adenoma.",
+      "authors": [],
+      "journal": "Japanese journal of radiology",
+      "year": "2023",
+      "pmid": "36826759",
+      "doi": "10.1007/s11604-023-01400-7",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36826759/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_42307852",
+      "type": "journal_article",
+      "title": "Functional pituitary adenoma imaging.",
+      "authors": [],
+      "journal": "Reviews in endocrine & metabolic disorders",
+      "year": "2026",
+      "pmid": "42307852",
+      "doi": "10.1007/s11154-026-10063-4",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42307852/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": [
+    {
+      "raw_finding_id": "pituitary_macroadenoma_raw_keyword_sellar_mass",
+      "modality_text": "MRI",
+      "acquisition_text": "",
+      "anatomy_text": "",
+      "target_text": "",
+      "finding_text": "キーワード/所見として \"sellar mass\" を保持。",
+      "interpretation": "辞書対応済み構造化欄から漏れる可能性があるため、Phase1自由記載として保存。",
+      "source_ids": [
+        "public_raw_findings_audit_20260705"
+      ],
+      "mapping": {
+        "status": "unmapped",
+        "candidate_finding_code": "finding:sellar_mass",
+        "candidate_acquisition_code": "",
+        "candidate_target": "",
+        "notes": "Added during raw_findings audit to preserve information that may be lost by dictionary-only structured fields."
+      },
+      "review_status": "needs_mapping"
+    },
+    {
+      "raw_finding_id": "pituitary_macroadenoma_raw_keyword_suprasellar_extension",
+      "modality_text": "MRI",
+      "acquisition_text": "",
+      "anatomy_text": "",
+      "target_text": "",
+      "finding_text": "キーワード/所見として \"suprasellar extension\" を保持。",
+      "interpretation": "辞書対応済み構造化欄から漏れる可能性があるため、Phase1自由記載として保存。",
+      "source_ids": [
+        "public_raw_findings_audit_20260705"
+      ],
+      "mapping": {
+        "status": "unmapped",
+        "candidate_finding_code": "finding:suprasellar_extension",
+        "candidate_acquisition_code": "",
+        "candidate_target": "",
+        "notes": "Added during raw_findings audit to preserve information that may be lost by dictionary-only structured fields."
+      },
+      "review_status": "needs_mapping"
+    }
+  ]
+}

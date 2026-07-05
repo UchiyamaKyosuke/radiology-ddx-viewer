@@ -1,0 +1,29 @@
+{
+  "disease_id": "hypertensive_intracerebral_hemorrhage",
+  "disease_name": {
+    "ja": "高血圧性脳出血",
+    "en": "Hypertensive intracerebral hemorrhage"
+  },
+  "query": "hypertensive intracerebral hemorrhage CT MRI imaging",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "35870549",
+      "title": "Essential Topics About the Imaging Diagnosis and Treatment of Hemorrhagic Stroke: A Comprehensive Review of the 2022 AHA Guidelines.",
+      "journal": "Current problems in cardiology",
+      "year": "2022",
+      "doi": "10.1016/j.cpcardiol.2022.101328",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35870549/",
+      "abstract": ""
+    },
+    {
+      "pmid": "39707219",
+      "title": "Benefits of early MR-Imaging in patients with acute spontaneous intracerebral hemorrhage: a retrospective study.",
+      "journal": "BMC neurology",
+      "year": "2024",
+      "doi": "10.1186/s12883-024-03992-7",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39707219/",
+      "abstract": ""
+    }
+  ]
+}

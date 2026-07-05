@@ -1,0 +1,51 @@
+{
+  "disease_id": "acute_disseminated_encephalomyelitis",
+  "disease_name": {
+    "ja": "急性散在性脳脊髄炎",
+    "en": "Acute disseminated encephalomyelitis"
+  },
+  "disease_aliases": {
+    "ja": [
+      "ADEM"
+    ],
+    "en": [
+      "ADEM"
+    ]
+  },
+  "clinical": {
+    "overview": "感染後・ワクチン後などに生じる急性脱髄性疾患。小児に多く、多発・両側非対称の白質/深部灰白質病変を示す。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 18,
+      "peak_decade": "小児",
+      "summary": "小児で重要。"
+    }
+  },
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 2,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "acute_multifocal_demyelination"
+    },
+    "summary": "該当する画像パターンで重要な鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

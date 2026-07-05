@@ -1,0 +1,443 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "hypertensive_intracerebral_hemorrhage",
+  "disease_name": {
+    "ja": "高血圧性脳出血",
+    "en": "Hypertensive intracerebral hemorrhage"
+  },
+  "disease_aliases": {
+    "ja": [
+      "高血圧性脳内出血"
+    ],
+    "en": [
+      "Hypertensive ICH"
+    ]
+  },
+  "clinical": {
+    "overview": "高血圧性細動脈硬化に伴う脳内出血。被殻、視床、橋、小脳に好発し、急性期CT高吸収が基本。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 45,
+      "typical_max": 90,
+      "peak_decade": "中高年以降",
+      "summary": "中高年以降で多い。"
+    }
+  },
+  "keywords": [
+    "basal ganglia",
+    "thalamus",
+    "pons"
+  ],
+  "frequency": {
+    "label": "common",
+    "prevalence_rank": 4,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "hypertensive",
+      "body_region": "brain",
+      "clinical_setting": "acute_intracerebral_hemorrhage"
+    },
+    "summary": "急性脳内出血では頻度の高い鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "高血圧性脳内出血はCTで高吸収血腫、周囲浮腫、mass effectを迅速に評価する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "hypertensive_intracerebral_hemorrhage_ct_001",
+              "finding_code": "finding:ct_hyperattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "basal_ganglia",
+                "laterality": "unknown"
+              },
+              "target": "hemorrhagic_component",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "急性血腫は高吸収として認められる。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_hyperattenuation",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "hypertensive_intracerebral_hemorrhage_ct_002",
+              "finding_code": "finding:mass_effect",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "大きな血腫では周囲圧排を伴う。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:mass_effect",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "hypertensive_intracerebral_hemorrhage_ct_non_contrast_ct_hyperattenuation_01",
+              "finding_code": "finding:ct_hyperattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "急性期CTでは高吸収の出血として見える。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "高血圧性脳内出血はT1/T2信号の時相変化とSWI/T2*のbloomingで血液成分を確認する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "SWI"
+          },
+          "findings": [
+            {
+              "finding_id": "hypertensive_intracerebral_hemorrhage_mri_003",
+              "finding_code": "finding:susceptibility_blooming",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "SWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "basal_ganglia",
+                "laterality": "unknown"
+              },
+              "target": "hemorrhagic_component",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "血腫は磁化率低信号/bloomingを示す。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:susceptibility_blooming",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "hypertensive_intracerebral_hemorrhage_mri_swi_susceptibility_blooming_01",
+              "finding_code": "finding:susceptibility_blooming",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "SWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "SWI/T2*で磁化率低信号/bloomingを示す。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "hypertensive_intracerebral_hemorrhage_mri_004",
+              "finding_code": "finding:t1_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "hemorrhagic_component",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "亜急性期にはT1高信号を示す。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:t1_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "hypertensive_intracerebral_hemorrhage_mri_t1wi_t1_hyperintensity_01",
+              "finding_code": "finding:t1_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "亜急性期血腫ではT1高信号を示すことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "hypertensive_intracerebral_hemorrhage_mri_flair_vasogenic_edema_01",
+              "finding_code": "finding:vasogenic_edema",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "周囲浮腫を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "hypertensive_intracerebral_hemorrhage_mri_t2wi_mass_effect_01",
+              "finding_code": "finding:mass_effect",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "大きい血腫ではmass effectを伴う。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 35870549, 39707219）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "hypertensive_intracerebral_hemorrhage_ct_001",
+          "hypertensive_intracerebral_hemorrhage_ct_002",
+          "hypertensive_intracerebral_hemorrhage_mri_003",
+          "hypertensive_intracerebral_hemorrhage_mri_004"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_35870549",
+          "pmid_39707219"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "hypertensive_intracerebral_hemorrhage_ct_non_contrast_ct_hyperattenuation_01",
+          "hypertensive_intracerebral_hemorrhage_mri_swi_susceptibility_blooming_01",
+          "hypertensive_intracerebral_hemorrhage_mri_t1wi_t1_hyperintensity_01",
+          "hypertensive_intracerebral_hemorrhage_mri_flair_vasogenic_edema_01",
+          "hypertensive_intracerebral_hemorrhage_mri_t2wi_mass_effect_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_35870549",
+      "type": "journal_article",
+      "title": "Essential Topics About the Imaging Diagnosis and Treatment of Hemorrhagic Stroke: A Comprehensive Review of the 2022 AHA Guidelines.",
+      "authors": [],
+      "journal": "Current problems in cardiology",
+      "year": "2022",
+      "pmid": "35870549",
+      "doi": "10.1016/j.cpcardiol.2022.101328",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35870549/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_39707219",
+      "type": "journal_article",
+      "title": "Benefits of early MR-Imaging in patients with acute spontaneous intracerebral hemorrhage: a retrospective study.",
+      "authors": [],
+      "journal": "BMC neurology",
+      "year": "2024",
+      "pmid": "39707219",
+      "doi": "10.1186/s12883-024-03992-7",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39707219/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": [
+    {
+      "raw_finding_id": "hypertensive_intracerebral_hemorrhage_raw_keyword_basal_ganglia",
+      "modality_text": "MRI",
+      "acquisition_text": "",
+      "anatomy_text": "",
+      "target_text": "",
+      "finding_text": "キーワード/所見として \"basal ganglia\" を保持。",
+      "interpretation": "辞書対応済み構造化欄から漏れる可能性があるため、Phase1自由記載として保存。",
+      "source_ids": [
+        "public_raw_findings_audit_20260705"
+      ],
+      "mapping": {
+        "status": "unmapped",
+        "candidate_finding_code": "finding:basal_ganglia",
+        "candidate_acquisition_code": "",
+        "candidate_target": "",
+        "notes": "Added during raw_findings audit to preserve information that may be lost by dictionary-only structured fields."
+      },
+      "review_status": "needs_mapping"
+    }
+  ]
+}

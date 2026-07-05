@@ -1,0 +1,696 @@
+{
+  "solid_component": {
+    "label": {
+      "ja": "充実成分",
+      "en": "solid component"
+    },
+    "synonyms": [
+      "充実成分",
+      "充実部",
+      "solid component",
+      "solid portion"
+    ]
+  },
+  "whole_lesion": {
+    "label": {
+      "ja": "病変全体",
+      "en": "whole lesion"
+    },
+    "synonyms": [
+      "病変全体",
+      "全体",
+      "whole lesion"
+    ]
+  },
+  "uterine_connection": {
+    "label": {
+      "ja": "子宮との連続性",
+      "en": "uterine connection"
+    },
+    "synonyms": [
+      "子宮との連続性",
+      "uterine connection"
+    ]
+  },
+  "cyst_content": {
+    "label": {
+      "ja": "嚢胞内容",
+      "en": "cyst content"
+    },
+    "synonyms": [
+      "嚢胞内容",
+      "内容液",
+      "cyst content"
+    ]
+  },
+  "cyst_wall": {
+    "label": {
+      "ja": "嚢胞壁",
+      "en": "cyst wall"
+    },
+    "synonyms": [
+      "嚢胞壁",
+      "壁",
+      "cyst wall"
+    ]
+  },
+  "mural_nodule": {
+    "label": {
+      "ja": "壁在結節",
+      "en": "mural nodule"
+    },
+    "synonyms": [
+      "壁在結節",
+      "乳頭状充実成分",
+      "mural nodule"
+    ]
+  },
+  "lesion_core": {
+    "label": {
+      "ja": "病変中心部",
+      "en": "lesion core"
+    },
+    "synonyms": [
+      "病変中心部",
+      "中心部",
+      "lesion core",
+      "central portion"
+    ]
+  },
+  "lesion_margin": {
+    "label": {
+      "ja": "病変辺縁",
+      "en": "lesion margin"
+    },
+    "synonyms": [
+      "病変辺縁",
+      "辺縁",
+      "lesion margin",
+      "rim"
+    ]
+  },
+  "perilesional_edema": {
+    "label": {
+      "ja": "周囲浮腫",
+      "en": "perilesional edema"
+    },
+    "synonyms": [
+      "周囲浮腫",
+      "浮腫",
+      "perilesional edema",
+      "vasogenic edema"
+    ]
+  },
+  "white_matter_lesion": {
+    "label": {
+      "ja": "白質病変",
+      "en": "white matter lesion"
+    },
+    "synonyms": [
+      "白質病変",
+      "white matter lesion"
+    ]
+  },
+  "extra_axial_mass": {
+    "label": {
+      "ja": "脳外腫瘤",
+      "en": "extra-axial mass"
+    },
+    "synonyms": [
+      "脳外腫瘤",
+      "硬膜付着腫瘤",
+      "extra-axial mass",
+      "dural-based mass"
+    ]
+  },
+  "extra_axial_collection": {
+    "label": {
+      "ja": "脳外液体貯留",
+      "en": "extra-axial collection"
+    },
+    "synonyms": [
+      "脳外液体貯留",
+      "extra-axial collection"
+    ]
+  },
+  "cystic_component": {
+    "label": {
+      "ja": "嚢胞成分",
+      "en": "cystic component"
+    },
+    "synonyms": [
+      "嚢胞成分",
+      "cystic component"
+    ]
+  },
+  "calcified_component": {
+    "label": {
+      "ja": "石灰化成分",
+      "en": "calcified component"
+    },
+    "synonyms": [
+      "石灰化成分",
+      "calcified component"
+    ]
+  },
+  "hemorrhagic_component": {
+    "label": {
+      "ja": "出血成分",
+      "en": "hemorrhagic component"
+    },
+    "synonyms": [
+      "出血成分",
+      "hemorrhagic component"
+    ]
+  },
+  "vascular_nidus": {
+    "label": {
+      "ja": "血管nidus",
+      "en": "vascular nidus"
+    },
+    "synonyms": [
+      "血管nidus",
+      "vascular nidus"
+    ]
+  },
+  "venous_sinus": {
+    "label": {
+      "ja": "静脈洞",
+      "en": "venous sinus"
+    },
+    "synonyms": [
+      "静脈洞",
+      "venous sinus"
+    ]
+  },
+  "sellar_mass": {
+    "label": {
+      "ja": "鞍内腫瘤",
+      "en": "sellar mass"
+    },
+    "synonyms": [
+      "鞍内腫瘤",
+      "sellar mass"
+    ]
+  },
+  "cranial_nerve_mass": {
+    "label": {
+      "ja": "脳神経腫瘤",
+      "en": "cranial nerve mass"
+    },
+    "synonyms": [
+      "脳神経腫瘤",
+      "cranial nerve mass"
+    ]
+  },
+  "ventricular_mass": {
+    "label": {
+      "ja": "脳室内腫瘤",
+      "en": "ventricular mass"
+    },
+    "synonyms": [
+      "脳室内腫瘤",
+      "ventricular mass"
+    ]
+  },
+  "meninges": {
+    "label": {
+      "ja": "髄膜",
+      "en": "meninges"
+    },
+    "synonyms": [
+      "髄膜",
+      "meninges"
+    ]
+  },
+  "cortex": {
+    "label": {
+      "ja": "皮質",
+      "en": "cortex"
+    },
+    "synonyms": [
+      "皮質",
+      "cortex"
+    ]
+  },
+  "deep_gray_matter": {
+    "label": {
+      "ja": "深部灰白質",
+      "en": "deep gray matter"
+    },
+    "synonyms": [
+      "深部灰白質",
+      "deep gray matter"
+    ]
+  },
+  "white_matter": {
+    "label": {
+      "ja": "白質",
+      "en": "white matter"
+    },
+    "synonyms": [
+      "白質",
+      "white matter"
+    ]
+  },
+  "pituitary_stalk": {
+    "label": {
+      "ja": "下垂体茎",
+      "en": "pituitary stalk"
+    },
+    "synonyms": [
+      "下垂体茎",
+      "pituitary stalk"
+    ]
+  },
+  "skull_base_mass": {
+    "label": {
+      "ja": "頭蓋底腫瘤",
+      "en": "skull base mass"
+    },
+    "synonyms": [
+      "頭蓋底腫瘤",
+      "skull base mass"
+    ]
+  },
+  "pineal_mass": {
+    "label": {
+      "ja": "松果体部腫瘤",
+      "en": "pineal region mass"
+    },
+    "synonyms": [
+      "松果体部腫瘤",
+      "pineal region mass"
+    ]
+  },
+  "developmental_anomaly": {
+    "label": {
+      "ja": "形成異常",
+      "en": "developmental anomaly"
+    },
+    "synonyms": [
+      "形成異常",
+      "developmental anomaly"
+    ]
+  },
+  "microbleeds": {
+    "label": {
+      "ja": "微小出血",
+      "en": "microbleeds"
+    },
+    "synonyms": [
+      "微小出血",
+      "microbleeds"
+    ]
+  },
+  "organ_parenchyma": {
+    "label": {
+      "ja": "臓器実質",
+      "en": "organ parenchyma"
+    },
+    "synonyms": [
+      "臓器実質",
+      "organ parenchyma"
+    ]
+  },
+  "wall": {
+    "label": {
+      "ja": "壁",
+      "en": "wall"
+    },
+    "synonyms": [
+      "壁",
+      "wall"
+    ]
+  },
+  "lumen": {
+    "label": {
+      "ja": "内腔",
+      "en": "lumen"
+    },
+    "synonyms": [
+      "内腔",
+      "lumen"
+    ]
+  },
+  "duct": {
+    "label": {
+      "ja": "管腔",
+      "en": "duct"
+    },
+    "synonyms": [
+      "管腔",
+      "duct"
+    ]
+  },
+  "bone_marrow": {
+    "label": {
+      "ja": "骨髄",
+      "en": "bone marrow"
+    },
+    "synonyms": [
+      "骨髄",
+      "bone marrow"
+    ]
+  },
+  "joint_space": {
+    "label": {
+      "ja": "関節腔",
+      "en": "joint space"
+    },
+    "synonyms": [
+      "関節腔",
+      "joint space"
+    ]
+  },
+  "soft_tissue_mass": {
+    "label": {
+      "ja": "軟部腫瘤",
+      "en": "soft-tissue mass"
+    },
+    "synonyms": [
+      "軟部腫瘤",
+      "soft-tissue mass"
+    ]
+  },
+  "vascular_lumen": {
+    "label": {
+      "ja": "血管内腔",
+      "en": "vascular lumen"
+    },
+    "synonyms": [
+      "血管内腔",
+      "vascular lumen"
+    ]
+  },
+  "lymph_node": {
+    "label": {
+      "ja": "リンパ節",
+      "en": "lymph node"
+    },
+    "synonyms": [
+      "リンパ節",
+      "lymph node"
+    ]
+  },
+  "pleura": {
+    "label": {
+      "ja": "胸膜",
+      "en": "pleura"
+    },
+    "synonyms": [
+      "胸膜",
+      "pleura"
+    ]
+  },
+  "airway": {
+    "label": {
+      "ja": "気道",
+      "en": "airway"
+    },
+    "synonyms": [
+      "気道",
+      "airway"
+    ]
+  },
+  "tumor_margin": {
+    "label": {
+      "ja": "腫瘍辺縁",
+      "en": "tumor margin"
+    },
+    "synonyms": [
+      "腫瘍辺縁",
+      "tumor margin"
+    ]
+  },
+  "necrotic_component": {
+    "label": {
+      "ja": "壊死成分",
+      "en": "necrotic component"
+    },
+    "synonyms": [
+      "壊死成分",
+      "necrotic component"
+    ]
+  },
+  "fibrous_component": {
+    "label": {
+      "ja": "線維性成分",
+      "en": "fibrous component"
+    },
+    "synonyms": [
+      "線維性成分",
+      "fibrous component"
+    ]
+  },
+  "fat_component": {
+    "label": {
+      "ja": "脂肪成分",
+      "en": "fat component"
+    },
+    "synonyms": [
+      "脂肪成分",
+      "fat component"
+    ]
+  },
+  "fluid_collection": {
+    "label": {
+      "ja": "液体貯留",
+      "en": "fluid collection"
+    },
+    "synonyms": [
+      "液体貯留",
+      "fluid collection"
+    ]
+  },
+  "gas_component": {
+    "label": {
+      "ja": "ガス成分",
+      "en": "gas component"
+    },
+    "synonyms": [
+      "ガス成分",
+      "gas component"
+    ]
+  },
+  "mucosal_surface": {
+    "label": {
+      "ja": "粘膜面",
+      "en": "mucosal surface"
+    },
+    "synonyms": [
+      "粘膜面",
+      "mucosal surface"
+    ]
+  },
+  "serosa": {
+    "label": {
+      "ja": "漿膜",
+      "en": "serosa"
+    },
+    "synonyms": [
+      "漿膜",
+      "serosa"
+    ]
+  },
+  "stromal_component": {
+    "label": {
+      "ja": "間質成分",
+      "en": "stromal component"
+    },
+    "synonyms": [
+      "間質成分",
+      "stromal component"
+    ]
+  },
+  "vascular_wall": {
+    "label": {
+      "ja": "血管壁",
+      "en": "vascular wall"
+    },
+    "synonyms": [
+      "血管壁",
+      "vascular wall"
+    ]
+  },
+  "thrombus": {
+    "label": {
+      "ja": "血栓",
+      "en": "thrombus"
+    },
+    "synonyms": [
+      "血栓",
+      "thrombus"
+    ]
+  },
+  "foreign_body": {
+    "label": {
+      "ja": "異物",
+      "en": "foreign body"
+    },
+    "synonyms": [
+      "異物",
+      "foreign body"
+    ]
+  },
+  "matrix": {
+    "label": {
+      "ja": "基質",
+      "en": "matrix"
+    },
+    "synonyms": [
+      "基質",
+      "matrix"
+    ]
+  },
+  "tendon": {
+    "label": {
+      "ja": "腱",
+      "en": "tendon"
+    },
+    "synonyms": [
+      "腱",
+      "tendon"
+    ]
+  },
+  "synovium": {
+    "label": {
+      "ja": "滑膜",
+      "en": "synovium"
+    },
+    "synonyms": [
+      "滑膜",
+      "synovium"
+    ]
+  },
+  "nerve": {
+    "label": {
+      "ja": "神経",
+      "en": "nerve"
+    },
+    "synonyms": [
+      "神経",
+      "nerve"
+    ]
+  },
+  "myocardial_scar": {
+    "label": {
+      "ja": "心筋瘢痕",
+      "en": "myocardial scar"
+    },
+    "synonyms": [
+      "心筋瘢痕",
+      "myocardial scar"
+    ]
+  },
+  "air_trapping": {
+    "label": {
+      "ja": "エアトラッピング",
+      "en": "air trapping"
+    },
+    "synonyms": [
+      "エアトラッピング",
+      "air trapping"
+    ]
+  },
+  "stone": {
+    "label": {
+      "ja": "結石",
+      "en": "stone"
+    },
+    "synonyms": [
+      "結石",
+      "stone"
+    ]
+  },
+  "placental_interface": {
+    "label": {
+      "ja": "胎盤境界",
+      "en": "placental interface"
+    },
+    "synonyms": [
+      "胎盤境界",
+      "placental interface"
+    ]
+  },
+  "ligament": {
+    "label": {
+      "ja": "靱帯",
+      "en": "ligament"
+    },
+    "synonyms": [
+      "靱帯",
+      "ligament"
+    ]
+  },
+  "labrum": {
+    "label": {
+      "ja": "関節唇",
+      "en": "labrum"
+    },
+    "synonyms": [
+      "関節唇",
+      "labrum"
+    ]
+  },
+  "cartilage": {
+    "label": {
+      "ja": "軟骨",
+      "en": "cartilage"
+    },
+    "synonyms": [
+      "軟骨",
+      "cartilage"
+    ]
+  },
+  "periosteum": {
+    "label": {
+      "ja": "骨膜",
+      "en": "periosteum"
+    },
+    "synonyms": [
+      "骨膜",
+      "periosteum"
+    ]
+  },
+  "scar": {
+    "label": {
+      "ja": "瘢痕",
+      "en": "scar"
+    },
+    "synonyms": [
+      "瘢痕",
+      "scar"
+    ]
+  },
+  "mucus": {
+    "label": {
+      "ja": "粘液",
+      "en": "mucus"
+    },
+    "synonyms": [
+      "粘液",
+      "mucus"
+    ]
+  },
+  "abscess_cavity": {
+    "label": {
+      "ja": "膿瘍腔",
+      "en": "abscess cavity"
+    },
+    "synonyms": [
+      "膿瘍腔",
+      "abscess cavity"
+    ]
+  },
+  "tumor_matrix": {
+    "label": {
+      "ja": "腫瘍基質",
+      "en": "tumor matrix"
+    },
+    "synonyms": [
+      "腫瘍基質",
+      "tumor matrix"
+    ]
+  }
+}

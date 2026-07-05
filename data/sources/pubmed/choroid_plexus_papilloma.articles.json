@@ -1,0 +1,38 @@
+{
+  "disease_id": "choroid_plexus_papilloma",
+  "disease_name": {
+    "ja": "脈絡叢乳頭腫",
+    "en": "Choroid plexus papilloma"
+  },
+  "query": "\"choroid plexus papilloma\" AND (MRI OR CT OR imaging)",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "39027146",
+      "title": "Diagnosis of choroid plexus papilloma: Current perspectives and future directions.",
+      "journal": "Cancer pathogenesis and therapy",
+      "year": "2024",
+      "doi": "10.1016/j.cpt.2023.09.005",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39027146/",
+      "abstract": ""
+    },
+    {
+      "pmid": "29363556",
+      "title": "A diagnostic conundrum.",
+      "journal": "Practical neurology",
+      "year": "2018",
+      "doi": "10.1136/practneurol-2017-001801",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29363556/",
+      "abstract": ""
+    },
+    {
+      "pmid": "29397464",
+      "title": "Recognizing intraventricular silicone.",
+      "journal": "Emergency radiology",
+      "year": "2018",
+      "doi": "10.1007/s10140-018-1582-2",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29397464/",
+      "abstract": ""
+    }
+  ]
+}

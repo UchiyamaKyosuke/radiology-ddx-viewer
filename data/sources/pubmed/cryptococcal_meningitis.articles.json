@@ -1,0 +1,38 @@
+{
+  "disease_id": "cryptococcal_meningitis",
+  "disease_name": {
+    "ja": "クリプトコッカス髄膜炎",
+    "en": "Cryptococcal meningitis"
+  },
+  "query": "cryptococcal meningitis AND (MRI OR CT OR imaging)",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "33788511",
+      "title": "Cerebrospinal Fluid Analysis.",
+      "journal": "American family physician",
+      "year": "2021",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33788511/",
+      "abstract": ""
+    },
+    {
+      "pmid": "27786246",
+      "title": "HIV-associated opportunistic CNS infections: pathophysiology, diagnosis and treatment.",
+      "journal": "Nature reviews. Neurology",
+      "year": "2018",
+      "doi": "10.1038/nrneurol.2016.149",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27786246/",
+      "abstract": ""
+    },
+    {
+      "pmid": "15838017",
+      "title": "Cryptococcal meningitis.",
+      "journal": "British medical bulletin",
+      "year": "2005",
+      "doi": "10.1093/bmb/ldh043",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15838017/",
+      "abstract": ""
+    }
+  ]
+}

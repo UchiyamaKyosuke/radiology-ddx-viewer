@@ -1,0 +1,38 @@
+{
+  "disease_id": "pineoblastoma",
+  "disease_name": {
+    "ja": "松果体芽腫",
+    "en": "Pineoblastoma"
+  },
+  "query": "pineoblastoma AND (MRI OR CT OR imaging)",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "1392580",
+      "title": "Pineal tumors.",
+      "journal": "Neurosurgery clinics of North America",
+      "year": "1992",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1392580/",
+      "abstract": ""
+    },
+    {
+      "pmid": "20818311",
+      "title": "Pineal germinoma.",
+      "journal": "Southern medical journal",
+      "year": "2010",
+      "doi": "10.1097/SMJ.0b013e3181ebeeff",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20818311/",
+      "abstract": ""
+    },
+    {
+      "pmid": "7501100",
+      "title": "Pineoblastoma in adults.",
+      "journal": "Neurosurgery",
+      "year": "1996",
+      "doi": "10.1227/00006123-199509000-00003",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7501100/",
+      "abstract": ""
+    }
+  ]
+}

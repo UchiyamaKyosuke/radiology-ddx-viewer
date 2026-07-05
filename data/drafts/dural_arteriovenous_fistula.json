@@ -1,0 +1,413 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "dural_arteriovenous_fistula",
+  "disease_name": {
+    "ja": "硬膜動静脈瘻",
+    "en": "Dural arteriovenous fistula"
+  },
+  "disease_aliases": {
+    "ja": [
+      "dAVF",
+      "硬膜AVF"
+    ],
+    "en": [
+      "dAVF"
+    ]
+  },
+  "clinical": {
+    "overview": "硬膜動脈と静脈洞/皮質静脈の短絡。静脈逆流があると出血や静脈性浮腫のリスクが高い。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 80,
+      "peak_decade": "成人",
+      "summary": "成人で重要。"
+    }
+  },
+  "keywords": [
+    "dAVF",
+    "cortical venous reflux",
+    "flow void"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "vascular_flow_void_or_venous_congestion"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "硬膜動静脈瘻はCTで出血、石灰化、拡張血管、周囲浮腫を確認し、CTA/DSAやMRIで血管構造を評価する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "dural_arteriovenous_fistula_ct_001",
+              "finding_code": "finding:hemorrhage_present",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "hemorrhagic_component",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "皮質静脈逆流例では出血を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:hemorrhage_present",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "dural_arteriovenous_fistula_ct_non_contrast_ct_hyperattenuation_01",
+              "finding_code": "finding:ct_hyperattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "出血を伴う場合、CTで高吸収を示す。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "硬膜動静脈瘻では拡張皮質静脈、flow void、SWIの静脈性変化、MRA/DSAでシャントを評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "dural_arteriovenous_fistula_mri_002",
+              "finding_code": "finding:flow_void",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "cerebral_vessel",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "vascular_nidus",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "硬膜静脈洞周囲や皮質表面に異常flow voidを認める。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:flow_void",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "dural_arteriovenous_fistula_mri_003",
+              "finding_code": "finding:vasogenic_edema",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "perilesional_edema",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "静脈性うっ滞による白質浮腫を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:vasogenic_edema",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "MRA_TOF"
+          },
+          "findings": [
+            {
+              "finding_id": "dural_arteriovenous_fistula_mri_004",
+              "finding_code": "finding:vascular_nidus",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRA_TOF"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "cerebral_vessel",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "vascular_nidus",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "MRAで短絡血流や早期静脈描出を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:vascular_nidus",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "dural_arteriovenous_fistula_mri_mra_tof_flow_void_01",
+              "finding_code": "finding:flow_void",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRA_TOF"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "T1/T2で血管flow voidを認めることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "dural_arteriovenous_fistula_mri_mra_tof_vascular_nidus_01",
+              "finding_code": "finding:vascular_nidus",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRA_TOF"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "MRA/CTAで異常血管nidusや短絡血管を認める。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "SWI"
+          },
+          "findings": [
+            {
+              "finding_id": "dural_arteriovenous_fistula_mri_swi_susceptibility_blooming_01",
+              "finding_code": "finding:susceptibility_blooming",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "SWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "SWI/T2*で出血や静脈性うっ滞に伴うbloomingを認めることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 25465120, 26508408, 37821323）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "dural_arteriovenous_fistula_ct_001",
+          "dural_arteriovenous_fistula_mri_002",
+          "dural_arteriovenous_fistula_mri_003",
+          "dural_arteriovenous_fistula_mri_004"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_25465120",
+          "pmid_26508408",
+          "pmid_37821323"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "dural_arteriovenous_fistula_mri_mra_tof_flow_void_01",
+          "dural_arteriovenous_fistula_mri_mra_tof_vascular_nidus_01",
+          "dural_arteriovenous_fistula_mri_swi_susceptibility_blooming_01",
+          "dural_arteriovenous_fistula_ct_non_contrast_ct_hyperattenuation_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_25465120",
+      "type": "journal_article",
+      "title": "Intracranial arteriovenous malformations.",
+      "authors": [],
+      "journal": "Diagnostic and interventional imaging",
+      "year": "2015",
+      "pmid": "25465120",
+      "doi": "10.1016/j.diii.2014.10.004",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25465120/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_26508408",
+      "type": "journal_article",
+      "title": "Spinal Dural Arteriovenous Fistula: A Review.",
+      "authors": [],
+      "journal": "Advances and technical standards in neurosurgery",
+      "year": "2016",
+      "pmid": "26508408",
+      "doi": "10.1007/978-3-319-21359-0_5",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26508408/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_37821323",
+      "type": "journal_article",
+      "title": "Diagnosis of spinal dural arteriovenous fistula: a multimodal MRI assessment strategy.",
+      "authors": [],
+      "journal": "Clinical radiology",
+      "year": "2023",
+      "pmid": "37821323",
+      "doi": "10.1016/j.crad.2023.08.027",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37821323/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": []
+}

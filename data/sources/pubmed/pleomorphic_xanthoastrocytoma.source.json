@@ -1,0 +1,51 @@
+{
+  "disease_id": "pleomorphic_xanthoastrocytoma",
+  "disease_name": {
+    "ja": "多形黄色星細胞腫",
+    "en": "Pleomorphic xanthoastrocytoma"
+  },
+  "disease_aliases": {
+    "ja": [
+      "PXA"
+    ],
+    "en": [
+      "PXA"
+    ]
+  },
+  "clinical": {
+    "overview": "若年者に多い表在性星細胞系腫瘍。側頭葉など皮質表在に嚢胞と造影壁在結節、髄膜接触を示す。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 5,
+      "typical_max": 35,
+      "peak_decade": "小児〜若年成人",
+      "summary": "若年者に多い。"
+    }
+  },
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "superficial_cystic_tumor"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

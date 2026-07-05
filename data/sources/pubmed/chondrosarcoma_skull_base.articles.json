@@ -1,0 +1,38 @@
+{
+  "disease_id": "chondrosarcoma_skull_base",
+  "disease_name": {
+    "ja": "頭蓋底軟骨肉腫",
+    "en": "Skull base chondrosarcoma"
+  },
+  "query": "\"skull base chondrosarcoma\" AND (MRI OR CT OR imaging)",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "35882753",
+      "title": "Revisitation of imaging features of skull base chondrosarcoma in comparison to chordoma.",
+      "journal": "Journal of neuro-oncology",
+      "year": "2022",
+      "doi": "10.1007/s11060-022-04097-2",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35882753/",
+      "abstract": ""
+    },
+    {
+      "pmid": "32818757",
+      "title": "Incidence and survival rates and trends of skull Base chondrosarcoma: A Population-Based study.",
+      "journal": "Clinical neurology and neurosurgery",
+      "year": "2021",
+      "doi": "10.1016/j.clineuro.2020.106153",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32818757/",
+      "abstract": ""
+    },
+    {
+      "pmid": "30872199",
+      "title": "Skull Base Chondrosarcoma Caused by Ollier Disease: A Case Report and Literature Review.",
+      "journal": "World neurosurgery",
+      "year": "2020",
+      "doi": "10.1016/j.wneu.2019.03.037",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30872199/",
+      "abstract": ""
+    }
+  ]
+}

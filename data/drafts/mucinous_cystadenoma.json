@@ -1,0 +1,204 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "mucinous_cystadenoma",
+  "disease_name": {
+    "ja": "卵巣粘液性嚢胞腺腫",
+    "en": "Ovarian mucinous cystadenoma"
+  },
+  "disease_aliases": {
+    "ja": [
+      "粘液性嚢胞腺腫"
+    ],
+    "en": [
+      "Mucinous cystadenoma"
+    ]
+  },
+  "clinical": {
+    "overview": "卵巣上皮性良性腫瘍。大きな多房性嚢胞性腫瘤として認められることが多い。 補足: Sample draft source only.",
+    "treatment": "症状、腫瘍径、悪性境界病変との鑑別に応じて外科的切除が検討される。",
+    "epidemiology": "卵巣上皮性腫瘍の鑑別として重要。"
+  },
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 3,
+    "basis": "draft_estimate",
+    "evidence_level": "unknown",
+    "context": {
+      "population": "unknown",
+      "body_region": "unknown",
+      "clinical_setting": "unknown"
+    },
+    "summary": "付属器嚢胞性腫瘤の鑑別として重要。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "",
+      "findings_by_phase": []
+    },
+    "mri": {
+      "summary": "",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "mucinous_cystadenoma_mri_t2wi_001",
+              "finding_code": "finding:multilocular_cystic_mass",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "pelvis",
+                "organ": "ovary",
+                "subregion": "adnexa",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {
+                "degree": "marked",
+                "morphology": "multilocular_cystic_mass"
+              },
+              "finding_text": "多房性嚢胞性腫瘤として認められる。",
+              "typicality": "typical",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.98,
+                "matched_concept_id": "finding:multilocular_cystic_mass",
+                "alternatives": []
+              },
+              "keywords": [
+                "multilocular_cystic_mass"
+              ]
+            },
+            {
+              "finding_id": "mucinous_cystadenoma_mri_t2wi_002",
+              "finding_code": "finding:multilocular_cystic_mass",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "pelvis",
+                "organ": "ovary",
+                "subregion": "adnexa",
+                "laterality": "unknown"
+              },
+              "target": "cyst_content",
+              "modifiers": {
+                "degree": "variable",
+                "morphology": "multilocular_cystic_mass"
+              },
+              "finding_text": "嚢胞ごとに信号強度が異なる stained-glass appearance を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "candidate",
+                "confidence": 0.13,
+                "matched_concept_id": "finding:multilocular_cystic_mass",
+                "alternatives": []
+              },
+              "keywords": [
+                "multilocular_cystic_mass"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "出典未登録（サンプル用の仮出典）。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "mucinous_cystadenoma_mri_t2wi_001",
+          "mucinous_cystadenoma_mri_t2wi_002"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "ref_001"
+        ],
+        "confidence": "low"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "ref_001",
+      "type": "placeholder",
+      "title": "Replace with reviewed source",
+      "authors": [],
+      "journal": "",
+      "year": "",
+      "pmid": "",
+      "doi": "",
+      "url": "",
+      "license": ""
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "Generated draft; requires mapping and physician review."
+  },
+  "curation": {
+    "auto_update_allowed": true,
+    "locked_fields": [],
+    "notes": ""
+  },
+  "provenance": {
+    "created_by": "draft_generator",
+    "model": "",
+    "created_at": "2026-06-20T06:26:35.384Z",
+    "prompt_version": "card_extraction_v0.1",
+    "source_query": ""
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "content_hash": "",
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "female"
+      ],
+      "predominance": "female",
+      "predilection": "female_only",
+      "summary": "女性に発生する疾患。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 70,
+      "peak_decade": "30-50歳代",
+      "summary": "成人女性でみられる。"
+    }
+  },
+  "keywords": [
+    "multilocular_cystic_mass"
+  ],
+  "raw_findings": []
+}

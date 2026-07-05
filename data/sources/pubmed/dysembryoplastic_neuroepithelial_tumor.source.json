@@ -1,0 +1,53 @@
+{
+  "disease_id": "dysembryoplastic_neuroepithelial_tumor",
+  "disease_name": {
+    "ja": "胚芽異形成性神経上皮腫瘍",
+    "en": "Dysembryoplastic neuroepithelial tumor"
+  },
+  "disease_aliases": {
+    "ja": [
+      "DNET",
+      "DNT"
+    ],
+    "en": [
+      "DNET",
+      "DNT"
+    ]
+  },
+  "clinical": {
+    "overview": "小児〜若年成人の難治性てんかんに関連する皮質性腫瘍。側頭葉皮質の多結節状/嚢胞様T2高信号病変が典型。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 5,
+      "typical_max": 30,
+      "peak_decade": "小児〜若年成人",
+      "summary": "若年のてんかん関連病変で重要。"
+    }
+  },
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "epilepsy_associated_cortical_tumor"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

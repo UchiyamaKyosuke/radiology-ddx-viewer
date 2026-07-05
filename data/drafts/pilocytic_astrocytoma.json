@@ -1,0 +1,464 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "pilocytic_astrocytoma",
+  "disease_name": {
+    "ja": "毛様細胞性星細胞腫",
+    "en": "Pilocytic astrocytoma"
+  },
+  "disease_aliases": {
+    "ja": [
+      "毛様細胞性星細胞腫"
+    ],
+    "en": [
+      "Juvenile pilocytic astrocytoma"
+    ]
+  },
+  "clinical": {
+    "overview": "小児〜若年者に多い限局性星細胞系腫瘍。小脳に多く、嚢胞と造影される壁在結節の組み合わせが典型。",
+    "treatment": "可能であれば外科的全摘を目指す。部位や残存・再発に応じて経過観察、薬物療法、放射線治療を検討する。",
+    "epidemiology": "小児後頭蓋窩腫瘍の重要な鑑別。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 3,
+      "typical_max": 25,
+      "peak_decade": "小児〜若年者",
+      "summary": "小児から若年者に多い。"
+    }
+  },
+  "keywords": [
+    "cyst with mural nodule",
+    "cerebellar",
+    "posterior fossa"
+  ],
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 2,
+    "basis": "epidemiology",
+    "evidence_level": "review",
+    "context": {
+      "population": "pediatric",
+      "body_region": "brain",
+      "clinical_setting": "posterior_fossa_cystic_mass"
+    },
+    "summary": "小児の嚢胞性後頭蓋窩腫瘤では重要。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "毛様細胞性星細胞腫はCTで嚢胞性腫瘤や水頭症を確認する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "pilocytic_astrocytoma_ct_nc_001",
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebellum",
+                "laterality": "unknown"
+              },
+              "target": "cystic_component",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "嚢胞成分が低吸収として認められる。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_hypoattenuation",
+                "alternatives": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは嚢胞+造影壁在結節、T2高信号、比較的境界明瞭な腫瘤を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "pilocytic_astrocytoma_mri_ce_001",
+              "finding_code": "finding:cyst_with_enhancing_mural_nodule",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebellum",
+                "laterality": "unknown"
+              },
+              "target": "mural_nodule",
+              "modifiers": {},
+              "keywords": [
+                "mural nodule"
+              ],
+              "finding_text": "嚢胞に接する壁在結節が強く造影される形態が典型。",
+              "typicality": "typical",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:cyst_with_enhancing_mural_nodule",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "pilocytic_astrocytoma_mri_contrast_enhanced_t1wi_cyst_with_enhancing_mural_nodule_01",
+              "finding_code": "finding:cyst_with_enhancing_mural_nodule",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "造影される壁在結節を伴う嚢胞性腫瘤を示すことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "pilocytic_astrocytoma_mri_t2_001",
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebellum",
+                "laterality": "unknown"
+              },
+              "target": "cystic_component",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "嚢胞成分はT2高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:t2_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "pilocytic_astrocytoma_mri_t2wi_t2_hyperintensity_01",
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "嚢胞成分や腫瘍がT2高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "pilocytic_astrocytoma_mri_t2wi_hydrocephalus_01",
+              "finding_code": "finding:hydrocephalus",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "後頭蓋窩病変では水頭症を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_id": "pilocytic_astrocytoma_mri_dwi_001",
+              "finding_code": "finding:diffusion_restriction_absent",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebellum",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "高細胞性腫瘍ほどの強い拡散制限は目立たないことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:diffusion_restriction_absent",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "pilocytic_astrocytoma_mri_dwi_diffusion_restriction_absent_01",
+              "finding_code": "finding:diffusion_restriction_absent",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "典型例では強い拡散制限に乏しい。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "pilocytic_astrocytoma_mri_flair_001",
+              "finding_code": "finding:hydrocephalus",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "posterior_fossa",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "後頭蓋窩病変では第4脳室圧排により水頭症を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:hydrocephalus",
+                "alternatives": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 27889018, 37306749, 37743340）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "pilocytic_astrocytoma_ct_nc_001",
+          "pilocytic_astrocytoma_mri_ce_001",
+          "pilocytic_astrocytoma_mri_t2_001",
+          "pilocytic_astrocytoma_mri_dwi_001",
+          "pilocytic_astrocytoma_mri_flair_001"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_27889018",
+          "pmid_37306749",
+          "pmid_37743340"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "pilocytic_astrocytoma_mri_contrast_enhanced_t1wi_cyst_with_enhancing_mural_nodule_01",
+          "pilocytic_astrocytoma_mri_t2wi_t2_hyperintensity_01",
+          "pilocytic_astrocytoma_mri_dwi_diffusion_restriction_absent_01",
+          "pilocytic_astrocytoma_mri_t2wi_hydrocephalus_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_27889018",
+      "type": "journal_article",
+      "title": "Posterior Fossa Tumors.",
+      "authors": [],
+      "journal": "Neuroimaging clinics of North America",
+      "year": "2017",
+      "pmid": "27889018",
+      "doi": "10.1016/j.nic.2016.08.001",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27889018/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_37306749",
+      "type": "journal_article",
+      "title": "[Pediatric posterior fossa tumors].",
+      "authors": [],
+      "journal": "Radiologie (Heidelberg, Germany)",
+      "year": "2023",
+      "pmid": "37306749",
+      "doi": "10.1007/s00117-023-01159-y",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37306749/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_37743340",
+      "type": "journal_article",
+      "title": "[Circumscribed Astrocytic Gliomas].",
+      "authors": [],
+      "journal": "No shinkei geka. Neurological surgery",
+      "year": "2023",
+      "pmid": "37743340",
+      "doi": "10.11477/mf.1436204830",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37743340/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": [
+    {
+      "raw_finding_id": "pilocytic_astrocytoma_raw_keyword_cyst_with_mural_nodule",
+      "modality_text": "MRI",
+      "acquisition_text": "",
+      "anatomy_text": "",
+      "target_text": "",
+      "finding_text": "キーワード/所見として \"cyst with mural nodule\" を保持。",
+      "interpretation": "辞書対応済み構造化欄から漏れる可能性があるため、Phase1自由記載として保存。",
+      "source_ids": [
+        "public_raw_findings_audit_20260705"
+      ],
+      "mapping": {
+        "status": "unmapped",
+        "candidate_finding_code": "finding:cyst_with_mural_nodule",
+        "candidate_acquisition_code": "",
+        "candidate_target": "",
+        "notes": "Added during raw_findings audit to preserve information that may be lost by dictionary-only structured fields."
+      },
+      "review_status": "needs_mapping"
+    }
+  ]
+}

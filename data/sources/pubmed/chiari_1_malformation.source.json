@@ -1,0 +1,51 @@
+{
+  "disease_id": "chiari_1_malformation",
+  "disease_name": {
+    "ja": "Chiari I奇形",
+    "en": "Chiari I malformation"
+  },
+  "disease_aliases": {
+    "ja": [
+      "キアリI型奇形"
+    ],
+    "en": [
+      "Chiari type I malformation"
+    ]
+  },
+  "clinical": {
+    "overview": "小脳扁桃が大後頭孔以下へ下垂する先天性/発達性異常。脊髄空洞症や後頭蓋窩狭小を評価する。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 5,
+      "typical_max": 50,
+      "peak_decade": "小児〜成人",
+      "summary": "小児から成人で見つかる。"
+    }
+  },
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 2,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "tonsillar_ectopia"
+    },
+    "summary": "該当する画像パターンで重要な鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

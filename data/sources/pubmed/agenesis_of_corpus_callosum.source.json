@@ -1,0 +1,51 @@
+{
+  "disease_id": "agenesis_of_corpus_callosum",
+  "disease_name": {
+    "ja": "脳梁欠損",
+    "en": "Agenesis of the corpus callosum"
+  },
+  "disease_aliases": {
+    "ja": [
+      "脳梁形成不全"
+    ],
+    "en": [
+      "Corpus callosum agenesis"
+    ]
+  },
+  "clinical": {
+    "overview": "脳梁の完全または部分欠損。側脳室形態異常、放射状脳溝、Probst bundleなどを評価する。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 18,
+      "peak_decade": "小児",
+      "summary": "小児で重要。"
+    }
+  },
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 2,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "developmental_anomaly"
+    },
+    "summary": "該当する画像パターンで重要な鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

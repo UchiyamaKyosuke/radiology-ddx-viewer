@@ -1,0 +1,38 @@
+{
+  "disease_id": "marchiafava_bignami_disease",
+  "disease_name": {
+    "ja": "Marchiafava-Bignami病",
+    "en": "Marchiafava-Bignami disease"
+  },
+  "query": "Marchiafava Bignami disease MRI imaging",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "39403039",
+      "title": "Marchiafava-Bignami disease.",
+      "journal": "Hong Kong medical journal = Xianggang yi xue za zhi",
+      "year": "2024",
+      "doi": "10.12809/hkmj2310892",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39403039/",
+      "abstract": ""
+    },
+    {
+      "pmid": "29133740",
+      "title": "Marchiafava Bignami disease.",
+      "journal": "Neurology India",
+      "year": "2019",
+      "doi": "10.4103/0028-3886.217948",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29133740/",
+      "abstract": ""
+    },
+    {
+      "pmid": "34979657",
+      "title": "Classical Imaging Finding in Marchiafava Bignami Disease.",
+      "journal": "Neurology India",
+      "year": "2022",
+      "doi": "10.4103/0028-3886.333487",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34979657/",
+      "abstract": ""
+    }
+  ]
+}

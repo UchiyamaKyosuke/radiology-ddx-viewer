@@ -1,0 +1,350 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "reversible_cerebral_vasoconstriction_syndrome",
+  "disease_name": {
+    "ja": "可逆性脳血管攣縮症候群",
+    "en": "Reversible cerebral vasoconstriction syndrome"
+  },
+  "disease_aliases": {
+    "ja": [
+      "RCVS"
+    ],
+    "en": [
+      "RCVS"
+    ]
+  },
+  "clinical": {
+    "overview": "雷鳴頭痛を特徴とする可逆性多発脳血管攣縮。MRA/CTAで数珠状狭窄、合併するSAHやPRESを評価する。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "female",
+      "predilection": "female_predominant",
+      "summary": "女性に多い傾向がある。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 60,
+      "peak_decade": "若年〜中年",
+      "summary": "若年〜中年成人で重要。"
+    }
+  },
+  "keywords": [
+    "thunderclap headache",
+    "beading",
+    "vasoconstriction"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "thunderclap_headache_vasoconstriction"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "RCVSはCTでくも膜下出血や脳内出血、梗塞を確認することがある。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "reversible_cerebral_vasoconstriction_syndrome_ct_001",
+              "finding_code": "finding:ct_hyperattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_convexity",
+                "laterality": "unknown"
+              },
+              "target": "hemorrhagic_component",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "円蓋部くも膜下出血を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_hyperattenuation",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "reversible_cerebral_vasoconstriction_syndrome_ct_non_contrast_ct_hyperattenuation_01",
+              "finding_code": "finding:ct_hyperattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "凸面くも膜下出血や脳内出血を伴う場合、CTで高吸収を示す。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRA/CTAで多発性分節状狭窄、PRES様浮腫、梗塞/出血合併を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "MRA_TOF"
+          },
+          "findings": [
+            {
+              "finding_id": "reversible_cerebral_vasoconstriction_syndrome_mri_002",
+              "finding_code": "finding:arterial_stenosis_or_occlusion",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRA_TOF"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "cerebral_vessel",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "beading"
+              ],
+              "finding_text": "多発分節状の血管狭窄を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:arterial_stenosis_or_occlusion",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "reversible_cerebral_vasoconstriction_syndrome_mri_mra_tof_arterial_stenosis_or_occlusion_01",
+              "finding_code": "finding:arterial_stenosis_or_occlusion",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRA_TOF"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "MRA/CTAで多発性分節状の血管狭窄を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": [
+                "string of beads"
+              ]
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "reversible_cerebral_vasoconstriction_syndrome_mri_003",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "PRES様の浮腫性FLAIR高信号を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:flair_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "reversible_cerebral_vasoconstriction_syndrome_mri_flair_flair_hyperintensity_01",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "PRES様の皮質下FLAIR高信号を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 19811796, 39462574, 41195281）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "reversible_cerebral_vasoconstriction_syndrome_ct_001",
+          "reversible_cerebral_vasoconstriction_syndrome_mri_002",
+          "reversible_cerebral_vasoconstriction_syndrome_mri_003"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_19811796",
+          "pmid_39462574",
+          "pmid_41195281"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "reversible_cerebral_vasoconstriction_syndrome_mri_mra_tof_arterial_stenosis_or_occlusion_01",
+          "reversible_cerebral_vasoconstriction_syndrome_mri_flair_flair_hyperintensity_01",
+          "reversible_cerebral_vasoconstriction_syndrome_ct_non_contrast_ct_hyperattenuation_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_19811796",
+      "type": "journal_article",
+      "title": "[Reversible cerebral vasoconstriction syndrome].",
+      "authors": [],
+      "journal": "Revue neurologique",
+      "year": "2010",
+      "pmid": "19811796",
+      "doi": "10.1016/j.neurol.2009.07.019",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19811796/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_39462574",
+      "type": "journal_article",
+      "title": "Reversible Cerebral Vasoconstriction Syndrome without Headache.",
+      "authors": [],
+      "journal": "The journal of medical investigation : JMI",
+      "year": "2024",
+      "pmid": "39462574",
+      "doi": "10.2152/jmi.71.323",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39462574/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_41195281",
+      "type": "journal_article",
+      "title": "Reversible cerebral vasoconstriction syndrome-related headache and delayed cerebral infarction: a mini review.",
+      "authors": [],
+      "journal": "Frontiers in neuroscience",
+      "year": "2025",
+      "pmid": "41195281",
+      "doi": "10.3389/fnins.2025.1698056",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41195281/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": []
+}

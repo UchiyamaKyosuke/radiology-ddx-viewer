@@ -1,0 +1,301 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "dementia_with_lewy_bodies_mri_pattern",
+  "disease_name": {
+    "ja": "レビー小体型認知症MRIパターン",
+    "en": "Dementia with Lewy bodies MRI pattern"
+  },
+  "disease_aliases": {
+    "ja": [
+      "レビー小体型認知症MRIパターン"
+    ],
+    "en": [
+      "Dementia with Lewy bodies MRI pattern"
+    ]
+  },
+  "clinical": {
+    "overview": "レビー小体型認知症MRIパターン (Dementia with Lewy bodies MRI pattern) は dementia pattern の文脈で鑑別に挙がる脳疾患。臨床像とCT/MRI所見の分布を組み合わせて評価する。",
+    "treatment": "治療方針は病型、重症度、基礎疾患、病理・検査結果により異なるため、ここでは画像診断上の鑑別整理を目的とする。",
+    "epidemiology": "頻度と好発年齢は代表的な傾向として記載し、個別症例では臨床背景と検査所見を合わせて判断する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "臨床背景により変動するが、代表的な疫学傾向を記載。"
+    },
+    "age": {
+      "typical_min": 50,
+      "typical_max": 100,
+      "peak_decade": "高齢者",
+      "summary": "代表的な発症年齢帯を記載。"
+    }
+  },
+  "keywords": [
+    "DLB"
+  ],
+  "frequency": {
+    "label": "common",
+    "prevalence_rank": 3,
+    "basis": "differential_importance",
+    "evidence_level": "public_review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "dementia pattern"
+    },
+    "summary": "dementia pattern の鑑別として重要。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "レビー小体型認知症MRIパターン のCTでは密度変化、石灰化、出血、mass effect、水頭症などを確認する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:ct_isoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "レビー小体型認知症MRIパターン ではCTで萎縮や二次的変化を評価する。",
+              "typicality": "common",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.85,
+                "matched_concept_id": "finding:ct_isoattenuation",
+                "alternatives": []
+              },
+              "finding_id": "dementia_with_lewy_bodies_mri_pattern_ct_001"
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "レビー小体型認知症MRIパターン のMRIではT1/T2/FLAIR、DWI/ADC、造影、SWI、灌流、MRSを組み合わせて病変の性状と分布を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "レビー小体型認知症MRIパターン ではFLAIRで白質変化や萎縮に伴う周囲変化を評価する。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.85,
+                "matched_concept_id": "finding:flair_hyperintensity",
+                "alternatives": []
+              },
+              "finding_id": "dementia_with_lewy_bodies_mri_pattern_mri_002"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:ventriculomegaly",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "レビー小体型認知症MRIパターン では萎縮に伴う脳室拡大を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.85,
+                "matched_concept_id": "finding:ventriculomegaly",
+                "alternatives": []
+              },
+              "finding_id": "dementia_with_lewy_bodies_mri_pattern_mri_003"
+            },
+            {
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "レビー小体型認知症MRIパターン では疾患特異的なT2信号変化を示すことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.85,
+                "matched_concept_id": "finding:t2_hyperintensity",
+                "alternatives": []
+              },
+              "finding_id": "dementia_with_lewy_bodies_mri_pattern_mri_004"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:enhancement_absent",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "レビー小体型認知症MRIパターン は通常、腫瘤様造影効果を示さない。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.85,
+                "matched_concept_id": "finding:enhancement_absent",
+                "alternatives": []
+              },
+              "finding_id": "dementia_with_lewy_bodies_mri_pattern_mri_005"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "Public source packet was used for broad Phase1 draft expansion.",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "dementia_with_lewy_bodies_mri_pattern_ct_001",
+          "dementia_with_lewy_bodies_mri_pattern_mri_002",
+          "dementia_with_lewy_bodies_mri_pattern_mri_003",
+          "dementia_with_lewy_bodies_mri_pattern_mri_004",
+          "dementia_with_lewy_bodies_mri_pattern_mri_005"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_brain_batch5_20260628"
+        ],
+        "confidence": "low"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "public_brain_batch5_20260628",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology source packet for brain draft batch 5",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, CDC, and open-access review articles where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "Phase1 batch5 broad brain-disease draft. Requires physician review before approval."
+  },
+  "curation": {
+    "auto_update_allowed": true,
+    "locked_fields": [],
+    "notes": ""
+  },
+  "provenance": {
+    "created_by": "codex_public_source_review",
+    "model": "codex",
+    "created_at": "2026-06-28T09:55:00.185Z",
+    "prompt_version": "brain_batch5_v0.1",
+    "source_query": "Dementia with Lewy bodies MRI pattern MRI CT imaging findings"
+  },
+  "updated_at": "2026-07-05T05:22:40.971Z",
+  "content_hash": "",
+  "raw_findings": []
+}

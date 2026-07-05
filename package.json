@@ -1,0 +1,33 @@
+{
+  "name": "radiology-ddx-starter",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Offline-first radiology differential diagnosis starter",
+  "scripts": {
+    "validate": "node scripts/validate.js",
+    "doctor": "node scripts/doctor.js",
+    "backup": "node scripts/backup-data.js",
+    "draft:literature": "node scripts/literature-to-draft.js",
+    "draft:sample": "node scripts/generate-draft.js data/sources/draft-inputs/mucinous_cystadenoma.source.json",
+    "draft:brain-batch5": "node scripts/curate-brain-drafts-batch5.js",
+    "draft:general-batch6": "node scripts/curate-general-drafts-batch6.js",
+    "draft:general-batch7": "node scripts/curate-general-drafts-batch7.js",
+    "draft:general-batch8": "node scripts/curate-general-drafts-batch8.js",
+    "draft:general-batch9": "node scripts/curate-general-drafts-batch9.js",
+    "concepts:candidates": "node scripts/extract-concept-candidates.js",
+    "dictionary:maintenance": "node scripts/dictionary-maintenance.js",
+    "audit:raw-findings": "node scripts/audit-raw-findings.js",
+    "pc:admin": "node apps/pc-admin/pc-admin.js",
+    "pc:gui": "powershell -NoProfile -ExecutionPolicy Bypass -File apps/pc-admin/pc-admin-gui.ps1",
+    "pc:status": "node apps/pc-admin/pc-admin.js status",
+    "serve:viewer": "node scripts/serve-viewer.js",
+    "export:mobile": "node scripts/export-mobile-pack.js",
+    "validate:mobile-pack": "node scripts/validate-mobile-pack.js exports/mobile/radiology-ddx-pack.rddx",
+    "migrate:demographics": "node scripts/migrations/add-demographics.js",
+    "migrate:sex-predilection": "node scripts/migrations/add-sex-predilection.js",
+    "migrate:card-metadata": "node scripts/migrations/normalize-card-metadata.js",
+    "build:index": "node scripts/build-index.js",
+    "build": "node scripts/validate.js && node scripts/build-index.js",
+    "release:mobile": "node scripts/validate.js && node scripts/build-index.js && node scripts/export-mobile-pack.js && node scripts/validate-mobile-pack.js exports/mobile/radiology-ddx-pack.rddx"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "disease_id": "hypophysitis",
+  "disease_name": {
+    "ja": "下垂体炎",
+    "en": "Hypophysitis"
+  },
+  "query": "hypophysitis AND (MRI OR imaging)",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "34528683",
+      "title": "Hypophysitis, the Growing Spectrum of a Rare Pituitary Disease.",
+      "journal": "The Journal of clinical endocrinology and metabolism",
+      "year": "2022",
+      "doi": "10.1210/clinem/dgab672",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34528683/",
+      "abstract": ""
+    },
+    {
+      "pmid": "34238458",
+      "title": "Autoimmune diabetes insipidus.",
+      "journal": "Handbook of clinical neurology",
+      "year": "2021",
+      "doi": "10.1016/B978-0-12-820683-6.00015-4",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34238458/",
+      "abstract": ""
+    },
+    {
+      "pmid": "33040852",
+      "title": "Neuroimaging of the Pituitary Gland: Practical Anatomy and Pathology.",
+      "journal": "Radiologic clinics of North America",
+      "year": "2020",
+      "doi": "10.1016/j.rcl.2020.07.009",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33040852/",
+      "abstract": ""
+    }
+  ]
+}

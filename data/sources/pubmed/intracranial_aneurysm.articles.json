@@ -1,0 +1,38 @@
+{
+  "disease_id": "intracranial_aneurysm",
+  "disease_name": {
+    "ja": "脳動脈瘤",
+    "en": "Intracranial aneurysm"
+  },
+  "query": "intracranial aneurysm CTA MRA MRI imaging",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "39443148",
+      "title": "A Review of Intracranial Aneurysm Imaging Modalities, from CT to State-of-the-Art MR.",
+      "journal": "AJNR. American journal of neuroradiology",
+      "year": "2025",
+      "doi": "10.3174/ajnr.A8549",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39443148/",
+      "abstract": ""
+    },
+    {
+      "pmid": "28215105",
+      "title": "Advanced vascular imaging.",
+      "journal": "Vascular medicine (London, England)",
+      "year": "2018",
+      "doi": "10.1177/1358863X16681666",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28215105/",
+      "abstract": ""
+    },
+    {
+      "pmid": "17471651",
+      "title": "[Imaging of intracranial aneurysm--MRA, CTA, and-3D angiography].",
+      "journal": "Nihon rinsho. Japanese journal of clinical medicine",
+      "year": "2007",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17471651/",
+      "abstract": ""
+    }
+  ]
+}

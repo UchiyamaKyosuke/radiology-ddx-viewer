@@ -1,0 +1,412 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "pineoblastoma",
+  "disease_name": {
+    "ja": "松果体芽腫",
+    "en": "Pineoblastoma"
+  },
+  "disease_aliases": {
+    "ja": [
+      "松果体芽腫"
+    ],
+    "en": [
+      "Pineoblastoma"
+    ]
+  },
+  "clinical": {
+    "overview": "小児に多い悪性松果体部腫瘍。高細胞性充実性腫瘤としてDWI高信号/ADC低値、水頭症、播種を伴いやすい。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 18,
+      "peak_decade": "小児",
+      "summary": "小児で重要。"
+    }
+  },
+  "keywords": [
+    "pineal",
+    "high cellularity",
+    "CSF dissemination"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "pineal_region_mass"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "松果体芽腫はCTで高吸収の松果体部腫瘤、水頭症を確認する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "pineoblastoma_ct_001",
+              "finding_code": "finding:ct_hyperattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "pineal_gland",
+                "subregion": "pineal_region",
+                "laterality": "unknown"
+              },
+              "target": "pineal_mass",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "高細胞性によりCT高吸収を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_hyperattenuation",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "pineoblastoma_ct_non_contrast_ct_hyperattenuation_01",
+              "finding_code": "finding:ct_hyperattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "高細胞性腫瘍としてCTで高吸収を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは高細胞性を反映した拡散制限、不均一造影、浸潤/播種、水頭症を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_id": "pineoblastoma_mri_002",
+              "finding_code": "finding:dwi_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "pineal_gland",
+                "subregion": "pineal_region",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "DWI高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:dwi_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "pineoblastoma_mri_dwi_diffusion_restriction_present_01",
+              "finding_code": "finding:diffusion_restriction_present",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "DWI高信号/ADC低値を示しやすい。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "ADC"
+          },
+          "findings": [
+            {
+              "finding_id": "pineoblastoma_mri_003",
+              "finding_code": "finding:adc_low",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "ADC"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "pineal_gland",
+                "subregion": "pineal_region",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "ADC低値を伴う。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:adc_low",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "pineoblastoma_mri_004",
+              "finding_code": "finding:enhancing_solid_component",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "pineal_gland",
+                "subregion": "pineal_region",
+                "laterality": "unknown"
+              },
+              "target": "pineal_mass",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "充実部に造影効果を伴う。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:enhancing_solid_component",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "pineoblastoma_mri_contrast_enhanced_t1wi_mild_enhancement_01",
+              "finding_code": "finding:mild_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "造影効果は不均一なことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "pineoblastoma_mri_t2wi_hydrocephalus_01",
+              "finding_code": "finding:hydrocephalus",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "中脳水道閉塞により水頭症を伴うことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 1392580, 20818311, 7501100）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "pineoblastoma_ct_001",
+          "pineoblastoma_mri_002",
+          "pineoblastoma_mri_003",
+          "pineoblastoma_mri_004"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_1392580",
+          "pmid_20818311",
+          "pmid_7501100"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "pineoblastoma_ct_non_contrast_ct_hyperattenuation_01",
+          "pineoblastoma_mri_dwi_diffusion_restriction_present_01",
+          "pineoblastoma_mri_contrast_enhanced_t1wi_mild_enhancement_01",
+          "pineoblastoma_mri_t2wi_hydrocephalus_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_1392580",
+      "type": "journal_article",
+      "title": "Pineal tumors.",
+      "authors": [],
+      "journal": "Neurosurgery clinics of North America",
+      "year": "1992",
+      "pmid": "1392580",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1392580/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_20818311",
+      "type": "journal_article",
+      "title": "Pineal germinoma.",
+      "authors": [],
+      "journal": "Southern medical journal",
+      "year": "2010",
+      "pmid": "20818311",
+      "doi": "10.1097/SMJ.0b013e3181ebeeff",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20818311/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_7501100",
+      "type": "journal_article",
+      "title": "Pineoblastoma in adults.",
+      "authors": [],
+      "journal": "Neurosurgery",
+      "year": "1996",
+      "pmid": "7501100",
+      "doi": "10.1227/00006123-199509000-00003",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7501100/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": []
+}

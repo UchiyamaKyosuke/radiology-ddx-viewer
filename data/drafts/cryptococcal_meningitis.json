@@ -1,0 +1,397 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "cryptococcal_meningitis",
+  "disease_name": {
+    "ja": "クリプトコッカス髄膜炎",
+    "en": "Cryptococcal meningitis"
+  },
+  "disease_aliases": {
+    "ja": [
+      "クリプトコッカス髄膜脳炎"
+    ],
+    "en": [
+      "Cryptococcal meningoencephalitis"
+    ]
+  },
+  "clinical": {
+    "overview": "免疫不全患者で重要な真菌性髄膜炎。髄膜造影、Virchow-Robin腔拡大様のゼラチン様偽嚢胞、水頭症を示すことがある。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 80,
+      "peak_decade": "成人",
+      "summary": "成人で重要。"
+    }
+  },
+  "keywords": [
+    "gelatinous pseudocyst",
+    "meningitis",
+    "hydrocephalus"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "meningitis_immunocompromised"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "クリプトコッカス髄膜炎はCTで水頭症や基底槽病変を確認することがある。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "cryptococcal_meningitis_ct_001",
+              "finding_code": "finding:hydrocephalus",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "髄液循環障害により水頭症を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:hydrocephalus",
+                "alternatives": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは髄膜造影、Virchow-Robin腔拡大、ゼラチン様偽嚢胞、基底核病変、水頭症を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "cryptococcal_meningitis_mri_002",
+              "finding_code": "finding:leptomeningeal_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "meninges",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "軟髄膜造影を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:leptomeningeal_enhancement",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "cryptococcal_meningitis_mri_contrast_enhanced_t1wi_leptomeningeal_enhancement_01",
+              "finding_code": "finding:leptomeningeal_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "造影T1WIで軟髄膜造影を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "cryptococcal_meningitis_mri_003",
+              "finding_code": "finding:csf_like_signal",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "basal_ganglia",
+                "laterality": "unknown"
+              },
+              "target": "cystic_component",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "基底核周囲に嚢胞様高信号病変を示すことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:csf_like_signal",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "cryptococcal_meningitis_mri_t2wi_hydrocephalus_01",
+              "finding_code": "finding:hydrocephalus",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "水頭症を合併することがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "cryptococcal_meningitis_mri_flair_basal_ganglia_involvement_01",
+              "finding_code": "finding:basal_ganglia_involvement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "基底核周囲のゼラチン様偽嚢胞/拡大血管周囲腔を認めることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "cryptococcal_meningitis_mri_flair_flair_hyperintensity_01",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "髄膜炎や脳実質病変でFLAIR高信号を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 33788511, 27786246, 15838017）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "cryptococcal_meningitis_ct_001",
+          "cryptococcal_meningitis_mri_002",
+          "cryptococcal_meningitis_mri_003"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_33788511",
+          "pmid_27786246",
+          "pmid_15838017"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "cryptococcal_meningitis_mri_contrast_enhanced_t1wi_leptomeningeal_enhancement_01",
+          "cryptococcal_meningitis_mri_flair_basal_ganglia_involvement_01",
+          "cryptococcal_meningitis_mri_t2wi_hydrocephalus_01",
+          "cryptococcal_meningitis_mri_flair_flair_hyperintensity_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_33788511",
+      "type": "journal_article",
+      "title": "Cerebrospinal Fluid Analysis.",
+      "authors": [],
+      "journal": "American family physician",
+      "year": "2021",
+      "pmid": "33788511",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33788511/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_27786246",
+      "type": "journal_article",
+      "title": "HIV-associated opportunistic CNS infections: pathophysiology, diagnosis and treatment.",
+      "authors": [],
+      "journal": "Nature reviews. Neurology",
+      "year": "2018",
+      "pmid": "27786246",
+      "doi": "10.1038/nrneurol.2016.149",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27786246/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_15838017",
+      "type": "journal_article",
+      "title": "Cryptococcal meningitis.",
+      "authors": [],
+      "journal": "British medical bulletin",
+      "year": "2005",
+      "pmid": "15838017",
+      "doi": "10.1093/bmb/ldh043",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15838017/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": [
+    {
+      "raw_finding_id": "cryptococcal_meningitis_raw_keyword_gelatinous_pseudocyst",
+      "modality_text": "MRI",
+      "acquisition_text": "",
+      "anatomy_text": "",
+      "target_text": "",
+      "finding_text": "キーワード/所見として \"gelatinous pseudocyst\" を保持。",
+      "interpretation": "辞書対応済み構造化欄から漏れる可能性があるため、Phase1自由記載として保存。",
+      "source_ids": [
+        "public_raw_findings_audit_20260705"
+      ],
+      "mapping": {
+        "status": "unmapped",
+        "candidate_finding_code": "finding:gelatinous_pseudocyst",
+        "candidate_acquisition_code": "",
+        "candidate_target": "",
+        "notes": "Added during raw_findings audit to preserve information that may be lost by dictionary-only structured fields."
+      },
+      "review_status": "needs_mapping"
+    }
+  ]
+}

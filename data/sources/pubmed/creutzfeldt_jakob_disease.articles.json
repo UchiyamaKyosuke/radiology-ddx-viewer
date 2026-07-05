@@ -1,0 +1,38 @@
+{
+  "disease_id": "creutzfeldt_jakob_disease",
+  "disease_name": {
+    "ja": "Creutzfeldt-Jakob病",
+    "en": "Creutzfeldt-Jakob disease"
+  },
+  "query": "Creutzfeldt Jakob disease MRI DWI imaging",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "28028861",
+      "title": "Creutzfeldt-Jakob disease.",
+      "journal": "Neuropathology : official journal of the Japanese Society of Neuropathology",
+      "year": "2017",
+      "doi": "10.1111/neup.12355",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28028861/",
+      "abstract": ""
+    },
+    {
+      "pmid": "33762465",
+      "title": "[Creutzfeldt-Jakob Disease].",
+      "journal": "No shinkei geka. Neurological surgery",
+      "year": "2021",
+      "doi": "10.11477/mf.1436204406",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33762465/",
+      "abstract": ""
+    },
+    {
+      "pmid": "28076012",
+      "title": "Imaging of Creutzfeldt-Jakob Disease: Imaging Patterns and Their Differential Diagnosis.",
+      "journal": "Radiographics : a review publication of the Radiological Society of North America, Inc",
+      "year": "2017",
+      "doi": "10.1148/rg.2017160075",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28076012/",
+      "abstract": ""
+    }
+  ]
+}

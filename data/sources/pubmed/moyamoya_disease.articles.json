@@ -1,0 +1,38 @@
+{
+  "disease_id": "moyamoya_disease",
+  "disease_name": {
+    "ja": "もやもや病",
+    "en": "Moyamoya disease"
+  },
+  "query": "moyamoya disease MRI MRA imaging",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "40397837",
+      "title": "Noninvasive Assessment of the Risk Features of Hemorrhage in Moyamoya Disease Using 7T MRI.",
+      "journal": "Neurology",
+      "year": "2025",
+      "doi": "10.1212/WNL.0000000000213617",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40397837/",
+      "abstract": ""
+    },
+    {
+      "pmid": "40789454",
+      "title": "5.0T MRA techniques for evaluating Moyamoya disease: 4D-ASL-MRA vs. 3D-TOF-MRA.",
+      "journal": "Journal of neuroradiology = Journal de neuroradiologie",
+      "year": "2025",
+      "doi": "10.1016/j.neurad.2025.101376",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40789454/",
+      "abstract": ""
+    },
+    {
+      "pmid": "35183659",
+      "title": "Non-contrast hemodynamic imaging of Moyamoya disease with MR fingerprinting ASL: A feasibility study.",
+      "journal": "Magnetic resonance imaging",
+      "year": "2022",
+      "doi": "10.1016/j.mri.2022.02.006",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35183659/",
+      "abstract": ""
+    }
+  ]
+}

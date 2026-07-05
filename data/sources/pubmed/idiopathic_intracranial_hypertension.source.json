@@ -1,0 +1,51 @@
+{
+  "disease_id": "idiopathic_intracranial_hypertension",
+  "disease_name": {
+    "ja": "特発性頭蓋内圧亢進症",
+    "en": "Idiopathic intracranial hypertension"
+  },
+  "disease_aliases": {
+    "ja": [
+      "IIH"
+    ],
+    "en": [
+      "IIH"
+    ]
+  },
+  "clinical": {
+    "overview": "明らかな占拠性病変なしに頭蓋内圧亢進を来す。視神経鞘拡大、後部強膜扁平化、empty sella、横静脈洞狭窄を評価する。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "female",
+      "predilection": "female_predominant",
+      "summary": "若年〜中年女性に多い。"
+    },
+    "age": {
+      "typical_min": 15,
+      "typical_max": 50,
+      "peak_decade": "若年〜中年女性",
+      "summary": "若年〜中年女性で重要。"
+    }
+  },
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 2,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "papilledema_headache"
+    },
+    "summary": "該当する画像パターンで重要な鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

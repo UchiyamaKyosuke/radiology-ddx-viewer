@@ -1,0 +1,38 @@
+{
+  "disease_id": "ganglioglioma",
+  "disease_name": {
+    "ja": "神経節膠腫",
+    "en": "Ganglioglioma"
+  },
+  "query": "ganglioglioma AND (MRI OR CT OR imaging)",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "32969749",
+      "title": "Spinal anaplastic ganglioglioma.",
+      "journal": "British journal of neurosurgery",
+      "year": "2023",
+      "doi": "10.1080/02688697.2020.1823936",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32969749/",
+      "abstract": ""
+    },
+    {
+      "pmid": "26004698",
+      "title": "Multicentric Low-Grade Gliomas.",
+      "journal": "World neurosurgery",
+      "year": "2016",
+      "doi": "10.1016/j.wneu.2015.05.021",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26004698/",
+      "abstract": ""
+    },
+    {
+      "pmid": "34823414",
+      "title": "Negative or positive imaging: ganglioglioma in a boy with epilepsy.",
+      "journal": "British journal of neurosurgery",
+      "year": "2024",
+      "doi": "10.1080/02688697.2021.2005776",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34823414/",
+      "abstract": ""
+    }
+  ]
+}

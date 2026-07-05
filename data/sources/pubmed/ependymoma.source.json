@@ -1,0 +1,151 @@
+{
+  "disease_id": "ependymoma",
+  "disease_name": {
+    "ja": "上衣腫",
+    "en": "Ependymoma"
+  },
+  "disease_aliases": {
+    "ja": [],
+    "en": [
+      "Ependymoma"
+    ]
+  },
+  "clinical": {
+    "overview": "Ependymoma literature draft generated from PubMed abstracts. Codex review is required.",
+    "treatment": "Not extracted. Codex review is required.",
+    "epidemiology": "Not extracted. Codex review is required."
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "unknown"
+      ],
+      "predominance": "unknown",
+      "predilection": "unknown",
+      "summary": "Not extracted."
+    },
+    "age": {
+      "typical_min": null,
+      "typical_max": null,
+      "peak_decade": "未確認",
+      "summary": "好発年齢は未確認。"
+    }
+  },
+  "keywords": [],
+  "frequency": {
+    "label": "unknown",
+    "summary": "Not extracted."
+  },
+  "imaging": {},
+  "findings": [
+    {
+      "finding_text": "磁化率低信号/blooming",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "SWI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "signal": "hypointense",
+        "pattern": "blooming"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    }
+  ],
+  "references": [
+    {
+      "source_id": "pmid_27889018",
+      "type": "journal_article",
+      "title": "Posterior Fossa Tumors.",
+      "authors": [],
+      "journal": "Neuroimaging clinics of North America",
+      "year": "2017",
+      "pmid": "27889018",
+      "doi": "10.1016/j.nic.2016.08.001",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27889018/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_12691623",
+      "type": "journal_article",
+      "title": "Ependymomas.",
+      "authors": [],
+      "journal": "Current neurology and neuroscience reports",
+      "year": "2003",
+      "pmid": "12691623",
+      "doi": "10.1007/s11910-003-0078-x",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12691623/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_30100960",
+      "type": "journal_article",
+      "title": "[Not Available].",
+      "authors": [],
+      "journal": "The Pan African medical journal",
+      "year": "2018",
+      "pmid": "30100960",
+      "doi": "10.11604/pamj.2018.29.206.10723",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30100960/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_39287805",
+      "type": "journal_article",
+      "title": "Supratentorial and Infratentorial Ependymoma.",
+      "authors": [],
+      "journal": "Advances and technical standards in neurosurgery",
+      "year": "2024",
+      "pmid": "39287805",
+      "doi": "10.1007/978-3-031-67077-0_7",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39287805/",
+      "license": ""
+    }
+  ],
+  "source_query": "ependymoma[Title/Abstract] AND (MRI[Title/Abstract] OR CT[Title/Abstract] OR imaging[Title/Abstract])",
+  "source_articles": [
+    {
+      "pmid": "27889018",
+      "title": "Posterior Fossa Tumors.",
+      "journal": "Neuroimaging clinics of North America",
+      "year": "2017",
+      "doi": "10.1016/j.nic.2016.08.001",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27889018/",
+      "abstract": "Pediatric brain tumors are the leading cause of death from solid tumors in childhood. The most common posterior fossa tumors in children are medulloblastoma, atypical teratoid/rhabdoid tumor, cerebellar pilocytic astrocytoma, ependymoma, and brainstem glioma. Location, and imaging findings on computed tomography (CT) and conventional MR (cMR) imaging may provide important clues to the most likely diagnosis. Moreover, information obtained from advanced MR imaging techniques increase diagnostic confidence and help distinguish between different histologic tumor types. Here we discuss the most common posterior fossa tumors in children, including typical imaging findings on CT, cMR imaging, and advanced MR imaging studies."
+    },
+    {
+      "pmid": "12691623",
+      "title": "Ependymomas.",
+      "journal": "Current neurology and neuroscience reports",
+      "year": "2003",
+      "doi": "10.1007/s11910-003-0078-x",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12691623/",
+      "abstract": "Ependymomas are uncommon neoplasms of the central nervous system (CNS), and as a consequence, few randomized, clinical trials have been performed, thereby limiting treatment guidelines. A review of the literature would permit the following conclusions regarding treatment. The best management of newly diagnosed ependymoma entails a complete resection corroborated by postoperative contrast-enhanced magnetic resonance imaging (MRI). If an incomplete resection is documented, a second attempt at gross total resection should be considered, given the prognostic significance of complete resection. Small volume residual disease is best managed with involved-field radiotherapy unless postoperative staging (cerebrospinal fluid cytology, neuraxis MRI) documents metastatic disease, which is best managed by craniospinal irradiation. The role of chemotherapy is uncertain and in general would be reserved for patients having previously failed surgery and radiotherapy. Disease-free survival following recurrence is unusual (<15% at 5 years) and suggests intensification of initial adjuvant treatment may best prevent relapse."
+    },
+    {
+      "pmid": "30100960",
+      "title": "[Not Available].",
+      "journal": "The Pan African medical journal",
+      "year": "2018",
+      "doi": "10.11604/pamj.2018.29.206.10723",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30100960/",
+      "abstract": " Chronic hydrocephalus associated with a tumor of the conus medullaris and/or of the cauda equina is extremely rare. We here report two cases of medullary tumor revealed by the triad: dementia, difficulty walking and urinary incontinence. Magnetic resonance imaging (MRI) of the cerebrospinal fluid showed communicating hydrocephalus and intradural spinal tumors at the level of the conus medullaris and of the cauda equina. Surgical resection of a benign schwannoma and of an ependymoma allowed the resolution of the clinical symptomatology due to hydrocephalus without implantation of ventricular shunt. A dozen cases of dementia and hydrocephalus associated to spinal tumor have been reported. A variety of approaches have been proposed to explain this association but the exact pathophysiology is not accurately known. \nL&#x2019;hydroc&#xe9;phalie chronique associ&#xe9;e &#xe0; une tumeur du c&#xf4;ne m&#xe9;dullaire et /ou de la queue de cheval est extr&#xea;mement rare. Nous pr&#xe9;sentons deux patients porteurs d&#x2019;une tumeur m&#xe9;dullaire r&#xe9;v&#xe9;l&#xe9;e par la triade: d&#xe9;mence, troubles de la marche et incontinence urinaire. L&#x2019;imagerie par r&#xe9;sonance magn&#xe9;tique (IRM) c&#xe9;r&#xe9;brospinale objectivait une hydroc&#xe9;phalie communicante et une tumeur intradurale si&#xe9;geant au niveau du c&#xf4;ne m&#xe9;dullaire et de la queue de cheval. L&#x2019;ex&#xe9;r&#xe8;se chirurgicale d&#x2019;un schwannome b&#xe9;nin et d&#x2019;un &#xe9;pendymome a permis la r&#xe9;solution de la symptomatologie clinique due &#xe0; l&#x2019;hydroc&#xe9;phalie sans proc&#xe9;der &#xe0; un shunt ventriculaire. Une dizaine de cas de d&#xe9;mence et d&#x2019;hydroc&#xe9;phalie accompagnant une tumeur spinale sont rapport&#xe9;es. Une vari&#xe9;t&#xe9; de m&#xe9;canismes a &#xe9;t&#xe9; propos&#xe9;e pour expliquer cette association mais la physiopathologie exacte reste mal connue."
+    },
+    {
+      "pmid": "39287805",
+      "title": "Supratentorial and Infratentorial Ependymoma.",
+      "journal": "Advances and technical standards in neurosurgery",
+      "year": "2024",
+      "doi": "10.1007/978-3-031-67077-0_7",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39287805/",
+      "abstract": "Ependymomas are the third most common intracranial tumor in children, presenting in both the supratentorial and infratentorial compartments. They may present in infants, young children, and adolescents with symptoms depending on size, location, and the age of the patient. The ideal imaging for evaluation and treatment is MRI. This is crucial for preoperative evaluation and planning, as well as postoperative assessment and evaluating the efficacy of treatment. Essentially without exception, aggressive surgery aimed at complete resection is the initial and most important factor in the long-term outcome of all these children. Histopathologic diagnosis for intracranial pediatric ependymoma has been narrowed to grade II and grade III, no longer characterized as classic and anaplastic. Subsequent conformal photon or proton beam irradiation is an established post-surgical therapy, with solid evidence that it benefits survival and offers lower toxicity to the normal brain of the young child. Although chemotherapeutic treatment has not been generally impactful, immunotherapeutic interventions may be on the horizon. Updated molecular subgrouping of ependymoma is changing the post-resection approach of these tumors with regard to both treatment and outcome. Excluding spinal ependymoma and subependymoma, there are four subtypes that are defined by genetic characteristics, two found in the supratentorial compartment, ST-EPN-YAP1 and ST-EPN-ZFTA, and two in the posterior fossa, PF-EPN-A and PF-EPN-B. Younger children harboring ZFTA fusion-positive supratentorial and type A posterior fossa tumors, regardless of histology, tend toward the poorest outcomes. On the contrary, older children with supratentorial YAP1 fusion-positive ependymomas and type B posterior fossa tumors may survive with surgery alone. The paradigm shift regarding the behavior of the various childhood ependymoma subtypes will hopefully lead to targeted, individualized therapies and improved outcomes."
+    }
+  ]
+}

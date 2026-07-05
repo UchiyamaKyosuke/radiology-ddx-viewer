@@ -1,0 +1,38 @@
+{
+  "disease_id": "leigh_syndrome",
+  "disease_name": {
+    "ja": "Leigh症候群",
+    "en": "Leigh syndrome"
+  },
+  "query": "Leigh syndrome brain MRI imaging",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "23772060",
+      "title": "A guide to diagnosis and treatment of Leigh syndrome.",
+      "journal": "Journal of neurology, neurosurgery, and psychiatry",
+      "year": "2014",
+      "doi": "10.1136/jnnp-2012-304426",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23772060/",
+      "abstract": ""
+    },
+    {
+      "pmid": "32684373",
+      "title": "MEGDEL Syndrome.",
+      "journal": "Pediatric neurology",
+      "year": "2021",
+      "doi": "10.1016/j.pediatrneurol.2020.03.009",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32684373/",
+      "abstract": ""
+    },
+    {
+      "pmid": "39322395",
+      "title": "Primary mitochondrial diseases.",
+      "journal": "Handbook of clinical neurology",
+      "year": "2024",
+      "doi": "10.1016/B978-0-323-99209-1.00004-1",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39322395/",
+      "abstract": ""
+    }
+  ]
+}

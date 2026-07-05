@@ -1,0 +1,360 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "branchial_cleft_cyst",
+  "disease_name": {
+    "ja": "鰓裂嚢胞",
+    "en": "Branchial cleft cyst"
+  },
+  "disease_aliases": {
+    "ja": [],
+    "en": []
+  },
+  "clinical": {
+    "overview": "鰓裂嚢胞は側頸部嚢胞で重要な鑑別となる疾患で、臨床背景と画像分布を組み合わせて評価する。",
+    "treatment": "治療方針は病型、病期、合併症、全身状態に応じて決定する。",
+    "epidemiology": "頻度と好発年齢は病型・背景疾患により異なる。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "代表的な性差傾向を記録。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 60,
+      "peak_decade": "若年-成人",
+      "summary": "代表的な発症・診断年齢帯を記録。"
+    }
+  },
+  "keywords": [
+    "Branchial cleft cyst",
+    "鰓裂嚢胞",
+    "lateral neck cyst",
+    "second branchial cleft"
+  ],
+  "frequency": {
+    "label": "common",
+    "prevalence_rank": 4,
+    "basis": "differential_importance",
+    "evidence_level": "public_review",
+    "context": {
+      "population": "any",
+      "body_region": "head_neck",
+      "clinical_setting": "側頸部嚢胞"
+    },
+    "summary": "側頸部嚢胞 の鑑別での相対頻度と重要度を記録。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "鰓裂嚢胞のCTでは濃度、石灰化、出血、造影効果、周囲変化を評価する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "head_neck",
+                "organ": "soft_tissue",
+                "subregion": "cervical_lymph_node",
+                "laterality": "unknown"
+              },
+              "target": "cystic_component",
+              "modifiers": {},
+              "keywords": [
+                "lateral neck cyst",
+                "second branchial cleft"
+              ],
+              "finding_text": "鰓裂嚢胞はCTで低吸収の嚢胞性病変として見えることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:ct_hypoattenuation",
+                "alternatives": []
+              },
+              "finding_id": "branchial_cleft_cyst_f001"
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "鰓裂嚢胞のMRIでは信号、拡散、造影効果、病変分布を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T1WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:t1_hypointensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "head_neck",
+                "organ": "soft_tissue",
+                "subregion": "cervical_lymph_node",
+                "laterality": "unknown"
+              },
+              "target": "cyst_content",
+              "modifiers": {},
+              "keywords": [
+                "lateral neck cyst",
+                "second branchial cleft"
+              ],
+              "finding_text": "鰓裂嚢胞の液性成分はT1WIで低信号を示すことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:t1_hypointensity",
+                "alternatives": []
+              },
+              "finding_id": "branchial_cleft_cyst_f002"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "head_neck",
+                "organ": "soft_tissue",
+                "subregion": "cervical_lymph_node",
+                "laterality": "unknown"
+              },
+              "target": "cystic_component",
+              "modifiers": {},
+              "keywords": [
+                "lateral neck cyst",
+                "second branchial cleft"
+              ],
+              "finding_text": "鰓裂嚢胞はT2WIで高信号の嚢胞性成分を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:t2_hyperintensity",
+                "alternatives": []
+              },
+              "finding_id": "branchial_cleft_cyst_f003"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:mild_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "head_neck",
+                "organ": "soft_tissue",
+                "subregion": "cervical_lymph_node",
+                "laterality": "unknown"
+              },
+              "target": "cyst_wall",
+              "modifiers": {},
+              "keywords": [
+                "lateral neck cyst",
+                "second branchial cleft"
+              ],
+              "finding_text": "鰓裂嚢胞は壁や隔壁、充実成分に造影効果を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:mild_enhancement",
+                "alternatives": []
+              },
+              "finding_id": "branchial_cleft_cyst_f004"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:diffusion_restriction_absent",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "head_neck",
+                "organ": "soft_tissue",
+                "subregion": "cervical_lymph_node",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "lateral neck cyst",
+                "second branchial cleft"
+              ],
+              "finding_text": "鰓裂嚢胞は単純嚢胞成分では明らかな拡散制限を示さないことが多い。",
+              "typicality": "variable",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:diffusion_restriction_absent",
+                "alternatives": []
+              },
+              "finding_id": "branchial_cleft_cyst_f005"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "raw_findings": [
+    {
+      "raw_finding_id": "branchial_cleft_cyst_raw_001",
+      "modality_text": "CT/MRI/US",
+      "acquisition_text": "疾患に応じた標準撮像",
+      "anatomy_text": "鰓裂嚢胞の典型的な主座",
+      "target_text": "named_sign",
+      "finding_text": "胸鎖乳突筋前縁付近の薄壁嚢胞性病変として見えることが多い。",
+      "interpretation": "構造化辞書では拾い切れない疾患固有の所見・サインとして保存。",
+      "source_ids": [
+        "public_general_batch6_20260705"
+      ],
+      "mapping": {
+        "status": "candidate",
+        "candidate_finding_code": "finding:branchial_cleft_cyst_specific_sign",
+        "candidate_anatomy": {
+          "body_region": "head_neck",
+          "organ": "soft_tissue",
+          "subregion": "cervical_lymph_node",
+          "laterality": "unknown"
+        },
+        "candidate_target": "named_sign",
+        "notes": "Phase 1 raw finding"
+      },
+      "review_status": "needs_mapping"
+    }
+  ],
+  "evidence": {
+    "summary": "NCBI Bookshelf、ACR Appropriateness Criteria、RadiologyInfo、PMC open-access review などの公開情報を参照。",
+    "claim_map": [
+      {
+        "finding_ids": [
+          "branchial_cleft_cyst_f001"
+        ],
+        "source_ids": [
+          "public_general_batch6_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "branchial_cleft_cyst_f002"
+        ],
+        "source_ids": [
+          "public_general_batch6_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "branchial_cleft_cyst_f003"
+        ],
+        "source_ids": [
+          "public_general_batch6_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "branchial_cleft_cyst_f004"
+        ],
+        "source_ids": [
+          "public_general_batch6_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "branchial_cleft_cyst_f005"
+        ],
+        "source_ids": [
+          "public_general_batch6_20260705"
+        ],
+        "support": "public_source_summary"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "public_general_batch6_20260705",
+      "type": "public_source_packet",
+      "title": "Public cross-sectional imaging source packet for whole-body Phase 1 draft batch 6",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, ACR Appropriateness Criteria, RadiologyInfo, and open-access PMC reviews where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "confidence": "medium",
+    "notes": "公開情報に基づく初期整理。"
+  },
+  "curation": {
+    "batch": "general_batch6",
+    "generated_by": "curate-general-drafts-batch6.js"
+  },
+  "provenance": {
+    "source_ids": [
+      "public_general_batch6_20260705"
+    ],
+    "generated_at": "2026-07-05T05:32:09.881Z"
+  },
+  "updated_at": "2026-07-05T05:32:09.881Z",
+  "content_hash": "b0b2f070e2cf875aebaa73d00d002914cae4623a58c6c44ace89e5dedc24d702"
+}

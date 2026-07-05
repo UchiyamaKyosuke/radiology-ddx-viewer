@@ -1,0 +1,89 @@
+{
+  "disease_id": "mucinous_cystadenoma",
+  "disease_name": {
+    "ja": "卵巣粘液性嚢胞腺腫",
+    "en": "Ovarian mucinous cystadenoma"
+  },
+  "disease_aliases": {
+    "ja": ["粘液性嚢胞腺腫"],
+    "en": ["Mucinous cystadenoma"]
+  },
+  "clinical": {
+    "overview": "卵巣上皮性良性腫瘍。大きな多房性嚢胞性腫瘤として認められることが多い。",
+    "treatment": "症状、腫瘍径、悪性境界病変との鑑別に応じて外科的切除が検討される。",
+    "epidemiology": "卵巣上皮性腫瘍の鑑別として重要。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": ["female"],
+      "predominance": "female",
+      "predilection": "female_only",
+      "summary": "女性に発生する卵巣腫瘍。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 70,
+      "peak_decade": "30s-50s",
+      "summary": "成人女性でみられる。"
+    }
+  },
+  "frequency": {
+    "label": "uncommon",
+    "summary": "付属器嚢胞性腫瘤の鑑別として重要。"
+  },
+  "findings": [
+    {
+      "finding_text": "多房性嚢胞性腫瘤として認められる。",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "T2WI",
+      "anatomy": {
+        "body_region": "pelvis",
+        "organ": "ovary",
+        "subregion": "adnexa",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "degree": "marked",
+        "morphology": "multilocular_cystic_mass"
+      },
+      "typicality": "typical",
+      "diagnostic_weight": 4
+    },
+    {
+      "finding_text": "嚢胞ごとに信号強度が異なる stained-glass appearance を示すことがある。",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "T2WI",
+      "anatomy": {
+        "body_region": "pelvis",
+        "organ": "ovary",
+        "subregion": "adnexa",
+        "laterality": "unknown"
+      },
+      "target": "cyst_content",
+      "modifiers": {
+        "degree": "variable",
+        "morphology": "multilocular_cystic_mass"
+      },
+      "typicality": "common",
+      "diagnostic_weight": 3
+    }
+  ],
+  "references": [
+    {
+      "source_id": "ref_001",
+      "type": "placeholder",
+      "title": "Replace with reviewed source",
+      "authors": [],
+      "journal": "",
+      "year": "",
+      "pmid": "",
+      "doi": "",
+      "url": "",
+      "license": "",
+      "note": "Sample draft source only."
+    }
+  ]
+}

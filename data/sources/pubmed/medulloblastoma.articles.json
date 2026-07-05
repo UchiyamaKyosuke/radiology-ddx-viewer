@@ -1,0 +1,47 @@
+{
+  "disease_id": "medulloblastoma",
+  "disease_name": {
+    "ja": "髄芽腫",
+    "en": "Medulloblastoma"
+  },
+  "query": "medulloblastoma[Title/Abstract] AND (MRI[Title/Abstract] OR CT[Title/Abstract] OR imaging[Title/Abstract])",
+  "fetched_at": "2026-06-25T07:08:55.695Z",
+  "articles": [
+    {
+      "pmid": "27375228",
+      "title": "Childhood medulloblastoma.",
+      "journal": "Critical reviews in oncology/hematology",
+      "year": "2017",
+      "doi": "10.1016/j.critrevonc.2016.05.012",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27375228/",
+      "abstract": "Medulloblastoma accounts for 15-20% of childhood nervous system tumours. The risk of dying was reduced by 30% in the last twenty years. Patients are divided in risk strata according to post-surgical disease, dissemination, histology and some molecular features such as WNT subgroup and MYC status. Sixty to 70% of patients older than 3 years are assigned to the average-risk group. High-risk patients include those with disseminated and/or residual disease, large cell and/or anaplastic histotypes, MYC genes amplification. Current and currently planned clinical trials will: (1) evaluate the feasibility of reducing both the dose of craniospinal irradiation and the volume of the posterior fossa radiotherapy (RT) for those patients at low biologic risk, commonly identified as those having a medulloblastoma of the WNT subgroup; (2) determine whether intensification of chemotherapy (CT) or irradiation can improve outcome in patients with high-risk disease; (3) find target therapies allowing tailored therapies especially for relapsing patients and those with higher biological risk."
+    },
+    {
+      "pmid": "27889018",
+      "title": "Posterior Fossa Tumors.",
+      "journal": "Neuroimaging clinics of North America",
+      "year": "2017",
+      "doi": "10.1016/j.nic.2016.08.001",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27889018/",
+      "abstract": "Pediatric brain tumors are the leading cause of death from solid tumors in childhood. The most common posterior fossa tumors in children are medulloblastoma, atypical teratoid/rhabdoid tumor, cerebellar pilocytic astrocytoma, ependymoma, and brainstem glioma. Location, and imaging findings on computed tomography (CT) and conventional MR (cMR) imaging may provide important clues to the most likely diagnosis. Moreover, information obtained from advanced MR imaging techniques increase diagnostic confidence and help distinguish between different histologic tumor types. Here we discuss the most common posterior fossa tumors in children, including typical imaging findings on CT, cMR imaging, and advanced MR imaging studies."
+    },
+    {
+      "pmid": "30516696",
+      "title": "Childhood Medulloblastoma Revisited.",
+      "journal": "Topics in magnetic resonance imaging : TMRI",
+      "year": "2019",
+      "doi": "10.1097/RMR.0000000000000184",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30516696/",
+      "abstract": "Medulloblastoma is the most common malignant solid tumor in childhood and the most common embryonal neuroepithelial tumor of the central nervous system. Several morphological variants are recognized: classic medulloblastoma, large cell/anaplastic medulloblastoma, desmoplastic/nodular medulloblastoma, and medulloblastoma with extensive nodularity. Recent advances in transcriptome and methylome profiling of these tumors led to a molecular classification that includes 4 major genetically defined groups. Accordingly, the 2016 revision of the World Health Organization's Classification of Tumors of the Central Nervous System recognizes the following medulloblastoma entities: Wingless (WNT)-activated, Sonic hedgehog (SHH)-activated, Group 3, and Group 4. This transcriptionally driven classification constitutes the basis of new risk stratification schemes applied to current therapeutic clinical trials. Because additional layers of molecular tumor heterogeneities are being progressively unveiled, several clinically relevant subgroups within the 4 major groups have already been identified. The purpose of this article is to review the recent basic science and clinical advances in the understanding of \"medulloblastomas,\" and their diagnostic imaging correlates and the implications of those on current neuroimaging practice."
+    },
+    {
+      "pmid": "18995998",
+      "title": "[Childhood medulloblastoma].",
+      "journal": "Archives de pediatrie : organe officiel de la Societe francaise de pediatrie",
+      "year": "2009",
+      "doi": "10.1016/j.arcped.2008.09.021",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18995998/",
+      "abstract": "Medulloblastoma is one of the most common malignant childhood brain tumors. It is a primitive neuroectodermal tumor (PNET) and predominantly arises in the cerebellum and 4th ventricle. Most cases of medulloblastoma are sporadic, but some predisposition syndromes are known, such as SUFU and Gorlin syndromes. Most often intracranial hypertension reveals the disease typically with headache and vomiting. However, the frequent atypical presentation should not delay neuroradiological investigations. Brain and spinal MRI can establish the diagnosis of posterior fossa tumor and define the extent of the disease. CSF study completes the staging. Histologic examination of the tumor confirms the diagnosis of medulloblastoma. Patients are classified into 2 risk groups: standard-risk medulloblastoma, defined by nonmetastatic disease treated by total or subtotal tumor resection; and high-risk patients who have disseminated disease and/or residual disease. Tumor molecular genetic findings allow the use of emerging prognostic factors and may ultimately contribute to the development of targeted therapy. Current treatment in the oldest children combines surgical resection followed by radiotherapy and chemotherapy. The aim of recent studies was to increase survival and decrease sequelae by reducing CSI in older children with standard risk medulloblastoma. Treatment in younger patients is as much as possible restricted to surgery and chemotherapy. However, long-term sequelae after treatment for medulloblastoma remain frequent and the detection and treatment of those sequelae is an essential part of the follow-up of the patients."
+    }
+  ]
+}

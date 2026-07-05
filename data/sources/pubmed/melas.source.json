@@ -1,0 +1,51 @@
+{
+  "disease_id": "melas",
+  "disease_name": {
+    "ja": "MELAS",
+    "en": "MELAS"
+  },
+  "disease_aliases": {
+    "ja": [
+      "ミトコンドリア脳筋症・乳酸アシドーシス・脳卒中様発作"
+    ],
+    "en": [
+      "Mitochondrial encephalomyopathy lactic acidosis and stroke-like episodes"
+    ]
+  },
+  "clinical": {
+    "overview": "ミトコンドリア病。血管支配に一致しない皮質/皮質下の脳卒中様病変、乳酸ピーク、DWI/ADCの混在が特徴。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 5,
+      "typical_max": 40,
+      "peak_decade": "小児〜若年成人",
+      "summary": "小児から若年成人で重要。"
+    }
+  },
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "stroke_like_nonvascular_lesions"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

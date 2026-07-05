@@ -1,0 +1,369 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "chordoma",
+  "disease_name": {
+    "ja": "脊索腫",
+    "en": "Chordoma"
+  },
+  "disease_aliases": {
+    "ja": [
+      "斜台脊索腫"
+    ],
+    "en": [
+      "Clival chordoma"
+    ]
+  },
+  "clinical": {
+    "overview": "脊索遺残由来の頭蓋底腫瘍。斜台正中に発生し、骨破壊、T2著明高信号、分葉状造影腫瘤を示す。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 80,
+      "peak_decade": "成人",
+      "summary": "成人で重要。"
+    }
+  },
+  "keywords": [
+    "clivus",
+    "bone destruction",
+    "T2 bright"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "clival_mass"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "斜台脊索腫はCTで斜台骨破壊性腫瘤として確認する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "chordoma_ct_001",
+              "finding_code": "finding:clival_bone_destruction",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "skull_base",
+                "subregion": "clivus",
+                "laterality": "unknown"
+              },
+              "target": "skull_base_mass",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "斜台骨破壊を伴う正中性腫瘤。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:clival_bone_destruction",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "chordoma_ct_non_contrast_clival_bone_destruction_01",
+              "finding_code": "finding:clival_bone_destruction",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "CTで斜台骨破壊を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは斜台中心のT2高信号分葉状腫瘤、不均一造影、骨破壊と硬膜外進展を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "chordoma_mri_002",
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "skull_base",
+                "subregion": "clivus",
+                "laterality": "unknown"
+              },
+              "target": "skull_base_mass",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "粘液様基質によりT2著明高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:t2_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "chordoma_mri_t2wi_t2_hyperintensity_01",
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "T2WIで高信号の分葉状腫瘤を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "chordoma_mri_t2wi_mass_effect_01",
+              "finding_code": "finding:mass_effect",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "脳幹や頭蓋底構造へのmass effectを評価する。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "chordoma_mri_003",
+              "finding_code": "finding:enhancing_solid_component",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "skull_base",
+                "subregion": "clivus",
+                "laterality": "unknown"
+              },
+              "target": "skull_base_mass",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "分葉状腫瘤に不均一な造影効果を伴う。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:enhancing_solid_component",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "chordoma_mri_contrast_enhanced_t1wi_mild_enhancement_01",
+              "finding_code": "finding:mild_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "造影効果は不均一なことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 33521875, 35722639, 40773058）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "chordoma_ct_001",
+          "chordoma_mri_002",
+          "chordoma_mri_003"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_33521875",
+          "pmid_35722639",
+          "pmid_40773058"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "chordoma_ct_non_contrast_clival_bone_destruction_01",
+          "chordoma_mri_t2wi_t2_hyperintensity_01",
+          "chordoma_mri_contrast_enhanced_t1wi_mild_enhancement_01",
+          "chordoma_mri_t2wi_mass_effect_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_33521875",
+      "type": "journal_article",
+      "title": "Chordoma:  18 F-FDG PET/CT and MRI imaging features.",
+      "authors": [],
+      "journal": "Skeletal radiology",
+      "year": "2021",
+      "pmid": "33521875",
+      "doi": "10.1007/s00256-021-03723-w",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33521875/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_35722639",
+      "type": "journal_article",
+      "title": "A Cystic Clival Chordoma with CT and MRI Unconventional Appearances.",
+      "authors": [],
+      "journal": "The Indian journal of radiology & imaging",
+      "year": "2022",
+      "pmid": "35722639",
+      "doi": "10.1055/s-0041-1741044",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35722639/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_40773058",
+      "type": "journal_article",
+      "title": "Ectopic clival craniopharyngioma.",
+      "authors": [],
+      "journal": "Neuroradiology",
+      "year": "2026",
+      "pmid": "40773058",
+      "doi": "10.1007/s00234-025-03727-6",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40773058/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": []
+}

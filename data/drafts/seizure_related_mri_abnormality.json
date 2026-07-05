@@ -1,0 +1,301 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "seizure_related_mri_abnormality",
+  "disease_name": {
+    "ja": "発作関連MRI異常",
+    "en": "Seizure-related MRI abnormality"
+  },
+  "disease_aliases": {
+    "ja": [
+      "発作関連MRI異常"
+    ],
+    "en": [
+      "Seizure-related MRI abnormality"
+    ]
+  },
+  "clinical": {
+    "overview": "痙攣発作や発作重積に伴う一過性の皮質・海馬・視床などのMRI異常。",
+    "treatment": "発作制御、原因検索、経時的画像フォローを行う。",
+    "epidemiology": "急性発作後の脳炎・梗塞 mimics として重要。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明らかな性差は限定的。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 100,
+      "peak_decade": "全年齢",
+      "summary": "0-100歳に多い。"
+    }
+  },
+  "keywords": [
+    "peri-ictal",
+    "status epilepticus"
+  ],
+  "frequency": {
+    "label": "common",
+    "prevalence_rank": 4,
+    "basis": "differential_importance",
+    "evidence_level": "public_review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "seizure or stroke mimic"
+    },
+    "summary": "seizure or stroke mimicの鑑別として重要。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "CTは正常または軽度腫脹/低吸収を示す。",
+      "findings_by_phase": []
+    },
+    "mri": {
+      "summary": "MRIでは皮質/海馬のFLAIR高信号、DWI高信号、ADC低値または高値、灌流上昇を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:cortical_subcortical_lesion",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "発作焦点に一致する皮質〜皮質下病変を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:cortical_subcortical_lesion",
+                "alternatives": []
+              },
+              "finding_id": "seizure_related_mri_abnormality_mri_001"
+            },
+            {
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "皮質または海馬がFLAIR高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:flair_hyperintensity",
+                "alternatives": []
+              },
+              "finding_id": "seizure_related_mri_abnormality_mri_002"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:dwi_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "一過性DWI高信号を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:dwi_hyperintensity",
+                "alternatives": []
+              },
+              "finding_id": "seizure_related_mri_abnormality_mri_003"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "ADC"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:adc_low",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "ADC"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "ADC低値を伴うこともあるが可逆性のことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:adc_low",
+                "alternatives": []
+              },
+              "finding_id": "seizure_related_mri_abnormality_mri_004"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "ASL"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:hyperperfusion",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "ASL"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "発作時/発作直後にASLや灌流で過灌流を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:hyperperfusion",
+                "alternatives": []
+              },
+              "finding_id": "seizure_related_mri_abnormality_mri_005"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMed?????????NCBI Bookshelf/StatPearls?NIH/NINDS?MedlinePlus?CDC?PMC open-access review??????",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "seizure_related_mri_abnormality_mri_001",
+          "seizure_related_mri_abnormality_mri_002",
+          "seizure_related_mri_abnormality_mri_003",
+          "seizure_related_mri_abnormality_mri_004",
+          "seizure_related_mri_abnormality_mri_005"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_brain_batch4_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "public_brain_batch4_20260625",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology source packet for brain draft batch 4",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC, and open-access PMC review articles where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "Brain field Phase1 batch4 draft."
+  },
+  "curation": {
+    "auto_update_allowed": true,
+    "locked_fields": [],
+    "notes": ""
+  },
+  "provenance": {
+    "created_by": "codex_public_source_review",
+    "model": "codex",
+    "created_at": "2026-06-25T11:51:30.202Z",
+    "prompt_version": "brain_batch4_v0.1",
+    "source_query": "Seizure-related MRI abnormality CT MRI imaging findings public source"
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "content_hash": "",
+  "raw_findings": []
+}

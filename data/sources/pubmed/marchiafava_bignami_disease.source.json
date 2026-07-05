@@ -1,0 +1,51 @@
+{
+  "disease_id": "marchiafava_bignami_disease",
+  "disease_name": {
+    "ja": "Marchiafava-Bignami病",
+    "en": "Marchiafava-Bignami disease"
+  },
+  "disease_aliases": {
+    "ja": [
+      "マルキアファーヴァ・ビニャミ病"
+    ],
+    "en": [
+      "Marchiafava-Bignami disease"
+    ]
+  },
+  "clinical": {
+    "overview": "慢性アルコール多飲や栄養障害に関連する脳梁変性。脳梁体部を中心としたDWI/FLAIR異常が特徴。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 30,
+      "typical_max": 75,
+      "peak_decade": "中年以降",
+      "summary": "慢性アルコール多飲背景で重要。"
+    }
+  },
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "callosal_lesion"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

@@ -1,0 +1,412 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "wernicke_encephalopathy",
+  "disease_name": {
+    "ja": "Wernicke脳症",
+    "en": "Wernicke encephalopathy"
+  },
+  "disease_aliases": {
+    "ja": [
+      "ウェルニッケ脳症"
+    ],
+    "en": [
+      "Wernicke encephalopathy"
+    ]
+  },
+  "clinical": {
+    "overview": "チアミン欠乏による急性脳症。内側視床、中脳水道周囲、乳頭体などの対称性T2/FLAIR高信号が典型。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 80,
+      "peak_decade": "成人",
+      "summary": "成人で重要。"
+    }
+  },
+  "keywords": [
+    "thiamine",
+    "medial thalami",
+    "mammillary bodies"
+  ],
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 2,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "metabolic_encephalopathy"
+    },
+    "summary": "該当する画像パターンで重要な鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "Wernicke脳症はCTで目立たないことが多く、MRIが重要。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "wernicke_encephalopathy_ct_001",
+              "finding_code": "finding:ct_isoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "CTは正常または目立たないことが多い。",
+              "typicality": "variable",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_isoattenuation",
+                "alternatives": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは内側視床、乳頭体、中脳水道周囲、第三脳室周囲のT2/FLAIR高信号とDWI変化を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "wernicke_encephalopathy_mri_002",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "deep_gray_matter",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "内側視床や中脳水道周囲に対称性FLAIR高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:flair_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "wernicke_encephalopathy_mri_flair_flair_hyperintensity_01",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "内側視床や中脳水道周囲にFLAIR高信号を認める。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "wernicke_encephalopathy_mri_flair_basal_ganglia_involvement_01",
+              "finding_code": "finding:basal_ganglia_involvement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "視床病変を含む深部灰白質病変として見える。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "wernicke_encephalopathy_mri_003",
+              "finding_code": "finding:bilateral_symmetric_white_matter_lesions",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "deep_gray_matter",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "両側対称性病変パターンが診断の手掛かり。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:bilateral_symmetric_white_matter_lesions",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "wernicke_encephalopathy_mri_004",
+              "finding_code": "finding:mild_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "乳頭体などに造影効果を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:mild_enhancement",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "wernicke_encephalopathy_mri_contrast_enhanced_t1wi_mild_enhancement_01",
+              "finding_code": "finding:mild_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "乳頭体造影を示すことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_id": "wernicke_encephalopathy_mri_dwi_dwi_hyperintensity_01",
+              "finding_code": "finding:dwi_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "急性期にDWI高信号を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 17434099, 32390125, 36342089）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "wernicke_encephalopathy_ct_001",
+          "wernicke_encephalopathy_mri_002",
+          "wernicke_encephalopathy_mri_003",
+          "wernicke_encephalopathy_mri_004"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_17434099",
+          "pmid_32390125",
+          "pmid_36342089"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "wernicke_encephalopathy_mri_flair_flair_hyperintensity_01",
+          "wernicke_encephalopathy_mri_flair_basal_ganglia_involvement_01",
+          "wernicke_encephalopathy_mri_dwi_dwi_hyperintensity_01",
+          "wernicke_encephalopathy_mri_contrast_enhanced_t1wi_mild_enhancement_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_17434099",
+      "type": "journal_article",
+      "title": "Wernicke's encephalopathy: new clinical settings and recent advances in diagnosis and management.",
+      "authors": [],
+      "journal": "The Lancet. Neurology",
+      "year": "2007",
+      "pmid": "17434099",
+      "doi": "10.1016/S1474-4422(07)70104-7",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17434099/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_32390125",
+      "type": "journal_article",
+      "title": "Comprehensive review of Wernicke encephalopathy: pathophysiology, clinical symptoms and imaging findings.",
+      "authors": [],
+      "journal": "Japanese journal of radiology",
+      "year": "2021",
+      "pmid": "32390125",
+      "doi": "10.1007/s11604-020-00989-3",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32390125/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_36342089",
+      "type": "journal_article",
+      "title": "Wernicke Encephalopathy.",
+      "authors": [],
+      "journal": "Deutsches Arzteblatt international",
+      "year": "2022",
+      "pmid": "36342089",
+      "doi": "10.3238/arztebl.m2022.0030",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36342089/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": []
+}

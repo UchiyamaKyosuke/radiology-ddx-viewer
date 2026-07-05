@@ -1,0 +1,51 @@
+{
+  "disease_id": "moyamoya_disease",
+  "disease_name": {
+    "ja": "もやもや病",
+    "en": "Moyamoya disease"
+  },
+  "disease_aliases": {
+    "ja": [
+      "もやもや病"
+    ],
+    "en": [
+      "Moyamoya disease"
+    ]
+  },
+  "clinical": {
+    "overview": "内頚動脈終末部狭窄・閉塞と基底部異常血管網を特徴とする血管疾患。MRAで狭窄/閉塞と側副血行を評価する。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 5,
+      "typical_max": 60,
+      "peak_decade": "小児と成人に二峰性",
+      "summary": "小児と成人に二峰性。"
+    }
+  },
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 2,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "arterial_stenosis_collateral_vessels"
+    },
+    "summary": "該当する画像パターンで重要な鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

@@ -1,0 +1,308 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "brain_capillary_telangiectasia",
+  "disease_name": {
+    "ja": "脳毛細血管拡張症",
+    "en": "Brain capillary telangiectasia"
+  },
+  "disease_aliases": {
+    "ja": [
+      "脳毛細血管拡張症"
+    ],
+    "en": [
+      "Brain capillary telangiectasia"
+    ]
+  },
+  "clinical": {
+    "overview": "橋などに多い低流量血管奇形。偶発的に発見されることが多い。",
+    "treatment": "典型例は経過観察。",
+    "epidemiology": "橋被蓋部の偶発病変として重要。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明らかな性差は限定的。"
+    },
+    "age": {
+      "typical_min": 10,
+      "typical_max": 90,
+      "peak_decade": "成人",
+      "summary": "10-90歳に多い。"
+    }
+  },
+  "keywords": [
+    "pontine capillary telangiectasia"
+  ],
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 3,
+    "basis": "differential_importance",
+    "evidence_level": "public_review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "incidental brainstem lesion"
+    },
+    "summary": "incidental brainstem lesionの鑑別として重要。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "CTでは通常目立たない。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:ct_isoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "CTでは明らかな異常を示さないことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_isoattenuation",
+                "alternatives": []
+              },
+              "finding_id": "brain_capillary_telangiectasia_ct_001"
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは橋の淡い造影、T2/FLAIR軽度高信号、SWI低信号を示す。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:mild_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "pons",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "造影T1WIで淡い斑状造影を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:mild_enhancement",
+                "alternatives": []
+              },
+              "finding_id": "brain_capillary_telangiectasia_mri_002"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "SWI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:susceptibility_blooming",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "SWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "SWI/T2*で低信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:susceptibility_blooming",
+                "alternatives": []
+              },
+              "finding_id": "brain_capillary_telangiectasia_mri_003"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "T2/FLAIRで軽度高信号を示すことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:t2_hyperintensity",
+                "alternatives": []
+              },
+              "finding_id": "brain_capillary_telangiectasia_mri_004"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:diffusion_restriction_absent",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "拡散制限を伴わない。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:diffusion_restriction_absent",
+                "alternatives": []
+              },
+              "finding_id": "brain_capillary_telangiectasia_mri_005"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMed?????????NCBI Bookshelf/StatPearls?NIH/NINDS?MedlinePlus?CDC?PMC open-access review??????",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "brain_capillary_telangiectasia_ct_001",
+          "brain_capillary_telangiectasia_mri_002",
+          "brain_capillary_telangiectasia_mri_003",
+          "brain_capillary_telangiectasia_mri_004",
+          "brain_capillary_telangiectasia_mri_005"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_brain_batch4_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "public_brain_batch4_20260625",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology source packet for brain draft batch 4",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC, and open-access PMC review articles where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "Brain field Phase1 batch4 draft."
+  },
+  "curation": {
+    "auto_update_allowed": true,
+    "locked_fields": [],
+    "notes": ""
+  },
+  "provenance": {
+    "created_by": "codex_public_source_review",
+    "model": "codex",
+    "created_at": "2026-06-25T11:51:30.202Z",
+    "prompt_version": "brain_batch4_v0.1",
+    "source_query": "Brain capillary telangiectasia CT MRI imaging findings public source"
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "content_hash": "",
+  "raw_findings": []
+}

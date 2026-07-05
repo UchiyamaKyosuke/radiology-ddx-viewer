@@ -1,0 +1,216 @@
+{
+  "disease_id": "craniopharyngioma",
+  "disease_name": {
+    "ja": "頭蓋咽頭腫",
+    "en": "Craniopharyngioma"
+  },
+  "disease_aliases": {
+    "ja": [],
+    "en": [
+      "Craniopharyngioma"
+    ]
+  },
+  "clinical": {
+    "overview": "Craniopharyngioma literature draft generated from PubMed abstracts. Codex review is required.",
+    "treatment": "Not extracted. Codex review is required.",
+    "epidemiology": "Not extracted. Codex review is required."
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "unknown"
+      ],
+      "predominance": "unknown",
+      "predilection": "unknown",
+      "summary": "Not extracted."
+    },
+    "age": {
+      "typical_min": null,
+      "typical_max": null,
+      "peak_decade": "未確認",
+      "summary": "好発年齢は未確認。"
+    }
+  },
+  "keywords": [],
+  "frequency": {
+    "label": "unknown",
+    "summary": "Not extracted."
+  },
+  "imaging": {},
+  "findings": [
+    {
+      "finding_text": "石灰化あり",
+      "modality": "CT",
+      "acquisition_type": "phase",
+      "acquisition_code": "non_contrast",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "脂肪成分あり",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "T1WI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "多房性嚢胞性腫瘤",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "T2WI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "cyst_content",
+      "modifiers": {},
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "乳頭状充実成分",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "T2WI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "mural_nodule",
+      "modifiers": {},
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "コリンピーク上昇",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "MRS",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "metabolite": "choline_elevated"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "脂肪抑制で信号低下",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "T1WI_fat_suppressed",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "fat_content": "present"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    }
+  ],
+  "references": [
+    {
+      "source_id": "pmid_31699993",
+      "type": "journal_article",
+      "title": "Craniopharyngioma.",
+      "authors": [],
+      "journal": "Nature reviews. Disease primers",
+      "year": "2020",
+      "pmid": "31699993",
+      "doi": "10.1038/s41572-019-0125-9",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31699993/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_33040852",
+      "type": "journal_article",
+      "title": "Neuroimaging of the Pituitary Gland: Practical Anatomy and Pathology.",
+      "authors": [],
+      "journal": "Radiologic clinics of North America",
+      "year": "2020",
+      "pmid": "33040852",
+      "doi": "10.1016/j.rcl.2020.07.009",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33040852/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_32389269",
+      "type": "journal_article",
+      "title": "Sellar Tumors.",
+      "authors": [],
+      "journal": "Surgical pathology clinics",
+      "year": "2021",
+      "pmid": "32389269",
+      "doi": "10.1016/j.path.2020.02.006",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32389269/",
+      "license": ""
+    }
+  ],
+  "source_query": "craniopharyngioma[Title/Abstract] AND (MRI[Title/Abstract] OR CT[Title/Abstract] OR imaging[Title/Abstract] OR calcification[Title/Abstract])",
+  "source_articles": [
+    {
+      "pmid": "31699993",
+      "title": "Craniopharyngioma.",
+      "journal": "Nature reviews. Disease primers",
+      "year": "2020",
+      "doi": "10.1038/s41572-019-0125-9",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31699993/",
+      "abstract": "Craniopharyngiomas are rare malformational tumours of low histological malignancy arising along the craniopharyngeal duct. The two histological subtypes, adamantinomatous craniopharyngioma (ACP) and papillary craniopharyngioma (PCP), differ in genesis and age distribution. ACPs are diagnosed with a bimodal peak of incidence (5-15 years and 45-60 years), whereas PCPs are restricted to adults mainly in the fifth and sixth decades of life. ACPs are driven by somatic mutations in CTNNB1 (encoding &#x3b2;-catenin) that affect &#x3b2;-catenin stability and are predominantly cystic in appearance. PCPs frequently harbour somatic BRAF V600E  mutations and are typically solid tumours. Clinical manifestations due to increased intracranial pressure, visual impairment and endocrine deficiencies should prompt imaging investigations, preferentially MRI. Treatment comprises neurosurgery and radiotherapy; intracystic chemotherapy is used in monocystic ACP. Although long-term survival is high, quality of life and neuropsychological function are frequently impaired due to the close anatomical proximity to the optic chiasm, hypothalamus and pituitary gland. Indeed, hypothalamic involvement and treatment-related hypothalamic lesions frequently result in hypothalamic obesity, physical fatigue and psychosocial deficits. Given the rarity of these tumours, efforts to optimize infrastructure and international collaboration should be research priorities."
+    },
+    {
+      "pmid": "33040852",
+      "title": "Neuroimaging of the Pituitary Gland: Practical Anatomy and Pathology.",
+      "journal": "Radiologic clinics of North America",
+      "year": "2020",
+      "doi": "10.1016/j.rcl.2020.07.009",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33040852/",
+      "abstract": "The pituitary gland is a small endocrine organ located within the sella turcica. Various pathologic conditions affect the pituitary gland and produce endocrinologic and neurologic abnormalities. The most common lesion of the pituitary gland is the adenoma, a benign neoplasm. Dedicated MR imaging of the pituitary is radiologic study of choice for evaluating pituitary gland and central skull region. Computed tomography is complimentary and allows for identification of calcification and adjacent abnormalities of the osseous skull base. This review emphasizes basic anatomy, current imaging techniques, and highlights the spectrum of pathologic conditions that affect the pituitary gland and sellar region."
+    },
+    {
+      "pmid": "32389269",
+      "title": "Sellar Tumors.",
+      "journal": "Surgical pathology clinics",
+      "year": "2021",
+      "doi": "10.1016/j.path.2020.02.006",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32389269/",
+      "abstract": "Sellar region lesions include a broad range of benign and malignant neoplastic as well as non-neoplastic entities, many of which are newly described or have recently revised nomenclature. In contrast to other intracranial sites, imaging features are relatively less specific, and the need for histopathological diagnosis is of paramount importance. This review will describe pituitary adenomas, inflammatory lesions, and tumors unique to the region (craniopharyngioma) as well as tumors which may occur in but are not exclusively localized to the sellar location (schwannoma, metastasis, etc.)."
+    }
+  ]
+}

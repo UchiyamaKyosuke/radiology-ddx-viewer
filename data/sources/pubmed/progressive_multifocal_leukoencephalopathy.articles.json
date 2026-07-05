@@ -1,0 +1,38 @@
+{
+  "disease_id": "progressive_multifocal_leukoencephalopathy",
+  "disease_name": {
+    "ja": "進行性多巣性白質脳症",
+    "en": "Progressive multifocal leukoencephalopathy"
+  },
+  "query": "progressive multifocal leukoencephalopathy AND (MRI OR imaging)",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "18657729",
+      "title": "Progressive multifocal leukoencephalopathy.",
+      "journal": "Neurologic clinics",
+      "year": "2008",
+      "doi": "10.1016/j.ncl.2008.03.007",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18657729/",
+      "abstract": ""
+    },
+    {
+      "pmid": "40690111",
+      "title": "Overview of MRI findings in progressive multifocal leukoencephalopathy.",
+      "journal": "Japanese journal of radiology",
+      "year": "2026",
+      "doi": "10.1007/s11604-025-01837-y",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40690111/",
+      "abstract": ""
+    },
+    {
+      "pmid": "23221846",
+      "title": "Progressive multifocal leukoencephalopathy.",
+      "journal": "Continuum (Minneapolis, Minn.)",
+      "year": "2013",
+      "doi": "10.1212/01.CON.0000423852.70641.de",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23221846/",
+      "abstract": ""
+    }
+  ]
+}

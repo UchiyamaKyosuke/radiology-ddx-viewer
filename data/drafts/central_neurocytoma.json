@@ -1,0 +1,405 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "central_neurocytoma",
+  "disease_name": {
+    "ja": "中枢性神経細胞腫",
+    "en": "Central neurocytoma"
+  },
+  "disease_aliases": {
+    "ja": [
+      "中枢神経細胞腫"
+    ],
+    "en": [
+      "Central neurocytoma"
+    ]
+  },
+  "clinical": {
+    "overview": "若年成人の側脳室内腫瘍。モンロー孔近傍に発生し、嚢胞様変化や石灰化を伴う脳室内腫瘤として見える。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 15,
+      "typical_max": 45,
+      "peak_decade": "20-30歳代",
+      "summary": "若年成人に多い。"
+    }
+  },
+  "keywords": [
+    "lateral ventricle",
+    "foramen of Monro",
+    "bubbly"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "intraventricular_mass"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "中枢神経細胞腫は側脳室内腫瘤、石灰化、嚢胞変性、水頭症をCTで確認する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "central_neurocytoma_ct_001",
+              "finding_code": "finding:calcification_present",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "ventricle",
+                "subregion": "intraventricular",
+                "laterality": "unknown"
+              },
+              "target": "calcified_component",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "脳室内腫瘤内に石灰化を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:calcification_present",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "central_neurocytoma_ct_non_contrast_calcification_present_01",
+              "finding_code": "finding:calcification_present",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "CTで石灰化を伴うことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは側脳室内の不均一腫瘤、T2高信号嚢胞、石灰化/出血、造影を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "central_neurocytoma_mri_002",
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "ventricle",
+                "subregion": "intraventricular",
+                "laterality": "unknown"
+              },
+              "target": "ventricular_mass",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "側脳室内の不均一なT2高信号腫瘤。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:t2_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "central_neurocytoma_mri_t2wi_t2_hyperintensity_01",
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "T2WIで嚢胞性/海綿状の高信号成分を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "central_neurocytoma_mri_t2wi_hydrocephalus_01",
+              "finding_code": "finding:hydrocephalus",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "脳室閉塞により水頭症を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "central_neurocytoma_mri_003",
+              "finding_code": "finding:mild_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "ventricle",
+                "subregion": "foramen_of_monro",
+                "laterality": "unknown"
+              },
+              "target": "ventricular_mass",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "造影効果は軽度〜中等度で可変。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:mild_enhancement",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "central_neurocytoma_mri_contrast_enhanced_t1wi_mild_enhancement_01",
+              "finding_code": "finding:mild_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "造影効果は不均一なことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "central_neurocytoma_mri_004",
+              "finding_code": "finding:hydrocephalus",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "ventricle",
+                "subregion": "foramen_of_monro",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "モンロー孔近傍病変では水頭症を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:hydrocephalus",
+                "alternatives": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 27664193, 22537657, 25432179）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "central_neurocytoma_ct_001",
+          "central_neurocytoma_mri_002",
+          "central_neurocytoma_mri_003",
+          "central_neurocytoma_mri_004"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_27664193",
+          "pmid_22537657",
+          "pmid_25432179"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "central_neurocytoma_ct_non_contrast_calcification_present_01",
+          "central_neurocytoma_mri_t2wi_t2_hyperintensity_01",
+          "central_neurocytoma_mri_contrast_enhanced_t1wi_mild_enhancement_01",
+          "central_neurocytoma_mri_t2wi_hydrocephalus_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_27664193",
+      "type": "journal_article",
+      "title": "Pediatric Central Neurocytoma.",
+      "authors": [],
+      "journal": "Journal of child neurology",
+      "year": "2018",
+      "pmid": "27664193",
+      "doi": "10.1177/0883073816668994",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27664193/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_22537657",
+      "type": "journal_article",
+      "title": "Central neurocytoma.",
+      "authors": [],
+      "journal": "Journal of clinical neuroscience : official journal of the Neurosurgical Society of Australasia",
+      "year": "2012",
+      "pmid": "22537657",
+      "doi": "10.1016/j.jocn.2011.06.038",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22537657/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_25432179",
+      "type": "journal_article",
+      "title": "Imaging of central neurocytomas.",
+      "authors": [],
+      "journal": "Neurosurgery clinics of North America",
+      "year": "2015",
+      "pmid": "25432179",
+      "doi": "10.1016/j.nec.2014.09.012",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25432179/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": []
+}

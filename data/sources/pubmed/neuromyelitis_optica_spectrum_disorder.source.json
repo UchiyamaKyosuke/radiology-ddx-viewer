@@ -1,0 +1,52 @@
+{
+  "disease_id": "neuromyelitis_optica_spectrum_disorder",
+  "disease_name": {
+    "ja": "視神経脊髄炎スペクトラム障害",
+    "en": "Neuromyelitis optica spectrum disorder"
+  },
+  "disease_aliases": {
+    "ja": [
+      "NMOSD",
+      "視神経脊髄炎"
+    ],
+    "en": [
+      "NMOSD"
+    ]
+  },
+  "clinical": {
+    "overview": "AQP4抗体関連の炎症性脱髄疾患。視神経、脊髄に加え、延髄最後野、視床下部、脳梁周囲などに病変を示す。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "female",
+      "predilection": "female_predominant",
+      "summary": "女性に多い。"
+    },
+    "age": {
+      "typical_min": 15,
+      "typical_max": 70,
+      "peak_decade": "成人",
+      "summary": "成人女性で重要。"
+    }
+  },
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "inflammatory_demyelination"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

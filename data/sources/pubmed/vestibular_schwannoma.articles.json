@@ -1,0 +1,47 @@
+{
+  "disease_id": "vestibular_schwannoma",
+  "disease_name": {
+    "ja": "前庭神経鞘腫",
+    "en": "Vestibular schwannoma"
+  },
+  "query": "vestibular schwannoma[Title/Abstract] AND (MRI[Title/Abstract] OR CT[Title/Abstract] OR imaging[Title/Abstract])",
+  "fetched_at": "2026-06-25T07:08:59.719Z",
+  "articles": [
+    {
+      "pmid": "31504802",
+      "title": "EANO guideline on the diagnosis and treatment of vestibular schwannoma.",
+      "journal": "Neuro-oncology",
+      "year": "2021",
+      "doi": "10.1093/neuonc/noz153",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31504802/",
+      "abstract": "The level of evidence to provide treatment recommendations for vestibular schwannoma is low compared with other intracranial neoplasms. Therefore, the vestibular schwannoma task force of the European Association of Neuro-Oncology assessed the data available in the literature and composed a set of recommendations for health care professionals. The radiological diagnosis of vestibular schwannoma is made by magnetic resonance imaging. Histological verification of the diagnosis is not always required. Current treatment options include observation, surgical resection, fractionated radiotherapy, and radiosurgery. The choice of treatment depends on clinical presentation, tumor size, and expertise of the treating center. In small tumors, observation has to be weighed against radiosurgery, in large tumors surgical decompression is mandatory, potentially followed by fractionated radiotherapy or radiosurgery. Except for bevacizumab in neurofibromatosis type 2, there is no role for pharmacotherapy."
+    },
+    {
+      "pmid": "41052870",
+      "title": "Vestibular schwannoma imaging and differential diagnosis.",
+      "journal": "Handbook of clinical neurology",
+      "year": "2025",
+      "doi": "10.1016/B978-0-12-824534-7.00005-6",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41052870/",
+      "abstract": "Imaging plays a central role in the modern management of vestibular schwannomas (VS), from the initial diagnosis to treatment planning and subsequent monitoring of treatment response. It is of particular importance in NF2-related schwannomatosis (NF2) and similar genetic tumor predisposition syndromes, where patients require serial monitoring for many years. Magnetic resonance imaging (MRI) is the technique of choice and can reliably detect very small tumors and incremental growth. Modern imaging methods are reviewed, with a focus on MRI. The authors examine the initial evaluation of VS, differential diagnosis, expected posttreatment appearances, imaging after implantation, surveillance imaging, and assessment of complications. They also discuss imaging considerations arising in the context of NF2."
+    },
+    {
+      "pmid": "38252395",
+      "title": "Cost considerations for vestibular schwannoma screening and imaging: a systematic review.",
+      "journal": "Neurosurgical review",
+      "year": "2024",
+      "doi": "10.1007/s10143-024-02305-3",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38252395/",
+      "abstract": "Vestibular schwannomas (VS) account for approximately 8% of all intracranial neoplasms. Importantly, the cost of the diagnostic workup for VS, including the screening modalities most commonly used, has not been thoroughly investigated. Our aim is to conduct a systematic review of the published literature on costs associated with VS screening. A systematic review of the literature for cost of VS treatment was conducted in accordance with the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guidelines. The terms \"vestibular schwannoma,\" \"acoustic neuroma,\" and \"cost\" were queried using the PubMed and Embase databases. Studies from all countries were considered. Cost was then corrected for inflation using the US Bureau of Labor Statistics Inflation Calculator, correcting to April 2022. The search resulted in an initial review of 483 articles, of which 12 articles were included in the final analysis. Screening criteria were used for non-neurofibromatosis type I and II patients who complained of asymmetric hearing loss, tinnitus, or vertigo. Patients included in the studies ranged from 72 to 1249. The currency and inflation-adjusted mean cost was $418.40 (range, $21.81 to $487.03, n = 5) for auditory brainstem reflex and $1433.87 (range, $511.64 to $1762.15, n = 3) for non-contrasted computed tomography. A contrasted magnetic resonance imaging (MRI) scan was found to have a median cost of $913.27 (range, $172.25-$2733.99; n = 8) whereas a non-contrasted MRI was found to have a median cost of $478.62 (range, $116.61-$3256.38, n = 4). In terms of cost reporting, of the 12 articles, 1 (8.3%) of them separated out the cost elements, and 10 (83%) of them used local prices, which include institutional costs and/or average costs of multiple institutions. Our findings describe the limited data on published costs for screening and imaging of VS. The paucity of data and significant variability of costs between studies indicates that this endpoint is relatively unexplored, and the cost of screening is poorly understood."
+    },
+    {
+      "pmid": "32690241",
+      "title": "Imaging of the temporal bone.",
+      "journal": "Clinical radiology",
+      "year": "2021",
+      "doi": "10.1016/j.crad.2020.06.013",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32690241/",
+      "abstract": "This review will focus on key recent advances in imaging of the temporal bone. The role of magnetic resonance imaging (MRI) in providing aetiological and prognostic information for patients with sudden sensorineural hearing loss will be discussed. Novel MRI sequences, such as delayed contrast-enhanced 3D fluid-attenuated inversion recovery (FLAIR) and their utility in the identification and grading of endolymphatic hydrops in M&#xe9;ni&#xe8;re's disease will be described. Furthermore, we will document the considerable advances in auditory implant technology (including active middle ear implants), and how multidetector computed tomography (CT) and cone-beam CT may be invaluable in their preoperative and postoperative assessment. Finally, advances in the imaging of cholesteatoma, third-window lesions, otospongiosis (including internal auditory canal diverticula), and vestibular schwannoma will be reviewed."
+    }
+  ]
+}

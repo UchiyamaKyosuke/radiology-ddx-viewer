@@ -1,0 +1,348 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "normal_pressure_hydrocephalus",
+  "disease_name": {
+    "ja": "正常圧水頭症",
+    "en": "Normal pressure hydrocephalus"
+  },
+  "disease_aliases": {
+    "ja": [
+      "NPH",
+      "特発性正常圧水頭症"
+    ],
+    "en": [
+      "NPH",
+      "iNPH"
+    ]
+  },
+  "clinical": {
+    "overview": "歩行障害、認知障害、尿失禁を来す交通性水頭症。DESH、脳室拡大、シルビウス裂拡大、高位円蓋部脳溝狭小化を評価する。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 65,
+      "typical_max": 90,
+      "peak_decade": "高齢者",
+      "summary": "高齢者に多い。"
+    }
+  },
+  "keywords": [
+    "DESH",
+    "Evans index",
+    "tight high convexity"
+  ],
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 2,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "ventriculomegaly_gait_disturbance"
+    },
+    "summary": "該当する画像パターンで重要な鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "NPHはCTで脳室拡大を確認し、脳萎縮との不均衡を評価する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "normal_pressure_hydrocephalus_ct_001",
+              "finding_code": "finding:ventriculomegaly",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "ventricle",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "脳室拡大を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ventriculomegaly",
+                "alternatives": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは脳室拡大、DESH、Sylvian fissure開大、高位円蓋部脳溝狭小化、FLAIR周囲高信号を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "normal_pressure_hydrocephalus_mri_002",
+              "finding_code": "finding:ventriculomegaly",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "ventricle",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "側脳室拡大を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ventriculomegaly",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "normal_pressure_hydrocephalus_mri_t2wi_ventriculomegaly_01",
+              "finding_code": "finding:ventriculomegaly",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "側脳室を中心とした脳室拡大を認める。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "normal_pressure_hydrocephalus_mri_t2wi_hydrocephalus_01",
+              "finding_code": "finding:hydrocephalus",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "水頭症パターンを示す。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "normal_pressure_hydrocephalus_mri_003",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "periventricular",
+                "laterality": "unknown"
+              },
+              "target": "white_matter",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "脳室周囲高信号を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:flair_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "normal_pressure_hydrocephalus_mri_flair_flair_hyperintensity_01",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "脳室周囲FLAIR高信号を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 38701548, 42128964, 35871239）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "normal_pressure_hydrocephalus_ct_001",
+          "normal_pressure_hydrocephalus_mri_002",
+          "normal_pressure_hydrocephalus_mri_003"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_38701548",
+          "pmid_42128964",
+          "pmid_35871239"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "normal_pressure_hydrocephalus_mri_t2wi_ventriculomegaly_01",
+          "normal_pressure_hydrocephalus_mri_t2wi_hydrocephalus_01",
+          "normal_pressure_hydrocephalus_mri_flair_flair_hyperintensity_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_38701548",
+      "type": "journal_article",
+      "title": "Idiopathic normal pressure hydrocephalus: Validation of the DESH score as a prognostic tool for shunt surgery response.",
+      "authors": [],
+      "journal": "Clinical neurology and neurosurgery",
+      "year": "2024",
+      "pmid": "38701548",
+      "doi": "10.1016/j.clineuro.2024.108295",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38701548/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_42128964",
+      "type": "journal_article",
+      "title": "Idiopathic normal pressure hydrocephalus: validation of the DESH score in the Capital Region of Denmark.",
+      "authors": [],
+      "journal": "Acta neurochirurgica",
+      "year": "2026",
+      "pmid": "42128964",
+      "doi": "10.1007/s00701-026-06913-4",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42128964/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_35871239",
+      "type": "journal_article",
+      "title": "Can preoperative brain imaging features predict shunt response in idiopathic normal pressure hydrocephalus? A PRISMA review.",
+      "authors": [],
+      "journal": "Neuroradiology",
+      "year": "2022",
+      "pmid": "35871239",
+      "doi": "10.1007/s00234-022-03021-9",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35871239/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": []
+}

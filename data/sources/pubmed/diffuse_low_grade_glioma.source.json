@@ -1,0 +1,227 @@
+{
+  "disease_id": "diffuse_low_grade_glioma",
+  "disease_name": {
+    "ja": "びまん性低悪性度神経膠腫",
+    "en": "Diffuse low-grade glioma"
+  },
+  "disease_aliases": {
+    "ja": [],
+    "en": [
+      "Diffuse low-grade glioma"
+    ]
+  },
+  "clinical": {
+    "overview": "Diffuse low-grade glioma literature draft generated from PubMed abstracts. Codex review is required.",
+    "treatment": "Not extracted. Codex review is required.",
+    "epidemiology": "Not extracted. Codex review is required."
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "unknown"
+      ],
+      "predominance": "unknown",
+      "predilection": "unknown",
+      "summary": "Not extracted."
+    },
+    "age": {
+      "typical_min": null,
+      "typical_max": null,
+      "peak_decade": "未確認",
+      "summary": "好発年齢は未確認。"
+    }
+  },
+  "keywords": [],
+  "frequency": {
+    "label": "unknown",
+    "summary": "Not extracted."
+  },
+  "imaging": {},
+  "findings": [
+    {
+      "finding_text": "FLAIR高信号",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "FLAIR",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "??????/blooming",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "SWI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "signal": "hypointense",
+        "pattern": "blooming"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "???",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "ASL",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "perfusion": "increased"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "???",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "ASL",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "perfusion": "decreased"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    }
+  ],
+  "references": [
+    {
+      "source_id": "pmid_41198334",
+      "type": "journal_article",
+      "title": "Pediatric-Type Diffuse Low Grade Glioma.",
+      "authors": [],
+      "journal": "Advances in cancer research",
+      "year": "2025",
+      "pmid": "41198334",
+      "doi": "10.1016/bs.acr.2025.08.006",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41198334/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_31143247",
+      "type": "journal_article",
+      "title": "Diffuse Low-Grade Glioma - Changing Concepts in Diagnosis and Management: A Review.",
+      "authors": [],
+      "journal": "Asian journal of neurosurgery",
+      "year": "2020",
+      "pmid": "31143247",
+      "doi": "10.4103/ajns.AJNS_24_18",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31143247/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_36510417",
+      "type": "journal_article",
+      "title": "Editorial for \"An MRI Study Combining Virtual Brain Grafting and Surface-Based Morphometry Analysis to Investigate Contralateral Alterations in Cortical Morphology in Patients With Diffuse Low-Grade Glioma\".",
+      "authors": [],
+      "journal": "Journal of magnetic resonance imaging : JMRI",
+      "year": "2023",
+      "pmid": "36510417",
+      "doi": "10.1002/jmri.28561",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36510417/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_30292978",
+      "type": "journal_article",
+      "title": "Diffuse low grade glioma after the 2016 WHO update, seizure characteristics, imaging correlates and outcomes.",
+      "authors": [],
+      "journal": "Clinical neurology and neurosurgery",
+      "year": "2019",
+      "pmid": "30292978",
+      "doi": "10.1016/j.clineuro.2018.10.001",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30292978/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_40668344",
+      "type": "journal_article",
+      "title": "Illuminating radiogenomic signatures in pediatric-type diffuse gliomas: insights into molecular, clinical, and imaging correlations. Part II: low-grade group.",
+      "authors": [],
+      "journal": "La Radiologia medica",
+      "year": "2025",
+      "pmid": "40668344",
+      "doi": "10.1007/s11547-025-02049-0",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40668344/",
+      "license": ""
+    }
+  ],
+  "source_query": "diffuse low-grade glioma[Title/Abstract] AND (MRI[Title/Abstract] OR magnetic resonance[Title/Abstract] OR imaging[Title/Abstract])",
+  "source_articles": [
+    {
+      "pmid": "41198334",
+      "title": "Pediatric-Type Diffuse Low Grade Glioma.",
+      "journal": "Advances in cancer research",
+      "year": "2025",
+      "doi": "10.1016/bs.acr.2025.08.006",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41198334/",
+      "abstract": "Pediatric-type diffuse low grade glioma are a novel subgrouping of pediatric glioma defined in the updated WHO 2021 classification of central nervous system tumors. The newly recognized pediatric-type diffuse low grade glioma family is comprised of four distinct entities, including diffuse astrocytoma MYB or MYBL1-altered, angiocentric glioma, polymorphous low-grade neuroepithelial tumor of the young, and diffuse low grade glioma MAPK-altered. Due to significant overlap in histopathology and molecular alterations between pediatric-type diffuse low grade glioma, accurate diagnosis of these tumor subtypes requires integration of both histology and molecular findings. Herein, we describe the epidemiologic, imaging, and molecular features of these pediatric diffuse glioma. In addition, we review current knowledge regarding management approach and treatment outcomes, including potential therapeutic implications of prevalent molecular alterations within this family of tumors."
+    },
+    {
+      "pmid": "31143247",
+      "title": "Diffuse Low-Grade Glioma - Changing Concepts in Diagnosis and Management: A Review.",
+      "journal": "Asian journal of neurosurgery",
+      "year": "2020",
+      "doi": "10.4103/ajns.AJNS_24_18",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31143247/",
+      "abstract": "Though diffuse low-grade gliomas (dLGGs) represent only 15% of gliomas, they have been receiving increasing attention in the past decade. Significant advances in knowledge of the natural history and clinical diversity have been documented, and an improved pathological classification of gliomas that integrates histological features with molecular markers has been issued by the WHO. Advances in the radiological assessment of dLGG, particularly new magnetic resonance imaging scanning sequences, allow improved diagnostic and prognostic information. The management paradigms are evolving from \"wait and watch\" of the past to more active interventional therapy to obviate the risk of malignant transformation. New surgical technologies allow more aggressive surgical resections with a reduction of morbidity. Many reports suggest the association of gross total resection with longer overall survival and progression-free survival in addition to better seizure control. The literature also shows the use of chemotherapeutics and radiation therapy as important adjuncts to surgery. The goals of management have has been increasing survival with increasing stress on quality of life. Our review highlights the recent advances in the molecular diagnosis and management of dLGG with trends toward multidisciplinary and multimodality management of dLGG with an aim to surgically resect the primary disease, followed by chemoradiation in cases of progressive or recurrent disease."
+    },
+    {
+      "pmid": "36510417",
+      "title": "Editorial for \"An MRI Study Combining Virtual Brain Grafting and Surface-Based Morphometry Analysis to Investigate Contralateral Alterations in Cortical Morphology in Patients With Diffuse Low-Grade Glioma\".",
+      "journal": "Journal of magnetic resonance imaging : JMRI",
+      "year": "2023",
+      "doi": "10.1002/jmri.28561",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36510417/",
+      "abstract": ""
+    },
+    {
+      "pmid": "30292978",
+      "title": "Diffuse low grade glioma after the 2016 WHO update, seizure characteristics, imaging correlates and outcomes.",
+      "journal": "Clinical neurology and neurosurgery",
+      "year": "2019",
+      "doi": "10.1016/j.clineuro.2018.10.001",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30292978/",
+      "abstract": "The majority of patients with supratentorial diffuse grade II glioma present with seizures, which adversely affect quality of life. The exact mechanism of epileptogenesis is unknown and the influence of tumour characteristics, radiological and histological, are not well studied, particularly following the introduction of molecular genetics in the 2016 WHO reclassification of gliomas. We sought to define predictors of seizure development and outcome in low grade glioma.\nA retrospective review of patients who underwent resection of a supratentorial grade II glioma in a single institution. All patients underwent surgery at initial presentation with the aim of maximal safe resection. Presenting symptoms and radiological variables were recorded, including eloquent location, cortical involvement, tumour margins and tumour volume. Extent of resection (EOR), surgery type (awake vs asleep) and seizure outcome were analysed. Using molecular genetics data the original histology was reclassified according to the 2016 WHO update.\n63 patients were included, 45 (71%) presented with seizures. 36 (57%) had oligodendroglioma and 27 astrocytoma. IDH-1 mutation was present in 53 (84%). 18 (29%) had tumour in an eloquent location. 33 (73%) were Engel class I following surgery at median follow up of 43 months. 6 patients were Engel II, 6 class III. Complete and near total resection were associated with improved Engel class compared to subtotal resection. No factors such as age, tumour location, tumour margins or tumour molecular genetics (including IDH-1 mutation) predicted better seizure outcome. Updated histological subtype did not predict the presence of seizures at initial diagnosis, only tumour heterogeneousity on initial MRI (p&#x2009;=&#x2009;0.043). More patients who underwent awake craniotomy with intraoperative mapping were Engel class 1 post-operatively than those operated under general anaesthetic (84% vs 65%). Tumour volume at presentation did not correlate with seizure outcome but impacts on the EOR.\nSeizure outcome is directly related to EOR in low grade glioma, which can be predicted by the initial tumour volume. Tumour histological subtype, including updated molecular genetic classification did not predict seizure development or outcome in this series. The use of awake craniotomy results in greater EOR and improved Engel Class following surgery."
+    },
+    {
+      "pmid": "40668344",
+      "title": "Illuminating radiogenomic signatures in pediatric-type diffuse gliomas: insights into molecular, clinical, and imaging correlations. Part II: low-grade group.",
+      "journal": "La Radiologia medica",
+      "year": "2025",
+      "doi": "10.1007/s11547-025-02049-0",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40668344/",
+      "abstract": "The fifth edition of the World Health Organization classification of central nervous system tumors represents a significant advancement in the molecular-genetic classification of pediatric-type diffuse gliomas. This article comprehensively summarizes the clinical, molecular, and radiological imaging features in pediatric-type low-grade gliomas (pLGGs), including MYB- or MYBL1-altered tumors, polymorphous low-grade neuroepithelial tumor of the young (PLNTY), and diffuse low-grade glioma, MAPK pathway-altered. Most pLGGs harbor alterations in the RAS/MAPK pathway, functioning as \"one pathway disease\". Specific magnetic resonance imaging features, such as the T2-fluid-attenuated inversion recovery (FLAIR) mismatch sign in MYB- or MYBL1-altered tumors and the transmantle-like sign in PLNTYs, may serve as non-invasive biomarkers for underlying molecular alterations. Recent advances in radiogenomics have enabled the differentiation of BRAF fusion from BRAF V600E mutant tumors based on magnetic resonance imaging characteristics. Machine learning approaches have further enhanced our ability to predict molecular subtypes from imaging features. These radiology-molecular correlations offer potential clinical utility in treatment planning and prognostication, especially as targeted therapies against the MAPK pathway emerge. Continued research is needed to refine our understanding of genotype-phenotype correlations in less common molecular alterations and to validate these imaging biomarkers in larger cohorts."
+    }
+  ]
+}

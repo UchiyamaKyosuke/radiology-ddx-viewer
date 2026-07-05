@@ -1,0 +1,413 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "neuromyelitis_optica_spectrum_disorder",
+  "disease_name": {
+    "ja": "視神経脊髄炎スペクトラム障害",
+    "en": "Neuromyelitis optica spectrum disorder"
+  },
+  "disease_aliases": {
+    "ja": [
+      "NMOSD",
+      "視神経脊髄炎"
+    ],
+    "en": [
+      "NMOSD"
+    ]
+  },
+  "clinical": {
+    "overview": "AQP4抗体関連の炎症性脱髄疾患。視神経、脊髄に加え、延髄最後野、視床下部、脳梁周囲などに病変を示す。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "female",
+      "predilection": "female_predominant",
+      "summary": "女性に多い。"
+    },
+    "age": {
+      "typical_min": 15,
+      "typical_max": 70,
+      "peak_decade": "成人",
+      "summary": "成人女性で重要。"
+    }
+  },
+  "keywords": [
+    "AQP4",
+    "area postrema",
+    "hypothalamus"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "inflammatory_demyelination"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "NMOSDの頭蓋内病変はCTで目立たないことが多く、MRIで評価する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "neuromyelitis_optica_spectrum_disorder_ct_001",
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "病変が低吸収として見えることはあるが感度は低い。",
+              "typicality": "rare",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_hypoattenuation",
+                "alternatives": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは視神経、視床下部/脳幹、脳室周囲病変、長大脊髄病変との組み合わせを確認する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "neuromyelitis_optica_spectrum_disorder_mri_002",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "hypothalamus",
+                "subregion": "suprasellar",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "視床下部や脳幹周囲にFLAIR高信号を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:flair_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "neuromyelitis_optica_spectrum_disorder_mri_flair_flair_hyperintensity_01",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "脳室周囲、視床下部、脳幹などにT2/FLAIR高信号病変を認めることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "neuromyelitis_optica_spectrum_disorder_mri_flair_periventricular_ovoid_lesions_01",
+              "finding_code": "finding:periventricular_ovoid_lesions",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "脳室周囲病変はNMOSDの頭蓋内病変として参考になる。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "neuromyelitis_optica_spectrum_disorder_mri_003",
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "T2高信号の炎症性病変を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:t2_hyperintensity",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "neuromyelitis_optica_spectrum_disorder_mri_004",
+              "finding_code": "finding:mild_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "活動性病変では造影効果を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:mild_enhancement",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "neuromyelitis_optica_spectrum_disorder_mri_contrast_enhanced_t1wi_mild_enhancement_01",
+              "finding_code": "finding:mild_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "活動性病変では造影効果を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_id": "neuromyelitis_optica_spectrum_disorder_mri_dwi_diffusion_restriction_present_01",
+              "finding_code": "finding:diffusion_restriction_present",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "急性病変では拡散制限を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 17706564, 37322542, 36370634）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "neuromyelitis_optica_spectrum_disorder_ct_001",
+          "neuromyelitis_optica_spectrum_disorder_mri_002",
+          "neuromyelitis_optica_spectrum_disorder_mri_003",
+          "neuromyelitis_optica_spectrum_disorder_mri_004"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_17706564",
+          "pmid_37322542",
+          "pmid_36370634"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "neuromyelitis_optica_spectrum_disorder_mri_flair_flair_hyperintensity_01",
+          "neuromyelitis_optica_spectrum_disorder_mri_flair_periventricular_ovoid_lesions_01",
+          "neuromyelitis_optica_spectrum_disorder_mri_dwi_diffusion_restriction_present_01",
+          "neuromyelitis_optica_spectrum_disorder_mri_contrast_enhanced_t1wi_mild_enhancement_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_17706564",
+      "type": "journal_article",
+      "title": "The spectrum of neuromyelitis optica.",
+      "authors": [],
+      "journal": "The Lancet. Neurology",
+      "year": "2007",
+      "pmid": "17706564",
+      "doi": "10.1016/S1474-4422(07)70216-8",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17706564/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_37322542",
+      "type": "journal_article",
+      "title": "MRI to differentiate multiple sclerosis, neuromyelitis optica, and myelin oligodendrocyte glycoprotein antibody disease.",
+      "authors": [],
+      "journal": "Journal of neuroimaging : official journal of the American Society of Neuroimaging",
+      "year": "2023",
+      "pmid": "37322542",
+      "doi": "10.1111/jon.13137",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37322542/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_36370634",
+      "type": "journal_article",
+      "title": "Association between B-cell depletion and attack risk in neuromyelitis optica spectrum disorder: An exploratory analysis from N-MOmentum, a double-blind, randomised, placebo-controlled, multicentre phase 2/3 trial.",
+      "authors": [],
+      "journal": "EBioMedicine",
+      "year": "2022",
+      "pmid": "36370634",
+      "doi": "10.1016/j.ebiom.2022.104321",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36370634/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": []
+}

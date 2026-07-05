@@ -1,0 +1,210 @@
+{
+  "disease_id": "glioblastoma",
+  "disease_name": {
+    "ja": "膠芽腫",
+    "en": "Glioblastoma"
+  },
+  "disease_aliases": {
+    "ja": [],
+    "en": [
+      "Glioblastoma"
+    ]
+  },
+  "clinical": {
+    "overview": "Glioblastoma literature draft generated from PubMed abstracts. Codex review is required.",
+    "treatment": "Not extracted. Codex review is required.",
+    "epidemiology": "Not extracted. Codex review is required."
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "unknown"
+      ],
+      "predominance": "unknown",
+      "predilection": "unknown",
+      "summary": "Not extracted."
+    },
+    "age": {
+      "typical_min": null,
+      "typical_max": null,
+      "peak_decade": "",
+      "summary": "Not extracted."
+    }
+  },
+  "frequency": {
+    "label": "unknown",
+    "summary": "Not extracted."
+  },
+  "imaging": {},
+  "findings": [
+    {
+      "finding_text": "T2高信号",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "T2WI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "signal": "hyperintense"
+      },
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "石灰化あり",
+      "modality": "CT",
+      "acquisition_type": "phase",
+      "acquisition_code": "non_contrast",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "出血成分あり",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "T1WI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "cyst_content",
+      "modifiers": {},
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "リング状造影",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "contrast_enhanced_T1WI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "血管原性浮腫",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "FLAIR",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "脳室周囲卵円形白質病変",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "FLAIR",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    }
+  ],
+  "references": [
+    {
+      "source_id": "pmid_30114544",
+      "type": "journal_article",
+      "title": "Frontal Tumefactive Demyelinating Lesion Mimicking Glioblastoma Differentiated by Methionine Positron Emission Tomography.",
+      "authors": [],
+      "journal": "World neurosurgery",
+      "year": "2018",
+      "pmid": "30114544",
+      "doi": "10.1016/j.wneu.2018.08.027",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30114544/",
+      "license": "",
+      "note": "Fetched from PubMed abstract metadata."
+    },
+    {
+      "source_id": "pmid_29482953",
+      "type": "journal_article",
+      "title": "Primary central nervous system lymphoma in immunocompetent patients: spectrum of findings and differential characteristics.",
+      "authors": [],
+      "journal": "Radiologia",
+      "year": "2019",
+      "pmid": "29482953",
+      "doi": "10.1016/j.rx.2017.12.009",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29482953/",
+      "license": "",
+      "note": "Fetched from PubMed abstract metadata."
+    },
+    {
+      "source_id": "pmid_40010714",
+      "type": "journal_article",
+      "title": "[A case of multifocal glioblastoma with ring enhancement, mimicking cerebral toxoplasmosis with ring-enhanced lesions].",
+      "authors": [],
+      "journal": "Rinsho shinkeigaku = Clinical neurology",
+      "year": "2025",
+      "pmid": "40010714",
+      "doi": "10.5692/clinicalneurol.cn-002019",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40010714/",
+      "license": "",
+      "note": "Fetched from PubMed abstract metadata."
+    }
+  ],
+  "source_query": "glioblastoma MRI imaging findings ring enhancement necrosis diffusion",
+  "source_articles": [
+    {
+      "pmid": "30114544",
+      "title": "Frontal Tumefactive Demyelinating Lesion Mimicking Glioblastoma Differentiated by Methionine Positron Emission Tomography.",
+      "journal": "World neurosurgery",
+      "year": "2018",
+      "doi": "10.1016/j.wneu.2018.08.027",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30114544/",
+      "abstract": "Tumefactive demyelinating lesion (TDL) is often reported as a rare variation of multiple sclerosis (MS). TDL is difficult to diagnose solely by magnetic resonance imaging (MRI) in patients with no history of MS. This is because the lesion often shows ring enhancement with perifocal brain edema on gadolinium MRI, thus mimicking glioblastoma multiforme (GBM).\nA 54-year-old healthy woman complained of headache 1 month before admission. She developed a decline in cognitive function, decreased attention, and executive function disorder 10 days before admission. Gadolinium magnetic resonance imaging showed a ring-shaped enhancement accompanied by massive brain edema in the left frontal lobe. This suggested GBM, but methionine positron emission tomography (MET PET), surprisingly, showed no uptake with a tumor-to-normal brain ratio of 1.18. Accordingly, we eliminated GBM and suspected brain abscess because diffusion-weighted images showed high signal intensity in the lesion. Although we performed drainage, we could not demonstrate the presence of pus. Pathologic analysis of a specimen obtained by needle biopsy revealed broad necrosis and a small number of inflammatory cells. We therefore prescribed steroid therapy, by which symptoms gradually improved. No relapse occurred for 2 years. We finally diagnosed the patient as having TDL.\nMET PET is considered a possible diagnostic modality for demyelinating disease as it can appropriately reflect pathologic findings. MET PET will facilitate decision making regarding surgery in patients with TDL."
+    },
+    {
+      "pmid": "29482953",
+      "title": "Primary central nervous system lymphoma in immunocompetent patients: spectrum of findings and differential characteristics.",
+      "journal": "Radiologia",
+      "year": "2019",
+      "doi": "10.1016/j.rx.2017.12.009",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29482953/",
+      "abstract": "Primary central nervous system (CNS) lymphomas are uncommon and their management differs significantly from that of other malignant tumors involving the CNS. This article explains how the imaging findings often suggest the diagnosis early. The typical findings in immunocompetent patients consist of a supratentorial intraaxial mass that enhances homogeneously. Other findings to evaluate include multifocality and incomplete ring enhancement. The differential diagnosis of primary CNS lymphomas should consider mainly other malignant tumors of the CNS such as glioblastomas or metastases. Primary CNS lymphomas tend to have less edema and less mass effect; they also tend to spare the adjacent cortex. Necrosis, hemorrhage, and calcification are uncommon in primary CNS lymphomas. Although the findings in morphologic sequences are characteristic, they are not completely specific and atypical types are sometimes encountered. Advanced imaging techniques such as diffusion or especially perfusion provide qualitative and quantitative data that play an important role in differentiating primary CNS lymphomas from other brain tumors."
+    },
+    {
+      "pmid": "40010714",
+      "title": "[A case of multifocal glioblastoma with ring enhancement, mimicking cerebral toxoplasmosis with ring-enhanced lesions].",
+      "journal": "Rinsho shinkeigaku = Clinical neurology",
+      "year": "2025",
+      "doi": "10.5692/clinicalneurol.cn-002019",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40010714/",
+      "abstract": "A 57-year-old male patient with a history of daily contact with stray cats was transferred to our hospital with weakness in the left limb and mild disturbance of consciousness. At presentation, he had no fever or signs of meningeal irritation. Cerebrospinal fluid examination revealed lymphocytic pleocytosis; however, the cerebrospinal culture was negative. Computed tomography of the thorax and abdomen showed no abnormalities. Gadolinium-enhanced brain MRI revealed multiple contrast-enhanced lesions in the periventricular white matter and enhanced lateral ventricles. Under the suspicion of cerebral toxoplasmosis, trimethoprim-sulfamethoxazole was administered, but his symptoms gradually worsened. Histopathological findings of the first brain biopsy did not reach the definitive diagnosis. The tissue culture detected Propionibacterium acnes. Despite changes in antibiotics (ceftriaxone and ampicillin), his symptoms progressed. The second brain biopsy revealed diffuse proliferation of atypical glial cells with irregular size of nuclei and necrosis. The diagnosis was glioblastoma, IDH-wild type, CNS WHO grade 4. The radiological findings in this case were initially recognized as isolated multiple lesions with surrounding vasogenic edema, but we authors should have suspected the brain tumor which spreads through the corpus callosum. Multifocal glioblastomas, a rare type of glioblastoma, has worse prognosis than unifocal glioblastoma. This case also emphasizes the importance of the appropriate timing of brain biopsy and careful validation of biopsy sampling."
+    }
+  ]
+}

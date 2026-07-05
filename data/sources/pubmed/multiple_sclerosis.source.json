@@ -1,0 +1,162 @@
+{
+  "disease_id": "multiple_sclerosis",
+  "disease_name": {
+    "ja": "多発性硬化症",
+    "en": "Multiple sclerosis"
+  },
+  "disease_aliases": {
+    "ja": [],
+    "en": [
+      "Multiple sclerosis"
+    ]
+  },
+  "clinical": {
+    "overview": "Multiple sclerosis literature draft generated from PubMed abstracts. Codex review is required.",
+    "treatment": "Not extracted. Codex review is required.",
+    "epidemiology": "Not extracted. Codex review is required."
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "unknown"
+      ],
+      "predominance": "unknown",
+      "predilection": "unknown",
+      "summary": "Not extracted."
+    },
+    "age": {
+      "typical_min": null,
+      "typical_max": null,
+      "peak_decade": "",
+      "summary": "Not extracted."
+    }
+  },
+  "frequency": {
+    "label": "unknown",
+    "summary": "Not extracted."
+  },
+  "imaging": {},
+  "findings": [
+    {
+      "finding_text": "T1低信号",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "T1WI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "white_matter",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "signal": "hypointense"
+      },
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "脂肪成分あり",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "T1WI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "white_matter",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "脳室周囲卵円形白質病変",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "FLAIR",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "white_matter",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    }
+  ],
+  "references": [
+    {
+      "source_id": "pmid_31209474",
+      "type": "journal_article",
+      "title": "Assessment of lesions on magnetic resonance imaging in multiple sclerosis: practical guidelines.",
+      "authors": [],
+      "journal": "Brain : a journal of neurology",
+      "year": "2020",
+      "pmid": "31209474",
+      "doi": "10.1093/brain/awz144",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31209474/",
+      "license": "",
+      "note": "Fetched from PubMed abstract metadata."
+    },
+    {
+      "source_id": "pmid_40975102",
+      "type": "journal_article",
+      "title": "2024 MAGNIMS-CMSC-NAIMS consensus recommendations on the use of MRI for the diagnosis of multiple sclerosis.",
+      "authors": [],
+      "journal": "The Lancet. Neurology",
+      "year": "2025",
+      "pmid": "40975102",
+      "doi": "10.1016/S1474-4422(25)00304-7",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40975102/",
+      "license": "",
+      "note": "Fetched from PubMed abstract metadata."
+    },
+    {
+      "source_id": "pmid_40773034",
+      "type": "journal_article",
+      "title": "Characteristics of MRI lesions in AQP4 antibody-positive NMOSD, MOGAD, and multiple sclerosis: a systematic review and meta-analysis.",
+      "authors": [],
+      "journal": "Journal of neurology",
+      "year": "2025",
+      "pmid": "40773034",
+      "doi": "10.1007/s00415-025-13303-w",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40773034/",
+      "license": "",
+      "note": "Fetched from PubMed abstract metadata."
+    }
+  ],
+  "source_query": "multiple sclerosis MRI imaging findings periventricular lesions",
+  "source_articles": [
+    {
+      "pmid": "31209474",
+      "title": "Assessment of lesions on magnetic resonance imaging in multiple sclerosis: practical guidelines.",
+      "journal": "Brain : a journal of neurology",
+      "year": "2020",
+      "doi": "10.1093/brain/awz144",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31209474/",
+      "abstract": "MRI has improved the diagnostic work-up of multiple sclerosis, but inappropriate image interpretation and application of MRI diagnostic criteria contribute to misdiagnosis. Some diseases, now recognized as conditions distinct from multiple sclerosis, may satisfy the MRI criteria for multiple sclerosis (e.g. neuromyelitis optica spectrum disorders, Susac syndrome), thus making the diagnosis of multiple sclerosis more challenging, especially if biomarker testing (such as serum anti-AQP4 antibodies) is not informative. Improvements in MRI technology contribute and promise to better define the typical features of multiple sclerosis lesions (e.g. juxtacortical and periventricular location, cortical involvement). Greater understanding of some key aspects of multiple sclerosis pathobiology has allowed the identification of characteristics more specific to multiple sclerosis (e.g. central vein sign, subpial demyelination and lesional rims), which are not included in the current multiple sclerosis diagnostic criteria. In this review, we provide the clinicians and researchers with a practical guide to enhance the proper recognition of multiple sclerosis lesions, including a thorough definition and illustration of typical MRI features, as well as a discussion of red flags suggestive of alternative diagnoses. We also discuss the possible place of emerging qualitative features of lesions which may become important in the near future."
+    },
+    {
+      "pmid": "40975102",
+      "title": "2024 MAGNIMS-CMSC-NAIMS consensus recommendations on the use of MRI for the diagnosis of multiple sclerosis.",
+      "journal": "The Lancet. Neurology",
+      "year": "2025",
+      "doi": "10.1016/S1474-4422(25)00304-7",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40975102/",
+      "abstract": "MRI plays an increasingly important role in the diagnosis of multiple sclerosis. We discuss the expanded role of MRI in the 2024 McDonald diagnostic criteria for multiple sclerosis, which include the optic nerve as a fifth anatomical location, in addition to the periventricular, juxtacortical or cortical, infratentorial, and spinal cord regions. The diagnosis of multiple sclerosis can now be confirmed when the criteria of dissemination in space are fulfilled with the detection of typical lesions in at least four locations without additional evidence. We recommend appropriate imaging strategies and MRI acquisition protocols for all aspects of multiple sclerosis diagnosis, including fat-saturated sequences for detection of symptomatic optic nerve lesions. Diagnostic imaging should always cover the brain and spinal cord and include susceptibility-sensitive sequences for the assessment of the central vein sign and paramagnetic rim lesions, which can be especially helpful in cases when conventional imaging findings are insufficient to establish a diagnosis. We discuss how to handle the diagnosis of radiologically isolated presentations of multiple sclerosis, which are included in the 2024 criteria. We present recommendations for image interpretation and avoidance of misdiagnosis, and extend the recommendations to the use of MRI in the diagnosis of multiple sclerosis in older people, children, people with vascular comorbidities or migraine, and people living outside Europe and North America. Finally, we provide recommendations for standardisation of MRI acquisition and communication of results to enable an earlier diagnosis while maintaining high diagnostic specificity."
+    },
+    {
+      "pmid": "40773034",
+      "title": "Characteristics of MRI lesions in AQP4 antibody-positive NMOSD, MOGAD, and multiple sclerosis: a systematic review and meta-analysis.",
+      "journal": "Journal of neurology",
+      "year": "2025",
+      "doi": "10.1007/s00415-025-13303-w",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40773034/",
+      "abstract": "Multiple sclerosis (MS), aquaporin-4 antibody-positive neuromyelitis optica spectrum disorder (AQP4-Ab&#x2009;+&#x2009;ve NMOSD), and myelin oligodendrocyte glycoprotein-associated disease (MOGAD) are demyelinating diseases with differing pathophysiological processes and treatments. The objective of this study was to compile a comprehensive list of MRI lesions, and to quantify the utility of these lesions in distinguishing between these conditions.\nWe searched for articles comparing MRI lesion frequency in MS, AQP4-Ab&#x2009;+&#x2009;ve NMOSD, MOGAD and healthy controls. Bayesian network meta-analysis together with pairwise and pooled case-case comparison analyses to develop sensitivity, specificity, and positive predictive values were undertaken.\nSixty-six articles were reported on 2933 MS, 3296 AQP4-Ab&#x2009;+&#x2009;ve NMOSD, and 1559 MOGAD cases, and 561 healthy controls. MRI lesions associated with MS were: periventricular T2, subcortical white matter T2, Dawson's finger, U-fibre T2 lesion, posterior spinal column T2, inferior temporal T2, cortical T2, brain T1 hypointensity (black holes), peripheral spinal cord T2, pons T2, unilateral optic nerve T2 and brain gadolinium enhancing lesions. Optic chiasm T2, LETM, bright spotty spinal cord T2, area postrema T2, hypothalamic T2, spinal cord atrophy and optic tract T2 lesions were associated with AQP4-Ab&#x2009;+&#x2009;ve NMOSD. Conus medullaris T2, fluffy, perineural enhancement, peri-ependymal 3rd ventricle T2 and peri-ependymal 4th ventricle T2 lesions were associated with MOGAD.\nThis review identified MRI features supportive of a diagnosis of MS, NMOSD or MOGAD, and has clarified the diagnostic utility of various MRI lesion characteristics, to aid in future clinical decision-making and guide future approaches to research."
+    }
+  ]
+}

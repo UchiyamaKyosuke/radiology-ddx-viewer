@@ -1,0 +1,414 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "moyamoya_disease",
+  "disease_name": {
+    "ja": "もやもや病",
+    "en": "Moyamoya disease"
+  },
+  "disease_aliases": {
+    "ja": [
+      "もやもや病"
+    ],
+    "en": [
+      "Moyamoya disease"
+    ]
+  },
+  "clinical": {
+    "overview": "内頚動脈終末部狭窄・閉塞と基底部異常血管網を特徴とする血管疾患。MRAで狭窄/閉塞と側副血行を評価する。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 5,
+      "typical_max": 60,
+      "peak_decade": "小児と成人に二峰性",
+      "summary": "小児と成人に二峰性。"
+    }
+  },
+  "keywords": [
+    "ICA terminus",
+    "collateral vessels",
+    "ivy sign"
+  ],
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 2,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "arterial_stenosis_collateral_vessels"
+    },
+    "summary": "該当する画像パターンで重要な鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "もやもや病はCTで慢性虚血変化や出血を確認する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "moyamoya_disease_ct_001",
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "虚血性変化が低吸収として見えることがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_hypoattenuation",
+                "alternatives": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRI/MRAでは内頸動脈終末部狭窄/閉塞、基底核周囲の側副血行、灌流低下を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "MRA_TOF"
+          },
+          "findings": [
+            {
+              "finding_id": "moyamoya_disease_mri_002",
+              "finding_code": "finding:arterial_stenosis_or_occlusion",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRA_TOF"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "cerebral_vessel",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "内頚動脈終末部〜中大脳動脈近位部の狭窄/閉塞を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:arterial_stenosis_or_occlusion",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "moyamoya_disease_mri_mra_tof_arterial_stenosis_or_occlusion_01",
+              "finding_code": "finding:arterial_stenosis_or_occlusion",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRA_TOF"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "MRAで内頸動脈終末部〜近位前/中大脳動脈の狭窄・閉塞を認める。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "moyamoya_disease_mri_mra_tof_flow_void_01",
+              "finding_code": "finding:flow_void",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRA_TOF"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "基底核周囲に側副血管flow voidを認める。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": [
+                "moyamoya vessels"
+              ]
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "moyamoya_disease_mri_003",
+              "finding_code": "finding:flow_void",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "cerebral_vessel",
+                "subregion": "basal_ganglia",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "基底核周囲の側副血管flow voidを伴う。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:flow_void",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "moyamoya_disease_mri_004",
+              "finding_code": "finding:leptomeningeal_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "meninges",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "FLAIRで皮質溝高信号/ivy signを示すことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:leptomeningeal_enhancement",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "moyamoya_disease_mri_flair_flair_hyperintensity_01",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "慢性虚血や陳旧性梗塞に伴うFLAIR高信号を認めることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "ASL"
+          },
+          "findings": [
+            {
+              "finding_id": "moyamoya_disease_mri_asl_hypoperfusion_01",
+              "finding_code": "finding:hypoperfusion",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "ASL"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "ASL/灌流画像で灌流低下を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 40397837, 40789454, 35183659）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "moyamoya_disease_ct_001",
+          "moyamoya_disease_mri_002",
+          "moyamoya_disease_mri_003",
+          "moyamoya_disease_mri_004"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_40397837",
+          "pmid_40789454",
+          "pmid_35183659"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "moyamoya_disease_mri_mra_tof_arterial_stenosis_or_occlusion_01",
+          "moyamoya_disease_mri_mra_tof_flow_void_01",
+          "moyamoya_disease_mri_asl_hypoperfusion_01",
+          "moyamoya_disease_mri_flair_flair_hyperintensity_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_40397837",
+      "type": "journal_article",
+      "title": "Noninvasive Assessment of the Risk Features of Hemorrhage in Moyamoya Disease Using 7T MRI.",
+      "authors": [],
+      "journal": "Neurology",
+      "year": "2025",
+      "pmid": "40397837",
+      "doi": "10.1212/WNL.0000000000213617",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40397837/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_40789454",
+      "type": "journal_article",
+      "title": "5.0T MRA techniques for evaluating Moyamoya disease: 4D-ASL-MRA vs. 3D-TOF-MRA.",
+      "authors": [],
+      "journal": "Journal of neuroradiology = Journal de neuroradiologie",
+      "year": "2025",
+      "pmid": "40789454",
+      "doi": "10.1016/j.neurad.2025.101376",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40789454/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_35183659",
+      "type": "journal_article",
+      "title": "Non-contrast hemodynamic imaging of Moyamoya disease with MR fingerprinting ASL: A feasibility study.",
+      "authors": [],
+      "journal": "Magnetic resonance imaging",
+      "year": "2022",
+      "pmid": "35183659",
+      "doi": "10.1016/j.mri.2022.02.006",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35183659/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": []
+}

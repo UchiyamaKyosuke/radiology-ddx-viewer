@@ -1,0 +1,51 @@
+{
+  "disease_id": "cerebral_amyloid_angiopathy",
+  "disease_name": {
+    "ja": "脳アミロイドアンギオパチー",
+    "en": "Cerebral amyloid angiopathy"
+  },
+  "disease_aliases": {
+    "ja": [
+      "CAA"
+    ],
+    "en": [
+      "CAA"
+    ]
+  },
+  "clinical": {
+    "overview": "高齢者の皮質・皮質下出血や微小出血、皮質表在性鉄沈着を来す血管症。SWI/T2*が重要。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 60,
+      "typical_max": 95,
+      "peak_decade": "高齢者",
+      "summary": "高齢者に多い。"
+    }
+  },
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 2,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "lobar_hemorrhage_microbleeds"
+    },
+    "summary": "該当する画像パターンで重要な鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

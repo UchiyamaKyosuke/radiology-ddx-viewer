@@ -1,0 +1,51 @@
+{
+  "disease_id": "choroid_plexus_papilloma",
+  "disease_name": {
+    "ja": "脈絡叢乳頭腫",
+    "en": "Choroid plexus papilloma"
+  },
+  "disease_aliases": {
+    "ja": [
+      "脈絡叢乳頭腫"
+    ],
+    "en": [
+      "Choroid plexus papilloma"
+    ]
+  },
+  "clinical": {
+    "overview": "脈絡叢由来の脳室内腫瘍。小児では側脳室、成人では第4脳室に多く、強い造影と水頭症が手掛かり。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 18,
+      "peak_decade": "小児",
+      "summary": "小児で重要。"
+    }
+  },
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "enhancing_intraventricular_mass"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

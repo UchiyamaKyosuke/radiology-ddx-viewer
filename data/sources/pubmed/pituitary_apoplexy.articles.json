@@ -1,0 +1,38 @@
+{
+  "disease_id": "pituitary_apoplexy",
+  "disease_name": {
+    "ja": "下垂体卒中",
+    "en": "Pituitary apoplexy"
+  },
+  "query": "\"pituitary apoplexy\" AND (MRI OR CT OR imaging)",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "26414232",
+      "title": "Pituitary Apoplexy.",
+      "journal": "Endocrine reviews",
+      "year": "2016",
+      "doi": "10.1210/er.2015-1042",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26414232/",
+      "abstract": ""
+    },
+    {
+      "pmid": "25732655",
+      "title": "Pituitary apoplexy.",
+      "journal": "Endocrinology and metabolism clinics of North America",
+      "year": "2015",
+      "doi": "10.1016/j.ecl.2014.10.016",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25732655/",
+      "abstract": ""
+    },
+    {
+      "pmid": "31745969",
+      "title": "Pituitary apoplexy.",
+      "journal": "Neurologia i neurochirurgia polska",
+      "year": "2020",
+      "doi": "10.5603/PJNNS.a2019.0054",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31745969/",
+      "abstract": ""
+    }
+  ]
+}

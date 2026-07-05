@@ -1,0 +1,51 @@
+{
+  "disease_id": "ganglioglioma",
+  "disease_name": {
+    "ja": "神経節膠腫",
+    "en": "Ganglioglioma"
+  },
+  "disease_aliases": {
+    "ja": [
+      "神経節膠腫"
+    ],
+    "en": [
+      "Ganglioglioma"
+    ]
+  },
+  "clinical": {
+    "overview": "小児〜若年成人のてんかん関連腫瘍。側頭葉皮質〜皮質下の嚢胞性/充実性病変、石灰化、壁在結節が手掛かり。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 5,
+      "typical_max": 35,
+      "peak_decade": "小児〜若年成人",
+      "summary": "小児から若年成人に多い。"
+    }
+  },
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "epilepsy_associated_cortical_tumor"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

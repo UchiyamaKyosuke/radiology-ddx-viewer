@@ -1,0 +1,38 @@
+{
+  "disease_id": "posterior_fossa_juvenile_xanthogranuloma",
+  "disease_name": {
+    "ja": "中枢神経若年性黄色肉芽腫",
+    "en": "CNS juvenile xanthogranuloma"
+  },
+  "query": "central nervous system juvenile xanthogranuloma MRI imaging",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "36040525",
+      "title": "Imaging features of juvenile xanthogranuloma.",
+      "journal": "Pediatric radiology",
+      "year": "2023",
+      "doi": "10.1007/s00247-022-05486-5",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36040525/",
+      "abstract": ""
+    },
+    {
+      "pmid": "25624957",
+      "title": "Central nervous system lymphoma in a 3-year-old male suffering from a severe juvenile xanthogranuloma - the usefulness of perfusion weighted imaging and diffusion weighted imaging in the diagnostics of pediatric brain tumors.",
+      "journal": "Polish journal of radiology",
+      "year": "2015",
+      "doi": "10.12659/PJR.892106",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25624957/",
+      "abstract": ""
+    },
+    {
+      "pmid": "32981400",
+      "title": "Imaging features of neonatal systemic juvenile xanthogranuloma: a case report and review of the literature.",
+      "journal": "The Journal of international medical research",
+      "year": "2021",
+      "doi": "10.1177/0300060520956416",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32981400/",
+      "abstract": ""
+    }
+  ]
+}

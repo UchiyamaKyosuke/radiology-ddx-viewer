@@ -1,0 +1,427 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "vestibular_schwannoma",
+  "disease_name": {
+    "ja": "前庭神経鞘腫",
+    "en": "Vestibular schwannoma"
+  },
+  "disease_aliases": {
+    "ja": [
+      "聴神経腫瘍"
+    ],
+    "en": [
+      "Acoustic neuroma"
+    ]
+  },
+  "clinical": {
+    "overview": "第8脳神経由来の良性腫瘍。内耳道から小脳橋角部へ進展する造影性腫瘤として認められる。",
+    "treatment": "腫瘍サイズ、症状、聴力、増大傾向に応じて経過観察、定位放射線治療、手術を選択する。",
+    "epidemiology": "成人の小脳橋角部腫瘤で頻度の高い鑑別。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 30,
+      "typical_max": 75,
+      "peak_decade": "40-60歳代",
+      "summary": "成人に多い。"
+    }
+  },
+  "keywords": [
+    "cerebellopontine angle",
+    "internal auditory canal",
+    "ice-cream cone"
+  ],
+  "frequency": {
+    "label": "common",
+    "prevalence_rank": 4,
+    "basis": "clinical_context",
+    "evidence_level": "guideline",
+    "context": {
+      "population": "adult",
+      "body_region": "brain",
+      "clinical_setting": "cerebellopontine_angle_mass"
+    },
+    "summary": "小脳橋角部造影性腫瘤では頻度の高い鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "前庭神経鞘腫はCTで内耳道拡大や小脳橋角部腫瘤を確認する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "vestibular_schwannoma_ct_nc_001",
+              "finding_code": "finding:internal_auditory_canal_extension",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "cranial_nerve",
+                "subregion": "internal_auditory_canal",
+                "laterality": "unknown"
+              },
+              "target": "cranial_nerve_mass",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "内耳道拡大を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:internal_auditory_canal_extension",
+                "alternatives": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは内耳道内〜小脳橋角部の造影腫瘤、T2高信号嚢胞変性、内耳道進展を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "vestibular_schwannoma_mri_ce_001",
+              "finding_code": "finding:avid_homogeneous_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "cranial_nerve",
+                "subregion": "cerebellopontine_angle",
+                "laterality": "unknown"
+              },
+              "target": "cranial_nerve_mass",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "内耳道〜小脳橋角部の腫瘤が強く造影される。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:avid_homogeneous_enhancement",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "vestibular_schwannoma_mri_contrast_enhanced_t1wi_internal_auditory_canal_extension_01",
+              "finding_code": "finding:internal_auditory_canal_extension",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "内耳道内進展を伴う小脳橋角部腫瘤として見える。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "vestibular_schwannoma_mri_contrast_enhanced_t1wi_avid_homogeneous_enhancement_01",
+              "finding_code": "finding:avid_homogeneous_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "造影T1WIで強い造影効果を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "vestibular_schwannoma_mri_ce_002",
+              "finding_code": "finding:internal_auditory_canal_extension",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "cranial_nerve",
+                "subregion": "internal_auditory_canal",
+                "laterality": "unknown"
+              },
+              "target": "cranial_nerve_mass",
+              "modifiers": {},
+              "keywords": [
+                "IAC extension"
+              ],
+              "finding_text": "内耳道内進展を伴うことが診断の手掛かりになる。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:internal_auditory_canal_extension",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "vestibular_schwannoma_mri_t2_001",
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "cranial_nerve",
+                "subregion": "cerebellopontine_angle",
+                "laterality": "unknown"
+              },
+              "target": "cranial_nerve_mass",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "腫瘤はT2高信号を示すことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:t2_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "vestibular_schwannoma_mri_t2wi_t2_hyperintensity_01",
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "T2WIで高信号〜不均一信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_id": "vestibular_schwannoma_mri_dwi_diffusion_restriction_absent_01",
+              "finding_code": "finding:diffusion_restriction_absent",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "典型例では強い拡散制限は目立たないことが多い。",
+              "typicality": "variable",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 31504802, 41052870, 38252395, 32690241）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "vestibular_schwannoma_ct_nc_001",
+          "vestibular_schwannoma_mri_ce_001",
+          "vestibular_schwannoma_mri_ce_002",
+          "vestibular_schwannoma_mri_t2_001"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_31504802",
+          "pmid_41052870",
+          "pmid_38252395",
+          "pmid_32690241"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "vestibular_schwannoma_mri_contrast_enhanced_t1wi_internal_auditory_canal_extension_01",
+          "vestibular_schwannoma_mri_contrast_enhanced_t1wi_avid_homogeneous_enhancement_01",
+          "vestibular_schwannoma_mri_t2wi_t2_hyperintensity_01",
+          "vestibular_schwannoma_mri_dwi_diffusion_restriction_absent_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_31504802",
+      "type": "journal_article",
+      "title": "EANO guideline on the diagnosis and treatment of vestibular schwannoma.",
+      "authors": [],
+      "journal": "Neuro-oncology",
+      "year": "2021",
+      "pmid": "31504802",
+      "doi": "10.1093/neuonc/noz153",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31504802/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_41052870",
+      "type": "journal_article",
+      "title": "Vestibular schwannoma imaging and differential diagnosis.",
+      "authors": [],
+      "journal": "Handbook of clinical neurology",
+      "year": "2025",
+      "pmid": "41052870",
+      "doi": "10.1016/B978-0-12-824534-7.00005-6",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41052870/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_38252395",
+      "type": "journal_article",
+      "title": "Cost considerations for vestibular schwannoma screening and imaging: a systematic review.",
+      "authors": [],
+      "journal": "Neurosurgical review",
+      "year": "2024",
+      "pmid": "38252395",
+      "doi": "10.1007/s10143-024-02305-3",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38252395/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_32690241",
+      "type": "journal_article",
+      "title": "Imaging of the temporal bone.",
+      "authors": [],
+      "journal": "Clinical radiology",
+      "year": "2021",
+      "pmid": "32690241",
+      "doi": "10.1016/j.crad.2020.06.013",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32690241/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": []
+}

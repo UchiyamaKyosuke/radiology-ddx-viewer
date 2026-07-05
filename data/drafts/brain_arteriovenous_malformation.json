@@ -1,0 +1,421 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "brain_arteriovenous_malformation",
+  "disease_name": {
+    "ja": "脳動静脈奇形",
+    "en": "Brain arteriovenous malformation"
+  },
+  "disease_aliases": {
+    "ja": [
+      "脳AVM",
+      "脳動静脈奇形"
+    ],
+    "en": [
+      "Brain AVM",
+      "Cerebral arteriovenous malformation"
+    ]
+  },
+  "clinical": {
+    "overview": "動脈から静脈へ毛細血管床を介さず短絡する血管奇形。nidus、流入動脈、流出静脈、出血の有無を評価する。",
+    "treatment": "出血リスク、部位、Spetzler-Martin分類などを踏まえ、経過観察、塞栓術、定位放射線治療、手術を組み合わせる。",
+    "epidemiology": "若年の脳内出血やけいれんの原因として重要。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 10,
+      "typical_max": 50,
+      "peak_decade": "若年〜中年",
+      "summary": "若年から中年で出血やけいれんを契機に見つかることがある。"
+    }
+  },
+  "keywords": [
+    "nidus",
+    "flow void",
+    "feeding artery",
+    "draining vein"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "epidemiology",
+    "evidence_level": "review",
+    "context": {
+      "population": "young_or_middle_aged",
+      "body_region": "brain",
+      "clinical_setting": "vascular_nidus_or_hemorrhage"
+    },
+    "summary": "若年出血やflow void集簇では重要。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "脳動静脈奇形はCTで出血、石灰化、拡張血管、周囲浮腫を確認し、CTA/DSAやMRIで血管構造を評価する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "brain_arteriovenous_malformation_ct_nc_001",
+              "finding_code": "finding:hemorrhage_present",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "hemorrhagic_component",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "破裂例では脳内出血やくも膜下出血を伴う。",
+              "typicality": "variable",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:hemorrhage_present",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "brain_arteriovenous_malformation_ct_non_contrast_ct_hyperattenuation_01",
+              "finding_code": "finding:ct_hyperattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "出血を伴う場合、CTで高吸収を示す。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "脳動静脈奇形はflow void、SWI/T2*の出血/静脈性変化、MRA/MRVの血管異常を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "brain_arteriovenous_malformation_mri_t2_001",
+              "finding_code": "finding:flow_void",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "cerebral_vessel",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "vascular_nidus",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "蛇行するflow voidの集簇として認められる。",
+              "typicality": "typical",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:flow_void",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "MRA_TOF"
+          },
+          "findings": [
+            {
+              "finding_id": "brain_arteriovenous_malformation_mri_mra_001",
+              "finding_code": "finding:vascular_nidus",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRA_TOF"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "cerebral_vessel",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "vascular_nidus",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "MRAでnidus、流入動脈、流出静脈を確認できる。",
+              "typicality": "typical",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:vascular_nidus",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "brain_arteriovenous_malformation_mri_mra_tof_flow_void_01",
+              "finding_code": "finding:flow_void",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRA_TOF"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "T1/T2で血管flow voidを認めることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "brain_arteriovenous_malformation_mri_mra_tof_vascular_nidus_01",
+              "finding_code": "finding:vascular_nidus",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRA_TOF"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "MRA/CTAで異常血管nidusや短絡血管を認める。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "SWI"
+          },
+          "findings": [
+            {
+              "finding_id": "brain_arteriovenous_malformation_mri_swi_001",
+              "finding_code": "finding:susceptibility_blooming",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "SWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "cerebral_vessel",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "vascular_nidus",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "陳旧性出血や血管内デオキシヘモグロビンにより磁化率低信号を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:susceptibility_blooming",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "brain_arteriovenous_malformation_mri_swi_susceptibility_blooming_01",
+              "finding_code": "finding:susceptibility_blooming",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "SWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "SWI/T2*で出血や静脈性うっ滞に伴うbloomingを認めることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 41584770, 40274404, 28267351, 37253407）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "brain_arteriovenous_malformation_ct_nc_001",
+          "brain_arteriovenous_malformation_mri_t2_001",
+          "brain_arteriovenous_malformation_mri_mra_001",
+          "brain_arteriovenous_malformation_mri_swi_001"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_41584770",
+          "pmid_40274404",
+          "pmid_28267351",
+          "pmid_37253407"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "brain_arteriovenous_malformation_mri_mra_tof_flow_void_01",
+          "brain_arteriovenous_malformation_mri_mra_tof_vascular_nidus_01",
+          "brain_arteriovenous_malformation_mri_swi_susceptibility_blooming_01",
+          "brain_arteriovenous_malformation_ct_non_contrast_ct_hyperattenuation_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_41584770",
+      "type": "journal_article",
+      "title": "Modern Brain Arteriovenous Malformation Models: A Review.",
+      "authors": [],
+      "journal": "Stroke (Hoboken, N.J.)",
+      "year": "2026",
+      "pmid": "41584770",
+      "doi": "10.1161/SVIN.121.000335",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41584770/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_40274404",
+      "type": "journal_article",
+      "title": "Unruptured brain arteriovenous malformation risk stratification.",
+      "authors": [],
+      "journal": "Journal of neurointerventional surgery",
+      "year": "2026",
+      "pmid": "40274404",
+      "doi": "10.1136/jnis-2024-022779",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40274404/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_28267351",
+      "type": "journal_article",
+      "title": "Contemporary Imaging of Cerebral Arteriovenous Malformations.",
+      "authors": [],
+      "journal": "AJR. American journal of roentgenology",
+      "year": "2017",
+      "pmid": "28267351",
+      "doi": "10.2214/AJR.16.17306",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28267351/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_37253407",
+      "type": "journal_article",
+      "title": "Ultrafast Doppler Imaging of Brain Arteriovenous Malformation.",
+      "authors": [],
+      "journal": "World neurosurgery",
+      "year": "2025",
+      "pmid": "37253407",
+      "doi": "10.1016/j.wneu.2023.05.088",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37253407/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": []
+}

@@ -1,0 +1,458 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "ependymoma",
+  "disease_name": {
+    "ja": "上衣腫",
+    "en": "Ependymoma"
+  },
+  "disease_aliases": {
+    "ja": [
+      "脳室上衣腫"
+    ],
+    "en": [
+      "Intracranial ependymoma"
+    ]
+  },
+  "clinical": {
+    "overview": "小児では後頭蓋窩、とくに第4脳室由来が多い腫瘍。石灰化、出血、嚢胞変性を伴う不均一な脳室内腫瘤として見えることが多い。",
+    "treatment": "最大安全切除と病理・分子分類に応じた放射線治療が中心。髄液播種評価が重要。",
+    "epidemiology": "小児後頭蓋窩腫瘍の重要な鑑別。成人では脊髄やテント上にも生じる。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 1,
+      "typical_max": 15,
+      "peak_decade": "小児",
+      "summary": "小児に多いが成人例もある。"
+    }
+  },
+  "keywords": [
+    "fourth ventricle",
+    "foramen of Luschka",
+    "plastic ependymoma",
+    "calcification"
+  ],
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 2,
+    "basis": "epidemiology",
+    "evidence_level": "review",
+    "context": {
+      "population": "pediatric",
+      "body_region": "brain",
+      "clinical_setting": "fourth_ventricle_mass"
+    },
+    "summary": "小児第4脳室腫瘤では重要。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "上衣腫はCTで第4脳室内/脳室近傍腫瘤、石灰化、嚢胞を確認する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "ependymoma_ct_nc_001",
+              "finding_code": "finding:calcification_present",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "ventricle",
+                "subregion": "fourth_ventricle",
+                "laterality": "unknown"
+              },
+              "target": "calcified_component",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "腫瘤内石灰化を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:calcification_present",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "ependymoma_ct_nc_002",
+              "finding_code": "finding:hydrocephalus",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "ventricle",
+                "subregion": "fourth_ventricle",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "第4脳室閉塞により水頭症を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:hydrocephalus",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "ependymoma_ct_non_contrast_calcification_present_01",
+              "finding_code": "finding:calcification_present",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "CTで石灰化を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは脳室内腫瘤、T2不均一高信号、造影、foraminaを介した進展、拡散を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "ependymoma_mri_t2_001",
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "ventricle",
+                "subregion": "fourth_ventricle",
+                "laterality": "unknown"
+              },
+              "target": "ventricular_mass",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "第4脳室内を中心に不均一なT2高信号腫瘤として認められる。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:t2_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "ependymoma_mri_t2wi_t2_hyperintensity_01",
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "T2WIで不均一高信号腫瘤を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "ependymoma_mri_t2wi_hydrocephalus_01",
+              "finding_code": "finding:hydrocephalus",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "脳室閉塞により水頭症を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "ependymoma_mri_ce_001",
+              "finding_code": "finding:enhancing_solid_component",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "ventricle",
+                "subregion": "fourth_ventricle",
+                "laterality": "unknown"
+              },
+              "target": "solid_component",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "充実成分に不均一な造影効果を伴うことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:enhancing_solid_component",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "ependymoma_mri_contrast_enhanced_t1wi_mild_enhancement_01",
+              "finding_code": "finding:mild_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "造影効果は不均一なことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_id": "ependymoma_mri_dwi_001",
+              "finding_code": "finding:diffusion_restriction_present",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "ventricle",
+                "subregion": "fourth_ventricle",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "充実部に拡散制限を示すことがあるが、髄芽腫ほど均一に強くないことが多い。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:diffusion_restriction_present",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "ependymoma_mri_dwi_diffusion_restriction_present_01",
+              "finding_code": "finding:diffusion_restriction_present",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "細胞密度に応じて拡散制限を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 27889018, 12691623, 39287805）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "ependymoma_ct_nc_001",
+          "ependymoma_ct_nc_002",
+          "ependymoma_mri_t2_001",
+          "ependymoma_mri_ce_001",
+          "ependymoma_mri_dwi_001"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_27889018",
+          "pmid_12691623",
+          "pmid_39287805"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "ependymoma_ct_non_contrast_calcification_present_01",
+          "ependymoma_mri_t2wi_t2_hyperintensity_01",
+          "ependymoma_mri_contrast_enhanced_t1wi_mild_enhancement_01",
+          "ependymoma_mri_dwi_diffusion_restriction_present_01",
+          "ependymoma_mri_t2wi_hydrocephalus_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_27889018",
+      "type": "journal_article",
+      "title": "Posterior Fossa Tumors.",
+      "authors": [],
+      "journal": "Neuroimaging clinics of North America",
+      "year": "2017",
+      "pmid": "27889018",
+      "doi": "10.1016/j.nic.2016.08.001",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27889018/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_12691623",
+      "type": "journal_article",
+      "title": "Ependymomas.",
+      "authors": [],
+      "journal": "Current neurology and neuroscience reports",
+      "year": "2003",
+      "pmid": "12691623",
+      "doi": "10.1007/s11910-003-0078-x",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12691623/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_39287805",
+      "type": "journal_article",
+      "title": "Supratentorial and Infratentorial Ependymoma.",
+      "authors": [],
+      "journal": "Advances and technical standards in neurosurgery",
+      "year": "2024",
+      "pmid": "39287805",
+      "doi": "10.1007/978-3-031-67077-0_7",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39287805/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": []
+}

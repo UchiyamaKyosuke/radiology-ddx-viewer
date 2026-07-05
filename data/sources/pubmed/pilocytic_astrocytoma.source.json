@@ -1,0 +1,246 @@
+{
+  "disease_id": "pilocytic_astrocytoma",
+  "disease_name": {
+    "ja": "毛様細胞性星細胞腫",
+    "en": "Pilocytic astrocytoma"
+  },
+  "disease_aliases": {
+    "ja": [],
+    "en": [
+      "Pilocytic astrocytoma"
+    ]
+  },
+  "clinical": {
+    "overview": "Pilocytic astrocytoma literature draft generated from PubMed abstracts. Codex review is required.",
+    "treatment": "Not extracted. Codex review is required.",
+    "epidemiology": "Not extracted. Codex review is required."
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "unknown"
+      ],
+      "predominance": "unknown",
+      "predilection": "unknown",
+      "summary": "Not extracted."
+    },
+    "age": {
+      "typical_min": null,
+      "typical_max": null,
+      "peak_decade": "未確認",
+      "summary": "好発年齢は未確認。"
+    }
+  },
+  "keywords": [],
+  "frequency": {
+    "label": "unknown",
+    "summary": "Not extracted."
+  },
+  "imaging": {},
+  "findings": [
+    {
+      "finding_text": "磁化率低信号/blooming",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "SWI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "signal": "hypointense",
+        "pattern": "blooming"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "過灌流",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "ASL",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "perfusion": "increased"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "低灌流",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "ASL",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "perfusion": "decreased"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "CBV上昇",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "DSC_perfusion",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "cbv": "increased"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "CBV低下",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "DSC_perfusion",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "cbv": "decreased"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "コリンピーク上昇",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "MRS",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "metabolite": "choline_elevated"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    }
+  ],
+  "references": [
+    {
+      "source_id": "pmid_38194103",
+      "type": "journal_article",
+      "title": "[Orbital tumors].",
+      "authors": [],
+      "journal": "Radiologie (Heidelberg, Germany)",
+      "year": "2024",
+      "pmid": "38194103",
+      "doi": "10.1007/s00117-023-01257-x",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38194103/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_27889018",
+      "type": "journal_article",
+      "title": "Posterior Fossa Tumors.",
+      "authors": [],
+      "journal": "Neuroimaging clinics of North America",
+      "year": "2017",
+      "pmid": "27889018",
+      "doi": "10.1016/j.nic.2016.08.001",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27889018/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_37306749",
+      "type": "journal_article",
+      "title": "[Pediatric posterior fossa tumors].",
+      "authors": [],
+      "journal": "Radiologie (Heidelberg, Germany)",
+      "year": "2023",
+      "pmid": "37306749",
+      "doi": "10.1007/s00117-023-01159-y",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37306749/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_37743340",
+      "type": "journal_article",
+      "title": "[Circumscribed Astrocytic Gliomas].",
+      "authors": [],
+      "journal": "No shinkei geka. Neurological surgery",
+      "year": "2023",
+      "pmid": "37743340",
+      "doi": "10.11477/mf.1436204830",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37743340/",
+      "license": ""
+    }
+  ],
+  "source_query": "pilocytic astrocytoma[Title/Abstract] AND (MRI[Title/Abstract] OR CT[Title/Abstract] OR imaging[Title/Abstract])",
+  "source_articles": [
+    {
+      "pmid": "38194103",
+      "title": "[Orbital tumors].",
+      "journal": "Radiologie (Heidelberg, Germany)",
+      "year": "2024",
+      "doi": "10.1007/s00117-023-01257-x",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38194103/",
+      "abstract": "Orbital tumours include a variety of orbital diseases of different origins. In the case of malignant orbital tumours, early detection is important so that treatment can be initiated promptly. Neuroradiological imaging, in particular magnetic resonance imaging (MRI), plays an important role in the diagnostic of orbital tumours. In adults, lymphoproliferative diseases, inflammations and secondary orbital tumours are most frequently found, whereas in children mostly dermoid cysts, optic gliomas and capillary haemangiomas are found. Optic glioma is a pilocytic astrocytoma and accounts for two thirds of all primary optic tumours. Optic nerve sheath meningiomas mostly affect middle-aged women. In childhood, retinoblastoma is the most common intraocular tumour. This is an aggressive malignant tumour which can occur unilaterally or bilaterally. Based on the imaging findings, differential diagnoses can usually be easily narrowed down using criteria such as age of manifestation, frequency, localisation and imaging characteristics.\nOrbitatumoren umfassen eine Vielzahl orbitaler Erkrankungen unterschiedlichen Ursprungs. Bei malignen Orbitatumoren ist die Fr&#xfc;herkennung wichtig, damit zeitnah eine Therapie eingeleitet kann. Die neuroradiologische Bildgebung, insbesondere die Magnetresonanztomographie (MRT), spielt in der Diagnostik von Orbitatumoren eine bedeutende Rolle. Bei Erwachsenen finden sich am h&#xe4;ufigsten lymphoproliferative Erkrankungen, Entz&#xfc;ndungen und sekund&#xe4;re Orbitatumoren, bei Kindern Dermoidzysten, Optikusgliome und kapill&#xe4;re H&#xe4;mangiome. Das Optikusgliom ist ein pilozytisches Astrozytom, welches zwei Drittel aller prim&#xe4;ren Optikustumoren ausmacht. Opikusscheidenmeningeome betreffen meist Frauen mittleren Alters. Im Kindesalter stellt das Retinoblastom den h&#xe4;ufigsten intraokul&#xe4;ren Tumor dar. Hierbei handelt es sich um einen aggressiven malignen Tumor, der uni- oder bilateral auftreten kann. Anhand der Bildgebungsbefunde lassen sich Differenzialdiagnosen durch Kriterien wie Manifestationsalter, H&#xe4;ufigkeit, Lokalisation und bildgebende Charakteristika meist recht gut eingrenzen."
+    },
+    {
+      "pmid": "27889018",
+      "title": "Posterior Fossa Tumors.",
+      "journal": "Neuroimaging clinics of North America",
+      "year": "2017",
+      "doi": "10.1016/j.nic.2016.08.001",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27889018/",
+      "abstract": "Pediatric brain tumors are the leading cause of death from solid tumors in childhood. The most common posterior fossa tumors in children are medulloblastoma, atypical teratoid/rhabdoid tumor, cerebellar pilocytic astrocytoma, ependymoma, and brainstem glioma. Location, and imaging findings on computed tomography (CT) and conventional MR (cMR) imaging may provide important clues to the most likely diagnosis. Moreover, information obtained from advanced MR imaging techniques increase diagnostic confidence and help distinguish between different histologic tumor types. Here we discuss the most common posterior fossa tumors in children, including typical imaging findings on CT, cMR imaging, and advanced MR imaging studies."
+    },
+    {
+      "pmid": "37306749",
+      "title": "[Pediatric posterior fossa tumors].",
+      "journal": "Radiologie (Heidelberg, Germany)",
+      "year": "2023",
+      "doi": "10.1007/s00117-023-01159-y",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37306749/",
+      "abstract": "Tumors of the posterior fossa account for about 50-55% of brain tumors in childhood.\nThe most frequent tumor entities are medulloblastomas, pilocytic astrocytomas, ependymomas, diffuse midline gliomas and atypical teratoid-rhabdoid tumors. Neuroradiological differential diagnosis with magnetic resonance imaging (MRI) is of considerable importance for preoperative planning as well as planning of follow-up therapy.\nMost important findings for differential diagnosis of pediatric posterior fossa tumors are tumor location, patient age and the intratumoral apparent diffusion assessed by diffusion-weighted imaging.\nAdvanced MR techniques like MRI perfusion and MR spectroscopy can be helpful both in the initial differential diagnosis and in tumor surveillance, but exceptional characteristics of certain tumor entities should be kept in mind.\nStandard clinical MRI sequences including diffusion-weighted imaging are the main diagnostic tool in evaluating posterior fossa tumors in children. Advanced imaging methods can be helpful, but should never be interpreted separately from conventional MRI sequences.\nKLINISCHES PROBLEM: Tumoren der hinteren Sch&#xe4;delgrube machen etwa 50&#x2013;55&#x202f;% der kindlichen Hirntumoren aus.\nZu den h&#xe4;ufigsten Tumorentit&#xe4;ten z&#xe4;hlen Medulloblastome, pilozytische Astrozytome, Ependymome, diffuse Mittelliniengliome und atypisch teratoid-rhabdoide Tumoren (ATRT). Der neuroradiologischen Differenzialdiagnostik mittels Magnetresonanztomographie (MRT) kommt eine erhebliche Bedeutung zu, sowohl f&#xfc;r die pr&#xe4;operative Planung als auch f&#xfc;r die Planung der Anschlusstherapie. LEISTUNGSF&#xe4;HIGKEIT: Wichtige Merkmale f&#xfc;r die Differenzialdiagnostik sind die genaue Tumorlokalisation, das Patientenalter und die intratumorale scheinbare Diffusion, die mittels diffusionsgewichteter Bildgebung quantifiziert werden kann.\nFortschrittliche MR-Techniken, wie MR-Perfusion und MR-Spektroskopie, k&#xf6;nnen sowohl f&#xfc;r die initiale Diagnostik als auch f&#xfc;r die Beurteilung des Tumorverlaufs hilfreich sein, allerdings sollten Ausnahmeverhalten bestimmter Tumorentit&#xe4;ten bekannt sein. EMPFEHLUNG F&#xfc;R DIE PRAXIS: Konventionelle MRT-Sequenzen inklusive Diffusionswichtung sind die wichtigsten diagnostischen Tools zur Evaluation p&#xe4;diatrischer Tumoren der hinteren Sch&#xe4;delgrube. Fortschrittliche MR-Techniken k&#xf6;nnen helfen, sollten allerdings nicht isoliert von den konventionellen MRT-Sequenzen interpretiert werden."
+    },
+    {
+      "pmid": "37743340",
+      "title": "[Circumscribed Astrocytic Gliomas].",
+      "journal": "No shinkei geka. Neurological surgery",
+      "year": "2023",
+      "doi": "10.11477/mf.1436204830",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37743340/",
+      "abstract": "In the fifth edition central nervous system tumours volume of the WHO Classification of Tumours series, gliomas, glioneuronal tumors, and neuronal tumors are divided into six groups. The term \"circumscribed\" is used to refer to a relatively contained growth pattern, as compared to other inherently \"diffuse\" tumors. Circumscribed astrocytic gliomas include six types: pilocytic astrocytoma, high-grade astrocytoma with piloid features, pleomorphic xanthoastrocytoma, subependymal giant cell astrocytoma, chordoid glioma, and astroblastoma,  MN1 -altered. The vast majority of circumscribed astrocytic gliomas harbor genetic alterations in the mitogen-activated protein kinase pathway. Here, we review the circumscribed astrocytic gliomas, including etiology, clinical and imaging features, pathology and molecular genetics, treatment, and prognosis. This study will lead to better understanding of these newly classified tumors."
+    }
+  ]
+}

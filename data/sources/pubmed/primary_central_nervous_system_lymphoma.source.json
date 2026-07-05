@@ -1,0 +1,481 @@
+{
+  "disease_id": "primary_central_nervous_system_lymphoma",
+  "disease_name": {
+    "ja": "原発性中枢神経系リンパ腫",
+    "en": "Primary central nervous system lymphoma"
+  },
+  "disease_aliases": {
+    "ja": [],
+    "en": [
+      "Primary central nervous system lymphoma"
+    ]
+  },
+  "clinical": {
+    "overview": "Primary central nervous system lymphoma literature draft generated from PubMed abstracts. Codex review is required.",
+    "treatment": "Not extracted. Codex review is required.",
+    "epidemiology": "Not extracted. Codex review is required."
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "unknown"
+      ],
+      "predominance": "unknown",
+      "predilection": "unknown",
+      "summary": "Not extracted."
+    },
+    "age": {
+      "typical_min": null,
+      "typical_max": null,
+      "peak_decade": "未確認",
+      "summary": "好発年齢は未確認。"
+    }
+  },
+  "keywords": [],
+  "frequency": {
+    "label": "unknown",
+    "summary": "Not extracted."
+  },
+  "imaging": {},
+  "findings": [
+    {
+      "finding_text": "T2低信号",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "T2WI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "signal": "hypointense"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "T2高信号",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "T2WI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "signal": "hyperintense"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "T1低信号",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "T1WI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "signal": "hypointense"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "拡散制限なし",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "DWI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "degree": "none"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "T1高信号",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "T1WI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "signal": "hyperintense"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "DWI高信号",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "DWI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "DWI等信号",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "DWI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "拡散制限あり",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "DWI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "出血成分あり",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "T1WI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "cyst_content",
+      "modifiers": {},
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "硬膜付着性脳外腫瘤",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "T1WI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "血管支配域に沿う拡散制限",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "DWI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "脳室周囲卵円形白質病変",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "FLAIR",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "??????/blooming",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "SWI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "signal": "hypointense",
+        "pattern": "blooming"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "???",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "ASL",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "perfusion": "increased"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "???",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "ASL",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "perfusion": "decreased"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "CBV??",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "DSC_perfusion",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "cbv": "increased"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "CBV??",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "DSC_perfusion",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "cbv": "decreased"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "????????",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "MRS",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "metabolite": "choline_elevated"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    }
+  ],
+  "references": [
+    {
+      "source_id": "pmid_38703015",
+      "type": "journal_article",
+      "title": "Primary central nervous system lymphoma: Imaging features and differential diagnosis.",
+      "authors": [],
+      "journal": "The neuroradiology journal",
+      "year": "2024",
+      "pmid": "38703015",
+      "doi": "10.1177/19714009241252625",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38703015/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_33560416",
+      "type": "journal_article",
+      "title": "Consensus recommendations for MRI and PET imaging of primary central nervous system lymphoma: guideline statement from the International Primary CNS Lymphoma Collaborative Group (IPCG).",
+      "authors": [],
+      "journal": "Neuro-oncology",
+      "year": "2021",
+      "pmid": "33560416",
+      "doi": "10.1093/neuonc/noab020",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33560416/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_30072069",
+      "type": "journal_article",
+      "title": "Primary Central Nervous System Lymphoma.",
+      "authors": [],
+      "journal": "Neurologic clinics",
+      "year": "2019",
+      "pmid": "30072069",
+      "doi": "10.1016/j.ncl.2018.04.008",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30072069/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_37452952",
+      "type": "journal_article",
+      "title": "Lymphomas of Central Nervous System.",
+      "authors": [],
+      "journal": "Advances in experimental medicine and biology",
+      "year": "2023",
+      "pmid": "37452952",
+      "doi": "10.1007/978-3-031-23705-8_20",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37452952/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_35994050",
+      "type": "journal_article",
+      "title": "Primary central nervous system lymphoma: advances in MRI and PET imaging.",
+      "authors": [],
+      "journal": "Annals of lymphoma",
+      "year": "2022",
+      "pmid": "35994050",
+      "doi": "10.21037/aol-20-53",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35994050/",
+      "license": ""
+    }
+  ],
+  "source_query": "primary central nervous system lymphoma[Title/Abstract] AND (MRI[Title/Abstract] OR magnetic resonance[Title/Abstract] OR CT[Title/Abstract] OR imaging[Title/Abstract])",
+  "source_articles": [
+    {
+      "pmid": "38703015",
+      "title": "Primary central nervous system lymphoma: Imaging features and differential diagnosis.",
+      "journal": "The neuroradiology journal",
+      "year": "2024",
+      "doi": "10.1177/19714009241252625",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38703015/",
+      "abstract": "Primary central nervous system lymphoma (PCNSL) represents 5% of malignant primary brain tumors. The clinical presentation typically includes focal neurological symptoms, increased intracranial pressure, seizures, and psychiatric symptoms. Although histological examination remains the gold standard for diagnostic confirmation, non-invasive imaging plays a crucial role for the diagnosis. In immunocompetent individuals, PCNSL usually appears as a single, well-defined, supratentorial lesion with a predilection for periventricular areas, iso- or hypointense on T1- and T2-weighted magnetic resonance imaging, with restricted diffusion, slightly increased perfusion, and homogenous gadolinium-enhancement. Differential diagnoses include high-grade glioma and pseudotumoral demyelinating disease. In immunocompromised patients, PCNSL may present as multiple lesions, with a higher likelihood of hemorrhage and necrosis and less restricted diffusion than immunocompetent individuals. Differential diagnoses include neurotoxoplasmosis, progressive multifocal leukoencephalopathy, and cerebral abscess. Atypical forms of lymphoma are characterized by extra-axial lymphoma, lymphomatosis cerebri, and intravascular lymphoma. Extra-axial lymphoma presents as single or multiple extra-axial dural lesions with diffuse leptomeningeal contrast-enhancement. Lymphomatosis cerebri appears as an infiltrative and symmetric lesion, primarily affecting deep white matter and basal ganglia, appearing hyperintense on T2-weighted imaging, without significant contrast-enhancement or perfusion changes. Intravascular lymphoma presents as multiple rounded or oval-shaped \"infarct-like\" lesions, located cortically or subcortically. This study aims to highlight the imaging characteristics of PCNSL, focusing on magnetic resonance imaging and its differential diagnosis."
+    },
+    {
+      "pmid": "33560416",
+      "title": "Consensus recommendations for MRI and PET imaging of primary central nervous system lymphoma: guideline statement from the International Primary CNS Lymphoma Collaborative Group (IPCG).",
+      "journal": "Neuro-oncology",
+      "year": "2021",
+      "doi": "10.1093/neuonc/noab020",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33560416/",
+      "abstract": "Advanced molecular and pathophysiologic characterization of primary central nervous system lymphoma (PCNSL) has revealed insights into promising targeted therapeutic approaches. Medical imaging plays a fundamental role in PCNSL diagnosis, staging, and response assessment. Institutional imaging variation and inconsistent clinical trial reporting diminishes the reliability and reproducibility of clinical response assessment. In this context, we aimed to: (1) critically review the use of advanced positron emission tomography (PET) and magnetic resonance imaging (MRI) in the setting of PCNSL; (2) provide results from an international survey of clinical sites describing the current practices for routine and advanced imaging, and (3) provide biologically based recommendations from the International PCNSL Collaborative Group (IPCG) on adaptation of standardized imaging practices. The IPCG provides PET and MRI consensus recommendations built upon previous recommendations for standardized brain tumor imaging protocols (BTIP) in primary and metastatic disease. A biologically integrated approach is provided to addresses the unique challenges associated with the imaging assessment of PCNSL. Detailed imaging parameters facilitate the adoption of these recommendations by researchers and clinicians. To enhance clinical feasibility, we have developed both \"ideal\" and \"minimum standard\" protocols at 3T and 1.5T MR systems that will facilitate widespread adoption."
+    },
+    {
+      "pmid": "30072069",
+      "title": "Primary Central Nervous System Lymphoma.",
+      "journal": "Neurologic clinics",
+      "year": "2019",
+      "doi": "10.1016/j.ncl.2018.04.008",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30072069/",
+      "abstract": "Primary central nervous system lymphoma (PCNSL) is an aggressive form of non-Hodgkin lymphoma restricted to the central nervous system. Stereotactic biopsy is the gold-standard for diagnosis of PCNSL. Extent of disease evaluation for newly diagnosed PCNSL patients includes brain imaging, eye examination, cerebrospinal fluid assessment, body imaging, and bone marrow biopsy. Methotrexate-based chemotherapy is the standard induction for PCNSL patients. Optimal consolidation therapy for PCNSL has not been defined, with several options feasible, including chemotherapy, high-dose chemotherapy, and autologous stem cell transplantation or whole-brain radiation therapy. Optimal treatment for relapsed and refractory PCNSL has not been defined."
+    },
+    {
+      "pmid": "37452952",
+      "title": "Lymphomas of Central Nervous System.",
+      "journal": "Advances in experimental medicine and biology",
+      "year": "2023",
+      "doi": "10.1007/978-3-031-23705-8_20",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37452952/",
+      "abstract": "Central nervous system (CNS) lymphoma consists of primary central nervous system lymphoma (PCNSL) and secondary CNS involvement by systemic lymphoma. This chapter focuses on the former. PCNSL is a relative rare disease, accounting for approximately 2.4-4.9% of all primary CNS tumors. It is an extra-nodal variant of non-Hodgkin's lymphoma (NHL), confined to the brain, leptomeninges, spinal cord, and eyes, with no systemic involvement. Recently, elderly patients (&#x2265;&#xa0;60&#xa0;years) are increasing. Histologically, B cell&#xa0;blasts, which originate from late&#xa0;germinal center&#xa0;exit B cell, are growing and homing in CNS. Immunohistochemically, these cells are positive for PAX5, CD19, CD20, CD22, and CD79a. PCNSL shows relatively characteristic appearances on CT, MR imaging, and PET. Treatment first line of PCNSL is HD-MTX-based chemotherapy with or without rituximab and irradiation. Severe side-effect of this treatment is delayed onset neurotoxicity, which cause of cognitive impairment. Therefore, combined chemotherapy alone or chemotherapy with reduced-dose irradiation is more recommended for elderly patients. There is no established standard care for relapse of the PCNSLs. Temsirolimus, lenalidomide, temozolomide, and Bruton's tyrosine kinase (BTK) inhibitor ibrutinib are candidates for refractory patients. The prognosis of PCNSL has significantly improved over the last decades (median OS: 26&#xa0;months, 5-year survival: 31%). Younger than 60 age and WHO performance status less than&#x2009;<&#x2009;or&#x2009;=&#x2009;1 are associated with a significantly better overall survival."
+    },
+    {
+      "pmid": "35994050",
+      "title": "Primary central nervous system lymphoma: advances in MRI and PET imaging.",
+      "journal": "Annals of lymphoma",
+      "year": "2022",
+      "doi": "10.21037/aol-20-53",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35994050/",
+      "abstract": "Contrast enhanced magnetic resonance imaging (CE-MRI) remains the imaging modality of choice for initial workup, staging, and response assessment after therapy in patients with primary central nervous system lymphoma (PCNSL). While CE-MRI is a sensitive test to detect blood brain barrier (BBB) dysfunction, it does not biologically represent the true tumor burden. Current response assessment criteria relies heavily on two dimensional anatomical measurements on post contrast T1-weighted (T1W) images, as well as pre-contrast T2-weighted (T2W) imaging. Additional MRI features, such as diffusion-weighted imaging (DWI) and perfusion weighted imaging, can be routinely obtained at most centers with MRI capabilities. Emerging evidence supports the incorporation of these data to better define tumor physiology and provide additional valuable clinical tools capable of identifying high risk subgroups as well as early predictors of response to therapies. Further, novel advanced molecular and pathophysiologic characterization of PCNSL provides insights into promising targeted therapeutic approaches. However, significant institutional imaging variation and inconsistent clinical trial reporting diminishes the reliability, reproducibility and eventual translation in day to day management of patients with PCNSL. Here we review established neuroimaging concepts and provide an overview of published literature about novel imaging techniques that may improve diagnosis and response assessments. Finally, we highlight the need for standardization of image acquisition, post-processing, and incorporation of novel imaging biomarkers in early phase PCNSL clinical trials."
+    }
+  ]
+}

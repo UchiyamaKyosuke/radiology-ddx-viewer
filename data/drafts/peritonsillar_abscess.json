@@ -1,0 +1,354 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "peritonsillar_abscess",
+  "disease_name": {
+    "ja": "扁桃周囲膿瘍",
+    "en": "Peritonsillar abscess"
+  },
+  "disease_aliases": {
+    "ja": [],
+    "en": []
+  },
+  "clinical": {
+    "overview": "扁桃周囲膿瘍は咽頭痛・開口障害で重要な鑑別となる疾患で、典型所見として扁桃周囲のリング状造影性液体貯留と口蓋垂偏位を示す。臨床背景、病変分布、造影効果を組み合わせて評価する。",
+    "treatment": "治療方針は病型、重症度、合併症、全身状態に応じて決定する。",
+    "epidemiology": "頻度と好発年齢は病型・背景疾患・地域差により異なる。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "代表的な性差傾向を記録。"
+    },
+    "age": {
+      "typical_min": 5,
+      "typical_max": 80,
+      "peak_decade": "若年-成人",
+      "summary": "代表的な発症・診断年齢帯を記録。"
+    }
+  },
+  "keywords": [
+    "Peritonsillar abscess",
+    "扁桃周囲膿瘍",
+    "rim-enhancing peritonsillar collection",
+    "uvular deviation"
+  ],
+  "frequency": {
+    "label": "common",
+    "prevalence_rank": 4,
+    "basis": "differential_importance",
+    "evidence_level": "public_review",
+    "context": {
+      "population": "any",
+      "body_region": "head_neck",
+      "clinical_setting": "咽頭痛・開口障害"
+    },
+    "summary": "咽頭痛・開口障害の鑑別での相対頻度と重要度を記録。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "扁桃周囲膿瘍のCTでは濃度、石灰化、出血、ガス、造影効果、周囲変化を評価する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "head_neck",
+                "organ": "soft_tissue",
+                "subregion": "oropharynx",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "rim-enhancing peritonsillar collection",
+                "uvular deviation"
+              ],
+              "finding_text": "扁桃周囲膿瘍は炎症性低吸収域、膿瘍、または周囲脂肪織濃度上昇として評価される。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:ct_hypoattenuation",
+                "alternatives": []
+              },
+              "finding_id": "peritonsillar_abscess_f001"
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "扁桃周囲膿瘍のMRIでは信号、拡散、造影効果、病変分布、隣接構造への進展を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:wall_thickening",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "head_neck",
+                "organ": "soft_tissue",
+                "subregion": "oropharynx",
+                "laterality": "unknown"
+              },
+              "target": "wall",
+              "modifiers": {},
+              "keywords": [
+                "rim-enhancing peritonsillar collection",
+                "uvular deviation"
+              ],
+              "finding_text": "扁桃周囲膿瘍では壁肥厚、筋膜肥厚、または粘膜下浮腫を確認する。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:wall_thickening",
+                "alternatives": []
+              },
+              "finding_id": "peritonsillar_abscess_f002"
+            },
+            {
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "head_neck",
+                "organ": "soft_tissue",
+                "subregion": "oropharynx",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "rim-enhancing peritonsillar collection",
+                "uvular deviation"
+              ],
+              "finding_text": "扁桃周囲膿瘍は浮腫や液体貯留によりT2WI高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:t2_hyperintensity",
+                "alternatives": []
+              },
+              "finding_id": "peritonsillar_abscess_f003"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:diffusion_restriction_present",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "head_neck",
+                "organ": "soft_tissue",
+                "subregion": "oropharynx",
+                "laterality": "unknown"
+              },
+              "target": "abscess_cavity",
+              "modifiers": {},
+              "keywords": [
+                "rim-enhancing peritonsillar collection",
+                "uvular deviation"
+              ],
+              "finding_text": "扁桃周囲膿瘍では膿瘍や高粘稠内容がDWI高信号/ADC低下を示すことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:diffusion_restriction_present",
+                "alternatives": []
+              },
+              "finding_id": "peritonsillar_abscess_f004"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:ring_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "head_neck",
+                "organ": "soft_tissue",
+                "subregion": "oropharynx",
+                "laterality": "unknown"
+              },
+              "target": "lesion_margin",
+              "modifiers": {},
+              "keywords": [
+                "rim-enhancing peritonsillar collection",
+                "uvular deviation"
+              ],
+              "finding_text": "扁桃周囲膿瘍は膿瘍形成時にリング状造影を示すことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:ring_enhancement",
+                "alternatives": []
+              },
+              "finding_id": "peritonsillar_abscess_f005"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "raw_findings": [
+    {
+      "raw_finding_id": "peritonsillar_abscess_raw_001",
+      "modality_text": "CT/MRI/US",
+      "acquisition_text": "疾患に応じた標準撮像",
+      "anatomy_text": "扁桃周囲膿瘍の典型的な主座",
+      "target_text": "named_sign",
+      "finding_text": "扁桃周囲のリング状造影性液体貯留と口蓋垂偏位を示す",
+      "interpretation": "構造化辞書では拾い切れない疾患固有の所見・サインとして保存。",
+      "source_ids": [
+        "public_general_batch9_20260705"
+      ],
+      "mapping": {
+        "status": "candidate",
+        "candidate_finding_code": "finding:peritonsillar_abscess_specific_sign",
+        "candidate_anatomy": {
+          "body_region": "head_neck",
+          "organ": "soft_tissue",
+          "subregion": "oropharynx",
+          "laterality": "unknown"
+        },
+        "candidate_target": "named_sign",
+        "notes": "Phase 1 raw finding"
+      },
+      "review_status": "needs_mapping"
+    }
+  ],
+  "evidence": {
+    "summary": "NCBI Bookshelf、ACR Appropriateness Criteria、RadiologyInfo、PMC open-access review などの公開情報を参照。",
+    "claim_map": [
+      {
+        "finding_ids": [
+          "peritonsillar_abscess_f001"
+        ],
+        "source_ids": [
+          "public_general_batch9_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "peritonsillar_abscess_f002"
+        ],
+        "source_ids": [
+          "public_general_batch9_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "peritonsillar_abscess_f003"
+        ],
+        "source_ids": [
+          "public_general_batch9_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "peritonsillar_abscess_f004"
+        ],
+        "source_ids": [
+          "public_general_batch9_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "peritonsillar_abscess_f005"
+        ],
+        "source_ids": [
+          "public_general_batch9_20260705"
+        ],
+        "support": "public_source_summary"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "public_general_batch9_20260705",
+      "type": "public_source_packet",
+      "title": "Public imaging source packet for accelerated whole-body Phase 1 draft batch 9",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, ACR Appropriateness Criteria, RadiologyInfo, and open-access PMC reviews where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "confidence": "medium",
+    "notes": "公開情報に基づく初期整理。"
+  },
+  "curation": {
+    "batch": "general_batch9",
+    "generated_by": "curate-general-drafts-batch9.js",
+    "detail_level": "expanded"
+  },
+  "provenance": {
+    "source_ids": [
+      "public_general_batch9_20260705"
+    ],
+    "generated_at": "2026-07-05T09:48:14.763Z"
+  },
+  "updated_at": "2026-07-05T09:48:14.763Z",
+  "content_hash": "56b097e69b852d97f7102e2b16dfafd214f060d03465ec27bbead1bcae614ede"
+}

@@ -1,0 +1,361 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "thoracic_duct_cyst",
+  "disease_name": {
+    "ja": "胸管嚢胞",
+    "en": "Thoracic duct cyst"
+  },
+  "disease_aliases": {
+    "ja": [],
+    "en": []
+  },
+  "clinical": {
+    "overview": "胸管嚢胞は後縦隔嚢胞で重要な鑑別となる疾患で、典型所見として胸管走行に沿う薄壁嚢胞性病変として見える。臨床背景、病変分布、造影効果を組み合わせて評価する。",
+    "treatment": "治療方針は病型、重症度、合併症、全身状態に応じて決定する。",
+    "epidemiology": "頻度と好発年齢は病型・背景疾患・地域差により異なる。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "代表的な性差傾向を記録。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 100,
+      "peak_decade": "縦隔嚢胞",
+      "summary": "代表的な発症・診断年齢帯を記録。"
+    }
+  },
+  "keywords": [
+    "Thoracic duct cyst",
+    "胸管嚢胞",
+    "thoracic duct cyst",
+    "chylous cyst"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 2,
+    "basis": "differential_importance",
+    "evidence_level": "public_review",
+    "context": {
+      "population": "any",
+      "body_region": "chest",
+      "clinical_setting": "後縦隔嚢胞"
+    },
+    "summary": "後縦隔嚢胞の鑑別での相対頻度と重要度を記録。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "胸管嚢胞のCTでは濃度、石灰化、出血、ガス、造影効果、周囲変化を評価する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "chest",
+                "organ": "lymphatic_system",
+                "subregion": "mediastinal_compartment",
+                "laterality": "unknown"
+              },
+              "target": "cystic_component",
+              "modifiers": {},
+              "keywords": [
+                "thoracic duct cyst",
+                "chylous cyst"
+              ],
+              "finding_text": "胸管嚢胞はCTで液体濃度または嚢胞性病変として描出されることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:ct_hypoattenuation",
+                "alternatives": []
+              },
+              "finding_id": "thoracic_duct_cyst_f001"
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "胸管嚢胞のMRIでは信号、拡散、造影効果、病変分布、隣接構造への進展を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T1WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:t1_hypointensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "chest",
+                "organ": "lymphatic_system",
+                "subregion": "mediastinal_compartment",
+                "laterality": "unknown"
+              },
+              "target": "cyst_content",
+              "modifiers": {},
+              "keywords": [
+                "thoracic duct cyst",
+                "chylous cyst"
+              ],
+              "finding_text": "胸管嚢胞の単純液性成分はT1WI低信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:t1_hypointensity",
+                "alternatives": []
+              },
+              "finding_id": "thoracic_duct_cyst_f002"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "chest",
+                "organ": "lymphatic_system",
+                "subregion": "mediastinal_compartment",
+                "laterality": "unknown"
+              },
+              "target": "cystic_component",
+              "modifiers": {},
+              "keywords": [
+                "thoracic duct cyst",
+                "chylous cyst"
+              ],
+              "finding_text": "胸管嚢胞はT2WI高信号を示し、隔壁・壁肥厚・内容性状を評価する。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:t2_hyperintensity",
+                "alternatives": []
+              },
+              "finding_id": "thoracic_duct_cyst_f003"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:mild_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "chest",
+                "organ": "lymphatic_system",
+                "subregion": "mediastinal_compartment",
+                "laterality": "unknown"
+              },
+              "target": "cyst_wall",
+              "modifiers": {},
+              "keywords": [
+                "thoracic duct cyst",
+                "chylous cyst"
+              ],
+              "finding_text": "胸管嚢胞では壁、隔壁、炎症性変化、または充実結節の造影効果を確認する。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:mild_enhancement",
+                "alternatives": []
+              },
+              "finding_id": "thoracic_duct_cyst_f004"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:diffusion_restriction_absent",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "chest",
+                "organ": "lymphatic_system",
+                "subregion": "mediastinal_compartment",
+                "laterality": "unknown"
+              },
+              "target": "cyst_content",
+              "modifiers": {},
+              "keywords": [
+                "thoracic duct cyst",
+                "chylous cyst"
+              ],
+              "finding_text": "胸管嚢胞の単純液性成分は強い拡散制限を欠くことが多い。",
+              "typicality": "variable",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:diffusion_restriction_absent",
+                "alternatives": []
+              },
+              "finding_id": "thoracic_duct_cyst_f005"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "raw_findings": [
+    {
+      "raw_finding_id": "thoracic_duct_cyst_raw_001",
+      "modality_text": "CT/MRI/US",
+      "acquisition_text": "疾患に応じた標準撮像",
+      "anatomy_text": "胸管嚢胞の典型的な主座",
+      "target_text": "named_sign",
+      "finding_text": "胸管走行に沿う薄壁嚢胞性病変として見える",
+      "interpretation": "構造化辞書では拾い切れない疾患固有の所見・サインとして保存。",
+      "source_ids": [
+        "public_general_batch9_20260705"
+      ],
+      "mapping": {
+        "status": "candidate",
+        "candidate_finding_code": "finding:thoracic_duct_cyst_specific_sign",
+        "candidate_anatomy": {
+          "body_region": "chest",
+          "organ": "lymphatic_system",
+          "subregion": "mediastinal_compartment",
+          "laterality": "unknown"
+        },
+        "candidate_target": "named_sign",
+        "notes": "Phase 1 raw finding"
+      },
+      "review_status": "needs_mapping"
+    }
+  ],
+  "evidence": {
+    "summary": "NCBI Bookshelf、ACR Appropriateness Criteria、RadiologyInfo、PMC open-access review などの公開情報を参照。",
+    "claim_map": [
+      {
+        "finding_ids": [
+          "thoracic_duct_cyst_f001"
+        ],
+        "source_ids": [
+          "public_general_batch9_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "thoracic_duct_cyst_f002"
+        ],
+        "source_ids": [
+          "public_general_batch9_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "thoracic_duct_cyst_f003"
+        ],
+        "source_ids": [
+          "public_general_batch9_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "thoracic_duct_cyst_f004"
+        ],
+        "source_ids": [
+          "public_general_batch9_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "thoracic_duct_cyst_f005"
+        ],
+        "source_ids": [
+          "public_general_batch9_20260705"
+        ],
+        "support": "public_source_summary"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "public_general_batch9_20260705",
+      "type": "public_source_packet",
+      "title": "Public imaging source packet for accelerated whole-body Phase 1 draft batch 9",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, ACR Appropriateness Criteria, RadiologyInfo, and open-access PMC reviews where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "confidence": "medium",
+    "notes": "公開情報に基づく初期整理。"
+  },
+  "curation": {
+    "batch": "general_batch9",
+    "generated_by": "curate-general-drafts-batch9.js",
+    "detail_level": "expanded"
+  },
+  "provenance": {
+    "source_ids": [
+      "public_general_batch9_20260705"
+    ],
+    "generated_at": "2026-07-05T09:48:14.763Z"
+  },
+  "updated_at": "2026-07-05T09:48:14.763Z",
+  "content_hash": "2fa320b55a5473674db28261cc35bcad13f77a282da70fddebbb5c41fe465491"
+}

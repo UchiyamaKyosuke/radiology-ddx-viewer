@@ -1,0 +1,52 @@
+{
+  "disease_id": "nf1_optic_pathway_glioma",
+  "disease_name": {
+    "ja": "NF1関連視路神経膠腫",
+    "en": "NF1-associated optic pathway glioma"
+  },
+  "disease_aliases": {
+    "ja": [
+      "視路神経膠腫",
+      "NF1関連視神経膠腫"
+    ],
+    "en": [
+      "Optic pathway glioma"
+    ]
+  },
+  "clinical": {
+    "overview": "NF1に合併しやすい低悪性度視路神経膠腫。視神経、視交叉、視索の腫大とT2高信号、造影を評価する。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 18,
+      "peak_decade": "小児",
+      "summary": "小児で重要。"
+    }
+  },
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 2,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "optic_pathway_mass_child"
+    },
+    "summary": "該当する画像パターンで重要な鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

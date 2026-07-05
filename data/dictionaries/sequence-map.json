@@ -1,0 +1,331 @@
+{
+  "T1WI": {
+    "label": {
+      "ja": "T1強調像",
+      "en": "T1-weighted imaging"
+    },
+    "synonyms": [
+      "T1",
+      "T1WI",
+      "T1強調",
+      "T1強調像"
+    ]
+  },
+  "T2WI": {
+    "label": {
+      "ja": "T2強調像",
+      "en": "T2-weighted imaging"
+    },
+    "synonyms": [
+      "T2",
+      "T2WI",
+      "T2強調",
+      "T2強調像",
+      "T2-weighted imaging"
+    ]
+  },
+  "DWI": {
+    "label": {
+      "ja": "拡散強調像",
+      "en": "Diffusion-weighted imaging"
+    },
+    "synonyms": [
+      "DWI",
+      "拡散強調",
+      "拡散強調像",
+      "diffusion-weighted imaging"
+    ]
+  },
+  "ADC": {
+    "label": {
+      "ja": "ADC map",
+      "en": "ADC map"
+    },
+    "synonyms": [
+      "ADC",
+      "ADC map"
+    ]
+  },
+  "FLAIR": {
+    "label": {
+      "ja": "FLAIR",
+      "en": "FLAIR"
+    },
+    "synonyms": [
+      "FLAIR",
+      "fluid-attenuated inversion recovery"
+    ]
+  },
+  "contrast_enhanced_T1WI": {
+    "label": {
+      "ja": "造影T1強調像",
+      "en": "contrast-enhanced T1-weighted imaging"
+    },
+    "synonyms": [
+      "造影T1",
+      "造影T1強調像",
+      "CE-T1WI",
+      "contrast-enhanced T1WI"
+    ]
+  },
+  "T1WI_fat_suppressed": {
+    "label": {
+      "ja": "脂肪抑制T1強調像",
+      "en": "fat-suppressed T1-weighted imaging"
+    },
+    "synonyms": [
+      "脂肪抑制T1",
+      "脂肪抑制T1強調像",
+      "T1FS",
+      "T1 fat-sat",
+      "fat-suppressed T1WI"
+    ]
+  },
+  "T2WI_fat_suppressed": {
+    "label": {
+      "ja": "脂肪抑制T2強調像",
+      "en": "fat-suppressed T2-weighted imaging"
+    },
+    "synonyms": [
+      "脂肪抑制T2",
+      "脂肪抑制T2強調像",
+      "T2FS",
+      "T2 fat-sat",
+      "fat-suppressed T2WI"
+    ]
+  },
+  "STIR": {
+    "label": {
+      "ja": "STIR",
+      "en": "short tau inversion recovery"
+    },
+    "synonyms": [
+      "STIR",
+      "short tau inversion recovery"
+    ]
+  },
+  "PDWI": {
+    "label": {
+      "ja": "プロトン密度強調像",
+      "en": "proton density-weighted imaging"
+    },
+    "synonyms": [
+      "PDWI",
+      "PD",
+      "プロトン密度強調像",
+      "proton density"
+    ]
+  },
+  "PDWI_fat_suppressed": {
+    "label": {
+      "ja": "脂肪抑制プロトン密度強調像",
+      "en": "fat-suppressed proton density-weighted imaging"
+    },
+    "synonyms": [
+      "PD FS",
+      "PD fat-sat",
+      "脂肪抑制PD",
+      "fat-suppressed PDWI"
+    ]
+  },
+  "T2STAR": {
+    "label": {
+      "ja": "T2*強調像",
+      "en": "T2*-weighted imaging"
+    },
+    "synonyms": [
+      "T2*",
+      "T2STAR",
+      "T2 star",
+      "T2*WI",
+      "T2スター",
+      "T2*強調像"
+    ]
+  },
+  "GRE_T2STAR": {
+    "label": {
+      "ja": "GRE T2*強調像",
+      "en": "gradient-echo T2*-weighted imaging"
+    },
+    "synonyms": [
+      "GRE",
+      "T2* GRE",
+      "GRE T2*",
+      "gradient echo",
+      "gradient-echo T2*"
+    ]
+  },
+  "SWI": {
+    "label": {
+      "ja": "SWI",
+      "en": "susceptibility-weighted imaging"
+    },
+    "synonyms": [
+      "SWI",
+      "磁化率強調像",
+      "susceptibility-weighted imaging"
+    ]
+  },
+  "DIR": {
+    "label": {
+      "ja": "二重反転回復",
+      "en": "double inversion recovery"
+    },
+    "synonyms": [
+      "DIR",
+      "double inversion recovery",
+      "二重反転回復"
+    ]
+  },
+  "contrast_enhanced_T1WI_fat_suppressed": {
+    "label": {
+      "ja": "脂肪抑制造影T1強調像",
+      "en": "contrast-enhanced fat-suppressed T1-weighted imaging"
+    },
+    "synonyms": [
+      "脂肪抑制造影T1",
+      "造影T1FS",
+      "CE T1 fat-sat"
+    ]
+  },
+  "DCE_MRI": {
+    "label": {
+      "ja": "ダイナミック造影MRI",
+      "en": "dynamic contrast-enhanced MRI"
+    },
+    "synonyms": [
+      "DCE",
+      "DCE-MRI",
+      "dynamic contrast enhanced MRI",
+      "ダイナミック造影"
+    ]
+  },
+  "DSC_perfusion": {
+    "label": {
+      "ja": "DSC灌流MRI",
+      "en": "dynamic susceptibility contrast perfusion"
+    },
+    "synonyms": [
+      "DSC",
+      "DSC perfusion",
+      "perfusion MRI",
+      "灌流MRI"
+    ]
+  },
+  "ASL": {
+    "label": {
+      "ja": "ASL灌流",
+      "en": "arterial spin labeling"
+    },
+    "synonyms": [
+      "ASL",
+      "arterial spin labeling",
+      "ASL灌流"
+    ]
+  },
+  "MRA_TOF": {
+    "label": {
+      "ja": "TOF MRA",
+      "en": "time-of-flight MR angiography"
+    },
+    "synonyms": [
+      "TOF",
+      "TOF MRA",
+      "time-of-flight MRA"
+    ]
+  },
+  "MRA_contrast_enhanced": {
+    "label": {
+      "ja": "造影MRA",
+      "en": "contrast-enhanced MR angiography"
+    },
+    "synonyms": [
+      "造影MRA",
+      "contrast-enhanced MRA"
+    ]
+  },
+  "MRV": {
+    "label": {
+      "ja": "MR静脈撮像",
+      "en": "MR venography"
+    },
+    "synonyms": [
+      "MRV",
+      "MR venography",
+      "MR静脈撮像"
+    ]
+  },
+  "MRS": {
+    "label": {
+      "ja": "MR spectroscopy",
+      "en": "MR spectroscopy"
+    },
+    "synonyms": [
+      "MRS",
+      "MR spectroscopy",
+      "MRスペクトロスコピー"
+    ]
+  },
+  "CISS_FIESTA": {
+    "label": {
+      "ja": "CISS/FIESTA",
+      "en": "balanced steady-state free precession"
+    },
+    "synonyms": [
+      "CISS",
+      "FIESTA",
+      "balanced steady-state"
+    ]
+  },
+  "DIXON_in_phase": {
+    "label": {
+      "ja": "Dixon in-phase",
+      "en": "Dixon in-phase imaging"
+    },
+    "synonyms": [
+      "Dixon in-phase",
+      "in-phase"
+    ]
+  },
+  "DIXON_opposed_phase": {
+    "label": {
+      "ja": "Dixon opposed-phase",
+      "en": "Dixon opposed-phase imaging"
+    },
+    "synonyms": [
+      "Dixon opposed-phase",
+      "opposed-phase",
+      "逆位相"
+    ]
+  },
+  "DIXON_water": {
+    "label": {
+      "ja": "Dixon water image",
+      "en": "Dixon water image"
+    },
+    "synonyms": [
+      "Dixon water",
+      "water image"
+    ]
+  },
+  "DIXON_fat": {
+    "label": {
+      "ja": "Dixon fat image",
+      "en": "Dixon fat image"
+    },
+    "synonyms": [
+      "Dixon fat",
+      "fat image"
+    ]
+  },
+  "MRCP": {
+    "label": {
+      "ja": "MRCP",
+      "en": "MR cholangiopancreatography"
+    },
+    "synonyms": [
+      "MRCP",
+      "magnetic resonance cholangiopancreatography"
+    ]
+  }
+}

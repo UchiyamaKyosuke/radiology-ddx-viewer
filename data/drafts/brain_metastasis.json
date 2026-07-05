@@ -1,0 +1,599 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "brain_metastasis",
+  "disease_name": {
+    "ja": "脳転移",
+    "en": "Brain metastasis"
+  },
+  "disease_aliases": {
+    "ja": [
+      "転移性脳腫瘍"
+    ],
+    "en": [
+      "Brain metastases",
+      "Metastatic brain tumor"
+    ]
+  },
+  "clinical": {
+    "overview": "全身悪性腫瘍から脳実質へ血行性に転移する病変。灰白白質境界や後頭蓋窩に多発しやすく、周囲の血管原性浮腫を伴う造影結節・リング状造影病変として鑑別に挙がる。",
+    "treatment": "原発巣、個数、症状、全身状態に応じて定位放射線治療、全脳照射、手術、薬物療法を組み合わせる。",
+    "epidemiology": "担癌患者の頭蓋内腫瘤では頻度の高い鑑別。成人、とくに中高年以降で重要。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "性差は原発腫瘍の分布に依存する。"
+    },
+    "age": {
+      "typical_min": 40,
+      "typical_max": 85,
+      "peak_decade": "50-70歳代",
+      "summary": "中高年以降の担癌患者で多い。"
+    }
+  },
+  "keywords": [
+    "multiple lesions",
+    "gray-white junction",
+    "ring enhancement",
+    "vasogenic edema"
+  ],
+  "frequency": {
+    "label": "common",
+    "prevalence_rank": 4,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "adult cancer patient",
+      "body_region": "brain",
+      "clinical_setting": "enhancing_brain_mass"
+    },
+    "summary": "担癌患者の造影性脳内病変では頻度の高い鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "脳転移はCTで低吸収〜不均一腫瘤、壊死、出血、浮腫、腫瘤効果を確認する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "brain_metastasis_ct_nc_001",
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "perilesional_edema",
+              "modifiers": {},
+              "keywords": [
+                "edema"
+              ],
+              "finding_text": "周囲浮腫や壊死成分が低吸収として見えることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_hypoattenuation",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "brain_metastasis_ct_non_contrast_ct_mild_hypoattenuation_01",
+              "finding_code": "finding:ct_mild_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "CTでは不均一な低吸収腫瘤と周囲浮腫を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "脳転移は灰白質白質境界に多発しやすく、造影効果、周囲血管原性浮腫、DWI/灌流所見を組み合わせて評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "brain_metastasis_mri_ce_001",
+              "finding_code": "finding:ring_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "lesion_margin",
+              "modifiers": {},
+              "keywords": [
+                "ring enhancement"
+              ],
+              "finding_text": "結節状またはリング状造影を示す転移巣として認められることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ring_enhancement",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "brain_metastasis_mri_contrast_enhanced_t1wi_thick_irregular_ring_enhancement_01",
+              "finding_code": "finding:thick_irregular_ring_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "造影T1WIでは厚く不整なリング状または不均一造影を示すことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": [
+                "irregular ring enhancement"
+              ]
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "brain_metastasis_mri_flair_001",
+              "finding_code": "finding:vasogenic_edema",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "perilesional_edema",
+              "modifiers": {},
+              "keywords": [
+                "vasogenic edema"
+              ],
+              "finding_text": "病変周囲にFLAIR高信号の血管原性浮腫を伴うことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:vasogenic_edema",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "brain_metastasis_mri_flair_flair_hyperintensity_01",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "FLAIRでは浸潤性高信号と浮腫が目立つ。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_id": "brain_metastasis_mri_dwi_001",
+              "finding_code": "finding:diffusion_restriction_absent",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "lesion_core",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "多くは膿瘍のような中心性拡散制限を示さないが、腫瘍成分や原発により幅がある。",
+              "typicality": "variable",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:diffusion_restriction_absent",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "brain_metastasis_mri_dwi_diffusion_restriction_present_01",
+              "finding_code": "finding:diffusion_restriction_present",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "高細胞性成分で拡散制限を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "brain_metastasis_mri_t1wi_t1_hypointensity_01",
+              "finding_code": "finding:t1_hypointensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "T1WIでは壊死部を含む不均一低信号腫瘤として見える。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "brain_metastasis_mri_t2wi_t2_hyperintensity_01",
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "T2WIでは腫瘍と浮腫が高信号として広がる。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DSC_perfusion"
+          },
+          "findings": [
+            {
+              "finding_id": "brain_metastasis_mri_dsc_perfusion_elevated_cbv_01",
+              "finding_code": "finding:elevated_cbv",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DSC_perfusion"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "灌流MRIでは高悪性度腫瘍成分でCBV上昇を示しやすい。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "MRS"
+          },
+          "findings": [
+            {
+              "finding_id": "brain_metastasis_mri_mrs_elevated_choline_peak_01",
+              "finding_code": "finding:elevated_choline_peak",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRS"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "MRSではコリン上昇が腫瘍性病変を支持する。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "brain_metastasis_mri_mrs_lipid_peak_01",
+              "finding_code": "finding:lipid_peak",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRS"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "壊死を伴う高悪性度腫瘍では脂質/乳酸ピークが参考になる。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 29307364, 25649387, 31214496, 37563948）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "brain_metastasis_ct_nc_001",
+          "brain_metastasis_mri_ce_001",
+          "brain_metastasis_mri_flair_001",
+          "brain_metastasis_mri_dwi_001"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_29307364",
+          "pmid_25649387",
+          "pmid_31214496",
+          "pmid_37563948"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "brain_metastasis_ct_non_contrast_ct_mild_hypoattenuation_01",
+          "brain_metastasis_mri_t1wi_t1_hypointensity_01",
+          "brain_metastasis_mri_t2wi_t2_hyperintensity_01",
+          "brain_metastasis_mri_flair_flair_hyperintensity_01",
+          "brain_metastasis_mri_contrast_enhanced_t1wi_thick_irregular_ring_enhancement_01",
+          "brain_metastasis_mri_dwi_diffusion_restriction_present_01",
+          "brain_metastasis_mri_dsc_perfusion_elevated_cbv_01",
+          "brain_metastasis_mri_mrs_elevated_choline_peak_01",
+          "brain_metastasis_mri_mrs_lipid_peak_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_29307364",
+      "type": "journal_article",
+      "title": "Brain metastases: neuroimaging.",
+      "authors": [],
+      "journal": "Handbook of clinical neurology",
+      "year": "2018",
+      "pmid": "29307364",
+      "doi": "10.1016/B978-0-12-811161-1.00007-4",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29307364/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_25649387",
+      "type": "journal_article",
+      "title": "[Brain metastases imaging].",
+      "authors": [],
+      "journal": "Cancer radiotherapie : journal de la Societe francaise de radiotherapie oncologique",
+      "year": "2015",
+      "pmid": "25649387",
+      "doi": "10.1016/j.canrad.2014.11.008",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25649387/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_31214496",
+      "type": "journal_article",
+      "title": "Advanced Magnetic Resonance Imaging Techniques in Management of Brain Metastases.",
+      "authors": [],
+      "journal": "Frontiers in oncology",
+      "year": "2020",
+      "pmid": "31214496",
+      "doi": "10.3389/fonc.2019.00440",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31214496/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_37563948",
+      "type": "journal_article",
+      "title": "Brain metastases from breast cancer using magnetic resonance imaging: A systematic review.",
+      "authors": [],
+      "journal": "Journal of medical radiation sciences",
+      "year": "2024",
+      "pmid": "37563948",
+      "doi": "10.1002/jmrs.715",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37563948/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": [
+    {
+      "raw_finding_id": "brain_metastasis_raw_keyword_gray_white_junction",
+      "modality_text": "MRI",
+      "acquisition_text": "",
+      "anatomy_text": "",
+      "target_text": "",
+      "finding_text": "キーワード/所見として \"gray-white junction\" を保持。",
+      "interpretation": "辞書対応済み構造化欄から漏れる可能性があるため、Phase1自由記載として保存。",
+      "source_ids": [
+        "public_raw_findings_audit_20260705"
+      ],
+      "mapping": {
+        "status": "unmapped",
+        "candidate_finding_code": "finding:gray_white_junction",
+        "candidate_acquisition_code": "",
+        "candidate_target": "",
+        "notes": "Added during raw_findings audit to preserve information that may be lost by dictionary-only structured fields."
+      },
+      "review_status": "needs_mapping"
+    }
+  ]
+}

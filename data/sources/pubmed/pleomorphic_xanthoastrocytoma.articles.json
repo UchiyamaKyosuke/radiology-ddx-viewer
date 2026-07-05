@@ -1,0 +1,38 @@
+{
+  "disease_id": "pleomorphic_xanthoastrocytoma",
+  "disease_name": {
+    "ja": "多形黄色星細胞腫",
+    "en": "Pleomorphic xanthoastrocytoma"
+  },
+  "query": "\"pleomorphic xanthoastrocytoma\" AND (MRI OR CT OR imaging)",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "9190551",
+      "title": "[Pleomorphic xanthoastrocytoma].",
+      "journal": "Orvosi hetilap",
+      "year": "1997",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9190551/",
+      "abstract": ""
+    },
+    {
+      "pmid": "40473546",
+      "title": "MRI features of pleomorphic xanthoastrocytoma defined by DNA methylation profile.",
+      "journal": "Revue neurologique",
+      "year": "2025",
+      "doi": "10.1016/j.neurol.2025.04.009",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40473546/",
+      "abstract": ""
+    },
+    {
+      "pmid": "8293186",
+      "title": "Pleomorphic xanthoastrocytoma: the birth of a diagnosis and a concept.",
+      "journal": "Brain pathology (Zurich, Switzerland)",
+      "year": "1994",
+      "doi": "10.1111/j.1750-3639.1993.tb00753.x",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8293186/",
+      "abstract": ""
+    }
+  ]
+}

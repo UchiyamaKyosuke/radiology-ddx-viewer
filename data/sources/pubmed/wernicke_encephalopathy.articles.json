@@ -1,0 +1,38 @@
+{
+  "disease_id": "wernicke_encephalopathy",
+  "disease_name": {
+    "ja": "Wernicke脳症",
+    "en": "Wernicke encephalopathy"
+  },
+  "query": "Wernicke encephalopathy MRI imaging",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "17434099",
+      "title": "Wernicke's encephalopathy: new clinical settings and recent advances in diagnosis and management.",
+      "journal": "The Lancet. Neurology",
+      "year": "2007",
+      "doi": "10.1016/S1474-4422(07)70104-7",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17434099/",
+      "abstract": ""
+    },
+    {
+      "pmid": "32390125",
+      "title": "Comprehensive review of Wernicke encephalopathy: pathophysiology, clinical symptoms and imaging findings.",
+      "journal": "Japanese journal of radiology",
+      "year": "2021",
+      "doi": "10.1007/s11604-020-00989-3",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32390125/",
+      "abstract": ""
+    },
+    {
+      "pmid": "36342089",
+      "title": "Wernicke Encephalopathy.",
+      "journal": "Deutsches Arzteblatt international",
+      "year": "2022",
+      "doi": "10.3238/arztebl.m2022.0030",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36342089/",
+      "abstract": ""
+    }
+  ]
+}

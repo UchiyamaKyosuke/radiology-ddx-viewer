@@ -1,0 +1,500 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "cerebral_cavernous_malformation",
+  "disease_name": {
+    "ja": "脳海綿状血管奇形",
+    "en": "Cerebral cavernous malformation"
+  },
+  "disease_aliases": {
+    "ja": [
+      "海綿状血管奇形",
+      "脳海綿状血管腫"
+    ],
+    "en": [
+      "Cavernous malformation",
+      "Cavernoma",
+      "Cerebral cavernoma"
+    ]
+  },
+  "clinical": {
+    "overview": "拡張した毛細血管様血管腔からなる低流速血管奇形。反復する微小出血によりヘモジデリン沈着を伴い、SWI/T2*でbloomingを示す。",
+    "treatment": "無症候例は経過観察、出血や難治性てんかん、到達可能部位では外科的切除を検討する。",
+    "epidemiology": "孤発例と家族例があり、小児から成人まで幅広い。けいれん、出血、偶発発見で見つかる。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 10,
+      "typical_max": 70,
+      "peak_decade": "20-50歳代",
+      "summary": "小児から成人まで幅広いが若年〜中年でも重要。"
+    }
+  },
+  "keywords": [
+    "popcorn appearance",
+    "mulberry appearance",
+    "hemosiderin rim",
+    "blooming"
+  ],
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 2,
+    "basis": "epidemiology",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "hemorrhagic_or_susceptibility_lesion"
+    },
+    "summary": "出血性・磁化率病変では重要な鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "海綿状血管奇形はCTで石灰化や出血を伴う高吸収病変として見えることがある。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "cerebral_cavernous_malformation_ct_nc_001",
+              "finding_code": "finding:calcification_present",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "石灰化を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:calcification_present",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "cerebral_cavernous_malformation_ct_nc_002",
+              "finding_code": "finding:hemorrhage_present",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "急性・亜急性出血を伴うと高吸収として認められる。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:hemorrhage_present",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "cerebral_cavernous_malformation_ct_non_contrast_calcification_present_01",
+              "finding_code": "finding:calcification_present",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "CTで石灰化を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIではpopcorn状混在信号、ヘモジデリンリム、SWI/T2* bloomingが重要。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "SWI"
+          },
+          "findings": [
+            {
+              "finding_id": "cerebral_cavernous_malformation_mri_swi_001",
+              "finding_code": "finding:susceptibility_blooming",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "SWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "blooming",
+                "hemosiderin rim"
+              ],
+              "finding_text": "ヘモジデリン沈着によりSWIで著明なbloomingを示す。",
+              "typicality": "typical",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:susceptibility_blooming",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "cerebral_cavernous_malformation_mri_swi_susceptibility_blooming_01",
+              "finding_code": "finding:susceptibility_blooming",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "SWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "SWI/T2*で著明なblooming/ヘモジデリンリムを示す。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": [
+                "popcorn",
+                "hemosiderin rim"
+              ]
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2STAR"
+          },
+          "findings": [
+            {
+              "finding_id": "cerebral_cavernous_malformation_mri_t2star_001",
+              "finding_code": "finding:susceptibility_blooming",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2STAR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "blooming"
+              ],
+              "finding_text": "T2*で磁化率低信号とbloomingを示す。",
+              "typicality": "typical",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:susceptibility_blooming",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "cerebral_cavernous_malformation_mri_t2_001",
+              "finding_code": "finding:t2_hypointensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "hemosiderin rim"
+              ],
+              "finding_text": "ヘモジデリンリムに相当するT2低信号縁を伴う。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:t2_hypointensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "cerebral_cavernous_malformation_mri_t2wi_t2_hypointensity_01",
+              "finding_code": "finding:t2_hypointensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "T2WIで辺縁低信号リムを認める。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "cerebral_cavernous_malformation_mri_t1_001",
+              "finding_code": "finding:hemorrhage_present",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "popcorn appearance"
+              ],
+              "finding_text": "血腫の時相により内部信号が混在する。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:hemorrhage_present",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "cerebral_cavernous_malformation_mri_contrast_enhanced_t1wi_mild_enhancement_01",
+              "finding_code": "finding:mild_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "造影効果は乏しい〜軽度のことが多い。",
+              "typicality": "variable",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 36403580, 33494000, 16100539）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "cerebral_cavernous_malformation_ct_nc_001",
+          "cerebral_cavernous_malformation_ct_nc_002",
+          "cerebral_cavernous_malformation_mri_swi_001",
+          "cerebral_cavernous_malformation_mri_t2star_001",
+          "cerebral_cavernous_malformation_mri_t2_001",
+          "cerebral_cavernous_malformation_mri_t1_001"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_36403580",
+          "pmid_33494000",
+          "pmid_16100539"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "cerebral_cavernous_malformation_ct_non_contrast_calcification_present_01",
+          "cerebral_cavernous_malformation_mri_swi_susceptibility_blooming_01",
+          "cerebral_cavernous_malformation_mri_t2wi_t2_hypointensity_01",
+          "cerebral_cavernous_malformation_mri_contrast_enhanced_t1wi_mild_enhancement_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_36403580",
+      "type": "journal_article",
+      "title": "Safety and efficacy of propranolol for treatment of familial cerebral cavernous malformations (Treat_CCM): a randomised, open-label, blinded-endpoint, phase 2 pilot trial.",
+      "authors": [],
+      "journal": "The Lancet. Neurology",
+      "year": "2022",
+      "pmid": "36403580",
+      "doi": "10.1016/S1474-4422(22)00409-4",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36403580/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_33494000",
+      "type": "journal_article",
+      "title": "Pediatric Cerebral Cavernous Malformations.",
+      "authors": [],
+      "journal": "Pediatric neurology",
+      "year": "2022",
+      "pmid": "33494000",
+      "doi": "10.1016/j.pediatrneurol.2020.11.004",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33494000/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_16100539",
+      "type": "journal_article",
+      "title": "[Cerebral cavernous malformations].",
+      "authors": [],
+      "journal": "Tidsskrift for den Norske laegeforening : tidsskrift for praktisk medicin, ny raekke",
+      "year": "2005",
+      "pmid": "16100539",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16100539/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": []
+}

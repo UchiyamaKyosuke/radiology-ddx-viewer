@@ -1,0 +1,394 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "agenesis_of_corpus_callosum",
+  "disease_name": {
+    "ja": "脳梁欠損",
+    "en": "Agenesis of the corpus callosum"
+  },
+  "disease_aliases": {
+    "ja": [
+      "脳梁形成不全"
+    ],
+    "en": [
+      "Corpus callosum agenesis"
+    ]
+  },
+  "clinical": {
+    "overview": "脳梁の完全または部分欠損。側脳室形態異常、放射状脳溝、Probst bundleなどを評価する。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 18,
+      "peak_decade": "小児",
+      "summary": "小児で重要。"
+    }
+  },
+  "keywords": [
+    "corpus callosum",
+    "colpocephaly",
+    "Probst bundles"
+  ],
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 2,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "developmental_anomaly"
+    },
+    "summary": "該当する画像パターンで重要な鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "脳梁欠損はCT/MRIで側脳室形態異常や正中構造を確認する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "agenesis_of_corpus_callosum_ct_001",
+              "finding_code": "finding:ventriculomegaly",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "ventricle",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "developmental_anomaly",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "側脳室後角拡大を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ventriculomegaly",
+                "alternatives": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは脳梁欠損、parallel lateral ventricles、colpocephaly、放射状脳溝走行を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "agenesis_of_corpus_callosum_mri_002",
+              "finding_code": "finding:callosal_lesion",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "corpus_callosum",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "developmental_anomaly",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "脳梁の欠損または形成不全を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:callosal_lesion",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "agenesis_of_corpus_callosum_mri_003",
+              "finding_code": "finding:ventriculomegaly",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "ventricle",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "developmental_anomaly",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "側脳室形態異常や後角拡大を伴う。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ventriculomegaly",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "agenesis_of_corpus_callosum_mri_t2wi_ventriculomegaly_01",
+              "finding_code": "finding:ventriculomegaly",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "側脳室形態異常や後角拡大を認める。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "agenesis_of_corpus_callosum_mri_t2wi_csf_like_signal_01",
+              "finding_code": "finding:csf_like_signal",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "正中嚢胞など髄液様構造を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "agenesis_of_corpus_callosum_mri_flair_callosal_lesion_01",
+              "finding_code": "finding:callosal_lesion",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "脳梁の欠損または低形成を認める。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 37816486, 37794643, 33168219）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "agenesis_of_corpus_callosum_ct_001",
+          "agenesis_of_corpus_callosum_mri_002",
+          "agenesis_of_corpus_callosum_mri_003"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_37816486",
+          "pmid_37794643",
+          "pmid_33168219"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "agenesis_of_corpus_callosum_mri_flair_callosal_lesion_01",
+          "agenesis_of_corpus_callosum_mri_t2wi_ventriculomegaly_01",
+          "agenesis_of_corpus_callosum_mri_t2wi_csf_like_signal_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_37816486",
+      "type": "journal_article",
+      "title": "Outcome of partial agenesis of corpus callosum.",
+      "authors": [],
+      "journal": "American journal of obstetrics and gynecology",
+      "year": "2024",
+      "pmid": "37816486",
+      "doi": "10.1016/j.ajog.2023.10.007",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37816486/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_37794643",
+      "type": "journal_article",
+      "title": "Agenesis of the corpus callosum: What to tell expecting parents?",
+      "authors": [],
+      "journal": "Prenatal diagnosis",
+      "year": "2024",
+      "pmid": "37794643",
+      "doi": "10.1002/pd.6447",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37794643/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_33168219",
+      "type": "journal_article",
+      "title": "Agenesis of the Corpus Callosum.",
+      "authors": [],
+      "journal": "American journal of obstetrics and gynecology",
+      "year": "2021",
+      "pmid": "33168219",
+      "doi": "10.1016/j.ajog.2020.08.179",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33168219/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": [
+    {
+      "raw_finding_id": "agenesis_of_corpus_callosum_raw_keyword_corpus_callosum",
+      "modality_text": "MRI",
+      "acquisition_text": "",
+      "anatomy_text": "",
+      "target_text": "",
+      "finding_text": "キーワード/所見として \"corpus callosum\" を保持。",
+      "interpretation": "辞書対応済み構造化欄から漏れる可能性があるため、Phase1自由記載として保存。",
+      "source_ids": [
+        "public_raw_findings_audit_20260705"
+      ],
+      "mapping": {
+        "status": "unmapped",
+        "candidate_finding_code": "finding:corpus_callosum",
+        "candidate_acquisition_code": "",
+        "candidate_target": "",
+        "notes": "Added during raw_findings audit to preserve information that may be lost by dictionary-only structured fields."
+      },
+      "review_status": "needs_mapping"
+    },
+    {
+      "raw_finding_id": "agenesis_of_corpus_callosum_raw_keyword_probst_bundles",
+      "modality_text": "MRI",
+      "acquisition_text": "",
+      "anatomy_text": "",
+      "target_text": "",
+      "finding_text": "キーワード/所見として \"Probst bundles\" を保持。",
+      "interpretation": "辞書対応済み構造化欄から漏れる可能性があるため、Phase1自由記載として保存。",
+      "source_ids": [
+        "public_raw_findings_audit_20260705"
+      ],
+      "mapping": {
+        "status": "unmapped",
+        "candidate_finding_code": "finding:probst_bundles",
+        "candidate_acquisition_code": "",
+        "candidate_target": "",
+        "notes": "Added during raw_findings audit to preserve information that may be lost by dictionary-only structured fields."
+      },
+      "review_status": "needs_mapping"
+    }
+  ]
+}

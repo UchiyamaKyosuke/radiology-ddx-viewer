@@ -1,0 +1,482 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "herpes_simplex_encephalitis",
+  "disease_name": {
+    "ja": "単純ヘルペス脳炎",
+    "en": "Herpes simplex encephalitis"
+  },
+  "disease_aliases": {
+    "ja": [
+      "HSV脳炎",
+      "ヘルペス脳炎"
+    ],
+    "en": [
+      "HSV encephalitis"
+    ]
+  },
+  "clinical": {
+    "overview": "HSV-1による急性壊死性脳炎。側頭葉内側、島皮質、眼窩前頭葉に好発し、DWI/FLAIR異常が早期診断に重要。",
+    "treatment": "疑った時点でアシクロビルを速やかに開始する。PCR、髄液、脳波、MRIで評価する。",
+    "epidemiology": "全年齢で発症しうるが成人散発性脳炎の重要疾患。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 90,
+      "peak_decade": "全年齢",
+      "summary": "全年齢で発症しうる。"
+    }
+  },
+  "keywords": [
+    "medial temporal lobe",
+    "insula",
+    "hemorrhagic encephalitis",
+    "acyclovir"
+  ],
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 2,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "encephalitis",
+      "body_region": "brain",
+      "clinical_setting": "acute_fever_altered_mental_status"
+    },
+    "summary": "急性脳炎では治療可能で重要な鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "HSV脳炎はCTで側頭葉/島皮質の低吸収や浮腫として見えることがある。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "herpes_simplex_encephalitis_ct_nc_001",
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "temporal_lobe",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "側頭葉や島皮質に低吸収域を示すことがあるが早期CTは正常のこともある。",
+              "typicality": "variable",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_hypoattenuation",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "herpes_simplex_encephalitis_ct_non_contrast_ct_hypoattenuation_01",
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "CTでは側頭葉や島皮質の低吸収/浮腫を認めることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは側頭葉内側、島皮質、眼窩前頭葉のT2/FLAIR高信号、DWI高信号、出血性変化を確認する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "herpes_simplex_encephalitis_mri_flair_001",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "temporal_lobe",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "medial temporal lobe",
+                "insula"
+              ],
+              "finding_text": "側頭葉内側や島皮質優位のFLAIR高信号を示す。",
+              "typicality": "typical",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:flair_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "herpes_simplex_encephalitis_mri_flair_flair_hyperintensity_01",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "temporal_lobe",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "FLAIRで側頭葉内側や島皮質の高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_id": "herpes_simplex_encephalitis_mri_dwi_001",
+              "finding_code": "finding:dwi_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "temporal_lobe",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "急性期にDWI高信号を示すことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:dwi_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "herpes_simplex_encephalitis_mri_dwi_dwi_hyperintensity_01",
+              "finding_code": "finding:dwi_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "急性期にDWI高信号を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "ADC"
+          },
+          "findings": [
+            {
+              "finding_id": "herpes_simplex_encephalitis_mri_adc_001",
+              "finding_code": "finding:adc_low",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "ADC"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "temporal_lobe",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "細胞性浮腫によりADC低下を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:adc_low",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "herpes_simplex_encephalitis_mri_adc_adc_low_01",
+              "finding_code": "finding:adc_low",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "ADC"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "急性期病変ではADC低値を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "SWI"
+          },
+          "findings": [
+            {
+              "finding_id": "herpes_simplex_encephalitis_mri_swi_001",
+              "finding_code": "finding:susceptibility_blooming",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "SWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "temporal_lobe",
+                "laterality": "unknown"
+              },
+              "target": "hemorrhagic_component",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "壊死性・出血性変化により磁化率低信号を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:susceptibility_blooming",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "herpes_simplex_encephalitis_mri_swi_susceptibility_blooming_01",
+              "finding_code": "finding:susceptibility_blooming",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "SWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "出血性壊死に伴いSWI/T2*でbloomingを示すことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 39322393, 28074766, 9163027, 10481538）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "herpes_simplex_encephalitis_ct_nc_001",
+          "herpes_simplex_encephalitis_mri_flair_001",
+          "herpes_simplex_encephalitis_mri_dwi_001",
+          "herpes_simplex_encephalitis_mri_adc_001",
+          "herpes_simplex_encephalitis_mri_swi_001"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_39322393",
+          "pmid_28074766",
+          "pmid_9163027",
+          "pmid_10481538"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "herpes_simplex_encephalitis_ct_non_contrast_ct_hypoattenuation_01",
+          "herpes_simplex_encephalitis_mri_flair_flair_hyperintensity_01",
+          "herpes_simplex_encephalitis_mri_dwi_dwi_hyperintensity_01",
+          "herpes_simplex_encephalitis_mri_adc_adc_low_01",
+          "herpes_simplex_encephalitis_mri_swi_susceptibility_blooming_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_39322393",
+      "type": "journal_article",
+      "title": "Infectious leukoencephalopathies.",
+      "authors": [],
+      "journal": "Handbook of clinical neurology",
+      "year": "2024",
+      "pmid": "39322393",
+      "doi": "10.1016/B978-0-323-99209-1.00016-8",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39322393/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_28074766",
+      "type": "journal_article",
+      "title": "[Herpes simplex encephalitis].",
+      "authors": [],
+      "journal": "Ugeskrift for laeger",
+      "year": "2018",
+      "pmid": "28074766",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28074766/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_9163027",
+      "type": "journal_article",
+      "title": "Herpes simplex encephalitis.",
+      "authors": [],
+      "journal": "Scandinavian journal of infectious diseases. Supplementum",
+      "year": "1997",
+      "pmid": "9163027",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9163027/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_10481538",
+      "type": "journal_article",
+      "title": "[Herpes simplex encephalitis].",
+      "authors": [],
+      "journal": "Polski merkuriusz lekarski : organ Polskiego Towarzystwa Lekarskiego",
+      "year": "1999",
+      "pmid": "10481538",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10481538/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": []
+}

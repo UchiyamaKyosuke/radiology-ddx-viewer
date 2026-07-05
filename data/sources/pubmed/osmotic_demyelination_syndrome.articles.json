@@ -1,0 +1,38 @@
+{
+  "disease_id": "osmotic_demyelination_syndrome",
+  "disease_name": {
+    "ja": "浸透圧性脱髄症候群",
+    "en": "Osmotic demyelination syndrome"
+  },
+  "query": "osmotic demyelination syndrome MRI imaging",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "31587708",
+      "title": "Central Pontine Myelinosis and Osmotic Demyelination Syndrome.",
+      "journal": "Deutsches Arzteblatt international",
+      "year": "2020",
+      "doi": "10.3238/arztebl.2019.0600",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31587708/",
+      "abstract": ""
+    },
+    {
+      "pmid": "20453633",
+      "title": "Osmotic demyelination syndrome.",
+      "journal": "The American journal of the medical sciences",
+      "year": "2010",
+      "doi": "10.1097/MAJ.0b013e3181d3cd78",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20453633/",
+      "abstract": ""
+    },
+    {
+      "pmid": "31128892",
+      "title": "Osmotic Demyelination Syndrome in Children.",
+      "journal": "Pediatric neurology",
+      "year": "2020",
+      "doi": "10.1016/j.pediatrneurol.2019.03.018",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31128892/",
+      "abstract": ""
+    }
+  ]
+}

@@ -1,0 +1,359 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "acute_aortic_dissection",
+  "disease_name": {
+    "ja": "急性大動脈解離",
+    "en": "Acute aortic dissection"
+  },
+  "disease_aliases": {
+    "ja": [],
+    "en": []
+  },
+  "clinical": {
+    "overview": "急性大動脈解離は急性大動脈症候群で重要な鑑別となる疾患で、臨床背景と画像分布を組み合わせて評価する。",
+    "treatment": "治療方針は病型、病期、合併症、全身状態に応じて決定する。",
+    "epidemiology": "頻度と好発年齢は病型・背景疾患により異なる。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "代表的な性差傾向を記録。"
+    },
+    "age": {
+      "typical_min": 30,
+      "typical_max": 100,
+      "peak_decade": "60-70歳代",
+      "summary": "代表的な発症・診断年齢帯を記録。"
+    }
+  },
+  "keywords": [
+    "Acute aortic dissection",
+    "急性大動脈解離",
+    "intimal flap",
+    "true lumen",
+    "false lumen"
+  ],
+  "frequency": {
+    "label": "common",
+    "prevalence_rank": 4,
+    "basis": "differential_importance",
+    "evidence_level": "public_review",
+    "context": {
+      "population": "any",
+      "body_region": "cardiovascular",
+      "clinical_setting": "急性大動脈症候群"
+    },
+    "summary": "急性大動脈症候群 の鑑別での相対頻度と重要度を記録。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "急性大動脈解離のCTでは濃度、石灰化、出血、造影効果、周囲変化を評価する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:ct_hyperattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "cardiovascular",
+                "organ": "aorta",
+                "subregion": "aortic_lumen",
+                "laterality": "unknown"
+              },
+              "target": "vascular_lumen",
+              "modifiers": {},
+              "keywords": [
+                "intimal flap",
+                "true lumen",
+                "false lumen"
+              ],
+              "finding_text": "急性大動脈解離は急性期CTで高吸収成分や血栓を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:ct_hyperattenuation",
+                "alternatives": []
+              },
+              "finding_id": "acute_aortic_dissection_f001"
+            },
+            {
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "cardiovascular",
+                "organ": "aorta",
+                "subregion": "aortic_lumen",
+                "laterality": "unknown"
+              },
+              "target": "organ_parenchyma",
+              "modifiers": {},
+              "keywords": [
+                "intimal flap",
+                "true lumen",
+                "false lumen"
+              ],
+              "finding_text": "急性大動脈解離は灌流低下や梗塞を反映した低吸収域を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:ct_hypoattenuation",
+                "alternatives": []
+              },
+              "finding_id": "acute_aortic_dissection_f002"
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "急性大動脈解離のMRIでは信号、拡散、造影効果、病変分布を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:diffusion_restriction_present",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "cardiovascular",
+                "organ": "aorta",
+                "subregion": "aortic_lumen",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "intimal flap",
+                "true lumen",
+                "false lumen"
+              ],
+              "finding_text": "急性大動脈解離は虚血性変化がある場合にDWI高信号/ADC低下を示す。",
+              "typicality": "variable",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:diffusion_restriction_present",
+                "alternatives": []
+              },
+              "finding_id": "acute_aortic_dissection_f003"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:mild_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "cardiovascular",
+                "organ": "aorta",
+                "subregion": "aortic_lumen",
+                "laterality": "unknown"
+              },
+              "target": "vascular_lumen",
+              "modifiers": {},
+              "keywords": [
+                "intimal flap",
+                "true lumen",
+                "false lumen"
+              ],
+              "finding_text": "急性大動脈解離は血管壁や周囲組織の造影変化を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:mild_enhancement",
+                "alternatives": []
+              },
+              "finding_id": "acute_aortic_dissection_f004"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2STAR"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:hemorrhage_present",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2STAR"
+              },
+              "anatomy": {
+                "body_region": "cardiovascular",
+                "organ": "aorta",
+                "subregion": "aortic_lumen",
+                "laterality": "unknown"
+              },
+              "target": "hemorrhagic_component",
+              "modifiers": {},
+              "keywords": [
+                "intimal flap",
+                "true lumen",
+                "false lumen"
+              ],
+              "finding_text": "急性大動脈解離は出血性合併症を伴う場合にT2*系で低信号を示す。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:hemorrhage_present",
+                "alternatives": []
+              },
+              "finding_id": "acute_aortic_dissection_f005"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "raw_findings": [
+    {
+      "raw_finding_id": "acute_aortic_dissection_raw_001",
+      "modality_text": "CT/MRI/US",
+      "acquisition_text": "疾患に応じた標準撮像",
+      "anatomy_text": "急性大動脈解離の典型的な主座",
+      "target_text": "named_sign",
+      "finding_text": "intimal flapによりtrue lumenとfalse lumenが分離して見える。",
+      "interpretation": "構造化辞書では拾い切れない疾患固有の所見・サインとして保存。",
+      "source_ids": [
+        "public_general_batch6_20260705"
+      ],
+      "mapping": {
+        "status": "candidate",
+        "candidate_finding_code": "finding:acute_aortic_dissection_specific_sign",
+        "candidate_anatomy": {
+          "body_region": "cardiovascular",
+          "organ": "aorta",
+          "subregion": "aortic_lumen",
+          "laterality": "unknown"
+        },
+        "candidate_target": "named_sign",
+        "notes": "Phase 1 raw finding"
+      },
+      "review_status": "needs_mapping"
+    }
+  ],
+  "evidence": {
+    "summary": "NCBI Bookshelf、ACR Appropriateness Criteria、RadiologyInfo、PMC open-access review などの公開情報を参照。",
+    "claim_map": [
+      {
+        "finding_ids": [
+          "acute_aortic_dissection_f001"
+        ],
+        "source_ids": [
+          "public_general_batch6_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "acute_aortic_dissection_f002"
+        ],
+        "source_ids": [
+          "public_general_batch6_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "acute_aortic_dissection_f003"
+        ],
+        "source_ids": [
+          "public_general_batch6_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "acute_aortic_dissection_f004"
+        ],
+        "source_ids": [
+          "public_general_batch6_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "acute_aortic_dissection_f005"
+        ],
+        "source_ids": [
+          "public_general_batch6_20260705"
+        ],
+        "support": "public_source_summary"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "public_general_batch6_20260705",
+      "type": "public_source_packet",
+      "title": "Public cross-sectional imaging source packet for whole-body Phase 1 draft batch 6",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, ACR Appropriateness Criteria, RadiologyInfo, and open-access PMC reviews where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "confidence": "medium",
+    "notes": "公開情報に基づく初期整理。"
+  },
+  "curation": {
+    "batch": "general_batch6",
+    "generated_by": "curate-general-drafts-batch6.js"
+  },
+  "provenance": {
+    "source_ids": [
+      "public_general_batch6_20260705"
+    ],
+    "generated_at": "2026-07-05T05:32:09.881Z"
+  },
+  "updated_at": "2026-07-05T05:32:09.881Z",
+  "content_hash": "d6aa1ee648c344a7cd26cf04f59d691ac23946d4d44806d385087064d2cc2964"
+}

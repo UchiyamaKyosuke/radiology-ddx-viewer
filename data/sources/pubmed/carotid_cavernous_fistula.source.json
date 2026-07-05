@@ -1,0 +1,51 @@
+{
+  "disease_id": "carotid_cavernous_fistula",
+  "disease_name": {
+    "ja": "頚動脈海綿静脈洞瘻",
+    "en": "Carotid-cavernous fistula"
+  },
+  "disease_aliases": {
+    "ja": [
+      "CCF"
+    ],
+    "en": [
+      "CCF"
+    ]
+  },
+  "clinical": {
+    "overview": "頚動脈系と海綿静脈洞の短絡。眼球突出、結膜充血、外眼筋腫大、上眼静脈拡張を画像で評価する。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 80,
+      "peak_decade": "成人",
+      "summary": "成人で重要。"
+    }
+  },
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "cavernous_sinus_vascular_lesion"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

@@ -1,0 +1,38 @@
+{
+  "disease_id": "metachromatic_leukodystrophy",
+  "disease_name": {
+    "ja": "異染性白質ジストロフィー",
+    "en": "Metachromatic leukodystrophy"
+  },
+  "query": "metachromatic leukodystrophy brain MRI imaging",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "39322377",
+      "title": "Lysosomal storage diseases.",
+      "journal": "Handbook of clinical neurology",
+      "year": "2024",
+      "doi": "10.1016/B978-0-323-99209-1.00008-9",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39322377/",
+      "abstract": ""
+    },
+    {
+      "pmid": "30620693",
+      "title": "Adult Leukodystrophies: A Step-by-Step Diagnostic Approach.",
+      "journal": "Radiographics : a review publication of the Radiological Society of North America, Inc",
+      "year": "2020",
+      "doi": "10.1148/rg.2019180081",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30620693/",
+      "abstract": ""
+    },
+    {
+      "pmid": "31829048",
+      "title": "An update on clinical, pathological, diagnostic, and therapeutic perspectives of childhood leukodystrophies.",
+      "journal": "Expert review of neurotherapeutics",
+      "year": "2021",
+      "doi": "10.1080/14737175.2020.1699060",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31829048/",
+      "abstract": ""
+    }
+  ]
+}

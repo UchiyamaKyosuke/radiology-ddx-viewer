@@ -1,0 +1,192 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "hemorrhagic_ovarian_cyst",
+  "disease_name": {
+    "ja": "出血性卵巣嚢胞",
+    "en": "Hemorrhagic ovarian cyst"
+  },
+  "disease_aliases": {
+    "ja": [
+      "出血性嚢胞"
+    ],
+    "en": [
+      "Hemorrhagic cyst"
+    ]
+  },
+  "clinical": {
+    "overview": "機能性嚢胞内出血。急性腹痛で発見されることがある。 補足: Sample card only.",
+    "treatment": "多くは経過観察。出血や破裂、捻転などが疑われる場合は臨床的対応が必要。",
+    "epidemiology": "生殖年齢女性で比較的よくみられる。"
+  },
+  "frequency": {
+    "label": "common",
+    "prevalence_rank": 4,
+    "basis": "epidemiology",
+    "evidence_level": "review",
+    "context": {
+      "population": "adult_women",
+      "body_region": "pelvis",
+      "clinical_setting": "acute_pelvic_pain"
+    },
+    "summary": "急性骨盤痛や嚢胞性付属器病変では頻度の高い鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "高濃度内容を伴う嚢胞性病変として認められることがある。",
+      "findings_by_phase": []
+    },
+    "mri": {
+      "summary": "血性内容によりT1高信号を示すことがある。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "hemorrhagic_ovarian_cyst_mri_t1_001",
+              "finding_code": "finding:t1_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "pelvis",
+                "organ": "ovary",
+                "subregion": "adnexa",
+                "laterality": "unknown"
+              },
+              "target": "cyst_content",
+              "modifiers": {
+                "degree": "marked",
+                "morphology": "cystic_mass"
+              },
+              "finding_text": "血性内容によりT1強調像で高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": [
+                "cystic_mass"
+              ]
+            },
+            {
+              "finding_id": "hemorrhagic_ovarian_cyst_mri_t1_002",
+              "finding_code": "finding:hemorrhage_present",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "pelvis",
+                "organ": "ovary",
+                "subregion": "adnexa",
+                "laterality": "unknown"
+              },
+              "target": "cyst_content",
+              "modifiers": {
+                "degree": "marked",
+                "morphology": "cystic_mass"
+              },
+              "finding_text": "嚢胞内容に出血成分を認める。",
+              "typicality": "typical",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": [
+                "cystic_mass"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "出典未登録（サンプル用の仮出典）。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "hemorrhagic_ovarian_cyst_mri_t1_001",
+          "hemorrhagic_ovarian_cyst_mri_t1_002"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "ref_001"
+        ],
+        "confidence": "low"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "ref_001",
+      "type": "placeholder",
+      "title": "Replace with reviewed source",
+      "authors": [],
+      "journal": "",
+      "year": "",
+      "pmid": "",
+      "doi": "",
+      "url": "",
+      "license": ""
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "Starter sample; replace evidence before clinical use."
+  },
+  "curation": {
+    "auto_update_allowed": false,
+    "locked_fields": [],
+    "notes": ""
+  },
+  "provenance": {
+    "created_by": "manual",
+    "model": "",
+    "created_at": "2026-06-20T10:00:00+09:00",
+    "prompt_version": "starter_v0.1",
+    "source_query": ""
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "content_hash": "03e866fcde42256d4a440b075bcd00e97a7cfa185a66d9182577fdc760722d2f",
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "female"
+      ],
+      "predominance": "female",
+      "predilection": "female_only",
+      "summary": "女性に発生する疾患。"
+    },
+    "age": {
+      "typical_min": 15,
+      "typical_max": 50,
+      "peak_decade": "20-40歳代",
+      "summary": "生殖年齢女性に多い。"
+    }
+  },
+  "keywords": [
+    "cystic_mass"
+  ],
+  "raw_findings": []
+}

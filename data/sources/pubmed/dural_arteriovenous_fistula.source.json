@@ -1,0 +1,52 @@
+{
+  "disease_id": "dural_arteriovenous_fistula",
+  "disease_name": {
+    "ja": "硬膜動静脈瘻",
+    "en": "Dural arteriovenous fistula"
+  },
+  "disease_aliases": {
+    "ja": [
+      "dAVF",
+      "硬膜AVF"
+    ],
+    "en": [
+      "dAVF"
+    ]
+  },
+  "clinical": {
+    "overview": "硬膜動脈と静脈洞/皮質静脈の短絡。静脈逆流があると出血や静脈性浮腫のリスクが高い。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 80,
+      "peak_decade": "成人",
+      "summary": "成人で重要。"
+    }
+  },
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "vascular_flow_void_or_venous_congestion"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

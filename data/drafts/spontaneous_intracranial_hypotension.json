@@ -1,0 +1,398 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "spontaneous_intracranial_hypotension",
+  "disease_name": {
+    "ja": "特発性低髄液圧症候群",
+    "en": "Spontaneous intracranial hypotension"
+  },
+  "disease_aliases": {
+    "ja": [
+      "SIH",
+      "低髄液圧症候群"
+    ],
+    "en": [
+      "SIH"
+    ]
+  },
+  "clinical": {
+    "overview": "脊髄髄液漏により起立性頭痛を来す。びまん性硬膜造影、脳下垂、硬膜下液体貯留、静脈洞拡張を示す。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 80,
+      "peak_decade": "成人",
+      "summary": "成人で重要。"
+    }
+  },
+  "keywords": [
+    "brain sagging",
+    "pachymeningeal enhancement",
+    "subdural collection"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "orthostatic_headache_pachymeningeal_enhancement"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "低髄液圧症はCTで硬膜下液貯留やbrain saggingを疑うことがある。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "spontaneous_intracranial_hypotension_ct_001",
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "meninges",
+                "subregion": "extra_axial",
+                "laterality": "unknown"
+              },
+              "target": "extra_axial_collection",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "硬膜下液体貯留が低吸収として見えることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_hypoattenuation",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "spontaneous_intracranial_hypotension_ct_non_contrast_ct_hypoattenuation_01",
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "硬膜下液貯留はCTで低吸収として見えることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIではびまん性硬膜造影、brain sagging、硬膜下液貯留、静脈洞拡張を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "spontaneous_intracranial_hypotension_mri_002",
+              "finding_code": "finding:pachymeningeal_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "meninges",
+                "subregion": "extra_axial",
+                "laterality": "unknown"
+              },
+              "target": "meninges",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "びまん性硬膜造影を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:pachymeningeal_enhancement",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "spontaneous_intracranial_hypotension_mri_contrast_enhanced_t1wi_pachymeningeal_enhancement_01",
+              "finding_code": "finding:pachymeningeal_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "造影T1WIでびまん性硬膜造影を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "spontaneous_intracranial_hypotension_mri_contrast_enhanced_t1wi_sellar_suprasellar_mass_01",
+              "finding_code": "finding:sellar_suprasellar_mass",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "下垂体腫大や鞍上部変化を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "spontaneous_intracranial_hypotension_mri_003",
+              "finding_code": "finding:csf_like_signal",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "meninges",
+                "subregion": "extra_axial",
+                "laterality": "unknown"
+              },
+              "target": "extra_axial_collection",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "硬膜下液体貯留を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:csf_like_signal",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "spontaneous_intracranial_hypotension_mri_flair_flair_hyperintensity_01",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "硬膜下液貯留や脳表変化をFLAIRで確認する。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 34297176, 33393980, 26264063）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "spontaneous_intracranial_hypotension_ct_001",
+          "spontaneous_intracranial_hypotension_mri_002",
+          "spontaneous_intracranial_hypotension_mri_003"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_34297176",
+          "pmid_33393980",
+          "pmid_26264063"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "spontaneous_intracranial_hypotension_mri_contrast_enhanced_t1wi_pachymeningeal_enhancement_01",
+          "spontaneous_intracranial_hypotension_ct_non_contrast_ct_hypoattenuation_01",
+          "spontaneous_intracranial_hypotension_mri_flair_flair_hyperintensity_01",
+          "spontaneous_intracranial_hypotension_mri_contrast_enhanced_t1wi_sellar_suprasellar_mass_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_34297176",
+      "type": "journal_article",
+      "title": "Spontaneous intracranial hypotension: diagnostic and therapeutic workup.",
+      "authors": [],
+      "journal": "Neuroradiology",
+      "year": "2021",
+      "pmid": "34297176",
+      "doi": "10.1007/s00234-021-02766-z",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34297176/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_33393980",
+      "type": "journal_article",
+      "title": "Clinical Presentation, Investigation Findings, and Treatment Outcomes of Spontaneous Intracranial Hypotension Syndrome: A Systematic Review and Meta-analysis.",
+      "authors": [],
+      "journal": "JAMA neurology",
+      "year": "2022",
+      "pmid": "33393980",
+      "doi": "10.1001/jamaneurol.2020.4799",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33393980/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_26264063",
+      "type": "journal_article",
+      "title": "Pachymeningeal enhancement-a comprehensive review of literature.",
+      "authors": [],
+      "journal": "Neurosurgical review",
+      "year": "2016",
+      "pmid": "26264063",
+      "doi": "10.1007/s10143-015-0646-y",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26264063/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": [
+    {
+      "raw_finding_id": "spontaneous_intracranial_hypotension_raw_keyword_pachymeningeal_enhancement",
+      "modality_text": "MRI",
+      "acquisition_text": "",
+      "anatomy_text": "",
+      "target_text": "",
+      "finding_text": "キーワード/所見として \"pachymeningeal enhancement\" を保持。",
+      "interpretation": "辞書対応済み構造化欄から漏れる可能性があるため、Phase1自由記載として保存。",
+      "source_ids": [
+        "public_raw_findings_audit_20260705"
+      ],
+      "mapping": {
+        "status": "unmapped",
+        "candidate_finding_code": "finding:pachymeningeal_enhancement",
+        "candidate_acquisition_code": "",
+        "candidate_target": "",
+        "notes": "Added during raw_findings audit to preserve information that may be lost by dictionary-only structured fields."
+      },
+      "review_status": "needs_mapping"
+    }
+  ]
+}

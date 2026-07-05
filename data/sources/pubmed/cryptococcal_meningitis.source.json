@@ -1,0 +1,51 @@
+{
+  "disease_id": "cryptococcal_meningitis",
+  "disease_name": {
+    "ja": "クリプトコッカス髄膜炎",
+    "en": "Cryptococcal meningitis"
+  },
+  "disease_aliases": {
+    "ja": [
+      "クリプトコッカス髄膜脳炎"
+    ],
+    "en": [
+      "Cryptococcal meningoencephalitis"
+    ]
+  },
+  "clinical": {
+    "overview": "免疫不全患者で重要な真菌性髄膜炎。髄膜造影、Virchow-Robin腔拡大様のゼラチン様偽嚢胞、水頭症を示すことがある。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 80,
+      "peak_decade": "成人",
+      "summary": "成人で重要。"
+    }
+  },
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "meningitis_immunocompromised"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

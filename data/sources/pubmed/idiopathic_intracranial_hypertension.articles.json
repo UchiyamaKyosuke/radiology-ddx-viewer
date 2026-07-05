@@ -1,0 +1,38 @@
+{
+  "disease_id": "idiopathic_intracranial_hypertension",
+  "disease_name": {
+    "ja": "特発性頭蓋内圧亢進症",
+    "en": "Idiopathic intracranial hypertension"
+  },
+  "query": "idiopathic intracranial hypertension MRI MRV imaging",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "35522777",
+      "title": "Idiopathic intracranial hypertension imaging approaches and the implications in patient management.",
+      "journal": "The British journal of radiology",
+      "year": "2022",
+      "doi": "10.1259/bjr.20220136",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35522777/",
+      "abstract": ""
+    },
+    {
+      "pmid": "38805118",
+      "title": "Tortuous occipital emissary vein combined with dural venous sinus stenosis in contrast-enhanced MRV for evaluation of idiopathic intracranial hypertension.",
+      "journal": "Japanese journal of radiology",
+      "year": "2024",
+      "doi": "10.1007/s11604-024-01598-0",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38805118/",
+      "abstract": ""
+    },
+    {
+      "pmid": "17008839",
+      "title": "Neuroimaging in the diagnosis of idiopathic intracranial hypertension.",
+      "journal": "Minerva medica",
+      "year": "2006",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17008839/",
+      "abstract": ""
+    }
+  ]
+}

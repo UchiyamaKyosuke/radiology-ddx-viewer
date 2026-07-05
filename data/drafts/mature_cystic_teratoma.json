@@ -1,0 +1,200 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "mature_cystic_teratoma",
+  "disease_name": {
+    "ja": "成熟嚢胞性奇形腫",
+    "en": "Mature cystic teratoma"
+  },
+  "disease_aliases": {
+    "ja": [
+      "皮様嚢腫",
+      "類皮嚢胞"
+    ],
+    "en": [
+      "Dermoid cyst",
+      "Mature teratoma"
+    ]
+  },
+  "clinical": {
+    "overview": "胚細胞腫瘍の一種。脂肪成分を含むことが多く、MRI/CTで診断に有用。 補足: Sample card only.",
+    "treatment": "捻転や破裂、悪性転化の疑い、症状に応じて外科的治療が検討される。",
+    "epidemiology": "若年女性の卵巣腫瘍として比較的よくみられる。"
+  },
+  "frequency": {
+    "label": "common",
+    "prevalence_rank": 4,
+    "basis": "epidemiology",
+    "evidence_level": "review",
+    "context": {
+      "population": "adult_women",
+      "body_region": "pelvis",
+      "clinical_setting": "adnexal_mass"
+    },
+    "summary": "卵巣胚細胞腫瘍として頻度が高い。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "脂肪濃度を含む付属器腫瘤として認められる。",
+      "findings_by_phase": []
+    },
+    "mri": {
+      "summary": "脂肪成分が診断に有用。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "mature_cystic_teratoma_mri_t1_001",
+              "finding_code": "finding:t1_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "pelvis",
+                "organ": "ovary",
+                "subregion": "adnexa",
+                "laterality": "unknown"
+              },
+              "target": "cyst_content",
+              "modifiers": {
+                "degree": "marked",
+                "morphology": "cystic_mass"
+              },
+              "finding_text": "脂肪や皮脂成分によりT1強調像で高信号を示す。",
+              "typicality": "typical",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": [
+                "cystic_mass"
+              ]
+            },
+            {
+              "finding_id": "mature_cystic_teratoma_mri_t1_002",
+              "finding_code": "finding:fat_present",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "pelvis",
+                "organ": "ovary",
+                "subregion": "adnexa",
+                "laterality": "unknown"
+              },
+              "target": "cyst_content",
+              "modifiers": {
+                "degree": "marked",
+                "morphology": "cystic_mass"
+              },
+              "finding_text": "脂肪成分を含む。",
+              "typicality": "typical",
+              "diagnostic_weight": 5,
+              "contextual_importance": {
+                "ddx_priority_rank": 5,
+                "basis": "differential_importance",
+                "context": "fat_containing_adnexal_mass",
+                "summary": "脂肪含有付属器腫瘤では第一に考慮する。"
+              },
+              "review_status": "draft",
+              "keywords": [
+                "cystic_mass"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "出典未登録（サンプル用の仮出典）。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "mature_cystic_teratoma_mri_t1_001",
+          "mature_cystic_teratoma_mri_t1_002"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "ref_001"
+        ],
+        "confidence": "low"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "ref_001",
+      "type": "placeholder",
+      "title": "Replace with reviewed source",
+      "authors": [],
+      "journal": "",
+      "year": "",
+      "pmid": "",
+      "doi": "",
+      "url": "",
+      "license": ""
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "Starter sample; replace evidence before clinical use."
+  },
+  "curation": {
+    "auto_update_allowed": false,
+    "locked_fields": [],
+    "notes": ""
+  },
+  "provenance": {
+    "created_by": "manual",
+    "model": "",
+    "created_at": "2026-06-20T10:00:00+09:00",
+    "prompt_version": "starter_v0.1",
+    "source_query": ""
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "content_hash": "ef820fd28d77af52ef9b3fda864b22052d7d9b335a28f2bfa29a79ba1528cf4e",
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "female"
+      ],
+      "predominance": "female",
+      "predilection": "female_only",
+      "summary": "女性に発生する疾患。"
+    },
+    "age": {
+      "typical_min": 10,
+      "typical_max": 40,
+      "peak_decade": "10-30歳代",
+      "summary": "若年女性に比較的多い。"
+    }
+  },
+  "keywords": [
+    "cystic_mass"
+  ],
+  "raw_findings": []
+}

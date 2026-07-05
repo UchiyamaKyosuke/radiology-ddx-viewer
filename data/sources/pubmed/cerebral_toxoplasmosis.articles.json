@@ -1,0 +1,38 @@
+{
+  "disease_id": "cerebral_toxoplasmosis",
+  "disease_name": {
+    "ja": "脳トキソプラズマ症",
+    "en": "Cerebral toxoplasmosis"
+  },
+  "query": "cerebral toxoplasmosis AND (MRI OR CT OR imaging)",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "27786246",
+      "title": "HIV-associated opportunistic CNS infections: pathophysiology, diagnosis and treatment.",
+      "journal": "Nature reviews. Neurology",
+      "year": "2018",
+      "doi": "10.1038/nrneurol.2016.149",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27786246/",
+      "abstract": ""
+    },
+    {
+      "pmid": "33112669",
+      "title": "Imaging in Differentiating Cerebral Toxoplasmosis and Primary CNS Lymphoma With Special Focus on FDG PET/CT.",
+      "journal": "AJR. American journal of roentgenology",
+      "year": "2021",
+      "doi": "10.2214/AJR.19.22629",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33112669/",
+      "abstract": ""
+    },
+    {
+      "pmid": "11873616",
+      "title": "[Neurotoxoplasmosis].",
+      "journal": "Neurologia i neurochirurgia polska",
+      "year": "2002",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11873616/",
+      "abstract": ""
+    }
+  ]
+}

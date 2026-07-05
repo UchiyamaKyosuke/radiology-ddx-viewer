@@ -1,0 +1,302 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "hypoglycemic_encephalopathy",
+  "disease_name": {
+    "ja": "低血糖脳症",
+    "en": "Hypoglycemic encephalopathy"
+  },
+  "disease_aliases": {
+    "ja": [
+      "低血糖脳症"
+    ],
+    "en": [
+      "Hypoglycemic encephalopathy"
+    ]
+  },
+  "clinical": {
+    "overview": "重度低血糖により皮質、海馬、基底核、白質などに可逆性または不可逆性障害を来す。",
+    "treatment": "速やかな血糖補正と原因治療を行う。",
+    "epidemiology": "糖尿病治療中や栄養障害で重要。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明らかな性差は限定的。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 100,
+      "peak_decade": "全年齢",
+      "summary": "0-100歳に多い。"
+    }
+  },
+  "keywords": [
+    "hypoglycemia",
+    "metabolic encephalopathy"
+  ],
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 3,
+    "basis": "differential_importance",
+    "evidence_level": "public_review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "metabolic encephalopathy"
+    },
+    "summary": "metabolic encephalopathyの鑑別として重要。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "CTは正常または浮腫性低吸収として見えることがある。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:ct_mild_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "CTでは浮腫性低吸収を示すことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_mild_hypoattenuation",
+                "alternatives": []
+              },
+              "finding_id": "hypoglycemic_encephalopathy_ct_001"
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは皮質、海馬、内包、脳梁などのDWI高信号/ADC低値を確認する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:dwi_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "急性期に皮質・白質・深部構造のDWI高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:dwi_hyperintensity",
+                "alternatives": []
+              },
+              "finding_id": "hypoglycemic_encephalopathy_mri_002"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "ADC"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:adc_low",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "ADC"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "DWI高信号部はADC低値を伴うことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:adc_low",
+                "alternatives": []
+              },
+              "finding_id": "hypoglycemic_encephalopathy_mri_003"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:callosal_lesion",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "脳梁病変を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:callosal_lesion",
+                "alternatives": []
+              },
+              "finding_id": "hypoglycemic_encephalopathy_mri_004"
+            },
+            {
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "FLAIR高信号はDWIより遅れて目立つことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:flair_hyperintensity",
+                "alternatives": []
+              },
+              "finding_id": "hypoglycemic_encephalopathy_mri_005"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMed?????????NCBI Bookshelf/StatPearls?NIH/NINDS?MedlinePlus?CDC?PMC open-access review??????",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "hypoglycemic_encephalopathy_ct_001",
+          "hypoglycemic_encephalopathy_mri_002",
+          "hypoglycemic_encephalopathy_mri_003",
+          "hypoglycemic_encephalopathy_mri_004",
+          "hypoglycemic_encephalopathy_mri_005"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_brain_batch4_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "public_brain_batch4_20260625",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology source packet for brain draft batch 4",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC, and open-access PMC review articles where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "Brain field Phase1 batch4 draft."
+  },
+  "curation": {
+    "auto_update_allowed": true,
+    "locked_fields": [],
+    "notes": ""
+  },
+  "provenance": {
+    "created_by": "codex_public_source_review",
+    "model": "codex",
+    "created_at": "2026-06-25T11:51:30.202Z",
+    "prompt_version": "brain_batch4_v0.1",
+    "source_query": "Hypoglycemic encephalopathy CT MRI imaging findings public source"
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "content_hash": "",
+  "raw_findings": []
+}

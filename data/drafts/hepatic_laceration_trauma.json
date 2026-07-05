@@ -1,0 +1,354 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "hepatic_laceration_trauma",
+  "disease_name": {
+    "ja": "外傷性肝損傷",
+    "en": "Traumatic hepatic laceration"
+  },
+  "disease_aliases": {
+    "ja": [],
+    "en": []
+  },
+  "clinical": {
+    "overview": "外傷性肝損傷は腹部外傷で重要な鑑別となる疾患で、典型所見として線状低吸収裂創、被膜下血腫、造影剤血管外漏出を評価する。臨床背景、病変分布、造影効果を組み合わせて評価する。",
+    "treatment": "治療方針は病型、重症度、合併症、全身状態に応じて決定する。",
+    "epidemiology": "頻度と好発年齢は病型・背景疾患・地域差により異なる。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "代表的な性差傾向を記録。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 100,
+      "peak_decade": "外傷",
+      "summary": "代表的な発症・診断年齢帯を記録。"
+    }
+  },
+  "keywords": [
+    "Traumatic hepatic laceration",
+    "外傷性肝損傷",
+    "linear hepatic laceration",
+    "active extravasation"
+  ],
+  "frequency": {
+    "label": "common",
+    "prevalence_rank": 4,
+    "basis": "differential_importance",
+    "evidence_level": "public_review",
+    "context": {
+      "population": "any",
+      "body_region": "trauma",
+      "clinical_setting": "腹部外傷"
+    },
+    "summary": "腹部外傷の鑑別での相対頻度と重要度を記録。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "外傷性肝損傷のCTでは濃度、石灰化、出血、ガス、造影効果、周囲変化を評価する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:ct_hyperattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "trauma",
+                "organ": "liver",
+                "subregion": "hepatic_parenchyma",
+                "laterality": "unknown"
+              },
+              "target": "thrombus",
+              "modifiers": {},
+              "keywords": [
+                "linear hepatic laceration",
+                "active extravasation"
+              ],
+              "finding_text": "外傷性肝損傷は急性血栓、出血、または高吸収塞栓として見えることがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:ct_hyperattenuation",
+                "alternatives": []
+              },
+              "finding_id": "hepatic_laceration_trauma_f001"
+            },
+            {
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "trauma",
+                "organ": "liver",
+                "subregion": "hepatic_parenchyma",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "linear hepatic laceration",
+                "active extravasation"
+              ],
+              "finding_text": "外傷性肝損傷は虚血、梗塞、浮腫、または灌流低下に伴う低吸収域を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:ct_hypoattenuation",
+                "alternatives": []
+              },
+              "finding_id": "hepatic_laceration_trauma_f002"
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "外傷性肝損傷のMRIでは信号、拡散、造影効果、病変分布、隣接構造への進展を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:diffusion_restriction_present",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "trauma",
+                "organ": "liver",
+                "subregion": "hepatic_parenchyma",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "linear hepatic laceration",
+                "active extravasation"
+              ],
+              "finding_text": "外傷性肝損傷は急性虚血性変化で拡散制限を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:diffusion_restriction_present",
+                "alternatives": []
+              },
+              "finding_id": "hepatic_laceration_trauma_f003"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:mild_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "trauma",
+                "organ": "liver",
+                "subregion": "hepatic_parenchyma",
+                "laterality": "unknown"
+              },
+              "target": "vascular_wall",
+              "modifiers": {},
+              "keywords": [
+                "linear hepatic laceration",
+                "active extravasation"
+              ],
+              "finding_text": "外傷性肝損傷では血管壁、梗塞辺縁、炎症性変化の造影を評価する。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:mild_enhancement",
+                "alternatives": []
+              },
+              "finding_id": "hepatic_laceration_trauma_f004"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2STAR"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:hemorrhage_present",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2STAR"
+              },
+              "anatomy": {
+                "body_region": "trauma",
+                "organ": "liver",
+                "subregion": "hepatic_parenchyma",
+                "laterality": "unknown"
+              },
+              "target": "hemorrhagic_component",
+              "modifiers": {},
+              "keywords": [
+                "linear hepatic laceration",
+                "active extravasation"
+              ],
+              "finding_text": "外傷性肝損傷は出血性変化をT2*系で評価する。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:hemorrhage_present",
+                "alternatives": []
+              },
+              "finding_id": "hepatic_laceration_trauma_f005"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "raw_findings": [
+    {
+      "raw_finding_id": "hepatic_laceration_trauma_raw_001",
+      "modality_text": "CT/MRI/US",
+      "acquisition_text": "疾患に応じた標準撮像",
+      "anatomy_text": "外傷性肝損傷の典型的な主座",
+      "target_text": "named_sign",
+      "finding_text": "線状低吸収裂創、被膜下血腫、造影剤血管外漏出を評価する",
+      "interpretation": "構造化辞書では拾い切れない疾患固有の所見・サインとして保存。",
+      "source_ids": [
+        "public_general_batch9_20260705"
+      ],
+      "mapping": {
+        "status": "candidate",
+        "candidate_finding_code": "finding:hepatic_laceration_trauma_specific_sign",
+        "candidate_anatomy": {
+          "body_region": "trauma",
+          "organ": "liver",
+          "subregion": "hepatic_parenchyma",
+          "laterality": "unknown"
+        },
+        "candidate_target": "named_sign",
+        "notes": "Phase 1 raw finding"
+      },
+      "review_status": "needs_mapping"
+    }
+  ],
+  "evidence": {
+    "summary": "NCBI Bookshelf、ACR Appropriateness Criteria、RadiologyInfo、PMC open-access review などの公開情報を参照。",
+    "claim_map": [
+      {
+        "finding_ids": [
+          "hepatic_laceration_trauma_f001"
+        ],
+        "source_ids": [
+          "public_general_batch9_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "hepatic_laceration_trauma_f002"
+        ],
+        "source_ids": [
+          "public_general_batch9_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "hepatic_laceration_trauma_f003"
+        ],
+        "source_ids": [
+          "public_general_batch9_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "hepatic_laceration_trauma_f004"
+        ],
+        "source_ids": [
+          "public_general_batch9_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "hepatic_laceration_trauma_f005"
+        ],
+        "source_ids": [
+          "public_general_batch9_20260705"
+        ],
+        "support": "public_source_summary"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "public_general_batch9_20260705",
+      "type": "public_source_packet",
+      "title": "Public imaging source packet for accelerated whole-body Phase 1 draft batch 9",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, ACR Appropriateness Criteria, RadiologyInfo, and open-access PMC reviews where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "confidence": "medium",
+    "notes": "公開情報に基づく初期整理。"
+  },
+  "curation": {
+    "batch": "general_batch9",
+    "generated_by": "curate-general-drafts-batch9.js",
+    "detail_level": "expanded"
+  },
+  "provenance": {
+    "source_ids": [
+      "public_general_batch9_20260705"
+    ],
+    "generated_at": "2026-07-05T09:48:14.763Z"
+  },
+  "updated_at": "2026-07-05T09:48:14.763Z",
+  "content_hash": "46fcab7db9b89e0fccecffaf0d03cfa5e1969de2534dc37444bfd54de2bd63df"
+}

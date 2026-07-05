@@ -1,0 +1,38 @@
+{
+  "disease_id": "spontaneous_intracranial_hypotension",
+  "disease_name": {
+    "ja": "特発性低髄液圧症候群",
+    "en": "Spontaneous intracranial hypotension"
+  },
+  "query": "spontaneous intracranial hypotension MRI pachymeningeal enhancement",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "34297176",
+      "title": "Spontaneous intracranial hypotension: diagnostic and therapeutic workup.",
+      "journal": "Neuroradiology",
+      "year": "2021",
+      "doi": "10.1007/s00234-021-02766-z",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34297176/",
+      "abstract": ""
+    },
+    {
+      "pmid": "33393980",
+      "title": "Clinical Presentation, Investigation Findings, and Treatment Outcomes of Spontaneous Intracranial Hypotension Syndrome: A Systematic Review and Meta-analysis.",
+      "journal": "JAMA neurology",
+      "year": "2022",
+      "doi": "10.1001/jamaneurol.2020.4799",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33393980/",
+      "abstract": ""
+    },
+    {
+      "pmid": "26264063",
+      "title": "Pachymeningeal enhancement-a comprehensive review of literature.",
+      "journal": "Neurosurgical review",
+      "year": "2016",
+      "doi": "10.1007/s10143-015-0646-y",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26264063/",
+      "abstract": ""
+    }
+  ]
+}

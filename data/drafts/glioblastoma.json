@@ -1,0 +1,490 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "glioblastoma",
+  "disease_name": {
+    "ja": "膠芽腫",
+    "en": "Glioblastoma"
+  },
+  "disease_aliases": {
+    "ja": [
+      "GBM"
+    ],
+    "en": [
+      "GBM",
+      "Glioblastoma multiforme"
+    ]
+  },
+  "clinical": {
+    "overview": "成人に多い高悪性度びまん性神経膠腫。壊死や不整な造影効果、周囲浮腫を伴う浸潤性腫瘍として認められることが多い。",
+    "treatment": "最大安全切除、放射線治療、テモゾロミドを含む化学療法などが検討される。",
+    "epidemiology": "成人悪性原発性脳腫瘍として重要。中高年以降に多い。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "male",
+      "predilection": "male_predominant",
+      "summary": "男性にやや多いとされる。"
+    },
+    "age": {
+      "typical_min": 45,
+      "typical_max": 85,
+      "peak_decade": "60-70歳代",
+      "summary": "中高年以降に多い。"
+    }
+  },
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 3,
+    "basis": "epidemiology",
+    "evidence_level": "review",
+    "context": {
+      "population": "adult",
+      "body_region": "brain",
+      "clinical_setting": "enhancing_intra_axial_mass"
+    },
+    "summary": "成人の悪性原発性脳腫瘍として重要。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "膠芽腫はCTで低吸収〜不均一腫瘤、壊死、出血、浮腫、腫瘤効果を確認する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "glioblastoma_ct_non_contrast_ct_mild_hypoattenuation_01",
+              "finding_code": "finding:ct_mild_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "CTでは不均一な低吸収腫瘤と周囲浮腫を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "膠芽腫は不均一造影、壊死、T2/FLAIR高信号浮腫、拡散制限、灌流上昇を組み合わせて評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "glioblastoma_mri_ce_001",
+              "finding_code": "finding:thick_irregular_ring_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "lesion_margin",
+              "modifiers": {
+                "degree": "marked",
+                "morphology": "ring"
+              },
+              "finding_text": "厚く不整なリング状造影を伴う腫瘤として認められることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": [
+                "ring"
+              ]
+            },
+            {
+              "finding_id": "glioblastoma_mri_contrast_enhanced_t1wi_thick_irregular_ring_enhancement_01",
+              "finding_code": "finding:thick_irregular_ring_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "造影T1WIでは厚く不整なリング状または不均一造影を示すことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": [
+                "irregular ring enhancement"
+              ]
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "glioblastoma_mri_flair_001",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "perilesional_edema",
+              "modifiers": {
+                "degree": "marked",
+                "morphology": "infiltrative"
+              },
+              "finding_text": "腫瘍周囲にFLAIR高信号の浮腫・浸潤性変化を伴う。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": [
+                "infiltrative"
+              ]
+            },
+            {
+              "finding_id": "glioblastoma_mri_flair_flair_hyperintensity_01",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "FLAIRでは浸潤性高信号と浮腫が目立つ。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "glioblastoma_mri_t1wi_t1_hypointensity_01",
+              "finding_code": "finding:t1_hypointensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "T1WIでは壊死部を含む不均一低信号腫瘤として見える。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "glioblastoma_mri_t2wi_t2_hyperintensity_01",
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "T2WIでは腫瘍と浮腫が高信号として広がる。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_id": "glioblastoma_mri_dwi_diffusion_restriction_present_01",
+              "finding_code": "finding:diffusion_restriction_present",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "高細胞性成分で拡散制限を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DSC_perfusion"
+          },
+          "findings": [
+            {
+              "finding_id": "glioblastoma_mri_dsc_perfusion_elevated_cbv_01",
+              "finding_code": "finding:elevated_cbv",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DSC_perfusion"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "灌流MRIでは高悪性度腫瘍成分でCBV上昇を示しやすい。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "MRS"
+          },
+          "findings": [
+            {
+              "finding_id": "glioblastoma_mri_mrs_elevated_choline_peak_01",
+              "finding_code": "finding:elevated_choline_peak",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRS"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "MRSではコリン上昇が腫瘍性病変を支持する。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "glioblastoma_mri_mrs_lipid_peak_01",
+              "finding_code": "finding:lipid_peak",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRS"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "壊死を伴う高悪性度腫瘍では脂質/乳酸ピークが参考になる。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 30114544, 40010714）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "glioblastoma_mri_ce_001",
+          "glioblastoma_mri_flair_001"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_30114544",
+          "pmid_40010714"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "glioblastoma_ct_non_contrast_ct_mild_hypoattenuation_01",
+          "glioblastoma_mri_t1wi_t1_hypointensity_01",
+          "glioblastoma_mri_t2wi_t2_hyperintensity_01",
+          "glioblastoma_mri_flair_flair_hyperintensity_01",
+          "glioblastoma_mri_contrast_enhanced_t1wi_thick_irregular_ring_enhancement_01",
+          "glioblastoma_mri_dwi_diffusion_restriction_present_01",
+          "glioblastoma_mri_dsc_perfusion_elevated_cbv_01",
+          "glioblastoma_mri_mrs_elevated_choline_peak_01",
+          "glioblastoma_mri_mrs_lipid_peak_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_30114544",
+      "type": "journal_article",
+      "title": "Frontal Tumefactive Demyelinating Lesion Mimicking Glioblastoma Differentiated by Methionine Positron Emission Tomography.",
+      "authors": [],
+      "journal": "World neurosurgery",
+      "year": "2018",
+      "pmid": "30114544",
+      "doi": "10.1016/j.wneu.2018.08.027",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30114544/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_40010714",
+      "type": "journal_article",
+      "title": "[A case of multifocal glioblastoma with ring enhancement, mimicking cerebral toxoplasmosis with ring-enhanced lesions].",
+      "authors": [],
+      "journal": "Rinsho shinkeigaku = Clinical neurology",
+      "year": "2025",
+      "pmid": "40010714",
+      "doi": "10.5692/clinicalneurol.cn-002019",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40010714/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "Brain field pilot draft."
+  },
+  "curation": {
+    "auto_update_allowed": true,
+    "locked_fields": [],
+    "notes": ""
+  },
+  "provenance": {
+    "created_by": "codex_literature_review",
+    "model": "codex",
+    "created_at": "2026-06-22T00:00:00+09:00",
+    "prompt_version": "brain_pilot_v0.1",
+    "source_query": "glioblastoma MRI imaging findings ring enhancement necrosis diffusion"
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "content_hash": "",
+  "keywords": [
+    "ring",
+    "infiltrative"
+  ],
+  "raw_findings": []
+}

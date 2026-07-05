@@ -1,0 +1,353 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "toxic_megacolon",
+  "disease_name": {
+    "ja": "中毒性巨大結腸症",
+    "en": "Toxic megacolon"
+  },
+  "disease_aliases": {
+    "ja": [],
+    "en": []
+  },
+  "clinical": {
+    "overview": "中毒性巨大結腸症は急性重症大腸炎で重要な鑑別となる疾患で、臨床背景と画像分布を組み合わせて評価する。",
+    "treatment": "治療方針は病型、病期、合併症、全身状態に応じて決定する。",
+    "epidemiology": "頻度と好発年齢は病型・背景疾患により異なる。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "代表的な性差傾向を記録。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 100,
+      "peak_decade": "炎症性腸疾患・感染",
+      "summary": "代表的な発症・診断年齢帯を記録。"
+    }
+  },
+  "keywords": [
+    "Toxic megacolon",
+    "中毒性巨大結腸症",
+    "colonic dilatation",
+    "loss of haustra"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 2,
+    "basis": "differential_importance",
+    "evidence_level": "public_review",
+    "context": {
+      "population": "any",
+      "body_region": "gastrointestinal",
+      "clinical_setting": "急性重症大腸炎"
+    },
+    "summary": "急性重症大腸炎の鑑別での相対頻度と重要度を記録。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "中毒性巨大結腸症のCTでは濃度、石灰化、出血、造影効果、周囲変化を評価する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "gastrointestinal",
+                "organ": "bowel",
+                "subregion": "bowel_wall",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "colonic dilatation",
+                "loss of haustra"
+              ],
+              "finding_text": "中毒性巨大結腸症は炎症性低吸収域や周囲脂肪織変化として評価される。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:ct_hypoattenuation",
+                "alternatives": []
+              },
+              "finding_id": "toxic_megacolon_f001"
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "中毒性巨大結腸症のMRIでは信号、拡散、造影効果、病変分布を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:wall_thickening",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "gastrointestinal",
+                "organ": "bowel",
+                "subregion": "bowel_wall",
+                "laterality": "unknown"
+              },
+              "target": "wall",
+              "modifiers": {},
+              "keywords": [
+                "colonic dilatation",
+                "loss of haustra"
+              ],
+              "finding_text": "中毒性巨大結腸症は壁肥厚や周囲炎症を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:wall_thickening",
+                "alternatives": []
+              },
+              "finding_id": "toxic_megacolon_f002"
+            },
+            {
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "gastrointestinal",
+                "organ": "bowel",
+                "subregion": "bowel_wall",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "colonic dilatation",
+                "loss of haustra"
+              ],
+              "finding_text": "中毒性巨大結腸症は浮腫や液体貯留によりT2WI高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:t2_hyperintensity",
+                "alternatives": []
+              },
+              "finding_id": "toxic_megacolon_f003"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:diffusion_restriction_present",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "gastrointestinal",
+                "organ": "bowel",
+                "subregion": "bowel_wall",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "colonic dilatation",
+                "loss of haustra"
+              ],
+              "finding_text": "中毒性巨大結腸症は膿瘍や高粘稠内容で拡散制限を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:diffusion_restriction_present",
+                "alternatives": []
+              },
+              "finding_id": "toxic_megacolon_f004"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:ring_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "gastrointestinal",
+                "organ": "bowel",
+                "subregion": "bowel_wall",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [
+                "colonic dilatation",
+                "loss of haustra"
+              ],
+              "finding_text": "中毒性巨大結腸症は膿瘍形成時にリング状造影を示すことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:ring_enhancement",
+                "alternatives": []
+              },
+              "finding_id": "toxic_megacolon_f005"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "raw_findings": [
+    {
+      "raw_finding_id": "toxic_megacolon_raw_001",
+      "modality_text": "CT/MRI/US",
+      "acquisition_text": "疾患に応じた標準撮像",
+      "anatomy_text": "中毒性巨大結腸症の典型的な主座",
+      "target_text": "named_sign",
+      "finding_text": "大腸拡張、壁菲薄化、haustra消失、穿孔リスクを評価する。",
+      "interpretation": "構造化辞書では拾い切れない疾患固有の所見・サインとして保存。",
+      "source_ids": [
+        "public_general_batch7_20260705"
+      ],
+      "mapping": {
+        "status": "candidate",
+        "candidate_finding_code": "finding:toxic_megacolon_specific_sign",
+        "candidate_anatomy": {
+          "body_region": "gastrointestinal",
+          "organ": "bowel",
+          "subregion": "bowel_wall",
+          "laterality": "unknown"
+        },
+        "candidate_target": "named_sign",
+        "notes": "Phase 1 raw finding"
+      },
+      "review_status": "needs_mapping"
+    }
+  ],
+  "evidence": {
+    "summary": "NCBI Bookshelf、ACR Appropriateness Criteria、RadiologyInfo、PMC open-access review などの公開情報を参照。",
+    "claim_map": [
+      {
+        "finding_ids": [
+          "toxic_megacolon_f001"
+        ],
+        "source_ids": [
+          "public_general_batch7_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "toxic_megacolon_f002"
+        ],
+        "source_ids": [
+          "public_general_batch7_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "toxic_megacolon_f003"
+        ],
+        "source_ids": [
+          "public_general_batch7_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "toxic_megacolon_f004"
+        ],
+        "source_ids": [
+          "public_general_batch7_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "toxic_megacolon_f005"
+        ],
+        "source_ids": [
+          "public_general_batch7_20260705"
+        ],
+        "support": "public_source_summary"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "public_general_batch7_20260705",
+      "type": "public_source_packet",
+      "title": "Public cross-sectional imaging source packet for whole-body Phase 1 draft batch 7",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, ACR Appropriateness Criteria, RadiologyInfo, and open-access PMC reviews where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "confidence": "medium",
+    "notes": "公開情報に基づく初期整理。"
+  },
+  "curation": {
+    "batch": "general_batch7",
+    "generated_by": "curate-general-drafts-batch7.js"
+  },
+  "provenance": {
+    "source_ids": [
+      "public_general_batch7_20260705"
+    ],
+    "generated_at": "2026-07-05T07:00:37.167Z"
+  },
+  "updated_at": "2026-07-05T07:00:37.167Z",
+  "content_hash": "efb02ce41be833c86d2cbd73b2c5203934fafdfffa665aec64a32d4c9c63dc52"
+}

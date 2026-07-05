@@ -1,0 +1,38 @@
+{
+  "disease_id": "neuromyelitis_optica_spectrum_disorder",
+  "disease_name": {
+    "ja": "視神経脊髄炎スペクトラム障害",
+    "en": "Neuromyelitis optica spectrum disorder"
+  },
+  "query": "neuromyelitis optica spectrum disorder brain MRI imaging",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "17706564",
+      "title": "The spectrum of neuromyelitis optica.",
+      "journal": "The Lancet. Neurology",
+      "year": "2007",
+      "doi": "10.1016/S1474-4422(07)70216-8",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17706564/",
+      "abstract": ""
+    },
+    {
+      "pmid": "37322542",
+      "title": "MRI to differentiate multiple sclerosis, neuromyelitis optica, and myelin oligodendrocyte glycoprotein antibody disease.",
+      "journal": "Journal of neuroimaging : official journal of the American Society of Neuroimaging",
+      "year": "2023",
+      "doi": "10.1111/jon.13137",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37322542/",
+      "abstract": ""
+    },
+    {
+      "pmid": "36370634",
+      "title": "Association between B-cell depletion and attack risk in neuromyelitis optica spectrum disorder: An exploratory analysis from N-MOmentum, a double-blind, randomised, placebo-controlled, multicentre phase 2/3 trial.",
+      "journal": "EBioMedicine",
+      "year": "2022",
+      "doi": "10.1016/j.ebiom.2022.104321",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36370634/",
+      "abstract": ""
+    }
+  ]
+}

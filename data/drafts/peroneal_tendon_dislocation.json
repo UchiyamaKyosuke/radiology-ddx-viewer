@@ -1,0 +1,360 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "peroneal_tendon_dislocation",
+  "disease_name": {
+    "ja": "腓骨筋腱脱臼",
+    "en": "Peroneal tendon dislocation"
+  },
+  "disease_aliases": {
+    "ja": [],
+    "en": []
+  },
+  "clinical": {
+    "overview": "腓骨筋腱脱臼は外果後方痛で重要な鑑別となる疾患で、臨床背景と画像分布を組み合わせて評価する。",
+    "treatment": "治療方針は病型、病期、合併症、全身状態に応じて決定する。",
+    "epidemiology": "頻度と好発年齢は病型・背景疾患により異なる。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "代表的な性差傾向を記録。"
+    },
+    "age": {
+      "typical_min": 10,
+      "typical_max": 80,
+      "peak_decade": "スポーツ外傷",
+      "summary": "代表的な発症・診断年齢帯を記録。"
+    }
+  },
+  "keywords": [
+    "Peroneal tendon dislocation",
+    "腓骨筋腱脱臼",
+    "superior peroneal retinaculum injury",
+    "peroneal tendon subluxation"
+  ],
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 3,
+    "basis": "differential_importance",
+    "evidence_level": "public_review",
+    "context": {
+      "population": "any",
+      "body_region": "musculoskeletal",
+      "clinical_setting": "外果後方痛"
+    },
+    "summary": "外果後方痛の鑑別での相対頻度と重要度を記録。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "腓骨筋腱脱臼のCTでは濃度、石灰化、出血、造影効果、周囲変化を評価する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:ct_isoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "musculoskeletal",
+                "organ": "achilles_tendon",
+                "subregion": "achilles_tendon_substance",
+                "laterality": "unknown"
+              },
+              "target": "tendon",
+              "modifiers": {},
+              "keywords": [
+                "superior peroneal retinaculum injury",
+                "peroneal tendon subluxation"
+              ],
+              "finding_text": "腓骨筋腱脱臼はCTで腱・靱帯または軟部組織の肥厚として見えることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:ct_isoattenuation",
+                "alternatives": []
+              },
+              "finding_id": "peroneal_tendon_dislocation_f001"
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "腓骨筋腱脱臼のMRIでは信号、拡散、造影効果、病変分布を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T1WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:t1_hypointensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T1WI"
+              },
+              "anatomy": {
+                "body_region": "musculoskeletal",
+                "organ": "achilles_tendon",
+                "subregion": "achilles_tendon_substance",
+                "laterality": "unknown"
+              },
+              "target": "tendon",
+              "modifiers": {},
+              "keywords": [
+                "superior peroneal retinaculum injury",
+                "peroneal tendon subluxation"
+              ],
+              "finding_text": "腓骨筋腱脱臼はT1WIで低信号の腱・線維性構造として評価される。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:t1_hypointensity",
+                "alternatives": []
+              },
+              "finding_id": "peroneal_tendon_dislocation_f002"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "musculoskeletal",
+                "organ": "achilles_tendon",
+                "subregion": "achilles_tendon_substance",
+                "laterality": "unknown"
+              },
+              "target": "tendon",
+              "modifiers": {},
+              "keywords": [
+                "superior peroneal retinaculum injury",
+                "peroneal tendon subluxation"
+              ],
+              "finding_text": "腓骨筋腱脱臼は変性や断裂部でT2WI高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:t2_hyperintensity",
+                "alternatives": []
+              },
+              "finding_id": "peroneal_tendon_dislocation_f003"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:mild_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "musculoskeletal",
+                "organ": "achilles_tendon",
+                "subregion": "achilles_tendon_substance",
+                "laterality": "unknown"
+              },
+              "target": "synovium",
+              "modifiers": {},
+              "keywords": [
+                "superior peroneal retinaculum injury",
+                "peroneal tendon subluxation"
+              ],
+              "finding_text": "腓骨筋腱脱臼は周囲滑膜炎や肉芽組織の増強を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:mild_enhancement",
+                "alternatives": []
+              },
+              "finding_id": "peroneal_tendon_dislocation_f004"
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_code": "finding:diffusion_restriction_absent",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "musculoskeletal",
+                "organ": "achilles_tendon",
+                "subregion": "achilles_tendon_substance",
+                "laterality": "unknown"
+              },
+              "target": "tendon",
+              "modifiers": {},
+              "keywords": [
+                "superior peroneal retinaculum injury",
+                "peroneal tendon subluxation"
+              ],
+              "finding_text": "腓骨筋腱脱臼は通常、腫瘍性細胞密度を反映する強い拡散制限を示さない。",
+              "typicality": "variable",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.82,
+                "matched_concept_id": "finding:diffusion_restriction_absent",
+                "alternatives": []
+              },
+              "finding_id": "peroneal_tendon_dislocation_f005"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "raw_findings": [
+    {
+      "raw_finding_id": "peroneal_tendon_dislocation_raw_001",
+      "modality_text": "CT/MRI/US",
+      "acquisition_text": "疾患に応じた標準撮像",
+      "anatomy_text": "腓骨筋腱脱臼の典型的な主座",
+      "target_text": "named_sign",
+      "finding_text": "上腓骨筋支帯損傷と腓骨筋腱の亜脱臼/脱臼を評価する。",
+      "interpretation": "構造化辞書では拾い切れない疾患固有の所見・サインとして保存。",
+      "source_ids": [
+        "public_general_batch8_20260705"
+      ],
+      "mapping": {
+        "status": "candidate",
+        "candidate_finding_code": "finding:peroneal_tendon_dislocation_specific_sign",
+        "candidate_anatomy": {
+          "body_region": "musculoskeletal",
+          "organ": "achilles_tendon",
+          "subregion": "achilles_tendon_substance",
+          "laterality": "unknown"
+        },
+        "candidate_target": "named_sign",
+        "notes": "Phase 1 raw finding"
+      },
+      "review_status": "needs_mapping"
+    }
+  ],
+  "evidence": {
+    "summary": "NCBI Bookshelf、ACR Appropriateness Criteria、RadiologyInfo、PMC open-access review などの公開情報を参照。",
+    "claim_map": [
+      {
+        "finding_ids": [
+          "peroneal_tendon_dislocation_f001"
+        ],
+        "source_ids": [
+          "public_general_batch8_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "peroneal_tendon_dislocation_f002"
+        ],
+        "source_ids": [
+          "public_general_batch8_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "peroneal_tendon_dislocation_f003"
+        ],
+        "source_ids": [
+          "public_general_batch8_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "peroneal_tendon_dislocation_f004"
+        ],
+        "source_ids": [
+          "public_general_batch8_20260705"
+        ],
+        "support": "public_source_summary"
+      },
+      {
+        "finding_ids": [
+          "peroneal_tendon_dislocation_f005"
+        ],
+        "source_ids": [
+          "public_general_batch8_20260705"
+        ],
+        "support": "public_source_summary"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "public_general_batch8_20260705",
+      "type": "public_source_packet",
+      "title": "Public cross-sectional imaging source packet for whole-body Phase 1 draft batch 8",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, ACR Appropriateness Criteria, RadiologyInfo, and open-access PMC reviews where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "confidence": "medium",
+    "notes": "公開情報に基づく初期整理。"
+  },
+  "curation": {
+    "batch": "general_batch8",
+    "generated_by": "curate-general-drafts-batch8.js"
+  },
+  "provenance": {
+    "source_ids": [
+      "public_general_batch8_20260705"
+    ],
+    "generated_at": "2026-07-05T09:29:44.226Z"
+  },
+  "updated_at": "2026-07-05T09:29:44.226Z",
+  "content_hash": "503b25dee37a74b7dd7402f66f6552c063a2c5eac4e17d98b3ad722078e1bfe4"
+}

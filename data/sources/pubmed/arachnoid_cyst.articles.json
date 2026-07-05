@@ -1,0 +1,47 @@
+{
+  "disease_id": "arachnoid_cyst",
+  "disease_name": {
+    "ja": "くも膜嚢胞",
+    "en": "Arachnoid cyst"
+  },
+  "query": "intracranial arachnoid cyst[Title/Abstract] AND (MRI[Title/Abstract] OR CT[Title/Abstract] OR imaging[Title/Abstract])",
+  "fetched_at": "2026-06-25T07:10:23.428Z",
+  "articles": [
+    {
+      "pmid": "19517408",
+      "title": "Intracranial arachnoid cysts in dogs.",
+      "journal": "Compendium (Yardley, PA)",
+      "year": "2013",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19517408/",
+      "abstract": "Intracranial arachnoid cyst (IAC) is an infrequently reported developmental disorder seen primarily in small-breed dogs. It usually occurs in the caudal fossa, in the region of the quadrigeminal cistern. Although still considered uncommon, IAC is being recognized more frequently in veterinary medicine, coinciding with the increased availability of magnetic resonance imaging. In this article, clinical information from previously reported cases of canine IAC is combined with additional case information from our hospitals. Similar to IAC in people, it is thought that canine IAC is often an incidental finding. When IAC is responsible for neurologic disease in dogs, generalized seizures and cerebellovestibular dysfunction are the most common clinical presentations. Medical therapy of IAC focuses on management of increased intracranial pressure and seizures, if the latter are part of the clinical complaints. Surgical therapy of IAC involves either cyst fenestration or shunting the excess fluid to the peritoneal cavity"
+    },
+    {
+      "pmid": "25866381",
+      "title": "[Imaging diagnosis of arachnoid cysts].",
+      "journal": "Neurocirugia (Asturias, Spain)",
+      "year": "2016",
+      "doi": "10.1016/j.neucir.2015.02.009",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25866381/",
+      "abstract": "Arachnoid cysts are malformed lesions that contain a fluid similar to the cerebrospinal fluid, and are usually located within the arachnoidal membrane. They represent 1% of all intracranial lesions, and in recent years, with the development of radiological techniques, the clinical detectability of arachnoid cysts seems to have increased. Although the majority of diagnosed arachnoid cysts are located in the cranial cavity and especially in the Sylvian fissure, a small number are located at spinal level and they can occur extra- or intra-spinally. An analysis is carried out, detailing the various tests used for the diagnosis of both intracranial and spinal arachnoids cysts, analysing the indications of each one depending on the location of the cysts and patient age."
+    },
+    {
+      "pmid": "38228110",
+      "title": "Intracranial Arachnoid Cyst in Children: Clinical Presentation and Risk Factors for Surgical Intervention.",
+      "journal": "Pediatric neurosurgery",
+      "year": "2024",
+      "doi": "10.1159/000536284",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38228110/",
+      "abstract": "Intracranial arachnoid cysts (IAC) in children are a common incidental finding on imaging. Most IACs are asymptomatic and can be monitored; however, a small percentage may enlarge and require surgical intervention. This study aimed to identify clinical risk factors in patients with IAC who underwent surgery versus those who did not.\nWe conducted a retrospective chart review from 2009 to 2021 at a free-standing children's hospital. A total of 230 patients diagnosed with an IAC aged 0-21 years of age were included in the study. Data on demographics, imaging, and neurological follow-up were analyzed.\nOut of 230 patients, 45 (19.6%) underwent surgery. At time of IAC diagnosis, the surgical patients were younger (median age 1.1 years), and their median cyst volume was larger (41.7 cm3), compared to nonsurgical patients (median age 5.9 years, volume 11.8 cm3, respectively). Headache was the most common reason for initial imaging in nonsurgical patients (54/185, 29.2%) while prenatal ultrasound (11/45, 24.4%) and macrocephaly (11/45, 24.4%) were the most common reasons for surgical patients. The majority of both surgical and nonsurgical patients had the IAC incidentally found (41/45, 91.1% and 181/185, 97.8%, respectively). Surgery relieved symptoms in 38/45 (84.4%) patients. Cyst volume and age were predictors of increased odds of having surgery.\nPatients who underwent surgery were younger and had larger cyst volumes at time of diagnosis. The majority of the IAC were found incidentally and remained stable over prolonged follow-up. The majority of the patients experienced relief of symptoms postsurgical intervention. There is a greater odds of having surgical treatment with decreased age and greater cyst volume at diagnosis, and therefore these patients should be monitored closely for development of symptoms indicating need for surgical intervention."
+    },
+    {
+      "pmid": "26636254",
+      "title": "Sports participation with arachnoid cysts.",
+      "journal": "Journal of neurosurgery. Pediatrics",
+      "year": "2016",
+      "doi": "10.3171/2015.7.PEDS15189",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26636254/",
+      "abstract": "OBJECT There is currently no consensus on the safety of sports participation for patients with an intracranial arachnoid cyst (AC). The authors' goal was to define the risk of sports participation for children with this imaging finding. METHODS A survey was prospectively administered to 185 patients with ACs during a 46-month period at a single institution. Cyst size and location, treatment, sports participation, and any injuries were recorded. Eighty patients completed at least 1 subsequent survey following their initial entry into the registry, and these patients were included in a prospective registry with a mean prospective follow-up interval of 15.9 &#xb1; 8.8 months. RESULTS A total 112 patients with ACs participated in 261 sports for a cumulative duration of 4410 months or 1470 seasons. Of these, 94 patients participated in 190 contact sports for a cumulative duration of 2818 months or 939 seasons. There were no serious or catastrophic neurological injuries. Two patients presented with symptomatic subdural hygromas following minor sports injuries. In the prospective cohort, there were no neurological injuries CONCLUSIONS Permanent or catastrophic neurological injuries are very unusual in AC patients who participate in athletic activities. In most cases, sports participation by these patients is safe."
+    }
+  ]
+}

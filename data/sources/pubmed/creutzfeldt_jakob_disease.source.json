@@ -1,0 +1,51 @@
+{
+  "disease_id": "creutzfeldt_jakob_disease",
+  "disease_name": {
+    "ja": "Creutzfeldt-Jakob病",
+    "en": "Creutzfeldt-Jakob disease"
+  },
+  "disease_aliases": {
+    "ja": [
+      "CJD"
+    ],
+    "en": [
+      "CJD"
+    ]
+  },
+  "clinical": {
+    "overview": "プリオン病。急速進行性認知症で、皮質リボン状DWI高信号や基底核DWI高信号が診断に重要。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 50,
+      "typical_max": 85,
+      "peak_decade": "60-70歳代",
+      "summary": "中高年以降に多い。"
+    }
+  },
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "rapidly_progressive_dementia"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

@@ -1,0 +1,507 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "medulloblastoma",
+  "disease_name": {
+    "ja": "髄芽腫",
+    "en": "Medulloblastoma"
+  },
+  "disease_aliases": {
+    "ja": [
+      "髄芽腫"
+    ],
+    "en": [
+      "Medulloblastoma"
+    ]
+  },
+  "clinical": {
+    "overview": "小児に多い後頭蓋窩の胎児性腫瘍。高細胞性を反映してCT高吸収、DWI高信号/ADC低値を示しやすい。",
+    "treatment": "手術、放射線治療、化学療法をリスク分類に応じて組み合わせる。髄液播種評価が重要。",
+    "epidemiology": "小児悪性脳腫瘍として重要。小脳虫部〜第4脳室近傍に多い。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "male",
+      "predilection": "male_predominant",
+      "summary": "男性にやや多い。"
+    },
+    "age": {
+      "typical_min": 3,
+      "typical_max": 15,
+      "peak_decade": "小児",
+      "summary": "小児に多い。"
+    }
+  },
+  "keywords": [
+    "posterior fossa",
+    "vermis",
+    "high cellularity",
+    "CSF dissemination"
+  ],
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 3,
+    "basis": "epidemiology",
+    "evidence_level": "review",
+    "context": {
+      "population": "pediatric",
+      "body_region": "brain",
+      "clinical_setting": "posterior_fossa_solid_mass"
+    },
+    "summary": "小児後頭蓋窩充実性腫瘤では上位鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "髄芽腫はCTで後頭蓋窩正中の高吸収腫瘤、水頭症を確認する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "medulloblastoma_ct_nc_001",
+              "finding_code": "finding:ct_hyperattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "posterior_fossa",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "高細胞性を反映して単純CTで高吸収を示すことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_hyperattenuation",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "medulloblastoma_ct_nc_002",
+              "finding_code": "finding:hydrocephalus",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "posterior_fossa",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "第4脳室閉塞による水頭症を伴いやすい。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:hydrocephalus",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "medulloblastoma_ct_non_contrast_ct_hyperattenuation_01",
+              "finding_code": "finding:ct_hyperattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "高細胞性のためCTで高吸収を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは小脳虫部/第4脳室近傍腫瘤、拡散制限、造影、髄液播種を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_id": "medulloblastoma_mri_dwi_001",
+              "finding_code": "finding:dwi_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "posterior_fossa",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "高細胞性によりDWI高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:dwi_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "medulloblastoma_mri_dwi_diffusion_restriction_present_01",
+              "finding_code": "finding:diffusion_restriction_present",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "高細胞性腫瘍としてDWI高信号/ADC低値を示しやすい。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "ADC"
+          },
+          "findings": [
+            {
+              "finding_id": "medulloblastoma_mri_adc_001",
+              "finding_code": "finding:adc_low",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "ADC"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "posterior_fossa",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "ADC低値を伴う拡散制限が重要。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:adc_low",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "medulloblastoma_mri_adc_adc_low_01",
+              "finding_code": "finding:adc_low",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "ADC"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "ADC低値は髄芽腫を支持する。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "medulloblastoma_mri_t2_001",
+              "finding_code": "finding:t2_mild_hypointensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "posterior_fossa",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "T2で等〜軽度低信号寄りに見えることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:t2_mild_hypointensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "medulloblastoma_mri_t2wi_hydrocephalus_01",
+              "finding_code": "finding:hydrocephalus",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "第4脳室閉塞により水頭症を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "medulloblastoma_mri_ce_001",
+              "finding_code": "finding:enhancing_solid_component",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "posterior_fossa",
+                "laterality": "unknown"
+              },
+              "target": "solid_component",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "充実部に造影効果を伴う。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:enhancing_solid_component",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "medulloblastoma_mri_contrast_enhanced_t1wi_mild_enhancement_01",
+              "finding_code": "finding:mild_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "造影効果は中等度〜強いことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 27375228, 27889018, 30516696, 18995998）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "medulloblastoma_ct_nc_001",
+          "medulloblastoma_ct_nc_002",
+          "medulloblastoma_mri_dwi_001",
+          "medulloblastoma_mri_adc_001",
+          "medulloblastoma_mri_t2_001",
+          "medulloblastoma_mri_ce_001"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_27375228",
+          "pmid_27889018",
+          "pmid_30516696",
+          "pmid_18995998"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "medulloblastoma_ct_non_contrast_ct_hyperattenuation_01",
+          "medulloblastoma_mri_dwi_diffusion_restriction_present_01",
+          "medulloblastoma_mri_adc_adc_low_01",
+          "medulloblastoma_mri_contrast_enhanced_t1wi_mild_enhancement_01",
+          "medulloblastoma_mri_t2wi_hydrocephalus_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_27375228",
+      "type": "journal_article",
+      "title": "Childhood medulloblastoma.",
+      "authors": [],
+      "journal": "Critical reviews in oncology/hematology",
+      "year": "2017",
+      "pmid": "27375228",
+      "doi": "10.1016/j.critrevonc.2016.05.012",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27375228/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_27889018",
+      "type": "journal_article",
+      "title": "Posterior Fossa Tumors.",
+      "authors": [],
+      "journal": "Neuroimaging clinics of North America",
+      "year": "2017",
+      "pmid": "27889018",
+      "doi": "10.1016/j.nic.2016.08.001",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27889018/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_30516696",
+      "type": "journal_article",
+      "title": "Childhood Medulloblastoma Revisited.",
+      "authors": [],
+      "journal": "Topics in magnetic resonance imaging : TMRI",
+      "year": "2019",
+      "pmid": "30516696",
+      "doi": "10.1097/RMR.0000000000000184",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30516696/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_18995998",
+      "type": "journal_article",
+      "title": "[Childhood medulloblastoma].",
+      "authors": [],
+      "journal": "Archives de pediatrie : organe officiel de la Societe francaise de pediatrie",
+      "year": "2009",
+      "pmid": "18995998",
+      "doi": "10.1016/j.arcped.2008.09.021",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18995998/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": []
+}

@@ -1,0 +1,38 @@
+{
+  "disease_id": "pineal_germinoma",
+  "disease_name": {
+    "ja": "松果体部胚腫",
+    "en": "Pineal germinoma"
+  },
+  "query": "\"pineal germinoma\" AND (MRI OR CT OR imaging)",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "20818311",
+      "title": "Pineal germinoma.",
+      "journal": "Southern medical journal",
+      "year": "2010",
+      "doi": "10.1097/SMJ.0b013e3181ebeeff",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20818311/",
+      "abstract": ""
+    },
+    {
+      "pmid": "37077304",
+      "title": "Diagnosis and Management of Pineal Germinoma: From Eye to Brain.",
+      "journal": "Eye and brain",
+      "year": "2023",
+      "doi": "10.2147/EB.S389631",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37077304/",
+      "abstract": ""
+    },
+    {
+      "pmid": "3941869",
+      "title": "Pineal germinoma: MR imaging.",
+      "journal": "Radiology",
+      "year": "1986",
+      "doi": "10.1148/radiology.158.2.3941869",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/3941869/",
+      "abstract": ""
+    }
+  ]
+}

@@ -1,0 +1,419 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "chondrosarcoma_skull_base",
+  "disease_name": {
+    "ja": "頭蓋底軟骨肉腫",
+    "en": "Skull base chondrosarcoma"
+  },
+  "disease_aliases": {
+    "ja": [
+      "斜台傍軟骨肉腫"
+    ],
+    "en": [
+      "Skull base chondrosarcoma"
+    ]
+  },
+  "clinical": {
+    "overview": "頭蓋底軟骨性腫瘍。斜台傍正中や錐体尖部に多く、石灰化、T2高信号、骨破壊を示す。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 80,
+      "peak_decade": "成人",
+      "summary": "成人で重要。"
+    }
+  },
+  "keywords": [
+    "off-midline",
+    "chondroid calcification",
+    "skull base"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "skull_base_mass"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "頭蓋底軟骨肉腫は傍正中頭蓋底骨破壊と石灰化基質をCTで確認する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "chondrosarcoma_skull_base_ct_001",
+              "finding_code": "finding:calcification_present",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "skull_base",
+                "subregion": "clivus",
+                "laterality": "unknown"
+              },
+              "target": "calcified_component",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "軟骨性石灰化を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:calcification_present",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "chondrosarcoma_skull_base_ct_002",
+              "finding_code": "finding:clival_bone_destruction",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "skull_base",
+                "subregion": "clivus",
+                "laterality": "unknown"
+              },
+              "target": "skull_base_mass",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "頭蓋底骨破壊を伴う。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:clival_bone_destruction",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "chondrosarcoma_skull_base_ct_non_contrast_clival_bone_destruction_01",
+              "finding_code": "finding:clival_bone_destruction",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "CTで頭蓋底骨破壊を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "chondrosarcoma_skull_base_ct_non_contrast_calcification_present_01",
+              "finding_code": "finding:calcification_present",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "軟骨性基質石灰化を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIではT2高信号の頭蓋底腫瘤、不均一造影、斜台外側/錐体尖部由来を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "chondrosarcoma_skull_base_mri_003",
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "skull_base",
+                "subregion": "clivus",
+                "laterality": "unknown"
+              },
+              "target": "skull_base_mass",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "軟骨性基質によりT2高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:t2_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "chondrosarcoma_skull_base_mri_t2wi_t2_hyperintensity_01",
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "T2WIで高信号腫瘤を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "chondrosarcoma_skull_base_mri_004",
+              "finding_code": "finding:enhancing_solid_component",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "skull_base",
+                "subregion": "clivus",
+                "laterality": "unknown"
+              },
+              "target": "skull_base_mass",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "不均一な造影効果を伴う。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:enhancing_solid_component",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "chondrosarcoma_skull_base_mri_contrast_enhanced_t1wi_mild_enhancement_01",
+              "finding_code": "finding:mild_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "造影効果は不均一なことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 35882753, 32818757, 30872199）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "chondrosarcoma_skull_base_ct_001",
+          "chondrosarcoma_skull_base_ct_002",
+          "chondrosarcoma_skull_base_mri_003",
+          "chondrosarcoma_skull_base_mri_004"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_35882753",
+          "pmid_32818757",
+          "pmid_30872199"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "chondrosarcoma_skull_base_ct_non_contrast_clival_bone_destruction_01",
+          "chondrosarcoma_skull_base_ct_non_contrast_calcification_present_01",
+          "chondrosarcoma_skull_base_mri_t2wi_t2_hyperintensity_01",
+          "chondrosarcoma_skull_base_mri_contrast_enhanced_t1wi_mild_enhancement_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_35882753",
+      "type": "journal_article",
+      "title": "Revisitation of imaging features of skull base chondrosarcoma in comparison to chordoma.",
+      "authors": [],
+      "journal": "Journal of neuro-oncology",
+      "year": "2022",
+      "pmid": "35882753",
+      "doi": "10.1007/s11060-022-04097-2",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35882753/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_32818757",
+      "type": "journal_article",
+      "title": "Incidence and survival rates and trends of skull Base chondrosarcoma: A Population-Based study.",
+      "authors": [],
+      "journal": "Clinical neurology and neurosurgery",
+      "year": "2021",
+      "pmid": "32818757",
+      "doi": "10.1016/j.clineuro.2020.106153",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32818757/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_30872199",
+      "type": "journal_article",
+      "title": "Skull Base Chondrosarcoma Caused by Ollier Disease: A Case Report and Literature Review.",
+      "authors": [],
+      "journal": "World neurosurgery",
+      "year": "2020",
+      "pmid": "30872199",
+      "doi": "10.1016/j.wneu.2019.03.037",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30872199/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": [
+    {
+      "raw_finding_id": "chondrosarcoma_skull_base_raw_keyword_chondroid_calcification",
+      "modality_text": "MRI",
+      "acquisition_text": "",
+      "anatomy_text": "",
+      "target_text": "",
+      "finding_text": "キーワード/所見として \"chondroid calcification\" を保持。",
+      "interpretation": "辞書対応済み構造化欄から漏れる可能性があるため、Phase1自由記載として保存。",
+      "source_ids": [
+        "public_raw_findings_audit_20260705"
+      ],
+      "mapping": {
+        "status": "unmapped",
+        "candidate_finding_code": "finding:chondroid_calcification",
+        "candidate_acquisition_code": "",
+        "candidate_target": "",
+        "notes": "Added during raw_findings audit to preserve information that may be lost by dictionary-only structured fields."
+      },
+      "review_status": "needs_mapping"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "disease_id": "astrocytoma_idh_mutant",
+  "disease_name": {
+    "ja": "IDH変異型星細胞腫",
+    "en": "Astrocytoma IDH-mutant"
+  },
+  "disease_aliases": {
+    "ja": [
+      "IDH変異星細胞腫"
+    ],
+    "en": [
+      "IDH-mutant astrocytoma"
+    ]
+  },
+  "clinical": {
+    "overview": "成人のびまん性神経膠腫。T2/FLAIR高信号の浸潤性白質〜皮質下病変として見え、グレード上昇で造影や拡散制限が目立つ。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 80,
+      "peak_decade": "成人",
+      "summary": "成人で重要。"
+    }
+  },
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 2,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "infiltrative_glioma"
+    },
+    "summary": "該当する画像パターンで重要な鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

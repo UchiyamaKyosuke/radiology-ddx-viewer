@@ -1,0 +1,205 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "ovarian_fibroma",
+  "disease_name": {
+    "ja": "卵巣線維腫",
+    "en": "Ovarian fibroma"
+  },
+  "disease_aliases": {
+    "ja": [
+      "卵巣線維腫"
+    ],
+    "en": [
+      "Ovarian fibroma"
+    ]
+  },
+  "clinical": {
+    "overview": "卵巣間質由来の良性腫瘍。線維性間質が豊富な充実性腫瘤として認められる。 補足: Sample card only.",
+    "treatment": "症状、腫瘍径、悪性腫瘍との鑑別困難性に応じて経過観察または外科的切除が検討される。",
+    "epidemiology": "卵巣腫瘍の中では比較的まれだが、T2低信号を示す充実性付属器腫瘤では重要な鑑別。"
+  },
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 2,
+    "basis": "epidemiology",
+    "evidence_level": "review",
+    "context": {
+      "population": "adult_women",
+      "body_region": "pelvis",
+      "clinical_setting": "solid_adnexal_mass"
+    },
+    "summary": "卵巣腫瘍全体では比較的まれ。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "境界明瞭な充実性付属器腫瘤として認められることがある。",
+      "findings_by_phase": []
+    },
+    "mri": {
+      "summary": "線維成分を反映してT2強調像で低信号を示しやすい。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "ovarian_fibroma_mri_t2_001",
+              "finding_code": "finding:t2_hypointensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "pelvis",
+                "organ": "ovary",
+                "subregion": "adnexa",
+                "laterality": "unknown"
+              },
+              "target": "solid_component",
+              "modifiers": {
+                "degree": "marked",
+                "distribution": "focal",
+                "morphology": "solid_mass"
+              },
+              "finding_text": "充実成分がT2強調像で著明な低信号を示す。",
+              "typicality": "typical",
+              "diagnostic_weight": 5,
+              "contextual_importance": {
+                "ddx_priority_rank": 4,
+                "basis": "differential_importance",
+                "context": "solid_adnexal_mass_with_marked_t2_hypointensity",
+                "summary": "T2低信号を示す充実性付属器腫瘤では重要な鑑別。"
+              },
+              "review_status": "draft",
+              "notes": "線維成分を反映する所見。",
+              "image_example_ids": [],
+              "keywords": [
+                "solid_mass"
+              ]
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_id": "ovarian_fibroma_mri_dwi_001",
+              "finding_code": "finding:diffusion_restriction_absent",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "pelvis",
+                "organ": "ovary",
+                "subregion": "adnexa",
+                "laterality": "unknown"
+              },
+              "target": "solid_component",
+              "modifiers": {
+                "degree": "none"
+              },
+              "finding_text": "強い拡散制限は典型的ではない。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "出典未登録（サンプル用の仮出典）。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "ovarian_fibroma_mri_t2_001",
+          "ovarian_fibroma_mri_dwi_001"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "ref_001"
+        ],
+        "confidence": "low"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "ref_001",
+      "type": "placeholder",
+      "title": "Replace with reviewed source",
+      "authors": [],
+      "journal": "",
+      "year": "",
+      "pmid": "",
+      "doi": "",
+      "url": "",
+      "license": ""
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "Starter sample; replace evidence before clinical use."
+  },
+  "curation": {
+    "auto_update_allowed": false,
+    "locked_fields": [],
+    "notes": ""
+  },
+  "provenance": {
+    "created_by": "manual",
+    "model": "",
+    "created_at": "2026-06-20T10:00:00+09:00",
+    "prompt_version": "starter_v0.1",
+    "source_query": ""
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "content_hash": "5679b9dca09c0a17c736734247752b4de6936c3b569c52e78d2d4569e15e9199",
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "female"
+      ],
+      "predominance": "female",
+      "predilection": "female_only",
+      "summary": "女性に発生する疾患。"
+    },
+    "age": {
+      "typical_min": 30,
+      "typical_max": 70,
+      "peak_decade": "40-60歳代",
+      "summary": "中年以降の女性でみられることが多い。"
+    }
+  },
+  "keywords": [
+    "solid_mass"
+  ],
+  "raw_findings": []
+}

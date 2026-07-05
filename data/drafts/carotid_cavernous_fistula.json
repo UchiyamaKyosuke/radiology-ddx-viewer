@@ -1,0 +1,360 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "carotid_cavernous_fistula",
+  "disease_name": {
+    "ja": "頚動脈海綿静脈洞瘻",
+    "en": "Carotid-cavernous fistula"
+  },
+  "disease_aliases": {
+    "ja": [
+      "CCF"
+    ],
+    "en": [
+      "CCF"
+    ]
+  },
+  "clinical": {
+    "overview": "頚動脈系と海綿静脈洞の短絡。眼球突出、結膜充血、外眼筋腫大、上眼静脈拡張を画像で評価する。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 80,
+      "peak_decade": "成人",
+      "summary": "成人で重要。"
+    }
+  },
+  "keywords": [
+    "superior ophthalmic vein",
+    "cavernous sinus",
+    "proptosis"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "cavernous_sinus_vascular_lesion"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "CCFはCT/CTAで上眼静脈拡張、海綿静脈洞拡大、眼窩うっ血を確認する。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "arterial"
+          },
+          "findings": [
+            {
+              "finding_id": "carotid_cavernous_fistula_ct_001",
+              "finding_code": "finding:flow_void",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "arterial"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cavernous_sinus",
+                "laterality": "unknown"
+              },
+              "target": "venous_sinus",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "造影CT/CTAで海綿静脈洞や上眼静脈の早期濃染を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:flow_void",
+                "alternatives": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRI/MRAでは上眼静脈拡張、海綿静脈洞増強、flow void、外眼筋腫大を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "MRA_TOF"
+          },
+          "findings": [
+            {
+              "finding_id": "carotid_cavernous_fistula_mri_002",
+              "finding_code": "finding:vascular_nidus",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRA_TOF"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "cerebral_vessel",
+                "subregion": "cavernous_sinus",
+                "laterality": "unknown"
+              },
+              "target": "vascular_nidus",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "海綿静脈洞部の短絡血流を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:vascular_nidus",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "carotid_cavernous_fistula_mri_mra_tof_flow_void_01",
+              "finding_code": "finding:flow_void",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "MRA_TOF"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "海綿静脈洞周囲や上眼静脈にflow void/異常血流を認める。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "carotid_cavernous_fistula_mri_003",
+              "finding_code": "finding:flow_void",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cavernous_sinus",
+                "laterality": "unknown"
+              },
+              "target": "venous_sinus",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "海綿静脈洞内や上眼静脈のflow voidを伴う。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:flow_void",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "carotid_cavernous_fistula_mri_contrast_enhanced_t1wi_avid_homogeneous_enhancement_01",
+              "finding_code": "finding:avid_homogeneous_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "海綿静脈洞の強い造影や拡大を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "ASL"
+          },
+          "findings": [
+            {
+              "finding_id": "carotid_cavernous_fistula_mri_asl_hyperperfusion_01",
+              "finding_code": "finding:hyperperfusion",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "ASL"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "シャントに伴う過灌流/早期静脈描出を認めることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 38351202, 41224380, 17442161）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "carotid_cavernous_fistula_ct_001",
+          "carotid_cavernous_fistula_mri_002",
+          "carotid_cavernous_fistula_mri_003"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_38351202",
+          "pmid_41224380",
+          "pmid_17442161"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "carotid_cavernous_fistula_mri_mra_tof_flow_void_01",
+          "carotid_cavernous_fistula_mri_contrast_enhanced_t1wi_avid_homogeneous_enhancement_01",
+          "carotid_cavernous_fistula_mri_asl_hyperperfusion_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_38351202",
+      "type": "journal_article",
+      "title": "[Carotid-cavernous fistulas].",
+      "authors": [],
+      "journal": "Radiologie (Heidelberg, Germany)",
+      "year": "2024",
+      "pmid": "38351202",
+      "doi": "10.1007/s00117-024-01269-1",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38351202/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_41224380",
+      "type": "journal_article",
+      "title": "Ophthalmological emergencies.",
+      "authors": [],
+      "journal": "Radiologia",
+      "year": "2025",
+      "pmid": "41224380",
+      "doi": "10.1016/j.rxeng.2025.101602",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41224380/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_17442161",
+      "type": "journal_article",
+      "title": "[Imaging diagnosis of carotid-cavernous fistula].",
+      "authors": [],
+      "journal": "[Zhonghua yan ke za zhi] Chinese journal of ophthalmology",
+      "year": "2010",
+      "pmid": "17442161",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17442161/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": []
+}

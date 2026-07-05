@@ -1,0 +1,51 @@
+{
+  "disease_id": "sturge_weber_syndrome",
+  "disease_name": {
+    "ja": "Sturge-Weber症候群",
+    "en": "Sturge-Weber syndrome"
+  },
+  "disease_aliases": {
+    "ja": [
+      "スタージ・ウェーバー症候群"
+    ],
+    "en": [
+      "Sturge-Weber syndrome"
+    ]
+  },
+  "clinical": {
+    "overview": "顔面毛細血管奇形に伴う軟膜血管腫症。皮質石灰化、脳萎縮、軟髄膜造影を示す。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 18,
+      "peak_decade": "小児",
+      "summary": "小児で重要。"
+    }
+  },
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "neurocutaneous_syndrome"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

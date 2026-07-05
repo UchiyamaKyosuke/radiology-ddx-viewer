@@ -1,0 +1,38 @@
+{
+  "disease_id": "colloid_cyst",
+  "disease_name": {
+    "ja": "コロイド嚢胞",
+    "en": "Colloid cyst"
+  },
+  "query": "\"colloid cyst\" AND (third ventricle OR foramen of Monro) AND (MRI OR CT OR imaging)",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "16781992",
+      "title": "Thunderclap headache.",
+      "journal": "The Lancet. Neurology",
+      "year": "2006",
+      "doi": "10.1016/S1474-4422(06)70497-5",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16781992/",
+      "abstract": ""
+    },
+    {
+      "pmid": "35803569",
+      "title": "Giant Colloid Cyst.",
+      "journal": "World neurosurgery",
+      "year": "2022",
+      "doi": "10.1016/j.wneu.2022.06.144",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35803569/",
+      "abstract": ""
+    },
+    {
+      "pmid": "27792102",
+      "title": "Pituitary Colloid Cyst.",
+      "journal": "The Journal of craniofacial surgery",
+      "year": "2018",
+      "doi": "10.1097/SCS.0000000000003142",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27792102/",
+      "abstract": ""
+    }
+  ]
+}

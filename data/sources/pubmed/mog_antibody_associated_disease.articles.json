@@ -1,0 +1,38 @@
+{
+  "disease_id": "mog_antibody_associated_disease",
+  "disease_name": {
+    "ja": "MOG抗体関連疾患",
+    "en": "MOG antibody-associated disease"
+  },
+  "query": "MOG antibody-associated disease brain MRI imaging",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "36706773",
+      "title": "Diagnosis of myelin oligodendrocyte glycoprotein antibody-associated disease: International MOGAD Panel proposed criteria.",
+      "journal": "The Lancet. Neurology",
+      "year": "2023",
+      "doi": "10.1016/S1474-4422(22)00431-8",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36706773/",
+      "abstract": ""
+    },
+    {
+      "pmid": "30907249",
+      "title": "MOG antibody-associated encephalomyelitis/encephalitis.",
+      "journal": "Multiple sclerosis (Houndmills, Basingstoke, England)",
+      "year": "2020",
+      "doi": "10.1177/1352458519837705",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30907249/",
+      "abstract": ""
+    },
+    {
+      "pmid": "38783085",
+      "title": "MOG antibody-associated optic neuritis.",
+      "journal": "Eye (London, England)",
+      "year": "2024",
+      "doi": "10.1038/s41433-024-03108-y",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38783085/",
+      "abstract": ""
+    }
+  ]
+}

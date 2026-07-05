@@ -1,0 +1,53 @@
+{
+  "disease_id": "x_linked_adrenoleukodystrophy",
+  "disease_name": {
+    "ja": "X連鎖副腎白質ジストロフィー",
+    "en": "X-linked adrenoleukodystrophy"
+  },
+  "disease_aliases": {
+    "ja": [
+      "ALD",
+      "副腎白質ジストロフィー"
+    ],
+    "en": [
+      "X-ALD",
+      "Adrenoleukodystrophy"
+    ]
+  },
+  "clinical": {
+    "overview": "ペルオキシソーム病による白質ジストロフィー。小児大脳型では後頭頭頂葉白質から脳梁膨大部に対称性病変を示し、活動性辺縁が造影される。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "male"
+      ],
+      "predominance": "male",
+      "predilection": "male_only",
+      "summary": "X連鎖性で男性に発症する。"
+    },
+    "age": {
+      "typical_min": 3,
+      "typical_max": 15,
+      "peak_decade": "小児男児",
+      "summary": "小児男児で重要。"
+    }
+  },
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "symmetric_white_matter_disease"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

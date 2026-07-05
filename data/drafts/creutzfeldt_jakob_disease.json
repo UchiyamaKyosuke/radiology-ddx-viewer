@@ -1,0 +1,430 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "creutzfeldt_jakob_disease",
+  "disease_name": {
+    "ja": "Creutzfeldt-Jakob病",
+    "en": "Creutzfeldt-Jakob disease"
+  },
+  "disease_aliases": {
+    "ja": [
+      "CJD"
+    ],
+    "en": [
+      "CJD"
+    ]
+  },
+  "clinical": {
+    "overview": "プリオン病。急速進行性認知症で、皮質リボン状DWI高信号や基底核DWI高信号が診断に重要。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 50,
+      "typical_max": 85,
+      "peak_decade": "60-70歳代",
+      "summary": "中高年以降に多い。"
+    }
+  },
+  "keywords": [
+    "cortical ribboning",
+    "basal ganglia",
+    "DWI"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "rapidly_progressive_dementia"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "CJDはCTで目立たないことが多く、MRI DWI/FLAIRが重要。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "creutzfeldt_jakob_disease_ct_001",
+              "finding_code": "finding:ct_isoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "CTは目立たないことが多い。",
+              "typicality": "common",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_isoattenuation",
+                "alternatives": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは皮質リボン状DWI/FLAIR高信号、基底核/視床病変、ADC低値を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_id": "creutzfeldt_jakob_disease_mri_002",
+              "finding_code": "finding:dwi_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "cortex",
+              "modifiers": {},
+              "keywords": [
+                "cortical ribboning"
+              ],
+              "finding_text": "皮質リボン状または基底核にDWI高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:dwi_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "creutzfeldt_jakob_disease_mri_dwi_dwi_hyperintensity_01",
+              "finding_code": "finding:dwi_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "DWIで皮質リボン状高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": [
+                "cortical ribboning"
+              ]
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "ADC"
+          },
+          "findings": [
+            {
+              "finding_id": "creutzfeldt_jakob_disease_mri_003",
+              "finding_code": "finding:adc_low",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "ADC"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "cerebral_hemisphere",
+                "laterality": "unknown"
+              },
+              "target": "cortex",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "ADC低値を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:adc_low",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "creutzfeldt_jakob_disease_mri_adc_adc_low_01",
+              "finding_code": "finding:adc_low",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "ADC"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "DWI高信号部に対応してADC低値を示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "creutzfeldt_jakob_disease_mri_004",
+              "finding_code": "finding:basal_ganglia_involvement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "basal_ganglia",
+                "laterality": "unknown"
+              },
+              "target": "deep_gray_matter",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "基底核病変を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:basal_ganglia_involvement",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "creutzfeldt_jakob_disease_mri_flair_flair_hyperintensity_01",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "FLAIRで皮質または基底核高信号を認める。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "creutzfeldt_jakob_disease_mri_flair_basal_ganglia_involvement_01",
+              "finding_code": "finding:basal_ganglia_involvement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "基底核や視床の高信号病変を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 28028861, 33762465, 28076012）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "creutzfeldt_jakob_disease_ct_001",
+          "creutzfeldt_jakob_disease_mri_002",
+          "creutzfeldt_jakob_disease_mri_003",
+          "creutzfeldt_jakob_disease_mri_004"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_28028861",
+          "pmid_33762465",
+          "pmid_28076012"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "creutzfeldt_jakob_disease_mri_dwi_dwi_hyperintensity_01",
+          "creutzfeldt_jakob_disease_mri_adc_adc_low_01",
+          "creutzfeldt_jakob_disease_mri_flair_flair_hyperintensity_01",
+          "creutzfeldt_jakob_disease_mri_flair_basal_ganglia_involvement_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_28028861",
+      "type": "journal_article",
+      "title": "Creutzfeldt-Jakob disease.",
+      "authors": [],
+      "journal": "Neuropathology : official journal of the Japanese Society of Neuropathology",
+      "year": "2017",
+      "pmid": "28028861",
+      "doi": "10.1111/neup.12355",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28028861/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_33762465",
+      "type": "journal_article",
+      "title": "[Creutzfeldt-Jakob Disease].",
+      "authors": [],
+      "journal": "No shinkei geka. Neurological surgery",
+      "year": "2021",
+      "pmid": "33762465",
+      "doi": "10.11477/mf.1436204406",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33762465/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_28076012",
+      "type": "journal_article",
+      "title": "Imaging of Creutzfeldt-Jakob Disease: Imaging Patterns and Their Differential Diagnosis.",
+      "authors": [],
+      "journal": "Radiographics : a review publication of the Radiological Society of North America, Inc",
+      "year": "2017",
+      "pmid": "28076012",
+      "doi": "10.1148/rg.2017160075",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28076012/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": [
+    {
+      "raw_finding_id": "creutzfeldt_jakob_disease_raw_keyword_basal_ganglia",
+      "modality_text": "MRI",
+      "acquisition_text": "",
+      "anatomy_text": "",
+      "target_text": "",
+      "finding_text": "キーワード/所見として \"basal ganglia\" を保持。",
+      "interpretation": "辞書対応済み構造化欄から漏れる可能性があるため、Phase1自由記載として保存。",
+      "source_ids": [
+        "public_raw_findings_audit_20260705"
+      ],
+      "mapping": {
+        "status": "unmapped",
+        "candidate_finding_code": "finding:basal_ganglia",
+        "candidate_acquisition_code": "",
+        "candidate_target": "",
+        "notes": "Added during raw_findings audit to preserve information that may be lost by dictionary-only structured fields."
+      },
+      "review_status": "needs_mapping"
+    }
+  ]
+}

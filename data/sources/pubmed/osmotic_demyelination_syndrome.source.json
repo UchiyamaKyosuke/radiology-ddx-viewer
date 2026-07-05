@@ -1,0 +1,53 @@
+{
+  "disease_id": "osmotic_demyelination_syndrome",
+  "disease_name": {
+    "ja": "浸透圧性脱髄症候群",
+    "en": "Osmotic demyelination syndrome"
+  },
+  "disease_aliases": {
+    "ja": [
+      "中心橋髄鞘崩壊症",
+      "ODS"
+    ],
+    "en": [
+      "ODS",
+      "Central pontine myelinolysis"
+    ]
+  },
+  "clinical": {
+    "overview": "急速な電解質補正などに関連する脱髄。橋中央や橋外病変に対称性T2/FLAIR高信号、DWI異常を示す。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 80,
+      "peak_decade": "成人",
+      "summary": "成人で重要。"
+    }
+  },
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "metabolic_demyelination"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

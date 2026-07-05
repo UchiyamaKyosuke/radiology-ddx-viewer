@@ -1,0 +1,38 @@
+{
+  "disease_id": "x_linked_adrenoleukodystrophy",
+  "disease_name": {
+    "ja": "X連鎖副腎白質ジストロフィー",
+    "en": "X-linked adrenoleukodystrophy"
+  },
+  "query": "X-linked adrenoleukodystrophy brain MRI imaging",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "34192790",
+      "title": "Imaging in X-Linked Adrenoleukodystrophy.",
+      "journal": "Neuropediatrics",
+      "year": "2022",
+      "doi": "10.1055/s-0041-1730937",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34192790/",
+      "abstract": ""
+    },
+    {
+      "pmid": "39383459",
+      "title": "Lentiviral Gene Therapy for Cerebral Adrenoleukodystrophy.",
+      "journal": "The New England journal of medicine",
+      "year": "2024",
+      "doi": "10.1056/NEJMoa2400442",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39383459/",
+      "abstract": ""
+    },
+    {
+      "pmid": "37907311",
+      "title": "X-linked cerebral adrenoleukodystrophy.",
+      "journal": "BMJ case reports",
+      "year": "2024",
+      "doi": "10.1136/bcr-2020-237905",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37907311/",
+      "abstract": ""
+    }
+  ]
+}

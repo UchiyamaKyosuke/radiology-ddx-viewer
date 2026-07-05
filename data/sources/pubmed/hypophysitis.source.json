@@ -1,0 +1,53 @@
+{
+  "disease_id": "hypophysitis",
+  "disease_name": {
+    "ja": "下垂体炎",
+    "en": "Hypophysitis"
+  },
+  "disease_aliases": {
+    "ja": [
+      "リンパ球性下垂体炎",
+      "免疫関連下垂体炎"
+    ],
+    "en": [
+      "Lymphocytic hypophysitis",
+      "Immune-related hypophysitis"
+    ]
+  },
+  "clinical": {
+    "overview": "下垂体・下垂体茎の炎症性疾患。下垂体腫大、均一造影、下垂体茎肥厚、後葉高信号消失などが手掛かり。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "female",
+      "predilection": "female_predominant",
+      "summary": "リンパ球性下垂体炎は女性に多い。"
+    },
+    "age": {
+      "typical_min": 20,
+      "typical_max": 70,
+      "peak_decade": "成人",
+      "summary": "成人で重要。"
+    }
+  },
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "pituitary_stalk_thickening"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

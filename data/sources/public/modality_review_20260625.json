@@ -1,0 +1,68 @@
+{
+  "source_packet_id": "public_modality_review_20260625",
+  "created_at": "2026-06-25T00:00:00+09:00",
+  "purpose": "PubMed以外の公開ソースを参照し、既存の脳疾患draftカードにCT/MRI各モダリティ別の見え方を補強する。",
+  "scope": {
+    "body_region": "brain",
+    "target_cards": "data/drafts 内の脳疾患draft",
+    "excluded_cards": [
+      "mucinous_cystadenoma"
+    ]
+  },
+  "sources": [
+    {
+      "source_id": "ncbi_bookshelf_brain_abscess_statpearls",
+      "type": "ncbi_bookshelf",
+      "title": "Brain Abscess - StatPearls - NCBI Bookshelf",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK441841/",
+      "relevance": "CT/MRI、リング状造影、DWI拡散制限、MRSなど、感染性リング状病変のモダリティ別整理に使用。"
+    },
+    {
+      "source_id": "ncbi_bookshelf_glioblastoma",
+      "type": "ncbi_bookshelf",
+      "title": "Glioblastoma - NCBI Bookshelf",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK470003/",
+      "relevance": "膠芽腫・高悪性度神経膠腫の概要、疫学、公開医学情報の確認に使用。画像所見は既存draftと公開レビュー知識を組み合わせて補強。"
+    },
+    {
+      "source_id": "ncbi_bookshelf_index",
+      "type": "ncbi_bookshelf",
+      "title": "NCBI Bookshelf",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "relevance": "StatPearls/NIH NLM系の公開医学情報の検索起点。"
+    },
+    {
+      "source_id": "nih_ninds_disorders_index",
+      "type": "nih_public_information",
+      "title": "National Institute of Neurological Disorders and Stroke - Disorders",
+      "url": "https://www.ninds.nih.gov/health-information/disorders",
+      "relevance": "脳血管障害、脱髄疾患、神経変性/代謝疾患の公開疾患情報の確認起点。"
+    },
+    {
+      "source_id": "medlineplus_index",
+      "type": "nih_public_information",
+      "title": "MedlinePlus",
+      "url": "https://medlineplus.gov/",
+      "relevance": "患者向けながらNIH/NLM由来の公開疾患情報の確認起点。"
+    },
+    {
+      "source_id": "cdc_index",
+      "type": "public_health_information",
+      "title": "Centers for Disease Control and Prevention",
+      "url": "https://www.cdc.gov/",
+      "relevance": "神経感染症・寄生虫症・真菌症関連の公開情報確認起点。"
+    },
+    {
+      "source_id": "pmc_index",
+      "type": "open_access_literature",
+      "title": "PubMed Central",
+      "url": "https://pmc.ncbi.nlm.nih.gov/",
+      "relevance": "PubMed検索結果ではなく、本文公開のopen-access reviewや症例レビューを確認する起点。"
+    }
+  ],
+  "limitations": [
+    "今回の補強はdraft段階であり、医師レビュー前提。",
+    "各疾患ごとの個別URL単位の完全なsource-to-claim対応は今後のレビュー時に強化する。",
+    "画像例の取得は行っていない。"
+  ]
+}

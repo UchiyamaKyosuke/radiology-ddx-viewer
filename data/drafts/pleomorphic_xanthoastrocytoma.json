@@ -1,0 +1,425 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "pleomorphic_xanthoastrocytoma",
+  "disease_name": {
+    "ja": "多形黄色星細胞腫",
+    "en": "Pleomorphic xanthoastrocytoma"
+  },
+  "disease_aliases": {
+    "ja": [
+      "PXA"
+    ],
+    "en": [
+      "PXA"
+    ]
+  },
+  "clinical": {
+    "overview": "若年者に多い表在性星細胞系腫瘍。側頭葉など皮質表在に嚢胞と造影壁在結節、髄膜接触を示す。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 5,
+      "typical_max": 35,
+      "peak_decade": "小児〜若年成人",
+      "summary": "若年者に多い。"
+    }
+  },
+  "keywords": [
+    "superficial",
+    "cyst with mural nodule"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "superficial_cystic_tumor"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "PXAはCTで表在性嚢胞性腫瘤や石灰化を確認することがある。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "pleomorphic_xanthoastrocytoma_ct_001",
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "temporal_lobe",
+                "laterality": "unknown"
+              },
+              "target": "cystic_component",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "嚢胞成分が低吸収として見える。",
+              "typicality": "common",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_hypoattenuation",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "pleomorphic_xanthoastrocytoma_ct_non_contrast_calcification_present_01",
+              "finding_code": "finding:calcification_present",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "石灰化を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは表在性皮質病変、嚢胞+造影壁在結節、髄膜接触/造影を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "pleomorphic_xanthoastrocytoma_mri_002",
+              "finding_code": "finding:cyst_with_enhancing_mural_nodule",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "temporal_lobe",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "嚢胞に接する造影壁在結節を伴う表在性腫瘤。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:cyst_with_enhancing_mural_nodule",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "pleomorphic_xanthoastrocytoma_mri_contrast_enhanced_t1wi_cyst_with_enhancing_mural_nodule_01",
+              "finding_code": "finding:cyst_with_enhancing_mural_nodule",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "嚢胞性腫瘤に造影壁在結節を伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "pleomorphic_xanthoastrocytoma_mri_contrast_enhanced_t1wi_enhancing_solid_component_01",
+              "finding_code": "finding:enhancing_solid_component",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "充実成分が造影される。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "pleomorphic_xanthoastrocytoma_mri_003",
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "temporal_lobe",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "嚢胞成分はT2高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:t2_hyperintensity",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "pleomorphic_xanthoastrocytoma_mri_004",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "temporal_lobe",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "周囲皮質〜皮質下にFLAIR高信号を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:flair_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "pleomorphic_xanthoastrocytoma_mri_flair_cortical_subcortical_lesion_01",
+              "finding_code": "finding:cortical_subcortical_lesion",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "表在性皮質〜皮質下腫瘤として見える。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 9190551, 40473546, 8293186）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "pleomorphic_xanthoastrocytoma_ct_001",
+          "pleomorphic_xanthoastrocytoma_mri_002",
+          "pleomorphic_xanthoastrocytoma_mri_003",
+          "pleomorphic_xanthoastrocytoma_mri_004"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_9190551",
+          "pmid_40473546",
+          "pmid_8293186"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "pleomorphic_xanthoastrocytoma_mri_flair_cortical_subcortical_lesion_01",
+          "pleomorphic_xanthoastrocytoma_mri_contrast_enhanced_t1wi_cyst_with_enhancing_mural_nodule_01",
+          "pleomorphic_xanthoastrocytoma_mri_contrast_enhanced_t1wi_enhancing_solid_component_01",
+          "pleomorphic_xanthoastrocytoma_ct_non_contrast_calcification_present_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_9190551",
+      "type": "journal_article",
+      "title": "[Pleomorphic xanthoastrocytoma].",
+      "authors": [],
+      "journal": "Orvosi hetilap",
+      "year": "1997",
+      "pmid": "9190551",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9190551/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_40473546",
+      "type": "journal_article",
+      "title": "MRI features of pleomorphic xanthoastrocytoma defined by DNA methylation profile.",
+      "authors": [],
+      "journal": "Revue neurologique",
+      "year": "2025",
+      "pmid": "40473546",
+      "doi": "10.1016/j.neurol.2025.04.009",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40473546/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_8293186",
+      "type": "journal_article",
+      "title": "Pleomorphic xanthoastrocytoma: the birth of a diagnosis and a concept.",
+      "authors": [],
+      "journal": "Brain pathology (Zurich, Switzerland)",
+      "year": "1994",
+      "pmid": "8293186",
+      "doi": "10.1111/j.1750-3639.1993.tb00753.x",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8293186/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": [
+    {
+      "raw_finding_id": "pleomorphic_xanthoastrocytoma_raw_keyword_cyst_with_mural_nodule",
+      "modality_text": "MRI",
+      "acquisition_text": "",
+      "anatomy_text": "",
+      "target_text": "",
+      "finding_text": "キーワード/所見として \"cyst with mural nodule\" を保持。",
+      "interpretation": "辞書対応済み構造化欄から漏れる可能性があるため、Phase1自由記載として保存。",
+      "source_ids": [
+        "public_raw_findings_audit_20260705"
+      ],
+      "mapping": {
+        "status": "unmapped",
+        "candidate_finding_code": "finding:cyst_with_mural_nodule",
+        "candidate_acquisition_code": "",
+        "candidate_target": "",
+        "notes": "Added during raw_findings audit to preserve information that may be lost by dictionary-only structured fields."
+      },
+      "review_status": "needs_mapping"
+    }
+  ]
+}

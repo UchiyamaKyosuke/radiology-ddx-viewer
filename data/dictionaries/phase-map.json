@@ -1,0 +1,18 @@
+{
+  "non_contrast": {
+    "label": { "ja": "単純CT", "en": "non-contrast CT" },
+    "synonyms": ["単純CT", "non-contrast", "unenhanced CT"]
+  },
+  "arterial": {
+    "label": { "ja": "動脈相", "en": "arterial phase" },
+    "synonyms": ["動脈相", "arterial", "arterial phase"]
+  },
+  "portal_venous": {
+    "label": { "ja": "門脈相", "en": "portal venous phase" },
+    "synonyms": ["門脈相", "portal venous", "portal phase"]
+  },
+  "delayed": {
+    "label": { "ja": "遅延相", "en": "delayed phase" },
+    "synonyms": ["遅延相", "delayed", "delayed phase"]
+  }
+}

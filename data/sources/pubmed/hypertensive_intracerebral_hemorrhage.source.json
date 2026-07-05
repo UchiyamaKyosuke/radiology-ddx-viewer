@@ -1,0 +1,51 @@
+{
+  "disease_id": "hypertensive_intracerebral_hemorrhage",
+  "disease_name": {
+    "ja": "高血圧性脳出血",
+    "en": "Hypertensive intracerebral hemorrhage"
+  },
+  "disease_aliases": {
+    "ja": [
+      "高血圧性脳内出血"
+    ],
+    "en": [
+      "Hypertensive ICH"
+    ]
+  },
+  "clinical": {
+    "overview": "高血圧性細動脈硬化に伴う脳内出血。被殻、視床、橋、小脳に好発し、急性期CT高吸収が基本。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 45,
+      "typical_max": 90,
+      "peak_decade": "中高年以降",
+      "summary": "中高年以降で多い。"
+    }
+  },
+  "frequency": {
+    "label": "common",
+    "prevalence_rank": 4,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "hypertensive",
+      "body_region": "brain",
+      "clinical_setting": "acute_intracerebral_hemorrhage"
+    },
+    "summary": "急性脳内出血では頻度の高い鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

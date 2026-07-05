@@ -1,0 +1,38 @@
+{
+  "disease_id": "canavan_disease",
+  "disease_name": {
+    "ja": "Canavan病",
+    "en": "Canavan disease"
+  },
+  "query": "Canavan disease MRI brain imaging",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "22411242",
+      "title": "Leukodystrophies.",
+      "journal": "Advances in experimental medicine and biology",
+      "year": "2012",
+      "doi": "10.1007/978-1-4614-0653-2_13",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22411242/",
+      "abstract": ""
+    },
+    {
+      "pmid": "2114773",
+      "title": "Canavan disease: CT and MR imaging of the brain.",
+      "journal": "AJNR. American journal of neuroradiology",
+      "year": "1990",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/2114773/",
+      "abstract": ""
+    },
+    {
+      "pmid": "28879937",
+      "title": "Canavan disease with typical brain MRI and MRS findings.",
+      "journal": "Neurology India",
+      "year": "2019",
+      "doi": "10.4103/neuroindia.NI_92_17",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28879937/",
+      "abstract": ""
+    }
+  ]
+}

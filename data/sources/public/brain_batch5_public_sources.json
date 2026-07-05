@@ -1,0 +1,31 @@
+{
+  "source_packet_id": "public_brain_batch5_20260628",
+  "created_at": "2026-06-28T09:55:00.185Z",
+  "purpose": "Phase1 broad brain disease draft expansion.",
+  "sources": [
+    {
+      "title": "NCBI Bookshelf",
+      "url": "https://www.ncbi.nlm.nih.gov/books/"
+    },
+    {
+      "title": "NINDS Disorders",
+      "url": "https://www.ninds.nih.gov/health-information/disorders"
+    },
+    {
+      "title": "MedlinePlus",
+      "url": "https://medlineplus.gov/"
+    },
+    {
+      "title": "CDC",
+      "url": "https://www.cdc.gov/"
+    },
+    {
+      "title": "PubMed Central open-access reviews",
+      "url": "https://pmc.ncbi.nlm.nih.gov/"
+    }
+  ],
+  "limitations": [
+    "Draft stage only; physician review is required before approval.",
+    "Disease-level source packets are intentionally broad and should be replaced by per-disease literature review over time."
+  ]
+}

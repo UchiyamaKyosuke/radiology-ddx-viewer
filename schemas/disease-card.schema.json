@@ -1,0 +1,320 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local/radiology-ddx/disease-card.schema.json",
+  "title": "Radiology DDX Disease Card v0.8",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "disease_id",
+    "disease_name",
+    "clinical",
+    "demographics",
+    "keywords",
+    "frequency",
+    "imaging",
+    "evidence",
+    "references",
+    "review",
+    "provenance",
+    "updated_at"
+  ],
+  "properties": {
+    "schema_version": { "const": "0.8" },
+    "disease_id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+    "disease_name": {
+      "type": "object",
+      "required": ["ja", "en"],
+      "properties": {
+        "ja": { "type": "string" },
+        "en": { "type": "string" }
+      }
+    },
+    "disease_aliases": {
+      "type": "object",
+      "properties": {
+        "ja": { "type": "array", "items": { "type": "string" } },
+        "en": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "clinical": {
+      "type": "object",
+      "required": ["overview", "treatment", "epidemiology"],
+      "properties": {
+        "overview": { "type": "string" },
+        "treatment": { "type": "string" },
+        "epidemiology": { "type": "string" }
+      }
+    },
+    "keywords": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Compact disease-level searchable keywords such as named imaging signs."
+    },
+    "demographics": {
+      "type": "object",
+      "required": ["sex", "age"],
+      "properties": {
+        "sex": {
+          "type": "object",
+          "required": ["applicable", "predominance", "predilection", "summary"],
+          "properties": {
+            "applicable": {
+              "type": "array",
+              "items": { "enum": ["female", "male", "any", "unknown"] }
+            },
+            "predominance": { "enum": ["female", "male", "none", "unknown"] },
+            "predilection": {
+              "enum": [
+                "female_only",
+                "female_predominant",
+                "no_sex_predilection",
+                "male_predominant",
+                "male_only",
+                "unknown"
+              ]
+            },
+            "summary": { "type": "string" }
+          }
+        },
+        "age": {
+          "type": "object",
+          "required": ["typical_min", "typical_max", "peak_decade", "summary"],
+          "properties": {
+            "typical_min": { "type": ["integer", "null"], "minimum": 0, "maximum": 120 },
+            "typical_max": { "type": ["integer", "null"], "minimum": 0, "maximum": 120 },
+            "peak_decade": { "type": "string" },
+            "summary": { "type": "string" }
+          }
+        }
+      }
+    },
+    "frequency": {
+      "type": "object",
+      "required": ["label", "prevalence_rank", "basis", "evidence_level", "context", "summary"],
+      "properties": {
+        "label": { "type": "string" },
+        "prevalence_rank": { "type": "integer", "minimum": 0, "maximum": 5 },
+        "basis": { "type": "string" },
+        "evidence_level": { "type": "string" },
+        "context": { "type": "object" },
+        "summary": { "type": "string" }
+      }
+    },
+    "imaging": {
+      "type": "object",
+      "required": ["ct", "mri"],
+      "properties": {
+        "ct": { "$ref": "#/$defs/ctImaging" },
+        "mri": { "$ref": "#/$defs/mriImaging" }
+      }
+    },
+    "raw_findings": {
+      "type": "array",
+      "description": "Free-text imaging facts preserved during Phase 1. These entries are not constrained by dictionaries and are used to review future dictionary additions or mapping fixes.",
+      "items": { "$ref": "#/$defs/rawFinding" }
+    },
+    "evidence": {
+      "type": "object",
+      "required": ["summary", "claim_map"],
+      "properties": {
+        "summary": { "type": "string" },
+        "claim_map": { "type": "array", "items": { "type": "object" } }
+      }
+    },
+    "image_examples": { "type": "array", "items": { "type": "object" } },
+    "references": { "type": "array", "items": { "type": "object" } },
+    "review": {
+      "type": "object",
+      "required": ["status", "confidence"],
+      "properties": {
+        "status": { "enum": ["draft", "reviewed", "approved", "rejected"] },
+        "reviewed_by": { "type": "string" },
+        "reviewed_at": { "type": "string" },
+        "confidence": { "enum": ["low", "medium", "high"] },
+        "notes": { "type": "string" }
+      }
+    },
+    "curation": { "type": "object" },
+    "provenance": { "type": "object" },
+    "updated_at": { "type": "string" },
+    "content_hash": { "type": "string" }
+  },
+  "$defs": {
+    "ctImaging": {
+      "type": "object",
+      "required": ["summary", "findings_by_phase"],
+      "properties": {
+        "summary": { "type": "string" },
+        "findings_by_phase": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["phase", "findings"],
+            "properties": {
+              "phase": {
+                "type": "object",
+                "required": ["code"],
+                "properties": { "code": { "type": "string" } }
+              },
+              "findings": { "type": "array", "items": { "$ref": "#/$defs/finding" } }
+            }
+          }
+        }
+      }
+    },
+    "mriImaging": {
+      "type": "object",
+      "required": ["summary", "findings_by_sequence"],
+      "properties": {
+        "summary": { "type": "string" },
+        "findings_by_sequence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["sequence", "findings"],
+            "properties": {
+              "sequence": {
+                "type": "object",
+                "required": ["code"],
+                "properties": { "code": { "type": "string" } }
+              },
+              "findings": { "type": "array", "items": { "$ref": "#/$defs/finding" } }
+            }
+          }
+        }
+      }
+    },
+    "finding": {
+      "type": "object",
+      "required": [
+        "finding_id",
+        "finding_code",
+        "modality",
+        "acquisition",
+        "anatomy",
+        "target",
+        "modifiers",
+        "keywords",
+        "finding_text",
+        "typicality",
+        "diagnostic_weight",
+        "review_status"
+      ],
+      "properties": {
+        "finding_id": { "type": "string" },
+        "finding_code": { "type": "string", "pattern": "^finding:" },
+        "modality": { "enum": ["CT", "MRI"] },
+        "acquisition": {
+          "type": "object",
+          "required": ["type", "code"],
+          "properties": {
+            "type": { "enum": ["phase", "sequence"] },
+            "code": { "type": "string" }
+          }
+        },
+        "anatomy": {
+          "type": "object",
+          "required": ["body_region", "organ", "subregion", "laterality"],
+          "properties": {
+            "body_region": { "type": "string" },
+            "organ": { "type": "string" },
+            "subregion": { "type": "string" },
+            "laterality": { "type": "string" }
+          }
+        },
+        "target": { "type": "string" },
+        "modifiers": { "type": "object" },
+        "keywords": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Finding-level searchable keywords such as dural tail sign."
+        },
+        "finding_text": { "type": "string" },
+        "typicality": { "enum": ["typical", "common", "uncommon", "variable", "atypical"] },
+        "diagnostic_weight": { "type": "number", "minimum": -5, "maximum": 5 },
+        "contextual_importance": { "type": "object" },
+        "clinical_significance": { "type": "object" },
+        "review_status": { "enum": ["draft", "needs_mapping", "reviewed", "approved", "rejected"] },
+        "mapping": { "type": "object" },
+        "notes": { "type": "string" },
+        "image_example_ids": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "rawFinding": {
+      "type": "object",
+      "required": ["raw_finding_id", "finding_text"],
+      "properties": {
+        "raw_finding_id": {
+          "type": "string",
+          "description": "Stable local identifier within the disease card, e.g. focal_cortical_dysplasia_raw_001."
+        },
+        "modality_text": {
+          "type": "string",
+          "description": "Free-text modality such as MRI, CT, perfusion MRI, PET, or ultrasound if useful."
+        },
+        "acquisition_text": {
+          "type": "string",
+          "description": "Free-text acquisition/sequence/phase as written in the source, without dictionary constraints."
+        },
+        "anatomy_text": {
+          "type": "string",
+          "description": "Free-text anatomy/location as written in the source."
+        },
+        "target_text": {
+          "type": "string",
+          "description": "Free-text target/component such as lesion margin, cortex, stalk, nidus, or named sign target."
+        },
+        "finding_text": {
+          "type": "string",
+          "description": "The raw imaging observation, sign, or descriptive statement to preserve."
+        },
+        "interpretation": {
+          "type": "string",
+          "description": "Optional diagnostic implication or differential point."
+        },
+        "source_ids": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Reference source_ids supporting this raw finding."
+        },
+        "mapping": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "enum": ["unmapped", "candidate", "mapped", "deferred", "rejected"],
+              "description": "Mapping workflow state for the raw finding."
+            },
+            "structured_finding_ids": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Existing structured finding_ids that already cover this raw finding."
+            },
+            "candidate_finding_code": {
+              "type": "string",
+              "description": "Suggested finding concept id, e.g. finding:transmantle_sign."
+            },
+            "candidate_acquisition_code": {
+              "type": "string",
+              "description": "Suggested sequence or phase dictionary code."
+            },
+            "candidate_anatomy": {
+              "type": "object",
+              "properties": {
+                "body_region": { "type": "string" },
+                "organ": { "type": "string" },
+                "subregion": { "type": "string" },
+                "laterality": { "type": "string" }
+              }
+            },
+            "candidate_target": { "type": "string" },
+            "notes": { "type": "string" }
+          }
+        },
+        "review_status": {
+          "enum": ["draft", "needs_mapping", "reviewed", "approved", "rejected"],
+          "description": "Review state for this free-text finding."
+        }
+      }
+    }
+  }
+}

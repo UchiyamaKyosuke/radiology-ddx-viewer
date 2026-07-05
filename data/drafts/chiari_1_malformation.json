@@ -1,0 +1,367 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "chiari_1_malformation",
+  "disease_name": {
+    "ja": "Chiari I奇形",
+    "en": "Chiari I malformation"
+  },
+  "disease_aliases": {
+    "ja": [
+      "キアリI型奇形"
+    ],
+    "en": [
+      "Chiari type I malformation"
+    ]
+  },
+  "clinical": {
+    "overview": "小脳扁桃が大後頭孔以下へ下垂する先天性/発達性異常。脊髄空洞症や後頭蓋窩狭小を評価する。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 5,
+      "typical_max": 50,
+      "peak_decade": "小児〜成人",
+      "summary": "小児から成人で見つかる。"
+    }
+  },
+  "keywords": [
+    "tonsillar ectopia",
+    "syringomyelia",
+    "foramen magnum"
+  ],
+  "frequency": {
+    "label": "uncommon",
+    "prevalence_rank": 2,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "tonsillar_ectopia"
+    },
+    "summary": "該当する画像パターンで重要な鑑別。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "Chiari I奇形はCTで後頭蓋窩骨構造や水頭症を確認できるが、MRIが中心。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "chiari_1_malformation_ct_001",
+              "finding_code": "finding:ct_isoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "posterior_fossa",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "CT単独では評価が限られる。",
+              "typicality": "common",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_isoattenuation",
+                "alternatives": []
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIでは小脳扁桃下垂、頭蓋頸椎移行部狭小化、脊髄空洞症、水頭症を評価する。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "chiari_1_malformation_mri_002",
+              "finding_code": "finding:mass_effect",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "posterior_fossa",
+                "laterality": "unknown"
+              },
+              "target": "developmental_anomaly",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "小脳扁桃下垂により大後頭孔部の髄液腔が狭小化する。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:mass_effect",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "chiari_1_malformation_mri_t2wi_hydrocephalus_01",
+              "finding_code": "finding:hydrocephalus",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "水頭症を合併することがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "chiari_1_malformation_mri_t2wi_csf_like_signal_01",
+              "finding_code": "finding:csf_like_signal",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "頭蓋頸椎移行部で髄液腔狭小化を評価する。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            },
+            {
+              "finding_id": "chiari_1_malformation_mri_t2wi_t2_hyperintensity_01",
+              "finding_code": "finding:t2_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "脊髄空洞症がT2高信号腔として見えることがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "CISS_FIESTA"
+          },
+          "findings": [
+            {
+              "finding_id": "chiari_1_malformation_mri_003",
+              "finding_code": "finding:heavily_t2_fluid_signal",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "CISS_FIESTA"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "posterior_fossa",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "大後頭孔部の髄液腔と圧排を評価する。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:heavily_t2_fluid_signal",
+                "alternatives": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 36424066, 31473667, 1874153）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "chiari_1_malformation_ct_001",
+          "chiari_1_malformation_mri_002",
+          "chiari_1_malformation_mri_003"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_36424066",
+          "pmid_31473667",
+          "pmid_1874153"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "chiari_1_malformation_mri_t2wi_hydrocephalus_01",
+          "chiari_1_malformation_mri_t2wi_csf_like_signal_01",
+          "chiari_1_malformation_mri_t2wi_t2_hyperintensity_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_36424066",
+      "type": "journal_article",
+      "title": "Imaging in Chiari I Malformation.",
+      "authors": [],
+      "journal": "Neurosurgery clinics of North America",
+      "year": "2022",
+      "pmid": "36424066",
+      "doi": "10.1016/j.nec.2022.08.006",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36424066/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_31473667",
+      "type": "journal_article",
+      "title": "The Chiari I malformation.",
+      "authors": [],
+      "journal": "Journal of neurosurgery. Pediatrics",
+      "year": "2020",
+      "pmid": "31473667",
+      "doi": "10.3171/2019.5.PEDS18382",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31473667/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_1874153",
+      "type": "journal_article",
+      "title": "The Chiari-I malformation.",
+      "authors": [],
+      "journal": "Ear, nose, & throat journal",
+      "year": "1991",
+      "pmid": "1874153",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1874153/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": [
+    {
+      "raw_finding_id": "chiari_1_malformation_raw_keyword_syringomyelia",
+      "modality_text": "MRI",
+      "acquisition_text": "",
+      "anatomy_text": "",
+      "target_text": "",
+      "finding_text": "キーワード/所見として \"syringomyelia\" を保持。",
+      "interpretation": "辞書対応済み構造化欄から漏れる可能性があるため、Phase1自由記載として保存。",
+      "source_ids": [
+        "public_raw_findings_audit_20260705"
+      ],
+      "mapping": {
+        "status": "unmapped",
+        "candidate_finding_code": "finding:syringomyelia",
+        "candidate_acquisition_code": "",
+        "candidate_target": "",
+        "notes": "Added during raw_findings audit to preserve information that may be lost by dictionary-only structured fields."
+      },
+      "review_status": "needs_mapping"
+    }
+  ]
+}

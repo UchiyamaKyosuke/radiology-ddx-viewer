@@ -1,0 +1,2932 @@
+{
+  "finding:t2_hypointensity": {
+    "canonical_label": {
+      "ja": "T2低信号",
+      "en": "T2 hypointensity"
+    },
+    "feature": "signal_intensity",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "T2WI"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {
+      "signal": "hypointense"
+    },
+    "synonyms": {
+      "ja": [
+        "T2低信号",
+        "T2強調像低信号",
+        "T2WI低信号",
+        "T2で低信号",
+        "T2で暗い"
+      ],
+      "en": [
+        "T2 hypointensity",
+        "T2 hypointense",
+        "low signal intensity on T2-weighted imaging",
+        "T2 low signal"
+      ]
+    },
+    "tokens": [
+      "t2",
+      "t2wi",
+      "低信号",
+      "hypointense",
+      "low signal"
+    ],
+    "opposites": [
+      "finding:t2_hyperintensity",
+      "finding:t2_mild_hyperintensity"
+    ]
+  },
+  "finding:t2_mild_hypointensity": {
+    "canonical_label": {
+      "ja": "T2軽度低信号",
+      "en": "mild T2 hypointensity"
+    },
+    "feature": "signal_intensity",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "T2WI"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {
+      "signal": "hypointense",
+      "degree": "mild"
+    },
+    "synonyms": {
+      "ja": [
+        "T2軽度低信号",
+        "T2やや低信号",
+        "T2淡い低信号"
+      ],
+      "en": [
+        "mild T2 hypointensity",
+        "slightly T2 hypointense"
+      ]
+    },
+    "tokens": [
+      "t2",
+      "軽度低信号",
+      "mild hypointense"
+    ],
+    "opposites": [
+      "finding:t2_hyperintensity"
+    ]
+  },
+  "finding:t2_hyperintensity": {
+    "canonical_label": {
+      "ja": "T2高信号",
+      "en": "T2 hyperintensity"
+    },
+    "feature": "signal_intensity",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "T2WI"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {
+      "signal": "hyperintense"
+    },
+    "synonyms": {
+      "ja": [
+        "T2高信号",
+        "T2強調像高信号",
+        "T2WI高信号",
+        "T2で高信号",
+        "T2で明るい"
+      ],
+      "en": [
+        "T2 hyperintensity",
+        "T2 hyperintense",
+        "high signal intensity on T2-weighted imaging",
+        "T2 high signal"
+      ]
+    },
+    "tokens": [
+      "t2",
+      "t2wi",
+      "高信号",
+      "hyperintense",
+      "high signal"
+    ],
+    "opposites": [
+      "finding:t2_hypointensity",
+      "finding:t2_mild_hypointensity"
+    ]
+  },
+  "finding:t2_mild_hyperintensity": {
+    "canonical_label": {
+      "ja": "T2軽度高信号",
+      "en": "mild T2 hyperintensity"
+    },
+    "feature": "signal_intensity",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "T2WI"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {
+      "signal": "hyperintense",
+      "degree": "mild"
+    },
+    "synonyms": {
+      "ja": [
+        "T2軽度高信号",
+        "T2やや高信号",
+        "T2淡い高信号"
+      ],
+      "en": [
+        "mild T2 hyperintensity",
+        "slightly T2 hyperintense"
+      ]
+    },
+    "tokens": [
+      "t2",
+      "軽度高信号",
+      "mild hyperintense"
+    ],
+    "opposites": [
+      "finding:t2_hypointensity"
+    ]
+  },
+  "finding:t2_isointensity": {
+    "canonical_label": {
+      "ja": "T2等信号",
+      "en": "T2 isointensity"
+    },
+    "feature": "signal_intensity",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "T2WI"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {
+      "signal": "isointense"
+    },
+    "synonyms": {
+      "ja": [
+        "T2等信号",
+        "T2WI等信号",
+        "T2で等信号"
+      ],
+      "en": [
+        "T2 isointensity",
+        "T2 isointense"
+      ]
+    },
+    "tokens": [
+      "t2",
+      "等信号",
+      "isointense"
+    ]
+  },
+  "finding:t1_hypointensity": {
+    "canonical_label": {
+      "ja": "T1低信号",
+      "en": "T1 hypointensity"
+    },
+    "feature": "signal_intensity",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "T1WI"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {
+      "signal": "hypointense"
+    },
+    "synonyms": {
+      "ja": [
+        "T1低信号",
+        "T1WI低信号",
+        "T1で低信号"
+      ],
+      "en": [
+        "T1 hypointensity",
+        "T1 hypointense"
+      ]
+    },
+    "tokens": [
+      "t1",
+      "低信号",
+      "hypointense"
+    ],
+    "opposites": [
+      "finding:t1_hyperintensity",
+      "finding:t1_mild_hyperintensity"
+    ]
+  },
+  "finding:t1_mild_hypointensity": {
+    "canonical_label": {
+      "ja": "T1軽度低信号",
+      "en": "mild T1 hypointensity"
+    },
+    "feature": "signal_intensity",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "T1WI"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {
+      "signal": "hypointense",
+      "degree": "mild"
+    },
+    "synonyms": {
+      "ja": [
+        "T1軽度低信号",
+        "T1やや低信号",
+        "T1淡い低信号"
+      ],
+      "en": [
+        "mild T1 hypointensity",
+        "slightly T1 hypointense"
+      ]
+    },
+    "tokens": [
+      "t1",
+      "軽度低信号",
+      "mild hypointense"
+    ],
+    "opposites": [
+      "finding:t1_hyperintensity"
+    ]
+  },
+  "finding:t1_mild_hyperintensity": {
+    "canonical_label": {
+      "ja": "T1軽度高信号",
+      "en": "mild T1 hyperintensity"
+    },
+    "feature": "signal_intensity",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "T1WI"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {
+      "signal": "hyperintense",
+      "degree": "mild"
+    },
+    "synonyms": {
+      "ja": [
+        "T1軽度高信号",
+        "T1やや高信号",
+        "T1淡い高信号"
+      ],
+      "en": [
+        "mild T1 hyperintensity",
+        "slightly T1 hyperintense"
+      ]
+    },
+    "tokens": [
+      "t1",
+      "軽度高信号",
+      "mild hyperintense"
+    ],
+    "opposites": [
+      "finding:t1_hypointensity"
+    ]
+  },
+  "finding:t1_isointensity": {
+    "canonical_label": {
+      "ja": "T1等信号",
+      "en": "T1 isointensity"
+    },
+    "feature": "signal_intensity",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "T1WI"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {
+      "signal": "isointense"
+    },
+    "synonyms": {
+      "ja": [
+        "T1等信号",
+        "T1WI等信号",
+        "T1で等信号"
+      ],
+      "en": [
+        "T1 isointensity",
+        "T1 isointense"
+      ]
+    },
+    "tokens": [
+      "t1",
+      "等信号",
+      "isointense"
+    ]
+  },
+  "finding:diffusion_restriction_absent": {
+    "canonical_label": {
+      "ja": "拡散制限なし",
+      "en": "Absent diffusion restriction"
+    },
+    "feature": "diffusion_restriction",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "DWI",
+      "ADC"
+    ],
+    "default_polarity": "absent",
+    "default_modifiers": {
+      "degree": "none"
+    },
+    "synonyms": {
+      "ja": [
+        "拡散制限なし",
+        "拡散制限を認めない",
+        "DWI高信号なし"
+      ],
+      "en": [
+        "no diffusion restriction",
+        "absence of restricted diffusion",
+        "restricted diffusion absent"
+      ]
+    },
+    "tokens": [
+      "dwi",
+      "adc",
+      "拡散制限なし",
+      "no diffusion restriction"
+    ],
+    "opposites": [
+      "finding:diffusion_restriction_present",
+      "finding:dwi_hyperintensity",
+      "finding:adc_low",
+      "finding:central_diffusion_restriction",
+      "finding:vascular_territory_restricted_diffusion"
+    ],
+    "relation_group": "diffusion_restriction",
+    "relation_state": "not_restricted",
+    "related_equivalents": [
+      "finding:adc_high",
+      "finding:adc_iso",
+      "finding:dwi_isointensity"
+    ]
+  },
+  "finding:bridging_vessel_sign": {
+    "canonical_label": {
+      "ja": "bridging vessel sign",
+      "en": "bridging vessel sign"
+    },
+    "feature": "vascular_connection",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "T2WI",
+      "contrast_enhanced_T1WI",
+      "portal_venous"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "bridging vessel sign",
+        "子宮との連続血管",
+        "架橋血管"
+      ],
+      "en": [
+        "bridging vessel sign",
+        "bridging vascular sign"
+      ]
+    },
+    "tokens": [
+      "bridging vessel",
+      "架橋血管",
+      "子宮との連続"
+    ]
+  },
+  "finding:ovarian_origin": {
+    "canonical_label": {
+      "ja": "卵巣由来",
+      "en": "ovarian origin"
+    },
+    "feature": "organ_of_origin",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "T2WI",
+      "contrast_enhanced_T1WI",
+      "portal_venous"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "卵巣由来",
+        "卵巣と連続",
+        "卵巣腫瘤"
+      ],
+      "en": [
+        "ovarian origin",
+        "arising from the ovary"
+      ]
+    },
+    "tokens": [
+      "卵巣由来",
+      "ovarian origin"
+    ]
+  },
+  "finding:mild_enhancement": {
+    "canonical_label": {
+      "ja": "軽度造影効果",
+      "en": "mild enhancement"
+    },
+    "feature": "enhancement",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "contrast_enhanced_T1WI",
+      "portal_venous",
+      "delayed"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "軽度造影効果",
+        "軽度増強",
+        "弱い造影効果"
+      ],
+      "en": [
+        "mild enhancement",
+        "weak enhancement"
+      ]
+    },
+    "tokens": [
+      "造影",
+      "軽度造影",
+      "mild enhancement"
+    ]
+  },
+  "finding:t1_hyperintensity": {
+    "canonical_label": {
+      "ja": "T1高信号",
+      "en": "T1 hyperintensity"
+    },
+    "feature": "signal_intensity",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "T1WI"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {
+      "signal": "hyperintense"
+    },
+    "synonyms": {
+      "ja": [
+        "T1高信号",
+        "T1強調像高信号",
+        "T1WI高信号",
+        "T1で高信号"
+      ],
+      "en": [
+        "T1 hyperintensity",
+        "T1 hyperintense",
+        "high signal intensity on T1-weighted imaging"
+      ]
+    },
+    "tokens": [
+      "t1",
+      "t1wi",
+      "高信号",
+      "hyperintense"
+    ],
+    "opposites": [
+      "finding:t1_hypointensity",
+      "finding:t1_mild_hypointensity"
+    ]
+  },
+  "finding:adc_low": {
+    "canonical_label": {
+      "ja": "ADC低下",
+      "en": "low ADC"
+    },
+    "feature": "diffusion_restriction",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "ADC"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "ADC低下",
+        "ADC低値",
+        "ADC map低信号"
+      ],
+      "en": [
+        "low ADC",
+        "decreased ADC"
+      ]
+    },
+    "tokens": [
+      "adc",
+      "低下",
+      "low adc"
+    ],
+    "relation_group": "diffusion_restriction",
+    "relation_state": "restricted",
+    "related_equivalents": [
+      "finding:diffusion_restriction_present",
+      "finding:dwi_hyperintensity",
+      "finding:central_diffusion_restriction",
+      "finding:vascular_territory_restricted_diffusion"
+    ],
+    "opposites": [
+      "finding:diffusion_restriction_absent",
+      "finding:adc_high",
+      "finding:adc_iso",
+      "finding:dwi_isointensity"
+    ]
+  },
+  "finding:adc_high": {
+    "canonical_label": {
+      "ja": "ADC高値",
+      "en": "high ADC"
+    },
+    "feature": "diffusion_restriction",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "ADC"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "ADC高値",
+        "ADC上昇",
+        "ADC map高信号"
+      ],
+      "en": [
+        "high ADC",
+        "increased ADC"
+      ]
+    },
+    "tokens": [
+      "adc",
+      "高値",
+      "high adc"
+    ],
+    "relation_group": "diffusion_restriction",
+    "relation_state": "not_restricted",
+    "related_equivalents": [
+      "finding:diffusion_restriction_absent",
+      "finding:adc_iso",
+      "finding:dwi_isointensity"
+    ],
+    "opposites": [
+      "finding:diffusion_restriction_present",
+      "finding:dwi_hyperintensity",
+      "finding:adc_low",
+      "finding:central_diffusion_restriction",
+      "finding:vascular_territory_restricted_diffusion"
+    ]
+  },
+  "finding:adc_iso": {
+    "canonical_label": {
+      "ja": "ADC等信号",
+      "en": "ADC isointensity"
+    },
+    "feature": "diffusion_restriction",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "ADC"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "ADC等信号",
+        "ADC同程度"
+      ],
+      "en": [
+        "ADC isointensity",
+        "similar ADC"
+      ]
+    },
+    "tokens": [
+      "adc",
+      "等信号",
+      "similar adc"
+    ],
+    "relation_group": "diffusion_restriction",
+    "relation_state": "not_restricted",
+    "related_equivalents": [
+      "finding:diffusion_restriction_absent",
+      "finding:adc_high",
+      "finding:dwi_isointensity"
+    ],
+    "opposites": [
+      "finding:diffusion_restriction_present",
+      "finding:dwi_hyperintensity",
+      "finding:adc_low",
+      "finding:central_diffusion_restriction",
+      "finding:vascular_territory_restricted_diffusion"
+    ]
+  },
+  "finding:dwi_hyperintensity": {
+    "canonical_label": {
+      "ja": "DWI高信号",
+      "en": "DWI hyperintensity"
+    },
+    "feature": "diffusion_restriction",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "DWI"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "DWI高信号",
+        "拡散強調像高信号"
+      ],
+      "en": [
+        "DWI hyperintensity",
+        "high signal on DWI"
+      ]
+    },
+    "tokens": [
+      "dwi",
+      "高信号",
+      "high signal on dwi"
+    ],
+    "relation_group": "diffusion_restriction",
+    "relation_state": "restricted",
+    "related_equivalents": [
+      "finding:diffusion_restriction_present",
+      "finding:adc_low",
+      "finding:central_diffusion_restriction",
+      "finding:vascular_territory_restricted_diffusion"
+    ],
+    "opposites": [
+      "finding:diffusion_restriction_absent",
+      "finding:adc_high",
+      "finding:adc_iso",
+      "finding:dwi_isointensity"
+    ]
+  },
+  "finding:dwi_isointensity": {
+    "canonical_label": {
+      "ja": "DWI等信号",
+      "en": "DWI isointensity"
+    },
+    "feature": "diffusion_restriction",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "DWI"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "DWI等信号",
+        "拡散強調像等信号"
+      ],
+      "en": [
+        "DWI isointensity"
+      ]
+    },
+    "tokens": [
+      "dwi",
+      "等信号",
+      "isointense"
+    ],
+    "relation_group": "diffusion_restriction",
+    "relation_state": "not_restricted",
+    "related_equivalents": [
+      "finding:diffusion_restriction_absent",
+      "finding:adc_high",
+      "finding:adc_iso"
+    ],
+    "opposites": [
+      "finding:diffusion_restriction_present",
+      "finding:dwi_hyperintensity",
+      "finding:adc_low",
+      "finding:central_diffusion_restriction",
+      "finding:vascular_territory_restricted_diffusion"
+    ]
+  },
+  "finding:ct_hypoattenuation": {
+    "canonical_label": {
+      "ja": "CT低吸収",
+      "en": "CT hypoattenuation"
+    },
+    "feature": "attenuation",
+    "allowed_modalities": [
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "non_contrast",
+      "portal_venous"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "低吸収",
+        "CT低吸収",
+        "低濃度"
+      ],
+      "en": [
+        "hypoattenuation",
+        "low attenuation",
+        "hypodense"
+      ]
+    },
+    "tokens": [
+      "ct",
+      "低吸収",
+      "hypoattenuation"
+    ],
+    "opposites": [
+      "finding:ct_hyperattenuation",
+      "finding:ct_mild_hyperattenuation"
+    ]
+  },
+  "finding:ct_mild_hypoattenuation": {
+    "canonical_label": {
+      "ja": "CT軽度低吸収",
+      "en": "mild CT hypoattenuation"
+    },
+    "feature": "attenuation",
+    "allowed_modalities": [
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "non_contrast",
+      "portal_venous"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "軽度低吸収",
+        "CT軽度低吸収",
+        "やや低吸収",
+        "軽度低濃度"
+      ],
+      "en": [
+        "mild hypoattenuation",
+        "slightly hypodense"
+      ]
+    },
+    "tokens": [
+      "ct",
+      "軽度低吸収",
+      "mild hypoattenuation"
+    ],
+    "opposites": [
+      "finding:ct_hyperattenuation"
+    ]
+  },
+  "finding:ct_isoattenuation": {
+    "canonical_label": {
+      "ja": "CT等吸収",
+      "en": "CT isoattenuation"
+    },
+    "feature": "attenuation",
+    "allowed_modalities": [
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "non_contrast",
+      "portal_venous"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "等吸収",
+        "CT等吸収",
+        "等濃度"
+      ],
+      "en": [
+        "isoattenuation",
+        "isoattenuating",
+        "isodense"
+      ]
+    },
+    "tokens": [
+      "ct",
+      "等吸収",
+      "isoattenuation"
+    ]
+  },
+  "finding:ct_mild_hyperattenuation": {
+    "canonical_label": {
+      "ja": "CT軽度高吸収",
+      "en": "mild CT hyperattenuation"
+    },
+    "feature": "attenuation",
+    "allowed_modalities": [
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "non_contrast",
+      "portal_venous"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "軽度高吸収",
+        "CT軽度高吸収",
+        "やや高吸収"
+      ],
+      "en": [
+        "mild hyperattenuation",
+        "slightly hyperdense"
+      ]
+    },
+    "tokens": [
+      "ct",
+      "軽度高吸収",
+      "mild hyperattenuation"
+    ],
+    "opposites": [
+      "finding:ct_hypoattenuation"
+    ]
+  },
+  "finding:ct_hyperattenuation": {
+    "canonical_label": {
+      "ja": "CT高吸収",
+      "en": "CT hyperattenuation"
+    },
+    "feature": "attenuation",
+    "allowed_modalities": [
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "non_contrast",
+      "portal_venous"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "高吸収",
+        "CT高吸収",
+        "高濃度"
+      ],
+      "en": [
+        "hyperattenuation",
+        "high attenuation",
+        "hyperdense"
+      ]
+    },
+    "tokens": [
+      "ct",
+      "高吸収",
+      "hyperattenuation"
+    ],
+    "opposites": [
+      "finding:ct_hypoattenuation",
+      "finding:ct_mild_hypoattenuation"
+    ]
+  },
+  "finding:ct_fat_attenuation": {
+    "canonical_label": {
+      "ja": "脂肪吸収値",
+      "en": "fat attenuation"
+    },
+    "feature": "attenuation",
+    "allowed_modalities": [
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "non_contrast"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "脂肪吸収値",
+        "脂肪濃度",
+        "CTで脂肪"
+      ],
+      "en": [
+        "fat attenuation",
+        "fat density"
+      ]
+    },
+    "tokens": [
+      "ct",
+      "脂肪",
+      "fat attenuation"
+    ]
+  },
+  "finding:calcification_present": {
+    "canonical_label": {
+      "ja": "石灰化あり",
+      "en": "calcification"
+    },
+    "feature": "calcification",
+    "allowed_modalities": [
+      "CT",
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "non_contrast",
+      "T2WI"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "石灰化",
+        "石灰化あり",
+        "粗大石灰化"
+      ],
+      "en": [
+        "calcification",
+        "calcified"
+      ]
+    },
+    "tokens": [
+      "石灰化",
+      "calcification"
+    ]
+  },
+  "finding:fat_present": {
+    "canonical_label": {
+      "ja": "脂肪成分あり",
+      "en": "fat-containing lesion"
+    },
+    "feature": "fat",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "T1WI",
+      "non_contrast"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "脂肪あり",
+        "脂肪成分",
+        "脂肪含有",
+        "脂肪抑制で低下"
+      ],
+      "en": [
+        "fat-containing lesion",
+        "macroscopic fat",
+        "fat component"
+      ]
+    },
+    "tokens": [
+      "脂肪",
+      "fat",
+      "fat-containing"
+    ]
+  },
+  "finding:diffusion_restriction_present": {
+    "canonical_label": {
+      "ja": "拡散制限あり",
+      "en": "restricted diffusion"
+    },
+    "feature": "diffusion_restriction",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "DWI",
+      "ADC"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "拡散制限あり",
+        "拡散制限を認める",
+        "DWI高信号",
+        "ADC低下"
+      ],
+      "en": [
+        "restricted diffusion",
+        "diffusion restriction",
+        "high signal on DWI",
+        "low ADC"
+      ]
+    },
+    "tokens": [
+      "dwi",
+      "adc",
+      "拡散制限",
+      "restricted diffusion"
+    ],
+    "opposites": [
+      "finding:diffusion_restriction_absent",
+      "finding:adc_high",
+      "finding:adc_iso",
+      "finding:dwi_isointensity"
+    ],
+    "relation_group": "diffusion_restriction",
+    "relation_state": "restricted",
+    "related_equivalents": [
+      "finding:dwi_hyperintensity",
+      "finding:adc_low",
+      "finding:central_diffusion_restriction",
+      "finding:vascular_territory_restricted_diffusion"
+    ]
+  },
+  "finding:multilocular_cystic_mass": {
+    "canonical_label": {
+      "ja": "多房性嚢胞性腫瘤",
+      "en": "multilocular cystic mass"
+    },
+    "feature": "morphology",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "T2WI",
+      "portal_venous"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "多房性嚢胞",
+        "多房性嚢胞性腫瘤",
+        "多房性腫瘤"
+      ],
+      "en": [
+        "multilocular cystic mass",
+        "multiloculated cystic mass"
+      ]
+    },
+    "tokens": [
+      "多房性",
+      "嚢胞",
+      "multilocular",
+      "cystic"
+    ]
+  },
+  "finding:papillary_projection": {
+    "canonical_label": {
+      "ja": "乳頭状充実成分",
+      "en": "papillary projection"
+    },
+    "feature": "mural_nodule",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "T2WI",
+      "contrast_enhanced_T1WI",
+      "portal_venous"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "乳頭状充実成分",
+        "壁在結節",
+        "乳頭状突出"
+      ],
+      "en": [
+        "papillary projection",
+        "mural nodule",
+        "solid papillary component"
+      ]
+    },
+    "tokens": [
+      "乳頭状",
+      "壁在結節",
+      "papillary",
+      "mural nodule"
+    ]
+  },
+  "finding:wall_thickening": {
+    "canonical_label": {
+      "ja": "壁肥厚",
+      "en": "wall thickening"
+    },
+    "feature": "wall",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "T2WI",
+      "contrast_enhanced_T1WI",
+      "portal_venous"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "壁肥厚",
+        "厚い壁",
+        "嚢胞壁肥厚"
+      ],
+      "en": [
+        "wall thickening",
+        "thickened wall"
+      ]
+    },
+    "tokens": [
+      "壁肥厚",
+      "wall thickening"
+    ]
+  },
+  "finding:hemorrhage_present": {
+    "canonical_label": {
+      "ja": "出血成分あり",
+      "en": "hemorrhagic content"
+    },
+    "feature": "hemorrhage",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "T1WI",
+      "T2WI",
+      "non_contrast"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "出血成分",
+        "血性内容",
+        "出血性嚢胞"
+      ],
+      "en": [
+        "hemorrhagic content",
+        "blood products",
+        "hemorrhagic cyst"
+      ]
+    },
+    "tokens": [
+      "出血",
+      "血性",
+      "hemorrhage"
+    ]
+  },
+  "finding:t2_shading": {
+    "canonical_label": {
+      "ja": "T2 shading",
+      "en": "T2 shading"
+    },
+    "feature": "signal_intensity",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "T2WI"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "T2 shading",
+        "T2 shading sign",
+        "T2短縮",
+        "T2低信号化"
+      ],
+      "en": [
+        "T2 shading",
+        "T2 shading sign"
+      ]
+    },
+    "tokens": [
+      "t2 shading",
+      "shading",
+      "T2短縮"
+    ]
+  },
+  "finding:enhancing_solid_component": {
+    "canonical_label": {
+      "ja": "造影される充実成分",
+      "en": "enhancing solid component"
+    },
+    "feature": "enhancement",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "contrast_enhanced_T1WI",
+      "portal_venous"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "造影される充実成分",
+        "充実成分の造影効果",
+        "増強される充実部"
+      ],
+      "en": [
+        "enhancing solid component",
+        "enhancing solid portion"
+      ]
+    },
+    "tokens": [
+      "造影",
+      "充実成分",
+      "enhancing solid"
+    ]
+  },
+  "finding:enhancement_absent": {
+    "canonical_label": {
+      "ja": "造影効果なし",
+      "en": "absent enhancement"
+    },
+    "feature": "enhancement",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "contrast_enhanced_T1WI",
+      "portal_venous"
+    ],
+    "default_polarity": "absent",
+    "synonyms": {
+      "ja": [
+        "造影効果なし",
+        "増強なし",
+        "造影されない"
+      ],
+      "en": [
+        "no enhancement",
+        "absent enhancement",
+        "non-enhancing"
+      ]
+    },
+    "tokens": [
+      "造影効果なし",
+      "増強なし",
+      "no enhancement"
+    ],
+    "opposites": [
+      "finding:enhancing_solid_component",
+      "finding:mild_enhancement"
+    ]
+  },
+  "finding:ring_enhancement": {
+    "canonical_label": {
+      "ja": "リング状造影",
+      "en": "ring enhancement"
+    },
+    "feature": "enhancement",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "contrast_enhanced_T1WI",
+      "portal_venous"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "リング状造影",
+        "輪状造影",
+        "辺縁造影"
+      ],
+      "en": [
+        "ring enhancement",
+        "rim enhancement"
+      ]
+    },
+    "tokens": [
+      "ring enhancement",
+      "rim enhancement",
+      "リング状造影"
+    ]
+  },
+  "finding:thick_irregular_ring_enhancement": {
+    "canonical_label": {
+      "ja": "厚く不整なリング状造影",
+      "en": "thick irregular ring enhancement"
+    },
+    "feature": "enhancement",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "contrast_enhanced_T1WI"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "厚い不整なリング状造影",
+        "不整リング状造影"
+      ],
+      "en": [
+        "thick irregular ring enhancement",
+        "irregular ring enhancement"
+      ]
+    },
+    "tokens": [
+      "thick irregular ring enhancement",
+      "irregular ring",
+      "不整リング状造影"
+    ]
+  },
+  "finding:dural_tail_sign": {
+    "canonical_label": {
+      "ja": "dural tail sign",
+      "en": "dural tail sign"
+    },
+    "feature": "dural_reaction",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "contrast_enhanced_T1WI"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "dural tail sign",
+        "硬膜尾状徴候"
+      ],
+      "en": [
+        "dural tail sign",
+        "dural tail"
+      ]
+    },
+    "tokens": [
+      "dural tail",
+      "硬膜尾状"
+    ]
+  },
+  "finding:extra_axial_dural_based_mass": {
+    "canonical_label": {
+      "ja": "硬膜付着性脳外腫瘤",
+      "en": "extra-axial dural-based mass"
+    },
+    "feature": "location",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "T1WI",
+      "T2WI",
+      "contrast_enhanced_T1WI",
+      "non_contrast"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "脳外腫瘤",
+        "硬膜付着性腫瘤",
+        "硬膜付着腫瘤"
+      ],
+      "en": [
+        "extra-axial mass",
+        "dural-based mass"
+      ]
+    },
+    "tokens": [
+      "extra-axial",
+      "dural-based",
+      "脳外腫瘤"
+    ]
+  },
+  "finding:avid_homogeneous_enhancement": {
+    "canonical_label": {
+      "ja": "強く均一な造影効果",
+      "en": "avid homogeneous enhancement"
+    },
+    "feature": "enhancement",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "contrast_enhanced_T1WI",
+      "portal_venous"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "強い均一造影",
+        "均一な強い造影効果"
+      ],
+      "en": [
+        "avid homogeneous enhancement",
+        "strong homogeneous enhancement"
+      ]
+    },
+    "tokens": [
+      "avid enhancement",
+      "homogeneous enhancement",
+      "強い均一造影"
+    ]
+  },
+  "finding:flair_hyperintensity": {
+    "canonical_label": {
+      "ja": "FLAIR高信号",
+      "en": "FLAIR hyperintensity"
+    },
+    "feature": "signal_intensity",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "FLAIR"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "FLAIR高信号",
+        "FLAIRで高信号"
+      ],
+      "en": [
+        "FLAIR hyperintensity",
+        "high signal on FLAIR"
+      ]
+    },
+    "tokens": [
+      "FLAIR",
+      "hyperintensity",
+      "FLAIR高信号"
+    ]
+  },
+  "finding:vasogenic_edema": {
+    "canonical_label": {
+      "ja": "血管原性浮腫",
+      "en": "vasogenic edema"
+    },
+    "feature": "edema",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "FLAIR",
+      "T2WI",
+      "portal_venous"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "血管原性浮腫",
+        "周囲浮腫"
+      ],
+      "en": [
+        "vasogenic edema",
+        "peritumoral edema",
+        "perilesional edema"
+      ]
+    },
+    "tokens": [
+      "vasogenic edema",
+      "周囲浮腫"
+    ]
+  },
+  "finding:central_diffusion_restriction": {
+    "canonical_label": {
+      "ja": "中心部拡散制限",
+      "en": "central restricted diffusion"
+    },
+    "feature": "diffusion_restriction",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "DWI",
+      "ADC"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "中心部拡散制限",
+        "内部拡散制限"
+      ],
+      "en": [
+        "central restricted diffusion",
+        "central diffusion restriction"
+      ]
+    },
+    "tokens": [
+      "central restricted diffusion",
+      "中心部拡散制限"
+    ],
+    "relation_group": "diffusion_restriction",
+    "relation_state": "restricted",
+    "related_equivalents": [
+      "finding:diffusion_restriction_present",
+      "finding:dwi_hyperintensity",
+      "finding:adc_low",
+      "finding:vascular_territory_restricted_diffusion"
+    ],
+    "opposites": [
+      "finding:diffusion_restriction_absent",
+      "finding:adc_high",
+      "finding:adc_iso",
+      "finding:dwi_isointensity"
+    ]
+  },
+  "finding:vascular_territory_restricted_diffusion": {
+    "canonical_label": {
+      "ja": "血管支配域に沿う拡散制限",
+      "en": "vascular territory restricted diffusion"
+    },
+    "feature": "diffusion_restriction",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "DWI",
+      "ADC"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "血管支配域の拡散制限",
+        "血管領域に沿うDWI高信号"
+      ],
+      "en": [
+        "restricted diffusion in a vascular territory",
+        "vascular territory infarct"
+      ]
+    },
+    "tokens": [
+      "vascular territory",
+      "restricted diffusion",
+      "血管支配域"
+    ],
+    "relation_group": "diffusion_restriction",
+    "relation_state": "restricted",
+    "related_equivalents": [
+      "finding:diffusion_restriction_present",
+      "finding:dwi_hyperintensity",
+      "finding:adc_low",
+      "finding:central_diffusion_restriction"
+    ],
+    "opposites": [
+      "finding:diffusion_restriction_absent",
+      "finding:adc_high",
+      "finding:adc_iso",
+      "finding:dwi_isointensity"
+    ]
+  },
+  "finding:periventricular_ovoid_lesions": {
+    "canonical_label": {
+      "ja": "脳室周囲卵円形白質病変",
+      "en": "periventricular ovoid lesions"
+    },
+    "feature": "white_matter_lesion",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "FLAIR",
+      "T2WI"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "脳室周囲白質病変",
+        "卵円形白質病変"
+      ],
+      "en": [
+        "periventricular ovoid lesions",
+        "Dawson fingers"
+      ]
+    },
+    "tokens": [
+      "periventricular",
+      "ovoid",
+      "Dawson fingers",
+      "脳室周囲"
+    ]
+  },
+  "finding:open_ring_enhancement": {
+    "canonical_label": {
+      "ja": "open-ring enhancement",
+      "en": "open-ring enhancement"
+    },
+    "feature": "enhancement",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "contrast_enhanced_T1WI"
+    ],
+    "default_polarity": "present",
+    "synonyms": {
+      "ja": [
+        "open-ring enhancement",
+        "開環状造影"
+      ],
+      "en": [
+        "open-ring enhancement",
+        "open ring enhancement"
+      ]
+    },
+    "tokens": [
+      "open-ring",
+      "open ring",
+      "開環状造影"
+    ]
+  },
+  "finding:stained_glass_appearance": {
+    "canonical_label": {
+      "ja": "嚢胞ごとに信号強度が異なる stained-glass appearance を示すことがある。",
+      "en": ""
+    },
+    "feature": "unknown",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "T2WI"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {},
+    "synonyms": {
+      "ja": [
+        "嚢胞ごとに信号強度が異なる stained-glass appearance を示すことがある。"
+      ],
+      "en": []
+    },
+    "tokens": [
+      "嚢胞ごとに信号強度が異なる stained-glass appearance を示すことがある。"
+    ]
+  },
+  "finding:susceptibility_blooming": {
+    "canonical_label": {
+      "ja": "磁化率低信号/blooming",
+      "en": "susceptibility blooming"
+    },
+    "feature": "susceptibility",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "SWI",
+      "T2STAR",
+      "GRE_T2STAR"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {
+      "signal": "hypointense",
+      "pattern": "blooming"
+    },
+    "synonyms": {
+      "ja": [
+        "blooming artifact",
+        "blooming",
+        "磁化率低信号",
+        "ブルーミング",
+        "SWI低信号"
+      ],
+      "en": [
+        "susceptibility blooming",
+        "blooming artifact",
+        "SWI hypointensity",
+        "T2* hypointensity"
+      ]
+    },
+    "tokens": [
+      "SWI",
+      "T2*",
+      "GRE",
+      "hypointense",
+      "blooming",
+      "susceptibility",
+      "磁化率低信号",
+      "ブルーミング",
+      "SWI低信号"
+    ]
+  },
+  "finding:flow_void": {
+    "canonical_label": {
+      "ja": "flow void",
+      "en": "flow void"
+    },
+    "feature": "vascular_flow",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "T1WI",
+      "T2WI",
+      "MRA_TOF",
+      "MRA_contrast_enhanced"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {
+      "pattern": "flow_void"
+    },
+    "synonyms": {
+      "ja": [
+        "flow void",
+        "フローボイド",
+        "血流空隙"
+      ],
+      "en": [
+        "flow void"
+      ]
+    },
+    "tokens": [
+      "flow void",
+      "vascular flow",
+      "フローボイド",
+      "血流空隙"
+    ]
+  },
+  "finding:arterial_stenosis_or_occlusion": {
+    "canonical_label": {
+      "ja": "動脈狭窄/閉塞",
+      "en": "arterial stenosis or occlusion"
+    },
+    "feature": "vascular_lumen",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "MRA_TOF",
+      "MRA_contrast_enhanced"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {
+      "vascular": "stenosis_or_occlusion"
+    },
+    "synonyms": {
+      "ja": [
+        "MRA??",
+        "動脈狭窄",
+        "動脈閉塞",
+        "血管狭窄",
+        "血管閉塞"
+      ],
+      "en": [
+        "arterial stenosis",
+        "arterial occlusion",
+        "MRA stenosis",
+        "MRA occlusion"
+      ]
+    },
+    "tokens": [
+      "MRA",
+      "stenosis",
+      "occlusion",
+      "??",
+      "動脈狭窄",
+      "動脈閉塞",
+      "血管狭窄",
+      "血管閉塞"
+    ]
+  },
+  "finding:venous_sinus_thrombosis": {
+    "canonical_label": {
+      "ja": "静脈洞血栓",
+      "en": "venous sinus thrombosis"
+    },
+    "feature": "vascular_lumen",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "MRV",
+      "contrast_enhanced_T1WI",
+      "contrast_enhanced_T1WI_fat_suppressed"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {
+      "vascular": "venous_thrombosis"
+    },
+    "synonyms": {
+      "ja": [
+        "静脈洞血栓",
+        "硬膜静脈洞血栓症"
+      ],
+      "en": [
+        "venous sinus thrombosis",
+        "dural venous sinus thrombosis",
+        "MRV venous occlusion"
+      ]
+    },
+    "tokens": [
+      "MRV",
+      "venous sinus",
+      "thrombosis",
+      "occlusion",
+      "静脈洞血栓",
+      "硬膜静脈洞血栓症"
+    ]
+  },
+  "finding:hyperperfusion": {
+    "canonical_label": {
+      "ja": "過灌流",
+      "en": "hyperperfusion"
+    },
+    "feature": "perfusion",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "ASL",
+      "DSC_perfusion",
+      "DCE_MRI"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {
+      "perfusion": "increased"
+    },
+    "synonyms": {
+      "ja": [
+        "過灌流",
+        "血流増加"
+      ],
+      "en": [
+        "hyperperfusion",
+        "increased perfusion",
+        "increased blood flow"
+      ]
+    },
+    "tokens": [
+      "perfusion",
+      "hyperperfusion",
+      "ASL",
+      "過灌流",
+      "血流増加"
+    ],
+    "opposites": [
+      "finding:hypoperfusion"
+    ]
+  },
+  "finding:hypoperfusion": {
+    "canonical_label": {
+      "ja": "低灌流",
+      "en": "hypoperfusion"
+    },
+    "feature": "perfusion",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "ASL",
+      "DSC_perfusion",
+      "DCE_MRI"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {
+      "perfusion": "decreased"
+    },
+    "synonyms": {
+      "ja": [
+        "低灌流",
+        "血流低下"
+      ],
+      "en": [
+        "hypoperfusion",
+        "decreased perfusion",
+        "reduced blood flow"
+      ]
+    },
+    "tokens": [
+      "perfusion",
+      "hypoperfusion",
+      "ASL",
+      "低灌流",
+      "血流低下"
+    ],
+    "opposites": [
+      "finding:hyperperfusion"
+    ]
+  },
+  "finding:elevated_cbv": {
+    "canonical_label": {
+      "ja": "CBV上昇",
+      "en": "elevated CBV"
+    },
+    "feature": "perfusion",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "DSC_perfusion",
+      "DCE_MRI"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {
+      "cbv": "increased"
+    },
+    "synonyms": {
+      "ja": [
+        "CBV??",
+        "rCBV??",
+        "CBV上昇",
+        "rCBV上昇"
+      ],
+      "en": [
+        "elevated CBV",
+        "increased CBV",
+        "elevated rCBV"
+      ]
+    },
+    "tokens": [
+      "CBV",
+      "rCBV",
+      "perfusion",
+      "elevated",
+      "CBV??",
+      "rCBV??",
+      "CBV上昇",
+      "rCBV上昇"
+    ],
+    "opposites": [
+      "finding:reduced_cbv"
+    ]
+  },
+  "finding:reduced_cbv": {
+    "canonical_label": {
+      "ja": "CBV低下",
+      "en": "reduced CBV"
+    },
+    "feature": "perfusion",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "DSC_perfusion",
+      "DCE_MRI"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {
+      "cbv": "decreased"
+    },
+    "synonyms": {
+      "ja": [
+        "CBV??",
+        "rCBV??",
+        "CBV低下",
+        "rCBV低下"
+      ],
+      "en": [
+        "reduced CBV",
+        "decreased CBV",
+        "low rCBV"
+      ]
+    },
+    "tokens": [
+      "CBV",
+      "rCBV",
+      "perfusion",
+      "reduced",
+      "CBV??",
+      "rCBV??",
+      "CBV低下",
+      "rCBV低下"
+    ],
+    "opposites": [
+      "finding:elevated_cbv"
+    ]
+  },
+  "finding:elevated_choline_peak": {
+    "canonical_label": {
+      "ja": "コリンピーク上昇",
+      "en": "elevated choline peak"
+    },
+    "feature": "spectroscopy",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "MRS"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {
+      "metabolite": "choline_elevated"
+    },
+    "synonyms": {
+      "ja": [
+        "Cho??",
+        "コリンピーク上昇",
+        "Cho上昇"
+      ],
+      "en": [
+        "elevated choline",
+        "increased choline peak",
+        "Cho elevation"
+      ]
+    },
+    "tokens": [
+      "MRS",
+      "choline",
+      "Cho",
+      "Cho??",
+      "コリンピーク上昇",
+      "Cho上昇"
+    ]
+  },
+  "finding:lactate_peak": {
+    "canonical_label": {
+      "ja": "乳酸ピーク",
+      "en": "lactate peak"
+    },
+    "feature": "spectroscopy",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "MRS"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {
+      "metabolite": "lactate"
+    },
+    "synonyms": {
+      "ja": [
+        "lactate peak",
+        "乳酸ピーク"
+      ],
+      "en": [
+        "lactate peak",
+        "elevated lactate"
+      ]
+    },
+    "tokens": [
+      "MRS",
+      "lactate",
+      "lactate peak",
+      "乳酸ピーク"
+    ]
+  },
+  "finding:lipid_peak": {
+    "canonical_label": {
+      "ja": "脂質ピーク",
+      "en": "lipid peak"
+    },
+    "feature": "spectroscopy",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "MRS"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {
+      "metabolite": "lipid"
+    },
+    "synonyms": {
+      "ja": [
+        "lipid peak",
+        "脂質ピーク"
+      ],
+      "en": [
+        "lipid peak",
+        "elevated lipid"
+      ]
+    },
+    "tokens": [
+      "MRS",
+      "lipid",
+      "lipid peak",
+      "脂質ピーク"
+    ]
+  },
+  "finding:opposed_phase_signal_drop": {
+    "canonical_label": {
+      "ja": "opposed-phaseで信号低下",
+      "en": "opposed-phase signal drop"
+    },
+    "feature": "chemical_shift",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "DIXON_opposed_phase"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {
+      "chemical_shift": "signal_drop"
+    },
+    "synonyms": {
+      "ja": [
+        "chemical shift",
+        "逆位相で信号低下",
+        "opposed-phase信号低下"
+      ],
+      "en": [
+        "opposed-phase signal drop",
+        "signal loss on opposed-phase",
+        "chemical shift signal drop"
+      ]
+    },
+    "tokens": [
+      "opposed-phase",
+      "chemical shift",
+      "signal drop",
+      "逆位相で信号低下",
+      "opposed-phase信号低下"
+    ]
+  },
+  "finding:fat_suppression_signal_drop": {
+    "canonical_label": {
+      "ja": "脂肪抑制で信号低下",
+      "en": "signal drop on fat suppression"
+    },
+    "feature": "fat_content",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "T1WI_fat_suppressed",
+      "T2WI_fat_suppressed",
+      "STIR",
+      "DIXON_water",
+      "DIXON_fat"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {
+      "fat_content": "present"
+    },
+    "synonyms": {
+      "ja": [
+        "脂肪抑制で信号低下",
+        "脂肪抑制低下"
+      ],
+      "en": [
+        "signal drop on fat suppression",
+        "fat suppression signal drop",
+        "fat-containing lesion"
+      ]
+    },
+    "tokens": [
+      "fat suppression",
+      "fat",
+      "signal drop",
+      "脂肪抑制で信号低下",
+      "脂肪抑制低下"
+    ]
+  },
+  "finding:heavily_t2_fluid_signal": {
+    "canonical_label": {
+      "ja": "強T2強調で液体信号",
+      "en": "heavily T2-weighted fluid signal"
+    },
+    "feature": "fluid_signal",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "MRCP",
+      "CISS_FIESTA",
+      "T2WI"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {
+      "signal": "fluid_bright"
+    },
+    "synonyms": {
+      "ja": [
+        "強T2強調で液体信号",
+        "MRCP様高信号"
+      ],
+      "en": [
+        "heavily T2 fluid signal",
+        "fluid bright signal",
+        "MRCP high signal"
+      ]
+    },
+    "tokens": [
+      "heavily T2",
+      "fluid signal",
+      "MRCP",
+      "CISS",
+      "FIESTA",
+      "強T2強調で液体信号",
+      "MRCP様高信号"
+    ]
+  },
+  "finding:csf_like_signal": {
+    "canonical_label": {
+      "ja": "髄液様信号/吸収",
+      "en": "CSF-like signal or attenuation"
+    },
+    "feature": "signal_intensity",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "T1WI",
+      "T2WI",
+      "FLAIR",
+      "non_contrast"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {},
+    "synonyms": {
+      "ja": [
+        "髄液様信号",
+        "CSF様信号",
+        "髄液濃度"
+      ],
+      "en": [
+        "CSF-like signal",
+        "CSF attenuation"
+      ]
+    },
+    "tokens": [
+      "髄液様",
+      "CSF-like",
+      "CSF"
+    ],
+    "opposites": []
+  },
+  "finding:flair_suppression": {
+    "canonical_label": {
+      "ja": "FLAIRで抑制される",
+      "en": "suppressed on FLAIR"
+    },
+    "feature": "signal_suppression",
+    "allowed_modalities": [
+      "MRI"
+    ],
+    "allowed_acquisitions": [
+      "FLAIR"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {},
+    "synonyms": {
+      "ja": [
+        "FLAIRで抑制",
+        "FLAIR低信号"
+      ],
+      "en": [
+        "FLAIR suppression",
+        "suppressed on FLAIR"
+      ]
+    },
+    "tokens": [
+      "FLAIR",
+      "抑制",
+      "suppression"
+    ],
+    "opposites": []
+  },
+  "finding:hydrocephalus": {
+    "canonical_label": {
+      "ja": "水頭症",
+      "en": "hydrocephalus"
+    },
+    "feature": "secondary_effect",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "T2WI",
+      "FLAIR",
+      "non_contrast"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {},
+    "synonyms": {
+      "ja": [
+        "水頭症",
+        "脳室拡大"
+      ],
+      "en": [
+        "hydrocephalus",
+        "ventriculomegaly"
+      ]
+    },
+    "tokens": [
+      "水頭症",
+      "脳室拡大",
+      "hydrocephalus"
+    ],
+    "opposites": []
+  },
+  "finding:internal_auditory_canal_extension": {
+    "canonical_label": {
+      "ja": "内耳道進展",
+      "en": "internal auditory canal extension"
+    },
+    "feature": "location_pattern",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "contrast_enhanced_T1WI",
+      "T2WI",
+      "non_contrast"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {},
+    "synonyms": {
+      "ja": [
+        "内耳道進展",
+        "内耳道拡大"
+      ],
+      "en": [
+        "IAC extension",
+        "internal auditory canal extension"
+      ]
+    },
+    "tokens": [
+      "内耳道",
+      "IAC",
+      "internal auditory canal"
+    ],
+    "opposites": []
+  },
+  "finding:vascular_nidus": {
+    "canonical_label": {
+      "ja": "血管nidus",
+      "en": "vascular nidus"
+    },
+    "feature": "vascular_pattern",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "MRA_TOF",
+      "MRA_contrast_enhanced",
+      "arterial"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {},
+    "synonyms": {
+      "ja": [
+        "血管nidus",
+        "nidus"
+      ],
+      "en": [
+        "vascular nidus",
+        "AVM nidus"
+      ]
+    },
+    "tokens": [
+      "nidus",
+      "AVM",
+      "血管"
+    ],
+    "opposites": []
+  },
+  "finding:empty_delta_sign": {
+    "canonical_label": {
+      "ja": "empty delta sign",
+      "en": "empty delta sign"
+    },
+    "feature": "enhancement_pattern",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "contrast_enhanced_T1WI",
+      "portal_venous"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {},
+    "synonyms": {
+      "ja": [
+        "empty delta sign",
+        "デルタサイン"
+      ],
+      "en": [
+        "empty delta sign"
+      ]
+    },
+    "tokens": [
+      "empty delta",
+      "デルタ"
+    ],
+    "opposites": []
+  },
+  "finding:cyst_with_enhancing_mural_nodule": {
+    "canonical_label": {
+      "ja": "造影壁在結節を伴う嚢胞",
+      "en": "cyst with enhancing mural nodule"
+    },
+    "feature": "morphology",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "contrast_enhanced_T1WI",
+      "portal_venous"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {},
+    "synonyms": {
+      "ja": [
+        "造影壁在結節",
+        "嚢胞性腫瘤と壁在結節"
+      ],
+      "en": [
+        "enhancing mural nodule",
+        "cyst with mural nodule"
+      ]
+    },
+    "tokens": [
+      "壁在結節",
+      "mural nodule",
+      "cyst"
+    ],
+    "opposites": []
+  },
+  "finding:sellar_suprasellar_mass": {
+    "canonical_label": {
+      "ja": "鞍内〜鞍上部腫瘤",
+      "en": "sellar-suprasellar mass"
+    },
+    "feature": "location_pattern",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "T1WI",
+      "T2WI",
+      "contrast_enhanced_T1WI",
+      "non_contrast"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {},
+    "synonyms": {
+      "ja": [
+        "鞍内腫瘤",
+        "鞍上部腫瘤",
+        "鞍内〜鞍上部腫瘤"
+      ],
+      "en": [
+        "sellar mass",
+        "suprasellar mass",
+        "sellar-suprasellar mass"
+      ]
+    },
+    "tokens": [
+      "鞍内",
+      "鞍上部",
+      "sellar",
+      "suprasellar"
+    ],
+    "opposites": []
+  },
+  "finding:leptomeningeal_enhancement": {
+    "canonical_label": {
+      "ja": "軟髄膜造影",
+      "en": "leptomeningeal enhancement"
+    },
+    "feature": "imaging_pattern",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "contrast_enhanced_T1WI"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {},
+    "synonyms": {
+      "ja": [
+        "軟髄膜造影"
+      ],
+      "en": [
+        "leptomeningeal enhancement"
+      ]
+    },
+    "tokens": [
+      "軟髄膜造影",
+      "leptomeningeal"
+    ],
+    "opposites": []
+  },
+  "finding:pachymeningeal_enhancement": {
+    "canonical_label": {
+      "ja": "硬膜びまん性造影",
+      "en": "pachymeningeal enhancement"
+    },
+    "feature": "imaging_pattern",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "contrast_enhanced_T1WI"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {},
+    "synonyms": {
+      "ja": [
+        "硬膜びまん性造影"
+      ],
+      "en": [
+        "pachymeningeal enhancement"
+      ]
+    },
+    "tokens": [
+      "硬膜造影",
+      "pachymeningeal"
+    ],
+    "opposites": []
+  },
+  "finding:thin_regular_ring_enhancement": {
+    "canonical_label": {
+      "ja": "薄く平滑なリング状造影",
+      "en": "thin smooth ring enhancement"
+    },
+    "feature": "imaging_pattern",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "contrast_enhanced_T1WI"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {},
+    "synonyms": {
+      "ja": [
+        "薄く平滑なリング状造影"
+      ],
+      "en": [
+        "thin smooth ring enhancement"
+      ]
+    },
+    "tokens": [
+      "薄いリング",
+      "smooth ring"
+    ],
+    "opposites": []
+  },
+  "finding:subependymal_nodule": {
+    "canonical_label": {
+      "ja": "脳室上衣下結節",
+      "en": "subependymal nodule"
+    },
+    "feature": "imaging_pattern",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "T1WI",
+      "T2WI",
+      "FLAIR",
+      "non_contrast"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {},
+    "synonyms": {
+      "ja": [
+        "脳室上衣下結節"
+      ],
+      "en": [
+        "subependymal nodule"
+      ]
+    },
+    "tokens": [
+      "上衣下結節",
+      "subependymal nodule"
+    ],
+    "opposites": []
+  },
+  "finding:cortical_subcortical_lesion": {
+    "canonical_label": {
+      "ja": "皮質〜皮質下病変",
+      "en": "cortical-subcortical lesion"
+    },
+    "feature": "imaging_pattern",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "T1WI",
+      "T2WI",
+      "FLAIR",
+      "contrast_enhanced_T1WI",
+      "non_contrast"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {},
+    "synonyms": {
+      "ja": [
+        "皮質〜皮質下病変"
+      ],
+      "en": [
+        "cortical-subcortical lesion"
+      ]
+    },
+    "tokens": [
+      "皮質下",
+      "cortical-subcortical"
+    ],
+    "opposites": []
+  },
+  "finding:bilateral_symmetric_white_matter_lesions": {
+    "canonical_label": {
+      "ja": "両側対称性白質病変",
+      "en": "bilateral symmetric white matter lesions"
+    },
+    "feature": "imaging_pattern",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "T2WI",
+      "FLAIR"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {},
+    "synonyms": {
+      "ja": [
+        "両側対称性白質病変"
+      ],
+      "en": [
+        "bilateral symmetric white matter lesions"
+      ]
+    },
+    "tokens": [
+      "対称性白質",
+      "symmetric white matter"
+    ],
+    "opposites": []
+  },
+  "finding:basal_ganglia_involvement": {
+    "canonical_label": {
+      "ja": "基底核病変",
+      "en": "basal ganglia involvement"
+    },
+    "feature": "imaging_pattern",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "T2WI",
+      "FLAIR",
+      "DWI",
+      "ADC"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {},
+    "synonyms": {
+      "ja": [
+        "基底核病変"
+      ],
+      "en": [
+        "basal ganglia involvement"
+      ]
+    },
+    "tokens": [
+      "基底核",
+      "basal ganglia"
+    ],
+    "opposites": []
+  },
+  "finding:mass_effect": {
+    "canonical_label": {
+      "ja": "mass effect",
+      "en": "mass effect"
+    },
+    "feature": "imaging_pattern",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "T1WI",
+      "T2WI",
+      "FLAIR",
+      "contrast_enhanced_T1WI",
+      "non_contrast"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {},
+    "synonyms": {
+      "ja": [
+        "mass effect"
+      ],
+      "en": [
+        "mass effect"
+      ]
+    },
+    "tokens": [
+      "mass effect",
+      "圧排"
+    ],
+    "opposites": []
+  },
+  "finding:midline_shift": {
+    "canonical_label": {
+      "ja": "正中偏位",
+      "en": "midline shift"
+    },
+    "feature": "imaging_pattern",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "T1WI",
+      "T2WI",
+      "FLAIR",
+      "contrast_enhanced_T1WI",
+      "non_contrast"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {},
+    "synonyms": {
+      "ja": [
+        "正中偏位"
+      ],
+      "en": [
+        "midline shift"
+      ]
+    },
+    "tokens": [
+      "正中偏位",
+      "midline shift"
+    ],
+    "opposites": []
+  },
+  "finding:ventriculomegaly": {
+    "canonical_label": {
+      "ja": "脳室拡大",
+      "en": "ventriculomegaly"
+    },
+    "feature": "imaging_pattern",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "T1WI",
+      "T2WI",
+      "FLAIR",
+      "contrast_enhanced_T1WI",
+      "non_contrast"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {},
+    "synonyms": {
+      "ja": [
+        "脳室拡大"
+      ],
+      "en": [
+        "ventriculomegaly"
+      ]
+    },
+    "tokens": [
+      "脳室拡大",
+      "ventriculomegaly"
+    ],
+    "opposites": []
+  },
+  "finding:pituitary_stalk_thickening": {
+    "canonical_label": {
+      "ja": "下垂体茎肥厚",
+      "en": "pituitary stalk thickening"
+    },
+    "feature": "imaging_pattern",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "contrast_enhanced_T1WI"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {},
+    "synonyms": {
+      "ja": [
+        "下垂体茎肥厚"
+      ],
+      "en": [
+        "pituitary stalk thickening"
+      ]
+    },
+    "tokens": [
+      "下垂体茎肥厚",
+      "pituitary stalk"
+    ],
+    "opposites": []
+  },
+  "finding:clival_bone_destruction": {
+    "canonical_label": {
+      "ja": "斜台骨破壊",
+      "en": "clival bone destruction"
+    },
+    "feature": "imaging_pattern",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "non_contrast",
+      "contrast_enhanced_T1WI"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {},
+    "synonyms": {
+      "ja": [
+        "斜台骨破壊"
+      ],
+      "en": [
+        "clival bone destruction"
+      ]
+    },
+    "tokens": [
+      "斜台骨破壊",
+      "clival destruction"
+    ],
+    "opposites": []
+  },
+  "finding:callosal_lesion": {
+    "canonical_label": {
+      "ja": "脳梁病変",
+      "en": "corpus callosum lesion"
+    },
+    "feature": "imaging_pattern",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "T2WI",
+      "FLAIR",
+      "DWI"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {},
+    "synonyms": {
+      "ja": [
+        "脳梁病変"
+      ],
+      "en": [
+        "corpus callosum lesion"
+      ]
+    },
+    "tokens": [
+      "脳梁",
+      "corpus callosum"
+    ],
+    "opposites": []
+  },
+  "finding:cortical_laminar_necrosis": {
+    "canonical_label": {
+      "ja": "皮質層状壊死",
+      "en": "cortical laminar necrosis"
+    },
+    "feature": "imaging_pattern",
+    "allowed_modalities": [
+      "MRI",
+      "CT"
+    ],
+    "allowed_acquisitions": [
+      "T1WI",
+      "FLAIR"
+    ],
+    "default_polarity": "present",
+    "default_modifiers": {},
+    "synonyms": {
+      "ja": [
+        "皮質層状壊死"
+      ],
+      "en": [
+        "cortical laminar necrosis"
+      ]
+    },
+    "tokens": [
+      "皮質層状壊死",
+      "laminar necrosis"
+    ],
+    "opposites": []
+  }
+}

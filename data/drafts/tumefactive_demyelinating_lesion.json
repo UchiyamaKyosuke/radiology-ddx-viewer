@@ -1,0 +1,489 @@
+{
+  "schema_version": "0.8",
+  "disease_id": "tumefactive_demyelinating_lesion",
+  "disease_name": {
+    "ja": "腫瘤形成性脱髄病変",
+    "en": "Tumefactive demyelinating lesion"
+  },
+  "disease_aliases": {
+    "ja": [
+      "腫瘤性脱髄病変",
+      "TDL"
+    ],
+    "en": [
+      "TDL",
+      "Tumefactive demyelination"
+    ]
+  },
+  "clinical": {
+    "overview": "腫瘤様に見える大型脱髄病変。膠芽腫やリンパ腫との鑑別が問題になり、open-ring enhancement、相対的に軽いmass effect、低灌流が手掛かり。",
+    "treatment": "ステロイド反応性を評価し、必要に応じて生検、疾患修飾薬、再発予防治療を検討する。",
+    "epidemiology": "若年〜中年成人で多発性硬化症関連または孤発性にみられる。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "female",
+      "predilection": "female_predominant",
+      "summary": "脱髄疾患全体として女性に多い傾向がある。"
+    },
+    "age": {
+      "typical_min": 15,
+      "typical_max": 55,
+      "peak_decade": "20-40歳代",
+      "summary": "若年成人から中年に多い。"
+    }
+  },
+  "keywords": [
+    "open-ring enhancement",
+    "low perfusion",
+    "demyelination",
+    "less mass effect"
+  ],
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "young_adult",
+      "body_region": "brain",
+      "clinical_setting": "ring_enhancing_mass"
+    },
+    "summary": "リング状造影病変では腫瘍との鑑別に重要。"
+  },
+  "imaging": {
+    "ct": {
+      "summary": "腫瘤様脱髄はCTで低吸収腫瘤様病変として見えることがある。",
+      "findings_by_phase": [
+        {
+          "phase": {
+            "code": "non_contrast"
+          },
+          "findings": [
+            {
+              "finding_id": "tumefactive_demyelinating_lesion_ct_nc_001",
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "white_matter",
+                "laterality": "unknown"
+              },
+              "target": "white_matter_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "白質低吸収病変として見えることがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 1,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:ct_hypoattenuation",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "tumefactive_demyelinating_lesion_ct_non_contrast_ct_hypoattenuation_01",
+              "finding_code": "finding:ct_hypoattenuation",
+              "modality": "CT",
+              "acquisition": {
+                "type": "phase",
+                "code": "non_contrast"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "CTでは低吸収の腫瘤様病変として見えることがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    },
+    "mri": {
+      "summary": "MRIではT2/FLAIR高信号、open-ring enhancement、辺縁拡散制限、腫瘤効果が腫瘍との鑑別に重要。",
+      "findings_by_sequence": [
+        {
+          "sequence": {
+            "code": "FLAIR"
+          },
+          "findings": [
+            {
+              "finding_id": "tumefactive_demyelinating_lesion_mri_flair_001",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "white_matter",
+                "laterality": "unknown"
+              },
+              "target": "white_matter_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "大型白質病変としてFLAIR高信号を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:flair_hyperintensity",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "tumefactive_demyelinating_lesion_mri_flair_flair_hyperintensity_01",
+              "finding_code": "finding:flair_hyperintensity",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "FLAIR"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "FLAIRで大きな白質〜皮質下高信号病変を示す。",
+              "typicality": "common",
+              "diagnostic_weight": 4,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "contrast_enhanced_T1WI"
+          },
+          "findings": [
+            {
+              "finding_id": "tumefactive_demyelinating_lesion_mri_ce_001",
+              "finding_code": "finding:open_ring_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "white_matter",
+                "laterality": "unknown"
+              },
+              "target": "lesion_margin",
+              "modifiers": {},
+              "keywords": [
+                "open-ring enhancement"
+              ],
+              "finding_text": "白質側に開いたopen-ring enhancementを示すことがある。",
+              "typicality": "typical",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:open_ring_enhancement",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "tumefactive_demyelinating_lesion_mri_contrast_enhanced_t1wi_open_ring_enhancement_01",
+              "finding_code": "finding:open_ring_enhancement",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "contrast_enhanced_T1WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "造影T1WIでopen-ring enhancementを示すことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 5,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DWI"
+          },
+          "findings": [
+            {
+              "finding_id": "tumefactive_demyelinating_lesion_mri_dwi_001",
+              "finding_code": "finding:diffusion_restriction_present",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "white_matter",
+                "laterality": "unknown"
+              },
+              "target": "lesion_margin",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "病変辺縁に拡散制限を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:diffusion_restriction_present",
+                "alternatives": []
+              }
+            },
+            {
+              "finding_id": "tumefactive_demyelinating_lesion_mri_dwi_diffusion_restriction_present_01",
+              "finding_code": "finding:diffusion_restriction_present",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DWI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "辺縁優位の拡散制限を伴うことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "DSC_perfusion"
+          },
+          "findings": [
+            {
+              "finding_id": "tumefactive_demyelinating_lesion_mri_perf_001",
+              "finding_code": "finding:reduced_cbv",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "DSC_perfusion"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "white_matter",
+                "laterality": "unknown"
+              },
+              "target": "whole_lesion",
+              "modifiers": {},
+              "keywords": [],
+              "finding_text": "高悪性度腫瘍に比べCBV低下〜低灌流を示すことがある。",
+              "typicality": "variable",
+              "diagnostic_weight": 3,
+              "review_status": "draft",
+              "mapping": {
+                "status": "matched",
+                "confidence": 0.9,
+                "matched_concept_id": "finding:reduced_cbv",
+                "alternatives": []
+              }
+            }
+          ]
+        },
+        {
+          "sequence": {
+            "code": "T2WI"
+          },
+          "findings": [
+            {
+              "finding_id": "tumefactive_demyelinating_lesion_mri_t2wi_mass_effect_01",
+              "finding_code": "finding:mass_effect",
+              "modality": "MRI",
+              "acquisition": {
+                "type": "sequence",
+                "code": "T2WI"
+              },
+              "anatomy": {
+                "body_region": "brain",
+                "organ": "brain",
+                "subregion": "brain",
+                "laterality": "unknown"
+              },
+              "target": "lesion",
+              "modifiers": {},
+              "finding_text": "2cmを超える病変ではmass effectを伴うことがある。",
+              "typicality": "common",
+              "diagnostic_weight": 2,
+              "review_status": "draft",
+              "keywords": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "summary": "PubMedから取得しました（PMID: 33762460, 31857550, 28619436, 42071194）。 PubMed以外の公開ソース（NCBI Bookshelf/StatPearls、NIH/NINDS、MedlinePlus、CDC、PMC open-access review等）を参照し、各モダリティでの見え方をdraft所見として補強。",
+    "claim_map": [
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "tumefactive_demyelinating_lesion_ct_nc_001",
+          "tumefactive_demyelinating_lesion_mri_flair_001",
+          "tumefactive_demyelinating_lesion_mri_ce_001",
+          "tumefactive_demyelinating_lesion_mri_dwi_001",
+          "tumefactive_demyelinating_lesion_mri_perf_001"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "pmid_33762460",
+          "pmid_31857550",
+          "pmid_28619436",
+          "pmid_42071194"
+        ],
+        "confidence": "low"
+      },
+      {
+        "claim_type": "imaging_findings",
+        "finding_ids": [
+          "tumefactive_demyelinating_lesion_ct_non_contrast_ct_hypoattenuation_01",
+          "tumefactive_demyelinating_lesion_mri_flair_flair_hyperintensity_01",
+          "tumefactive_demyelinating_lesion_mri_contrast_enhanced_t1wi_open_ring_enhancement_01",
+          "tumefactive_demyelinating_lesion_mri_dwi_diffusion_restriction_present_01",
+          "tumefactive_demyelinating_lesion_mri_t2wi_mass_effect_01"
+        ],
+        "claim_scope": [
+          "finding_text",
+          "typicality",
+          "diagnostic_weight"
+        ],
+        "source_ids": [
+          "public_modality_review_20260625"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  },
+  "image_examples": [],
+  "references": [
+    {
+      "source_id": "pmid_33762460",
+      "type": "journal_article",
+      "title": "[Tumefactive demyelinating lesion (TDL)].",
+      "authors": [],
+      "journal": "No shinkei geka. Neurological surgery",
+      "year": "2021",
+      "pmid": "33762460",
+      "doi": "10.11477/mf.1436204401",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33762460/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_31857550",
+      "type": "journal_article",
+      "title": "Tumefactive Demyelinating Lesions and Pregnancy.",
+      "authors": [],
+      "journal": "Neurology India",
+      "year": "2020",
+      "pmid": "31857550",
+      "doi": "10.4103/0028-3886.273654",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31857550/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_28619436",
+      "type": "journal_article",
+      "title": "Tumefactive demyelinating lesions: A comprehensive review.",
+      "authors": [],
+      "journal": "Multiple sclerosis and related disorders",
+      "year": "2018",
+      "pmid": "28619436",
+      "doi": "10.1016/j.msard.2017.04.003",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28619436/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_42071194",
+      "type": "journal_article",
+      "title": "Biopsy-proven tumefactive demyelinating lesions: a systematic review and meta-analysis.",
+      "authors": [],
+      "journal": "BMC neurology",
+      "year": "2026",
+      "pmid": "42071194",
+      "doi": "10.1186/s12883-026-04947-w",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42071194/",
+      "license": ""
+    },
+    {
+      "source_id": "public_modality_review_20260625",
+      "type": "public_web_source_packet",
+      "title": "Non-PubMed public source packet for modality-level neuroradiology draft enrichment",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "public web source index; includes NCBI Bookshelf/StatPearls, NIH/NINDS, MedlinePlus, CDC pages, and open-access PMC reviews where applicable"
+    },
+    {
+      "source_id": "public_raw_findings_audit_20260705",
+      "type": "public_source_packet",
+      "title": "Public neuroradiology raw-finding audit packet",
+      "authors": [],
+      "journal": "",
+      "year": "2026",
+      "url": "https://www.ncbi.nlm.nih.gov/books/",
+      "license": "Public web source index: NCBI Bookshelf/StatPearls, NINDS, MedlinePlus, Radiopaedia-style named-sign review targets, and open-access review articles where applicable"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "reviewed_by": "",
+    "reviewed_at": "",
+    "confidence": "low",
+    "notes": "PubMed metadata and Codex-curated draft; requires physician review before approval."
+  },
+  "updated_at": "2026-07-05T05:05:37.649Z",
+  "raw_findings": []
+}

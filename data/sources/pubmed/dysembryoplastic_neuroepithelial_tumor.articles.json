@@ -1,0 +1,38 @@
+{
+  "disease_id": "dysembryoplastic_neuroepithelial_tumor",
+  "disease_name": {
+    "ja": "胚芽異形成性神経上皮腫瘍",
+    "en": "Dysembryoplastic neuroepithelial tumor"
+  },
+  "query": "\"dysembryoplastic neuroepithelial tumor\" AND (MRI OR imaging)",
+  "fetched_at": "2026-06-25T07:42:24.081Z",
+  "articles": [
+    {
+      "pmid": "37872430",
+      "title": "An imaging review of the hippocampus and its common pathologies.",
+      "journal": "Journal of neuroimaging : official journal of the American Society of Neuroimaging",
+      "year": "2024",
+      "doi": "10.1111/jon.13165",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37872430/",
+      "abstract": ""
+    },
+    {
+      "pmid": "39169587",
+      "title": "Disseminated ependymal dysembryoplastic neuroepithelial tumor: a case report and literature review.",
+      "journal": "Zhurnal voprosy neirokhirurgii imeni N. N. Burdenko",
+      "year": "2024",
+      "doi": "10.17116/neiro20248804192",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39169587/",
+      "abstract": ""
+    },
+    {
+      "pmid": "36590378",
+      "title": "Association of CT and MRI Manifestations with Pathology in Dysembryoplastic Neuroepithelial Tumors.",
+      "journal": "Journal of the Belgian Society of Radiology",
+      "year": "2023",
+      "doi": "10.5334/jbsr.2940",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36590378/",
+      "abstract": ""
+    }
+  ]
+}

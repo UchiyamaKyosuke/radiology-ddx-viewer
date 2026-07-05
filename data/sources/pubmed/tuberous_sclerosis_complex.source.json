@@ -1,0 +1,51 @@
+{
+  "disease_id": "tuberous_sclerosis_complex",
+  "disease_name": {
+    "ja": "結節性硬化症",
+    "en": "Tuberous sclerosis complex"
+  },
+  "disease_aliases": {
+    "ja": [
+      "TSC"
+    ],
+    "en": [
+      "TSC"
+    ]
+  },
+  "clinical": {
+    "overview": "mTOR経路異常による神経皮膚症候群。皮質結節、上衣下結節、SEGAを評価する。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 18,
+      "peak_decade": "小児",
+      "summary": "小児で重要。"
+    }
+  },
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "neurocutaneous_syndrome"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}

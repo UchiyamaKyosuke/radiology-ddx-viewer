@@ -1,0 +1,314 @@
+{
+  "disease_id": "tumefactive_demyelinating_lesion",
+  "disease_name": {
+    "ja": "腫瘤形成性脱髄病変",
+    "en": "Tumefactive demyelinating lesion"
+  },
+  "disease_aliases": {
+    "ja": [],
+    "en": [
+      "Tumefactive demyelinating lesion"
+    ]
+  },
+  "clinical": {
+    "overview": "Tumefactive demyelinating lesion literature draft generated from PubMed abstracts. Codex review is required.",
+    "treatment": "Not extracted. Codex review is required.",
+    "epidemiology": "Not extracted. Codex review is required."
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "unknown"
+      ],
+      "predominance": "unknown",
+      "predilection": "unknown",
+      "summary": "Not extracted."
+    },
+    "age": {
+      "typical_min": null,
+      "typical_max": null,
+      "peak_decade": "未確認",
+      "summary": "好発年齢は未確認。"
+    }
+  },
+  "keywords": [],
+  "frequency": {
+    "label": "unknown",
+    "summary": "Not extracted."
+  },
+  "imaging": {},
+  "findings": [
+    {
+      "finding_text": "T2低信号",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "T2WI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "signal": "hypointense"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "T1低信号",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "T1WI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "signal": "hypointense"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "拡散制限あり",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "DWI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "リング状造影",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "contrast_enhanced_T1WI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "血管原性浮腫",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "FLAIR",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "open-ring enhancement",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "contrast_enhanced_T1WI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {},
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "磁化率低信号/blooming",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "SWI",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "signal": "hypointense",
+        "pattern": "blooming"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "静脈洞血栓",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "MRV",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "vascular": "venous_thrombosis"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "CBV低下",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "DSC_perfusion",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "cbv": "decreased"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    },
+    {
+      "finding_text": "コリンピーク上昇",
+      "modality": "MRI",
+      "acquisition_type": "sequence",
+      "acquisition_code": "MRS",
+      "anatomy": {
+        "body_region": "brain",
+        "organ": "brain",
+        "subregion": "cerebral_hemisphere",
+        "laterality": "unknown"
+      },
+      "target": "whole_lesion",
+      "modifiers": {
+        "metabolite": "choline_elevated"
+      },
+      "keywords": [],
+      "typicality": "variable",
+      "diagnostic_weight": 1
+    }
+  ],
+  "references": [
+    {
+      "source_id": "pmid_33762460",
+      "type": "journal_article",
+      "title": "[Tumefactive demyelinating lesion (TDL)].",
+      "authors": [],
+      "journal": "No shinkei geka. Neurological surgery",
+      "year": "2021",
+      "pmid": "33762460",
+      "doi": "10.11477/mf.1436204401",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33762460/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_31857550",
+      "type": "journal_article",
+      "title": "Tumefactive Demyelinating Lesions and Pregnancy.",
+      "authors": [],
+      "journal": "Neurology India",
+      "year": "2020",
+      "pmid": "31857550",
+      "doi": "10.4103/0028-3886.273654",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31857550/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_28619436",
+      "type": "journal_article",
+      "title": "Tumefactive demyelinating lesions: A comprehensive review.",
+      "authors": [],
+      "journal": "Multiple sclerosis and related disorders",
+      "year": "2018",
+      "pmid": "28619436",
+      "doi": "10.1016/j.msard.2017.04.003",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28619436/",
+      "license": ""
+    },
+    {
+      "source_id": "pmid_42071194",
+      "type": "journal_article",
+      "title": "Biopsy-proven tumefactive demyelinating lesions: a systematic review and meta-analysis.",
+      "authors": [],
+      "journal": "BMC neurology",
+      "year": "2026",
+      "pmid": "42071194",
+      "doi": "10.1186/s12883-026-04947-w",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42071194/",
+      "license": ""
+    }
+  ],
+  "source_query": "tumefactive demyelinating lesion[Title/Abstract] AND (MRI[Title/Abstract] OR CT[Title/Abstract] OR imaging[Title/Abstract])",
+  "source_articles": [
+    {
+      "pmid": "33762460",
+      "title": "[Tumefactive demyelinating lesion (TDL)].",
+      "journal": "No shinkei geka. Neurological surgery",
+      "year": "2021",
+      "doi": "10.11477/mf.1436204401",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33762460/",
+      "abstract": "Tumefactive demyelinating lesion(TDL)is defined as a large lesion, size >2 cm, mass effect, perilesional edema and/or ring enhancement. TDL could occur in multiple sclerosis(MS), neuromyelitis optica spectrum disorder(NMOSD), acute disseminated encephalomyelitis(ADEM)or other immunological diseases. Non-invasive methods including MR imaging and assay of several autoantibodies(e.g. aquaporin-4 autoantibodies)are recommended when each TDL is identified. The radiological findings on MRI are characterized by size >2 cm, mass effect, perilesional edema, T2 weighted hypointense rim, peripheral diffusion restriction, open ring enhancement, vascular enhancement, and central vein sign. When atypical clinical and radiological presentations are present in patients with TDL, diagnosis may necessitate brain biopsy due to exclude alternative pathology(e.g. primary central nervous system lymphoma). Because treatments and outcomes for patients with TDL are dependent on each disease etiology including MS, NMOSD, ADEM or others, we should always clarify the entire picture behind the disease."
+    },
+    {
+      "pmid": "31857550",
+      "title": "Tumefactive Demyelinating Lesions and Pregnancy.",
+      "journal": "Neurology India",
+      "year": "2020",
+      "doi": "10.4103/0028-3886.273654",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31857550/",
+      "abstract": "Until now, only one gestational tumefactive demyelinating lesion (TDL) has been described. Here we report two TDL cases occurring during and after the pregnancy. A 26-year-old 6-week pregnant woman developed a 3-cm left frontotemporoparietal subcortical TDL with inhomogeneous partial enhancement. Brain biopsy revealed a subacute demyelinating lesion with abundant macrophages and mild chronic perivascular inflammatory infiltrates. She also had femoralpopliteal deep vein thrombosis. During the 4-year follow-up, magnetic resonance imaging showed only residual biopsied TDL. The second case was a 41-year-woman affected by both multiple sclerosis (MS) and rheumatoid arthritis who developed a 2-cm right anterior corona radiata TDL with sporadic gadolinium-enhancing \"annular spots\" eight months after delivery. After steroid therapy at the 6-month radiological follow-up, this TDL was half-reduced. Five years earlier, at the beginning of her MS, she already had a 2-cm TDL with incomplete ring enhancement. These two described TDLs formed in prothrombotic conditions and were likely representative of thromboinflammation around and inside the small-medium veins."
+    },
+    {
+      "pmid": "28619436",
+      "title": "Tumefactive demyelinating lesions: A comprehensive review.",
+      "journal": "Multiple sclerosis and related disorders",
+      "year": "2018",
+      "doi": "10.1016/j.msard.2017.04.003",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28619436/",
+      "abstract": "Tumefactive multiple sclerosis or tumefactive demyelinating lesion (TDL) is one of the rare variants of multiple sclerosis (MS) posing a diagnostic challenge and a therapeutic enigma since it is difficult to distinguish from a true central nervous system (CNS) neoplasm or other CNS lesions on magnetic resonance imaging (MRI). The prevalence of TDL is estimated to be 1-3/1000 cases of MS with an annual incidence of 0.3/100,000. This could be an underestimate due to unavailability of a global MS registry and under-reporting of this condition. TDL may occur at any age with the ages between the 20s and 30s being more frequently affected. The pathogenesis of TDL remains unknown, but some speculations have been made. These include the autoimmune theory based on the close relationship between TDLs and MS, Fingolimod use, Fingolimod cessation, and Natalizumab use. The clinical presentation of patients with TDL is variable and atypical for demyelinating disease due to the differences in size and location of the lesion. In this article, we aim to explore TDL comprehensively and provide an evidence-based approach for diagnosis and treatment. This will result in recommendations that may improve the diagnostic accuracy and treatment outcomes. Detailed history, physical examination, and several MRI imaging can spare patients the need for a brain biopsy. Treatment of acute lesions includes corticosteroids and plasma exchange therapy. When a diagnosis of relapsing-remitting MS is fulfilled, conventional first line MS disease modifying therapy should be used. Available recently published data suggests that Fingolimod should not be used in TDL patients, mainly due to the possibility of more than just a chance association between TDLs and initiation of Fingolimod. The use of several new MS disease modifying therapy for the management of TDL remains to be studied. Further well-conducted research including multi-center trials is needed to explain several ambiguous aspects related to the etiology and management of TDL."
+    },
+    {
+      "pmid": "42071194",
+      "title": "Biopsy-proven tumefactive demyelinating lesions: a systematic review and meta-analysis.",
+      "journal": "BMC neurology",
+      "year": "2026",
+      "doi": "10.1186/s12883-026-04947-w",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42071194/",
+      "abstract": "A tumefactive demyelinating lesion (TDL) is an area of pathological changes in the central nervous system consistent with demyelination, larger than 2&#xa0;cm, and can mimic tumors on imaging; hence the term \"tumefactive.\" TDLs are often challenging, as they have been reported in isolation or in conjunction with demyelinating diseases.\nTo describe the clinical and radiological features of TDLs, explore the treatments used and outcomes, and describe different nomenclatures reported.\nWe followed PRISMA guidelines, and our protocol was registered on PROSPERO [CRD42024593078]. We searched PubMed, Web of Science, EMBASE, and Google Scholar. We included published cases with TDL (>&#x2009;2&#xa0;cm) on magnetic resonance imaging (MRI) in patients aged&#x2009;&#x2265;&#x2009;18 years. We excluded a priori any established diagnoses of the lesions other than TDLs, cases without biopsy confirmation of demyelination, and cases lacking relevant data. The study framework is exploratory and descriptive in nature, and analyses are taken as hypothesis-generating. Comprehensive Meta-Analysis V3.0 was used for meta-analyses.\nWe examined 112 cases from 51 publications. The average age was 41.5 years, with women representing 54% of patients. MRI revealed solitary lesions in 65% of cases, mainly in the frontal (35%) and parietal (28%) lobes, with a mean lesion size of 4.25&#x2009;&#xb1;&#x2009;1.32&#xa0;cm. CSF analysis showed oligoclonal bands in 20% of cases. The meta-analysis demonstrated a 72% pooled response rate to intravenous methylprednisolone (IVMP) (95% CI: 57.9% - 83.2%, p&#x2009;<&#x2009;0.01), with moderate heterogeneity (I 2 &#x2009;=&#x2009;62.4%), which should be interpreted cautiously given the small number of contributing studies. Subgroup analysis revealed no meaningful differences between nomenclatures. Publication bias assessments were exploratory and suggested potential bias, and that the observed variability may reflect study-level and reporting differences rather than disease-related effects.\nAcute IVMP treatment had a high response rate and similar use rate. Despite variations in nomenclature and presentation, the broader pathological and clinical features, as well as the response to IVMP in TDLs, appear broadly similar across studies, acknowledging the methodological limitations of the available literature. Our study was also limited by the small sample due to the rarity of the condition."
+    }
+  ]
+}

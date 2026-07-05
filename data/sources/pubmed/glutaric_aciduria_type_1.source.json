@@ -1,0 +1,51 @@
+{
+  "disease_id": "glutaric_aciduria_type_1",
+  "disease_name": {
+    "ja": "グルタル酸尿症1型",
+    "en": "Glutaric aciduria type 1"
+  },
+  "disease_aliases": {
+    "ja": [
+      "GA1"
+    ],
+    "en": [
+      "GA1"
+    ]
+  },
+  "clinical": {
+    "overview": "リジン/トリプトファン代謝異常。前頭側頭葉萎縮、シルビウス裂開大、基底核障害を示す。",
+    "treatment": "臨床状況と病理・原因疾患に応じて治療方針を決定する。",
+    "epidemiology": "画像パターンと臨床背景を合わせて鑑別する。"
+  },
+  "demographics": {
+    "sex": {
+      "applicable": [
+        "any"
+      ],
+      "predominance": "none",
+      "predilection": "no_sex_predilection",
+      "summary": "明確な性差は強くない。"
+    },
+    "age": {
+      "typical_min": 0,
+      "typical_max": 18,
+      "peak_decade": "小児",
+      "summary": "小児で重要。"
+    }
+  },
+  "frequency": {
+    "label": "rare",
+    "prevalence_rank": 1,
+    "basis": "clinical_context",
+    "evidence_level": "review",
+    "context": {
+      "population": "any",
+      "body_region": "brain",
+      "clinical_setting": "metabolic_basal_ganglia_disease"
+    },
+    "summary": "頻度は高くないが、画像パターンから拾うべき鑑別。"
+  },
+  "imaging": {},
+  "findings": [],
+  "references": []
+}
