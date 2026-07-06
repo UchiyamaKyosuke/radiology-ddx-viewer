@@ -41,7 +41,7 @@ The PC app handles local review and release operations:
 1. Approve physician-reviewed draft disease cards
 2. Inspect dictionary candidate reports and manually edit dictionaries if needed
 3. Manually refresh dictionary maintenance / generated indexes when needed
-4. Create the iPhone `.rddx` pack and copy it to OneDrive
+4. Create the iPhone JSON pack and copy it to OneDrive
 5. Run a full doctor check and create local backups when needed
 
 Current implementation:
@@ -85,7 +85,7 @@ node apps\pc-admin\pc-admin.js export-mobile "C:\Users\<you>\OneDrive\RadiologyD
 
 ## Phase 3: iPhone Viewer
 
-The iPhone viewer contains no disease data. It imports a `.rddx` file from Files/OneDrive, stores it in IndexedDB, and searches offline.
+The iPhone viewer contains no disease data. It imports `radiology-ddx-pack.json` from Files/OneDrive, stores it in IndexedDB, and searches offline.
 
 ## Doctor Check
 
@@ -95,7 +95,7 @@ Run the end-to-end Phase 1-3 smoke check:
 node scripts\doctor.js
 ```
 
-This validates disease cards, rebuilds the search index and differential graph, exports and validates the mobile `.rddx` pack, checks the iPhone viewer JavaScript, and smoke-tests the PC admin GUI script.
+This validates disease cards, rebuilds the search index and differential graph, exports and validates the mobile JSON pack, checks the iPhone viewer JavaScript, and smoke-tests the PC admin GUI script.
 
 ## Backup
 
@@ -146,4 +146,4 @@ Or:
 npm run release:mobile
 ```
 
-Then upload/copy `exports/mobile/radiology-ddx-pack.rddx` to OneDrive and import it in the iPhone viewer.
+Then upload/copy `exports/mobile/radiology-ddx-pack.json` to OneDrive and import it in the iPhone viewer.

@@ -13,7 +13,7 @@ const {
 
 const EXPORT_DIR = path.join(ROOT, "exports", "mobile");
 const VIEWER_DIR = path.join(EXPORT_DIR, "viewer");
-const PACK_PATH = path.join(EXPORT_DIR, "radiology-ddx-pack.rddx");
+const PACK_PATH = path.join(EXPORT_DIR, "radiology-ddx-pack.json");
 const PACK_SCHEMA_VERSION = "1.0";
 const MIN_VIEWER_VERSION = "1.0.0";
 const CHUNK_SIZE = 100;
@@ -140,7 +140,7 @@ try {
 
   const pack = { manifest, payload };
 
-  step("Write .rddx pack", () => {
+  step("Write .json pack", () => {
     fs.mkdirSync(EXPORT_DIR, { recursive: true });
     writeJson(PACK_PATH, pack);
     if (!fs.existsSync(PACK_PATH)) throw new Error(`Pack was not written: ${rel(PACK_PATH)}`);
@@ -156,11 +156,11 @@ try {
     generated_at: manifest.generated_at,
     pack_file: rel(PACK_PATH),
     viewer_dir: rel(VIEWER_DIR),
-    one_drive_note: "Upload the .rddx file to OneDrive, open the viewer on iPhone, then choose the file from Files.",
+    one_drive_note: "Upload the .json file to OneDrive, open the viewer on iPhone, then choose the file from Files.",
     no_images: true
   }));
 
-  console.log(`Mobile pack: ${rel(PACK_PATH)}`);
+  console.log(`Mobile JSON pack: ${rel(PACK_PATH)}`);
   console.log(`Viewer files: ${rel(VIEWER_DIR)}`);
   console.log(`Diseases: ${manifest.counts.diseases}`);
   console.log(`Searchable findings: ${manifest.counts.searchable_findings}`);

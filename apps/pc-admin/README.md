@@ -20,9 +20,9 @@ Phase 2 で使う、医師レビューと iPhone 用データ作成のためのP
 3. **iPhone用ファイル**
    - ローカルデータのバックアップを作成
    - 全体点検を実行
-   - `radiology-ddx-pack.rddx` を作成
+   - `radiology-ddx-pack.json` を作成
    - OneDriveフォルダを選択
-   - iPhoneで読み込む `.rddx` をOneDriveへコピー
+   - iPhoneで読み込む JSON packをOneDriveへコピー
 
 ## 起動方法
 

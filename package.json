@@ -22,12 +22,12 @@
     "pc:status": "node apps/pc-admin/pc-admin.js status",
     "serve:viewer": "node scripts/serve-viewer.js",
     "export:mobile": "node scripts/export-mobile-pack.js",
-    "validate:mobile-pack": "node scripts/validate-mobile-pack.js exports/mobile/radiology-ddx-pack.rddx",
+    "validate:mobile-pack": "node scripts/validate-mobile-pack.js exports/mobile/radiology-ddx-pack.json",
     "migrate:demographics": "node scripts/migrations/add-demographics.js",
     "migrate:sex-predilection": "node scripts/migrations/add-sex-predilection.js",
     "migrate:card-metadata": "node scripts/migrations/normalize-card-metadata.js",
     "build:index": "node scripts/build-index.js",
     "build": "node scripts/validate.js && node scripts/build-index.js",
-    "release:mobile": "node scripts/validate.js && node scripts/build-index.js && node scripts/export-mobile-pack.js && node scripts/validate-mobile-pack.js exports/mobile/radiology-ddx-pack.rddx"
+    "release:mobile": "node scripts/validate.js && node scripts/build-index.js && node scripts/export-mobile-pack.js && node scripts/validate-mobile-pack.js exports/mobile/radiology-ddx-pack.json"
   }
 }

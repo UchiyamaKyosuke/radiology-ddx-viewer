@@ -393,7 +393,7 @@
     try {
       pack = JSON.parse(await file.text());
     } catch (error) {
-      throw new Error(`.rddx をJSONとして読めません: ${error.message}`);
+      throw new Error(`選択したJSON packを読めません: ${error.message}`);
     }
     validatePack(pack);
     if (compareVersion(VIEWER_VERSION, pack.manifest.min_viewer_version || "0.0.0") < 0) {
@@ -438,7 +438,7 @@
 
   function validatePack(pack) {
     const errors = [];
-    if (pack?.manifest?.pack_type !== PACK_TYPE) errors.push("対応していない .rddx です。");
+    if (pack?.manifest?.pack_type !== PACK_TYPE) errors.push("対応していないJSON packです。");
     if (!pack?.payload) errors.push("payload がありません。");
     if (!pack?.payload?.dictionaries?.findingConcepts) errors.push("findingConcepts がありません。");
     if (!Array.isArray(pack?.payload?.searchIndex)) errors.push("searchIndex がありません。");
@@ -490,7 +490,7 @@
 
   function renderPackMeta() {
     if (!data?.manifest) {
-      el.packMeta.textContent = "まだ .rddx は読み込まれていません。OneDrive/ファイルアプリから選択してください。";
+      el.packMeta.textContent = "まだJSON packは読み込まれていません。OneDrive/ファイルアプリから選択してください。";
       return;
     }
     const counts = data.manifest.counts || {};
@@ -506,7 +506,7 @@
     rememberChipPanelState();
     el.chips.innerHTML = "";
     if (!data) {
-      el.chips.innerHTML = '<div class="muted">.rddx 読み込み後に所見チップが使えます。</div>';
+      el.chips.innerHTML = '<div class="muted">JSON pack読み込み後に所見チップが使えます。</div>';
       return;
     }
     for (const panel of CHIP_GROUPS) {
@@ -982,7 +982,7 @@
 
   function renderResults(results) {
     if (!data) {
-      el.results.innerHTML = '<div class="details empty">先に .rddx を読み込んでください。</div>';
+      el.results.innerHTML = '<div class="details empty">先にJSON packを読み込んでください。</div>';
       if (el.resultsMeta) el.resultsMeta.textContent = "未読込";
       return;
     }
@@ -1194,7 +1194,7 @@
   function resetDetails() {
     selectedDiseaseId = "";
     el.details.className = "details empty";
-    el.details.textContent = data ? "候補を選択してください。" : "先に .rddx を読み込んでください。";
+    el.details.textContent = data ? "候補を選択してください。" : "先にJSON packを読み込んでください。";
   }
 
   function relatedEdges(diseaseId) {

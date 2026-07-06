@@ -7,7 +7,7 @@
 ```text
 Phase 1: Codexで疾患カードdraftを生成
 Phase 2: PC管理アプリで医師レビュー、辞書編集、iPhone用pack作成
-Phase 3: iPhone viewerで.rddxを読み込み、オフライン検索
+Phase 3: iPhone viewerでJSON packを読み込み、オフライン検索
 ```
 
 ## Phase 1: Codexでdraft生成
@@ -43,7 +43,7 @@ PC管理アプリでは、ローカルデータを確認・編集し、iPhone用
 6. 辞書候補、鑑別グラフ、検索indexを再生成する
 7. ローカルデータのバックアップを作成する
 8. 全体点検を実行する
-9. iPhone用 `.rddx` packを作成し、OneDriveフォルダへコピーする
+9. iPhone用 JSON packを作成し、OneDriveフォルダへコピーする
 
 GUI起動:
 
@@ -78,7 +78,7 @@ node apps\pc-admin\pc-admin.js export-mobile "C:\Users\<you>\OneDrive\RadiologyD
 
 iPhone viewer自体には疾患データを含めません。
 
-PC管理アプリで作成した `.rddx` をOneDrive経由でiPhoneへ渡し、iPhoneのFiles/OneDriveからviewerに読み込みます。読み込んだデータはIndexedDBに保存され、以後はオフライン検索できます。
+PC管理アプリで作成した `radiology-ddx-pack.json` をOneDrive経由でiPhoneへ渡し、iPhoneのFiles/OneDriveからviewerに読み込みます。読み込んだデータはIndexedDBに保存され、以後はオフライン検索できます。
 
 主なファイル:
 
@@ -94,7 +94,7 @@ scripts/validate-mobile-pack.js
 node apps\pc-admin\pc-admin.js export-mobile "C:\Users\<you>\OneDrive\RadiologyDDX"
 ```
 
-作成された `.rddx` をiPhoneのFiles/OneDriveからviewerへ読み込みます。
+作成された JSON packをiPhoneのFiles/OneDriveからviewerへ読み込みます。
 
 ## 全体点検
 
@@ -104,7 +104,7 @@ Phase 1-3 の接続をまとめて確認するには、次を実行します。
 node scripts\doctor.js
 ```
 
-このコマンドは、疾患カード検証、検索index/鑑別グラフ生成、iPhone用 `.rddx` 作成、mobile pack検証、iPhone viewerのJavaScript構文確認、PC管理GUIのスモークテストをまとめて実行します。
+このコマンドは、疾患カード検証、検索index/鑑別グラフ生成、iPhone用 JSON pack作成、mobile pack検証、iPhone viewerのJavaScript構文確認、PC管理GUIのスモークテストをまとめて実行します。
 
 ## バックアップ
 

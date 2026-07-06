@@ -4,7 +4,7 @@ const { hashObject } = require("./lib");
 
 const packPath = process.argv[2];
 if (!packPath) {
-  console.error("Usage: node scripts/validate-mobile-pack.js <pack.rddx>");
+  console.error("Usage: node scripts/validate-mobile-pack.js <pack.json>");
   process.exit(1);
 }
 

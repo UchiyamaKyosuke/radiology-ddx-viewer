@@ -2,7 +2,7 @@ admin-server*.log
 backups/
 data/trash/
 data/generated/*.json
-exports/mobile/*.rddx
+exports/mobile/*.json
 exports/mobile/viewer/
 exports/mobile/README.mobile-export.json
 *.tmp

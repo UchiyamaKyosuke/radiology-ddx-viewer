@@ -106,19 +106,19 @@ function backup() {
 function exportMobile(oneDriveDir = "") {
   step("Validate disease cards and dictionaries", () => script("validate.js"));
   step("Build search index and differential graph", () => script("build-index.js"));
-  step("Create mobile .rddx pack and viewer files", () => script("export-mobile-pack.js"));
-  step("Validate mobile .rddx pack", () => script("validate-mobile-pack.js", [path.join("exports", "mobile", "radiology-ddx-pack.rddx")]));
+  step("Create mobile .json pack and viewer files", () => script("export-mobile-pack.js"));
+  step("Validate mobile .json pack", () => script("validate-mobile-pack.js", [path.join("exports", "mobile", "radiology-ddx-pack.json")]));
 
-  const packPath = path.join(ROOT, "exports", "mobile", "radiology-ddx-pack.rddx");
-  const targetDir = oneDriveDir || process.env.RDDX_ONEDRIVE_DIR || "";
+  const packPath = path.join(ROOT, "exports", "mobile", "radiology-ddx-pack.json");
+  const targetDir = oneDriveDir || process.env.MOBILE_PACK_ONEDRIVE_DIR || "";
   if (!targetDir) {
     console.log("");
     console.log(`Pack created: ${packPath}`);
-    console.log("Set RDDX_ONEDRIVE_DIR or pass a folder path to copy it into OneDrive.");
+    console.log("Set MOBILE_PACK_ONEDRIVE_DIR or pass a folder path to copy it into OneDrive.");
     return;
   }
 
-  step("Copy .rddx pack to OneDrive folder", () => {
+  step("Copy .json pack to OneDrive folder", () => {
     const resolvedTargetDir = path.resolve(targetDir);
     if (!fs.existsSync(packPath)) {
       throw new Error(`Pack file does not exist: ${packPath}`);
@@ -132,7 +132,7 @@ function exportMobile(oneDriveDir = "") {
       fs.mkdirSync(resolvedTargetDir, { recursive: true });
     }
 
-    const probePath = path.join(resolvedTargetDir, ".rddx-write-test.tmp");
+    const probePath = path.join(resolvedTargetDir, ".json-pack-write-test.tmp");
     fs.writeFileSync(probePath, "write-test", "utf8");
     fs.unlinkSync(probePath);
 

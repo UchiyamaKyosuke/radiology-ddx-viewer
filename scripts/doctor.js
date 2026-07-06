@@ -32,9 +32,9 @@ function nodeScript(label, script, args = []) {
 try {
   nodeScript("Validate disease cards", "validate.js");
   nodeScript("Build search index and differential graph", "build-index.js");
-  nodeScript("Export mobile .rddx pack", "export-mobile-pack.js");
-  nodeScript("Validate mobile .rddx pack", "validate-mobile-pack.js", [
-    path.join("exports", "mobile", "radiology-ddx-pack.rddx")
+  nodeScript("Export mobile .json pack", "export-mobile-pack.js");
+  nodeScript("Validate mobile .json pack", "validate-mobile-pack.js", [
+    path.join("exports", "mobile", "radiology-ddx-pack.json")
   ]);
   run("Check iPhone viewer JavaScript", NODE, ["--check", path.join("web", "app.js")]);
   run("Smoke test PC admin GUI script", "powershell", [
