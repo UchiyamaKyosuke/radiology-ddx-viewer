@@ -13,7 +13,7 @@
       <header class="topbar">
         <div>
           <h1>Radiology DDX</h1>
-          <p>OneDrive の .rddx を読み込んで、iPhone上でオフライン検索します。</p>
+          <p>iPhoneで画像所見から鑑別候補をすばやく検索します。</p>
         </div>
         <div class="status" id="status">データ未読込</div>
       </header>
@@ -22,24 +22,24 @@
         <div>
           <h2>データパック</h2>
           <p>
-            PCアプリで作成した <code>radiology-ddx-pack.rddx</code> を OneDrive に置き、
-            iPhone のファイル選択から読み込んでください。読み込んだデータはこの端末内に保存されます。
+            PCで作成した <code>radiology-ddx-pack.json</code> を読み込みます。
+            読み込み後は端末内に保存され、次回からオフラインで使えます。
           </p>
         </div>
         <div class="import-actions">
           <label class="file-button">
-            .rddx を選択
+            JSONを選択
             <input id="packInput" type="file" />
           </label>
-          <button id="clearPackButton" type="button" class="secondary">端末内データを削除</button>
+          <button id="clearPackButton" type="button" class="secondary">端末データ削除</button>
         </div>
         <details class="onedrive-help">
           <summary>iPhoneでの読み込み手順</summary>
           <ol>
-            <li>OneDriveアプリで <code>radiology-ddx-pack.rddx</code> を開く、またはファイルアプリに保存します。</li>
-            <li>このページで <strong>.rddx を選択</strong> を押します。</li>
-            <li>ファイルアプリの OneDrive から .rddx を選びます。</li>
-            <li>一度読み込めば、次回以降はオフラインで検索できます。</li>
+            <li>OneDriveまたはファイルアプリに <code>radiology-ddx-pack.json</code> を保存します。</li>
+            <li>このページで <strong>JSONを選択</strong> を押します。</li>
+            <li>ファイルアプリから JSON pack を選びます。</li>
+            <li>一度読み込むと、次回以降はオフラインで検索できます。</li>
           </ol>
         </details>
         <div class="pack-meta" id="packMeta">保存済みデータを確認中...</div>
@@ -47,46 +47,57 @@
 
       <section class="search-panel">
         <div class="search-row">
-          <input id="query" type="search" placeholder="所見を入力、または下のチップを選択" autocomplete="off" disabled />
+          <input id="query" type="search" placeholder="例: ring enhancement, T2 high, 肺結節" autocomplete="off" disabled />
           <button id="clearButton" type="button" disabled>クリア</button>
         </div>
         <div id="suggestions" class="suggestions" hidden></div>
-        <div class="compact-filters">
-          <div class="filter-block">
-            <div class="filter-title">性別</div>
-            <div class="pill-row" aria-label="性別">
-              <button type="button" class="sex-option active" data-sex="" disabled>指定なし</button>
-              <button type="button" class="sex-option" data-sex="female" disabled>女性</button>
-              <button type="button" class="sex-option" data-sex="male" disabled>男性</button>
+        <details class="filter-drawer">
+          <summary>
+            <span>絞り込み・所見チップ</span>
+            <span id="filterSummary" class="filter-summary">任意</span>
+          </summary>
+          <div class="compact-filters">
+            <div class="filter-block">
+              <div class="filter-title">性別</div>
+              <div class="pill-row" aria-label="性別">
+                <button type="button" class="sex-option active" data-sex="" disabled>指定なし</button>
+                <button type="button" class="sex-option" data-sex="female" disabled>女性</button>
+                <button type="button" class="sex-option" data-sex="male" disabled>男性</button>
+              </div>
+            </div>
+            <div class="filter-block">
+              <div class="filter-title">年齢</div>
+              <div class="pill-row" aria-label="年齢">
+                <button type="button" class="age-option active" data-age="" disabled>指定なし</button>
+                <button type="button" class="age-option" data-age="child" disabled>小児</button>
+                <button type="button" class="age-option" data-age="young" disabled>若年</button>
+                <button type="button" class="age-option" data-age="middle" disabled>中年</button>
+                <button type="button" class="age-option" data-age="elderly" disabled>高齢</button>
+              </div>
+            </div>
+            <div class="filter-block filter-block-wide">
+              <div class="filter-title">部位</div>
+              <div id="regionFilters" class="region-filters" aria-label="部位"></div>
             </div>
           </div>
-          <div class="filter-block">
-            <div class="filter-title">年齢層</div>
-            <div class="pill-row" aria-label="年齢層">
-              <button type="button" class="age-option active" data-age="" disabled>指定なし</button>
-              <button type="button" class="age-option" data-age="child" disabled>小児</button>
-              <button type="button" class="age-option" data-age="young" disabled>若年</button>
-              <button type="button" class="age-option" data-age="middle" disabled>中年</button>
-              <button type="button" class="age-option" data-age="elderly" disabled>高齢</button>
-            </div>
-          </div>
-          <div class="filter-block">
-            <div class="filter-title">部位</div>
-            <div id="regionFilters" class="region-filters" aria-label="部位"></div>
-          </div>
-        </div>
-        <div class="chips" id="chips"></div>
+          <div class="chips" id="chips"></div>
+        </details>
       </section>
 
       <section class="layout">
-        <div>
-          <h2>鑑別候補</h2>
+        <div class="results-column">
+          <div class="section-head">
+            <h2>候補</h2>
+            <div id="resultsMeta" class="results-meta">未検索</div>
+          </div>
           <div id="results" class="results"></div>
         </div>
-        <aside>
-          <h2>詳細</h2>
+        <div class="details-column">
+          <div class="section-head">
+            <h2>詳細</h2>
+          </div>
           <div id="details" class="details empty">候補を選択してください。</div>
-        </aside>
+        </div>
       </section>
     </main>
     <script src="app.js"></script>

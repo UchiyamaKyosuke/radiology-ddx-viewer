@@ -11,6 +11,8 @@
     details: document.getElementById("details"),
     chips: document.getElementById("chips"),
     suggestions: document.getElementById("suggestions"),
+    resultsMeta: document.getElementById("resultsMeta"),
+    filterSummary: document.getElementById("filterSummary"),
     status: document.getElementById("status"),
     packInput: document.getElementById("packInput"),
     clearPackButton: document.getElementById("clearPackButton"),
@@ -97,7 +99,12 @@
   const REGION_FILTER_GROUPS = [
     { title: "全体", open: true, items: [
       ["指定なし", "", []],
-      ["脳全体", "brain", ["brain", "intracranial", "cerebral", "meninges"]]
+      ["脳", "brain", ["brain", "intracranial", "cerebral", "meninges"]],
+      ["胸部", "chest", ["chest", "lung", "pleura", "mediastinum", "heart", "aorta", "pulmonary"]],
+      ["腹部", "abdomen", ["abdomen", "liver", "pancreas", "kidney", "spleen", "bowel", "stomach", "adrenal", "peritoneum"]],
+      ["骨盤", "pelvis", ["pelvis", "ovary", "uterus", "prostate", "bladder", "testis", "adnexa"]],
+      ["骨軟部", "msk", ["musculoskeletal", "bone", "joint", "soft_tissue", "spine", "tendon", "muscle"]],
+      ["頭頸部", "head_neck", ["head_neck", "thyroid", "sinonasal", "orbit", "salivary", "neck", "mandible"]]
     ] },
     { title: "脳実質", open: false, items: [
       ["皮質/皮質下", "cortical_subcortical", ["cortex", "cortical", "subcortical", "cortical_subcortical", "gray-white junction", "gray_white_junction"]],
@@ -134,7 +141,101 @@
     ] },
     { title: "骨盤", open: false, items: [
       ["卵巣", "ovary", ["ovary", "ovarian", "adnexa", "adnexal"]],
-      ["骨盤", "pelvis", ["pelvis", "ovary", "ovarian", "uterus", "adnexa"]]
+      ["子宮", "uterus", ["uterus", "uterine", "endometrium", "cervix", "myometrium"]],
+      ["前立腺/膀胱", "urinary_pelvis", ["prostate", "bladder", "urinary_bladder", "urethra"]],
+      ["精巣/陰嚢", "male_pelvis", ["testis", "testicular", "scrotum", "epididymis"]]
+    ] },
+    { title: "胸腹部", open: false, items: [
+      ["肺/胸膜", "lung_pleura", ["lung", "pulmonary", "pleura", "airway", "bronchus"]],
+      ["縦隔/心血管", "mediastinum_cardiac", ["mediastinum", "heart", "cardiac", "aorta", "pericardium"]],
+      ["肝胆膵", "hepatobiliary_pancreas", ["liver", "hepatic", "bile_duct", "gallbladder", "pancreas", "pancreatic"]],
+      ["腎/副腎/尿路", "urinary_abdomen", ["kidney", "renal", "adrenal", "ureter", "urinary"]],
+      ["消化管/腹膜", "gi_peritoneum", ["bowel", "colon", "rectum", "stomach", "appendix", "peritoneum", "mesentery"]]
+    ] },
+    { title: "骨軟部/脊椎", open: false, items: [
+      ["骨髄/骨腫瘍", "bone_marrow", ["bone", "bone_marrow", "metaphysis", "epiphysis", "osteoid", "chondroid"]],
+      ["関節", "joint", ["joint", "synovium", "meniscus", "labrum", "cartilage"]],
+      ["腱/靱帯", "tendon_ligament", ["tendon", "ligament", "rotator_cuff", "achilles", "cruciate"]],
+      ["脊椎/硬膜外", "spine", ["spine", "vertebra", "disc", "epidural", "spinal"]],
+      ["軟部組織", "soft_tissue", ["soft_tissue", "subcutaneous", "muscle", "skin"]]
+    ] }
+  ];
+
+  const AGE_LABELS = {
+    child: "小児",
+    young: "若年",
+    middle: "中年",
+    elderly: "高齢"
+  };
+
+  const REGION_FILTER_GROUPS_COMPACT = [
+    { title: "大分類", open: true, items: [
+      ["指定なし", "", []],
+      ["脳・頭蓋内", "brain", ["brain", "intracranial", "cerebral", "meninges"]],
+      ["頭頸部", "head_neck", ["head_neck", "thyroid", "sinonasal", "orbit", "salivary", "neck", "mandible"]],
+      ["胸部", "chest", ["chest", "lung", "pleura", "mediastinum", "heart", "aorta", "pulmonary"]],
+      ["腹部", "abdomen", ["abdomen", "liver", "pancreas", "kidney", "spleen", "bowel", "stomach", "adrenal", "peritoneum"]],
+      ["骨盤", "pelvis", ["pelvis", "ovary", "uterus", "prostate", "bladder", "testis", "adnexa"]],
+      ["脊椎・骨軟部", "msk", ["musculoskeletal", "bone", "joint", "soft_tissue", "spine", "tendon", "muscle"]]
+    ] },
+    { title: "中枢神経", open: false, items: [
+      ["皮質/皮質下", "cortical_subcortical", ["cortex", "cortical", "subcortical", "cortical_subcortical", "gray-white junction", "gray_white_junction"]],
+      ["白質/脳室周囲", "white_matter", ["white_matter", "white matter", "periventricular", "external_capsule", "anterior_temporal_pole"]],
+      ["脳梁", "corpus_callosum", ["corpus_callosum", "corpus callosum", "callosal"]],
+      ["基底核/視床", "deep_gray", ["basal_ganglia", "basal ganglia", "globus_pallidus", "thalami", "thalamus", "deep gray"]],
+      ["海馬/辺縁系", "mesial_temporal", ["hippocampus", "mesial_temporal_lobe", "medial temporal", "limbic_system", "amygdala"]],
+      ["脳幹/小脳", "posterior_fossa", ["brainstem", "pons", "midbrain", "medulla", "cerebellum", "cerebellar", "dentate"]],
+      ["髄膜/脳槽", "meninges_cistern", ["meninges", "dura", "leptomeningeal", "subarachnoid", "basal_cistern", "cistern"]],
+      ["硬膜外/硬膜下", "extra_axial", ["extra_axial", "extra-axial", "subdural", "epidural"]],
+      ["脳室/脈絡叢", "ventricle_choroid", ["ventricle", "ventricular", "choroid_plexus", "foramen_of_monro"]],
+      ["松果体部", "pineal_region", ["pineal_region", "pineal gland", "pineal"]],
+      ["鞍上部/下垂体", "sellar_suprasellar", ["sellar", "suprasellar", "pituitary", "pituitary_stalk"]],
+      ["海綿静脈洞", "cavernous_sinus", ["cavernous_sinus", "cavernous sinus"]],
+      ["頭蓋底/CPA", "skull_base_cpa", ["skull_base", "skull base", "clivus", "cerebellopontine_angle", "CPA", "internal_auditory_canal", "IAC"]],
+      ["脳血管/静脈洞", "cerebral_vessel", ["cerebral_vessel", "artery", "MRA_TOF", "dural_venous_sinus", "venous sinus", "MRV"]],
+      ["血管奇形", "vascular_malformation", ["vascular", "nidus", "flow void", "arteriovenous"]]
+    ] },
+    { title: "頭頸部", open: false, items: [
+      ["眼窩", "orbit", ["orbit", "orbital", "optic_nerve", "extraocular"]],
+      ["副鼻腔/鼻腔", "sinonasal", ["sinonasal", "sinus", "nasal", "paranasal"]],
+      ["側頭骨/耳", "temporal_bone", ["temporal_bone", "middle_ear", "mastoid", "inner_ear"]],
+      ["唾液腺", "salivary", ["salivary", "parotid", "submandibular"]],
+      ["咽頭/喉頭", "pharynx_larynx", ["pharynx", "larynx", "oropharynx", "nasopharynx", "hypopharynx"]],
+      ["甲状腺/頸部", "thyroid_neck", ["thyroid", "neck", "cervical_lymph_node"]],
+      ["顎骨/歯原性", "jaw_dental", ["mandible", "maxilla", "odontogenic", "dental"]]
+    ] },
+    { title: "胸部", open: false, items: [
+      ["肺/気道", "lung_airway", ["lung", "pulmonary", "airway", "bronchus"]],
+      ["胸膜/胸壁", "pleura_chest_wall", ["pleura", "pleural", "chest_wall"]],
+      ["縦隔", "mediastinum", ["mediastinum", "thymus", "esophagus"]],
+      ["心臓/心膜", "cardiac", ["heart", "cardiac", "myocardium", "pericardium"]],
+      ["大動脈/肺血管", "thoracic_vessel", ["aorta", "pulmonary_artery", "pulmonary embolism", "vascular"]]
+    ] },
+    { title: "腹部", open: false, items: [
+      ["肝", "liver", ["liver", "hepatic"]],
+      ["胆道/胆嚢", "biliary", ["bile_duct", "biliary", "gallbladder"]],
+      ["膵", "pancreas", ["pancreas", "pancreatic"]],
+      ["脾", "spleen", ["spleen", "splenic"]],
+      ["腎/尿管", "kidney_ureter", ["kidney", "renal", "ureter"]],
+      ["副腎", "adrenal", ["adrenal"]],
+      ["消化管", "gi_tract", ["bowel", "colon", "rectum", "stomach", "appendix", "duodenum"]],
+      ["腹膜/腸間膜", "peritoneum_mesentery", ["peritoneum", "mesentery", "omental"]]
+    ] },
+    { title: "骨盤", open: false, items: [
+      ["子宮/内膜", "uterus", ["uterus", "uterine", "endometrium", "cervix", "myometrium"]],
+      ["卵巣/付属器", "ovary", ["ovary", "ovarian", "adnexa", "adnexal", "fallopian"]],
+      ["前立腺", "prostate", ["prostate", "prostatic"]],
+      ["膀胱/尿道", "bladder_urethra", ["bladder", "urinary_bladder", "urethra"]],
+      ["精巣/陰嚢", "testis_scrotum", ["testis", "testicular", "scrotum", "epididymis"]],
+      ["骨盤腔/会陰", "pelvic_floor", ["pelvis", "perineum", "pelvic_floor"]]
+    ] },
+    { title: "脊椎・骨軟部", open: false, items: [
+      ["脊椎/椎体", "spine", ["spine", "vertebra", "vertebral", "spinal"]],
+      ["椎間板/硬膜外", "disc_epidural", ["disc", "epidural", "foraminal"]],
+      ["骨/骨髄", "bone_marrow", ["bone", "bone_marrow", "metaphysis", "epiphysis", "osteoid", "chondroid"]],
+      ["関節", "joint", ["joint", "synovium", "meniscus", "labrum", "cartilage"]],
+      ["腱/靱帯", "tendon_ligament", ["tendon", "ligament", "rotator_cuff", "achilles", "cruciate"]],
+      ["筋/皮下軟部", "soft_tissue", ["soft_tissue", "subcutaneous", "muscle", "skin"]]
     ] }
   ];
 
@@ -292,7 +393,7 @@
     try {
       pack = JSON.parse(await file.text());
     } catch (error) {
-      throw new Error(`.rddx をJSONとして読めません: ${error.message}`);
+      throw new Error(`選択したJSON packを読めません: ${error.message}`);
     }
     validatePack(pack);
     if (compareVersion(VIEWER_VERSION, pack.manifest.min_viewer_version || "0.0.0") < 0) {
@@ -337,7 +438,7 @@
 
   function validatePack(pack) {
     const errors = [];
-    if (pack?.manifest?.pack_type !== PACK_TYPE) errors.push("対応していない .rddx です。");
+    if (pack?.manifest?.pack_type !== PACK_TYPE) errors.push("対応していないJSON packです。");
     if (!pack?.payload) errors.push("payload がありません。");
     if (!pack?.payload?.dictionaries?.findingConcepts) errors.push("findingConcepts がありません。");
     if (!Array.isArray(pack?.payload?.searchIndex)) errors.push("searchIndex がありません。");
@@ -381,6 +482,7 @@
     renderSexButtons();
     renderAgeButtons();
     renderRegionButtons();
+    renderFilterSummary();
     renderSuggestions();
     resetDetails();
     runSearch();
@@ -388,7 +490,7 @@
 
   function renderPackMeta() {
     if (!data?.manifest) {
-      el.packMeta.textContent = "まだ .rddx は読み込まれていません。OneDrive/ファイルアプリから選択してください。";
+      el.packMeta.textContent = "まだJSON packは読み込まれていません。OneDrive/ファイルアプリから選択してください。";
       return;
     }
     const counts = data.manifest.counts || {};
@@ -404,7 +506,7 @@
     rememberChipPanelState();
     el.chips.innerHTML = "";
     if (!data) {
-      el.chips.innerHTML = '<div class="muted">.rddx 読み込み後に所見チップが使えます。</div>';
+      el.chips.innerHTML = '<div class="muted">JSON pack読み込み後に所見チップが使えます。</div>';
       return;
     }
     for (const panel of CHIP_GROUPS) {
@@ -436,6 +538,7 @@
             if (selectedChips.has(term)) selectedChips.delete(term);
             else selectedChips.set(term, label);
             renderChips();
+            renderFilterSummary();
             runSearch();
           });
           row.appendChild(button);
@@ -879,13 +982,16 @@
 
   function renderResults(results) {
     if (!data) {
-      el.results.innerHTML = '<div class="details empty">先に .rddx を読み込んでください。</div>';
+      el.results.innerHTML = '<div class="details empty">先にJSON packを読み込んでください。</div>';
+      if (el.resultsMeta) el.resultsMeta.textContent = "未読込";
       return;
     }
     if (!results.length) {
       el.results.innerHTML = '<div class="details empty">所見を入力、またはチップを選択してください。</div>';
+      if (el.resultsMeta) el.resultsMeta.textContent = buildQuery().hasInput || selectedSex || selectedAge || selectedRegion ? "候補なし" : "未検索";
       return;
     }
+    if (el.resultsMeta) el.resultsMeta.textContent = `${results.length}件`;
     el.results.innerHTML = "";
     for (const result of results) {
       const button = document.createElement("button");
@@ -912,6 +1018,9 @@
         selectedDiseaseId = result.disease_id;
         await renderDetails(result);
         renderResults(lastResults);
+        if (window.matchMedia("(max-width: 780px)").matches) {
+          el.details.scrollIntoView({ block: "start", behavior: "smooth" });
+        }
       });
       el.results.appendChild(button);
     }
@@ -1085,7 +1194,7 @@
   function resetDetails() {
     selectedDiseaseId = "";
     el.details.className = "details empty";
-    el.details.textContent = data ? "候補を選択してください。" : "先に .rddx を読み込んでください。";
+    el.details.textContent = data ? "候補を選択してください。" : "先にJSON packを読み込んでください。";
   }
 
   function relatedEdges(diseaseId) {
@@ -1148,16 +1257,18 @@
 
   function renderSexButtons() {
     for (const button of el.sexButtons) button.classList.toggle("active", button.dataset.sex === selectedSex);
+    renderFilterSummary();
   }
 
   function renderAgeButtons() {
     for (const button of el.ageButtons) button.classList.toggle("active", button.dataset.age === selectedAge);
+    renderFilterSummary();
   }
 
   function renderRegionFilters() {
     if (!el.regionFilters) return;
     el.regionFilters.innerHTML = "";
-    for (const group of REGION_FILTER_GROUPS) {
+    for (const group of REGION_FILTER_GROUPS_COMPACT) {
       const details = document.createElement("details");
       details.className = "region-panel";
       details.open = group.open || group.items.some(([, value]) => value === selectedRegion);
@@ -1186,10 +1297,23 @@
 
   function renderRegionButtons() {
     for (const button of el.regionButtons) button.classList.toggle("active", button.dataset.region === selectedRegion);
+    renderFilterSummary();
+  }
+
+  function renderFilterSummary() {
+    if (!el.filterSummary) return;
+    const parts = [];
+    if (selectedSex) parts.push(selectedSex === "female" ? "\u5973\u6027" : "\u7537\u6027");
+    if (selectedAge) parts.push(AGE_LABELS[selectedAge] || AGE_GROUPS[selectedAge]?.label || selectedAge);
+    const region = regionFilter(selectedRegion);
+    if (region?.label) parts.push(region.label);
+    const chipCount = selectedChips.size;
+    if (chipCount) parts.push(`\u6240\u898b${chipCount}`);
+    el.filterSummary.textContent = parts.length ? parts.join(" / ") : "\u4efb\u610f";
   }
 
   function regionFilter(value) {
-    for (const group of REGION_FILTER_GROUPS) {
+    for (const group of REGION_FILTER_GROUPS_COMPACT) {
       for (const [label, id, terms] of group.items) {
         if (id === value) return { label, id, terms };
       }
