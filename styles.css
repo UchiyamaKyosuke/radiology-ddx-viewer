@@ -29,6 +29,10 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .app-shell {
   width: min(1180px, calc(100% - 32px));
   margin: 0 auto;
@@ -283,11 +287,101 @@ code {
   margin-top: 12px;
 }
 
+.chip-sheet-trigger {
+  width: 100%;
+  margin-top: 8px;
+  min-height: 38px;
+  background: #fff;
+  color: var(--accent);
+}
+
 .compact-filters {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 10px;
   margin-top: 10px;
+}
+
+.chip-sheet,
+.detail-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+}
+
+.sheet-backdrop,
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+  background: rgba(34, 35, 31, 0.38);
+  padding: 0;
+}
+
+.chip-sheet-panel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: min(78vh, 680px);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-bottom: 0;
+  border-radius: 12px 12px 0 0;
+  padding: 0 12px 14px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  box-shadow: 0 -10px 30px rgba(34, 35, 31, 0.18);
+}
+
+.sheet-header,
+.modal-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 46px;
+  background: var(--panel);
+  border-bottom: 1px solid var(--line);
+}
+
+.icon-button {
+  width: 36px;
+  min-height: 36px;
+  padding: 0;
+  border-color: var(--line);
+  background: #fff;
+  color: var(--text);
+  font-size: 20px;
+  line-height: 1;
+}
+
+.detail-dialog {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: min(760px, calc(100vw - 28px));
+  max-height: min(86vh, 760px);
+  transform: translate(-50%, -50%);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 18px 42px rgba(34, 35, 31, 0.22);
+}
+
+.detail-dialog .details {
+  max-height: calc(min(86vh, 760px) - 47px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  border: 0;
+  border-radius: 0;
 }
 
 .sex-filter,
@@ -897,6 +991,36 @@ code {
   .chips {
     gap: 6px;
     margin-top: 9px;
+  }
+
+  .chip-sheet-trigger {
+    min-height: 40px;
+    font-size: 13px;
+  }
+
+  .chip-sheet-panel {
+    max-height: 82vh;
+    padding: 0 10px 14px;
+    padding-bottom: calc(14px + env(safe-area-inset-bottom));
+  }
+
+  .detail-dialog {
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    max-height: 88vh;
+    transform: none;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .detail-dialog .details {
+    max-height: calc(88vh - 47px);
+    padding: 11px 11px calc(16px + env(safe-area-inset-bottom));
   }
 
   .section-head {
