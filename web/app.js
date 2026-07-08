@@ -17,6 +17,13 @@
     packInput: document.getElementById("packInput"),
     clearPackButton: document.getElementById("clearPackButton"),
     packMeta: document.getElementById("packMeta"),
+    openChipsButton: document.getElementById("openChipsButton"),
+    chipSheet: document.getElementById("chipSheet"),
+    closeChipsButton: document.getElementById("closeChipsButton"),
+    closeChipsBackdrop: document.getElementById("closeChipsBackdrop"),
+    detailModal: document.getElementById("detailModal"),
+    closeDetailButton: document.getElementById("closeDetailButton"),
+    closeDetailBackdrop: document.getElementById("closeDetailBackdrop"),
     sexButtons: Array.from(document.querySelectorAll(".sex-option")),
     ageButtons: Array.from(document.querySelectorAll(".age-option")),
     regionFilters: document.getElementById("regionFilters"),
@@ -539,7 +546,35 @@
   function enableSearch(enabled) {
     el.query.disabled = !enabled;
     el.clearButton.disabled = !enabled;
+    if (el.openChipsButton) el.openChipsButton.disabled = !enabled;
     for (const button of [...el.sexButtons, ...el.ageButtons, ...el.regionButtons]) button.disabled = !enabled;
+  }
+
+  function openChipsSheet() {
+    if (!el.chipSheet) return;
+    if (el.detailModal) el.detailModal.hidden = true;
+    el.chipSheet.hidden = false;
+    document.body.classList.add("modal-open");
+  }
+
+  function closeChipsSheet() {
+    if (!el.chipSheet) return;
+    el.chipSheet.hidden = true;
+    document.body.classList.remove("modal-open");
+  }
+
+  function openDetailModal() {
+    if (!el.detailModal) return;
+    if (el.chipSheet) el.chipSheet.hidden = true;
+    el.detailModal.hidden = false;
+    document.body.classList.add("modal-open");
+    el.details.scrollTop = 0;
+  }
+
+  function closeDetailModal() {
+    if (!el.detailModal) return;
+    el.detailModal.hidden = true;
+    document.body.classList.remove("modal-open");
   }
 
   function renderAll() {
@@ -1085,9 +1120,7 @@
         selectedDiseaseId = result.disease_id;
         await renderDetails(result);
         renderResults(lastResults);
-        if (window.matchMedia("(max-width: 780px)").matches) {
-          el.details.scrollIntoView({ block: "start", behavior: "smooth" });
-        }
+        openDetailModal();
       });
       el.results.appendChild(button);
     }
@@ -1220,7 +1253,7 @@
           evidence: []
         });
         renderResults(lastResults);
-        el.details.scrollIntoView({ block: "start", behavior: "smooth" });
+        openDetailModal();
       });
     }
   }
@@ -1377,6 +1410,9 @@
     const chipCount = selectedChips.size;
     if (chipCount) parts.push(`\u6240\u898b${chipCount}`);
     el.filterSummary.textContent = parts.length ? parts.join(" / ") : "\u4efb\u610f";
+    if (el.openChipsButton) {
+      el.openChipsButton.textContent = chipCount ? `所見チップを編集 (${chipCount})` : "所見チップを開く";
+    }
   }
 
   function regionFilter(value) {
@@ -1564,6 +1600,16 @@
   });
 
   el.clearPackButton.addEventListener("click", () => clearStoredPack().catch((error) => alert(error.message)));
+  el.openChipsButton?.addEventListener("click", openChipsSheet);
+  el.closeChipsButton?.addEventListener("click", closeChipsSheet);
+  el.closeChipsBackdrop?.addEventListener("click", closeChipsSheet);
+  el.closeDetailButton?.addEventListener("click", closeDetailModal);
+  el.closeDetailBackdrop?.addEventListener("click", closeDetailModal);
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
+    closeChipsSheet();
+    closeDetailModal();
+  });
   el.query.addEventListener("input", () => {
     renderSuggestions();
     runSearch();
@@ -1575,6 +1621,8 @@
     selectedSex = "";
     selectedAge = "";
     selectedRegion = "";
+    closeChipsSheet();
+    closeDetailModal();
     hideSuggestions();
     renderAll();
   });
