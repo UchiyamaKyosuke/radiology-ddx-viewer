@@ -17,6 +17,8 @@ const PACK_PATH = path.join(EXPORT_DIR, "radiology-ddx-pack.json");
 const PACK_SCHEMA_VERSION = "1.0";
 const MIN_VIEWER_VERSION = "1.0.0";
 const CHUNK_SIZE = 100;
+const MOBILE_RELATED_EDGES_PER_DISEASE = 8;
+const MOBILE_SHARED_FINDINGS_PER_EDGE = 5;
 
 function rel(filePath) {
   return path.relative(ROOT, filePath);
@@ -79,11 +81,62 @@ function packSizeBytes(value) {
   return Buffer.byteLength(JSON.stringify(value), "utf8");
 }
 
+function writeCompactJson(filePath, value) {
+  fs.mkdirSync(path.dirname(filePath), { recursive: true });
+  fs.writeFileSync(filePath, JSON.stringify(value), "utf8");
+}
+
+function buildMobileDifferentialGraph(graph) {
+  const selected = new Map();
+  const ranked = [...(graph.edges || [])]
+    .sort((a, b) => (b.similarity_score || 0) - (a.similarity_score || 0));
+
+  const counts = new Map();
+  for (const edge of ranked) {
+    const source = edge.source_disease_id;
+    const target = edge.target_disease_id;
+    const sourceCount = counts.get(source) || 0;
+    const targetCount = counts.get(target) || 0;
+    if (sourceCount >= MOBILE_RELATED_EDGES_PER_DISEASE || targetCount >= MOBILE_RELATED_EDGES_PER_DISEASE) continue;
+
+    const compactEdge = {
+      source_disease_id: source,
+      target_disease_id: target,
+      relationship: edge.relationship,
+      similarity_score: edge.similarity_score,
+      shared_findings: (edge.shared_findings || [])
+        .slice(0, MOBILE_SHARED_FINDINGS_PER_EDGE)
+        .map((item) => ({
+          finding_code: item.finding_code,
+          canonical_label: item.canonical_label,
+          weight: item.weight
+        }))
+    };
+    selected.set(`${source}::${target}`, compactEdge);
+    counts.set(source, sourceCount + 1);
+    counts.set(target, targetCount + 1);
+  }
+
+  return {
+    graph_version: graph.graph_version,
+    generated_at: graph.generated_at,
+    mobile_pruned: true,
+    mobile_prune_policy: {
+      related_edges_per_disease: MOBILE_RELATED_EDGES_PER_DISEASE,
+      shared_findings_per_edge: MOBILE_SHARED_FINDINGS_PER_EDGE,
+      original_edges: (graph.edges || []).length
+    },
+    nodes: graph.nodes || [],
+    edges: Array.from(selected.values()).sort((a, b) => (b.similarity_score || 0) - (a.similarity_score || 0))
+  };
+}
+
 try {
   const dictionaries = step("Load dictionaries", () => loadDictionaries());
   const searchIndex = step("Load generated search-index.json", () => ensureBuiltFile("search-index.json"));
   const summaryIndex = step("Load generated disease-summary-index.json", () => ensureBuiltFile("disease-summary-index.json"));
   const differentialGraph = step("Load generated differential-graph.json", () => ensureBuiltFile("differential-graph.json"));
+  const mobileDifferentialGraph = step("Prune mobile differential graph", () => buildMobileDifferentialGraph(differentialGraph));
   const diseaseCards = step("Load disease and draft cards", () => [...loadDiseaseCards(), ...loadDraftCards()]
     .map(({ card, sourceType }) => ({
       ...card,
@@ -105,7 +158,7 @@ try {
     },
     searchIndex: searchIndex.items || [],
     summaryIndex: summaryIndex.diseases || [],
-    differentialGraph,
+    differentialGraph: mobileDifferentialGraph,
     diseaseChunks,
     imageManifest: {
       version: "0.1",
@@ -128,6 +181,7 @@ try {
       searchable_findings: payload.searchIndex.length,
       finding_concepts: Object.keys(dictionaries.findingConcepts).length,
       disease_chunks: diseaseChunks.length,
+      differential_edges: mobileDifferentialGraph.edges.length,
       images: 0
     },
     size_hint_bytes: packSizeBytes(payload),
@@ -142,7 +196,7 @@ try {
 
   step("Write .json pack", () => {
     fs.mkdirSync(EXPORT_DIR, { recursive: true });
-    writeJson(PACK_PATH, pack);
+    writeCompactJson(PACK_PATH, pack);
     if (!fs.existsSync(PACK_PATH)) throw new Error(`Pack was not written: ${rel(PACK_PATH)}`);
   });
 
@@ -164,6 +218,7 @@ try {
   console.log(`Viewer files: ${rel(VIEWER_DIR)}`);
   console.log(`Diseases: ${manifest.counts.diseases}`);
   console.log(`Searchable findings: ${manifest.counts.searchable_findings}`);
+  console.log(`Mobile differential edges: ${manifest.counts.differential_edges}`);
   console.log(`Approx payload bytes: ${manifest.size_hint_bytes}`);
 } catch (error) {
   console.error("Mobile pack export failed.");
