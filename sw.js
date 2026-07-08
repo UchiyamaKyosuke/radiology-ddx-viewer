@@ -1,4 +1,4 @@
-const CACHE_NAME = "radiology-ddx-viewer-v1.7";
+const CACHE_NAME = "radiology-ddx-viewer-v1.8";
 const ASSETS = [
   "./",
   "./index.html",
