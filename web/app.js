@@ -388,26 +388,22 @@
   }
 
   async function importPack(file) {
-    setStatus("データ読込中...");
-    let pack;
-    try {
-      pack = JSON.parse(await file.text());
-    } catch (error) {
-      throw new Error(`選択したJSON packを読めません: ${error.message}`);
-    }
+    setStatus("Loading ZIP pack...");
+    const pack = await readPackFile(file);
     validatePack(pack);
     if (compareVersion(VIEWER_VERSION, pack.manifest.min_viewer_version || "0.0.0") < 0) {
-      throw new Error(`viewerが古いです。必要バージョン: ${pack.manifest.min_viewer_version}`);
+      throw new Error(`Viewer is too old. Required version: ${pack.manifest.min_viewer_version}`);
     }
 
     const counts = pack.manifest.counts || {};
     const message = [
-      `${counts.diseases ?? pack.payload.summaryIndex.length}疾患を読み込みます。`,
-      `${counts.searchable_findings ?? pack.payload.searchIndex.length}件の所見indexを保存します。`,
-      "端末内の既存データは置き換えられます。"
+      `${counts.diseases ?? pack.payload.summaryIndex.length} diseases will be imported.`,
+      `${counts.searchable_findings ?? pack.payload.searchIndex.length} searchable findings will be saved.`,
+      `Disease chunks: ${pack.payload.diseaseChunks.length}`,
+      "Existing local data on this device will be replaced."
     ].join("\n");
     if (!confirm(message)) {
-      setStatus(data ? `${data.searchIndex.length} findings` : "データ未読込");
+      setStatus(data ? `${data.searchIndex.length} findings` : "No data");
       return;
     }
 
@@ -418,11 +414,13 @@
     await idbPut("summary", "items", pack.payload.summaryIndex);
     await idbPut("graph", "main", pack.payload.differentialGraph);
 
-    const diseaseEntries = [];
-    for (const chunk of pack.payload.diseaseChunks) {
+    for (let i = 0; i < pack.payload.diseaseChunks.length; i += 1) {
+      const chunk = pack.payload.diseaseChunks[i];
+      const diseaseEntries = [];
       for (const card of chunk.items || []) diseaseEntries.push([card.disease_id, card]);
+      await idbPutMany("diseases", diseaseEntries);
+      setStatus(`Saving diseases ${i + 1}/${pack.payload.diseaseChunks.length}`);
     }
-    await idbPutMany("diseases", diseaseEntries);
 
     data = await loadData();
     enableSearch(true);
@@ -436,15 +434,84 @@
     setStatus(`${data.searchIndex.length} findings`);
   }
 
+  async function readPackFile(file) {
+    const buffer = await file.arrayBuffer();
+    const bytes = new Uint8Array(buffer);
+    if (bytes[0] === 0x50 && bytes[1] === 0x4b) return readZipPack(buffer);
+    return JSON.parse(new TextDecoder().decode(bytes));
+  }
+
+  function readZipPack(buffer) {
+    const entries = readZipEntries(buffer);
+    const diseaseChunks = Array.from(entries.keys())
+      .filter((name) => name.startsWith("diseases/") && name.endsWith(".json"))
+      .sort()
+      .map((name) => parseZipJson(entries, name));
+    return {
+      manifest: parseZipJson(entries, "manifest.json"),
+      payload: {
+        dictionaries: parseZipJson(entries, "dictionaries.json"),
+        searchIndex: parseZipJson(entries, "search-index.json"),
+        summaryIndex: parseZipJson(entries, "summary-index.json"),
+        differentialGraph: parseZipJson(entries, "differential-graph.json"),
+        diseaseChunks,
+        imageManifest: parseZipJson(entries, "image-manifest.json")
+      }
+    };
+  }
+
+  function parseZipJson(entries, name) {
+    const value = entries.get(name);
+    if (!value) throw new Error(`Missing ZIP entry: ${name}`);
+    return JSON.parse(value);
+  }
+
+  function readZipEntries(buffer) {
+    const view = new DataView(buffer);
+    const bytes = new Uint8Array(buffer);
+    const decoder = new TextDecoder();
+    let endOffset = -1;
+    for (let i = bytes.length - 22; i >= 0 && i >= bytes.length - 65558; i -= 1) {
+      if (view.getUint32(i, true) === 0x06054b50) {
+        endOffset = i;
+        break;
+      }
+    }
+    if (endOffset < 0) throw new Error("ZIP end of central directory not found.");
+    const total = view.getUint16(endOffset + 10, true);
+    let offset = view.getUint32(endOffset + 16, true);
+    const entries = new Map();
+
+    for (let i = 0; i < total; i += 1) {
+      if (view.getUint32(offset, true) !== 0x02014b50) throw new Error("Invalid ZIP central directory.");
+      const method = view.getUint16(offset + 10, true);
+      const compressedSize = view.getUint32(offset + 20, true);
+      const nameLength = view.getUint16(offset + 28, true);
+      const extraLength = view.getUint16(offset + 30, true);
+      const commentLength = view.getUint16(offset + 32, true);
+      const localOffset = view.getUint32(offset + 42, true);
+      const name = decoder.decode(bytes.slice(offset + 46, offset + 46 + nameLength));
+
+      if (view.getUint32(localOffset, true) !== 0x04034b50) throw new Error(`Invalid ZIP entry: ${name}`);
+      if (method !== 0) throw new Error(`Unsupported ZIP compression method: ${name}`);
+      const localNameLength = view.getUint16(localOffset + 26, true);
+      const localExtraLength = view.getUint16(localOffset + 28, true);
+      const dataStart = localOffset + 30 + localNameLength + localExtraLength;
+      entries.set(name, decoder.decode(bytes.slice(dataStart, dataStart + compressedSize)));
+      offset += 46 + nameLength + extraLength + commentLength;
+    }
+    return entries;
+  }
+
   function validatePack(pack) {
     const errors = [];
-    if (pack?.manifest?.pack_type !== PACK_TYPE) errors.push("対応していないJSON packです。");
-    if (!pack?.payload) errors.push("payload がありません。");
-    if (!pack?.payload?.dictionaries?.findingConcepts) errors.push("findingConcepts がありません。");
-    if (!Array.isArray(pack?.payload?.searchIndex)) errors.push("searchIndex がありません。");
-    if (!Array.isArray(pack?.payload?.summaryIndex)) errors.push("summaryIndex がありません。");
-    if (!Array.isArray(pack?.payload?.diseaseChunks)) errors.push("diseaseChunks がありません。");
-    if (!pack?.payload?.differentialGraph?.edges) errors.push("differentialGraph がありません。");
+    if (pack?.manifest?.pack_type !== PACK_TYPE) errors.push("Unsupported ZIP pack.");
+    if (!pack?.payload) errors.push("Missing payload.");
+    if (!pack?.payload?.dictionaries?.findingConcepts) errors.push("Missing findingConcepts.");
+    if (!Array.isArray(pack?.payload?.searchIndex)) errors.push("Missing searchIndex.");
+    if (!Array.isArray(pack?.payload?.summaryIndex)) errors.push("Missing summaryIndex.");
+    if (!Array.isArray(pack?.payload?.diseaseChunks)) errors.push("Missing diseaseChunks.");
+    if (!pack?.payload?.differentialGraph?.edges) errors.push("Missing differentialGraph.");
     if (errors.length) throw new Error(errors.join(" "));
   }
 
@@ -490,7 +557,7 @@
 
   function renderPackMeta() {
     if (!data?.manifest) {
-      el.packMeta.textContent = "まだJSON packは読み込まれていません。OneDrive/ファイルアプリから選択してください。";
+      el.packMeta.textContent = "まだZIP packは読み込まれていません。OneDrive/ファイルアプリから選択してください。";
       return;
     }
     const counts = data.manifest.counts || {};
@@ -506,7 +573,7 @@
     rememberChipPanelState();
     el.chips.innerHTML = "";
     if (!data) {
-      el.chips.innerHTML = '<div class="muted">JSON pack読み込み後に所見チップが使えます。</div>';
+      el.chips.innerHTML = '<div class="muted">ZIP pack読み込み後に所見チップが使えます。</div>';
       return;
     }
     for (const panel of CHIP_GROUPS) {
@@ -982,7 +1049,7 @@
 
   function renderResults(results) {
     if (!data) {
-      el.results.innerHTML = '<div class="details empty">先にJSON packを読み込んでください。</div>';
+      el.results.innerHTML = '<div class="details empty">先にZIP packを読み込んでください。</div>';
       if (el.resultsMeta) el.resultsMeta.textContent = "未読込";
       return;
     }
@@ -1194,7 +1261,7 @@
   function resetDetails() {
     selectedDiseaseId = "";
     el.details.className = "details empty";
-    el.details.textContent = data ? "候補を選択してください。" : "先にJSON packを読み込んでください。";
+    el.details.textContent = data ? "候補を選択してください。" : "先にZIP packを読み込んでください。";
   }
 
   function relatedEdges(diseaseId) {

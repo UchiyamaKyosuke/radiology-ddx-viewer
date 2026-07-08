@@ -106,10 +106,10 @@ function backup() {
 function exportMobile(oneDriveDir = "") {
   step("Validate disease cards and dictionaries", () => script("validate.js"));
   step("Build search index and differential graph", () => script("build-index.js"));
-  step("Create mobile .json pack and viewer files", () => script("export-mobile-pack.js"));
-  step("Validate mobile .json pack", () => script("validate-mobile-pack.js", [path.join("exports", "mobile", "radiology-ddx-pack.json")]));
+  step("Create mobile .zip pack and viewer files", () => script("export-mobile-pack.js"));
+  step("Validate mobile .zip pack", () => script("validate-mobile-pack.js", [path.join("exports", "mobile", "radiology-ddx-pack.zip")]));
 
-  const packPath = path.join(ROOT, "exports", "mobile", "radiology-ddx-pack.json");
+  const packPath = path.join(ROOT, "exports", "mobile", "radiology-ddx-pack.zip");
   const targetDir = oneDriveDir || process.env.MOBILE_PACK_ONEDRIVE_DIR || "";
   if (!targetDir) {
     console.log("");
@@ -118,7 +118,7 @@ function exportMobile(oneDriveDir = "") {
     return;
   }
 
-  step("Copy .json pack to OneDrive folder", () => {
+  step("Copy .zip pack to OneDrive folder", () => {
     const resolvedTargetDir = path.resolve(targetDir);
     if (!fs.existsSync(packPath)) {
       throw new Error(`Pack file does not exist: ${packPath}`);
@@ -132,7 +132,7 @@ function exportMobile(oneDriveDir = "") {
       fs.mkdirSync(resolvedTargetDir, { recursive: true });
     }
 
-    const probePath = path.join(resolvedTargetDir, ".json-pack-write-test.tmp");
+    const probePath = path.join(resolvedTargetDir, ".zip-pack-write-test.tmp");
     fs.writeFileSync(probePath, "write-test", "utf8");
     fs.unlinkSync(probePath);
 

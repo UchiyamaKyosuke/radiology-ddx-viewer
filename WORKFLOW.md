@@ -52,7 +52,7 @@ Responsibilities:
 1. Approve physician-reviewed drafts
 2. Inspect dictionary candidate reports and manually edit dictionaries if needed
 3. Manually refresh dictionary maintenance / generated indexes when needed
-4. Create the iPhone JSON pack and copy it to OneDrive
+4. Create the iPhone ZIP pack and copy it to OneDrive
 
 Run:
 
@@ -77,7 +77,7 @@ node apps\pc-admin\pc-admin.js export-mobile "C:\Users\<you>\OneDrive\RadiologyD
 
 ## Phase 3: iPhone Viewer
 
-Goal: read `radiology-ddx-pack.json` and search offline.
+Goal: read `radiology-ddx-pack.zip` and search offline.
 
 Viewer:
 
@@ -88,7 +88,7 @@ web/
 Data transfer:
 
 ```text
-PC app creates exports/mobile/radiology-ddx-pack.json
+PC app creates exports/mobile/radiology-ddx-pack.zip
 OneDrive syncs/copies it
 iPhone viewer imports it through Files
 IndexedDB stores it locally
@@ -102,7 +102,7 @@ Generated files are ignored by Git:
 
 ```text
 data/generated/*.json
-exports/mobile/*.json
+exports/mobile/*.zip
 exports/mobile/viewer/
 exports/mobile/README.mobile-export.json
 ```

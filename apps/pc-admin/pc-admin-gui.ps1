@@ -1011,15 +1011,15 @@ function Save-SelectedConcept {
 
 function Select-OneDriveFolder {
   $dialog = New-Object System.Windows.Forms.FolderBrowserDialog
-  $dialog.Description = "iPhoneへ渡す JSON pack をコピーする OneDrive フォルダを選択してください"
+  $dialog.Description = "iPhoneへ渡す ZIP pack をコピーする OneDrive フォルダを選択してください"
   if ($OneDriveBox.Text -and (Test-Path $OneDriveBox.Text)) { $dialog.SelectedPath = $OneDriveBox.Text }
   if ($dialog.ShowDialog() -eq "OK") { $OneDriveBox.Text = $dialog.SelectedPath }
 }
 
 function Export-Mobile {
-  Write-Log "iPhone用 JSON pack を作成しています。少し時間がかかることがあります。"
+  Write-Log "iPhone用 ZIP pack を作成しています。少し時間がかかることがあります。"
   Invoke-NodeScript "apps\pc-admin\pc-admin.js" @("export-mobile", $OneDriveBox.Text.Trim())
-  $ExportResultLabel.Text = "完了: exports\mobile\radiology-ddx-pack.json を作成しました。OneDriveフォルダ指定時は同じファイルをコピー済みです。"
+  $ExportResultLabel.Text = "完了: exports\mobile\radiology-ddx-pack.zip を作成しました。OneDriveフォルダ指定時は同じファイルをコピー済みです。"
 }
 
 function Run-Doctor {
@@ -1984,7 +1984,7 @@ $DictionaryFileEditor.Size = New-Object System.Drawing.Size(1180, 360)
 $DictionaryRawPanel.Controls.Add($DictionaryFileEditor)
 
 $ExportHelpTop = New-Object System.Windows.Forms.Label
-$ExportHelpTop.Text = "PCで作成した検索データをiPhoneへ渡すための JSON pack を作成します。OneDriveフォルダを指定すると自動コピーします。"
+$ExportHelpTop.Text = "PCで作成した検索データをiPhoneへ渡すための ZIP pack を作成します。OneDriveフォルダを指定すると自動コピーします。"
 $ExportHelpTop.Location = New-Object System.Drawing.Point(15, 20)
 $ExportHelpTop.Size = New-Object System.Drawing.Size(1050, 24)
 $ExportTab.Controls.Add($ExportHelpTop)
@@ -2007,7 +2007,7 @@ $BrowseButton.Size = New-Object System.Drawing.Size(100, 28)
 $ExportTab.Controls.Add($BrowseButton)
 
 $ExportButton = New-Object System.Windows.Forms.Button
-$ExportButton.Text = "JSON packを作成してコピー"
+$ExportButton.Text = "ZIP packを作成してコピー"
 $ExportButton.Location = New-Object System.Drawing.Point(15, 165)
 $ExportButton.Size = New-Object System.Drawing.Size(190, 34)
 $ExportTab.Controls.Add($ExportButton)
@@ -2025,7 +2025,7 @@ $DoctorButton.Size = New-Object System.Drawing.Size(120, 34)
 $ExportTab.Controls.Add($DoctorButton)
 
 $ExportHelp = New-Object System.Windows.Forms.Label
-$ExportHelp.Text = "空欄のまま実行すると、ローカルの exports\mobile\radiology-ddx-pack.json だけを作成します。"
+$ExportHelp.Text = "空欄のまま実行すると、ローカルの exports\mobile\radiology-ddx-pack.zip だけを作成します。"
 $ExportHelp.Location = New-Object System.Drawing.Point(15, 215)
 $ExportHelp.Size = New-Object System.Drawing.Size(950, 24)
 $ExportTab.Controls.Add($ExportHelp)

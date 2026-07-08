@@ -13,7 +13,7 @@ const {
 
 const EXPORT_DIR = path.join(ROOT, "exports", "mobile");
 const VIEWER_DIR = path.join(EXPORT_DIR, "viewer");
-const PACK_PATH = path.join(EXPORT_DIR, "radiology-ddx-pack.json");
+const PACK_PATH = path.join(EXPORT_DIR, "radiology-ddx-pack.zip");
 const PACK_SCHEMA_VERSION = "1.0";
 const MIN_VIEWER_VERSION = "1.0.0";
 const CHUNK_SIZE = 100;
@@ -81,11 +81,6 @@ function packSizeBytes(value) {
   return Buffer.byteLength(JSON.stringify(value), "utf8");
 }
 
-function writeCompactJson(filePath, value) {
-  fs.mkdirSync(path.dirname(filePath), { recursive: true });
-  fs.writeFileSync(filePath, JSON.stringify(value), "utf8");
-}
-
 function buildMobileDifferentialGraph(graph) {
   const selected = new Map();
   const ranked = [...(graph.edges || [])]
@@ -129,6 +124,91 @@ function buildMobileDifferentialGraph(graph) {
     nodes: graph.nodes || [],
     edges: Array.from(selected.values()).sort((a, b) => (b.similarity_score || 0) - (a.similarity_score || 0))
   };
+}
+
+function crc32(buffer) {
+  let crc = 0xffffffff;
+  for (const byte of buffer) {
+    crc ^= byte;
+    for (let i = 0; i < 8; i += 1) {
+      crc = (crc >>> 1) ^ (0xedb88320 & -(crc & 1));
+    }
+  }
+  return (crc ^ 0xffffffff) >>> 0;
+}
+
+function dosDateTime(date = new Date()) {
+  const year = Math.max(1980, date.getFullYear());
+  const time = (date.getHours() << 11) | (date.getMinutes() << 5) | Math.floor(date.getSeconds() / 2);
+  const day = ((year - 1980) << 9) | ((date.getMonth() + 1) << 5) | date.getDate();
+  return { time, day };
+}
+
+function writeZipStore(filePath, entries) {
+  fs.mkdirSync(path.dirname(filePath), { recursive: true });
+  const chunks = [];
+  const central = [];
+  let offset = 0;
+  const stamp = dosDateTime();
+
+  for (const entry of entries) {
+    const name = Buffer.from(entry.name.replace(/\\/g, "/"), "utf8");
+    const data = Buffer.isBuffer(entry.data) ? entry.data : Buffer.from(String(entry.data), "utf8");
+    const checksum = crc32(data);
+
+    const local = Buffer.alloc(30);
+    local.writeUInt32LE(0x04034b50, 0);
+    local.writeUInt16LE(20, 4);
+    local.writeUInt16LE(0x0800, 6);
+    local.writeUInt16LE(0, 8);
+    local.writeUInt16LE(stamp.time, 10);
+    local.writeUInt16LE(stamp.day, 12);
+    local.writeUInt32LE(checksum, 14);
+    local.writeUInt32LE(data.length, 18);
+    local.writeUInt32LE(data.length, 22);
+    local.writeUInt16LE(name.length, 26);
+    local.writeUInt16LE(0, 28);
+    chunks.push(local, name, data);
+
+    const header = Buffer.alloc(46);
+    header.writeUInt32LE(0x02014b50, 0);
+    header.writeUInt16LE(20, 4);
+    header.writeUInt16LE(20, 6);
+    header.writeUInt16LE(0x0800, 8);
+    header.writeUInt16LE(0, 10);
+    header.writeUInt16LE(stamp.time, 12);
+    header.writeUInt16LE(stamp.day, 14);
+    header.writeUInt32LE(checksum, 16);
+    header.writeUInt32LE(data.length, 20);
+    header.writeUInt32LE(data.length, 24);
+    header.writeUInt16LE(name.length, 28);
+    header.writeUInt16LE(0, 30);
+    header.writeUInt16LE(0, 32);
+    header.writeUInt16LE(0, 34);
+    header.writeUInt16LE(0, 36);
+    header.writeUInt32LE(0, 38);
+    header.writeUInt32LE(offset, 42);
+    central.push(header, name);
+    offset += local.length + name.length + data.length;
+  }
+
+  const centralOffset = offset;
+  const centralSize = central.reduce((sum, chunk) => sum + chunk.length, 0);
+  const end = Buffer.alloc(22);
+  end.writeUInt32LE(0x06054b50, 0);
+  end.writeUInt16LE(0, 4);
+  end.writeUInt16LE(0, 6);
+  end.writeUInt16LE(entries.length, 8);
+  end.writeUInt16LE(entries.length, 10);
+  end.writeUInt32LE(centralSize, 12);
+  end.writeUInt32LE(centralOffset, 16);
+  end.writeUInt16LE(0, 20);
+
+  fs.writeFileSync(filePath, Buffer.concat([...chunks, ...central, end]));
+}
+
+function jsonEntry(name, value) {
+  return { name, data: JSON.stringify(value) };
 }
 
 try {
@@ -194,9 +274,17 @@ try {
 
   const pack = { manifest, payload };
 
-  step("Write .json pack", () => {
-    fs.mkdirSync(EXPORT_DIR, { recursive: true });
-    writeCompactJson(PACK_PATH, pack);
+  step("Write .zip pack", () => {
+    const entries = [
+      jsonEntry("manifest.json", manifest),
+      jsonEntry("dictionaries.json", payload.dictionaries),
+      jsonEntry("search-index.json", payload.searchIndex),
+      jsonEntry("summary-index.json", payload.summaryIndex),
+      jsonEntry("differential-graph.json", payload.differentialGraph),
+      jsonEntry("image-manifest.json", payload.imageManifest),
+      ...diseaseChunks.map((chunk) => jsonEntry(`diseases/${chunk.chunk_id}.json`, chunk))
+    ];
+    writeZipStore(PACK_PATH, entries);
     if (!fs.existsSync(PACK_PATH)) throw new Error(`Pack was not written: ${rel(PACK_PATH)}`);
   });
 
@@ -210,11 +298,11 @@ try {
     generated_at: manifest.generated_at,
     pack_file: rel(PACK_PATH),
     viewer_dir: rel(VIEWER_DIR),
-    one_drive_note: "Upload the .json file to OneDrive, open the viewer on iPhone, then choose the file from Files.",
+    one_drive_note: "Upload the .zip file to OneDrive, open the viewer on iPhone, then choose the file from Files.",
     no_images: true
   }));
 
-  console.log(`Mobile JSON pack: ${rel(PACK_PATH)}`);
+  console.log(`Mobile ZIP pack: ${rel(PACK_PATH)}`);
   console.log(`Viewer files: ${rel(VIEWER_DIR)}`);
   console.log(`Diseases: ${manifest.counts.diseases}`);
   console.log(`Searchable findings: ${manifest.counts.searchable_findings}`);
